@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity LogicaDesvio is
+	port (
+			SelMuxPC : in std_logic;
+			JEQ: in std_logic;
+			Flag: in std_logic;
+			Saida: out std_logic;
+end entity;
+
+architecture arch of DecodInstrucao is
+begin
+
+	
+
+		Saida <= "1" when "0000", 
+				"1" when "0001", 
+				"1" when "0010", 
+				"0" when others;
+	
+end architecture;
