@@ -18,8 +18,7 @@ begin
 	
 
 		Saida <= "01" when (SelMuxPC = "01") else 
-				"01" when (JEQ = '1') else
-				"01" when (Flag = '1') else
+				"01" when (JEQ = '1' and Flag = '1') else
 				"01" when (JSR = '1') else
 				"10" when (RET = '1') else
 				"00";

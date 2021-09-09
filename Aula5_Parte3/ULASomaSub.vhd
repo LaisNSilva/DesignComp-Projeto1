@@ -9,7 +9,8 @@ entity ULASomaSub is
     port (
       entradaA, entradaB:  in STD_LOGIC_VECTOR((larguraDados-1) downto 0);
       seletor:  in STD_LOGIC_VECTOR(1 downto 0);
-      saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0)
+      saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+		flag_0: out std_logic
     );
 end entity;
 

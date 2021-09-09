@@ -353,6 +353,7 @@ saida[4] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 saida[5] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 saida[6] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 saida[7] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+flag_0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Aula5|memoriaROM:MEMORIA_INTRUCAO
@@ -463,10 +464,8 @@ q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 |Aula5|LogicaDesvio:LOGICA_DE_DESVIO
 SelMuxPC[0] => Equal0.IN1
 SelMuxPC[1] => Equal0.IN0
-JEQ => Saida.OUTPUTSELECT
-JEQ => Saida.OUTPUTSELECT
-Flag => Saida.OUTPUTSELECT
-Flag => Saida.OUTPUTSELECT
+JEQ => Saida.IN0
+Flag => Saida.IN1
 RET => Saida.DATAA
 JSR => Saida.OUTPUTSELECT
 JSR => Saida.DATAA

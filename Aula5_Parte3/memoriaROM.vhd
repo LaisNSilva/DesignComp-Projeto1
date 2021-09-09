@@ -48,11 +48,18 @@ architecture assincrona of memoriaROM is
         tmp(8)  := LDA & '1' & x"00";
         tmp(9)  := SUB & '1' & x"0F";
         tmp(10) := STA & '1' & x"00";
---        tmp(11) := "000000000" & x"0";
---        tmp(12) := "000000000" & x"0";
---        tmp(13) := "000000000" & x"0";
---        tmp(14) := "000000000" & x"0";
---        tmp(15) := "000000000" & x"0";
+		  -- A partir daqui coloca os jumps
+        tmp(11) := JMP & '0' & x"0D";
+        tmp(12) := LDI & '0' & x"07";
+        tmp(13) := CEQ & '1' & x"00"; -- endereço que guardou o 5 e tem 5 no reg(então é =)
+        tmp(14) := JSR & '1' & x"10";
+        tmp(15) := JEQ & '1' & x"14";
+		  tmp(16) := LDI & '0' & x"02";
+		  tmp(17) := STA & '1' & x"02";
+		  tmp(18) := SOMA & '1' & x"02";
+		  tmp(19) := RET & '1' & x"00"; -- NÃO SEI O QUE COLOCAR NO ENDEREÇO
+		  tmp(20) := NOP & '0' & x"00";
+		  
         return tmp;
     end initMemory;
 
