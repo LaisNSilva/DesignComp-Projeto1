@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Aula5
-Thu Sep 09 15:44:28 2021
+Mon Sep 13 10:24:36 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -26,15 +26,16 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  18. Parameter Settings for User Entity Instance: ULASomaSub:ULA1
  19. Parameter Settings for User Entity Instance: memoriaROM:MEMORIA_INTRUCAO
  20. Parameter Settings for User Entity Instance: memoriaRAM:MEMORIA_DADOS
- 21. Parameter Settings for User Entity Instance: muxGenerico2x1_PC:MUX2
- 22. Port Connectivity Checks: "muxGenerico2x1_PC:MUX2"
- 23. Port Connectivity Checks: "ULASomaSub:ULA1"
- 24. Port Connectivity Checks: "registradorGenerico:REG1"
- 25. Port Connectivity Checks: "registradorGenerico_PC:REG_END_RET"
- 26. Port Connectivity Checks: "registradorGenerico_PC:PC"
- 27. Post-Synthesis Netlist Statistics for Top Partition
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
+ 21. Parameter Settings for User Entity Instance: FlipFlop:FLAG
+ 22. Parameter Settings for User Entity Instance: muxGenerico2x1_PC:MUX2
+ 23. Port Connectivity Checks: "muxGenerico2x1_PC:MUX2"
+ 24. Port Connectivity Checks: "FlipFlop:FLAG"
+ 25. Port Connectivity Checks: "registradorGenerico:REG1"
+ 26. Port Connectivity Checks: "registradorGenerico_PC:REG_END_RET"
+ 27. Port Connectivity Checks: "registradorGenerico_PC:PC"
+ 28. Post-Synthesis Netlist Statistics for Top Partition
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
 
 
 
@@ -61,13 +62,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Sep 09 15:44:28 2021       ;
+; Analysis & Synthesis Status     ; Successful - Mon Sep 13 10:24:36 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Aula5                                       ;
 ; Top-level Entity Name           ; Aula5                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 152                                         ;
+; Total registers                 ; 153                                         ;
 ; Total pins                      ; 30                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -174,15 +175,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -191,18 +192,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                           ; Library ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
-; Aula5.vhd                        ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd                  ;         ;
-; DecodInstrucao.vhd               ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/DecodInstrucao.vhd         ;         ;
-; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd             ;         ;
-; memoriaROM.vhd                   ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaROM.vhd             ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1.vhd         ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico.vhd    ;         ;
-; registradorGenerico_PC.vhd       ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico_PC.vhd ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/somaConstante.vhd          ;         ;
-; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/ULASomaSub.vhd             ;         ;
-; muxGenerico2x1_PC.vhd            ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1_PC.vhd      ;         ;
-; FlipFlop.vhd                     ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/FlipFlop.vhd               ;         ;
-; LogicaDesvio.vhd                 ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/LogicaDesvio.vhd           ;         ;
+; Aula5.vhd                        ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd                  ;         ;
+; DecodInstrucao.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/DecodInstrucao.vhd         ;         ;
+; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd             ;         ;
+; memoriaROM.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaROM.vhd             ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1.vhd         ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico.vhd    ;         ;
+; registradorGenerico_PC.vhd       ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico_PC.vhd ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/somaConstante.vhd          ;         ;
+; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/ULASomaSub.vhd             ;         ;
+; muxGenerico2x1_PC.vhd            ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1_PC.vhd      ;         ;
+; FlipFlop.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/FlipFlop.vhd               ;         ;
+; LogicaDesvio.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/LogicaDesvio.vhd           ;         ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
 
 
@@ -211,25 +212,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 143          ;
+; Estimate of Logic utilization (ALMs needed) ; 122          ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 174          ;
-;     -- 7 input functions                    ; 32           ;
-;     -- 6 input functions                    ; 24           ;
-;     -- 5 input functions                    ; 35           ;
-;     -- 4 input functions                    ; 18           ;
-;     -- <=3 input functions                  ; 65           ;
+; Combinational ALUT usage for logic          ; 132          ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 41           ;
+;     -- 5 input functions                    ; 41           ;
+;     -- 4 input functions                    ; 25           ;
+;     -- <=3 input functions                  ; 25           ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 152          ;
+; Dedicated logic registers                   ; 153          ;
 ;                                             ;              ;
 ; I/O pins                                    ; 30           ;
 ;                                             ;              ;
 ; Total DSP Blocks                            ; 0            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 152          ;
-; Total fan-out                               ; 1280         ;
-; Average fan-out                             ; 3.32         ;
+; Maximum fan-out                             ; 153          ;
+; Total fan-out                               ; 1119         ;
+; Average fan-out                             ; 3.24         ;
 +---------------------------------------------+--------------+
 
 
@@ -238,12 +239,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Entity Name            ; Library Name ;
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------+------------------------+--------------+
-; |Aula5                                      ; 174 (0)             ; 152 (0)                   ; 0                 ; 0          ; 30   ; 0            ; |Aula5                                        ; Aula5                  ; work         ;
-;    |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao         ; work         ;
-;    |ULASomaSub:ULA1|                        ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|ULASomaSub:ULA1                        ; ULASomaSub             ; work         ;
-;    |memoriaRAM:MEMORIA_DADOS|               ; 98 (98)             ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |Aula5|memoriaRAM:MEMORIA_DADOS               ; memoriaRAM             ; work         ;
-;    |memoriaROM:MEMORIA_INTRUCAO|            ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|memoriaROM:MEMORIA_INTRUCAO            ; memoriaROM             ; work         ;
-;    |muxGenerico2x1:MUX1|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|muxGenerico2x1:MUX1                    ; muxGenerico2x1         ; work         ;
+; |Aula5                                      ; 132 (0)             ; 153 (0)                   ; 0                 ; 0          ; 30   ; 0            ; |Aula5                                        ; Aula5                  ; work         ;
+;    |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao         ; work         ;
+;    |FlipFlop:FLAG|                          ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|FlipFlop:FLAG                          ; FlipFlop               ; work         ;
+;    |LogicaDesvio:LOGICA_DE_DESVIO|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|LogicaDesvio:LOGICA_DE_DESVIO          ; LogicaDesvio           ; work         ;
+;    |ULASomaSub:ULA1|                        ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|ULASomaSub:ULA1                        ; ULASomaSub             ; work         ;
+;    |memoriaRAM:MEMORIA_DADOS|               ; 66 (66)             ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |Aula5|memoriaRAM:MEMORIA_DADOS               ; memoriaRAM             ; work         ;
+;    |memoriaROM:MEMORIA_INTRUCAO|            ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|memoriaROM:MEMORIA_INTRUCAO            ; memoriaROM             ; work         ;
 ;    |muxGenerico2x1_PC:MUX2|                 ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|muxGenerico2x1_PC:MUX2                 ; muxGenerico2x1_PC      ; work         ;
 ;    |registradorGenerico:REG1|               ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|registradorGenerico:REG1               ; registradorGenerico    ; work         ;
 ;    |registradorGenerico_PC:PC|              ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula5|registradorGenerico_PC:PC              ; registradorGenerico_PC ; work         ;
@@ -253,143 +255,15 @@ https://fpgasoftware.intel.com/eula.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                       ;
-+--------------------------------------------+---------------------------------------------+
-; Register name                              ; Reason for Removal                          ;
-+--------------------------------------------+---------------------------------------------+
-; registradorGenerico_PC:PC|DOUT[8]          ; Lost fanout                                 ;
-; registradorGenerico_PC:REG_END_RET|DOUT[8] ; Lost fanout                                 ;
-; memoriaRAM:MEMORIA_DADOS|ram~185           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~201           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~177           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~193           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~249           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~265           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~241           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~257           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~186           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~202           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~178           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~194           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~250           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~266           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~242           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~258           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~187           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~203           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~179           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~195           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~251           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~267           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~243           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~259           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~188           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~204           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~180           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~196           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~252           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~268           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~244           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~260           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~189           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~205           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~181           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~197           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~253           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~269           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~245           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~261           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~190           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~206           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~182           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~198           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~254           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~270           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~246           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~262           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~191           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~207           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~183           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~199           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~255           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~271           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~247           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~263           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~192           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~208           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~184           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~200           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~256           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~272           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~248           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~264           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~153           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~169           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~145           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~161           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~217           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~233           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~209           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~225           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~154           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~170           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~146           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~162           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~218           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~234           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~210           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~226           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~155           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~171           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~147           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~163           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~219           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~235           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~211           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~227           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~156           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~172           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~148           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~164           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~220           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~236           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~212           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~228           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~157           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~173           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~149           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~165           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~221           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~237           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~213           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~229           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~158           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~174           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~150           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~166           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~222           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~238           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~214           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~230           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~159           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~175           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~151           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~167           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~223           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~239           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~215           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~231           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~160           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~176           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~152           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~168           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~224           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~240           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~216           ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:MEMORIA_DADOS|ram~232           ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 130    ;                                             ;
-+--------------------------------------------+---------------------------------------------+
++-----------------------------------------------------------------+
+; Registers Removed During Synthesis                              ;
++--------------------------------------------+--------------------+
+; Register name                              ; Reason for Removal ;
++--------------------------------------------+--------------------+
+; registradorGenerico_PC:PC|DOUT[8]          ; Lost fanout        ;
+; registradorGenerico_PC:REG_END_RET|DOUT[8] ; Lost fanout        ;
+; Total Number of Removed Registers = 2      ;                    ;
++--------------------------------------------+--------------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -406,7 +280,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 152   ;
+; Total registers                              ; 153   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -421,9 +295,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |Aula5|registradorGenerico:REG1|DOUT[1]  ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Aula5|registradorGenerico_PC:PC|DOUT[5] ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |Aula5|registradorGenerico_PC:PC|DOUT[0] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Aula5|registradorGenerico:REG1|DOUT[0]  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Aula5|registradorGenerico_PC:PC|DOUT[4] ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Aula5|registradorGenerico_PC:PC|DOUT[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 
 
@@ -525,6 +399,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FlipFlop:FLAG ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; larguradados   ; 8     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: muxGenerico2x1_PC:MUX2 ;
 +----------------+-------+--------------------------------------------+
@@ -544,13 +428,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+-------+----------+------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ULASomaSub:ULA1"                                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; flag_0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------+
+; Port Connectivity Checks: "FlipFlop:FLAG" ;
++------+-------+----------+-----------------+
+; Port ; Type  ; Severity ; Details         ;
++------+-------+----------+-----------------+
+; rst  ; Input ; Info     ; Stuck at GND    ;
++------+-------+----------+-----------------+
 
 
 +------------------------------------------------------+
@@ -586,30 +470,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 152                         ;
-;     ENA               ; 144                         ;
-;     plain             ; 8                           ;
+; arriav_ff             ; 153                         ;
+;     ENA               ; 136                         ;
+;     ENA SLD           ; 8                           ;
+;     plain             ; 9                           ;
 ; arriav_io_obuf        ; 8                           ;
-; arriav_lcell_comb     ; 175                         ;
-;     arith             ; 25                          ;
+; arriav_lcell_comb     ; 136                         ;
+;     arith             ; 17                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 8                           ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 2                           ;
-;         5 data inputs ; 8                           ;
-;     extend            ; 32                          ;
-;         7 data inputs ; 32                          ;
-;     normal            ; 118                         ;
+;         3 data inputs ; 4                           ;
+;         5 data inputs ; 4                           ;
+;     normal            ; 119                         ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 41                          ;
-;         3 data inputs ; 9                           ;
-;         4 data inputs ; 16                          ;
-;         5 data inputs ; 27                          ;
-;         6 data inputs ; 24                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 12                          ;
+;         4 data inputs ; 25                          ;
+;         5 data inputs ; 37                          ;
+;         6 data inputs ; 41                          ;
 ; boundary_port         ; 30                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.20                       ;
-; Average LUT depth     ; 7.04                        ;
+; Max LUT depth         ; 8.30                        ;
+; Average LUT depth     ; 5.46                        ;
 +-----------------------+-----------------------------+
 
 
@@ -618,7 +500,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -628,97 +510,98 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Sep 09 15:44:15 2021
+    Info: Processing started: Mon Sep 13 10:24:30 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula5 -c Aula5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file aula5.vhd
-    Info (12022): Found design unit 1: Aula5-arquitetura File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 25
-    Info (12023): Found entity 1: Aula5 File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 4
+    Info (12022): Found design unit 1: Aula5-arquitetura File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 25
+    Info (12023): Found entity 1: Aula5 File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decodinstrucao.vhd
-    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/DecodInstrucao.vhd Line: 10
-    Info (12023): Found entity 1: DecodInstrucao File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/DecodInstrucao.vhd Line: 4
+    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/DecodInstrucao.vhd Line: 10
+    Info (12023): Found entity 1: DecodInstrucao File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/DecodInstrucao.vhd Line: 4
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 21
-    Info (12023): Found entity 1: memoriaRAM File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoriarom.vhd
-    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaROM.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROM File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaROM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaROM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_pc.vhd
-    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico_PC.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico_PC File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico_PC.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico_PC.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico_PC File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/ULASomaSub.vhd Line: 17
-    Info (12023): Found entity 1: ULASomaSub File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/ULASomaSub.vhd Line: 7
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/ULASomaSub.vhd Line: 17
+    Info (12023): Found entity 1: ULASomaSub File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/ULASomaSub.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_pc.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1_PC.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1_PC.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1_PC.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/muxGenerico2x1_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file flipflop.vhd
-    Info (12022): Found design unit 1: FlipFlop-arch File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/FlipFlop.vhd Line: 13
-    Info (12023): Found entity 1: FlipFlop File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/FlipFlop.vhd Line: 4
+    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/FlipFlop.vhd Line: 16
+    Info (12023): Found entity 1: FlipFlop File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/FlipFlop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file logicadesvio.vhd
-    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/LogicaDesvio.vhd Line: 15
-    Info (12023): Found entity 1: LogicaDesvio File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/LogicaDesvio.vhd Line: 4
+    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/LogicaDesvio.vhd Line: 15
+    Info (12023): Found entity 1: LogicaDesvio File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/LogicaDesvio.vhd Line: 4
 Info (12127): Elaborating entity "Aula5" for the top level hierarchy
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX1" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 68
-Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 74
-Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "registradorGenerico_PC:PC" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 79
-Warning (10492): VHDL Process Statement warning at registradorGenerico_PC.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico_PC.vhd Line: 23
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:SOMADOR" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 82
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG1" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 89
-Warning (10492): VHDL Process Statement warning at registradorGenerico.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico.vhd Line: 23
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "ULASomaSub:ULA1" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 94
-Warning (10541): VHDL Signal Declaration warning at ULASomaSub.vhd(13): used implicit default value for signal "flag_0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/ULASomaSub.vhd Line: 13
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:MEMORIA_INTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 98
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 101
-Info (12128): Elaborating entity "FlipFlop" for hierarchy "FlipFlop:FLAG" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 105
-Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "LogicaDesvio:LOGICA_DE_DESVIO" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 109
-Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "muxGenerico2x1_PC:MUX2" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 114
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX1" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 69
+Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 75
+Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 80
+Warning (10492): VHDL Process Statement warning at registradorGenerico_PC.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico_PC.vhd Line: 23
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:SOMADOR" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 83
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG1" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 90
+Warning (10492): VHDL Process Statement warning at registradorGenerico.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/registradorGenerico.vhd Line: 23
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "ULASomaSub:ULA1" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 95
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:MEMORIA_INTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 99
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 102
+Info (12128): Elaborating entity "FlipFlop" for hierarchy "FlipFlop:FLAG" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 106
+Warning (10492): VHDL Process Statement warning at FlipFlop.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/FlipFlop.vhd Line: 23
+Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "LogicaDesvio:LOGICA_DE_DESVIO" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 110
+Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "muxGenerico2x1_PC:MUX2" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 115
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "memoriaRAM:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 27
+    Info (276007): RAM logic "memoriaRAM:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 27
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[0]" to the node "muxGenerico2x1:MUX1|saida_MUX[0]" into an OR gate File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[1]" to the node "muxGenerico2x1:MUX1|saida_MUX[1]" into an OR gate File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[2]" to the node "muxGenerico2x1:MUX1|saida_MUX[2]" into an OR gate File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[3]" to the node "muxGenerico2x1:MUX1|saida_MUX[3]" into an OR gate File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[4]" to the node "muxGenerico2x1:MUX1|saida_MUX[4]" into an OR gate File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[5]" to the node "ULASomaSub:ULA1|Add1" into an OR gate File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[6]" to the node "ULASomaSub:ULA1|Add1" into an OR gate File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
-    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[7]" to the node "ULASomaSub:ULA1|Add1" into an OR gate File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[0]" to the node "muxGenerico2x1:MUX1|saida_MUX[0]" into an OR gate File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[1]" to the node "muxGenerico2x1:MUX1|saida_MUX[1]" into an OR gate File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[2]" to the node "muxGenerico2x1:MUX1|saida_MUX[2]" into an OR gate File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[3]" to the node "muxGenerico2x1:MUX1|saida_MUX[3]" into an OR gate File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[4]" to the node "muxGenerico2x1:MUX1|saida_MUX[4]" into an OR gate File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[5]" to the node "muxGenerico2x1:MUX1|saida_MUX[5]" into an OR gate File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[6]" to the node "muxGenerico2x1:MUX1|saida_MUX[6]" into an OR gate File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
+    Warning (13047): Converted the fan-out from the tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[7]" to the node "muxGenerico2x1:MUX1|saida_MUX[7]" into an OR gate File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/memoriaRAM.vhd Line: 17
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "BARRAMENTO_DADOS_ENDERECOS[5]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 18
-    Warning (13410): Pin "BARRAMENTO_DADOS_ENDERECOS[6]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 18
-    Warning (13410): Pin "BARRAMENTO_DADOS_ENDERECOS[7]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 18
+    Warning (13410): Pin "BARRAMENTO_DADOS_ENDERECOS[4]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 18
+    Warning (13410): Pin "BARRAMENTO_DADOS_ENDERECOS[5]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 18
+    Warning (13410): Pin "BARRAMENTO_DADOS_ENDERECOS[6]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 18
+    Warning (13410): Pin "BARRAMENTO_DADOS_ENDERECOS[7]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 15
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 15
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 15
-Info (21057): Implemented 340 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 14
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 15
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 15
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Aula5.vhd Line: 15
+Info (21057): Implemented 306 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 25 output pins
-    Info (21061): Implemented 310 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 4846 megabytes
-    Info: Processing ended: Thu Sep 09 15:44:28 2021
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:25
+    Info (21061): Implemented 276 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 4895 megabytes
+    Info: Processing ended: Mon Sep 13 10:24:36 2021
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:15
 
 

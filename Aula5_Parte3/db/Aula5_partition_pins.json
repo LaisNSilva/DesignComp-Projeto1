@@ -84,10 +84,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "BARRAMENTO_DADOS_ENDERECOS[4]",
-					"strict" : false
-				},
-				{
 					"name" : "BARRAMENTO_DADOS_ENDERECOS[8]",
 					"strict" : false
 				},

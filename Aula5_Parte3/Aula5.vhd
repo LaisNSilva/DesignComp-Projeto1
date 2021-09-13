@@ -47,8 +47,9 @@ architecture arquitetura of Aula5 is
   signal Saida_Somador : std_logic_vector (8 downto 0); 
   signal Mux_PC : std_logic_vector (8 downto 0); 
   signal Endereco_Imediato : std_logic_vector (8 downto 0);
-  signal Saida_Decod : STD_LOGIC_VECTOR(12 downto 0);
+  signal Saida_Decod : STD_LOGIC_VECTOR(11 downto 0);
   signal Saida_FlipFlop : std_logic;
+  signal Saida_ULA_Flag0 : std_logic;
   signal Saida_LogicaDesvio : std_logic_vector (1 downto 0);
   signal SaidaReg_MUX_C : std_logic_vector (8 downto 0);
 
@@ -83,7 +84,7 @@ SOMADOR  :  entity work.somaConstante  generic map (larguraDados => larguraDados
         port map( entrada => endereco_PC, saida => Saida_Somador);
 
 REG_END_RET : entity work.registradorGenerico_PC   generic map (larguraDados => larguraDados_PC)
-          port map (DIN => Saida_Somador, DOUT => SaidaReg_MUX_C, ENABLE => Saida_Decod(12), RST => '0', CLK => CLK);
+          port map (DIN => Saida_Somador, DOUT => SaidaReg_MUX_C, ENABLE => Saida_Decod(11), RST => '0', CLK => CLK);
 
 -- O port map completo do Acumulador.
 REG1 : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
@@ -92,7 +93,7 @@ REG1 : entity work.registradorGenerico   generic map (larguraDados => larguraDad
 
 -- O port map completo da ULA:
 ULA1 : entity work.ULASomaSub  generic map(larguraDados => larguraDados)
-          port map (entradaA => REG1_ULA_A, entradaB => MUX_ULA_B, seletor => Saida_Decod(4 downto 3), saida => Saida_ULA);
+          port map (entradaA => REG1_ULA_A, entradaB => MUX_ULA_B, seletor => Saida_Decod(4 downto 3), saida => Saida_ULA, flag_0 => Saida_ULA_Flag0);
 
 -- Falta acertar o conteudo da ROM (no arquivo memoriaROM.vhd)
 MEMORIA_INTRUCAO : entity work.memoriaROM   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM)
@@ -103,11 +104,11 @@ MEMORIA_DADOS : entity work.memoriaRAM   generic map (dataWidth => larguraDados,
 
 		
 FLAG : 	entity work.FlipFlop   
-         port map ( d => Saida_ULA(0), habilita => Saida_Decod(2), q => Saida_FlipFlop, clock => CLK);		
+         port map ( DIN => Saida_ULA_Flag0, DOUT => Saida_FlipFlop, ENABLE => Saida_Decod(2), RST => '0',  CLK => CLK);		
 
 			
 LOGICA_DE_DESVIO : entity work.LogicaDesvio   
-         port map ( SelMuxPC =>Saida_Decod(11 downto 10), JEQ =>Saida_Decod(7), Flag =>Saida_FlipFlop, RET =>Saida_Decod(9) , JSR =>Saida_Decod(8) , Saida => Saida_LogicaDesvio );		
+         port map ( JMP =>Saida_Decod(10), JEQ =>Saida_Decod(7), Flag =>Saida_FlipFlop, RET =>Saida_Decod(9) , JSR =>Saida_Decod(8) , Saida => Saida_LogicaDesvio );		
 
 		
 -- O port map completo do MUX.

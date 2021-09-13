@@ -24,15 +24,27 @@ architecture comportamento of ULASomaSub is
       soma      <= STD_LOGIC_VECTOR(unsigned(entradaA) + unsigned(entradaB));
       subtracao <= STD_LOGIC_VECTOR(unsigned(entradaA) - unsigned(entradaB));
 		passa <= entradaB;
+
 		
+--		CEQ <= "00000001" when (STD_LOGIC_VECTOR(unsigned(entradaA) - unsigned(entradaB)) = "00000000") else
+--		       "00000000";
+		
+      saida <= soma when (seletor = "01") else
+					subtracao when (seletor = "00") else
+					passa;
+					
+		flag_0 <= '1' when (subtracao = "00000000" and seletor = "00") else
+					 '0';
+
+---lais:		
 		--CEQ <= "00000001" when (STD_LOGIC_VECTOR(unsigned(entradaA) - unsigned(entradaB)) = "00000000") else
 		       --"00000000";
 				 
-		flag_0 <= '1'  when (STD_LOGIC_VECTOR(unsigned(entradaA) - unsigned(entradaB)) = "00000000") else
-		          '0';
-		
-      saida <= soma when (seletor = "01") else
-					passa when (seletor = "10") else
-					--CEQ when (seletor = "11") else
-				   subtracao;
+--		flag_0 <= '1'  when (STD_LOGIC_VECTOR(unsigned(entradaA) - unsigned(entradaB)) = "00000000") else
+--		          '0';
+--		
+--      saida <= soma when (seletor = "01") else
+--					passa when (seletor = "10") else
+--					--CEQ when (seletor = "11") else
+--				   subtracao;
 end architecture;
