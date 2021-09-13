@@ -15,7 +15,9 @@ entity Aula5 is
     KEY: in std_logic_vector(3 downto 0);
 	 BARRAMENTO_DADOS_SAIDA: out std_logic_vector(larguraDados-1 downto 0);
 	 BARRAMENTO_DADOS_ENTRADA: out std_logic_vector(larguraDados-1 downto 0);
-	 BARRAMENTO_DADOS_ENDERECOS: out std_logic_vector(8 downto 0)
+	 BARRAMENTO_DADOS_ENDERECOS: out std_logic_vector(8 downto 0);
+	 FLAG_IGUAL : out std_logic;
+	 SAIDA_PC: out std_logic_vector(larguraDados downto 0)
     --SW: in std_logic_vector(9 downto 0);
     --LEDR  : out std_logic_vector(9 downto 0)
   );
@@ -123,6 +125,8 @@ MUX2 :  entity work.muxGenerico2x1_PC  generic map (larguraDados => larguraDados
 BARRAMENTO_DADOS_SAIDA <= REG1_ULA_A;
 BARRAMENTO_DADOS_ENTRADA <= Saida_Dados;
 BARRAMENTO_DADOS_ENDERECOS <= Endereco_Imediato(8 downto 0);
+FLAG_IGUAL <= Saida_FlipFlop;
+SAIDA_PC <= endereco_PC;
 
 --selMUX <= Sinais_Controle(3);
 --Habilita_A <= Sinais_Controle(2);

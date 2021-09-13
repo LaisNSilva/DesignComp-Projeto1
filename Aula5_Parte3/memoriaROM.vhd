@@ -38,9 +38,9 @@ architecture assincrona of memoriaROM is
       --                 CTRL   Prox Estado
 		
 		
-		  tmp(0)  := JSR & '1' & x"0E";
+		  tmp(0)  := JSR & '0' & x"0E";
         tmp(1)  := JMP & '0' & x"05";
-        tmp(2)  := JEQ & '1' & x"09";
+        tmp(2)  := JEQ & '0' & x"09";
         tmp(3)  := NOP & '0' & x"00";
         tmp(4)  := NOP & '0' & x"00";
         tmp(5)  := LDI & '0' & x"05";
@@ -50,7 +50,7 @@ architecture assincrona of memoriaROM is
         tmp(9)  := NOP & '0' & x"00";
         tmp(10) := LDI & '0' & x"04";
         tmp(11) := CEQ & '1' & x"00"; ----- duvida se aqui eh 0 ou 1
-        tmp(12) := JEQ & '1' & x"03";
+        tmp(12) := JEQ & '0' & x"03";
         tmp(13) := JMP & '0' & x"0D";
         tmp(14) := NOP & '0' & x"00";
         tmp(15) := RET & '1' & x"00"; ----- duvida se aqui eh 0 ou 1

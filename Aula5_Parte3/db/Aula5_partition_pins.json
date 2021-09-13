@@ -88,6 +88,46 @@
 					"strict" : false
 				},
 				{
+					"name" : "FLAG_IGUAL",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA_PC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA_PC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA_PC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA_PC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA_PC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA_PC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA_PC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA_PC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA_PC[8]",
+					"strict" : false
+				},
+				{
 					"name" : "KEY[0]",
 					"strict" : false
 				}

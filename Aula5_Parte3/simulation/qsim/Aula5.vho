@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "09/13/2021 12:38:54"
+-- DATE "09/13/2021 18:20:25"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -42,7 +42,9 @@ ENTITY 	Aula5 IS
 	KEY : IN std_logic_vector(3 DOWNTO 0);
 	BARRAMENTO_DADOS_SAIDA : OUT std_logic_vector(7 DOWNTO 0);
 	BARRAMENTO_DADOS_ENTRADA : OUT std_logic_vector(7 DOWNTO 0);
-	BARRAMENTO_DADOS_ENDERECOS : OUT std_logic_vector(8 DOWNTO 0)
+	BARRAMENTO_DADOS_ENDERECOS : OUT std_logic_vector(8 DOWNTO 0);
+	FLAG_IGUAL : OUT std_logic;
+	SAIDA_PC : OUT std_logic_vector(8 DOWNTO 0)
 	);
 END Aula5;
 
@@ -61,6 +63,8 @@ SIGNAL ww_KEY : std_logic_vector(3 DOWNTO 0);
 SIGNAL ww_BARRAMENTO_DADOS_SAIDA : std_logic_vector(7 DOWNTO 0);
 SIGNAL ww_BARRAMENTO_DADOS_ENTRADA : std_logic_vector(7 DOWNTO 0);
 SIGNAL ww_BARRAMENTO_DADOS_ENDERECOS : std_logic_vector(8 DOWNTO 0);
+SIGNAL ww_FLAG_IGUAL : std_logic;
+SIGNAL ww_SAIDA_PC : std_logic_vector(8 DOWNTO 0);
 SIGNAL \CLOCK_50~input_o\ : std_logic;
 SIGNAL \KEY[1]~input_o\ : std_logic;
 SIGNAL \KEY[2]~input_o\ : std_logic;
@@ -90,6 +94,16 @@ SIGNAL \BARRAMENTO_DADOS_ENDERECOS[5]~output_o\ : std_logic;
 SIGNAL \BARRAMENTO_DADOS_ENDERECOS[6]~output_o\ : std_logic;
 SIGNAL \BARRAMENTO_DADOS_ENDERECOS[7]~output_o\ : std_logic;
 SIGNAL \BARRAMENTO_DADOS_ENDERECOS[8]~output_o\ : std_logic;
+SIGNAL \FLAG_IGUAL~output_o\ : std_logic;
+SIGNAL \SAIDA_PC[0]~output_o\ : std_logic;
+SIGNAL \SAIDA_PC[1]~output_o\ : std_logic;
+SIGNAL \SAIDA_PC[2]~output_o\ : std_logic;
+SIGNAL \SAIDA_PC[3]~output_o\ : std_logic;
+SIGNAL \SAIDA_PC[4]~output_o\ : std_logic;
+SIGNAL \SAIDA_PC[5]~output_o\ : std_logic;
+SIGNAL \SAIDA_PC[6]~output_o\ : std_logic;
+SIGNAL \SAIDA_PC[7]~output_o\ : std_logic;
+SIGNAL \SAIDA_PC[8]~output_o\ : std_logic;
 SIGNAL \KEY[0]~input_o\ : std_logic;
 SIGNAL \SOMADOR|Add0~5_sumout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~4_combout\ : std_logic;
@@ -366,9 +380,147 @@ SIGNAL \MEMORIA_DADOS|ram~137_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ram~148_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ram~149_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~20_combout\ : std_logic;
+SIGNAL \SOMADOR|Add0~2\ : std_logic;
+SIGNAL \SOMADOR|Add0~33_sumout\ : std_logic;
+SIGNAL \MUX2|saida_MUX[8]~9_combout\ : std_logic;
+SIGNAL \REG_END_RET|DOUT\ : std_logic_vector(8 DOWNTO 0);
 SIGNAL \REG1|DOUT\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \PC|DOUT\ : std_logic_vector(8 DOWNTO 0);
-SIGNAL \REG_END_RET|DOUT\ : std_logic_vector(8 DOWNTO 0);
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~67_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~59_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~51_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~155_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~43_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~35_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~27_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~19_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_dado_out[1]~9_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~154_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~153_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~138_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~106_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~74_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~42_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~152_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~130_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~98_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~66_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~34_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~151_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~122_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~90_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~58_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~26_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~150_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~114_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~82_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~50_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~18_q\ : std_logic;
+SIGNAL \ULA1|ALT_INV_Equal0~0_combout\ : std_logic;
+SIGNAL \DECODIFICADOR_INSTRUCAO|ALT_INV_Mux7~0_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_dado_out[0]~8_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~149_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~148_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~137_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~129_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~121_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~113_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~147_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~105_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~97_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~89_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~81_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~146_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~73_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~65_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~57_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~49_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~145_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~41_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~33_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~25_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~17_q\ : std_logic;
+SIGNAL \DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\ : std_logic;
+SIGNAL \LOGICA_DE_DESVIO|ALT_INV_Saida~0_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~11_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~9_combout\ : std_logic;
+SIGNAL \PC|ALT_INV_DOUT\ : std_logic_vector(8 DOWNTO 0);
+SIGNAL \FLAG|ALT_INV_DOUT~q\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~8_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~6_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~5_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~4_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~3_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~2_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~1_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~0_combout\ : std_logic;
+SIGNAL \SOMADOR|ALT_INV_Add0~33_sumout\ : std_logic;
+SIGNAL \SOMADOR|ALT_INV_Add0~29_sumout\ : std_logic;
+SIGNAL \SOMADOR|ALT_INV_Add0~25_sumout\ : std_logic;
+SIGNAL \SOMADOR|ALT_INV_Add0~21_sumout\ : std_logic;
+SIGNAL \SOMADOR|ALT_INV_Add0~17_sumout\ : std_logic;
+SIGNAL \SOMADOR|ALT_INV_Add0~13_sumout\ : std_logic;
+SIGNAL \SOMADOR|ALT_INV_Add0~9_sumout\ : std_logic;
+SIGNAL \SOMADOR|ALT_INV_Add0~5_sumout\ : std_logic;
+SIGNAL \SOMADOR|ALT_INV_Add0~1_sumout\ : std_logic;
+SIGNAL \ULA1|ALT_INV_Add1~29_sumout\ : std_logic;
+SIGNAL \ULA1|ALT_INV_Add1~25_sumout\ : std_logic;
+SIGNAL \ULA1|ALT_INV_Add1~21_sumout\ : std_logic;
+SIGNAL \ULA1|ALT_INV_Add1~17_sumout\ : std_logic;
+SIGNAL \ULA1|ALT_INV_Add1~13_sumout\ : std_logic;
+SIGNAL \ULA1|ALT_INV_Add1~9_sumout\ : std_logic;
+SIGNAL \ULA1|ALT_INV_Add1~5_sumout\ : std_logic;
+SIGNAL \ULA1|ALT_INV_Add1~1_sumout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~183_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~144_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~112_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~80_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~48_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~182_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~136_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~104_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~72_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~40_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~181_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~128_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~96_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~64_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~32_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~180_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~120_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~88_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~56_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~24_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_dado_out[6]~14_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~179_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~178_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~143_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~135_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~127_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~119_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~177_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~111_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~103_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~95_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~87_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~176_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~79_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~71_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~63_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~55_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~175_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~47_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~39_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~31_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~23_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_dado_out[5]~13_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~174_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~173_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~142_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~110_q\ : std_logic;
@@ -447,155 +599,22 @@ SIGNAL \MEMORIA_DADOS|ALT_INV_ram~91_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~83_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~156_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~75_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~67_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~59_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~51_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~155_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~43_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~35_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~27_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~19_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_dado_out[1]~9_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~154_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~153_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~138_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~106_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~74_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~42_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~152_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~130_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~98_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~66_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~34_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~151_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~122_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~90_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~58_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~26_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~150_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~114_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~82_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~50_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~18_q\ : std_logic;
-SIGNAL \ULA1|ALT_INV_Equal0~0_combout\ : std_logic;
-SIGNAL \DECODIFICADOR_INSTRUCAO|ALT_INV_Mux7~0_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_dado_out[0]~8_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~149_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~148_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~137_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~129_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~121_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~113_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~147_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~105_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~97_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~89_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~81_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~146_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~73_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~65_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~57_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~49_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~145_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~41_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~33_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~25_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~17_q\ : std_logic;
-SIGNAL \DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\ : std_logic;
-SIGNAL \LOGICA_DE_DESVIO|ALT_INV_Saida~0_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~11_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~9_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~8_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~6_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~5_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~4_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~3_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~2_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~1_combout\ : std_logic;
-SIGNAL \PC|ALT_INV_DOUT\ : std_logic_vector(7 DOWNTO 0);
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~0_combout\ : std_logic;
-SIGNAL \SOMADOR|ALT_INV_Add0~29_sumout\ : std_logic;
-SIGNAL \SOMADOR|ALT_INV_Add0~25_sumout\ : std_logic;
-SIGNAL \SOMADOR|ALT_INV_Add0~21_sumout\ : std_logic;
-SIGNAL \SOMADOR|ALT_INV_Add0~17_sumout\ : std_logic;
-SIGNAL \SOMADOR|ALT_INV_Add0~13_sumout\ : std_logic;
-SIGNAL \SOMADOR|ALT_INV_Add0~9_sumout\ : std_logic;
-SIGNAL \SOMADOR|ALT_INV_Add0~5_sumout\ : std_logic;
-SIGNAL \SOMADOR|ALT_INV_Add0~1_sumout\ : std_logic;
-SIGNAL \ULA1|ALT_INV_Add1~29_sumout\ : std_logic;
-SIGNAL \ULA1|ALT_INV_Add1~25_sumout\ : std_logic;
-SIGNAL \ULA1|ALT_INV_Add1~21_sumout\ : std_logic;
-SIGNAL \ULA1|ALT_INV_Add1~17_sumout\ : std_logic;
-SIGNAL \ULA1|ALT_INV_Add1~13_sumout\ : std_logic;
-SIGNAL \ULA1|ALT_INV_Add1~9_sumout\ : std_logic;
-SIGNAL \ULA1|ALT_INV_Add1~5_sumout\ : std_logic;
-SIGNAL \ULA1|ALT_INV_Add1~1_sumout\ : std_logic;
 SIGNAL \REG1|ALT_INV_DOUT\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~20_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_dado_out~16_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_process_0~0_combout\ : std_logic;
-SIGNAL \FLAG|ALT_INV_DOUT~2_combout\ : std_logic;
-SIGNAL \FLAG|ALT_INV_DOUT~1_combout\ : std_logic;
-SIGNAL \FLAG|ALT_INV_DOUT~0_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~18_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~17_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~16_combout\ : std_logic;
-SIGNAL \REG_END_RET|ALT_INV_DOUT\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \REG_END_RET|ALT_INV_DOUT\ : std_logic_vector(8 DOWNTO 0);
+SIGNAL \FLAG|ALT_INV_DOUT~2_combout\ : std_logic;
+SIGNAL \FLAG|ALT_INV_DOUT~1_combout\ : std_logic;
+SIGNAL \FLAG|ALT_INV_DOUT~0_combout\ : std_logic;
 SIGNAL \MUX2|ALT_INV_saida_MUX[7]~0_combout\ : std_logic;
-SIGNAL \FLAG|ALT_INV_DOUT~q\ : std_logic;
 SIGNAL \LOGICA_DE_DESVIO|ALT_INV_Saida~1_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_dado_out[7]~15_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~184_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~183_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~144_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~112_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~80_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~48_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~182_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~136_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~104_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~72_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~40_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~181_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~128_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~96_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~64_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~32_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~180_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~120_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~88_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~56_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~24_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_dado_out[6]~14_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~179_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~178_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~143_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~135_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~127_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~119_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~177_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~111_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~103_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~95_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~87_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~176_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~79_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~71_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~63_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~55_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~175_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~47_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~39_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~31_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~23_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_dado_out[5]~13_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~174_combout\ : std_logic;
 
 BEGIN
 
@@ -604,9 +623,154 @@ ww_KEY <= KEY;
 BARRAMENTO_DADOS_SAIDA <= ww_BARRAMENTO_DADOS_SAIDA;
 BARRAMENTO_DADOS_ENTRADA <= ww_BARRAMENTO_DADOS_ENTRADA;
 BARRAMENTO_DADOS_ENDERECOS <= ww_BARRAMENTO_DADOS_ENDERECOS;
+FLAG_IGUAL <= ww_FLAG_IGUAL;
+SAIDA_PC <= ww_SAIDA_PC;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\MEMORIA_DADOS|ALT_INV_ram~67_q\ <= NOT \MEMORIA_DADOS|ram~67_q\;
+\MEMORIA_DADOS|ALT_INV_ram~59_q\ <= NOT \MEMORIA_DADOS|ram~59_q\;
+\MEMORIA_DADOS|ALT_INV_ram~51_q\ <= NOT \MEMORIA_DADOS|ram~51_q\;
+\MEMORIA_DADOS|ALT_INV_ram~155_combout\ <= NOT \MEMORIA_DADOS|ram~155_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~43_q\ <= NOT \MEMORIA_DADOS|ram~43_q\;
+\MEMORIA_DADOS|ALT_INV_ram~35_q\ <= NOT \MEMORIA_DADOS|ram~35_q\;
+\MEMORIA_DADOS|ALT_INV_ram~27_q\ <= NOT \MEMORIA_DADOS|ram~27_q\;
+\MEMORIA_DADOS|ALT_INV_ram~19_q\ <= NOT \MEMORIA_DADOS|ram~19_q\;
+\MEMORIA_DADOS|ALT_INV_dado_out[1]~9_combout\ <= NOT \MEMORIA_DADOS|dado_out[1]~9_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~154_combout\ <= NOT \MEMORIA_DADOS|ram~154_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~153_combout\ <= NOT \MEMORIA_DADOS|ram~153_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~138_q\ <= NOT \MEMORIA_DADOS|ram~138_q\;
+\MEMORIA_DADOS|ALT_INV_ram~106_q\ <= NOT \MEMORIA_DADOS|ram~106_q\;
+\MEMORIA_DADOS|ALT_INV_ram~74_q\ <= NOT \MEMORIA_DADOS|ram~74_q\;
+\MEMORIA_DADOS|ALT_INV_ram~42_q\ <= NOT \MEMORIA_DADOS|ram~42_q\;
+\MEMORIA_DADOS|ALT_INV_ram~152_combout\ <= NOT \MEMORIA_DADOS|ram~152_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~130_q\ <= NOT \MEMORIA_DADOS|ram~130_q\;
+\MEMORIA_DADOS|ALT_INV_ram~98_q\ <= NOT \MEMORIA_DADOS|ram~98_q\;
+\MEMORIA_DADOS|ALT_INV_ram~66_q\ <= NOT \MEMORIA_DADOS|ram~66_q\;
+\MEMORIA_DADOS|ALT_INV_ram~34_q\ <= NOT \MEMORIA_DADOS|ram~34_q\;
+\MEMORIA_DADOS|ALT_INV_ram~151_combout\ <= NOT \MEMORIA_DADOS|ram~151_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~122_q\ <= NOT \MEMORIA_DADOS|ram~122_q\;
+\MEMORIA_DADOS|ALT_INV_ram~90_q\ <= NOT \MEMORIA_DADOS|ram~90_q\;
+\MEMORIA_DADOS|ALT_INV_ram~58_q\ <= NOT \MEMORIA_DADOS|ram~58_q\;
+\MEMORIA_DADOS|ALT_INV_ram~26_q\ <= NOT \MEMORIA_DADOS|ram~26_q\;
+\MEMORIA_DADOS|ALT_INV_ram~150_combout\ <= NOT \MEMORIA_DADOS|ram~150_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~114_q\ <= NOT \MEMORIA_DADOS|ram~114_q\;
+\MEMORIA_DADOS|ALT_INV_ram~82_q\ <= NOT \MEMORIA_DADOS|ram~82_q\;
+\MEMORIA_DADOS|ALT_INV_ram~50_q\ <= NOT \MEMORIA_DADOS|ram~50_q\;
+\MEMORIA_DADOS|ALT_INV_ram~18_q\ <= NOT \MEMORIA_DADOS|ram~18_q\;
+\ULA1|ALT_INV_Equal0~0_combout\ <= NOT \ULA1|Equal0~0_combout\;
+\DECODIFICADOR_INSTRUCAO|ALT_INV_Mux7~0_combout\ <= NOT \DECODIFICADOR_INSTRUCAO|Mux7~0_combout\;
+\MEMORIA_DADOS|ALT_INV_dado_out[0]~8_combout\ <= NOT \MEMORIA_DADOS|dado_out[0]~8_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~149_combout\ <= NOT \MEMORIA_DADOS|ram~149_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~148_combout\ <= NOT \MEMORIA_DADOS|ram~148_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~137_q\ <= NOT \MEMORIA_DADOS|ram~137_q\;
+\MEMORIA_DADOS|ALT_INV_ram~129_q\ <= NOT \MEMORIA_DADOS|ram~129_q\;
+\MEMORIA_DADOS|ALT_INV_ram~121_q\ <= NOT \MEMORIA_DADOS|ram~121_q\;
+\MEMORIA_DADOS|ALT_INV_ram~113_q\ <= NOT \MEMORIA_DADOS|ram~113_q\;
+\MEMORIA_DADOS|ALT_INV_ram~147_combout\ <= NOT \MEMORIA_DADOS|ram~147_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~105_q\ <= NOT \MEMORIA_DADOS|ram~105_q\;
+\MEMORIA_DADOS|ALT_INV_ram~97_q\ <= NOT \MEMORIA_DADOS|ram~97_q\;
+\MEMORIA_DADOS|ALT_INV_ram~89_q\ <= NOT \MEMORIA_DADOS|ram~89_q\;
+\MEMORIA_DADOS|ALT_INV_ram~81_q\ <= NOT \MEMORIA_DADOS|ram~81_q\;
+\MEMORIA_DADOS|ALT_INV_ram~146_combout\ <= NOT \MEMORIA_DADOS|ram~146_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~73_q\ <= NOT \MEMORIA_DADOS|ram~73_q\;
+\MEMORIA_DADOS|ALT_INV_ram~65_q\ <= NOT \MEMORIA_DADOS|ram~65_q\;
+\MEMORIA_DADOS|ALT_INV_ram~57_q\ <= NOT \MEMORIA_DADOS|ram~57_q\;
+\MEMORIA_DADOS|ALT_INV_ram~49_q\ <= NOT \MEMORIA_DADOS|ram~49_q\;
+\MEMORIA_DADOS|ALT_INV_ram~145_combout\ <= NOT \MEMORIA_DADOS|ram~145_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~41_q\ <= NOT \MEMORIA_DADOS|ram~41_q\;
+\MEMORIA_DADOS|ALT_INV_ram~33_q\ <= NOT \MEMORIA_DADOS|ram~33_q\;
+\MEMORIA_DADOS|ALT_INV_ram~25_q\ <= NOT \MEMORIA_DADOS|ram~25_q\;
+\MEMORIA_DADOS|ALT_INV_ram~17_q\ <= NOT \MEMORIA_DADOS|ram~17_q\;
+\DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\ <= NOT \DECODIFICADOR_INSTRUCAO|Mux5~0_combout\;
+\LOGICA_DE_DESVIO|ALT_INV_Saida~0_combout\ <= NOT \LOGICA_DE_DESVIO|Saida~0_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~15_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~14_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~13_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~12_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~11_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~11_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~10_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~9_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~9_combout\;
+\PC|ALT_INV_DOUT\(8) <= NOT \PC|DOUT\(8);
+\FLAG|ALT_INV_DOUT~q\ <= NOT \FLAG|DOUT~q\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~8_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~8_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~7_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~6_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~6_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~5_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~5_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~4_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~4_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~3_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~3_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~2_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~2_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~1_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~1_combout\;
+\PC|ALT_INV_DOUT\(4) <= NOT \PC|DOUT\(4);
+\PC|ALT_INV_DOUT\(5) <= NOT \PC|DOUT\(5);
+\PC|ALT_INV_DOUT\(6) <= NOT \PC|DOUT\(6);
+\MEMORIA_INTRUCAO|ALT_INV_memROM~0_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~0_combout\;
+\PC|ALT_INV_DOUT\(3) <= NOT \PC|DOUT\(3);
+\PC|ALT_INV_DOUT\(2) <= NOT \PC|DOUT\(2);
+\PC|ALT_INV_DOUT\(1) <= NOT \PC|DOUT\(1);
+\PC|ALT_INV_DOUT\(0) <= NOT \PC|DOUT\(0);
+\PC|ALT_INV_DOUT\(7) <= NOT \PC|DOUT\(7);
+\SOMADOR|ALT_INV_Add0~33_sumout\ <= NOT \SOMADOR|Add0~33_sumout\;
+\SOMADOR|ALT_INV_Add0~29_sumout\ <= NOT \SOMADOR|Add0~29_sumout\;
+\SOMADOR|ALT_INV_Add0~25_sumout\ <= NOT \SOMADOR|Add0~25_sumout\;
+\SOMADOR|ALT_INV_Add0~21_sumout\ <= NOT \SOMADOR|Add0~21_sumout\;
+\SOMADOR|ALT_INV_Add0~17_sumout\ <= NOT \SOMADOR|Add0~17_sumout\;
+\SOMADOR|ALT_INV_Add0~13_sumout\ <= NOT \SOMADOR|Add0~13_sumout\;
+\SOMADOR|ALT_INV_Add0~9_sumout\ <= NOT \SOMADOR|Add0~9_sumout\;
+\SOMADOR|ALT_INV_Add0~5_sumout\ <= NOT \SOMADOR|Add0~5_sumout\;
+\SOMADOR|ALT_INV_Add0~1_sumout\ <= NOT \SOMADOR|Add0~1_sumout\;
+\ULA1|ALT_INV_Add1~29_sumout\ <= NOT \ULA1|Add1~29_sumout\;
+\ULA1|ALT_INV_Add1~25_sumout\ <= NOT \ULA1|Add1~25_sumout\;
+\ULA1|ALT_INV_Add1~21_sumout\ <= NOT \ULA1|Add1~21_sumout\;
+\ULA1|ALT_INV_Add1~17_sumout\ <= NOT \ULA1|Add1~17_sumout\;
+\ULA1|ALT_INV_Add1~13_sumout\ <= NOT \ULA1|Add1~13_sumout\;
+\ULA1|ALT_INV_Add1~9_sumout\ <= NOT \ULA1|Add1~9_sumout\;
+\ULA1|ALT_INV_Add1~5_sumout\ <= NOT \ULA1|Add1~5_sumout\;
+\ULA1|ALT_INV_Add1~1_sumout\ <= NOT \ULA1|Add1~1_sumout\;
+\MEMORIA_DADOS|ALT_INV_ram~183_combout\ <= NOT \MEMORIA_DADOS|ram~183_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~144_q\ <= NOT \MEMORIA_DADOS|ram~144_q\;
+\MEMORIA_DADOS|ALT_INV_ram~112_q\ <= NOT \MEMORIA_DADOS|ram~112_q\;
+\MEMORIA_DADOS|ALT_INV_ram~80_q\ <= NOT \MEMORIA_DADOS|ram~80_q\;
+\MEMORIA_DADOS|ALT_INV_ram~48_q\ <= NOT \MEMORIA_DADOS|ram~48_q\;
+\MEMORIA_DADOS|ALT_INV_ram~182_combout\ <= NOT \MEMORIA_DADOS|ram~182_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~136_q\ <= NOT \MEMORIA_DADOS|ram~136_q\;
+\MEMORIA_DADOS|ALT_INV_ram~104_q\ <= NOT \MEMORIA_DADOS|ram~104_q\;
+\MEMORIA_DADOS|ALT_INV_ram~72_q\ <= NOT \MEMORIA_DADOS|ram~72_q\;
+\MEMORIA_DADOS|ALT_INV_ram~40_q\ <= NOT \MEMORIA_DADOS|ram~40_q\;
+\MEMORIA_DADOS|ALT_INV_ram~181_combout\ <= NOT \MEMORIA_DADOS|ram~181_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~128_q\ <= NOT \MEMORIA_DADOS|ram~128_q\;
+\MEMORIA_DADOS|ALT_INV_ram~96_q\ <= NOT \MEMORIA_DADOS|ram~96_q\;
+\MEMORIA_DADOS|ALT_INV_ram~64_q\ <= NOT \MEMORIA_DADOS|ram~64_q\;
+\MEMORIA_DADOS|ALT_INV_ram~32_q\ <= NOT \MEMORIA_DADOS|ram~32_q\;
+\MEMORIA_DADOS|ALT_INV_ram~180_combout\ <= NOT \MEMORIA_DADOS|ram~180_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~120_q\ <= NOT \MEMORIA_DADOS|ram~120_q\;
+\MEMORIA_DADOS|ALT_INV_ram~88_q\ <= NOT \MEMORIA_DADOS|ram~88_q\;
+\MEMORIA_DADOS|ALT_INV_ram~56_q\ <= NOT \MEMORIA_DADOS|ram~56_q\;
+\MEMORIA_DADOS|ALT_INV_ram~24_q\ <= NOT \MEMORIA_DADOS|ram~24_q\;
+\MEMORIA_DADOS|ALT_INV_dado_out[6]~14_combout\ <= NOT \MEMORIA_DADOS|dado_out[6]~14_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~179_combout\ <= NOT \MEMORIA_DADOS|ram~179_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~178_combout\ <= NOT \MEMORIA_DADOS|ram~178_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~143_q\ <= NOT \MEMORIA_DADOS|ram~143_q\;
+\MEMORIA_DADOS|ALT_INV_ram~135_q\ <= NOT \MEMORIA_DADOS|ram~135_q\;
+\MEMORIA_DADOS|ALT_INV_ram~127_q\ <= NOT \MEMORIA_DADOS|ram~127_q\;
+\MEMORIA_DADOS|ALT_INV_ram~119_q\ <= NOT \MEMORIA_DADOS|ram~119_q\;
+\MEMORIA_DADOS|ALT_INV_ram~177_combout\ <= NOT \MEMORIA_DADOS|ram~177_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~111_q\ <= NOT \MEMORIA_DADOS|ram~111_q\;
+\MEMORIA_DADOS|ALT_INV_ram~103_q\ <= NOT \MEMORIA_DADOS|ram~103_q\;
+\MEMORIA_DADOS|ALT_INV_ram~95_q\ <= NOT \MEMORIA_DADOS|ram~95_q\;
+\MEMORIA_DADOS|ALT_INV_ram~87_q\ <= NOT \MEMORIA_DADOS|ram~87_q\;
+\MEMORIA_DADOS|ALT_INV_ram~176_combout\ <= NOT \MEMORIA_DADOS|ram~176_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~79_q\ <= NOT \MEMORIA_DADOS|ram~79_q\;
+\MEMORIA_DADOS|ALT_INV_ram~71_q\ <= NOT \MEMORIA_DADOS|ram~71_q\;
+\MEMORIA_DADOS|ALT_INV_ram~63_q\ <= NOT \MEMORIA_DADOS|ram~63_q\;
+\MEMORIA_DADOS|ALT_INV_ram~55_q\ <= NOT \MEMORIA_DADOS|ram~55_q\;
+\MEMORIA_DADOS|ALT_INV_ram~175_combout\ <= NOT \MEMORIA_DADOS|ram~175_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~47_q\ <= NOT \MEMORIA_DADOS|ram~47_q\;
+\MEMORIA_DADOS|ALT_INV_ram~39_q\ <= NOT \MEMORIA_DADOS|ram~39_q\;
+\MEMORIA_DADOS|ALT_INV_ram~31_q\ <= NOT \MEMORIA_DADOS|ram~31_q\;
+\MEMORIA_DADOS|ALT_INV_ram~23_q\ <= NOT \MEMORIA_DADOS|ram~23_q\;
+\MEMORIA_DADOS|ALT_INV_dado_out[5]~13_combout\ <= NOT \MEMORIA_DADOS|dado_out[5]~13_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~174_combout\ <= NOT \MEMORIA_DADOS|ram~174_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~173_combout\ <= NOT \MEMORIA_DADOS|ram~173_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~142_q\ <= NOT \MEMORIA_DADOS|ram~142_q\;
 \MEMORIA_DADOS|ALT_INV_ram~110_q\ <= NOT \MEMORIA_DADOS|ram~110_q\;
@@ -685,102 +849,6 @@ ww_devpor <= devpor;
 \MEMORIA_DADOS|ALT_INV_ram~83_q\ <= NOT \MEMORIA_DADOS|ram~83_q\;
 \MEMORIA_DADOS|ALT_INV_ram~156_combout\ <= NOT \MEMORIA_DADOS|ram~156_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~75_q\ <= NOT \MEMORIA_DADOS|ram~75_q\;
-\MEMORIA_DADOS|ALT_INV_ram~67_q\ <= NOT \MEMORIA_DADOS|ram~67_q\;
-\MEMORIA_DADOS|ALT_INV_ram~59_q\ <= NOT \MEMORIA_DADOS|ram~59_q\;
-\MEMORIA_DADOS|ALT_INV_ram~51_q\ <= NOT \MEMORIA_DADOS|ram~51_q\;
-\MEMORIA_DADOS|ALT_INV_ram~155_combout\ <= NOT \MEMORIA_DADOS|ram~155_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~43_q\ <= NOT \MEMORIA_DADOS|ram~43_q\;
-\MEMORIA_DADOS|ALT_INV_ram~35_q\ <= NOT \MEMORIA_DADOS|ram~35_q\;
-\MEMORIA_DADOS|ALT_INV_ram~27_q\ <= NOT \MEMORIA_DADOS|ram~27_q\;
-\MEMORIA_DADOS|ALT_INV_ram~19_q\ <= NOT \MEMORIA_DADOS|ram~19_q\;
-\MEMORIA_DADOS|ALT_INV_dado_out[1]~9_combout\ <= NOT \MEMORIA_DADOS|dado_out[1]~9_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~154_combout\ <= NOT \MEMORIA_DADOS|ram~154_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~153_combout\ <= NOT \MEMORIA_DADOS|ram~153_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~138_q\ <= NOT \MEMORIA_DADOS|ram~138_q\;
-\MEMORIA_DADOS|ALT_INV_ram~106_q\ <= NOT \MEMORIA_DADOS|ram~106_q\;
-\MEMORIA_DADOS|ALT_INV_ram~74_q\ <= NOT \MEMORIA_DADOS|ram~74_q\;
-\MEMORIA_DADOS|ALT_INV_ram~42_q\ <= NOT \MEMORIA_DADOS|ram~42_q\;
-\MEMORIA_DADOS|ALT_INV_ram~152_combout\ <= NOT \MEMORIA_DADOS|ram~152_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~130_q\ <= NOT \MEMORIA_DADOS|ram~130_q\;
-\MEMORIA_DADOS|ALT_INV_ram~98_q\ <= NOT \MEMORIA_DADOS|ram~98_q\;
-\MEMORIA_DADOS|ALT_INV_ram~66_q\ <= NOT \MEMORIA_DADOS|ram~66_q\;
-\MEMORIA_DADOS|ALT_INV_ram~34_q\ <= NOT \MEMORIA_DADOS|ram~34_q\;
-\MEMORIA_DADOS|ALT_INV_ram~151_combout\ <= NOT \MEMORIA_DADOS|ram~151_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~122_q\ <= NOT \MEMORIA_DADOS|ram~122_q\;
-\MEMORIA_DADOS|ALT_INV_ram~90_q\ <= NOT \MEMORIA_DADOS|ram~90_q\;
-\MEMORIA_DADOS|ALT_INV_ram~58_q\ <= NOT \MEMORIA_DADOS|ram~58_q\;
-\MEMORIA_DADOS|ALT_INV_ram~26_q\ <= NOT \MEMORIA_DADOS|ram~26_q\;
-\MEMORIA_DADOS|ALT_INV_ram~150_combout\ <= NOT \MEMORIA_DADOS|ram~150_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~114_q\ <= NOT \MEMORIA_DADOS|ram~114_q\;
-\MEMORIA_DADOS|ALT_INV_ram~82_q\ <= NOT \MEMORIA_DADOS|ram~82_q\;
-\MEMORIA_DADOS|ALT_INV_ram~50_q\ <= NOT \MEMORIA_DADOS|ram~50_q\;
-\MEMORIA_DADOS|ALT_INV_ram~18_q\ <= NOT \MEMORIA_DADOS|ram~18_q\;
-\ULA1|ALT_INV_Equal0~0_combout\ <= NOT \ULA1|Equal0~0_combout\;
-\DECODIFICADOR_INSTRUCAO|ALT_INV_Mux7~0_combout\ <= NOT \DECODIFICADOR_INSTRUCAO|Mux7~0_combout\;
-\MEMORIA_DADOS|ALT_INV_dado_out[0]~8_combout\ <= NOT \MEMORIA_DADOS|dado_out[0]~8_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~149_combout\ <= NOT \MEMORIA_DADOS|ram~149_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~148_combout\ <= NOT \MEMORIA_DADOS|ram~148_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~137_q\ <= NOT \MEMORIA_DADOS|ram~137_q\;
-\MEMORIA_DADOS|ALT_INV_ram~129_q\ <= NOT \MEMORIA_DADOS|ram~129_q\;
-\MEMORIA_DADOS|ALT_INV_ram~121_q\ <= NOT \MEMORIA_DADOS|ram~121_q\;
-\MEMORIA_DADOS|ALT_INV_ram~113_q\ <= NOT \MEMORIA_DADOS|ram~113_q\;
-\MEMORIA_DADOS|ALT_INV_ram~147_combout\ <= NOT \MEMORIA_DADOS|ram~147_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~105_q\ <= NOT \MEMORIA_DADOS|ram~105_q\;
-\MEMORIA_DADOS|ALT_INV_ram~97_q\ <= NOT \MEMORIA_DADOS|ram~97_q\;
-\MEMORIA_DADOS|ALT_INV_ram~89_q\ <= NOT \MEMORIA_DADOS|ram~89_q\;
-\MEMORIA_DADOS|ALT_INV_ram~81_q\ <= NOT \MEMORIA_DADOS|ram~81_q\;
-\MEMORIA_DADOS|ALT_INV_ram~146_combout\ <= NOT \MEMORIA_DADOS|ram~146_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~73_q\ <= NOT \MEMORIA_DADOS|ram~73_q\;
-\MEMORIA_DADOS|ALT_INV_ram~65_q\ <= NOT \MEMORIA_DADOS|ram~65_q\;
-\MEMORIA_DADOS|ALT_INV_ram~57_q\ <= NOT \MEMORIA_DADOS|ram~57_q\;
-\MEMORIA_DADOS|ALT_INV_ram~49_q\ <= NOT \MEMORIA_DADOS|ram~49_q\;
-\MEMORIA_DADOS|ALT_INV_ram~145_combout\ <= NOT \MEMORIA_DADOS|ram~145_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~41_q\ <= NOT \MEMORIA_DADOS|ram~41_q\;
-\MEMORIA_DADOS|ALT_INV_ram~33_q\ <= NOT \MEMORIA_DADOS|ram~33_q\;
-\MEMORIA_DADOS|ALT_INV_ram~25_q\ <= NOT \MEMORIA_DADOS|ram~25_q\;
-\MEMORIA_DADOS|ALT_INV_ram~17_q\ <= NOT \MEMORIA_DADOS|ram~17_q\;
-\DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\ <= NOT \DECODIFICADOR_INSTRUCAO|Mux5~0_combout\;
-\LOGICA_DE_DESVIO|ALT_INV_Saida~0_combout\ <= NOT \LOGICA_DE_DESVIO|Saida~0_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~15_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~14_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~13_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~12_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~11_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~11_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~10_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~9_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~9_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~8_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~8_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~7_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~6_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~6_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~5_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~5_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~4_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~4_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~3_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~3_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~2_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~2_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~1_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~1_combout\;
-\PC|ALT_INV_DOUT\(4) <= NOT \PC|DOUT\(4);
-\PC|ALT_INV_DOUT\(5) <= NOT \PC|DOUT\(5);
-\PC|ALT_INV_DOUT\(6) <= NOT \PC|DOUT\(6);
-\MEMORIA_INTRUCAO|ALT_INV_memROM~0_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~0_combout\;
-\PC|ALT_INV_DOUT\(3) <= NOT \PC|DOUT\(3);
-\PC|ALT_INV_DOUT\(2) <= NOT \PC|DOUT\(2);
-\PC|ALT_INV_DOUT\(1) <= NOT \PC|DOUT\(1);
-\PC|ALT_INV_DOUT\(0) <= NOT \PC|DOUT\(0);
-\PC|ALT_INV_DOUT\(7) <= NOT \PC|DOUT\(7);
-\SOMADOR|ALT_INV_Add0~29_sumout\ <= NOT \SOMADOR|Add0~29_sumout\;
-\SOMADOR|ALT_INV_Add0~25_sumout\ <= NOT \SOMADOR|Add0~25_sumout\;
-\SOMADOR|ALT_INV_Add0~21_sumout\ <= NOT \SOMADOR|Add0~21_sumout\;
-\SOMADOR|ALT_INV_Add0~17_sumout\ <= NOT \SOMADOR|Add0~17_sumout\;
-\SOMADOR|ALT_INV_Add0~13_sumout\ <= NOT \SOMADOR|Add0~13_sumout\;
-\SOMADOR|ALT_INV_Add0~9_sumout\ <= NOT \SOMADOR|Add0~9_sumout\;
-\SOMADOR|ALT_INV_Add0~5_sumout\ <= NOT \SOMADOR|Add0~5_sumout\;
-\SOMADOR|ALT_INV_Add0~1_sumout\ <= NOT \SOMADOR|Add0~1_sumout\;
-\ULA1|ALT_INV_Add1~29_sumout\ <= NOT \ULA1|Add1~29_sumout\;
-\ULA1|ALT_INV_Add1~25_sumout\ <= NOT \ULA1|Add1~25_sumout\;
-\ULA1|ALT_INV_Add1~21_sumout\ <= NOT \ULA1|Add1~21_sumout\;
-\ULA1|ALT_INV_Add1~17_sumout\ <= NOT \ULA1|Add1~17_sumout\;
-\ULA1|ALT_INV_Add1~13_sumout\ <= NOT \ULA1|Add1~13_sumout\;
-\ULA1|ALT_INV_Add1~9_sumout\ <= NOT \ULA1|Add1~9_sumout\;
-\ULA1|ALT_INV_Add1~5_sumout\ <= NOT \ULA1|Add1~5_sumout\;
-\ULA1|ALT_INV_Add1~1_sumout\ <= NOT \ULA1|Add1~1_sumout\;
 \REG1|ALT_INV_DOUT\(7) <= NOT \REG1|DOUT\(7);
 \REG1|ALT_INV_DOUT\(6) <= NOT \REG1|DOUT\(6);
 \REG1|ALT_INV_DOUT\(5) <= NOT \REG1|DOUT\(5);
@@ -789,15 +857,17 @@ ww_devpor <= devpor;
 \REG1|ALT_INV_DOUT\(2) <= NOT \REG1|DOUT\(2);
 \REG1|ALT_INV_DOUT\(1) <= NOT \REG1|DOUT\(1);
 \REG1|ALT_INV_DOUT\(0) <= NOT \REG1|DOUT\(0);
+\MEMORIA_INTRUCAO|ALT_INV_memROM~20_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~20_combout\;
 \MEMORIA_DADOS|ALT_INV_dado_out~16_combout\ <= NOT \MEMORIA_DADOS|dado_out~16_combout\;
 \MEMORIA_DADOS|ALT_INV_process_0~0_combout\ <= NOT \MEMORIA_DADOS|process_0~0_combout\;
-\FLAG|ALT_INV_DOUT~2_combout\ <= NOT \FLAG|DOUT~2_combout\;
-\FLAG|ALT_INV_DOUT~1_combout\ <= NOT \FLAG|DOUT~1_combout\;
-\FLAG|ALT_INV_DOUT~0_combout\ <= NOT \FLAG|DOUT~0_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~19_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~18_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~18_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~17_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~17_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~16_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~16_combout\;
+\REG_END_RET|ALT_INV_DOUT\(8) <= NOT \REG_END_RET|DOUT\(8);
+\FLAG|ALT_INV_DOUT~2_combout\ <= NOT \FLAG|DOUT~2_combout\;
+\FLAG|ALT_INV_DOUT~1_combout\ <= NOT \FLAG|DOUT~1_combout\;
+\FLAG|ALT_INV_DOUT~0_combout\ <= NOT \FLAG|DOUT~0_combout\;
 \REG_END_RET|ALT_INV_DOUT\(4) <= NOT \REG_END_RET|DOUT\(4);
 \REG_END_RET|ALT_INV_DOUT\(5) <= NOT \REG_END_RET|DOUT\(5);
 \REG_END_RET|ALT_INV_DOUT\(6) <= NOT \REG_END_RET|DOUT\(6);
@@ -806,55 +876,10 @@ ww_devpor <= devpor;
 \REG_END_RET|ALT_INV_DOUT\(1) <= NOT \REG_END_RET|DOUT\(1);
 \REG_END_RET|ALT_INV_DOUT\(0) <= NOT \REG_END_RET|DOUT\(0);
 \MUX2|ALT_INV_saida_MUX[7]~0_combout\ <= NOT \MUX2|saida_MUX[7]~0_combout\;
-\FLAG|ALT_INV_DOUT~q\ <= NOT \FLAG|DOUT~q\;
 \LOGICA_DE_DESVIO|ALT_INV_Saida~1_combout\ <= NOT \LOGICA_DE_DESVIO|Saida~1_combout\;
 \REG_END_RET|ALT_INV_DOUT\(7) <= NOT \REG_END_RET|DOUT\(7);
 \MEMORIA_DADOS|ALT_INV_dado_out[7]~15_combout\ <= NOT \MEMORIA_DADOS|dado_out[7]~15_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~184_combout\ <= NOT \MEMORIA_DADOS|ram~184_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~183_combout\ <= NOT \MEMORIA_DADOS|ram~183_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~144_q\ <= NOT \MEMORIA_DADOS|ram~144_q\;
-\MEMORIA_DADOS|ALT_INV_ram~112_q\ <= NOT \MEMORIA_DADOS|ram~112_q\;
-\MEMORIA_DADOS|ALT_INV_ram~80_q\ <= NOT \MEMORIA_DADOS|ram~80_q\;
-\MEMORIA_DADOS|ALT_INV_ram~48_q\ <= NOT \MEMORIA_DADOS|ram~48_q\;
-\MEMORIA_DADOS|ALT_INV_ram~182_combout\ <= NOT \MEMORIA_DADOS|ram~182_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~136_q\ <= NOT \MEMORIA_DADOS|ram~136_q\;
-\MEMORIA_DADOS|ALT_INV_ram~104_q\ <= NOT \MEMORIA_DADOS|ram~104_q\;
-\MEMORIA_DADOS|ALT_INV_ram~72_q\ <= NOT \MEMORIA_DADOS|ram~72_q\;
-\MEMORIA_DADOS|ALT_INV_ram~40_q\ <= NOT \MEMORIA_DADOS|ram~40_q\;
-\MEMORIA_DADOS|ALT_INV_ram~181_combout\ <= NOT \MEMORIA_DADOS|ram~181_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~128_q\ <= NOT \MEMORIA_DADOS|ram~128_q\;
-\MEMORIA_DADOS|ALT_INV_ram~96_q\ <= NOT \MEMORIA_DADOS|ram~96_q\;
-\MEMORIA_DADOS|ALT_INV_ram~64_q\ <= NOT \MEMORIA_DADOS|ram~64_q\;
-\MEMORIA_DADOS|ALT_INV_ram~32_q\ <= NOT \MEMORIA_DADOS|ram~32_q\;
-\MEMORIA_DADOS|ALT_INV_ram~180_combout\ <= NOT \MEMORIA_DADOS|ram~180_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~120_q\ <= NOT \MEMORIA_DADOS|ram~120_q\;
-\MEMORIA_DADOS|ALT_INV_ram~88_q\ <= NOT \MEMORIA_DADOS|ram~88_q\;
-\MEMORIA_DADOS|ALT_INV_ram~56_q\ <= NOT \MEMORIA_DADOS|ram~56_q\;
-\MEMORIA_DADOS|ALT_INV_ram~24_q\ <= NOT \MEMORIA_DADOS|ram~24_q\;
-\MEMORIA_DADOS|ALT_INV_dado_out[6]~14_combout\ <= NOT \MEMORIA_DADOS|dado_out[6]~14_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~179_combout\ <= NOT \MEMORIA_DADOS|ram~179_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~178_combout\ <= NOT \MEMORIA_DADOS|ram~178_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~143_q\ <= NOT \MEMORIA_DADOS|ram~143_q\;
-\MEMORIA_DADOS|ALT_INV_ram~135_q\ <= NOT \MEMORIA_DADOS|ram~135_q\;
-\MEMORIA_DADOS|ALT_INV_ram~127_q\ <= NOT \MEMORIA_DADOS|ram~127_q\;
-\MEMORIA_DADOS|ALT_INV_ram~119_q\ <= NOT \MEMORIA_DADOS|ram~119_q\;
-\MEMORIA_DADOS|ALT_INV_ram~177_combout\ <= NOT \MEMORIA_DADOS|ram~177_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~111_q\ <= NOT \MEMORIA_DADOS|ram~111_q\;
-\MEMORIA_DADOS|ALT_INV_ram~103_q\ <= NOT \MEMORIA_DADOS|ram~103_q\;
-\MEMORIA_DADOS|ALT_INV_ram~95_q\ <= NOT \MEMORIA_DADOS|ram~95_q\;
-\MEMORIA_DADOS|ALT_INV_ram~87_q\ <= NOT \MEMORIA_DADOS|ram~87_q\;
-\MEMORIA_DADOS|ALT_INV_ram~176_combout\ <= NOT \MEMORIA_DADOS|ram~176_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~79_q\ <= NOT \MEMORIA_DADOS|ram~79_q\;
-\MEMORIA_DADOS|ALT_INV_ram~71_q\ <= NOT \MEMORIA_DADOS|ram~71_q\;
-\MEMORIA_DADOS|ALT_INV_ram~63_q\ <= NOT \MEMORIA_DADOS|ram~63_q\;
-\MEMORIA_DADOS|ALT_INV_ram~55_q\ <= NOT \MEMORIA_DADOS|ram~55_q\;
-\MEMORIA_DADOS|ALT_INV_ram~175_combout\ <= NOT \MEMORIA_DADOS|ram~175_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~47_q\ <= NOT \MEMORIA_DADOS|ram~47_q\;
-\MEMORIA_DADOS|ALT_INV_ram~39_q\ <= NOT \MEMORIA_DADOS|ram~39_q\;
-\MEMORIA_DADOS|ALT_INV_ram~31_q\ <= NOT \MEMORIA_DADOS|ram~31_q\;
-\MEMORIA_DADOS|ALT_INV_ram~23_q\ <= NOT \MEMORIA_DADOS|ram~23_q\;
-\MEMORIA_DADOS|ALT_INV_dado_out[5]~13_combout\ <= NOT \MEMORIA_DADOS|dado_out[5]~13_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~174_combout\ <= NOT \MEMORIA_DADOS|ram~174_combout\;
 
 \BARRAMENTO_DADOS_ENTRADA[0]~output\ : cyclonev_io_obuf
 -- pragma translate_off
@@ -1163,6 +1188,126 @@ PORT MAP (
 	i => \MEMORIA_INTRUCAO|memROM~20_combout\,
 	devoe => ww_devoe,
 	o => \BARRAMENTO_DADOS_ENDERECOS[8]~output_o\);
+
+\FLAG_IGUAL~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \FLAG|DOUT~q\,
+	devoe => ww_devoe,
+	o => \FLAG_IGUAL~output_o\);
+
+\SAIDA_PC[0]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(0),
+	devoe => ww_devoe,
+	o => \SAIDA_PC[0]~output_o\);
+
+\SAIDA_PC[1]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(1),
+	devoe => ww_devoe,
+	o => \SAIDA_PC[1]~output_o\);
+
+\SAIDA_PC[2]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(2),
+	devoe => ww_devoe,
+	o => \SAIDA_PC[2]~output_o\);
+
+\SAIDA_PC[3]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(3),
+	devoe => ww_devoe,
+	o => \SAIDA_PC[3]~output_o\);
+
+\SAIDA_PC[4]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(4),
+	devoe => ww_devoe,
+	o => \SAIDA_PC[4]~output_o\);
+
+\SAIDA_PC[5]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(5),
+	devoe => ww_devoe,
+	o => \SAIDA_PC[5]~output_o\);
+
+\SAIDA_PC[6]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(6),
+	devoe => ww_devoe,
+	o => \SAIDA_PC[6]~output_o\);
+
+\SAIDA_PC[7]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(7),
+	devoe => ww_devoe,
+	o => \SAIDA_PC[7]~output_o\);
+
+\SAIDA_PC[8]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(8),
+	devoe => ww_devoe,
+	o => \SAIDA_PC[8]~output_o\);
 
 \KEY[0]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
@@ -5047,20 +5192,21 @@ PORT MAP (
 
 \FLAG|DOUT~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \FLAG|DOUT~0_combout\ = ( \FLAG|DOUT~q\ & ( (((!\LOGICA_DE_DESVIO|Saida~0_combout\) # (\MEMORIA_INTRUCAO|memROM~14_combout\)) # (\MEMORIA_INTRUCAO|memROM~12_combout\)) # (\MEMORIA_INTRUCAO|memROM~10_combout\) ) )
+-- \FLAG|DOUT~0_combout\ = ( \LOGICA_DE_DESVIO|Saida~0_combout\ & ( (\FLAG|DOUT~q\ & (((\MEMORIA_INTRUCAO|memROM~14_combout\) # (\MEMORIA_INTRUCAO|memROM~12_combout\)) # (\MEMORIA_INTRUCAO|memROM~10_combout\))) ) ) # ( !\LOGICA_DE_DESVIO|Saida~0_combout\ & ( 
+-- \FLAG|DOUT~q\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111110111111100000000000000001111111101111111",
+	lut_mask => "0101010101010101000101010101010101010101010101010001010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\,
-	datad => \LOGICA_DE_DESVIO|ALT_INV_Saida~0_combout\,
-	datae => \FLAG|ALT_INV_DOUT~q\,
+	dataa => \FLAG|ALT_INV_DOUT~q\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\,
+	datae => \LOGICA_DE_DESVIO|ALT_INV_Saida~0_combout\,
 	combout => \FLAG|DOUT~0_combout\);
 
 \FLAG|DOUT~1\ : cyclonev_lcell_comb
@@ -5134,22 +5280,21 @@ PORT MAP (
 
 \MUX2|saida_MUX[7]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MUX2|saida_MUX[7]~0_combout\ = ( \FLAG|DOUT~q\ & ( (!\MEMORIA_INTRUCAO|memROM~12_combout\ & (\MEMORIA_INTRUCAO|memROM~10_combout\ & (!\MEMORIA_INTRUCAO|memROM~14_combout\ & \LOGICA_DE_DESVIO|Saida~0_combout\))) # (\MEMORIA_INTRUCAO|memROM~12_combout\ & 
--- (((\MEMORIA_INTRUCAO|memROM~14_combout\ & !\LOGICA_DE_DESVIO|Saida~0_combout\)))) ) ) # ( !\FLAG|DOUT~q\ & ( (!\MEMORIA_INTRUCAO|memROM~10_combout\ & (\MEMORIA_INTRUCAO|memROM~12_combout\ & (\MEMORIA_INTRUCAO|memROM~14_combout\ & 
--- !\LOGICA_DE_DESVIO|Saida~0_combout\))) # (\MEMORIA_INTRUCAO|memROM~10_combout\ & (!\MEMORIA_INTRUCAO|memROM~12_combout\ & (!\MEMORIA_INTRUCAO|memROM~14_combout\ & \LOGICA_DE_DESVIO|Saida~0_combout\))) ) )
+-- \MUX2|saida_MUX[7]~0_combout\ = ( \LOGICA_DE_DESVIO|Saida~0_combout\ & ( (\MEMORIA_INTRUCAO|memROM~10_combout\ & (!\MEMORIA_INTRUCAO|memROM~12_combout\ & !\MEMORIA_INTRUCAO|memROM~14_combout\)) ) ) # ( !\LOGICA_DE_DESVIO|Saida~0_combout\ & ( 
+-- (\MEMORIA_INTRUCAO|memROM~12_combout\ & (\MEMORIA_INTRUCAO|memROM~14_combout\ & ((!\MEMORIA_INTRUCAO|memROM~10_combout\) # (\FLAG|DOUT~q\)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000001001000000000000110100000000000010010000000000001101000000",
+	lut_mask => "0000000000001101001100000000000000000000000011010011000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\,
-	datad => \LOGICA_DE_DESVIO|ALT_INV_Saida~0_combout\,
-	datae => \FLAG|ALT_INV_DOUT~q\,
+	dataa => \FLAG|ALT_INV_DOUT~q\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\,
+	datae => \LOGICA_DE_DESVIO|ALT_INV_Saida~0_combout\,
 	combout => \MUX2|saida_MUX[7]~0_combout\);
 
 \SOMADOR|Add0~25\ : cyclonev_lcell_comb
@@ -5326,6 +5471,7 @@ PORT MAP (
 \SOMADOR|Add0~1\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \SOMADOR|Add0~1_sumout\ = SUM(( \PC|DOUT\(7) ) + ( GND ) + ( \SOMADOR|Add0~22\ ))
+-- \SOMADOR|Add0~2\ = CARRY(( \PC|DOUT\(7) ) + ( GND ) + ( \SOMADOR|Add0~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5336,7 +5482,8 @@ GENERIC MAP (
 PORT MAP (
 	datad => \PC|ALT_INV_DOUT\(7),
 	cin => \SOMADOR|Add0~22\,
-	sumout => \SOMADOR|Add0~1_sumout\);
+	sumout => \SOMADOR|Add0~1_sumout\,
+	cout => \SOMADOR|Add0~2\);
 
 \REG_END_RET|DOUT[7]\ : dffeas
 -- pragma translate_off
@@ -5767,12 +5914,12 @@ PORT MAP (
 
 \MEMORIA_INTRUCAO|memROM~20\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~20_combout\ = ( \MEMORIA_INTRUCAO|memROM~8_combout\ & ( (!\PC|DOUT\(0) & (!\PC|DOUT\(3) $ (((\PC|DOUT\(2) & !\PC|DOUT\(1)))))) # (\PC|DOUT\(0) & (\PC|DOUT\(1) & ((\PC|DOUT\(2)) # (\PC|DOUT\(3))))) ) )
+-- \MEMORIA_INTRUCAO|memROM~20_combout\ = ( \MEMORIA_INTRUCAO|memROM~8_combout\ & ( (\PC|DOUT\(1) & ((!\PC|DOUT\(3) & (\PC|DOUT\(2))) # (\PC|DOUT\(3) & ((\PC|DOUT\(0)))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000100110100000011100000000000000001001101000000111",
+	lut_mask => "0000000000000000000000100000011100000000000000000000001000000111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -5782,6 +5929,67 @@ PORT MAP (
 	datad => \PC|ALT_INV_DOUT\(0),
 	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~8_combout\,
 	combout => \MEMORIA_INTRUCAO|memROM~20_combout\);
+
+\SOMADOR|Add0~33\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~33_sumout\ = SUM(( \PC|DOUT\(8) ) + ( GND ) + ( \SOMADOR|Add0~2\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(8),
+	cin => \SOMADOR|Add0~2\,
+	sumout => \SOMADOR|Add0~33_sumout\);
+
+\REG_END_RET|DOUT[8]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \KEY[0]~input_o\,
+	d => \SOMADOR|Add0~33_sumout\,
+	ena => \DECODIFICADOR_INSTRUCAO|Mux0~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \REG_END_RET|DOUT\(8));
+
+\MUX2|saida_MUX[8]~9\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MUX2|saida_MUX[8]~9_combout\ = ( \SOMADOR|Add0~33_sumout\ & ( (!\LOGICA_DE_DESVIO|Saida~1_combout\ & (((!\MUX2|saida_MUX[7]~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~20_combout\))) # (\LOGICA_DE_DESVIO|Saida~1_combout\ & (((\REG_END_RET|DOUT\(8))))) ) ) # 
+-- ( !\SOMADOR|Add0~33_sumout\ & ( (!\LOGICA_DE_DESVIO|Saida~1_combout\ & (\MEMORIA_INTRUCAO|memROM~20_combout\ & (\MUX2|saida_MUX[7]~0_combout\))) # (\LOGICA_DE_DESVIO|Saida~1_combout\ & (((\REG_END_RET|DOUT\(8))))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000010000110111110001001111011100000100001101111100010011110111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~20_combout\,
+	datab => \LOGICA_DE_DESVIO|ALT_INV_Saida~1_combout\,
+	datac => \MUX2|ALT_INV_saida_MUX[7]~0_combout\,
+	datad => \REG_END_RET|ALT_INV_DOUT\(8),
+	datae => \SOMADOR|ALT_INV_Add0~33_sumout\,
+	combout => \MUX2|saida_MUX[8]~9_combout\);
+
+\PC|DOUT[8]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \KEY[0]~input_o\,
+	d => \MUX2|saida_MUX[8]~9_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(8));
 
 \CLOCK_50~input\ : cyclonev_io_ibuf
 -- pragma translate_off
@@ -5872,6 +6080,26 @@ ww_BARRAMENTO_DADOS_ENDERECOS(6) <= \BARRAMENTO_DADOS_ENDERECOS[6]~output_o\;
 ww_BARRAMENTO_DADOS_ENDERECOS(7) <= \BARRAMENTO_DADOS_ENDERECOS[7]~output_o\;
 
 ww_BARRAMENTO_DADOS_ENDERECOS(8) <= \BARRAMENTO_DADOS_ENDERECOS[8]~output_o\;
+
+ww_FLAG_IGUAL <= \FLAG_IGUAL~output_o\;
+
+ww_SAIDA_PC(0) <= \SAIDA_PC[0]~output_o\;
+
+ww_SAIDA_PC(1) <= \SAIDA_PC[1]~output_o\;
+
+ww_SAIDA_PC(2) <= \SAIDA_PC[2]~output_o\;
+
+ww_SAIDA_PC(3) <= \SAIDA_PC[3]~output_o\;
+
+ww_SAIDA_PC(4) <= \SAIDA_PC[4]~output_o\;
+
+ww_SAIDA_PC(5) <= \SAIDA_PC[5]~output_o\;
+
+ww_SAIDA_PC(6) <= \SAIDA_PC[6]~output_o\;
+
+ww_SAIDA_PC(7) <= \SAIDA_PC[7]~output_o\;
+
+ww_SAIDA_PC(8) <= \SAIDA_PC[8]~output_o\;
 END structure;
 
 

@@ -33,6 +33,16 @@ BARRAMENTO_DADOS_ENDERECOS[5] <= memoriarom:MEMORIA_INTRUCAO.Dado[5]
 BARRAMENTO_DADOS_ENDERECOS[6] <= memoriarom:MEMORIA_INTRUCAO.Dado[6]
 BARRAMENTO_DADOS_ENDERECOS[7] <= memoriarom:MEMORIA_INTRUCAO.Dado[7]
 BARRAMENTO_DADOS_ENDERECOS[8] <= memoriarom:MEMORIA_INTRUCAO.Dado[8]
+FLAG_IGUAL <= flipflop:FLAG.DOUT
+SAIDA_PC[0] <= registradorgenerico_pc:PC.DOUT[0]
+SAIDA_PC[1] <= registradorgenerico_pc:PC.DOUT[1]
+SAIDA_PC[2] <= registradorgenerico_pc:PC.DOUT[2]
+SAIDA_PC[3] <= registradorgenerico_pc:PC.DOUT[3]
+SAIDA_PC[4] <= registradorgenerico_pc:PC.DOUT[4]
+SAIDA_PC[5] <= registradorgenerico_pc:PC.DOUT[5]
+SAIDA_PC[6] <= registradorgenerico_pc:PC.DOUT[6]
+SAIDA_PC[7] <= registradorgenerico_pc:PC.DOUT[7]
+SAIDA_PC[8] <= registradorgenerico_pc:PC.DOUT[8]
 
 
 |Aula5|muxGenerico2x1:MUX1
