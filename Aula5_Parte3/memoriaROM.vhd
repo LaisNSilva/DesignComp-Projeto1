@@ -36,8 +36,8 @@ architecture assincrona of memoriaROM is
       -- CTRL = SelMUX, Habilita_A, Reset_A, Operacao_ULA
       -- Inicializa os endereços:
       --                 CTRL   Prox Estado
-	
-	
+		
+		
 		  tmp(0)  := JSR & '1' & x"0E";
         tmp(1)  := JMP & '0' & x"05";
         tmp(2)  := JEQ & '1' & x"09";
@@ -54,35 +54,10 @@ architecture assincrona of memoriaROM is
         tmp(13) := JMP & '0' & x"0D";
         tmp(14) := NOP & '0' & x"00";
         tmp(15) := RET & '1' & x"00"; ----- duvida se aqui eh 0 ou 1
---		  tmp(16) := LDI & '0' & x"02";
---		  tmp(17) := STA & '1' & x"02";
---		  tmp(18) := SOMA & '1' & x"02";
---		  tmp(19) := RET & '1' & x"00"; 
---		  tmp(20) := NOP & '0' & x"00";
-		 
-		 
---        tmp(0)  := NOP & '0' & x"00";
---        tmp(1)  := LDI & '0' & x"03";   -- Desta posicao para baixo, é necessário acertar o CTRL
---        tmp(2)  := STA & '1' & x"00";
---        tmp(3)  := SOMA & '1' & x"00";
---        tmp(4)  := SOMA & '1' & x"00";
---        tmp(5)  := STA & '1' & x"00";
---        tmp(6)  := LDI & '0' & x"04";
---        tmp(7)  := STA & '1' & x"0F";
---        tmp(8)  := LDA & '1' & x"00";
---        tmp(9)  := SUB & '1' & x"0F";
---        tmp(10) := STA & '1' & x"00";
---		  -- A partir daqui coloca os jumps
---        tmp(11) := JMP & '0' & x"0D";
---        tmp(12) := LDI & '0' & x"07";
---        tmp(13) := CEQ & '1' & x"00"; -- endereço que guardou o 5 e tem 5 no reg(então é =)
---        tmp(14) := JSR & '1' & x"10";
---        tmp(15) := JEQ & '1' & x"14";
---		  tmp(16) := LDI & '0' & x"02";
---		  tmp(17) := STA & '1' & x"02";
---		  tmp(18) := SOMA & '1' & x"02";
---		  tmp(19) := RET & '1' & x"00"; -- NÃO SEI O QUE COLOCAR NO ENDEREÇO
---		  tmp(20) := NOP & '0' & x"00";
+	
+	
+
+	 
 		  
         return tmp;
     end initMemory;
