@@ -1,0 +1,20 @@
+ibrary IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Decod3x8 is
+	port (
+			E1 : in  STD_LOGIC_VECTOR(2 downto 0);
+			E2 : in  STD_LOGIC_VECTOR(2 downto 0);
+			E0 : in  STD_LOGIC_VECTOR(2 downto 0);
+			
+			CodigoBinario : in  STD_LOGIC_VECTOR(3 downto 0);
+			Saida: out STD_LOGIC_VECTOR(11 downto 0));
+end entity;
+
+architecture arch of DecodInstrucao is
+begin
+
+	with CodigoBinario (3 downto 0) select
+		
+	
+end architecture;
