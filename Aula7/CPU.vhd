@@ -11,13 +11,15 @@ entity CPU is
         simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (
-    CLK : in std_logic;
+    CLOCK : in std_logic;
     INTRUCTION_IN: in std_logic_vector(larguraInstrucao-1 downto 0);
+	 Reset: in std_logic;
+	 BARRAMENTO_DADOS_ENTRADA: in std_logic_vector(larguraDados-1 downto 0); --Data_IN
 	 RD: out std_logic;
 	 WR: out std_logic;
-	 BARRAMENTO_DADOS_SAIDA: out std_logic_vector(larguraDados-1 downto 0);
-	 BARRAMENTO_DADOS_ENTRADA: out std_logic_vector(larguraDados-1 downto 0);
-	 BARRAMENTO_DADOS_ENDERECOS: out std_logic_vector(8 downto 0)
+	 ROM_Address : out std_logic_vector(larguraDados_PC-1 downto 0);
+	 BARRAMENTO_DADOS_SAIDA: out std_logic_vector(larguraDados-1 downto 0); -- Data_OUT
+	 BARRAMENTO_DADOS_ENDERECOS: out std_logic_vector(8 downto 0) --Data_Address
   );
 end entity;
 
@@ -59,10 +61,11 @@ begin
 
 -- Para simular, fica mais simples tirar o edgeDetector
 gravar:  if simulacao generate
-CLK <= KEY(0);
-else generate
-detectorSub0: work.edgeDetector(bordaSubida)
-        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
+--CLK <= KEY(0);
+CLK <= CLOCK;
+--else generate
+--detectorSub0: work.edgeDetector(bordaSubida)
+--        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
 end generate;
 
 -- O port map completo do MUX.
@@ -120,12 +123,21 @@ MUX2 :  entity work.muxGenerico2x1_PC  generic map (larguraDados => larguraDados
                  seletor_MUX => Saida_LogicaDesvio,
                  saida_MUX => Mux_PC);
 					  
-BARRAMENTO_DADOS_SAIDA <= REG1_ULA_A;
-BARRAMENTO_DADOS_ENTRADA <= Saida_Dados;
-BARRAMENTO_DADOS_ENDERECOS <= Endereco_Imediato(8 downto 0);
+BARRAMENTO_DADOS_SAIDA <= REG1_ULA_A; --Data_OUT
+--BARRAMENTO_DADOS_ENTRADA <= Saida_Dados; --Data_IN(saindo da RAM e entrando na CPU)
+BARRAMENTO_DADOS_ENDERECOS <= Endereco_Imediato(8 downto 0); --Data_Address
 
-RD <= habLeituraMEM;
-WR <= habEscritaMEM;
+
+
+RD <= Saida_Decod(1);
+WR <= Saida_Decod(0);
+
+ROM_Address <= endereco_PC;
+
+
+
+
+
 
 --selMUX <= Sinais_Controle(3);
 --Habilita_A <= Sinais_Controle(2);

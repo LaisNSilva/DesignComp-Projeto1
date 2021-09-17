@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Aula7
-Thu Sep 16 16:38:59 2021
+Thu Sep 16 23:02:52 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -9,8 +9,28 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |Aula7
+  5. Parameter Settings for User Entity Instance: CPU:CPU
+  6. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1
+  7. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:PC
+  8. Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:SOMADOR
+  9. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:REG_END_RET
+ 10. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:REG1
+ 11. Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSub:ULA1
+ 12. Parameter Settings for User Entity Instance: CPU:CPU|memoriaROM:MEMORIA_INTRUCAO
+ 13. Parameter Settings for User Entity Instance: CPU:CPU|memoriaRAM:MEMORIA_DADOS
+ 14. Parameter Settings for User Entity Instance: CPU:CPU|FlipFlop:FLAG
+ 15. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1_PC:MUX2
+ 16. Parameter Settings for User Entity Instance: memoriaROM:MEMORIA_INTRUCAO
+ 17. Parameter Settings for User Entity Instance: memoriaRAM:MEMORIA_DADOS
+ 18. Analysis & Elaboration Settings
+ 19. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
+ 20. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
+ 21. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REG1"
+ 22. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
+ 23. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
+ 24. Port Connectivity Checks: "CPU:CPU"
+ 25. Analysis & Elaboration Messages
 
 
 
@@ -37,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Failed - Thu Sep 16 16:38:59 2021           ;
+; Analysis & Elaboration Status ; Successful - Thu Sep 16 23:02:52 2021       ;
 ; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                 ; Aula7                                       ;
 ; Top-level Entity Name         ; Aula7                                       ;
@@ -57,8 +77,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -66,6 +86,161 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 +----------------------------+-------------+
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Aula7 ;
++--------------------+-------+------------------------------------------+
+; Parameter Name     ; Value ; Type                                     ;
++--------------------+-------+------------------------------------------+
+; larguraDados       ; 8     ; Signed Integer                           ;
+; larguraEnderecoRAM ; 8     ; Signed Integer                           ;
+; larguraInstrucao   ; 13    ; Signed Integer                           ;
+; larguraEnderecoROM ; 8     ; Signed Integer                           ;
+; larguraDados_PC    ; 9     ; Signed Integer                           ;
+; simulacao          ; true  ; Enumerated                               ;
++--------------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU ;
++--------------------+-------+-------------------------+
+; Parameter Name     ; Value ; Type                    ;
++--------------------+-------+-------------------------+
+; larguradados       ; 8     ; Signed Integer          ;
+; larguraenderecoram ; 8     ; Signed Integer          ;
+; largurainstrucao   ; 13    ; Signed Integer          ;
+; larguraenderecorom ; 8     ; Signed Integer          ;
+; larguradados_pc    ; 9     ; Signed Integer          ;
+; simulacao          ; true  ; Enumerated              ;
++--------------------+-------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:PC ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; larguradados   ; 9     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:SOMADOR ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; larguradados   ; 9     ; Signed Integer                                    ;
+; constante      ; 1     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:REG_END_RET ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; larguradados   ; 9     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:REG1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSub:ULA1 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU|memoriaROM:MEMORIA_INTRUCAO ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; datawidth      ; 13    ; Signed Integer                                          ;
+; addrwidth      ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU|memoriaRAM:MEMORIA_DADOS ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; datawidth      ; 8     ; Signed Integer                                       ;
+; addrwidth      ; 8     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU|FlipFlop:FLAG ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1_PC:MUX2 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; larguradados   ; 9     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoriaROM:MEMORIA_INTRUCAO ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; datawidth      ; 13    ; Signed Integer                                  ;
+; addrwidth      ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoriaRAM:MEMORIA_DADOS ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; datawidth      ; 8     ; Signed Integer                               ;
+; addrwidth      ; 6     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -76,6 +251,8 @@ https://fpgasoftware.intel.com/eula.
 ; Device                                                                          ; 5CEBA4F23C7        ;                    ;
 ; Top-level entity name                                                           ; Aula7              ; Aula7              ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
+; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
@@ -85,7 +262,6 @@ https://fpgasoftware.intel.com/eula.
 ; Preserve fewer node names                                                       ; On                 ; On                 ;
 ; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
 ; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                        ; Auto               ; Auto               ;
 ; Safe State Machine                                                              ; Off                ; Off                ;
 ; Extract Verilog State Machines                                                  ; On                 ; On                 ;
@@ -155,68 +331,147 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2" ;
++--------------+-------+----------+--------------------------+
+; Port         ; Type  ; Severity ; Details                  ;
++--------------+-------+----------+--------------------------+
+; entradad_mux ; Input ; Info     ; Stuck at GND             ;
++--------------+-------+----------+--------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG" ;
++------+-------+----------+-------------------------+
+; Port ; Type  ; Severity ; Details                 ;
++------+-------+----------+-------------------------+
+; rst  ; Input ; Info     ; Stuck at GND            ;
++------+-------+----------+-------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:CPU|registradorGenerico:REG1" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET" ;
++------+-------+----------+----------------------------------------------+
+; Port ; Type  ; Severity ; Details                                      ;
++------+-------+----------+----------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                 ;
++------+-------+----------+----------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC" ;
++--------+-------+----------+-----------------------------------+
+; Port   ; Type  ; Severity ; Details                           ;
++--------+-------+----------+-----------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                      ;
+; rst    ; Input ; Info     ; Stuck at GND                      ;
++--------+-------+----------+-----------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:CPU"                                                                                   ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; reset       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rom_address ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Sep 16 16:38:52 2021
+    Info: Processing started: Thu Sep 16 23:02:41 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula7 -c Aula7 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Error (10500): VHDL syntax error at Aula7.vhd(73) near text ":";  expecting ")", or "," File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 73
-Error (10500): VHDL syntax error at Aula7.vhd(76) near text "out";  expecting "(", or an identifier ("out" is a reserved keyword), or a sequential statement File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 76
-Error (10500): VHDL syntax error at Aula7.vhd(77) near text "out";  expecting "(", or an identifier ("out" is a reserved keyword), or a sequential statement File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 77
-Error (10500): VHDL syntax error at Aula7.vhd(78) near text ")";  expecting "(", or "'", or "." File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 78
-Info (12021): Found 0 design units, including 0 entities, in source file aula7.vhd
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file aula7.vhd
+    Info (12022): Found design unit 1: Aula7-arquitetura File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 25
+    Info (12023): Found entity 1: Aula7 File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 4
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file flipflop.vhd
-    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 16
-    Info (12023): Found entity 1: FlipFlop File: C:/Descomp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 4
+    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 16
+    Info (12023): Found entity 1: FlipFlop File: C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decodinstrucao.vhd
-    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 10
-    Info (12023): Found entity 1: DecodInstrucao File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 4
+    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 10
+    Info (12023): Found entity 1: DecodInstrucao File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file logicadesvio.vhd
-    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 15
-    Info (12023): Found entity 1: LogicaDesvio File: C:/Descomp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 4
+    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 15
+    Info (12023): Found entity 1: LogicaDesvio File: C:/DesComp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 21
-    Info (12023): Found entity 1: memoriaRAM File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoriarom.vhd
-    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROM File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_pc.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_pc.vhd
-    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico_PC File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico_PC File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Descomp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/DesComp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 17
-    Info (12023): Found entity 1: ULASomaSub File: C:/Descomp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 7
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 17
+    Info (12023): Found entity 1: ULASomaSub File: C:/DesComp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file decod3x8vhd.vhd
-    Info (12022): Found design unit 1: Decod3x8-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 18
-    Info (12023): Found entity 1: Decod3x8 File: C:/Descomp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 4
+    Info (12022): Found design unit 1: Decod3x8-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 18
+    Info (12023): Found entity 1: Decod3x8 File: C:/DesComp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
-    Info (12022): Found design unit 1: CPU-arquitetura File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 25
-    Info (12023): Found entity 1: CPU File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 4
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 4 errors, 1 warning
-    Error: Peak virtual memory: 4835 megabytes
-    Error: Processing ended: Thu Sep 16 16:38:59 2021
-    Error: Elapsed time: 00:00:07
-    Error: Total CPU time (on all processors): 00:00:15
+    Info (12022): Found design unit 1: CPU-arquitetura File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 27
+    Info (12023): Found entity 1: CPU File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 4
+Info (12127): Elaborating entity "Aula7" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at Aula7.vhd(43): used implicit default value for signal "endereco_PC" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 43
+Warning (10541): VHDL Signal Declaration warning at Aula7.vhd(55): used implicit default value for signal "Bloco_0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 55
+Warning (10541): VHDL Signal Declaration warning at Aula7.vhd(71): used implicit default value for signal "Entrada_LEDR0a7" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 71
+Warning (10541): VHDL Signal Declaration warning at Aula7.vhd(72): used implicit default value for signal "Entrada_LEDR8" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 72
+Warning (10541): VHDL Signal Declaration warning at Aula7.vhd(73): used implicit default value for signal "Entrada_LEDR9" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 73
+Warning (10445): VHDL Subtype or Type Declaration warning at Aula7.vhd(163): subtype or type has null range File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 163
+Warning (10296): VHDL warning at Aula7.vhd(163): ignored assignment of value to null range File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 163
+Warning (10873): Using initial value X (don't care) for net "LEDR[7..0]" at Aula7.vhd(20) File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 89
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 72
+Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 78
+Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 83
+Warning (10492): VHDL Process Statement warning at registradorGenerico_PC.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 23
+Info (12128): Elaborating entity "somaConstante" for hierarchy "CPU:CPU|somaConstante:SOMADOR" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 86
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "CPU:CPU|registradorGenerico:REG1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 93
+Warning (10492): VHDL Process Statement warning at registradorGenerico.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 23
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "CPU:CPU|ULASomaSub:ULA1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 98
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "CPU:CPU|memoriaROM:MEMORIA_INTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 102
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "CPU:CPU|memoriaRAM:MEMORIA_DADOS" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 105
+Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 109
+Warning (10492): VHDL Process Statement warning at FlipFlop.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 23
+Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 113
+Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 118
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 104
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Thu Sep 16 23:02:52 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:24
 
 
