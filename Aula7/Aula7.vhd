@@ -166,11 +166,11 @@ FF_LEDR9 : entity work.FlipFlop   generic map (larguraDados => larguraDados)
 --ROM1 : entity work.memoriaROM   generic map (dataWidth => 7, addrWidth => 4)
           --port map (Endereco => SW(3 downto 0), Dado => HEX0);
 			 
-REG_HEX0 : entity work.registradorGenerico_4b   generic map (larguraDados => larguraDados)
+REG_HEX0 : entity work.registradorGenerico_4b   --generic map (larguraDados => larguraDados)
           port map (
 			 DIN => Saida_Dados(3 downto 0), -- só os 4 primeiros
 			 DOUT => Saida_REG_HEX0, 
-			 ENABLE => Endereco_0 AND Saida_Dados(5) AND Bloco_4, AND habEscritaMEM
+			 ENABLE => Endereco_0 AND Saida_Dados(5) AND Bloco_4 AND habEscritaMEM,
 			 RST => '0',
 			 CLK => CLK
 			 );

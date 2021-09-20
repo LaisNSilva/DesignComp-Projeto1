@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Aula7
-Fri Sep 17 11:10:59 2021
+Mon Sep 20 19:35:38 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -26,19 +26,22 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  18. Parameter Settings for User Entity Instance: registradorGenerico:REG_LEDR0a7
  19. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR8
  20. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR9
- 21. Analysis & Elaboration Settings
- 22. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
- 23. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
- 24. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
- 25. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
- 26. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
- 27. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
- 28. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
- 29. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REG1"
- 30. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
- 31. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
- 32. Port Connectivity Checks: "CPU:CPU"
- 33. Analysis & Elaboration Messages
+ 21. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX0
+ 22. Analysis & Elaboration Settings
+ 23. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
+ 24. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
+ 25. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
+ 26. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
+ 27. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
+ 28. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
+ 29. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
+ 30. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
+ 31. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
+ 32. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REG1"
+ 33. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
+ 34. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
+ 35. Port Connectivity Checks: "CPU:CPU"
+ 36. Analysis & Elaboration Messages
 
 
 
@@ -65,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Fri Sep 17 11:10:59 2021       ;
+; Analysis & Elaboration Status ; Successful - Mon Sep 20 19:35:38 2021       ;
 ; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                 ; Aula7                                       ;
 ; Top-level Entity Name         ; Aula7                                       ;
@@ -85,8 +88,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -281,6 +284,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX0 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -367,6 +380,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
 ; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0" ;
++----------+-------+----------+----------------------------+
+; Port     ; Type  ; Severity ; Details                    ;
++----------+-------+----------+----------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND               ;
+; negativo ; Input ; Info     ; Stuck at GND               ;
+; overflow ; Input ; Info     ; Stuck at GND               ;
++----------+-------+----------+----------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                      ;
++------+-------+----------+-----------------------------------+
 
 
 +-----------------------------------------------+
@@ -486,93 +519,102 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 17 11:10:53 2021
+    Info: Processing started: Mon Sep 20 19:35:27 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula7 -c Aula7 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file aula7.vhd
-    Info (12022): Found design unit 1: Aula7-arquitetura File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 25
-    Info (12023): Found entity 1: Aula7 File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 4
+    Info (12022): Found design unit 1: Aula7-arquitetura File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 26
+    Info (12023): Found entity 1: Aula7 File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 4
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file flipflop.vhd
-    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 16
-    Info (12023): Found entity 1: FlipFlop File: C:/Descomp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 4
+    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 16
+    Info (12023): Found entity 1: FlipFlop File: C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decodinstrucao.vhd
-    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 10
-    Info (12023): Found entity 1: DecodInstrucao File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 4
+    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 10
+    Info (12023): Found entity 1: DecodInstrucao File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file logicadesvio.vhd
-    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 15
-    Info (12023): Found entity 1: LogicaDesvio File: C:/Descomp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 4
+    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 15
+    Info (12023): Found entity 1: LogicaDesvio File: C:/DesComp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 21
-    Info (12023): Found entity 1: memoriaRAM File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoriarom.vhd
-    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROM File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_pc.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_pc.vhd
-    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico_PC File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico_PC File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Descomp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/DesComp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 17
-    Info (12023): Found entity 1: ULASomaSub File: C:/Descomp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 7
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 17
+    Info (12023): Found entity 1: ULASomaSub File: C:/DesComp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file decod3x8vhd.vhd
-    Info (12022): Found design unit 1: Decod3x8-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 18
-    Info (12023): Found entity 1: Decod3x8 File: C:/Descomp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 4
+    Info (12022): Found design unit 1: Decod3x8-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 18
+    Info (12023): Found entity 1: Decod3x8 File: C:/DesComp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
-    Info (12022): Found design unit 1: CPU-arquitetura File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 27
-    Info (12023): Found entity 1: CPU File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 4
+    Info (12022): Found design unit 1: CPU-arquitetura File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 27
+    Info (12023): Found entity 1: CPU File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file decodbinario_7seg.vhd
+    Info (12022): Found design unit 1: DecodBinario_7Seg-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd Line: 17
+    Info (12023): Found entity 1: DecodBinario_7Seg File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_4b.vhd
+    Info (12022): Found design unit 1: registradorGenerico_4b-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico_4b File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 4
 Info (12127): Elaborating entity "Aula7" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Aula7.vhd(43): used implicit default value for signal "endereco_PC" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 43
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(57): object "Bloco_1" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 57
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(58): object "Bloco_2" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 58
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(59): object "Bloco_3" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 59
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(61): object "Bloco_5" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 61
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(62): object "Bloco_6" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 62
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(63): object "Bloco_7" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 63
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(67): object "Endereco_3" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 67
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(68): object "Endereco_4" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 68
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(69): object "Endereco_5" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 69
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(70): object "Endereco_6" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 70
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(71): object "Endereco_7" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 71
-Warning (10445): VHDL Subtype or Type Declaration warning at Aula7.vhd(164): subtype or type has null range File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 164
-Warning (10296): VHDL warning at Aula7.vhd(164): ignored assignment of value to null range File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 164
-Warning (10873): Using initial value X (don't care) for net "LEDR[7..0]" at Aula7.vhd(20) File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 90
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 72
-Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 78
-Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 83
-Warning (10492): VHDL Process Statement warning at registradorGenerico_PC.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 23
-Info (12128): Elaborating entity "somaConstante" for hierarchy "CPU:CPU|somaConstante:SOMADOR" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 86
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "CPU:CPU|registradorGenerico:REG1" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 93
-Warning (10492): VHDL Process Statement warning at registradorGenerico.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 23
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "CPU:CPU|ULASomaSub:ULA1" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 98
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "CPU:CPU|memoriaROM:MEMORIA_INTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 102
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "CPU:CPU|memoriaRAM:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 105
-Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 109
-Warning (10492): VHDL Process Statement warning at FlipFlop.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Descomp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 23
-Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 113
-Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 118
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 105
-Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 108
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Fri Sep 17 11:10:59 2021
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:14
+Warning (10541): VHDL Signal Declaration warning at Aula7.vhd(44): used implicit default value for signal "endereco_PC" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 44
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(58): object "Bloco_1" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 58
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(59): object "Bloco_2" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 59
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(60): object "Bloco_3" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 60
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(62): object "Bloco_5" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 62
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(63): object "Bloco_6" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 63
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(64): object "Bloco_7" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 64
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(68): object "Endereco_3" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 68
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(69): object "Endereco_4" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 69
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(70): object "Endereco_5" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 70
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(71): object "Endereco_6" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 71
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(72): object "Endereco_7" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 72
+Warning (10445): VHDL Subtype or Type Declaration warning at Aula7.vhd(191): subtype or type has null range File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 191
+Warning (10296): VHDL warning at Aula7.vhd(191): ignored assignment of value to null range File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 191
+Warning (10873): Using initial value X (don't care) for net "LEDR[7..0]" at Aula7.vhd(21) File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 21
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 93
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 72
+Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 78
+Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 83
+Warning (10492): VHDL Process Statement warning at registradorGenerico_PC.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 23
+Info (12128): Elaborating entity "somaConstante" for hierarchy "CPU:CPU|somaConstante:SOMADOR" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 86
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "CPU:CPU|registradorGenerico:REG1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 93
+Warning (10492): VHDL Process Statement warning at registradorGenerico.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 23
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "CPU:CPU|ULASomaSub:ULA1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 98
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "CPU:CPU|memoriaROM:MEMORIA_INTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 102
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "CPU:CPU|memoriaRAM:MEMORIA_DADOS" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 105
+Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 109
+Warning (10492): VHDL Process Statement warning at FlipFlop.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 23
+Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 113
+Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 118
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 108
+Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 111
+Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 169
+Warning (10492): VHDL Process Statement warning at registradorGenerico_4b.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 23
+Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 178
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Mon Sep 20 19:35:38 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:24
 
 
