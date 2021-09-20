@@ -17,6 +17,7 @@ entity Aula7 is
 	 --BARRAMENTO_DADOS_ENTRADA: out std_logic_vector(larguraDados-1 downto 0);
 	 --BARRAMENTO_DADOS_ENDERECOS: out std_logic_vector(8 downto 0)
 --    SW: in std_logic_vector(9 downto 0);
+	HEX0 : out std_logic_vector (6 DOWNTO 0);
    LEDR  : out std_logic_vector(9 downto 0)
   );
 end entity;
@@ -72,6 +73,8 @@ architecture arquitetura of Aula7 is
 	 signal Entrada_LEDR0a7 : std_logic_vector (larguraDados-1 downto 0);
 	 signal Entrada_LEDR8 : std_logic;
 	 signal Entrada_LEDR9 : std_logic;
+	 signal Saida_REG_HEX0 : std_logic_vector (3 downto 0);
+	 signal saida7seg_HEX0 : std_logic_vector (6 downto 0);
 
 
 begin
@@ -136,7 +139,7 @@ REG_LEDR0a7 : entity work.registradorGenerico   generic map (larguraDados => lar
           port map (
 			 DIN => Saida_Dados, 
 			 DOUT => Entrada_LEDR0a7, 
-			 ENABLE => habEscritaMEM AND Endereco_0 AND Bloco_4, 
+			 ENABLE => habEscritaMEM AND Endereco_0 AND Bloco_4 AND (NOT(Saida_Dados(5))), 
 			 RST => '0',
 			 CLK => CLK
 			 );
@@ -145,7 +148,7 @@ FF_LEDR8 : entity work.FlipFlop   generic map (larguraDados => larguraDados)
           port map (
 			 DIN => Saida_Dados(0), --PRIMEIRO BIT????
 			 DOUT => Entrada_LEDR8, 
-			 ENABLE => habEscritaMEM AND Endereco_1 AND Bloco_4, 
+			 ENABLE => habEscritaMEM AND Endereco_1 AND Bloco_4 AND (NOT(Saida_Dados(5))), 
 			 RST => '0',
 			 CLK => CLK
 			 );
@@ -154,14 +157,34 @@ FF_LEDR9 : entity work.FlipFlop   generic map (larguraDados => larguraDados)
           port map (
 			 DIN => Saida_Dados(0), --PRIMEIRO BIT????, 
 			 DOUT => Entrada_LEDR9, 
-			 ENABLE => habEscritaMEM AND Endereco_2 AND Bloco_4, 
+			 ENABLE => habEscritaMEM AND Endereco_2 AND Bloco_4 AND (NOT(Saida_Dados(5))), 
 			 RST => '0',
 			 CLK => CLK
 			 );
 			 
 			 
-ROM1 : entity work.memoriaROM   generic map (dataWidth => 7, addrWidth => 4)
-          port map (Endereco => SW(3 downto 0), Dado => HEX0);
+--ROM1 : entity work.memoriaROM   generic map (dataWidth => 7, addrWidth => 4)
+          --port map (Endereco => SW(3 downto 0), Dado => HEX0);
+			 
+REG_HEX0 : entity work.registradorGenerico_4b   generic map (larguraDados => larguraDados)
+          port map (
+			 DIN => Saida_Dados(3 downto 0), -- só os 4 primeiros
+			 DOUT => Saida_REG_HEX0, 
+			 ENABLE => Endereco_0 AND Saida_Dados(5) AND Bloco_4, AND habEscritaMEM
+			 RST => '0',
+			 CLK => CLK
+			 );
+			 
+DECOD_HEX0 :  entity work.DecodBinario_7seg
+        port map(dadoHex => Saida_REG_HEX0,
+                 apaga =>  '0',
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => saida7seg_HEX0);
+					  
+
+					  
+
 			
 
 
@@ -170,6 +193,8 @@ LEDR (7 downto 9) <= Entrada_LEDR0a7;
 LEDR (8) <= Entrada_LEDR8;
 
 LEDR (9) <= Entrada_LEDR9;
+
+HEX0 <= saida7seg_HEX0;
 
 			 
 --BARRAMENTO_DADOS_SAIDA <= REG1_ULA_A;
