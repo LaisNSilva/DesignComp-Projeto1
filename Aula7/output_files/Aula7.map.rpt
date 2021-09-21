@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Aula7
-Mon Sep 20 19:35:38 2021
+Mon Sep 20 22:33:09 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -27,21 +27,36 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  19. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR8
  20. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR9
  21. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX0
- 22. Analysis & Elaboration Settings
- 23. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
- 24. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
- 25. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
- 26. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
- 27. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
- 28. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
- 29. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
- 30. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
- 31. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
- 32. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REG1"
- 33. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
- 34. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
- 35. Port Connectivity Checks: "CPU:CPU"
- 36. Analysis & Elaboration Messages
+ 22. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX1
+ 23. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX2
+ 24. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX3
+ 25. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX4
+ 26. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX5
+ 27. Analysis & Elaboration Settings
+ 28. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
+ 29. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5"
+ 30. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
+ 31. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4"
+ 32. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
+ 33. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3"
+ 34. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
+ 35. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2"
+ 36. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
+ 37. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1"
+ 38. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
+ 39. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
+ 40. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
+ 41. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
+ 42. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
+ 43. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
+ 44. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
+ 45. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
+ 46. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
+ 47. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REG1"
+ 48. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
+ 49. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
+ 50. Port Connectivity Checks: "CPU:CPU"
+ 51. Analysis & Elaboration Messages
 
 
 
@@ -68,7 +83,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Sep 20 19:35:38 2021       ;
+; Analysis & Elaboration Status ; Successful - Mon Sep 20 22:33:09 2021       ;
 ; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                 ; Aula7                                       ;
 ; Top-level Entity Name         ; Aula7                                       ;
@@ -294,6 +309,56 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX1 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX2 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX3 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX4 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX5 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; larguradados   ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -383,6 +448,106 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------+
+; Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5" ;
++----------+-------+----------+----------------------------+
+; Port     ; Type  ; Severity ; Details                    ;
++----------+-------+----------+----------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND               ;
+; negativo ; Input ; Info     ; Stuck at GND               ;
+; overflow ; Input ; Info     ; Stuck at GND               ;
++----------+-------+----------+----------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                      ;
++------+-------+----------+-----------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4" ;
++----------+-------+----------+----------------------------+
+; Port     ; Type  ; Severity ; Details                    ;
++----------+-------+----------+----------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND               ;
+; negativo ; Input ; Info     ; Stuck at GND               ;
+; overflow ; Input ; Info     ; Stuck at GND               ;
++----------+-------+----------+----------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                      ;
++------+-------+----------+-----------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3" ;
++----------+-------+----------+----------------------------+
+; Port     ; Type  ; Severity ; Details                    ;
++----------+-------+----------+----------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND               ;
+; negativo ; Input ; Info     ; Stuck at GND               ;
+; overflow ; Input ; Info     ; Stuck at GND               ;
++----------+-------+----------+----------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                      ;
++------+-------+----------+-----------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2" ;
++----------+-------+----------+----------------------------+
+; Port     ; Type  ; Severity ; Details                    ;
++----------+-------+----------+----------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND               ;
+; negativo ; Input ; Info     ; Stuck at GND               ;
+; overflow ; Input ; Info     ; Stuck at GND               ;
++----------+-------+----------+----------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                      ;
++------+-------+----------+-----------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1" ;
++----------+-------+----------+----------------------------+
+; Port     ; Type  ; Severity ; Details                    ;
++----------+-------+----------+----------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND               ;
+; negativo ; Input ; Info     ; Stuck at GND               ;
+; overflow ; Input ; Info     ; Stuck at GND               ;
++----------+-------+----------+----------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                      ;
++------+-------+----------+-----------------------------------+
+
+
++----------------------------------------------------------+
 ; Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0" ;
 +----------+-------+----------+----------------------------+
 ; Port     ; Type  ; Severity ; Details                    ;
@@ -435,9 +600,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-; s3   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; s4   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; s5   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; s6   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; s7   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -519,12 +681,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep 20 19:35:27 2021
+    Info: Processing started: Mon Sep 20 22:32:57 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula7 -c Aula7 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file aula7.vhd
-    Info (12022): Found design unit 1: Aula7-arquitetura File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 26
+    Info (12022): Found design unit 1: Aula7-arquitetura File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 32
     Info (12023): Found entity 1: Aula7 File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 4
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
     Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 10
@@ -576,22 +738,19 @@ Info (12021): Found 2 design units, including 1 entities, in source file registr
     Info (12022): Found design unit 1: registradorGenerico_4b-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 16
     Info (12023): Found entity 1: registradorGenerico_4b File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 4
 Info (12127): Elaborating entity "Aula7" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Aula7.vhd(44): used implicit default value for signal "endereco_PC" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 44
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(58): object "Bloco_1" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 58
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(59): object "Bloco_2" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 59
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(60): object "Bloco_3" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 60
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(62): object "Bloco_5" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 62
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(63): object "Bloco_6" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 63
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(64): object "Bloco_7" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 64
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(68): object "Endereco_3" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 68
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(69): object "Endereco_4" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 69
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(70): object "Endereco_5" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 70
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(71): object "Endereco_6" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 71
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(72): object "Endereco_7" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 72
-Warning (10445): VHDL Subtype or Type Declaration warning at Aula7.vhd(191): subtype or type has null range File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 191
-Warning (10296): VHDL warning at Aula7.vhd(191): ignored assignment of value to null range File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 191
-Warning (10873): Using initial value X (don't care) for net "LEDR[7..0]" at Aula7.vhd(21) File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 21
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 93
+Warning (10541): VHDL Signal Declaration warning at Aula7.vhd(50): used implicit default value for signal "endereco_PC" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 50
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(64): object "Bloco_1" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 64
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(65): object "Bloco_2" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 65
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(66): object "Bloco_3" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 66
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(68): object "Bloco_5" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 68
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(69): object "Bloco_6" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 69
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(70): object "Bloco_7" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 70
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(77): object "Endereco_6" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 77
+Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(78): object "Endereco_7" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 78
+Warning (10445): VHDL Subtype or Type Declaration warning at Aula7.vhd(298): subtype or type has null range File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 298
+Warning (10296): VHDL warning at Aula7.vhd(298): ignored assignment of value to null range File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 298
+Warning (10873): Using initial value X (don't care) for net "LEDR[7..0]" at Aula7.vhd(27) File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 27
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 109
 Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 72
 Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 78
 Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 83
@@ -606,15 +765,15 @@ Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG
 Warning (10492): VHDL Process Statement warning at FlipFlop.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 23
 Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 113
 Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 118
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 108
-Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 111
-Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 169
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 124
+Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 127
+Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 187
 Warning (10492): VHDL Process Statement warning at registradorGenerico_4b.vhd(23): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 23
-Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 178
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 20 warnings
+Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 196
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 17 warnings
     Info: Peak virtual memory: 4828 megabytes
-    Info: Processing ended: Mon Sep 20 19:35:38 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Processing ended: Mon Sep 20 22:33:09 2021
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:25
 
 
