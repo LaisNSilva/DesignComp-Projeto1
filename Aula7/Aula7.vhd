@@ -11,12 +11,13 @@ entity Aula7 is
         simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (
-    CLOCK_50 : in std_logic;
-    KEY: in std_logic_vector(3 downto 0);
+   CLOCK_50 : in std_logic;
+   KEY: in std_logic_vector(3 downto 0);
+	FPGA_RESET: in std_logic;
 	 --BARRAMENTO_DADOS_SAIDA: out std_logic_vector(larguraDados-1 downto 0);
 	 --BARRAMENTO_DADOS_ENTRADA: out std_logic_vector(larguraDados-1 downto 0);
 	 --BARRAMENTO_DADOS_ENDERECOS: out std_logic_vector(8 downto 0)
---    SW: in std_logic_vector(9 downto 0);
+   SW: in std_logic_vector(9 downto 0);
 	HEX0 : out std_logic_vector (6 DOWNTO 0);
 	HEX1 : out std_logic_vector (6 DOWNTO 0);
 	HEX2 : out std_logic_vector (6 DOWNTO 0);
@@ -153,27 +154,27 @@ DECODIFICADOR_3X8_0a2 : entity work.Decod3x8
 -- O port map completo do Acumulador.
 REG_LEDR0a7 : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
           port map (
-			 DIN => Saida_Dados, 
+			 DIN => REG1_ULA_A, 
 			 DOUT => Entrada_LEDR0a7, 
-			 ENABLE => habEscritaMEM AND Endereco_0 AND Bloco_4 AND (NOT(Saida_Dados(5))), 
+			 ENABLE => habEscritaMEM AND Endereco_0 AND Bloco_4 AND (NOT(Endereco_barramento(5))), 
 			 RST => '0',
 			 CLK => CLK
 			 );
 			 
 FF_LEDR8 : entity work.FlipFlop   generic map (larguraDados => larguraDados)
           port map (
-			 DIN => Saida_Dados(0), --PRIMEIRO BIT????
+			 DIN => REG1_ULA_A(0), --PRIMEIRO BIT????
 			 DOUT => Entrada_LEDR8, 
-			 ENABLE => habEscritaMEM AND Endereco_1 AND Bloco_4 AND (NOT(Saida_Dados(5))), 
+			 ENABLE => habEscritaMEM AND Endereco_1 AND Bloco_4 AND (NOT(Endereco_barramento(5))), 
 			 RST => '0',
 			 CLK => CLK
 			 );
 			 
 FF_LEDR9 : entity work.FlipFlop   generic map (larguraDados => larguraDados)
           port map (
-			 DIN => Saida_Dados(0), --PRIMEIRO BIT????, 
+			 DIN => REG1_ULA_A(0), --PRIMEIRO BIT????, 
 			 DOUT => Entrada_LEDR9, 
-			 ENABLE => habEscritaMEM AND Endereco_2 AND Bloco_4 AND (NOT(Saida_Dados(5))), 
+			 ENABLE => habEscritaMEM AND Endereco_2 AND Bloco_4 AND (NOT(Endereco_barramento(5))), 
 			 RST => '0',
 			 CLK => CLK
 			 );
@@ -186,9 +187,9 @@ FF_LEDR9 : entity work.FlipFlop   generic map (larguraDados => larguraDados)
 			 
 REG_HEX0 : entity work.registradorGenerico_4b   --generic map (larguraDados => larguraDados)
           port map (
-			 DIN => Saida_Dados(3 downto 0), -- só os 4 primeiros
+			 DIN => REG1_ULA_A(3 downto 0), -- só os 4 primeiros
 			 DOUT => Saida_REG_HEX0, 
-			 ENABLE => Endereco_0 AND Saida_Dados(5) AND Bloco_4 AND habEscritaMEM,
+			 ENABLE => Endereco_0 AND Endereco_barramento(5) AND Bloco_4 AND habEscritaMEM,
 			 RST => '0',
 			 CLK => CLK
 			 );
@@ -204,9 +205,9 @@ DECOD_HEX0 :  entity work.DecodBinario_7seg
 
 REG_HEX1 : entity work.registradorGenerico_4b   --generic map (larguraDados => larguraDados)
           port map (
-			 DIN => Saida_Dados(3 downto 0), -- só os 4 primeiros
+			 DIN => REG1_ULA_A(3 downto 0), -- só os 4 primeiros
 			 DOUT => Saida_REG_HEX1, 
-			 ENABLE => Endereco_1 AND Saida_Dados(5) AND Bloco_4 AND habEscritaMEM,
+			 ENABLE => Endereco_1 AND Endereco_barramento(5) AND Bloco_4 AND habEscritaMEM,
 			 RST => '0',
 			 CLK => CLK
 			 );
@@ -222,9 +223,9 @@ DECOD_HEX1 :  entity work.DecodBinario_7seg
 
 REG_HEX2 : entity work.registradorGenerico_4b   --generic map (larguraDados => larguraDados)
           port map (
-			 DIN => Saida_Dados(3 downto 0), -- só os 4 primeiros
+			 DIN => REG1_ULA_A(3 downto 0), -- só os 4 primeiros
 			 DOUT => Saida_REG_HEX2, 
-			 ENABLE => Endereco_2 AND Saida_Dados(5) AND Bloco_4 AND habEscritaMEM,
+			 ENABLE => Endereco_2 AND Endereco_barramento(5) AND Bloco_4 AND habEscritaMEM,
 			 RST => '0',
 			 CLK => CLK
 			 );
@@ -240,9 +241,9 @@ DECOD_HEX2 :  entity work.DecodBinario_7seg
 
 REG_HEX3 : entity work.registradorGenerico_4b   --generic map (larguraDados => larguraDados)
           port map (
-			 DIN => Saida_Dados(3 downto 0), -- só os 4 primeiros
+			 DIN => REG1_ULA_A(3 downto 0), -- só os 4 primeiros
 			 DOUT => Saida_REG_HEX3, 
-			 ENABLE => Endereco_3 AND Saida_Dados(5) AND Bloco_4 AND habEscritaMEM,
+			 ENABLE => Endereco_3 AND Endereco_barramento(5) AND Bloco_4 AND habEscritaMEM,
 			 RST => '0',
 			 CLK => CLK
 			 );
@@ -257,9 +258,9 @@ DECOD_HEX3 :  entity work.DecodBinario_7seg
 --------- HEX4-----------
 REG_HEX4 : entity work.registradorGenerico_4b   --generic map (larguraDados => larguraDados)
           port map (
-			 DIN => Saida_Dados(3 downto 0), -- só os 4 primeiros
+			 DIN => REG1_ULA_A(3 downto 0), -- só os 4 primeiros
 			 DOUT => Saida_REG_HEX4, 
-			 ENABLE => Endereco_4 AND Saida_Dados(5) AND Bloco_4 AND habEscritaMEM,
+			 ENABLE => Endereco_4 AND Endereco_barramento(5) AND Bloco_4 AND habEscritaMEM,
 			 RST => '0',
 			 CLK => CLK
 			 );
@@ -275,9 +276,9 @@ DECOD_HEX4 :  entity work.DecodBinario_7seg
 
 REG_HEX5 : entity work.registradorGenerico_4b   --generic map (larguraDados => larguraDados)
           port map (
-			 DIN => Saida_Dados(3 downto 0), -- só os 4 primeiros
+			 DIN => REG1_ULA_A(3 downto 0), -- só os 4 primeiros
 			 DOUT => Saida_REG_HEX5, 
-			 ENABLE => Endereco_5 AND Saida_Dados(5) AND Bloco_4 AND habEscritaMEM,
+			 ENABLE => Endereco_5 AND Endereco_barramento(5) AND Bloco_4 AND habEscritaMEM,
 			 RST => '0',
 			 CLK => CLK
 			 );
@@ -289,8 +290,148 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
                  overFlow =>  '0',
                  saida7seg => saida7seg_HEX5);
 					  
-
+--- FPGA RESET ---					  
 					  
+FPGA_R: entity work.buffertri
+          port map (
+			 DIN => FPGA_RESET,
+			 DOUT => Saida_Dados(6), 
+			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_4 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+		
+--- BOTÕES KEY ---
+
+KEY_3: entity work.buffertri
+          port map (
+			 DIN => KEY(3),
+			 DOUT => Saida_Dados(5), 
+			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_3 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+KEY_2: entity work.buffertri
+          port map (
+			 DIN => KEY(2),
+			 DOUT => Saida_Dados(4), 
+			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_2 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+		
+KEY_1: entity work.buffertri
+          port map (
+			 DIN => KEY(1),
+			 DOUT => Saida_Dados(3), 
+			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_1 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+KEY_0: entity work.buffertri
+          port map (
+			 DIN => KEY(0),
+			 DOUT => Saida_Dados(2), 
+			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_0 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+			 
+--- CHAVES SW ---
+			 
+SW_9: entity work.buffertri
+          port map (
+			 DIN => SW(9),
+			 DOUT => Saida_Dados(1), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_2 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+SW_8: entity work.buffertri
+          port map (
+			 DIN => SW(8),
+			 DOUT => Saida_Dados(0), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_1 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+--- SW0 AO SW7 ---
+SW_7: entity work.buffertri
+          port map (
+			 DIN => SW(7),
+			 DOUT => Saida_Dados(7), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+SW_6: entity work.buffertri
+          port map (
+			 DIN => SW(6),
+			 DOUT => Saida_Dados(6), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+SW_5: entity work.buffertri
+          port map (
+			 DIN => SW(5),
+			 DOUT => Saida_Dados(5), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+SW_4: entity work.buffertri
+          port map (
+			 DIN => SW(4),
+			 DOUT => Saida_Dados(4), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+SW_3: entity work.buffertri
+          port map (
+			 DIN => SW(3),
+			 DOUT => Saida_Dados(3), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+SW_2: entity work.buffertri
+          port map (
+			 DIN => SW(2),
+			 DOUT => Saida_Dados(2), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+SW_1: entity work.buffertri
+          port map (
+			 DIN => SW(1),
+			 DOUT => Saida_Dados(1), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
+
+SW_0: entity work.buffertri
+          port map (
+			 DIN => SW(0),
+			 DOUT => Saida_Dados(0), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
+			 RST => '0',
+			 CLK => CLK
+			 );
 
 			
 
