@@ -92,6 +92,7 @@ architecture arquitetura of Aula7 is
 	 signal saida7seg_HEX3 : std_logic_vector (6 downto 0);
 	 signal saida7seg_HEX4 : std_logic_vector (6 downto 0);
 	 signal saida7seg_HEX5 : std_logic_vector (6 downto 0);
+	 
 
 
 begin
@@ -115,6 +116,7 @@ port map   (
 	 WR => habEscritaMEM,
 	 BARRAMENTO_DADOS_ENTRADA => Saida_Dados,
 	 Reset => '0',
+	 ROM_Address => Endereco_PC,
 	 BARRAMENTO_DADOS_SAIDA => REG1_ULA_A,
 	 BARRAMENTO_DADOS_ENDERECOS => Endereco_barramento
   );
@@ -436,7 +438,7 @@ SW_0: entity work.buffertri
 			
 
 
-LEDR (7 downto 9) <= Entrada_LEDR0a7;
+LEDR (7 downto 0) <= Entrada_LEDR0a7;
 
 LEDR (8) <= Entrada_LEDR8;
 
@@ -463,6 +465,7 @@ HEX5 <= saida7seg_HEX5;
 -- I/O
 --chavesY_MUX_A <= SW(3 downto 0);
 --chavesX_ULA_B <= SW(9 downto 6);
+
 
 -- A ligacao dos LEDs:
 --LEDR (9) <= SelMUX;

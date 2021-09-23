@@ -37,24 +37,44 @@ architecture assincrona of memoriaROM is
       -- Inicializa os endereços:
       --                 CTRL   Prox Estado
 		
+			
+		-- TESTE DOS DISPLAYS DE 7 SEGMENTOS
 		
-		  tmp(0)  := JSR & '1' & x"0E";
-        tmp(1)  := JMP & '0' & x"05";
-        tmp(2)  := JEQ & '1' & x"09";
-        tmp(3)  := NOP & '0' & x"00";
-        tmp(4)  := NOP & '0' & x"00";
-        tmp(5)  := LDI & '0' & x"05";
-        tmp(6)  := STA & '1' & x"00";
-        tmp(7)  := CEQ & '1' & x"00"; ----- duvida se aqui eh 0 ou 1
-        tmp(8)  := JMP & '0' & x"02";
-        tmp(9)  := NOP & '0' & x"00";
-        tmp(10) := LDI & '0' & x"04";
-        tmp(11) := CEQ & '1' & x"00"; ----- duvida se aqui eh 0 ou 1
-        tmp(12) := JEQ & '1' & x"03";
-        tmp(13) := JMP & '0' & x"0D";
-        tmp(14) := NOP & '0' & x"00";
-        tmp(15) := RET & '1' & x"00"; ----- duvida se aqui eh 0 ou 1
-	
+		  tmp(0)  := LDI & '1'& x"00";
+        tmp(1)  := STA & '1' & x"00";
+        tmp(2)  := SOMA & '1' & x"00";
+        tmp(3)  := STA & "100100000"; -- armazena o valor do acumulador em HEX0 (288)
+        tmp(4)  := SOMA & '1' & x"00";
+        tmp(5)  := STA & "100100001";
+        tmp(6)  := SOMA & '1' & x"00";
+        tmp(7)  := STA & "100100010"; 
+        tmp(8)  := SOMA & '1' & x"00";
+        tmp(9)  := STA & "100100011";
+        tmp(10) := SOMA & '1' & x"00";
+        tmp(11) := STA & "100100100"; 
+        tmp(12) := SOMA & '1' & x"00";
+        tmp(13) := STA & "100100101";
+        tmp(14) := JMP & '0' & x"02";
+		
+		
+		
+--		  tmp(0)  := JSR & '1' & x"0E";
+--        tmp(1)  := JMP & '0' & x"05";
+--        tmp(2)  := JEQ & '1' & x"09";
+--        tmp(3)  := NOP & '0' & x"00";
+--        tmp(4)  := NOP & '0' & x"00";
+--        tmp(5)  := LDI & '0' & x"05";
+--        tmp(6)  := STA & '1' & x"00";
+--        tmp(7)  := CEQ & '1' & x"00"; ----- duvida se aqui eh 0 ou 1
+--        tmp(8)  := JMP & '0' & x"02";
+--        tmp(9)  := NOP & '0' & x"00";
+--        tmp(10) := LDI & '0' & x"04";
+--        tmp(11) := CEQ & '1' & x"00"; ----- duvida se aqui eh 0 ou 1
+--        tmp(12) := JEQ & '1' & x"03";
+--        tmp(13) := JMP & '0' & x"0D";
+--        tmp(14) := NOP & '0' & x"00";
+--        tmp(15) := RET & '1' & x"00"; ----- duvida se aqui eh 0 ou 1
+--	
 	
 
 	 
