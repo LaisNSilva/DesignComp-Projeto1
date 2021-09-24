@@ -39,22 +39,22 @@ architecture assincrona of memoriaROM is
 		
 			
 		-- TESTE DOS DISPLAYS DE 7 SEGMENTOS
-		
-		  tmp(0)  := LDI & '1'& x"00";
-        tmp(1)  := STA & '1' & x"00";
+		 
+		  tmp(0)  := LDI  & '0' & x"01";
+        tmp(1)  := STA  & '0' & x"00";
         tmp(2)  := SOMA & '1' & x"00";
-        tmp(3)  := STA & "100100000"; -- armazena o valor do acumulador em HEX0 (288)
+        tmp(3)  := STA  & '1' & x"20"; -- armazena o valor do acumulador em HEX0 (288)
         tmp(4)  := SOMA & '1' & x"00";
-        tmp(5)  := STA & "100100001";
-        tmp(6)  := SOMA & '1' & x"00";
-        tmp(7)  := STA & "100100010"; 
-        tmp(8)  := SOMA & '1' & x"00";
-        tmp(9)  := STA & "100100011";
-        tmp(10) := SOMA & '1' & x"00";
-        tmp(11) := STA & "100100100"; 
-        tmp(12) := SOMA & '1' & x"00";
-        tmp(13) := STA & "100100101";
-        tmp(14) := JMP & '0' & x"02";
+        tmp(5)  := STA  & '1' & x"21";
+        tmp(6)  := SOMA & '0' & x"00";
+        tmp(7)  := STA  & '1' & x"22"; 
+        tmp(8)  := SOMA & '0' & x"00";
+        tmp(9)  := STA  & '1' & x"23";
+        tmp(10) := SOMA & '0' & x"00";
+        tmp(11) := STA  & '1' & x"24"; 
+        tmp(12) := SOMA & '0' & x"00";
+        tmp(13) := STA  & '1' & x"25";
+        tmp(14) := JMP  & '0' & x"02";
 		
 		
 		

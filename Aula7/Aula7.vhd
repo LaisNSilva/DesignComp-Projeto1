@@ -24,6 +24,7 @@ entity Aula7 is
 	HEX3 : out std_logic_vector (6 DOWNTO 0);
 	HEX4 : out std_logic_vector (6 DOWNTO 0);
 	HEX5 : out std_logic_vector (6 DOWNTO 0);
+	PC_OUT: out std_logic_vector (8 DOWNTO 0);
 
    LEDR  : out std_logic_vector(9 downto 0)
   );
@@ -46,8 +47,9 @@ architecture arquitetura of Aula7 is
 --  signal Habilita_A : std_logic;
 --  signal Operacao_ULA : std_logic_vector (1 downto 0);
 	 signal Saida_Dados : std_logic_vector (larguraDados-1 downto 0);
+	 signal ROM_DADOS : std_logic_vector (larguraInstrucao-1 downto 0);
 --  signal Imediato : std_logic_vector (larguraDados-1 downto 0);
-    signal opCode : std_logic_vector (3 downto 0);
+    
     signal endereco_PC:std_logic_vector (8 downto 0);
 --  signal endereco :std_logic_vector (8 downto 0);
     signal habLeituraMEM : std_logic;
@@ -55,7 +57,7 @@ architecture arquitetura of Aula7 is
 --  signal Saida_Somador : std_logic_vector (8 downto 0); 
 --  signal Mux_PC : std_logic_vector (8 downto 0); 
     signal Endereco_barramento : std_logic_vector (8 downto 0);
-    signal Endereco_instrucao : std_logic_vector (8 downto 0);
+    
     --signal Saida_Decod : STD_LOGIC_VECTOR(11 downto 0);
 --  signal Saida_FlipFlop : std_logic;
 --  signal Saida_ULA_Flag0 : std_logic;
@@ -93,6 +95,9 @@ architecture arquitetura of Aula7 is
 	 signal saida7seg_HEX4 : std_logic_vector (6 downto 0);
 	 signal saida7seg_HEX5 : std_logic_vector (6 downto 0);
 	 
+	 alias opCode : std_logic_vector (3 downto 0) is ROM_DADOS(12 downto 9);
+	 alias Endereco_instrucao : std_logic_vector (8 downto 0) is ROM_DADOS(8 downto 0);
+	 
 
 
 begin
@@ -111,7 +116,7 @@ end generate;
 CPU : entity work.CPU
 port map   (
     CLOCK => CLK,
-    INTRUCTION_IN => Endereco_instrucao & opCode, -- CONFIRMAR SE É ASSIM QUE CONCATENA!!
+    INTRUCTION_IN => ROM_DADOS, -- CONFIRMAR SE É ASSIM QUE CONCATENA!!
 	 RD => habLeituraMEM,
 	 WR => habEscritaMEM,
 	 BARRAMENTO_DADOS_ENTRADA => Saida_Dados,
@@ -122,7 +127,7 @@ port map   (
   );
 
 MEMORIA_INTRUCAO : entity work.memoriaROM   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM)
-          port map (Endereco => Endereco_PC, Dado(8 downto 0) => Endereco_instrucao, Dado(12 downto 9) => opCode);
+          port map (Endereco => Endereco_PC, Dado => ROM_DADOS);
 
 MEMORIA_DADOS : entity work.memoriaRAM   --generic map (dataWidth => larguraDados, addrWidth => larguraEnderecoRAM)
           port map (addr => Endereco_barramento(5 downto 0), we => habEscritaMEM, re => habLeituraMEM, habilita => Bloco_0, dado_in => REG1_ULA_A, dado_out => Saida_Dados, clk => CLK);		
@@ -450,6 +455,8 @@ HEX2 <= saida7seg_HEX2;
 HEX3 <= saida7seg_HEX3;
 HEX4 <= saida7seg_HEX4;
 HEX5 <= saida7seg_HEX5;
+
+PC_OUT <= Endereco_PC;
 
 
 			 

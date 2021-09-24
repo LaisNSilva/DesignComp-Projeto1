@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Aula7
-Fri Sep 24 15:36:27 2021
+Fri Sep 24 16:13:42 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -121,14 +121,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Sep 24 15:36:27 2021       ;
+; Analysis & Synthesis Status     ; Successful - Fri Sep 24 16:13:42 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Aula7                                       ;
 ; Top-level Entity Name           ; Aula7                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 178                                         ;
-; Total pins                      ; 68                                          ;
+; Total registers                 ; 179                                         ;
+; Total pins                      ; 77                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -277,25 +277,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 136          ;
+; Estimate of Logic utilization (ALMs needed) ; 137          ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 160          ;
+; Combinational ALUT usage for logic          ; 161          ;
 ;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 43           ;
-;     -- 5 input functions                    ; 32           ;
+;     -- 6 input functions                    ; 42           ;
+;     -- 5 input functions                    ; 33           ;
 ;     -- 4 input functions                    ; 66           ;
-;     -- <=3 input functions                  ; 19           ;
+;     -- <=3 input functions                  ; 20           ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 178          ;
+; Dedicated logic registers                   ; 179          ;
 ;                                             ;              ;
-; I/O pins                                    ; 68           ;
+; I/O pins                                    ; 77           ;
 ;                                             ;              ;
 ; Total DSP Blocks                            ; 0            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 178          ;
-; Total fan-out                               ; 1415         ;
-; Average fan-out                             ; 2.99         ;
+; Maximum fan-out                             ; 179          ;
+; Total fan-out                               ; 1437         ;
+; Average fan-out                             ; 2.91         ;
 +---------------------------------------------+--------------+
 
 
@@ -304,15 +304,15 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name            ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+------------------------+--------------+
-; |Aula7                                         ; 160 (10)            ; 178 (0)                   ; 0                 ; 0          ; 68   ; 0            ; |Aula7                                                ; Aula7                  ; work         ;
-;    |CPU:CPU|                                   ; 106 (0)             ; 144 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU                                        ; CPU                    ; work         ;
+; |Aula7                                         ; 161 (11)            ; 179 (0)                   ; 0                 ; 0          ; 77   ; 0            ; |Aula7                                                ; Aula7                  ; work         ;
+;    |CPU:CPU|                                   ; 106 (0)             ; 145 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU                                        ; CPU                    ; work         ;
 ;       |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao         ; work         ;
 ;       |ULASomaSub:ULA1|                        ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|ULASomaSub:ULA1                        ; ULASomaSub             ; work         ;
-;       |memoriaRAM:MEMORIA_DADOS|               ; 51 (51)             ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|memoriaRAM:MEMORIA_DADOS               ; memoriaRAM             ; work         ;
-;       |memoriaROM:MEMORIA_INTRUCAO|            ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|memoriaROM:MEMORIA_INTRUCAO            ; memoriaROM             ; work         ;
+;       |memoriaRAM:MEMORIA_DADOS|               ; 49 (49)             ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|memoriaRAM:MEMORIA_DADOS               ; memoriaRAM             ; work         ;
+;       |memoriaROM:MEMORIA_INTRUCAO|            ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|memoriaROM:MEMORIA_INTRUCAO            ; memoriaROM             ; work         ;
 ;       |registradorGenerico:REG1|               ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|registradorGenerico:REG1               ; registradorGenerico    ; work         ;
-;       |registradorGenerico_PC:PC|              ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|registradorGenerico_PC:PC              ; registradorGenerico_PC ; work         ;
-;       |somaConstante:SOMADOR|                  ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|somaConstante:SOMADOR                  ; somaConstante          ; work         ;
+;       |registradorGenerico_PC:PC|              ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|registradorGenerico_PC:PC              ; registradorGenerico_PC ; work         ;
+;       |somaConstante:SOMADOR|                  ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|somaConstante:SOMADOR                  ; somaConstante          ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX0|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX0                   ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX1|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX1                   ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX2|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX2                   ; DecodBinario_7Seg      ; work         ;
@@ -724,8 +724,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~526              ; Lost fanout                                 ;
 ; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~527              ; Lost fanout                                 ;
 ; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~528              ; Lost fanout                                 ;
-; CPU:CPU|registradorGenerico_PC:PC|DOUT[8]             ; Lost fanout                                 ;
-; Total Number of Removed Registers = 395               ;                                             ;
+; Total Number of Removed Registers = 394               ;                                             ;
 +-------------------------------------------------------+---------------------------------------------+
 
 
@@ -734,9 +733,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 178   ;
+; Total registers                              ; 179   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 16    ;
+; Number of registers using Synchronous Load   ; 17    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 168   ;
@@ -749,7 +748,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Aula7|CPU:CPU|registradorGenerico:REG1|DOUT[2] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Aula7|CPU:CPU|registradorGenerico:REG1|DOUT[1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
 
 
@@ -1513,27 +1512,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 178                         ;
+; arriav_ff             ; 179                         ;
 ;     ENA               ; 160                         ;
 ;     ENA SLD           ; 8                           ;
-;     SLD               ; 8                           ;
+;     SLD               ; 9                           ;
 ;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 160                         ;
-;     arith             ; 25                          ;
+; arriav_lcell_comb     ; 161                         ;
+;     arith             ; 26                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 8                           ;
+;         1 data inputs ; 9                           ;
 ;         3 data inputs ; 8                           ;
 ;         5 data inputs ; 8                           ;
 ;     normal            ; 135                         ;
 ;         0 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
 ;         4 data inputs ; 66                          ;
-;         5 data inputs ; 24                          ;
-;         6 data inputs ; 43                          ;
-; boundary_port         ; 68                          ;
+;         5 data inputs ; 25                          ;
+;         6 data inputs ; 42                          ;
+; boundary_port         ; 77                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.70                        ;
-; Average LUT depth     ; 3.84                        ;
+; Average LUT depth     ; 3.81                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1552,11 +1551,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 24 15:36:20 2021
+    Info: Processing started: Fri Sep 24 16:13:34 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula7 -c Aula7
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file aula7.vhd
-    Info (12022): Found design unit 1: Aula7-arquitetura File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 33
+    Info (12022): Found design unit 1: Aula7-arquitetura File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 34
     Info (12023): Found entity 1: Aula7 File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 4
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
     Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 10
@@ -1611,7 +1610,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file buffert
     Info (12022): Found design unit 1: buffertri-comportament File: C:/Descomp/DesignComp-Projeto1/Aula7/buffertri.vhd Line: 16
     Info (12023): Found entity 1: buffertri File: C:/Descomp/DesignComp-Projeto1/Aula7/buffertri.vhd Line: 4
 Info (12127): Elaborating entity "Aula7" for the top level hierarchy
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 111
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 116
 Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 72
 Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 78
 Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 83
@@ -1623,11 +1622,11 @@ Info (12128): Elaborating entity "memoriaRAM" for hierarchy "CPU:CPU|memoriaRAM:
 Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 109
 Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 113
 Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 118
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 127
-Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 130
-Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 190
-Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 199
-Info (12128): Elaborating entity "buffertri" for hierarchy "buffertri:FPGA_R" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 297
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 132
+Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 135
+Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 195
+Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 204
+Info (12128): Elaborating entity "buffertri" for hierarchy "buffertri:FPGA_R" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 302
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 27
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
@@ -1640,7 +1639,7 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "CPU:CPU|memoriaRAM:MEMORIA_DADOS|dado_out[6]" feeding internal logic into a wire File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
     Warning (13049): Converted tri-state buffer "CPU:CPU|memoriaRAM:MEMORIA_DADOS|dado_out[7]" feeding internal logic into a wire File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 386 registers lost all their fanouts during netlist optimizations.
+Info (17049): 385 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 15 input pin(s) that do not drive logic
@@ -1659,14 +1658,14 @@ Warning (21074): Design contains 15 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-Info (21057): Implemented 388 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 398 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 320 logic cells
+    Info (21059): Implemented 61 output pins
+    Info (21061): Implemented 321 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4893 megabytes
-    Info: Processing ended: Fri Sep 24 15:36:27 2021
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 4903 megabytes
+    Info: Processing ended: Fri Sep 24 16:13:42 2021
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:16
 
 

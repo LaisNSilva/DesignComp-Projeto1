@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "09/24/2021 15:38:11"
+-- Generated on "09/24/2021 16:13:47"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Aula7
 -- 
@@ -44,19 +44,21 @@ SIGNAL HEX4 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL HEX5 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL KEY : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL LEDR : STD_LOGIC_VECTOR(9 DOWNTO 0);
+SIGNAL PC_OUT : STD_LOGIC_VECTOR(8 DOWNTO 0);
 SIGNAL SW : STD_LOGIC_VECTOR(9 DOWNTO 0);
 COMPONENT Aula7
 	PORT (
 	CLOCK_50 : IN STD_LOGIC;
 	FPGA_RESET_N : IN STD_LOGIC;
-	HEX0 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX1 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX2 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX3 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX4 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX5 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX0 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX1 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX2 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX3 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX4 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX5 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
 	KEY : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-	LEDR : BUFFER STD_LOGIC_VECTOR(9 DOWNTO 0);
+	LEDR : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+	PC_OUT : OUT STD_LOGIC_VECTOR(8 DOWNTO 0);
 	SW : IN STD_LOGIC_VECTOR(9 DOWNTO 0)
 	);
 END COMPONENT;
@@ -74,6 +76,7 @@ BEGIN
 	HEX5 => HEX5,
 	KEY => KEY,
 	LEDR => LEDR,
+	PC_OUT => PC_OUT,
 	SW => SW
 	);
 
@@ -87,13 +90,17 @@ END PROCESS t_prcs_FPGA_RESET_N;
 -- KEY[0]
 t_prcs_KEY_0: PROCESS
 BEGIN
-LOOP
-	KEY(0) <= '0';
-	WAIT FOR 10000 ps;
 	KEY(0) <= '1';
 	WAIT FOR 10000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
+	FOR i IN 1 TO 49
+	LOOP
+		KEY(0) <= '0';
+		WAIT FOR 10000 ps;
+		KEY(0) <= '1';
+		WAIT FOR 10000 ps;
+	END LOOP;
+	KEY(0) <= '0';
+WAIT;
 END PROCESS t_prcs_KEY_0;
 -- SW[9]
 t_prcs_SW_9: PROCESS
