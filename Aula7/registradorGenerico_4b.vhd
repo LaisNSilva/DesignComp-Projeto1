@@ -17,7 +17,7 @@ architecture comportamento of registradorGenerico_4b is
 begin
     -- In Altera devices, register signals have a set priority.
     -- The HDL design should reflect this priority.
-    process(CLK)
+    process(CLK,RST)
     begin
         -- The asynchronous reset signal has the highest priority
         if (RST = '1') then

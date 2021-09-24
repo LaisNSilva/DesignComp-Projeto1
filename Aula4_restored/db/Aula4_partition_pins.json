@@ -1,0 +1,97 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "BARRAMENTO_DADOS_SAIDA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_SAIDA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_SAIDA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_SAIDA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_SAIDA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_SAIDA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_SAIDA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_SAIDA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENTRADA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENTRADA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENTRADA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENTRADA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENTRADA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENTRADA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENTRADA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENTRADA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENDERECOS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENDERECOS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENDERECOS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENDERECOS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BARRAMENTO_DADOS_ENDERECOS[8]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

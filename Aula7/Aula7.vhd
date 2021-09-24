@@ -13,7 +13,7 @@ entity Aula7 is
   port   (
    CLOCK_50 : in std_logic;
    KEY: in std_logic_vector(3 downto 0);
-	FPGA_RESET: in std_logic;
+	FPGA_RESET_N: in std_logic;
 	 --BARRAMENTO_DADOS_SAIDA: out std_logic_vector(larguraDados-1 downto 0);
 	 --BARRAMENTO_DADOS_ENTRADA: out std_logic_vector(larguraDados-1 downto 0);
 	 --BARRAMENTO_DADOS_ENDERECOS: out std_logic_vector(8 downto 0)
@@ -62,21 +62,21 @@ architecture arquitetura of Aula7 is
 --  signal Saida_LogicaDesvio : std_logic_vector (1 downto 0);
 --  signal SaidaReg_MUX_C : std_logic_vector (8 downto 0);
 	 signal Bloco_0 : std_logic;
-	 signal Bloco_1 : std_logic;
-	 signal Bloco_2 : std_logic;
-	 signal Bloco_3 : std_logic;
+	 --signal Bloco_1 : std_logic;
+	-- signal Bloco_2 : std_logic;
+	-- signal Bloco_3 : std_logic;
 	 signal Bloco_4 : std_logic;
 	 signal Bloco_5 : std_logic;
-	 signal Bloco_6 : std_logic;
-	 signal Bloco_7 : std_logic;
+	 --signal Bloco_6 : std_logic;
+	 --signal Bloco_7 : std_logic;
 	 signal Endereco_0 : std_logic;
 	 signal Endereco_1 : std_logic;
 	 signal Endereco_2 : std_logic;
 	 signal Endereco_3 : std_logic;
 	 signal Endereco_4 : std_logic;
 	 signal Endereco_5 : std_logic;
-	 signal Endereco_6 : std_logic;
-	 signal Endereco_7 : std_logic;
+	 --signal Endereco_6 : std_logic;
+	 --signal Endereco_7 : std_logic;
 	 signal Entrada_LEDR0a7 : std_logic_vector (larguraDados-1 downto 0);
 	 signal Entrada_LEDR8 : std_logic;
 	 signal Entrada_LEDR9 : std_logic;
@@ -131,13 +131,13 @@ DECODIFICADOR_3X8_6a8 : entity work.Decod3x8
 			port map (	
 			ENTRADA => Endereco_barramento(8 downto 6),
 			S0 => Bloco_0,
-			S1 => Bloco_1,
-			S2 => Bloco_2,
-			S3 => Bloco_3,
+			S1 => OPEN, --Bloco_1,
+			S2 => OPEN, --Bloco_2,
+			S3 => OPEN, --Bloco_3,
 			S4 => Bloco_4,
 			S5 => Bloco_5,
-			S6 => Bloco_6,
-			S7 => Bloco_7
+			S6 => OPEN, --Bloco_6,
+			S7 => OPEN --Bloco_7
 			);
 			
 DECODIFICADOR_3X8_0a2 : entity work.Decod3x8
@@ -149,8 +149,8 @@ DECODIFICADOR_3X8_0a2 : entity work.Decod3x8
 			S3 => Endereco_3,
 			S4 => Endereco_4,
 			S5 => Endereco_5,
-			S6 => Endereco_6,
-			S7 => Endereco_7
+			S6 => OPEN, --Endereco_6,
+			S7 => OPEN --Endereco_7
 			);
 			
 -- O port map completo do Acumulador.
@@ -296,7 +296,7 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
 					  
 FPGA_R: entity work.buffertri
           port map (
-			 DIN => FPGA_RESET,
+			 DIN => FPGA_RESET_N,
 			 DOUT => Saida_Dados(6), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_4 AND Bloco_5,
 			 RST => '0',
