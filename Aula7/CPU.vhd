@@ -39,7 +39,7 @@ architecture arquitetura of CPU is
   signal SelMUX : std_logic;
   signal Habilita_A : std_logic;
   signal Operacao_ULA : std_logic_vector (1 downto 0);
-  signal Saida_Dados : std_logic_vector (larguraDados-1 downto 0);
+  --signal Saida_Dados : std_logic_vector (larguraDados-1 downto 0);
   signal Imediato : std_logic_vector (larguraDados-1 downto 0);
   signal opCode : std_logic_vector (3 downto 0);
   signal endereco_PC:std_logic_vector (8 downto 0);
@@ -70,13 +70,13 @@ end generate;
 
 -- O port map completo do MUX.
 MUX1 :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
-        port map( entradaA_MUX => Saida_Dados,
-                 entradaB_MUX =>  Endereco_Imediato(7 downto 0),
+        port map( entradaA_MUX => BARRAMENTO_DADOS_ENTRADA,
+                 entradaB_MUX =>  INTRUCTION_IN(7 downto 0),
                  seletor_MUX => Saida_Decod(6),
                  saida_MUX => MUX_ULA_B);
 					  
 DECODIFICADOR_INSTRUCAO : entity work.DecodInstrucao -- apagamos o generic map
-          port map (CodigoBinario => opCode, Saida => Saida_Decod);
+          port map (CodigoBinario => INTRUCTION_IN(12 downto 9), Saida => Saida_Decod);
 			 
 			 
 -- O port map completo do Acumulador.
@@ -99,11 +99,11 @@ ULA1 : entity work.ULASomaSub  generic map(larguraDados => larguraDados)
           port map (entradaA => REG1_ULA_A, entradaB => MUX_ULA_B, seletor => Saida_Decod(4 downto 3), saida => Saida_ULA, flag_0 => Saida_ULA_Flag0);
 
 -- Falta acertar o conteudo da ROM (no arquivo memoriaROM.vhd)
-MEMORIA_INTRUCAO : entity work.memoriaROM   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM)
-          port map (Endereco => Endereco_PC, Dado(8 downto 0) => Endereco_Imediato, Dado(12 downto 9) => opCode);
+--MEMORIA_INTRUCAO : entity work.memoriaROM   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM)
+          --port map (Endereco => Endereco_PC, Dado(8 downto 0) => Endereco_Imediato, Dado(12 downto 9) => opCode);
 
-MEMORIA_DADOS : entity work.memoriaRAM   generic map (dataWidth => larguraDados, addrWidth => larguraEnderecoRAM)
-          port map (addr => Endereco_Imediato(7 downto 0), we => Saida_Decod(0), re=>Saida_Decod(1), habilita=>Endereco_Imediato(8), dado_in => REG1_ULA_A, dado_out => Saida_Dados, clk => CLK);		
+--MEMORIA_DADOS : entity work.memoriaRAM   generic map (dataWidth => larguraDados, addrWidth => larguraEnderecoRAM)
+          --port map (addr => Endereco_Imediato(7 downto 0), we => Saida_Decod(0), re=>Saida_Decod(1), habilita=>Endereco_Imediato(8), dado_in => REG1_ULA_A, dado_out => Saida_Dados, clk => CLK);		
 
 		
 FLAG : 	entity work.FlipFlop   
@@ -117,15 +117,14 @@ LOGICA_DE_DESVIO : entity work.LogicaDesvio
 -- O port map completo do MUX.
 MUX2 :  entity work.muxGenerico2x1_PC  generic map (larguraDados => larguraDados_PC)
         port map( entradaA_MUX => Saida_Somador,
-                 entradaB_MUX =>  Endereco_Imediato(8 downto 0),
+                 entradaB_MUX =>  INTRUCTION_IN(8 downto 0),
 					  entradaC_MUX => SaidaReg_MUX_C,
 					  entradaD_MUX => "000000000",
                  seletor_MUX => Saida_LogicaDesvio,
                  saida_MUX => Mux_PC);
 					  
 BARRAMENTO_DADOS_SAIDA <= REG1_ULA_A; --Data_OUT
---BARRAMENTO_DADOS_ENTRADA <= Saida_Dados; --Data_IN(saindo da RAM e entrando na CPU)
-BARRAMENTO_DADOS_ENDERECOS <= Endereco_Imediato(8 downto 0); --Data_Address
+BARRAMENTO_DADOS_ENDERECOS <= INTRUCTION_IN(8 downto 0); --Data_Address
 
 
 

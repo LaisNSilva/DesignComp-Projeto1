@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Aula7
-Fri Sep 24 16:13:42 2021
+Sun Sep 26 23:57:19 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,91 +10,83 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |Aula7
- 12. Parameter Settings for User Entity Instance: CPU:CPU
- 13. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1
- 14. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:PC
- 15. Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:SOMADOR
- 16. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:REG_END_RET
- 17. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:REG1
- 18. Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSub:ULA1
- 19. Parameter Settings for User Entity Instance: CPU:CPU|memoriaROM:MEMORIA_INTRUCAO
- 20. Parameter Settings for User Entity Instance: CPU:CPU|memoriaRAM:MEMORIA_DADOS
- 21. Parameter Settings for User Entity Instance: CPU:CPU|FlipFlop:FLAG
- 22. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1_PC:MUX2
- 23. Parameter Settings for User Entity Instance: memoriaROM:MEMORIA_INTRUCAO
- 24. Parameter Settings for User Entity Instance: memoriaRAM:MEMORIA_DADOS
- 25. Parameter Settings for User Entity Instance: registradorGenerico:REG_LEDR0a7
- 26. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR8
- 27. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR9
- 28. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX0
- 29. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX1
- 30. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX2
- 31. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX3
- 32. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX4
- 33. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX5
- 34. Parameter Settings for User Entity Instance: buffertri:FPGA_R
- 35. Parameter Settings for User Entity Instance: buffertri:KEY_3
- 36. Parameter Settings for User Entity Instance: buffertri:KEY_2
- 37. Parameter Settings for User Entity Instance: buffertri:KEY_1
- 38. Parameter Settings for User Entity Instance: buffertri:KEY_0
- 39. Parameter Settings for User Entity Instance: buffertri:SW_9
- 40. Parameter Settings for User Entity Instance: buffertri:SW_8
- 41. Parameter Settings for User Entity Instance: buffertri:SW_7
- 42. Parameter Settings for User Entity Instance: buffertri:SW_6
- 43. Parameter Settings for User Entity Instance: buffertri:SW_5
- 44. Parameter Settings for User Entity Instance: buffertri:SW_4
- 45. Parameter Settings for User Entity Instance: buffertri:SW_3
- 46. Parameter Settings for User Entity Instance: buffertri:SW_2
- 47. Parameter Settings for User Entity Instance: buffertri:SW_1
- 48. Parameter Settings for User Entity Instance: buffertri:SW_0
- 49. Port Connectivity Checks: "buffertri:SW_0"
- 50. Port Connectivity Checks: "buffertri:SW_1"
- 51. Port Connectivity Checks: "buffertri:SW_2"
- 52. Port Connectivity Checks: "buffertri:SW_3"
- 53. Port Connectivity Checks: "buffertri:SW_4"
- 54. Port Connectivity Checks: "buffertri:SW_5"
- 55. Port Connectivity Checks: "buffertri:SW_6"
- 56. Port Connectivity Checks: "buffertri:SW_7"
- 57. Port Connectivity Checks: "buffertri:SW_8"
- 58. Port Connectivity Checks: "buffertri:SW_9"
- 59. Port Connectivity Checks: "buffertri:KEY_0"
- 60. Port Connectivity Checks: "buffertri:KEY_1"
- 61. Port Connectivity Checks: "buffertri:KEY_2"
- 62. Port Connectivity Checks: "buffertri:KEY_3"
- 63. Port Connectivity Checks: "buffertri:FPGA_R"
- 64. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
- 65. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5"
- 66. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
- 67. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4"
- 68. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
- 69. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3"
- 70. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
- 71. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2"
- 72. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
- 73. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1"
- 74. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
- 75. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
- 76. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
- 77. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
- 78. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
- 79. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
- 80. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
- 81. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
- 82. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
- 83. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REG1"
- 84. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
- 85. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
- 86. Port Connectivity Checks: "CPU:CPU"
- 87. Post-Synthesis Netlist Statistics for Top Partition
- 88. Elapsed Time Per Partition
- 89. Analysis & Synthesis Messages
+  5. Multiplexer Restructuring Statistics (Restructuring Performed)
+  6. Parameter Settings for User Entity Instance: Top-level Entity: |Aula7
+  7. Parameter Settings for User Entity Instance: CPU:CPU
+  8. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1
+  9. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:PC
+ 10. Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:SOMADOR
+ 11. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:REG_END_RET
+ 12. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:REG1
+ 13. Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSub:ULA1
+ 14. Parameter Settings for User Entity Instance: CPU:CPU|FlipFlop:FLAG
+ 15. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1_PC:MUX2
+ 16. Parameter Settings for User Entity Instance: memoriaROM:MEMORIA_INTRUCAO
+ 17. Parameter Settings for User Entity Instance: memoriaRAM:MEMORIA_DADOS
+ 18. Parameter Settings for User Entity Instance: registradorGenerico:REG_LEDR0a7
+ 19. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR8
+ 20. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR9
+ 21. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX0
+ 22. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX1
+ 23. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX2
+ 24. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX3
+ 25. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX4
+ 26. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX5
+ 27. Parameter Settings for User Entity Instance: buffertri:FPGA_R
+ 28. Parameter Settings for User Entity Instance: buffertri:KEY_3
+ 29. Parameter Settings for User Entity Instance: buffertri:KEY_2
+ 30. Parameter Settings for User Entity Instance: buffertri:KEY_1
+ 31. Parameter Settings for User Entity Instance: buffertri:KEY_0
+ 32. Parameter Settings for User Entity Instance: buffertri:SW_9
+ 33. Parameter Settings for User Entity Instance: buffertri:SW_8
+ 34. Parameter Settings for User Entity Instance: buffertri:SW_7
+ 35. Parameter Settings for User Entity Instance: buffertri:SW_6
+ 36. Parameter Settings for User Entity Instance: buffertri:SW_5
+ 37. Parameter Settings for User Entity Instance: buffertri:SW_4
+ 38. Parameter Settings for User Entity Instance: buffertri:SW_3
+ 39. Parameter Settings for User Entity Instance: buffertri:SW_2
+ 40. Parameter Settings for User Entity Instance: buffertri:SW_1
+ 41. Parameter Settings for User Entity Instance: buffertri:SW_0
+ 42. Port Connectivity Checks: "buffertri:SW_0"
+ 43. Port Connectivity Checks: "buffertri:SW_1"
+ 44. Port Connectivity Checks: "buffertri:SW_2"
+ 45. Port Connectivity Checks: "buffertri:SW_3"
+ 46. Port Connectivity Checks: "buffertri:SW_4"
+ 47. Port Connectivity Checks: "buffertri:SW_5"
+ 48. Port Connectivity Checks: "buffertri:SW_6"
+ 49. Port Connectivity Checks: "buffertri:SW_7"
+ 50. Port Connectivity Checks: "buffertri:SW_8"
+ 51. Port Connectivity Checks: "buffertri:SW_9"
+ 52. Port Connectivity Checks: "buffertri:KEY_0"
+ 53. Port Connectivity Checks: "buffertri:KEY_1"
+ 54. Port Connectivity Checks: "buffertri:KEY_2"
+ 55. Port Connectivity Checks: "buffertri:KEY_3"
+ 56. Port Connectivity Checks: "buffertri:FPGA_R"
+ 57. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
+ 58. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5"
+ 59. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
+ 60. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4"
+ 61. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
+ 62. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3"
+ 63. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
+ 64. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2"
+ 65. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
+ 66. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1"
+ 67. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
+ 68. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
+ 69. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
+ 70. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
+ 71. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
+ 72. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
+ 73. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
+ 74. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
+ 75. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
+ 76. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REG1"
+ 77. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
+ 78. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
+ 79. Port Connectivity Checks: "CPU:CPU"
+ 80. Elapsed Time Per Partition
+ 81. Analysis & Synthesis Messages
 
 
 
@@ -118,27 +110,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Sep 24 16:13:42 2021       ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                   ; Aula7                                       ;
-; Top-level Entity Name           ; Aula7                                       ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 179                                         ;
-; Total pins                      ; 77                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Sun Sep 26 23:57:19 2021           ;
+; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name               ; Aula7                                       ;
+; Top-level Entity Name       ; Aula7                                       ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -235,512 +222,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-; Aula7.vhd                        ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd                  ;         ;
-; FlipFlop.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/FlipFlop.vhd               ;         ;
-; DecodInstrucao.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd         ;         ;
-; LogicaDesvio.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd           ;         ;
-; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd             ;         ;
-; memoriaROM.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/memoriaROM.vhd             ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd         ;         ;
-; muxGenerico2x1_PC.vhd            ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd      ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd    ;         ;
-; registradorGenerico_PC.vhd       ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/somaConstante.vhd          ;         ;
-; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd             ;         ;
-; Decod3x8vhd.vhd                  ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd            ;         ;
-; CPU.vhd                          ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd                    ;         ;
-; DecodBinario_7seg.vhd            ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd      ;         ;
-; registradorGenerico_4b.vhd       ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd ;         ;
-; buffertri.vhd                    ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/buffertri.vhd              ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-
-
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 137          ;
-;                                             ;              ;
-; Combinational ALUT usage for logic          ; 161          ;
-;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 42           ;
-;     -- 5 input functions                    ; 33           ;
-;     -- 4 input functions                    ; 66           ;
-;     -- <=3 input functions                  ; 20           ;
-;                                             ;              ;
-; Dedicated logic registers                   ; 179          ;
-;                                             ;              ;
-; I/O pins                                    ; 77           ;
-;                                             ;              ;
-; Total DSP Blocks                            ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 179          ;
-; Total fan-out                               ; 1437         ;
-; Average fan-out                             ; 2.91         ;
-+---------------------------------------------+--------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                     ;
-+------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+------------------------+--------------+
-; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name            ; Library Name ;
-+------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+------------------------+--------------+
-; |Aula7                                         ; 161 (11)            ; 179 (0)                   ; 0                 ; 0          ; 77   ; 0            ; |Aula7                                                ; Aula7                  ; work         ;
-;    |CPU:CPU|                                   ; 106 (0)             ; 145 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU                                        ; CPU                    ; work         ;
-;       |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao         ; work         ;
-;       |ULASomaSub:ULA1|                        ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|ULASomaSub:ULA1                        ; ULASomaSub             ; work         ;
-;       |memoriaRAM:MEMORIA_DADOS|               ; 49 (49)             ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|memoriaRAM:MEMORIA_DADOS               ; memoriaRAM             ; work         ;
-;       |memoriaROM:MEMORIA_INTRUCAO|            ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|memoriaROM:MEMORIA_INTRUCAO            ; memoriaROM             ; work         ;
-;       |registradorGenerico:REG1|               ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|registradorGenerico:REG1               ; registradorGenerico    ; work         ;
-;       |registradorGenerico_PC:PC|              ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|registradorGenerico_PC:PC              ; registradorGenerico_PC ; work         ;
-;       |somaConstante:SOMADOR|                  ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|somaConstante:SOMADOR                  ; somaConstante          ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX0|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX0                   ; DecodBinario_7Seg      ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX1|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX1                   ; DecodBinario_7Seg      ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX2|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX2                   ; DecodBinario_7Seg      ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX3|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX3                   ; DecodBinario_7Seg      ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX4|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX4                   ; DecodBinario_7Seg      ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX5|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX5                   ; DecodBinario_7Seg      ; work         ;
-;    |FlipFlop:FF_LEDR8|                         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|FlipFlop:FF_LEDR8                              ; FlipFlop               ; work         ;
-;    |FlipFlop:FF_LEDR9|                         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|FlipFlop:FF_LEDR9                              ; FlipFlop               ; work         ;
-;    |registradorGenerico:REG_LEDR0a7|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|registradorGenerico:REG_LEDR0a7                ; registradorGenerico    ; work         ;
-;    |registradorGenerico_4b:REG_HEX0|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|registradorGenerico_4b:REG_HEX0                ; registradorGenerico_4b ; work         ;
-;    |registradorGenerico_4b:REG_HEX1|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|registradorGenerico_4b:REG_HEX1                ; registradorGenerico_4b ; work         ;
-;    |registradorGenerico_4b:REG_HEX2|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|registradorGenerico_4b:REG_HEX2                ; registradorGenerico_4b ; work         ;
-;    |registradorGenerico_4b:REG_HEX3|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|registradorGenerico_4b:REG_HEX3                ; registradorGenerico_4b ; work         ;
-;    |registradorGenerico_4b:REG_HEX4|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|registradorGenerico_4b:REG_HEX4                ; registradorGenerico_4b ; work         ;
-;    |registradorGenerico_4b:REG_HEX5|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|registradorGenerico_4b:REG_HEX5                ; registradorGenerico_4b ; work         ;
-+------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                  ;
-+-------------------------------------------------------+---------------------------------------------+
-; Register name                                         ; Reason for Removal                          ;
-+-------------------------------------------------------+---------------------------------------------+
-; CPU:CPU|registradorGenerico_PC:REG_END_RET|DOUT[0]    ; Lost fanout                                 ;
-; CPU:CPU|registradorGenerico_PC:REG_END_RET|DOUT[1..8] ; Stuck at GND due to stuck port clock_enable ;
-; CPU:CPU|FlipFlop:FLAG|DOUT                            ; Stuck at GND due to stuck port clock_enable ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~81               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~82               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~83               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~84               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~85               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~86               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~87               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~88               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~89               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~90               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~91               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~92               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~93               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~94               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~95               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~96               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~97               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~98               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~99               ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~100              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~101              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~102              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~103              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~104              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~105              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~106              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~107              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~108              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~109              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~110              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~111              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~112              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~113              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~114              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~115              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~116              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~117              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~118              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~119              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~120              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~121              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~122              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~123              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~124              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~125              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~126              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~127              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~128              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~129              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~130              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~131              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~132              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~133              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~134              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~135              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~136              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~137              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~138              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~139              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~140              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~141              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~142              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~143              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~144              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~145              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~146              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~147              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~148              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~149              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~150              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~151              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~152              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~153              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~154              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~155              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~156              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~157              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~158              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~159              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~160              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~161              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~162              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~163              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~164              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~165              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~166              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~167              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~168              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~169              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~170              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~171              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~172              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~173              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~174              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~175              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~176              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~177              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~178              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~179              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~180              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~181              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~182              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~183              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~184              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~185              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~186              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~187              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~188              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~189              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~190              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~191              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~192              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~193              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~194              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~195              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~196              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~197              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~198              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~199              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~200              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~201              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~202              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~203              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~204              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~205              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~206              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~207              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~208              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~209              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~210              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~211              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~212              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~213              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~214              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~215              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~216              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~217              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~218              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~219              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~220              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~221              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~222              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~223              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~224              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~225              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~226              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~227              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~228              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~229              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~230              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~231              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~232              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~233              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~234              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~235              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~236              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~237              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~238              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~239              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~240              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~241              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~242              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~243              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~244              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~245              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~246              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~247              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~248              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~249              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~250              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~251              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~252              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~253              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~254              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~255              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~256              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~257              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~258              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~259              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~260              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~261              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~262              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~263              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~264              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~265              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~266              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~267              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~268              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~269              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~270              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~271              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~272              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~337              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~338              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~339              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~340              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~341              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~342              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~343              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~344              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~345              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~346              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~347              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~348              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~349              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~350              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~351              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~352              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~353              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~354              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~355              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~356              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~357              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~358              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~359              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~360              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~361              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~362              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~363              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~364              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~365              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~366              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~367              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~368              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~369              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~370              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~371              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~372              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~373              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~374              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~375              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~376              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~377              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~378              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~379              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~380              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~381              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~382              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~383              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~384              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~385              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~386              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~387              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~388              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~389              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~390              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~391              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~392              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~393              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~394              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~395              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~396              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~397              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~398              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~399              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~400              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~401              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~402              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~403              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~404              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~405              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~406              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~407              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~408              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~409              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~410              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~411              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~412              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~413              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~414              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~415              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~416              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~417              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~418              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~419              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~420              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~421              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~422              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~423              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~424              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~425              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~426              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~427              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~428              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~429              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~430              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~431              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~432              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~433              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~434              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~435              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~436              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~437              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~438              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~439              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~440              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~441              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~442              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~443              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~444              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~445              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~446              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~447              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~448              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~449              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~450              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~451              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~452              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~453              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~454              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~455              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~456              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~457              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~458              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~459              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~460              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~461              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~462              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~463              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~464              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~465              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~466              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~467              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~468              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~469              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~470              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~471              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~472              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~473              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~474              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~475              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~476              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~477              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~478              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~479              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~480              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~481              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~482              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~483              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~484              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~485              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~486              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~487              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~488              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~489              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~490              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~491              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~492              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~493              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~494              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~495              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~496              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~497              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~498              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~499              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~500              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~501              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~502              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~503              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~504              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~505              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~506              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~507              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~508              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~509              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~510              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~511              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~512              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~513              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~514              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~515              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~516              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~517              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~518              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~519              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~520              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~521              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~522              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~523              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~524              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~525              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~526              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~527              ; Lost fanout                                 ;
-; CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram~528              ; Lost fanout                                 ;
-; Total Number of Removed Registers = 394               ;                                             ;
-+-------------------------------------------------------+---------------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 179   ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 17    ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 168   ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -748,7 +238,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Aula7|CPU:CPU|registradorGenerico:REG1|DOUT[1] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Aula7|CPU:CPU|registradorGenerico:REG1|DOUT[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
 
 
@@ -840,28 +330,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------------------+
 ; larguradados   ; 8     ; Signed Integer                              ;
 +----------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:CPU|memoriaROM:MEMORIA_INTRUCAO ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; datawidth      ; 13    ; Signed Integer                                          ;
-; addrwidth      ; 8     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:CPU|memoriaRAM:MEMORIA_DADOS ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; datawidth      ; 8     ; Signed Integer                                       ;
-; addrwidth      ; 8     ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1507,35 +975,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+--------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 179                         ;
-;     ENA               ; 160                         ;
-;     ENA SLD           ; 8                           ;
-;     SLD               ; 9                           ;
-;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 161                         ;
-;     arith             ; 26                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 9                           ;
-;         3 data inputs ; 8                           ;
-;         5 data inputs ; 8                           ;
-;     normal            ; 135                         ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 66                          ;
-;         5 data inputs ; 25                          ;
-;         6 data inputs ; 42                          ;
-; boundary_port         ; 77                          ;
-;                       ;                             ;
-; Max LUT depth         ; 6.70                        ;
-; Average LUT depth     ; 3.81                        ;
-+-----------------------+-----------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -1551,121 +990,111 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 24 16:13:34 2021
+    Info: Processing started: Sun Sep 26 23:57:07 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula7 -c Aula7
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file aula7.vhd
-    Info (12022): Found design unit 1: Aula7-arquitetura File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 34
-    Info (12023): Found entity 1: Aula7 File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 4
+    Info (12022): Found design unit 1: Aula7-arquitetura File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 36
+    Info (12023): Found entity 1: Aula7 File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 4
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file flipflop.vhd
-    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 16
-    Info (12023): Found entity 1: FlipFlop File: C:/Descomp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 4
+    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 16
+    Info (12023): Found entity 1: FlipFlop File: C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decodinstrucao.vhd
-    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 10
-    Info (12023): Found entity 1: DecodInstrucao File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 4
+    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 10
+    Info (12023): Found entity 1: DecodInstrucao File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file logicadesvio.vhd
-    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 15
-    Info (12023): Found entity 1: LogicaDesvio File: C:/Descomp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 4
+    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 15
+    Info (12023): Found entity 1: LogicaDesvio File: C:/DesComp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 21
-    Info (12023): Found entity 1: memoriaRAM File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoriarom.vhd
-    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROM File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_pc.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_pc.vhd
-    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico_PC File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico_PC File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Descomp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/DesComp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 17
-    Info (12023): Found entity 1: ULASomaSub File: C:/Descomp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 7
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 17
+    Info (12023): Found entity 1: ULASomaSub File: C:/DesComp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file decod3x8vhd.vhd
-    Info (12022): Found design unit 1: Decod3x8-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 18
-    Info (12023): Found entity 1: Decod3x8 File: C:/Descomp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 4
+    Info (12022): Found design unit 1: Decod3x8-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 18
+    Info (12023): Found entity 1: Decod3x8 File: C:/DesComp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
-    Info (12022): Found design unit 1: CPU-arquitetura File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 27
-    Info (12023): Found entity 1: CPU File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 4
+    Info (12022): Found design unit 1: CPU-arquitetura File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 27
+    Info (12023): Found entity 1: CPU File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decodbinario_7seg.vhd
-    Info (12022): Found design unit 1: DecodBinario_7Seg-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd Line: 17
-    Info (12023): Found entity 1: DecodBinario_7Seg File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd Line: 4
+    Info (12022): Found design unit 1: DecodBinario_7Seg-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd Line: 17
+    Info (12023): Found entity 1: DecodBinario_7Seg File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_4b.vhd
-    Info (12022): Found design unit 1: registradorGenerico_4b-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico_4b File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico_4b-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico_4b File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buffertri.vhd
-    Info (12022): Found design unit 1: buffertri-comportament File: C:/Descomp/DesignComp-Projeto1/Aula7/buffertri.vhd Line: 16
-    Info (12023): Found entity 1: buffertri File: C:/Descomp/DesignComp-Projeto1/Aula7/buffertri.vhd Line: 4
+    Info (12022): Found design unit 1: buffertri-comportament File: C:/DesComp/DesignComp-Projeto1/Aula7/buffertri.vhd Line: 16
+    Info (12023): Found entity 1: buffertri File: C:/DesComp/DesignComp-Projeto1/Aula7/buffertri.vhd Line: 4
 Info (12127): Elaborating entity "Aula7" for the top level hierarchy
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 116
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 72
-Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 78
-Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 83
-Info (12128): Elaborating entity "somaConstante" for hierarchy "CPU:CPU|somaConstante:SOMADOR" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 86
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "CPU:CPU|registradorGenerico:REG1" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 93
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "CPU:CPU|ULASomaSub:ULA1" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 98
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "CPU:CPU|memoriaROM:MEMORIA_INTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 102
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "CPU:CPU|memoriaRAM:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 105
-Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 109
-Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 113
-Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 118
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 132
-Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 135
-Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 195
-Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 204
-Info (12128): Elaborating entity "buffertri" for hierarchy "buffertri:FPGA_R" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 302
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 118
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 72
+Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 78
+Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 83
+Info (12128): Elaborating entity "somaConstante" for hierarchy "CPU:CPU|somaConstante:SOMADOR" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 86
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "CPU:CPU|registradorGenerico:REG1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 93
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "CPU:CPU|ULASomaSub:ULA1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 98
+Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 109
+Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 113
+Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 118
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:MEMORIA_INTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 131
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 134
+Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 137
+Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 197
+Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 206
+Info (12128): Elaborating entity "buffertri" for hierarchy "buffertri:FPGA_R" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 304
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "CPU:CPU|memoriaRAM:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 27
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "CPU:CPU|memoriaRAM:MEMORIA_DADOS|dado_out[0]" feeding internal logic into a wire File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "CPU:CPU|memoriaRAM:MEMORIA_DADOS|dado_out[1]" feeding internal logic into a wire File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "CPU:CPU|memoriaRAM:MEMORIA_DADOS|dado_out[2]" feeding internal logic into a wire File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "CPU:CPU|memoriaRAM:MEMORIA_DADOS|dado_out[3]" feeding internal logic into a wire File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "CPU:CPU|memoriaRAM:MEMORIA_DADOS|dado_out[4]" feeding internal logic into a wire File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "CPU:CPU|memoriaRAM:MEMORIA_DADOS|dado_out[5]" feeding internal logic into a wire File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "CPU:CPU|memoriaRAM:MEMORIA_DADOS|dado_out[6]" feeding internal logic into a wire File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "CPU:CPU|memoriaRAM:MEMORIA_DADOS|dado_out[7]" feeding internal logic into a wire File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 385 registers lost all their fanouts during netlist optimizations.
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 15 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 15
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 15
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 15
-    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 16
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-Info (21057): Implemented 398 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 61 output pins
-    Info (21061): Implemented 321 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4903 megabytes
-    Info: Processing ended: Fri Sep 24 16:13:42 2021
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:16
+    Info (276007): RAM logic "memoriaRAM:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 27
+Warning (13032): The following tri-state nodes are fed by constants
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[0]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[0]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[1]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[1]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[2]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[2]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[3]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[3]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[4]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[4]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[5]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[5]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[6]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[6]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13033): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[7]" is fed by GND File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+Error (13076): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[0]" has multiple drivers due to the always-enabled I/O buffer "Saida_Dados[0]" File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+Error (13076): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[1]" has multiple drivers due to the always-enabled I/O buffer "Saida_Dados[1]" File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+Error (13076): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[2]" has multiple drivers due to the always-enabled I/O buffer "Saida_Dados[2]" File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+Error (13076): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[3]" has multiple drivers due to the always-enabled I/O buffer "Saida_Dados[3]" File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+Error (13076): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[4]" has multiple drivers due to the always-enabled I/O buffer "Saida_Dados[4]" File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+Error (13076): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[5]" has multiple drivers due to the always-enabled I/O buffer "Saida_Dados[5]" File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+Error (13076): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[6]" has multiple drivers due to the always-enabled I/O buffer "Saida_Dados[6]" File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+Error (13076): The node "CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[7]" has multiple drivers due to the always-enabled I/O buffer "Saida_Dados[7]" File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 8 errors, 16 warnings
+    Error: Peak virtual memory: 4840 megabytes
+    Error: Processing ended: Sun Sep 26 23:57:19 2021
+    Error: Elapsed time: 00:00:12
+    Error: Total CPU time (on all processors): 00:00:24
 
 

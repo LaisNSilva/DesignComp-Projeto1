@@ -26,12 +26,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Sep 13 18:20:24 2021
+    Info: Processing started: Sun Sep 26 23:02:30 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Aula5 -c Aula5 --vector_source=C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Waveform.vwf --testbench_file=C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/simulation/qsim/Waveform.vwf.vht
-Info (119006): Selected device 5CEBA4F23C7 for design "Aula5"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-g output pin "BARRAMENTO_DADOS_SAIDA" in vector source file when writing test bench files
+en writing test bench files
 
 Completed successfully. 
 
@@ -56,14 +55,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Sep 13 18:20:25 2021
+    Info: Processing started: Sun Sep 26 23:02:32 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/simulation/qsim/ Aula5 -c Aula5
-Info (119006): Selected device 5CEBA4F23C7 for design "Aula5"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Aula5.vho in folder "C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4716 megabytes
-    Info: Processing ended: Mon Sep 13 18:20:26 2021
+    Info: Peak virtual memory: 4718 megabytes
+    Info: Processing ended: Sun Sep 26 23:02:33 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -71,7 +69,7 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/simulation/qsim/Aula5.do generated.
+C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/simulation/qsim/Aula5.do generated.
 
 Completed successfully. 
 
@@ -83,13 +81,17 @@ Reading pref.tcl
 
 # 2020.1
 
+
 # do Aula5.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:20:26 on Sep 13,2021
+# Start time: 23:02:35 on Sep 26,2021
 # vcom -work work Aula5.vho 
+
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
@@ -97,27 +99,29 @@ Reading pref.tcl
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Loading package altera_lnsim_components
+
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity Aula5
 # -- Compiling architecture structure of Aula5
-
-# End time: 18:20:26 on Sep 13,2021, Elapsed time: 0:00:00
+# End time: 23:02:35 on Sep 26,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:20:27 on Sep 13,2021
+# Start time: 23:02:36 on Sep 26,2021
 # vcom -work work Waveform.vwf.vht 
+
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Aula5_vhd_vec_tst
 # -- Compiling architecture Aula5_arch of Aula5_vhd_vec_tst
-
-# End time: 18:20:27 on Sep 13,2021, Elapsed time: 0:00:00
+# End time: 23:02:36 on Sep 26,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Aula5_vhd_vec_tst 
-# Start time: 18:20:27 on Sep 13,2021
+# Start time: 23:02:36 on Sep 26,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -133,26 +137,28 @@ Reading pref.tcl
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_clkena(behavior)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 56258 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 21130 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
+
 # after#34
 
-# End time: 18:20:27 on Sep 13,2021, Elapsed time: 0:00:00
+# End time: 23:02:37 on Sep 26,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/Waveform.vwf...
+Reading C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/Waveform.vwf...
 
-Reading C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/simulation/qsim/Aula5.msim.vcd...
+Reading C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/simulation/qsim/Aula5.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Descomp/DesignComp-Projeto1/Aula5_Parte3/simulation/qsim/Aula5_20210913182027.sim.vwf
+Writing the resulting VWF to C:/DesComp/DesignComp-Projeto1/Aula5_Parte3/simulation/qsim/Aula5_20210926230238.sim.vwf
 
 Finished VCD to VWF conversion.
 

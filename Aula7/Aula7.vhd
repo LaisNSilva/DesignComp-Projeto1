@@ -25,6 +25,8 @@ entity Aula7 is
 	HEX4 : out std_logic_vector (6 DOWNTO 0);
 	HEX5 : out std_logic_vector (6 DOWNTO 0);
 	PC_OUT: out std_logic_vector (8 DOWNTO 0);
+	
+	REG_A: out std_logic_vector (7 DOWNTO 0);
 
    LEDR  : out std_logic_vector(9 downto 0)
   );
@@ -116,7 +118,7 @@ end generate;
 CPU : entity work.CPU
 port map   (
     CLOCK => CLK,
-    INTRUCTION_IN => ROM_DADOS, -- CONFIRMAR SE É ASSIM QUE CONCATENA!!
+    INTRUCTION_IN => ROM_DADOS, 
 	 RD => habLeituraMEM,
 	 WR => habEscritaMEM,
 	 BARRAMENTO_DADOS_ENTRADA => Saida_Dados,
@@ -457,6 +459,7 @@ HEX4 <= saida7seg_HEX4;
 HEX5 <= saida7seg_HEX5;
 
 PC_OUT <= Endereco_PC;
+REG_A <= REG1_ULA_A;
 
 
 			 

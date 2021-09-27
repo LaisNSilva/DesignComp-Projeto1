@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "09/24/2021 16:13:47"
+-- Generated on "09/26/2021 23:19:51"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Aula7
 -- 
@@ -45,6 +45,7 @@ SIGNAL HEX5 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL KEY : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL LEDR : STD_LOGIC_VECTOR(9 DOWNTO 0);
 SIGNAL PC_OUT : STD_LOGIC_VECTOR(8 DOWNTO 0);
+SIGNAL REG_A : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL SW : STD_LOGIC_VECTOR(9 DOWNTO 0);
 COMPONENT Aula7
 	PORT (
@@ -59,6 +60,7 @@ COMPONENT Aula7
 	KEY : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	LEDR : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
 	PC_OUT : OUT STD_LOGIC_VECTOR(8 DOWNTO 0);
+	REG_A : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	SW : IN STD_LOGIC_VECTOR(9 DOWNTO 0)
 	);
 END COMPONENT;
@@ -77,6 +79,7 @@ BEGIN
 	KEY => KEY,
 	LEDR => LEDR,
 	PC_OUT => PC_OUT,
+	REG_A => REG_A,
 	SW => SW
 	);
 
