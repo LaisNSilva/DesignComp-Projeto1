@@ -38,16 +38,16 @@ architecture assincrona of memoriaROM is
       --                 CTRL   Prox Estado
 		
 		-- TESTE DE SOMA
-		  tmp(0)  := LDI  & '0' & x"01"; -- carrega 1 no acumulador 
-        tmp(1)  := STA  & '0' & x"00"; -- carrega esse 1 no mem[0]
-        tmp(2)  := SOMA & '0' & x"00"; -- acumulador = 1 + mem[0] = 2
-		  
+--		  tmp(0)  := LDI  & '0' & x"01"; -- carrega 1 no acumulador 
+--        tmp(1)  := STA  & '0' & x"00"; -- carrega esse 1 no mem[0]
+--        tmp(2)  := SOMA & '0' & x"00"; -- acumulador = 1 + mem[0] = 2
+--		  
 		-- TESTE DE SUB
 --		  tmp(0)  := LDI  & '0' & x"01"; -- carrega 1 no acumulador 
 --        tmp(1)  := STA  & '0' & x"00"; -- carrega esse 1 no mem[0]
 --        tmp(2)  := LDI  & '0' & x"03"; -- carrega 1 no acumulador
 --		  tmp(3)  := SUB  & '0' & x"00"; -- subtrai 1 de 3
---       
+       
 --		
 --		-- TESTE DOS LEDS
 --		  tmp(0)  := LDI  & '0' & x"01"; -- carrega 1 no acumulador 
@@ -70,21 +70,21 @@ architecture assincrona of memoriaROM is
 			
 		-- TESTE DOS DISPLAYS DE 7 SEGMENTOS
 		 
---		  tmp(0)  := LDI  & '0' & x"01"; -- manda 1 para o acumulador
---        tmp(1)  := STA  & '0' & x"00"; -- manda esse 1 para mem[0]
---        tmp(2)  := SOMA & '0' & x"00"; -- soma, então mem[0]=2
---        tmp(3)  := STA  & '1' & x"20"; -- armazena o valor do acumulador em HEX0 (288)
---        tmp(4)  := SOMA & '0' & x"00";
---        tmp(5)  := STA  & '1' & x"21";
---        tmp(6)  := SOMA & '0' & x"00";
---        tmp(7)  := STA  & '1' & x"22"; 
---        tmp(8)  := SOMA & '0' & x"00";
---        tmp(9)  := STA  & '1' & x"23";
---        tmp(10) := SOMA & '0' & x"00";
---        tmp(11) := STA  & '1' & x"24"; 
---        tmp(12) := SOMA & '0' & x"00";
---        tmp(13) := STA  & '1' & x"25";
---        tmp(14) := JMP  & '0' & x"02";
+		  tmp(0)  := LDI  & '0' & x"01"; -- manda 1 para o acumulador
+        tmp(1)  := STA  & '0' & x"00"; -- manda esse 1 para mem[0]
+        tmp(2)  := SOMA & '0' & x"00"; -- soma, então acumulador=2
+        tmp(3)  := STA  & '1' & x"20"; -- armazena o valor do acumulador em HEX0 (288)
+        tmp(4)  := SOMA & '0' & x"00"; -- soma, então acumulador=3
+        tmp(5)  := STA  & '1' & x"21";	-- armazena o valor do acumulador em HEX1 (289)
+        tmp(6)  := SOMA & '0' & x"00"; -- soma, então acumulador=4
+        tmp(7)  := STA  & '1' & x"22"; -- armazena o valor do acumulador em HEX2 (290)
+        tmp(8)  := SOMA & '0' & x"00"; -- soma, então acumulador=5
+        tmp(9)  := STA  & '1' & x"23"; -- armazena o valor do acumulador em HEX3 (291)
+        tmp(10) := SOMA & '0' & x"00"; -- soma, então acumulador=6
+        tmp(11) := STA  & '1' & x"24"; -- armazena o valor do acumulador em HEX4 (292)
+        tmp(12) := SOMA & '0' & x"00"; -- soma, então acumulador=7
+        tmp(13) := STA  & '1' & x"25"; -- armazena o valor do acumulador em HEX5 (293)
+        tmp(14) := JMP  & '0' & x"02";
 		
 		
 		

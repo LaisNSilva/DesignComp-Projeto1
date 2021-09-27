@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
@@ -573,7 +575,7 @@ SIGNAL("KEY[3]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "KEY";
+	PARENT = "";
 }
 
 SIGNAL("KEY[2]")
@@ -583,7 +585,7 @@ SIGNAL("KEY[2]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "KEY";
+	PARENT = "";
 }
 
 SIGNAL("KEY[1]")
@@ -593,7 +595,7 @@ SIGNAL("KEY[1]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "KEY";
+	PARENT = "";
 }
 
 SIGNAL("KEY[0]")
@@ -603,16 +605,6 @@ SIGNAL("KEY[0]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "KEY";
-}
-
-SIGNAL("LEDR")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 10;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
@@ -1014,6 +1006,11 @@ SIGNAL("SW[0]")
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
 	PARENT = "SW";
+}
+
+GROUP("LEDR_0_7")
+{
+	MEMBERS = "LEDR[7]", "LEDR[6]", "LEDR[5]", "LEDR[4]", "LEDR[3]", "LEDR[2]", "LEDR[1]", "LEDR[0]";
 }
 
 TRANSITION_LIST("FPGA_RESET_N")
@@ -2304,22 +2301,11 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR";
+	CHANNEL = "LEDR[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 53;
 	TREE_LEVEL = 0;
-	CHILDREN = 54, 55, 56, 57, 58, 59, 60, 61, 62, 63;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "LEDR[9]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 54;
-	TREE_LEVEL = 1;
-	PARENT = 53;
 }
 
 DISPLAY_LINE
@@ -2327,9 +2313,18 @@ DISPLAY_LINE
 	CHANNEL = "LEDR[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
+	TREE_INDEX = 54;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "LEDR_0_7";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
 	TREE_INDEX = 55;
-	TREE_LEVEL = 1;
-	PARENT = 53;
+	TREE_LEVEL = 0;
+	CHILDREN = 56, 57, 58, 59, 60, 61, 62, 63;
 }
 
 DISPLAY_LINE
@@ -2339,7 +2334,7 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 56;
 	TREE_LEVEL = 1;
-	PARENT = 53;
+	PARENT = 55;
 }
 
 DISPLAY_LINE
@@ -2349,7 +2344,7 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 57;
 	TREE_LEVEL = 1;
-	PARENT = 53;
+	PARENT = 55;
 }
 
 DISPLAY_LINE
@@ -2359,7 +2354,7 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 58;
 	TREE_LEVEL = 1;
-	PARENT = 53;
+	PARENT = 55;
 }
 
 DISPLAY_LINE
@@ -2369,7 +2364,7 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 59;
 	TREE_LEVEL = 1;
-	PARENT = 53;
+	PARENT = 55;
 }
 
 DISPLAY_LINE
@@ -2379,7 +2374,7 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 60;
 	TREE_LEVEL = 1;
-	PARENT = 53;
+	PARENT = 55;
 }
 
 DISPLAY_LINE
@@ -2389,7 +2384,7 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 61;
 	TREE_LEVEL = 1;
-	PARENT = 53;
+	PARENT = 55;
 }
 
 DISPLAY_LINE
@@ -2399,7 +2394,7 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 62;
 	TREE_LEVEL = 1;
-	PARENT = 53;
+	PARENT = 55;
 }
 
 DISPLAY_LINE
@@ -2409,7 +2404,7 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 63;
 	TREE_LEVEL = 1;
-	PARENT = 53;
+	PARENT = 55;
 }
 
 DISPLAY_LINE

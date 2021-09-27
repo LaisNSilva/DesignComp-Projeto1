@@ -1,6 +1,5 @@
 |Aula7
 CLOCK_50 => ~NO_FANOUT~
-KEY[0] => buffertri:KEY_0.DIN
 KEY[0] => cpu:CPU.CLOCK
 KEY[0] => memoriaram:MEMORIA_DADOS.clk
 KEY[0] => registradorgenerico:REG_LEDR0a7.CLK
@@ -12,104 +11,89 @@ KEY[0] => registradorgenerico_4b:REG_HEX2.CLK
 KEY[0] => registradorgenerico_4b:REG_HEX3.CLK
 KEY[0] => registradorgenerico_4b:REG_HEX4.CLK
 KEY[0] => registradorgenerico_4b:REG_HEX5.CLK
-KEY[0] => buffertri:FPGA_R.CLK
-KEY[0] => buffertri:KEY_3.CLK
-KEY[0] => buffertri:KEY_2.CLK
-KEY[0] => buffertri:KEY_1.CLK
-KEY[0] => buffertri:KEY_0.CLK
-KEY[0] => buffertri:SW_9.CLK
-KEY[0] => buffertri:SW_8.CLK
-KEY[0] => buffertri:SW_7.CLK
-KEY[0] => buffertri:SW_6.CLK
-KEY[0] => buffertri:SW_5.CLK
-KEY[0] => buffertri:SW_4.CLK
-KEY[0] => buffertri:SW_3.CLK
-KEY[0] => buffertri:SW_2.CLK
-KEY[0] => buffertri:SW_1.CLK
-KEY[0] => buffertri:SW_0.CLK
-KEY[1] => buffertri:KEY_1.DIN
-KEY[2] => buffertri:KEY_2.DIN
-KEY[3] => buffertri:KEY_3.DIN
-FPGA_RESET_N => buffertri:FPGA_R.DIN
-SW[0] => buffertri:SW_0.DIN
-SW[1] => buffertri:SW_1.DIN
-SW[2] => buffertri:SW_2.DIN
-SW[3] => buffertri:SW_3.DIN
-SW[4] => buffertri:SW_4.DIN
-SW[5] => buffertri:SW_5.DIN
-SW[6] => buffertri:SW_6.DIN
-SW[7] => buffertri:SW_7.DIN
-SW[8] => buffertri:SW_8.DIN
-SW[9] => buffertri:SW_9.DIN
-HEX0[0] << decodbinario_7seg:DECOD_HEX0.saida7seg[0]
-HEX0[1] << decodbinario_7seg:DECOD_HEX0.saida7seg[1]
-HEX0[2] << decodbinario_7seg:DECOD_HEX0.saida7seg[2]
-HEX0[3] << decodbinario_7seg:DECOD_HEX0.saida7seg[3]
-HEX0[4] << decodbinario_7seg:DECOD_HEX0.saida7seg[4]
-HEX0[5] << decodbinario_7seg:DECOD_HEX0.saida7seg[5]
-HEX0[6] << decodbinario_7seg:DECOD_HEX0.saida7seg[6]
-HEX1[0] << decodbinario_7seg:DECOD_HEX1.saida7seg[0]
-HEX1[1] << decodbinario_7seg:DECOD_HEX1.saida7seg[1]
-HEX1[2] << decodbinario_7seg:DECOD_HEX1.saida7seg[2]
-HEX1[3] << decodbinario_7seg:DECOD_HEX1.saida7seg[3]
-HEX1[4] << decodbinario_7seg:DECOD_HEX1.saida7seg[4]
-HEX1[5] << decodbinario_7seg:DECOD_HEX1.saida7seg[5]
-HEX1[6] << decodbinario_7seg:DECOD_HEX1.saida7seg[6]
-HEX2[0] << decodbinario_7seg:DECOD_HEX2.saida7seg[0]
-HEX2[1] << decodbinario_7seg:DECOD_HEX2.saida7seg[1]
-HEX2[2] << decodbinario_7seg:DECOD_HEX2.saida7seg[2]
-HEX2[3] << decodbinario_7seg:DECOD_HEX2.saida7seg[3]
-HEX2[4] << decodbinario_7seg:DECOD_HEX2.saida7seg[4]
-HEX2[5] << decodbinario_7seg:DECOD_HEX2.saida7seg[5]
-HEX2[6] << decodbinario_7seg:DECOD_HEX2.saida7seg[6]
-HEX3[0] << decodbinario_7seg:DECOD_HEX3.saida7seg[0]
-HEX3[1] << decodbinario_7seg:DECOD_HEX3.saida7seg[1]
-HEX3[2] << decodbinario_7seg:DECOD_HEX3.saida7seg[2]
-HEX3[3] << decodbinario_7seg:DECOD_HEX3.saida7seg[3]
-HEX3[4] << decodbinario_7seg:DECOD_HEX3.saida7seg[4]
-HEX3[5] << decodbinario_7seg:DECOD_HEX3.saida7seg[5]
-HEX3[6] << decodbinario_7seg:DECOD_HEX3.saida7seg[6]
-HEX4[0] << decodbinario_7seg:DECOD_HEX4.saida7seg[0]
-HEX4[1] << decodbinario_7seg:DECOD_HEX4.saida7seg[1]
-HEX4[2] << decodbinario_7seg:DECOD_HEX4.saida7seg[2]
-HEX4[3] << decodbinario_7seg:DECOD_HEX4.saida7seg[3]
-HEX4[4] << decodbinario_7seg:DECOD_HEX4.saida7seg[4]
-HEX4[5] << decodbinario_7seg:DECOD_HEX4.saida7seg[5]
-HEX4[6] << decodbinario_7seg:DECOD_HEX4.saida7seg[6]
-HEX5[0] << decodbinario_7seg:DECOD_HEX5.saida7seg[0]
-HEX5[1] << decodbinario_7seg:DECOD_HEX5.saida7seg[1]
-HEX5[2] << decodbinario_7seg:DECOD_HEX5.saida7seg[2]
-HEX5[3] << decodbinario_7seg:DECOD_HEX5.saida7seg[3]
-HEX5[4] << decodbinario_7seg:DECOD_HEX5.saida7seg[4]
-HEX5[5] << decodbinario_7seg:DECOD_HEX5.saida7seg[5]
-HEX5[6] << decodbinario_7seg:DECOD_HEX5.saida7seg[6]
-PC_OUT[0] << cpu:CPU.ROM_Address[0]
-PC_OUT[1] << cpu:CPU.ROM_Address[1]
-PC_OUT[2] << cpu:CPU.ROM_Address[2]
-PC_OUT[3] << cpu:CPU.ROM_Address[3]
-PC_OUT[4] << cpu:CPU.ROM_Address[4]
-PC_OUT[5] << cpu:CPU.ROM_Address[5]
-PC_OUT[6] << cpu:CPU.ROM_Address[6]
-PC_OUT[7] << cpu:CPU.ROM_Address[7]
-PC_OUT[8] << cpu:CPU.ROM_Address[8]
-REG_A[0] << cpu:CPU.BARRAMENTO_DADOS_SAIDA[0]
-REG_A[1] << cpu:CPU.BARRAMENTO_DADOS_SAIDA[1]
-REG_A[2] << cpu:CPU.BARRAMENTO_DADOS_SAIDA[2]
-REG_A[3] << cpu:CPU.BARRAMENTO_DADOS_SAIDA[3]
-REG_A[4] << cpu:CPU.BARRAMENTO_DADOS_SAIDA[4]
-REG_A[5] << cpu:CPU.BARRAMENTO_DADOS_SAIDA[5]
-REG_A[6] << cpu:CPU.BARRAMENTO_DADOS_SAIDA[6]
-REG_A[7] << cpu:CPU.BARRAMENTO_DADOS_SAIDA[7]
-LEDR[0] << registradorgenerico:REG_LEDR0a7.DOUT[0]
-LEDR[1] << registradorgenerico:REG_LEDR0a7.DOUT[1]
-LEDR[2] << registradorgenerico:REG_LEDR0a7.DOUT[2]
-LEDR[3] << registradorgenerico:REG_LEDR0a7.DOUT[3]
-LEDR[4] << registradorgenerico:REG_LEDR0a7.DOUT[4]
-LEDR[5] << registradorgenerico:REG_LEDR0a7.DOUT[5]
-LEDR[6] << registradorgenerico:REG_LEDR0a7.DOUT[6]
-LEDR[7] << registradorgenerico:REG_LEDR0a7.DOUT[7]
-LEDR[8] << flipflop:FF_LEDR8.DOUT
-LEDR[9] << flipflop:FF_LEDR9.DOUT
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+FPGA_RESET_N => ~NO_FANOUT~
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+HEX0[0] <= decodbinario_7seg:DECOD_HEX0.saida7seg[0]
+HEX0[1] <= decodbinario_7seg:DECOD_HEX0.saida7seg[1]
+HEX0[2] <= decodbinario_7seg:DECOD_HEX0.saida7seg[2]
+HEX0[3] <= decodbinario_7seg:DECOD_HEX0.saida7seg[3]
+HEX0[4] <= decodbinario_7seg:DECOD_HEX0.saida7seg[4]
+HEX0[5] <= decodbinario_7seg:DECOD_HEX0.saida7seg[5]
+HEX0[6] <= decodbinario_7seg:DECOD_HEX0.saida7seg[6]
+HEX1[0] <= decodbinario_7seg:DECOD_HEX1.saida7seg[0]
+HEX1[1] <= decodbinario_7seg:DECOD_HEX1.saida7seg[1]
+HEX1[2] <= decodbinario_7seg:DECOD_HEX1.saida7seg[2]
+HEX1[3] <= decodbinario_7seg:DECOD_HEX1.saida7seg[3]
+HEX1[4] <= decodbinario_7seg:DECOD_HEX1.saida7seg[4]
+HEX1[5] <= decodbinario_7seg:DECOD_HEX1.saida7seg[5]
+HEX1[6] <= decodbinario_7seg:DECOD_HEX1.saida7seg[6]
+HEX2[0] <= decodbinario_7seg:DECOD_HEX2.saida7seg[0]
+HEX2[1] <= decodbinario_7seg:DECOD_HEX2.saida7seg[1]
+HEX2[2] <= decodbinario_7seg:DECOD_HEX2.saida7seg[2]
+HEX2[3] <= decodbinario_7seg:DECOD_HEX2.saida7seg[3]
+HEX2[4] <= decodbinario_7seg:DECOD_HEX2.saida7seg[4]
+HEX2[5] <= decodbinario_7seg:DECOD_HEX2.saida7seg[5]
+HEX2[6] <= decodbinario_7seg:DECOD_HEX2.saida7seg[6]
+HEX3[0] <= decodbinario_7seg:DECOD_HEX3.saida7seg[0]
+HEX3[1] <= decodbinario_7seg:DECOD_HEX3.saida7seg[1]
+HEX3[2] <= decodbinario_7seg:DECOD_HEX3.saida7seg[2]
+HEX3[3] <= decodbinario_7seg:DECOD_HEX3.saida7seg[3]
+HEX3[4] <= decodbinario_7seg:DECOD_HEX3.saida7seg[4]
+HEX3[5] <= decodbinario_7seg:DECOD_HEX3.saida7seg[5]
+HEX3[6] <= decodbinario_7seg:DECOD_HEX3.saida7seg[6]
+HEX4[0] <= decodbinario_7seg:DECOD_HEX4.saida7seg[0]
+HEX4[1] <= decodbinario_7seg:DECOD_HEX4.saida7seg[1]
+HEX4[2] <= decodbinario_7seg:DECOD_HEX4.saida7seg[2]
+HEX4[3] <= decodbinario_7seg:DECOD_HEX4.saida7seg[3]
+HEX4[4] <= decodbinario_7seg:DECOD_HEX4.saida7seg[4]
+HEX4[5] <= decodbinario_7seg:DECOD_HEX4.saida7seg[5]
+HEX4[6] <= decodbinario_7seg:DECOD_HEX4.saida7seg[6]
+HEX5[0] <= decodbinario_7seg:DECOD_HEX5.saida7seg[0]
+HEX5[1] <= decodbinario_7seg:DECOD_HEX5.saida7seg[1]
+HEX5[2] <= decodbinario_7seg:DECOD_HEX5.saida7seg[2]
+HEX5[3] <= decodbinario_7seg:DECOD_HEX5.saida7seg[3]
+HEX5[4] <= decodbinario_7seg:DECOD_HEX5.saida7seg[4]
+HEX5[5] <= decodbinario_7seg:DECOD_HEX5.saida7seg[5]
+HEX5[6] <= decodbinario_7seg:DECOD_HEX5.saida7seg[6]
+PC_OUT[0] <= cpu:CPU.ROM_Address[0]
+PC_OUT[1] <= cpu:CPU.ROM_Address[1]
+PC_OUT[2] <= cpu:CPU.ROM_Address[2]
+PC_OUT[3] <= cpu:CPU.ROM_Address[3]
+PC_OUT[4] <= cpu:CPU.ROM_Address[4]
+PC_OUT[5] <= cpu:CPU.ROM_Address[5]
+PC_OUT[6] <= cpu:CPU.ROM_Address[6]
+PC_OUT[7] <= cpu:CPU.ROM_Address[7]
+PC_OUT[8] <= cpu:CPU.ROM_Address[8]
+REG_A[0] <= cpu:CPU.BARRAMENTO_DADOS_SAIDA[0]
+REG_A[1] <= cpu:CPU.BARRAMENTO_DADOS_SAIDA[1]
+REG_A[2] <= cpu:CPU.BARRAMENTO_DADOS_SAIDA[2]
+REG_A[3] <= cpu:CPU.BARRAMENTO_DADOS_SAIDA[3]
+REG_A[4] <= cpu:CPU.BARRAMENTO_DADOS_SAIDA[4]
+REG_A[5] <= cpu:CPU.BARRAMENTO_DADOS_SAIDA[5]
+REG_A[6] <= cpu:CPU.BARRAMENTO_DADOS_SAIDA[6]
+REG_A[7] <= cpu:CPU.BARRAMENTO_DADOS_SAIDA[7]
+LEDR[0] <= registradorgenerico:REG_LEDR0a7.DOUT[0]
+LEDR[1] <= registradorgenerico:REG_LEDR0a7.DOUT[1]
+LEDR[2] <= registradorgenerico:REG_LEDR0a7.DOUT[2]
+LEDR[3] <= registradorgenerico:REG_LEDR0a7.DOUT[3]
+LEDR[4] <= registradorgenerico:REG_LEDR0a7.DOUT[4]
+LEDR[5] <= registradorgenerico:REG_LEDR0a7.DOUT[5]
+LEDR[6] <= registradorgenerico:REG_LEDR0a7.DOUT[6]
+LEDR[7] <= registradorgenerico:REG_LEDR0a7.DOUT[7]
+LEDR[8] <= flipflop:FF_LEDR8.DOUT
+LEDR[9] <= flipflop:FF_LEDR9.DOUT
 
 
 |Aula7|CPU:CPU
@@ -1439,125 +1423,5 @@ saida7seg[3] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 saida7seg[4] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 saida7seg[5] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 saida7seg[6] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Aula7|buffertri:FPGA_R
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:KEY_3
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:KEY_2
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:KEY_1
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:KEY_0
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:SW_9
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:SW_8
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:SW_7
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:SW_6
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:SW_5
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:SW_4
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:SW_3
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:SW_2
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:SW_1
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
-
-
-|Aula7|buffertri:SW_0
-DIN => DOUT~reg0.DATAIN
-DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT~reg0.ENA
-RST => DOUT~reg0.ACLR
-CLK => DOUT~reg0.CLK
 
 

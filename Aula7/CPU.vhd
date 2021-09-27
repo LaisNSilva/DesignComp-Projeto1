@@ -98,14 +98,7 @@ REG1 : entity work.registradorGenerico   generic map (larguraDados => larguraDad
 ULA1 : entity work.ULASomaSub  generic map(larguraDados => larguraDados)
           port map (entradaA => REG1_ULA_A, entradaB => MUX_ULA_B, seletor => Saida_Decod(4 downto 3), saida => Saida_ULA, flag_0 => Saida_ULA_Flag0);
 
--- Falta acertar o conteudo da ROM (no arquivo memoriaROM.vhd)
---MEMORIA_INTRUCAO : entity work.memoriaROM   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM)
-          --port map (Endereco => Endereco_PC, Dado(8 downto 0) => Endereco_Imediato, Dado(12 downto 9) => opCode);
-
---MEMORIA_DADOS : entity work.memoriaRAM   generic map (dataWidth => larguraDados, addrWidth => larguraEnderecoRAM)
-          --port map (addr => Endereco_Imediato(7 downto 0), we => Saida_Decod(0), re=>Saida_Decod(1), habilita=>Endereco_Imediato(8), dado_in => REG1_ULA_A, dado_out => Saida_Dados, clk => CLK);		
-
-		
+	
 FLAG : 	entity work.FlipFlop   
          port map ( DIN => Saida_ULA_Flag0, DOUT => Saida_FlipFlop, ENABLE => Saida_Decod(2), RST => '0',  CLK => CLK);		
 
