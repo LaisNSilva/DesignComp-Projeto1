@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "09/28/2021 10:25:33"
+-- Generated on "09/28/2021 12:22:43"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Aula7
 -- 
@@ -87,20 +87,24 @@ BEGIN
 t_prcs_FPGA_RESET_N: PROCESS
 BEGIN
 	FPGA_RESET_N <= '0';
-	WAIT FOR 410000 ps;
-	FPGA_RESET_N <= '1';
-	WAIT FOR 200000 ps;
-	FPGA_RESET_N <= '0';
 WAIT;
 END PROCESS t_prcs_FPGA_RESET_N;
+
+-- CLOCK_50
+t_prcs_CLOCK_50: PROCESS
+BEGIN
+LOOP
+	CLOCK_50 <= '0';
+	WAIT FOR 10000 ps;
+	CLOCK_50 <= '1';
+	WAIT FOR 10000 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
+END PROCESS t_prcs_CLOCK_50;
 
 -- SW[9]
 t_prcs_SW_9: PROCESS
 BEGIN
-	SW(9) <= '0';
-	WAIT FOR 20000 ps;
-	SW(9) <= '1';
-	WAIT FOR 810000 ps;
 	SW(9) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_9;
@@ -109,10 +113,6 @@ END PROCESS t_prcs_SW_9;
 t_prcs_SW_8: PROCESS
 BEGIN
 	SW(8) <= '0';
-	WAIT FOR 20000 ps;
-	SW(8) <= '1';
-	WAIT FOR 810000 ps;
-	SW(8) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_8;
 
@@ -120,6 +120,8 @@ END PROCESS t_prcs_SW_8;
 t_prcs_SW_7: PROCESS
 BEGIN
 	SW(7) <= '1';
+	WAIT FOR 10000 ps;
+	SW(7) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_7;
 
@@ -127,6 +129,8 @@ END PROCESS t_prcs_SW_7;
 t_prcs_SW_6: PROCESS
 BEGIN
 	SW(6) <= '1';
+	WAIT FOR 10000 ps;
+	SW(6) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_6;
 
@@ -134,6 +138,8 @@ END PROCESS t_prcs_SW_6;
 t_prcs_SW_5: PROCESS
 BEGIN
 	SW(5) <= '1';
+	WAIT FOR 10000 ps;
+	SW(5) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_5;
 
@@ -141,6 +147,8 @@ END PROCESS t_prcs_SW_5;
 t_prcs_SW_4: PROCESS
 BEGIN
 	SW(4) <= '1';
+	WAIT FOR 10000 ps;
+	SW(4) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_4;
 
@@ -148,6 +156,8 @@ END PROCESS t_prcs_SW_4;
 t_prcs_SW_3: PROCESS
 BEGIN
 	SW(3) <= '1';
+	WAIT FOR 10000 ps;
+	SW(3) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_3;
 
@@ -155,6 +165,8 @@ END PROCESS t_prcs_SW_3;
 t_prcs_SW_2: PROCESS
 BEGIN
 	SW(2) <= '1';
+	WAIT FOR 10000 ps;
+	SW(2) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_2;
 
@@ -162,6 +174,8 @@ END PROCESS t_prcs_SW_2;
 t_prcs_SW_1: PROCESS
 BEGIN
 	SW(1) <= '1';
+	WAIT FOR 10000 ps;
+	SW(1) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_1;
 
@@ -169,6 +183,8 @@ END PROCESS t_prcs_SW_1;
 t_prcs_SW_0: PROCESS
 BEGIN
 	SW(0) <= '1';
+	WAIT FOR 10000 ps;
+	SW(0) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_0;
 
@@ -183,10 +199,6 @@ END PROCESS t_prcs_KEY_3;
 t_prcs_KEY_2: PROCESS
 BEGIN
 	KEY(2) <= '0';
-	WAIT FOR 10000 ps;
-	KEY(2) <= '1';
-	WAIT FOR 980000 ps;
-	KEY(2) <= '0';
 WAIT;
 END PROCESS t_prcs_KEY_2;
 
@@ -194,22 +206,29 @@ END PROCESS t_prcs_KEY_2;
 t_prcs_KEY_1: PROCESS
 BEGIN
 	KEY(1) <= '0';
-	WAIT FOR 10000 ps;
-	KEY(1) <= '1';
-	WAIT FOR 980000 ps;
-	KEY(1) <= '0';
 WAIT;
 END PROCESS t_prcs_KEY_1;
 
 -- KEY[0]
 t_prcs_KEY_0: PROCESS
 BEGIN
-LOOP
 	KEY(0) <= '0';
-	WAIT FOR 10000 ps;
+	WAIT FOR 240000 ps;
 	KEY(0) <= '1';
-	WAIT FOR 10000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
+	WAIT FOR 50000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 50000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 40000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 60000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 60000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 70000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 70000 ps;
+	KEY(0) <= '0';
+WAIT;
 END PROCESS t_prcs_KEY_0;
 END Aula7_arch;
