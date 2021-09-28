@@ -2,52 +2,52 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'KEY[0]'
-Slack : -6.112
-TNS   : -453.581
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.152
+TNS   : -128.433
 
-Type  : Slow 1100mV 85C Model Hold 'KEY[0]'
-Slack : 0.466
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.261
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.648
-TNS   : -137.187
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.538
+TNS   : -42.776
 
-Type  : Slow 1100mV 0C Model Setup 'KEY[0]'
-Slack : -6.219
-TNS   : -448.126
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -4.244
+TNS   : -124.693
 
-Type  : Slow 1100mV 0C Model Hold 'KEY[0]'
-Slack : 0.478
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.245
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.564
-TNS   : -128.021
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.538
+TNS   : -38.240
 
-Type  : Fast 1100mV 85C Model Setup 'KEY[0]'
-Slack : -2.459
-TNS   : -153.572
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -1.383
+TNS   : -38.662
 
-Type  : Fast 1100mV 85C Model Hold 'KEY[0]'
-Slack : 0.258
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.139
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.683
-TNS   : -119.225
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.407
+TNS   : -22.437
 
-Type  : Fast 1100mV 0C Model Setup 'KEY[0]'
-Slack : -2.228
-TNS   : -130.305
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -1.242
+TNS   : -31.020
 
-Type  : Fast 1100mV 0C Model Hold 'KEY[0]'
-Slack : 0.244
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.126
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.682
-TNS   : -120.375
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.445
+TNS   : -26.995
 
 ------------------------------------------------------------

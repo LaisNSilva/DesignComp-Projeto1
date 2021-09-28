@@ -96,6 +96,9 @@ architecture arquitetura of Aula7 is
 	 signal saida7seg_HEX3 : std_logic_vector (6 downto 0);
 	 signal saida7seg_HEX4 : std_logic_vector (6 downto 0);
 	 signal saida7seg_HEX5 : std_logic_vector (6 downto 0);
+	 signal Saida_FF_DM : std_logic;
+	 signal Saida_DecBorda_KEY0 : std_logic;
+	 
 	 
 	 alias opCode : std_logic_vector (3 downto 0) is ROM_DADOS(12 downto 9);
 	 alias Endereco_instrucao : std_logic_vector (8 downto 0) is ROM_DADOS(8 downto 0);
@@ -107,12 +110,12 @@ begin
 -- Instanciando os componentes:
 
 -- Para simular, fica mais simples tirar o edgeDetector
-gravar:  if simulacao generate
-CLK <= KEY(0);
-else generate
+--gravar:  if simulacao generate
+CLK <= CLOCK_50;
+--else generate
 detectorSub0: work.edgeDetector(bordaSubida)
-        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
-end generate;
+        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => Saida_DecBorda_KEY0);
+--end generate;
 
 -- O port map completo do MUX.
 CPU : entity work.CPU
@@ -330,10 +333,23 @@ KEY_1: entity work.buffertri
 			 DOUT => Saida_Dados(3), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_1 AND Bloco_5
 			 );
+			 
+			 
+------ TRATAMENTO ESPECIAL PARA KEY0 ----------------------
+
+
+FLIP_FLOP_DM : entity work.FlipFlop   generic map (larguraDados => larguraDados)
+          port map (
+			 DIN => '1', 
+			 DOUT => Saida_FF_DM, 
+			 ENABLE => '1', 
+			 RST => Endereco_barramento(0) AND Endereco_barramento(1) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8),
+			 CLK => Saida_DecBorda_KEY0
+			 );
 
 KEY_0: entity work.buffertri
           port map (
-			 DIN => KEY(0),
+			 DIN => Saida_FF_DM,
 			 DOUT => Saida_Dados(2), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_0 AND Bloco_5
 			 );
