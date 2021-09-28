@@ -299,148 +299,118 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
                  overFlow =>  '0',
                  saida7seg => saida7seg_HEX5);
 					  
---- FPGA RESET ---					  
+-- FPGA RESET ---					  
 					  
---FPGA_R: entity work.buffertri
---          port map (
---			 DIN => FPGA_RESET_N,
---			 DOUT => Saida_Dados(6), 
---			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_4 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---		
------ BOTÕES KEY ---
---
---KEY_3: entity work.buffertri
---          port map (
---			 DIN => KEY(3),
---			 DOUT => Saida_Dados(5), 
---			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_3 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
---KEY_2: entity work.buffertri
---          port map (
---			 DIN => KEY(2),
---			 DOUT => Saida_Dados(4), 
---			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_2 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---		
---KEY_1: entity work.buffertri
---          port map (
---			 DIN => KEY(1),
---			 DOUT => Saida_Dados(3), 
---			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_1 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
---KEY_0: entity work.buffertri
---          port map (
---			 DIN => KEY(0),
---			 DOUT => Saida_Dados(2), 
---			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_0 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
---			 
------ CHAVES SW ---
---			 
---SW_9: entity work.buffertri
---          port map (
---			 DIN => SW(9),
---			 DOUT => Saida_Dados(1), 
---			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_2 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
---SW_8: entity work.buffertri
---          port map (
---			 DIN => SW(8),
---			 DOUT => Saida_Dados(0), 
---			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_1 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
------ SW0 AO SW7 ---
---SW_7: entity work.buffertri
---          port map (
---			 DIN => SW(7),
---			 DOUT => Saida_Dados(7), 
---			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
---SW_6: entity work.buffertri
---          port map (
---			 DIN => SW(6),
---			 DOUT => Saida_Dados(6), 
---			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
---SW_5: entity work.buffertri
---          port map (
---			 DIN => SW(5),
---			 DOUT => Saida_Dados(5), 
---			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
---SW_4: entity work.buffertri
---          port map (
---			 DIN => SW(4),
---			 DOUT => Saida_Dados(4), 
---			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
---SW_3: entity work.buffertri
---          port map (
---			 DIN => SW(3),
---			 DOUT => Saida_Dados(3), 
---			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
---SW_2: entity work.buffertri
---          port map (
---			 DIN => SW(2),
---			 DOUT => Saida_Dados(2), 
---			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
---SW_1: entity work.buffertri
---          port map (
---			 DIN => SW(1),
---			 DOUT => Saida_Dados(1), 
---			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
---
---SW_0: entity work.buffertri
---          port map (
---			 DIN => SW(0),
---			 DOUT => Saida_Dados(0), 
---			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5,
---			 RST => '0',
---			 CLK => CLK
---			 );
+FPGA_R: entity work.buffertri
+          port map (
+			 DIN => FPGA_RESET_N,
+			 DOUT => Saida_Dados(6), 
+			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_4 AND Bloco_5
+			 );
+		
+--- BOTÕES KEY ---
+
+KEY_3: entity work.buffertri
+          port map (
+			 DIN => KEY(3),
+			 DOUT => Saida_Dados(5), 
+			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_3 AND Bloco_5
+			 );
+
+KEY_2: entity work.buffertri
+          port map (
+			 DIN => KEY(2),
+			 DOUT => Saida_Dados(4), 
+			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_2 AND Bloco_5
+			 );
+		
+KEY_1: entity work.buffertri
+          port map (
+			 DIN => KEY(1),
+			 DOUT => Saida_Dados(3), 
+			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_1 AND Bloco_5
+			 );
+
+KEY_0: entity work.buffertri
+          port map (
+			 DIN => KEY(0),
+			 DOUT => Saida_Dados(2), 
+			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_0 AND Bloco_5
+			 );
+
+			 
+--- CHAVES SW ---
+			 
+SW_9: entity work.buffertri
+          port map (
+			 DIN => SW(9),
+			 DOUT => Saida_Dados(1), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_2 AND Bloco_5
+			 );
+
+SW_8: entity work.buffertri
+          port map (
+			 DIN => SW(8),
+			 DOUT => Saida_Dados(0), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_1 AND Bloco_5
+			 );
+
+--- SW0 AO SW7 ---
+SW_7: entity work.buffertri
+          port map (
+			 DIN => SW(7),
+			 DOUT => Saida_Dados(7), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+			 );
+
+SW_6: entity work.buffertri
+          port map (
+			 DIN => SW(6),
+			 DOUT => Saida_Dados(6), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+			 );
+
+SW_5: entity work.buffertri
+          port map (
+			 DIN => SW(5),
+			 DOUT => Saida_Dados(5), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+			 );
+
+SW_4: entity work.buffertri
+          port map (
+			 DIN => SW(4),
+			 DOUT => Saida_Dados(4), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+			 );
+
+SW_3: entity work.buffertri
+          port map (
+			 DIN => SW(3),
+			 DOUT => Saida_Dados(3), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+			 );
+
+SW_2: entity work.buffertri
+          port map (
+			 DIN => SW(2),
+			 DOUT => Saida_Dados(2), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+			 );
+
+SW_1: entity work.buffertri
+          port map (
+			 DIN => SW(1),
+			 DOUT => Saida_Dados(1), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+			 );
+
+SW_0: entity work.buffertri
+          port map (
+			 DIN => SW(0),
+			 DOUT => Saida_Dados(0), 
+			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+			 );
 
 			
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Aula7
-Mon Sep 27 11:54:36 2021
+Mon Sep 27 21:36:01 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,32 +37,47 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  29. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX3
  30. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX4
  31. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX5
- 32. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
- 33. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5"
- 34. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
- 35. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4"
- 36. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
- 37. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3"
- 38. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
- 39. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2"
- 40. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
- 41. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1"
- 42. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
- 43. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
- 44. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
- 45. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
- 46. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
- 47. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
- 48. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
- 49. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
- 50. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
- 51. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REG1"
- 52. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
- 53. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
- 54. Port Connectivity Checks: "CPU:CPU"
- 55. Post-Synthesis Netlist Statistics for Top Partition
- 56. Elapsed Time Per Partition
- 57. Analysis & Synthesis Messages
+ 32. Parameter Settings for User Entity Instance: buffertri:FPGA_R
+ 33. Parameter Settings for User Entity Instance: buffertri:KEY_3
+ 34. Parameter Settings for User Entity Instance: buffertri:KEY_2
+ 35. Parameter Settings for User Entity Instance: buffertri:KEY_1
+ 36. Parameter Settings for User Entity Instance: buffertri:KEY_0
+ 37. Parameter Settings for User Entity Instance: buffertri:SW_9
+ 38. Parameter Settings for User Entity Instance: buffertri:SW_8
+ 39. Parameter Settings for User Entity Instance: buffertri:SW_7
+ 40. Parameter Settings for User Entity Instance: buffertri:SW_6
+ 41. Parameter Settings for User Entity Instance: buffertri:SW_5
+ 42. Parameter Settings for User Entity Instance: buffertri:SW_4
+ 43. Parameter Settings for User Entity Instance: buffertri:SW_3
+ 44. Parameter Settings for User Entity Instance: buffertri:SW_2
+ 45. Parameter Settings for User Entity Instance: buffertri:SW_1
+ 46. Parameter Settings for User Entity Instance: buffertri:SW_0
+ 47. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
+ 48. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5"
+ 49. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
+ 50. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4"
+ 51. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
+ 52. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3"
+ 53. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
+ 54. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2"
+ 55. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
+ 56. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1"
+ 57. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
+ 58. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
+ 59. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
+ 60. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
+ 61. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
+ 62. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
+ 63. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
+ 64. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
+ 65. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
+ 66. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REG1"
+ 67. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
+ 68. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
+ 69. Port Connectivity Checks: "CPU:CPU"
+ 70. Post-Synthesis Netlist Statistics for Top Partition
+ 71. Elapsed Time Per Partition
+ 72. Analysis & Synthesis Messages
 
 
 
@@ -89,7 +104,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Sep 27 11:54:36 2021       ;
+; Analysis & Synthesis Status     ; Successful - Mon Sep 27 21:36:01 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Aula7                                       ;
 ; Top-level Entity Name           ; Aula7                                       ;
@@ -203,15 +218,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -220,22 +235,23 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-; Aula7.vhd                        ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd                  ;         ;
-; FlipFlop.vhd                     ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd               ;         ;
-; DecodInstrucao.vhd               ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd         ;         ;
-; LogicaDesvio.vhd                 ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd           ;         ;
-; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd             ;         ;
-; memoriaROM.vhd                   ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/memoriaROM.vhd             ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd         ;         ;
-; muxGenerico2x1_PC.vhd            ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd      ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd    ;         ;
-; registradorGenerico_PC.vhd       ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/somaConstante.vhd          ;         ;
-; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd             ;         ;
-; Decod3x8vhd.vhd                  ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd            ;         ;
-; CPU.vhd                          ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd                    ;         ;
-; DecodBinario_7seg.vhd            ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd      ;         ;
-; registradorGenerico_4b.vhd       ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd ;         ;
+; Aula7.vhd                        ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd                  ;         ;
+; FlipFlop.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/FlipFlop.vhd               ;         ;
+; DecodInstrucao.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd         ;         ;
+; LogicaDesvio.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd           ;         ;
+; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd             ;         ;
+; memoriaROM.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/memoriaROM.vhd             ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd         ;         ;
+; muxGenerico2x1_PC.vhd            ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd      ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd    ;         ;
+; registradorGenerico_PC.vhd       ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/somaConstante.vhd          ;         ;
+; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd             ;         ;
+; Decod3x8vhd.vhd                  ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd            ;         ;
+; CPU.vhd                          ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd                    ;         ;
+; DecodBinario_7seg.vhd            ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd      ;         ;
+; registradorGenerico_4b.vhd       ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd ;         ;
+; buffertri.vhd                    ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Aula7/buffertri.vhd              ;         ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
 
 
@@ -244,14 +260,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 93           ;
+; Estimate of Logic utilization (ALMs needed) ; 94           ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 147          ;
+; Combinational ALUT usage for logic          ; 148          ;
 ;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 14           ;
-;     -- 5 input functions                    ; 12           ;
-;     -- 4 input functions                    ; 93           ;
-;     -- <=3 input functions                  ; 28           ;
+;     -- 6 input functions                    ; 15           ;
+;     -- 5 input functions                    ; 15           ;
+;     -- 4 input functions                    ; 92           ;
+;     -- <=3 input functions                  ; 26           ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 105          ;
 ;                                             ;              ;
@@ -261,8 +277,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
 ; Maximum fan-out                             ; 105          ;
-; Total fan-out                               ; 1079         ;
-; Average fan-out                             ; 2.56         ;
+; Total fan-out                               ; 1090         ;
+; Average fan-out                             ; 2.58         ;
 +---------------------------------------------+--------------+
 
 
@@ -271,7 +287,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name            ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+------------------------+--------------+
-; |Aula7                                         ; 147 (1)             ; 105 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Aula7                                                ; Aula7                  ; work         ;
+; |Aula7                                         ; 148 (1)             ; 105 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Aula7                                                ; Aula7                  ; work         ;
 ;    |CPU:CPU|                                   ; 39 (0)              ; 17 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU                                        ; CPU                    ; work         ;
 ;       |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao         ; work         ;
 ;       |ULASomaSub:ULA1|                        ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|CPU:CPU|ULASomaSub:ULA1                        ; ULASomaSub             ; work         ;
@@ -285,7 +301,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |DecodBinario_7Seg:DECOD_HEX3|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX3                   ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX4|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX4                   ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX5|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|DecodBinario_7Seg:DECOD_HEX5                   ; DecodBinario_7Seg      ; work         ;
-;    |memoriaRAM:MEMORIA_DADOS|                  ; 41 (41)             ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |Aula7|memoriaRAM:MEMORIA_DADOS                       ; memoriaRAM             ; work         ;
+;    |memoriaRAM:MEMORIA_DADOS|                  ; 42 (42)             ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |Aula7|memoriaRAM:MEMORIA_DADOS                       ; memoriaRAM             ; work         ;
 ;    |memoriaROM:MEMORIA_INTRUCAO|               ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|memoriaROM:MEMORIA_INTRUCAO                    ; memoriaROM             ; work         ;
 ;    |registradorGenerico_4b:REG_HEX0|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|registradorGenerico_4b:REG_HEX0                ; registradorGenerico_4b ; work         ;
 ;    |registradorGenerico_4b:REG_HEX1|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula7|registradorGenerico_4b:REG_HEX1                ; registradorGenerico_4b ; work         ;
@@ -780,7 +796,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Aula7|CPU:CPU|registradorGenerico:REG1|DOUT[0] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Aula7|CPU:CPU|registradorGenerico:REG1|DOUT[7] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
 
 
@@ -1007,6 +1023,156 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:FPGA_R ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; larguradados   ; 8     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:KEY_3 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; larguradados   ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:KEY_2 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; larguradados   ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:KEY_1 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; larguradados   ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:KEY_0 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; larguradados   ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:SW_9 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:SW_8 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:SW_7 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:SW_6 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:SW_5 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:SW_4 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:SW_3 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:SW_2 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:SW_1 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri:SW_0 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; larguradados   ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------+
 ; Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5" ;
 +----------+-------+----------+----------------------------+
@@ -1172,7 +1338,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; s1   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; s2   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; s3   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; s5   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; s6   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; s7   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1242,19 +1407,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 88                          ;
 ;     ENA SLD           ; 8                           ;
 ;     SLD               ; 9                           ;
-; arriav_lcell_comb     ; 147                         ;
+; arriav_lcell_comb     ; 148                         ;
 ;     arith             ; 26                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 9                           ;
-;         3 data inputs ; 8                           ;
-;         5 data inputs ; 8                           ;
-;     normal            ; 121                         ;
+;         3 data inputs ; 6                           ;
+;         5 data inputs ; 10                          ;
+;     normal            ; 122                         ;
 ;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 4                           ;
 ;         3 data inputs ; 5                           ;
-;         4 data inputs ; 93                          ;
-;         5 data inputs ; 4                           ;
-;         6 data inputs ; 14                          ;
+;         4 data inputs ; 92                          ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 15                          ;
 ; boundary_port         ; 85                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.70                        ;
@@ -1277,131 +1442,130 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep 27 11:54:26 2021
+    Info: Processing started: Mon Sep 27 21:35:53 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula7 -c Aula7
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file aula7.vhd
-    Info (12022): Found design unit 1: Aula7-arquitetura File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 36
-    Info (12023): Found entity 1: Aula7 File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 4
+    Info (12022): Found design unit 1: Aula7-arquitetura File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 36
+    Info (12023): Found entity 1: Aula7 File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 4
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/DesComp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/Descomp/DesignComp-Projeto1/Aula7/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file flipflop.vhd
-    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 16
-    Info (12023): Found entity 1: FlipFlop File: C:/DesComp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 4
+    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 16
+    Info (12023): Found entity 1: FlipFlop File: C:/Descomp/DesignComp-Projeto1/Aula7/FlipFlop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decodinstrucao.vhd
-    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 10
-    Info (12023): Found entity 1: DecodInstrucao File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 4
+    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 10
+    Info (12023): Found entity 1: DecodInstrucao File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodInstrucao.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file logicadesvio.vhd
-    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 15
-    Info (12023): Found entity 1: LogicaDesvio File: C:/DesComp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 4
+    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 15
+    Info (12023): Found entity 1: LogicaDesvio File: C:/Descomp/DesignComp-Projeto1/Aula7/LogicaDesvio.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 21
-    Info (12023): Found entity 1: memoriaRAM File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoriarom.vhd
-    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROM File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaROM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_pc.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/DesComp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_pc.vhd
-    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico_PC File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico_PC File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/DesComp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Descomp/DesignComp-Projeto1/Aula7/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 17
-    Info (12023): Found entity 1: ULASomaSub File: C:/DesComp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 7
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 17
+    Info (12023): Found entity 1: ULASomaSub File: C:/Descomp/DesignComp-Projeto1/Aula7/ULASomaSub.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file decod3x8vhd.vhd
-    Info (12022): Found design unit 1: Decod3x8-arch File: C:/DesComp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 18
-    Info (12023): Found entity 1: Decod3x8 File: C:/DesComp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 4
+    Info (12022): Found design unit 1: Decod3x8-arch File: C:/Descomp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 18
+    Info (12023): Found entity 1: Decod3x8 File: C:/Descomp/DesignComp-Projeto1/Aula7/Decod3x8vhd.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
-    Info (12022): Found design unit 1: CPU-arquitetura File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 27
-    Info (12023): Found entity 1: CPU File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 4
+    Info (12022): Found design unit 1: CPU-arquitetura File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 27
+    Info (12023): Found entity 1: CPU File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decodbinario_7seg.vhd
-    Info (12022): Found design unit 1: DecodBinario_7Seg-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd Line: 17
-    Info (12023): Found entity 1: DecodBinario_7Seg File: C:/DesComp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd Line: 4
+    Info (12022): Found design unit 1: DecodBinario_7Seg-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd Line: 17
+    Info (12023): Found entity 1: DecodBinario_7Seg File: C:/Descomp/DesignComp-Projeto1/Aula7/DecodBinario_7seg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_4b.vhd
-    Info (12022): Found design unit 1: registradorGenerico_4b-comportamento File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico_4b File: C:/DesComp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico_4b-comportamento File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico_4b File: C:/Descomp/DesignComp-Projeto1/Aula7/registradorGenerico_4b.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buffertri.vhd
-    Info (12022): Found design unit 1: buffertri-comportament File: C:/DesComp/DesignComp-Projeto1/Aula7/buffertri.vhd Line: 16
-    Info (12023): Found entity 1: buffertri File: C:/DesComp/DesignComp-Projeto1/Aula7/buffertri.vhd Line: 4
+    Info (12022): Found design unit 1: buffertri-comportament File: C:/Descomp/DesignComp-Projeto1/Aula7/buffertri.vhd Line: 16
+    Info (12023): Found entity 1: buffertri File: C:/Descomp/DesignComp-Projeto1/Aula7/buffertri.vhd Line: 4
 Info (12127): Elaborating entity "Aula7" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Aula7.vhd(73): object "Bloco_5" assigned a value but never read File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 73
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 118
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 72
-Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 78
-Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 83
-Info (12128): Elaborating entity "somaConstante" for hierarchy "CPU:CPU|somaConstante:SOMADOR" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 86
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "CPU:CPU|registradorGenerico:REG1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 93
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "CPU:CPU|ULASomaSub:ULA1" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 98
-Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 102
-Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 106
-Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/DesComp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 111
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:MEMORIA_INTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 131
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 134
-Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 137
-Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 197
-Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 206
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 118
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 72
+Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 78
+Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 83
+Info (12128): Elaborating entity "somaConstante" for hierarchy "CPU:CPU|somaConstante:SOMADOR" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 86
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "CPU:CPU|registradorGenerico:REG1" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 93
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "CPU:CPU|ULASomaSub:ULA1" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 98
+Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 102
+Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 106
+Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/Descomp/DesignComp-Projeto1/Aula7/CPU.vhd Line: 111
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:MEMORIA_INTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 131
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 134
+Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 137
+Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 197
+Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 206
+Info (12128): Elaborating entity "buffertri" for hierarchy "buffertri:FPGA_R" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 304
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "memoriaRAM:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 27
+    Info (276007): RAM logic "memoriaRAM:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 27
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[0]" feeding internal logic into a wire File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[1]" feeding internal logic into a wire File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[2]" feeding internal logic into a wire File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[3]" feeding internal logic into a wire File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[4]" feeding internal logic into a wire File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[5]" feeding internal logic into a wire File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[6]" feeding internal logic into a wire File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:MEMORIA_DADOS|dado_out[7]" feeding internal logic into a wire File: C:/DesComp/DesignComp-Projeto1/Aula7/memoriaRAM.vhd Line: 17
+    Warning (13048): Converted tri-state node "Saida_Dados[7]" into a selector File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[6]" into a selector File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[5]" into a selector File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[4]" into a selector File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[3]" into a selector File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[2]" into a selector File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[1]" into a selector File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[0]" into a selector File: C:/Descomp/DesignComp-Projeto1/Aula7/muxGenerico2x1.vhd Line: 10
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 31
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 385 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 15 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 15
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 15
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 15
-    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 16
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/DesComp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
-Info (21057): Implemented 320 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 14 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 14
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 15
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 15
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 15
+    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 16
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Descomp/DesignComp-Projeto1/Aula7/Aula7.vhd Line: 20
+Info (21057): Implemented 321 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 69 output pins
-    Info (21061): Implemented 235 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 4844 megabytes
-    Info: Processing ended: Mon Sep 27 11:54:36 2021
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:23
+    Info (21061): Implemented 236 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 4894 megabytes
+    Info: Processing ended: Mon Sep 27 21:36:01 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:15
 
 

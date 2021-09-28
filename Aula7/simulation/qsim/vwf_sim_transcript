@@ -26,8 +26,10 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Sep 27 11:55:30 2021
+    Info: Processing started: Mon Sep 27 21:39:21 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Aula7 -c Aula7 --vector_source=C:/DesComp/DesignComp-Projeto1/Aula7/Waveform.vwf --testbench_file=C:/DesComp/DesignComp-Projeto1/Aula7/simulation/qsim/Waveform.vwf.vht
+
+05): Ignoring output pin "PC_OUT[1]" in vector source file when writing test bench files
 
 Completed successfully. 
 
@@ -52,12 +54,12 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Sep 27 11:55:32 2021
+    Info: Processing started: Mon Sep 27 21:39:22 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/DesComp/DesignComp-Projeto1/Aula7/simulation/qsim/ Aula7 -c Aula7
 Info (204019): Generated file Aula7.vho in folder "C:/DesComp/DesignComp-Projeto1/Aula7/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4719 megabytes
-    Info: Processing ended: Mon Sep 27 11:55:33 2021
+    Info: Peak virtual memory: 4718 megabytes
+    Info: Processing ended: Mon Sep 27 21:39:23 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -65,7 +67,7 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/DesComp/DesignComp-Projeto1/Aula7/simulation/qsim/Aula7.do generated.
+C:/Descomp/DesignComp-Projeto1/Aula7/simulation/qsim/Aula7.do generated.
 
 Completed successfully. 
 
@@ -81,40 +83,39 @@ Reading pref.tcl
 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:55:34 on Sep 27,2021
+# Start time: 21:39:24 on Sep 27,2021
 # vcom -work work Aula7.vho 
 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
+
 # -- Loading package altera_lnsim_components
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity Aula7
 # -- Compiling architecture structure of Aula7
 
-# End time: 11:55:34 on Sep 27,2021, Elapsed time: 0:00:00
+# End time: 21:39:24 on Sep 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:55:35 on Sep 27,2021
+# Start time: 21:39:24 on Sep 27,2021
 # vcom -work work Waveform.vwf.vht 
-
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Aula7_vhd_vec_tst
 # -- Compiling architecture Aula7_arch of Aula7_vhd_vec_tst
-# End time: 11:55:35 on Sep 27,2021, Elapsed time: 0:00:00
+# End time: 21:39:24 on Sep 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Aula7_vhd_vec_tst 
-# Start time: 11:55:35 on Sep 27,2021
+# Start time: 21:39:24 on Sep 27,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -133,24 +134,24 @@ Reading pref.tcl
 # Loading cyclonev.cyclonev_clkena(behavior)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 57873 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 58130 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#34
 
-# End time: 11:55:35 on Sep 27,2021, Elapsed time: 0:00:00
+# End time: 21:39:25 on Sep 27,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/DesComp/DesignComp-Projeto1/Aula7/Waveform.vwf...
+Reading C:/Descomp/DesignComp-Projeto1/Aula7/Waveform.vwf...
 
-Reading C:/DesComp/DesignComp-Projeto1/Aula7/simulation/qsim/Aula7.msim.vcd...
+Reading C:/Descomp/DesignComp-Projeto1/Aula7/simulation/qsim/Aula7.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/DesComp/DesignComp-Projeto1/Aula7/simulation/qsim/Aula7_20210927115536.sim.vwf
+Writing the resulting VWF to C:/Descomp/DesignComp-Projeto1/Aula7/simulation/qsim/Aula7_20210927213925.sim.vwf
 
 Finished VCD to VWF conversion.
 
