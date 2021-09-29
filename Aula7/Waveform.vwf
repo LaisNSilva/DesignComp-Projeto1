@@ -23,6 +23,7 @@ quit -f
 
 
 
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -41,6 +42,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 
 
 
@@ -1002,16 +1004,6 @@ SIGNAL("SW[0]")
 	PARENT = "";
 }
 
-GROUP("LEDR_0_7")
-{
-	MEMBERS = "LEDR[7]", "LEDR[6]", "LEDR[5]", "LEDR[4]", "LEDR[3]", "LEDR[2]", "LEDR[1]", "LEDR[0]";
-}
-
-GROUP("SW_0_7")
-{
-	MEMBERS = "SW[7]", "SW[6]", "SW[5]", "SW[4]", "SW[3]", "SW[2]", "SW[1]", "SW[0]";
-}
-
 SIGNAL("CLOCK_50")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -1020,6 +1012,16 @@ SIGNAL("CLOCK_50")
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
 	PARENT = "";
+}
+
+GROUP("LEDR_0_7")
+{
+	MEMBERS = "LEDR[7]", "LEDR[6]", "LEDR[5]", "LEDR[4]", "LEDR[3]", "LEDR[2]", "LEDR[1]", "LEDR[0]";
+}
+
+GROUP("SW_0_7")
+{
+	MEMBERS = "SW[7]", "SW[6]", "SW[5]", "SW[4]", "SW[3]", "SW[2]", "SW[1]", "SW[0]";
 }
 
 TRANSITION_LIST("FPGA_RESET_N")
@@ -1441,15 +1443,9 @@ TRANSITION_LIST("KEY[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 240.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
+		LEVEL 1 FOR 560.0;
 		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 70.0;
-		LEVEL 0 FOR 360.0;
+		LEVEL 1 FOR 370.0;
 	}
 }
 

@@ -8,7 +8,7 @@ entity Aula7 is
 		  larguraInstrucao : natural := 13; 
 		  larguraEnderecoROM : natural := 8;
 		  larguraDados_PC : natural := 9;
-        simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
+        simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (
    CLOCK_50 : in std_logic;
@@ -307,7 +307,7 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
 FPGA_R: entity work.buffertri
           port map (
 			 DIN => FPGA_RESET_N,
-			 DOUT => Saida_Dados(6), 
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_4 AND Bloco_5
 			 );
 		
@@ -316,21 +316,21 @@ FPGA_R: entity work.buffertri
 KEY_3: entity work.buffertri
           port map (
 			 DIN => KEY(3),
-			 DOUT => Saida_Dados(5), 
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_3 AND Bloco_5
 			 );
 
 KEY_2: entity work.buffertri
           port map (
 			 DIN => KEY(2),
-			 DOUT => Saida_Dados(4), 
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_2 AND Bloco_5
 			 );
 		
 KEY_1: entity work.buffertri
           port map (
 			 DIN => KEY(1),
-			 DOUT => Saida_Dados(3), 
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_1 AND Bloco_5
 			 );
 			 
@@ -350,7 +350,7 @@ FLIP_FLOP_DM : entity work.FlipFlop   generic map (larguraDados => larguraDados)
 KEY_0: entity work.buffertri
           port map (
 			 DIN => Saida_FF_DM,
-			 DOUT => Saida_Dados(2), 
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_0 AND Bloco_5
 			 );
 
@@ -360,7 +360,7 @@ KEY_0: entity work.buffertri
 SW_9: entity work.buffertri
           port map (
 			 DIN => SW(9),
-			 DOUT => Saida_Dados(1), 
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_2 AND Bloco_5
 			 );
 
