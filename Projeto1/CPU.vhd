@@ -5,7 +5,7 @@ entity CPU is
   -- Total de bits das entradas e saidas
   generic ( larguraDados : natural := 8; -- AGORA É 8 
 		  larguraEnderecoRAM : natural := 8; 
-		  larguraInstrucao : natural := 13; 
+		  larguraInstrucao : natural := 15; 
 		  larguraEnderecoROM : natural := 8;
 		  larguraDados_PC : natural := 9;
         simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
@@ -41,8 +41,6 @@ architecture arquitetura of CPU is
   signal Operacao_ULA : std_logic_vector (1 downto 0);
   --signal Saida_Dados : std_logic_vector (larguraDados-1 downto 0);
   signal Imediato : std_logic_vector (larguraDados-1 downto 0);
-  signal opCode : std_logic_vector (3 downto 0);
-  signal endereco_REG : std_logic_vector (3 downto 0);
   signal endereco_PC:std_logic_vector (8 downto 0);
   signal endereco :std_logic_vector (8 downto 0);
   signal habLeituraMEM : std_logic;
@@ -55,6 +53,9 @@ architecture arquitetura of CPU is
   signal Saida_ULA_Flag0 : std_logic;
   signal Saida_LogicaDesvio : std_logic_vector (1 downto 0);
   signal SaidaReg_MUX_C : std_logic_vector (8 downto 0);
+  
+  alias endereco_REG : std_logic_vector (1 downto 0) is INTRUCTION_IN(10 downto 9);
+  alias opCode : std_logic_vector (3 downto 0) is INTRUCTION_IN(14 downto 11);
 
 begin
 
@@ -77,7 +78,7 @@ MUX1 :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
                  saida_MUX => MUX_ULA_B);
 					  
 DECODIFICADOR_INSTRUCAO : entity work.DecodInstrucao -- apagamos o generic map
-          port map (CodigoBinario => INTRUCTION_IN(12 downto 9), Saida => Saida_Decod);
+          port map (CodigoBinario => opCode, Saida => Saida_Decod);
 			 
 			 
 -- O port map completo do Acumulador.
@@ -96,7 +97,7 @@ REG_END_RET : entity work.registradorGenerico_PC   generic map (larguraDados => 
 
 
 BANCO_REG: entity work.Banco_Registradores  generic map (larguraDados => larguraDados)
-				port (
+				port map (
 					 ENDERECO_REG => endereco_REG, -- AQUI TEM QUE MEXER
 					 ENTRADA => Saida_ULA,
 					 HABILITA => Saida_Decod(5),

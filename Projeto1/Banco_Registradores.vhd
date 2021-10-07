@@ -32,6 +32,17 @@ architecture comportamento of Banco_Registradores is
 	
 begin
 
+Entrada_reg0 <= ENTRADA when ENDERECO_REG="00";
+Entrada_reg1 <= ENTRADA when ENDERECO_REG="01";
+Entrada_reg2 <= ENTRADA when ENDERECO_REG="10"; 
+Entrada_reg3 <= ENTRADA when ENDERECO_REG="11";
+
+Habilita_reg0 <= HABILITA when ENDERECO_REG="00";	  
+Habilita_reg1 <= HABILITA when ENDERECO_REG="01";
+Habilita_reg2 <= HABILITA when ENDERECO_REG="10";
+Habilita_reg3 <= HABILITA when ENDERECO_REG="11";
+
+
 
 REG_0 : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
         port map (DIN => Entrada_reg0, DOUT => Saida_reg0, ENABLE => Habilita_reg0 , RST => '0', CLK => CLK);
@@ -45,19 +56,12 @@ REG_2 : entity work.registradorGenerico   generic map (larguraDados => larguraDa
 REG_3 : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
         port map (DIN => Entrada_reg3, DOUT => Saida_reg3, ENABLE => Habilita_reg3 , RST => '0', CLK => CLK); 
 		  		  
-Entrada_reg0 <= ENTRADA when ENDERECO_REG="00";
-Entrada_reg1 <= ENTRADA when ENDERECO_REG="01";
-Entrada_reg2 <= ENTRADA when ENDERECO_REG="10"; 
-Entrada_reg3 <= ENTRADA when ENDERECO_REG="11";
 
-Habilita_reg0 <= HABILITA when ENDERECO_REG="00";	  
-Habilita_reg1 <= HABILITA when ENDERECO_REG="01";
-Habilita_reg2 <= HABILITA when ENDERECO_REG="10";
-Habilita_reg3 <= HABILITA when ENDERECO_REG="11";
+with ENDERECO_REG (1 downto 0) select
+		SAIDA <= Saida_reg0 when "00", 
+				Saida_reg1 when "01", 
+				Saida_reg2 when "10", 
+				Saida_reg3 when others;
 
-SAIDA <= Saida_reg0 when ENDERECO_REG="00";
-SAIDA <= Saida_reg1 when ENDERECO_REG="01";
-SAIDA <= Saida_reg2 when ENDERECO_REG="10";
-SAIDA <= Saida_reg3 when ENDERECO_REG="11";
 			
 end architecture;

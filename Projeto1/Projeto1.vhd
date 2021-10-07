@@ -5,7 +5,7 @@ entity Projeto1 is
   -- Total de bits das entradas e saidas
   generic ( larguraDados : natural := 8; -- AGORA É 8 
 		  larguraEnderecoRAM : natural := 8; 
-		  larguraInstrucao : natural := 13; 
+		  larguraInstrucao : natural := 15; 
 		  larguraEnderecoROM : natural := 8;
 		  larguraDados_PC : natural := 9;
         simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
@@ -100,22 +100,12 @@ architecture arquitetura of Projeto1 is
 	 signal Saida_DecBorda_KEY0 : std_logic;
 	 
 	 
-	 alias opCode : std_logic_vector (3 downto 0) is ROM_DADOS(12 downto 9);
+	 alias opCode : std_logic_vector (3 downto 0) is ROM_DADOS(14 downto 11);
 	 alias Endereco_instrucao : std_logic_vector (8 downto 0) is ROM_DADOS(8 downto 0);
 	 
 
 
 begin
-
--- Instanciando os componentes:
-
--- Para simular, fica mais simples tirar o edgeDetector
---gravar:  if simulacao generate
---CLK <= CLOCK_50;
---else generate
---detectorSub0: work.edgeDetector(bordaSubida)
-        --port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => Saida_DecBorda_KEY0);
---end generate;
 
 
 -- Para simular, fica mais simples tirar o edgeDetector
@@ -324,21 +314,21 @@ FPGA_R: entity work.buffertri
 KEY_3: entity work.buffertri
           port map (
 			 DIN => KEY(3),
-			 DOUT => Saida_Dados(5), 
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_3 AND Bloco_5
 			 );
 
 KEY_2: entity work.buffertri
           port map (
 			 DIN => KEY(2),
-			 DOUT => Saida_Dados(4), 
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_2 AND Bloco_5
 			 );
 		
 KEY_1: entity work.buffertri
           port map (
 			 DIN => KEY(1),
-			 DOUT => Saida_Dados(3), 
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_1 AND Bloco_5
 			 );
 			 
@@ -346,26 +336,19 @@ KEY_1: entity work.buffertri
 ------ TRATAMENTO ESPECIAL PARA KEY0 ----------------------
 
 
---FLIP_FLOP_DM : entity work.FlipFlop   generic map (larguraDados => larguraDados)
---          port map (
---			 DIN => '1', 
---			 DOUT => Saida_FF_DM, 
---			 ENABLE => '1', 
---			 RST => Endereco_barramento(0) AND Endereco_barramento(1) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8),
---			 CLK => Saida_DecBorda_KEY0
---			 );
---
---KEY_0: entity work.buffertri
---          port map (
---			 DIN => Saida_FF_DM,
---			 DOUT => Saida_Dados(2), 
---			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_0 AND Bloco_5
---			 );
+FLIP_FLOP_DM : entity work.FlipFlop   generic map (larguraDados => larguraDados)
+          port map (
+			 DIN => '1', 
+			 DOUT => Saida_FF_DM, 
+			 ENABLE => '1', 
+			 RST => Endereco_barramento(0) AND Endereco_barramento(1) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8),
+			 CLK => Saida_DecBorda_KEY0
+			 );
 
 KEY_0: entity work.buffertri
           port map (
-			 DIN => KEY(0),
-			 DOUT => Saida_Dados(2), 
+			 DIN => Saida_FF_DM,
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_0 AND Bloco_5
 			 );
 
@@ -375,7 +358,7 @@ KEY_0: entity work.buffertri
 SW_9: entity work.buffertri
           port map (
 			 DIN => SW(9),
-			 DOUT => Saida_Dados(1), 
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_2 AND Bloco_5
 			 );
 
@@ -461,6 +444,7 @@ HEX5 <= saida7seg_HEX5;
 
 PC_OUT <= Endereco_PC;
 REG_A <= REG1_ULA_A;
+
 
 
 			 
