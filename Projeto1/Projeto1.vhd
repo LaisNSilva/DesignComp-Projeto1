@@ -97,7 +97,9 @@ architecture arquitetura of Projeto1 is
 	 signal saida7seg_HEX4 : std_logic_vector (6 downto 0);
 	 signal saida7seg_HEX5 : std_logic_vector (6 downto 0);
 	 signal Saida_FF_DM : std_logic;
+	 signal Saida_FF_KEY1 : std_logic;
 	 signal Saida_DecBorda_KEY0 : std_logic;
+	 signal Saida_DecBorda_KEY1 : std_logic;
 	 
 	 
 	 alias opCode : std_logic_vector (3 downto 0) is ROM_DADOS(14 downto 11);
@@ -115,6 +117,9 @@ CLK <= CLOCK_50;
 detectorSub0: work.edgeDetector(bordaSubida)
         port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => Saida_DecBorda_KEY0);
 --end generate;
+
+detectorSub1: work.edgeDetector(bordaSubida)
+        port map (clk => CLOCK_50, entrada => (not KEY(1)), saida => Saida_DecBorda_KEY1);
 
 -- O port map completo do MUX.
 CPU : entity work.CPU
@@ -325,10 +330,23 @@ KEY_2: entity work.buffertri
 			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_2 AND Bloco_5
 			 );
+			 
+------ TRATAMENTO ESPECIAL PARA KEY1 ----------------------
+
+FLIP_FLOP_KEY1 : entity work.FlipFlop   generic map (larguraDados => larguraDados)
+          port map (
+			 DIN => '1', 
+			 DOUT => Saida_FF_KEY1, 
+			 ENABLE => '1', 
+			 RST => (NOT(Endereco_barramento(0))) AND Endereco_barramento(1) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8),
+			 CLK => Saida_DecBorda_KEY1
+			 );
+
+
 		
 KEY_1: entity work.buffertri
           port map (
-			 DIN => KEY(1),
+			 DIN => Saida_FF_KEY1,
 			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_1 AND Bloco_5
 			 );
@@ -342,7 +360,7 @@ FLIP_FLOP_DM : entity work.FlipFlop   generic map (larguraDados => larguraDados)
 			 DIN => '1', 
 			 DOUT => Saida_FF_DM, 
 			 ENABLE => '1', 
-			 RST => Endereco_barramento(0) AND Endereco_barramento(1) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8),
+			 RST => Endereco_barramento(0) AND Endereco_barramento(1) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8) AND ,
 			 CLK => Saida_DecBorda_KEY0
 			 );
 
