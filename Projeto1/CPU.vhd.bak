@@ -42,7 +42,6 @@ architecture arquitetura of CPU is
   --signal Saida_Dados : std_logic_vector (larguraDados-1 downto 0);
   signal Imediato : std_logic_vector (larguraDados-1 downto 0);
   signal opCode : std_logic_vector (3 downto 0);
-  signal endereco_REG : std_logic_vector (3 downto 0);
   signal endereco_PC:std_logic_vector (8 downto 0);
   signal endereco :std_logic_vector (8 downto 0);
   signal habLeituraMEM : std_logic;
@@ -90,20 +89,9 @@ SOMADOR  :  entity work.somaConstante  generic map (larguraDados => larguraDados
 REG_END_RET : entity work.registradorGenerico_PC   generic map (larguraDados => larguraDados_PC)
           port map (DIN => Saida_Somador, DOUT => SaidaReg_MUX_C, ENABLE => Saida_Decod(11), RST => '0', CLK => CLK);
 
----- O port map completo do Acumulador.
---REG1 : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
---          port map (DIN => Saida_ULA, DOUT => REG1_ULA_A, ENABLE => Saida_Decod(5), RST => '0',CLK => CLK);
-
-
-BANCO_REG: entity work.Banco_Registradores  generic map (larguraDados => larguraDados)
-				port (
-					 ENDERECO_REG => endereco_REG, -- AQUI TEM QUE MEXER
-					 ENTRADA => Saida_ULA,
-					 HABILITA => Saida_Decod(5),
-					 RST => '0',
-					 CLK => CLK,
-					 SAIDA => REG1_ULA_A
-				 );
+-- O port map completo do Acumulador.
+REG1 : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
+          port map (DIN => Saida_ULA, DOUT => REG1_ULA_A, ENABLE => Saida_Decod(5), RST => '0',CLK => CLK);
 
 
 -- O port map completo da ULA:
