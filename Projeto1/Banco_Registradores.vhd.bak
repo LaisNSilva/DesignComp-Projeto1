@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Banco_Registradores is
+    generic (
+        larguraDados : natural := 4
+    );
+    port (DIN : in std_logic_vector(larguraDados-1 downto 0);
+       DOUT : out std_logic_vector(larguraDados-1 downto 0);
+       ENABLE : in std_logic;
+		 RST : in std_logic;
+       CLK: in std_logic
+        );
+end entity;
+
+architecture comportamento of registradorGenerico_4b is
+begin
+    
+end architecture;
