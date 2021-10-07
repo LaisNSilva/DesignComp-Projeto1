@@ -8,7 +8,7 @@ entity Projeto1 is
 		  larguraInstrucao : natural := 15; 
 		  larguraEnderecoROM : natural := 8;
 		  larguraDados_PC : natural := 9;
-        simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
+        simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (
    CLOCK_50 : in std_logic;
@@ -102,20 +102,19 @@ architecture arquitetura of Projeto1 is
 	 
 	 alias opCode : std_logic_vector (3 downto 0) is ROM_DADOS(14 downto 11);
 	 alias Endereco_instrucao : std_logic_vector (8 downto 0) is ROM_DADOS(8 downto 0);
-	 
 
 
 begin
 
+-- Instanciando os componentes:
 
 -- Para simular, fica mais simples tirar o edgeDetector
-gravar:  if simulacao generate
-CLK <= KEY(0);
-else generate
+--gravar:  if simulacao generate
+CLK <= CLOCK_50;
+--else generate
 detectorSub0: work.edgeDetector(bordaSubida)
-        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
-end generate;
-
+        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => Saida_DecBorda_KEY0);
+--end generate;
 
 -- O port map completo do MUX.
 CPU : entity work.CPU
@@ -192,6 +191,8 @@ FF_LEDR9 : entity work.FlipFlop   generic map (larguraDados => larguraDados)
 			 );
 			 
 			 
+--ROM1 : entity work.memoriaROM   generic map (dataWidth => 7, addrWidth => 4)
+          --port map (Endereco => SW(3 downto 0), Dado => HEX0);
 			 
 --------- HEX0-----------
 			 
@@ -305,7 +306,7 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
 FPGA_R: entity work.buffertri
           port map (
 			 DIN => FPGA_RESET_N,
-			 DOUT => Saida_Dados(6), 
+			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_4 AND Bloco_5
 			 );
 		
@@ -446,7 +447,28 @@ PC_OUT <= Endereco_PC;
 REG_A <= REG1_ULA_A;
 
 
-
 			 
+--BARRAMENTO_DADOS_SAIDA <= REG1_ULA_A;
+--BARRAMENTO_DADOS_ENTRADA <= Saida_Dados;
+--BARRAMENTO_DADOS_ENDERECOS <= Endereco_Imediato(8 downto 0);
+
+--selMUX <= Sinais_Controle(3);
+--Habilita_A <= Sinais_Controle(2);
+--Reset_A <= Sinais_Controle(1);
+--Operacao_ULA <= Sinais_Controle(0);
+
+-- I/O
+--chavesY_MUX_A <= SW(3 downto 0);
+--chavesX_ULA_B <= SW(9 downto 6);
+
+
+-- A ligacao dos LEDs:
+--LEDR (9) <= SelMUX;
+--LEDR (8) <= Habilita_A;
+--LEDR (7) <= Reset_A;
+--LEDR (6) <= Operacao_ULA;
+--LEDR (5) <= '0';    -- Apagado.
+--LEDR (4) <= '0';    -- Apagado.
+--LEDR (3 downto 0) <= REG1_ULA_A;
 
 end architecture;

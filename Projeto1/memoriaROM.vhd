@@ -105,47 +105,86 @@ architecture assincrona of memoriaROM is
 --		  tmp(15) := STA  & '1' & x"02";
 --		  tmp(16) := JMP  & '0' & x"00";
 
-      -- TESTE DO TRATAMENTO ESPECIAL DA KEY0
-		  tmp(0)  := LDI  & "00" & '0' & x"00"; -- manda 0 para acumulador
-        tmp(1)  := STA  & "00" & '0' & x"00"; -- guarda 0 no mem[0]
-        tmp(2)  := STA  & "00" & '0' & x"02"; -- 0 no mem[2] (contador)
-        tmp(3)  := LDI  & "00" & '0' & x"01"; -- manda 1 para o acumulador
-        tmp(4)  := STA  & "00" & '0' & x"01"; -- armazena 1 no mem[1] (constante 1)
-        tmp(5)  := NOP  & "00" & '0' & x"00";	-- 
-        tmp(6)  := LDA  & "00" & '1' & x"60"; -- 352=x160 (KEY0) VERIFICA SE APERTOU OU NÃO
-        tmp(7)  := CEQ  & "00" & '0' & x"00"; -- compara key0 com mem[0](que esta guardando 0)
-        tmp(8)  := JEQ  & "00" & '0' & x"0a"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 10
-        tmp(9)  := JSR  & "00" & '0' & x"20"; -- se apertou o key0, vai para subrotina, pula para linha 32 
-        tmp(10) := NOP  & "00" & '0' & x"00"; -- 
-        tmp(11) := JMP  & "00" & '0' & x"05"; -- Pula para 5 para ficar no laço de verificar se o key0 foi apertado ou não
-        tmp(12) := NOP  & "00" & '0' & x"00"; 
-		  tmp(13) := NOP  & "00" & '0' & x"00"; 
-		  tmp(14) := NOP  & "00" & '0' & x"00"; 
-		  tmp(15) := NOP  & "00" & '0' & x"00"; 
-		  tmp(16) := NOP  & "00" & '0' & x"00"; 
-		  tmp(17) := NOP  & "00" & '0' & x"00"; 
-		  tmp(18) := NOP  & "00" & '0' & x"00"; 
-		  tmp(19) := NOP  & "00" & '0' & x"00"; 
-		  tmp(20) := NOP  & "00" & '0' & x"00"; 
-		  tmp(21) := NOP  & "00" & '0' & x"00"; 
-		  tmp(22) := NOP  & "00" & '0' & x"00"; 
-		  tmp(23) := NOP  & "00" & '0' & x"00"; 
-		  tmp(24) := NOP  & "00" & '0' & x"00"; 
-		  tmp(25) := NOP  & "00" & '0' & x"00"; 
-		  tmp(26) := NOP  & "00" & '0' & x"00"; 
-		  tmp(27) := NOP  & "00" & '0' & x"00";  
-		  tmp(28) := NOP  & "00" & '0' & x"00"; 
-		  tmp(29) := NOP  & "00" & '0' & x"00"; 
-		  tmp(30) := NOP  & "00" & '0' & x"00"; 
-		  tmp(31) := NOP  & "00" & '0' & x"00"; 
-		  tmp(32) := STA  & "00" & '1' & x"ff"; -- 511=x1ff, limpa a leitura no botão
-		  tmp(33) := LDA  & "00" & '0' & x"02"; -- bota o valor do mem[2] no acumulador
-		  tmp(34) := SOMA & "00" & '0' & x"01"; -- Soma a constate 1 que esta no MEM[1] com o valor que foi para o acumulador
-		  tmp(35) := STA  & "00" & '0' & x"02"; -- guarda o valor da soma em mem[2] (contador)
-		  tmp(36) := STA  & "00" & '1' & x"02"; -- 258=x102 armazena o valor do bit0 do acumulador no LDR9
-		  tmp(37) := RET  & "00" & '0' & x"00"; -- Retorna da subrotina (ou seja, vai para linha 10)
-		
-		
+--      -- TESTE DO TRATAMENTO ESPECIAL DA KEY0
+--		  tmp(0)  := LDI  & "01" & '0' & x"00"; -- manda 0 para acumulador
+--        tmp(1)  := STA  & "01" & '0' & x"00"; -- guarda 0 no mem[0]
+--        tmp(2)  := STA  & "01" & '0' & x"02"; -- 0 no mem[2] (contador)
+--        tmp(3)  := LDI  & "00" & '0' & x"01"; -- manda 1 para o acumulador
+--        tmp(4)  := STA  & "00" & '0' & x"01"; -- armazena 1 no mem[1] (constante 1)
+--        tmp(5)  := NOP  & "00" & '0' & x"00";	-- 
+--        tmp(6)  := LDA  & "00" & '1' & x"60"; -- 352=x160 (KEY0) VERIFICA SE APERTOU OU NÃO
+--        tmp(7)  := CEQ  & "00" & '0' & x"00"; -- compara key0 com mem[0](que esta guardando 0)
+--        tmp(8)  := JEQ  & "00" & '0' & x"0a"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 10
+--        tmp(9)  := JSR  & "00" & '0' & x"20"; -- se apertou o key0, vai para subrotina, pula para linha 32 
+--        tmp(10) := NOP  & "00" & '0' & x"00"; -- 
+--        tmp(11) := JMP  & "00" & '0' & x"05"; -- Pula para 5 para ficar no laço de verificar se o key0 foi apertado ou não
+--        tmp(12) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(13) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(14) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(15) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(16) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(17) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(18) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(19) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(20) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(21) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(22) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(23) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(24) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(25) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(26) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(27) := NOP  & "00" & '0' & x"00";  
+--		  tmp(28) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(29) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(30) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(31) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(32) := STA  & "00" & '1' & x"ff"; -- 511=x1ff, limpa a leitura no botão
+--		  tmp(33) := LDA  & "00" & '0' & x"02"; -- bota o valor do mem[2] no acumulador
+--		  tmp(34) := SOMA & "00" & '0' & x"01"; -- Soma a constate 1 que esta no MEM[1] com o valor que foi para o acumulador
+--		  tmp(35) := STA  & "00" & '0' & x"02"; -- guarda o valor da soma em mem[2] (contador)
+--		  tmp(36) := STA  & "00" & '1' & x"02"; -- 258=x102 armazena o valor do bit0 do acumulador no LDR9
+--		  tmp(37) := RET  & "00" & '0' & x"00"; -- Retorna da subrotina (ou seja, vai para linha 10)
+--		
+	  -- TESTE DO TRATAMENTO ESPECIAL DA KEY0
+	  tmp(0)  := LDI  & "01" & '0' & x"00"; -- manda 0 para acumulador
+	tmp(1)  := STA  & "01" & '0' & x"00"; -- guarda 0 no mem[0]
+	tmp(2)  := STA  & "01" & '0' & x"02"; -- 0 no mem[2] (contador)
+	tmp(3)  := LDI  & "01" & '0' & x"01"; -- manda 1 para o acumulador
+	tmp(4)  := STA  & "01" & '0' & x"01"; -- armazena 1 no mem[1] (constante 1)
+	tmp(5)  := NOP  & "01" & '0' & x"00";	-- 
+	tmp(6)  := LDA  & "01" & '1' & x"60"; -- 352=x160 (KEY0) VERIFICA SE APERTOU OU NÃO
+	tmp(7)  := CEQ  & "01" & '0' & x"00"; -- compara key0 com mem[0](que esta guardando 0)
+	tmp(8)  := JEQ  & "01" & '0' & x"0a"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 10
+	tmp(9)  := JSR  & "01" & '0' & x"20"; -- se apertou o key0, vai para subrotina, pula para linha 32 
+	tmp(10) := NOP  & "01" & '0' & x"00"; -- 
+	tmp(11) := JMP  & "01" & '0' & x"05"; -- Pula para 5 para ficar no laço de verificar se o key0 foi apertado ou não
+	tmp(12) := NOP  & "01" & '0' & x"00"; 
+	  tmp(13) := NOP  & "01" & '0' & x"00"; 
+	  tmp(14) := NOP  & "01" & '0' & x"00"; 
+	  tmp(15) := NOP  & "01" & '0' & x"00"; 
+	  tmp(16) := NOP  & "01" & '0' & x"00"; 
+	  tmp(17) := NOP  & "01" & '0' & x"00"; 
+	  tmp(18) := NOP  & "01" & '0' & x"00"; 
+	  tmp(19) := NOP  & "01" & '0' & x"00"; 
+	  tmp(20) := NOP  & "01" & '0' & x"00"; 
+	  tmp(21) := NOP  & "01" & '0' & x"00"; 
+	  tmp(22) := NOP  & "01" & '0' & x"00"; 
+	  tmp(23) := NOP  & "01" & '0' & x"00"; 
+	  tmp(24) := NOP  & "01" & '0' & x"00"; 
+	  tmp(25) := NOP  & "01" & '0' & x"00"; 
+	  tmp(26) := NOP  & "01" & '0' & x"00"; 
+	  tmp(27) := NOP  & "01" & '0' & x"00";  
+	  tmp(28) := NOP  & "01" & '0' & x"00"; 
+	  tmp(29) := NOP  & "01" & '0' & x"00"; 
+	  tmp(30) := NOP  & "01" & '0' & x"00"; 
+	  tmp(31) := NOP  & "01" & '0' & x"00"; 
+	  tmp(32) := STA  & "01" & '1' & x"ff"; -- 511=x1ff, limpa a leitura no botão
+	  tmp(33) := LDA  & "01" & '0' & x"02"; -- bota o valor do mem[2] no acumulador
+	  tmp(34) := SOMA & "01" & '0' & x"01"; -- Soma a constate 1 que esta no MEM[1] com o valor que foi para o acumulador
+	  tmp(35) := STA  & "01" & '0' & x"02"; -- guarda o valor da soma em mem[2] (contador)
+	  tmp(36) := STA  & "01" & '1' & x"02"; -- 258=x102 armazena o valor do bit0 do acumulador no LDR9
+	  tmp(37) := RET  & "01" & '0' & x"00"; -- Retorna da subrotina (ou seja, vai para linha 10)
+	
 		
 		
 		
