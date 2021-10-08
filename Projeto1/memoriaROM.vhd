@@ -175,7 +175,7 @@ architecture assincrona of memoriaROM is
 	  tmp(15)  := LDA  & "01" & '1' & x"60"; -- 352=x160 (KEY0) VERIFICA SE APERTOU OU NÃO
 	  tmp(16)  := CEQ  & "01" & '0' & x"00"; -- compara key0 com mem[0](que esta guardando 0)
 	  tmp(17)  := JEQ  & "01" & '0' & x"13"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 19
-	  tmp(18)  := JSR  & "01" & '0' & x"20"; -- se apertou o key0, vai para subrotina, pula para linha 32 
+	  tmp(18)  := JSR  & "01" & '0' & x"33"; -- se apertou o key0, vai para subrotina, pula para linha 51 
 	  tmp(19) := NOP  & "01" & '0' & x"00"; -- 
 	  tmp(20) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
 	  tmp(21) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
@@ -215,18 +215,19 @@ architecture assincrona of memoriaROM is
 	  tmp(53) := SOMA & "01" & '0' & x"01"; -- Soma a constate 1 que esta no MEM[1] com o valor que foi para o acumulador
 	  tmp(54) := STA  & "01" & '0' & x"02"; -- guarda o valor da soma em mem[2] (contador)
 	  tmp(55) := STA  & "01" & '1' & x"02"; -- 258=x102 armazena o valor do bit0 do acumulador no LDR9
-	  tmp(56) := JMP  & "01" & '0' & x"3b"; -- Vai para subrotina de colocar os valores no display(na linha40)
+	  tmp(56) := JMP  & "01" & '0' & x"3a"; -- Vai para subrotina de colocar os valores no display(na linha40)
 	  tmp(57) := RET  & "01" & '0' & x"00"; -- Retorna da subrotina (ou seja, vai para linha 19)
-	  tmp(58) := NOP  & "01" & '0' & x"00"; 
+	  --tmp(58) := NOP  & "01" & '0' & x"00"; 
 	  -- SUBROTINA DE COLOCAR VALORES NO DISPLAY
 	  
-	  tmp(59) := LDA  & "10" & '1' & x"20"; -- Passa o valor atual de HEX0 para R2
-	  tmp(60) := SOMA & "10" & '0' & x"01"; -- soma 1
+	  tmp(58) := LDA  & "10" & '1' & x"20"; -- Passa o valor atual de HEX0 para R2
+	  tmp(59) := SOMA & "10" & '0' & x"01"; -- soma 1
+	  tmp(60) := STA  & "10" & '0' & X"34"; -- Salva esse valor no mem[52]
 	  tmp(61) := CEQ  & "10" & '0' & x"2e"; -- Compara com o limite de HEX0 (que ta guardado em mem[46]) com R2
 	  tmp(62) := JEQ  & "00" & '0' & x"42"; -- Se for igual vai pular para a linha que mexe na dezena 
 	  -- se não pular é pq não chegou no limite!
-	  tmp(63) := NOP  & "10" & '0' & x"05";
-	  tmp(64) := STA  & "10" & '0' & x"05";
+	  tmp(63) := LDA  & "10" & '0' & x"34"; -- Pega o valor que salvou no mem[52]
+	  tmp(64) := STA  & "10" & '1' & x"20";
 	  tmp(65) := JMP  & "10" & '0' & x"39"; -- Somou volta para o ret e fica verificando verificando de novo o KEY0
 	 
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX0 PASSOU DO LIMITE
