@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/DesComp/DesignComp-Projeto1/Projeto1/simulation/qsim
 Eprojeto1
-Z1 w1633666077
+Z1 w1633705113
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
@@ -20,7 +20,7 @@ Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z10 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
-!i122 74
+!i122 88
 R0
 Z11 8Projeto1.vho
 Z12 FProjeto1.vho
@@ -30,9 +30,9 @@ V[d2kC>fecfDAU_z42d^4=2
 !s100 DZNA829;Nd=VC?UF]gb?=1
 Z13 OV;C;2020.1;71
 32
-Z14 !s110 1633666080
+Z14 !s110 1633705115
 !i10b 1
-Z15 !s108 1633666079.000000
+Z15 !s108 1633705115.000000
 Z16 !s90 -work|work|Projeto1.vho|
 Z17 !s107 Projeto1.vho|
 !i113 1
@@ -49,11 +49,11 @@ R8
 R9
 R10
 DEx4 work 8 projeto1 0 22 [d2kC>fecfDAU_z42d^4=2
-!i122 74
-l2295
-L145 26424
-V:CG1@zUj734m@UcMoD39M2
-!s100 `ZJ7QH4]2j^T@z`Ae]zDQ1
+!i122 88
+l2275
+L145 26098
+V0NeP8iXK:MRG23Y3`4]=z1
+!s100 m<YZbejWP^O8M^EA46?bT3
 R13
 32
 R14
@@ -65,10 +65,10 @@ R17
 R18
 R19
 Eprojeto1_vhd_vec_tst
-Z20 w1633666074
+Z20 w1633705111
 R8
 R9
-!i122 75
+!i122 89
 R0
 Z21 8Waveform.vwf.vht
 Z22 FWaveform.vwf.vht
@@ -78,30 +78,30 @@ V0F`WYj1Uf5iih`e;h5KJY0
 !s100 <eTnX3zHj4EW^eSCj00QI2
 R13
 32
-R14
+Z23 !s110 1633705116
 !i10b 1
-Z23 !s108 1633666080.000000
-Z24 !s90 -work|work|Waveform.vwf.vht|
-Z25 !s107 Waveform.vwf.vht|
+Z24 !s108 1633705116.000000
+Z25 !s90 -work|work|Waveform.vwf.vht|
+Z26 !s107 Waveform.vwf.vht|
 !i113 1
 R18
 R19
 Aprojeto1_arch
 R8
 R9
-Z26 DEx4 work 20 projeto1_vhd_vec_tst 0 22 0F`WYj1Uf5iih`e;h5KJY0
-!i122 75
+Z27 DEx4 work 20 projeto1_vhd_vec_tst 0 22 0F`WYj1Uf5iih`e;h5KJY0
+!i122 89
 l67
-Z27 L34 163
-Z28 VLb4AgYR8Ui>RBYj@[^@Ph0
-Z29 !s100 XNmH2ecg^<hLR00^EdZV_2
+Z28 L34 167
+Z29 VH`klX3@BUlFfONjLY<7YI1
+Z30 !s100 @4?<=Uf8z0E;la>929eD02
 R13
 32
-R14
-!i10b 1
 R23
+!i10b 1
 R24
 R25
+R26
 !i113 1
 R18
 R19

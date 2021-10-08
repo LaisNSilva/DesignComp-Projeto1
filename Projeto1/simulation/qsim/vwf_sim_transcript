@@ -26,10 +26,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Oct 08 01:07:53 2021
+    Info: Processing started: Fri Oct 08 11:58:30 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Projeto1 -c Projeto1 --vector_source=C:/DesComp/DesignComp-Projeto1/Projeto1/Waveform.vwf --testbench_file=C:/DesComp/DesignComp-Projeto1/Projeto1/simulation/qsim/Waveform.vwf.vht
-
-05): Ignoring output pin "HEX3[5]" in vector source file when writing test bench files
 
 arning (201005): Ignoring output pin "PC_OUT[1]" in vector source file when writing test bench files
 
@@ -56,13 +54,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Oct 08 01:07:55 2021
+    Info: Processing started: Fri Oct 08 11:58:32 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/DesComp/DesignComp-Projeto1/Projeto1/simulation/qsim/ Projeto1 -c Projeto1
 Info (204019): Generated file Projeto1.vho in folder "C:/DesComp/DesignComp-Projeto1/Projeto1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4715 megabytes
-    Info: Processing ended: Fri Oct 08 01:07:57 2021
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4725 megabytes
+    Info: Processing ended: Fri Oct 08 11:58:33 2021
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -87,28 +85,27 @@ Reading pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:07:59 on Oct 08,2021
+# Start time: 11:58:35 on Oct 08,2021
 # vcom -work work Projeto1.vho 
-
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Loading package altera_lnsim_components
-
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity Projeto1
 # -- Compiling architecture structure of Projeto1
 
-# End time: 01:08:00 on Oct 08,2021, Elapsed time: 0:00:01
+# End time: 11:58:36 on Oct 08,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:08:00 on Oct 08,2021
+# Start time: 11:58:36 on Oct 08,2021
 # vcom -work work Waveform.vwf.vht 
 
 # -- Loading package STANDARD
@@ -116,11 +113,11 @@ Reading pref.tcl
 # -- Loading package std_logic_1164
 # -- Compiling entity Projeto1_vhd_vec_tst
 # -- Compiling architecture Projeto1_arch of Projeto1_vhd_vec_tst
-# End time: 01:08:00 on Oct 08,2021, Elapsed time: 0:00:00
+# End time: 11:58:36 on Oct 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Projeto1_vhd_vec_tst 
-# Start time: 01:08:01 on Oct 08,2021
+# Start time: 11:58:36 on Oct 08,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -139,27 +136,27 @@ Reading pref.tcl
 # Loading cyclonev.cyclonev_clkena(behavior)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 237632 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 233419 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#34
 
-# Simulation time: 590000 ps
+# Simulation time: 450000 ps
 
-# Simulation time: 590000 ps
+# Simulation time: 450000 ps
 
-# Simulation time: 590000 ps
+# Simulation time: 450000 ps
 
-# Simulation time: 590000 ps
+# Simulation time: 450000 ps
 
-# Simulation time: 590000 ps
+# Simulation time: 450000 ps
 
-# Simulation time: 590000 ps
+# Simulation time: 450000 ps
 
-# Simulation time: 590000 ps
+# Simulation time: 450000 ps
 
-# Simulation time: 590000 ps
+# Simulation time: 450000 ps
 
-# End time: 01:08:24 on Oct 08,2021, Elapsed time: 0:00:23
+# End time: 11:58:58 on Oct 08,2021, Elapsed time: 0:00:22
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -172,7 +169,7 @@ Reading C:/DesComp/DesignComp-Projeto1/Projeto1/simulation/qsim/Projeto1.msim.vc
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/DesComp/DesignComp-Projeto1/Projeto1/simulation/qsim/Projeto1_20211008010824.sim.vwf
+Writing the resulting VWF to C:/DesComp/DesignComp-Projeto1/Projeto1/simulation/qsim/Projeto1_20211008115858.sim.vwf
 
 Finished VCD to VWF conversion.
 

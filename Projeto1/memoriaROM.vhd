@@ -148,6 +148,8 @@ architecture assincrona of memoriaROM is
 	  -- TESTE DO TRATAMENTO ESPECIAL DA KEY0
 	  
 	  
+	  
+	  
 	  tmp(0)  := LDI  & "01" & '0' & x"00"; -- manda 0 para acumulador
 	  
 	  -- Manda zero para os displays
@@ -156,17 +158,18 @@ architecture assincrona of memoriaROM is
 	  tmp(3)  := STA  & "01" & '1' & x"22";
 	  tmp(4)  := STA  & "01" & '1' & x"23";
 	  tmp(5)  := STA  & "01" & '1' & x"24";
-	  tmp(6)  := STA  & "01" & '1' & x"25";
+	  --tmp(6)  := STA  & "01" & '1' & x"25";
+	  tmp(6) := STA  & "01" & '0' & x"34";
 	  
 	  -- Manda zero para os LEDS
 	  tmp(7)  := STA  & "01" & '1' & x"00";
-     tmp(8)  := STA  & "01" & '1' & x"01";
+     --tmp(8)  := STA  & "01" & '1' & x"01";
      --tmp(9)  := STA  & "01" & '1' & x"02";
 	  
-	  tmp(9)  := JMP  & "01" & '0' & x"6C";
+	  tmp(8)  := JMP  & "01" & '0' & x"6C";
 	  
 	  
-	  
+	  tmp(9)  := LDI  & "01" & '0' & x"00";
 	  tmp(10)  := STA  & "01" & '0' & x"00"; -- guarda 0 no mem[0]
 	  tmp(11)  := STA  & "01" & '0' & x"02"; -- 0 no mem[2] (contador)
 	  tmp(12)  := LDI  & "01" & '0' & x"01"; -- manda 1 para o acumulador
@@ -180,12 +183,12 @@ architecture assincrona of memoriaROM is
 	  tmp(20) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
 	  tmp(21) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
 	  tmp(22) := JEQ  & "01" & '0' & x"18"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
-	  tmp(23) := JSR  & "01" & '0' & x"73";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
+	  tmp(23) := JSR  & "01" & '0' & x"77";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
 	  tmp(24) := NOP  & "01" & '0' & x"00"; --
 	  tmp(25) := LDA  & "01" & '1' & x"64"; -- 356=x164 (FPGA_RESET) VERIFICA SE APERTOU OU NÃO
 	  tmp(26) := CEQ  & "01" & '0' & x"00"; -- compara FPGA_RESET com mem[0](que esta guardando 0)
 	  tmp(27) := JEQ  & "01" & '0' & x"1d"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 29
-	  tmp(28) := JSR  & "01" & '0' & x"73";-- AINDA PENSAR EM QUAL SUBROTINA  (VOLTAR AQUIIIIIIIIIIII)
+	  tmp(28) := JSR  & "01" & '0' & x"77";-- AINDA PENSAR EM QUAL SUBROTINA  (VOLTAR AQUIIIIIIIIIIII)
 	  tmp(29) := NOP  & "01" & '0' & x"00"; --
 	  tmp(30) := JMP  & "01" & '0' & x"0e"; -- Pula para 14 para ficar no laço de verificar se o key0 foi apertado ou não
 	  tmp(31) := NOP  & "01" & '0' & x"00"; 
@@ -220,7 +223,7 @@ architecture assincrona of memoriaROM is
 	  --tmp(58) := NOP  & "01" & '0' & x"00"; 
 	  -- SUBROTINA DE COLOCAR VALORES NO DISPLAY
 	  
-	  tmp(58) := LDA  & "10" & '1' & x"20"; -- Passa o valor atual de HEX0 para R2
+	  tmp(58) := LDA  & "10" & '0' & x"34"; -- Passa o valor atual de HEX0 para R2
 	  tmp(59) := SOMA & "10" & '0' & x"01"; -- soma 1
 	  tmp(60) := STA  & "10" & '0' & X"34"; -- Salva esse valor no mem[52]
 	  tmp(61) := CEQ  & "10" & '0' & x"2e"; -- Compara com o limite de HEX0 (que ta guardado em mem[46]) com R2
@@ -298,8 +301,11 @@ architecture assincrona of memoriaROM is
 	  tmp(112) := STA  & "11" & '0' & x"31"; --49
 	  tmp(113) := STA  & "11" & '0' & x"32"; -- 50
 	  tmp(114) := STA  & "11" & '0' & x"33"; -- 51
-	  tmp(115) := JMP  & "00" & '0' & x"0a";
-	  tmp(116) := NOP  & "01" & '0' & x"00";
+	  tmp(115) := LDI  & "11" & '0' & x"00";
+	  tmp(116) := STA  & "01" & '1' & x"01";
+     tmp(117) := STA  & "01" & '1' & x"02";
+	  tmp(118) := JMP  & "00" & '0' & x"0a";
+	  tmp(119) := NOP  & "01" & '0' & x"00";
 	  
 	  
 	  
