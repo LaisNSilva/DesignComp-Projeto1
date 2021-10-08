@@ -360,7 +360,7 @@ FLIP_FLOP_DM : entity work.FlipFlop   generic map (larguraDados => larguraDados)
 			 DIN => '1', 
 			 DOUT => Saida_FF_DM, 
 			 ENABLE => '1', 
-			 RST => Endereco_barramento(0) AND Endereco_barramento(1) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8) AND ,
+			 RST => Endereco_barramento(0) AND Endereco_barramento(1) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8) ,
 			 CLK => Saida_DecBorda_KEY0
 			 );
 

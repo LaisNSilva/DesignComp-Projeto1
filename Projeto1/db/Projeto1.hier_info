@@ -1,5 +1,6 @@
 |Projeto1
 CLOCK_50 => edgedetector:detectorSub0.clk
+CLOCK_50 => edgedetector:detectorSub1.clk
 CLOCK_50 => cpu:CPU.CLOCK
 CLOCK_50 => memoriaram:MEMORIA_DADOS.clk
 CLOCK_50 => registradorgenerico:REG_LEDR0a7.CLK
@@ -12,7 +13,7 @@ CLOCK_50 => registradorgenerico_4b:REG_HEX3.CLK
 CLOCK_50 => registradorgenerico_4b:REG_HEX4.CLK
 CLOCK_50 => registradorgenerico_4b:REG_HEX5.CLK
 KEY[0] => edgedetector:detectorSub0.entrada
-KEY[1] => buffertri:KEY_1.DIN
+KEY[1] => edgedetector:detectorSub1.entrada
 KEY[2] => buffertri:KEY_2.DIN
 KEY[3] => buffertri:KEY_3.DIN
 FPGA_RESET_N => buffertri:FPGA_R.DIN
@@ -98,6 +99,13 @@ LEDR[9] <= flipflop:FF_LEDR9.DOUT
 
 
 |Projeto1|edgeDetector:detectorSub0
+clk => saidaQ.CLK
+entrada => saida.IN1
+entrada => saidaQ.DATAIN
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Projeto1|edgeDetector:detectorSub1
 clk => saidaQ.CLK
 entrada => saida.IN1
 entrada => saidaQ.DATAIN
@@ -1658,6 +1666,14 @@ ENABLE => DOUT.OE
 DIN => DOUT.DATAIN
 DOUT <= DOUT.DB_MAX_OUTPUT_PORT_TYPE
 ENABLE => DOUT.OE
+
+
+|Projeto1|FlipFlop:FLIP_FLOP_KEY1
+DIN => DOUT~reg0.DATAIN
+DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ENABLE => DOUT~reg0.ENA
+RST => DOUT~reg0.ACLR
+CLK => DOUT~reg0.CLK
 
 
 |Projeto1|buffertri:KEY_1
