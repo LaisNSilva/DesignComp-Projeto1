@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "10/08/2021 13:58:58"
+-- DATE "10/08/2021 14:32:11"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -147,44 +147,73 @@ SIGNAL \LEDR[7]~output_o\ : std_logic;
 SIGNAL \LEDR[8]~output_o\ : std_logic;
 SIGNAL \LEDR[9]~output_o\ : std_logic;
 SIGNAL \CLOCK_50~input_o\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~26_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~51_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~24_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~25_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~27_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~28_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~29_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~30_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~31_combout\ : std_logic;
+SIGNAL \CPU|SOMADOR|Add0~2\ : std_logic;
+SIGNAL \CPU|SOMADOR|Add0~6\ : std_logic;
+SIGNAL \CPU|SOMADOR|Add0~9_sumout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~16_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~17_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~18_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~19_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~20_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~21_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~22_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~23_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~24_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~25_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~26_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~27_combout\ : std_logic;
+SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\ : std_logic;
+SIGNAL \CPU|MUX2|saida_MUX[2]~2_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~56_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~57_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~69_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~59_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~70_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~60_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~61_combout\ : std_logic;
+SIGNAL \CPU|SOMADOR|Add0~1_sumout\ : std_logic;
+SIGNAL \CPU|MUX2|saida_MUX[0]~0_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~47_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~48_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~49_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~50_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~52_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~53_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~54_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~55_combout\ : std_logic;
+SIGNAL \CPU|SOMADOR|Add0~5_sumout\ : std_logic;
+SIGNAL \CPU|MUX2|saida_MUX[1]~1_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~14_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~15_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~16_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~17_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~71_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~19_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~68_combout\ : std_logic;
 SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~46_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~45_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~71_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~72_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~58_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~73_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~66_combout\ : std_logic;
+SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\ : std_logic;
+SIGNAL \CPU|ULA1|Equal1~0_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~6_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~37_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~38_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~39_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~40_combout\ : std_logic;
+SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|dado_out~0_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~62_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~63_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~64_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~65_combout\ : std_logic;
-SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\ : std_logic;
-SIGNAL \CPU|ULA1|Equal1~0_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~34_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~35_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~36_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~37_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~67_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~41_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~42_combout\ : std_logic;
-SIGNAL \DECODIFICADOR_3X8_6a8|Equal4~0_combout\ : std_logic;
-SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|dado_out~0_combout\ : std_logic;
-SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~59_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~60_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~61_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~62_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ram~695_combout\ : std_logic;
+SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|process_0~0_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ram~696_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ram~19_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ram~699_combout\ : std_logic;
@@ -745,31 +774,30 @@ SIGNAL \MEMORIA_DADOS|ram~519_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ram~545_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ram~546_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ram~547_combout\ : std_logic;
-SIGNAL \Saida_Dados[0]~0_combout\ : std_logic;
-SIGNAL \KEY[3]~input_o\ : std_logic;
-SIGNAL \KEY[1]~input_o\ : std_logic;
-SIGNAL \detectorSub1|saidaQ~0_combout\ : std_logic;
-SIGNAL \detectorSub1|saidaQ~q\ : std_logic;
-SIGNAL \detectorSub1|saida~combout\ : std_logic;
-SIGNAL \comb~10_combout\ : std_logic;
-SIGNAL \comb~11_combout\ : std_logic;
-SIGNAL \FLIP_FLOP_KEY1|DOUT~q\ : std_logic;
+SIGNAL \FPGA_RESET_N~input_o\ : std_logic;
+SIGNAL \SW[0]~input_o\ : std_logic;
 SIGNAL \KEY[0]~input_o\ : std_logic;
 SIGNAL \detectorSub0|saidaQ~0_combout\ : std_logic;
 SIGNAL \detectorSub0|saidaQ~q\ : std_logic;
 SIGNAL \detectorSub0|saida~combout\ : std_logic;
-SIGNAL \comb~12_combout\ : std_logic;
+SIGNAL \comb~9_combout\ : std_logic;
+SIGNAL \comb~10_combout\ : std_logic;
 SIGNAL \FLIP_FLOP_DM|DOUT~q\ : std_logic;
-SIGNAL \KEY[2]~input_o\ : std_logic;
-SIGNAL \Saida_Dados[0]~3_combout\ : std_logic;
-SIGNAL \SW[8]~input_o\ : std_logic;
-SIGNAL \SW[0]~input_o\ : std_logic;
 SIGNAL \SW[9]~input_o\ : std_logic;
-SIGNAL \Saida_Dados[0]~4_combout\ : std_logic;
-SIGNAL \FPGA_RESET_N~input_o\ : std_logic;
-SIGNAL \Saida_Dados[0]~5_combout\ : std_logic;
+SIGNAL \KEY[2]~input_o\ : std_logic;
+SIGNAL \Saida_Dados[0]~0_combout\ : std_logic;
+SIGNAL \KEY[3]~input_o\ : std_logic;
+SIGNAL \SW[8]~input_o\ : std_logic;
+SIGNAL \KEY[1]~input_o\ : std_logic;
+SIGNAL \detectorSub1|saidaQ~0_combout\ : std_logic;
+SIGNAL \detectorSub1|saidaQ~q\ : std_logic;
+SIGNAL \detectorSub1|saida~combout\ : std_logic;
+SIGNAL \comb~11_combout\ : std_logic;
+SIGNAL \FLIP_FLOP_KEY1|DOUT~q\ : std_logic;
 SIGNAL \Saida_Dados[0]~1_combout\ : std_logic;
+SIGNAL \Saida_Dados[0]~4_combout\ : std_logic;
 SIGNAL \Saida_Dados[0]~2_combout\ : std_logic;
+SIGNAL \Saida_Dados[0]~3_combout\ : std_logic;
 SIGNAL \CPU|ULA1|Add1~34_cout\ : std_logic;
 SIGNAL \CPU|ULA1|Add1~18\ : std_logic;
 SIGNAL \CPU|ULA1|Add1~21_sumout\ : std_logic;
@@ -777,19 +805,14 @@ SIGNAL \CPU|ULA1|Add0~2\ : std_logic;
 SIGNAL \CPU|ULA1|Add0~5_sumout\ : std_logic;
 SIGNAL \CPU|ULA1|saida[1]~2_combout\ : std_logic;
 SIGNAL \CPU|ULA1|saida[1]~3_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~0_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~1_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~0_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~2_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~78_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~3_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~4_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~5_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~6_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~7_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~8_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~9_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~10_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~11_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~13_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~74_combout\ : std_logic;
 SIGNAL \CPU|BANCO_REG|Equal1~0_combout\ : std_logic;
 SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|Mux6~0_combout\ : std_logic;
 SIGNAL \CPU|BANCO_REG|Habilita_reg0~combout\ : std_logic;
@@ -1108,60 +1131,40 @@ SIGNAL \CPU|FLAG|DOUT~2_combout\ : std_logic;
 SIGNAL \CPU|FLAG|DOUT~3_combout\ : std_logic;
 SIGNAL \CPU|FLAG|DOUT~q\ : std_logic;
 SIGNAL \CPU|MUX2|Equal1~0_combout\ : std_logic;
-SIGNAL \CPU|SOMADOR|Add0~2\ : std_logic;
-SIGNAL \CPU|SOMADOR|Add0~6\ : std_logic;
 SIGNAL \CPU|SOMADOR|Add0~10\ : std_logic;
 SIGNAL \CPU|SOMADOR|Add0~13_sumout\ : std_logic;
-SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\ : std_logic;
 SIGNAL \CPU|MUX2|saida_MUX[3]~3_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~28_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~30_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~32_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~33_combout\ : std_logic;
-SIGNAL \CPU|SOMADOR|Add0~9_sumout\ : std_logic;
-SIGNAL \CPU|MUX2|saida_MUX[2]~2_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~49_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~50_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~51_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~52_combout\ : std_logic;
-SIGNAL \CPU|SOMADOR|Add0~5_sumout\ : std_logic;
-SIGNAL \CPU|MUX2|saida_MUX[1]~1_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~53_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~54_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~55_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~56_combout\ : std_logic;
-SIGNAL \CPU|SOMADOR|Add0~1_sumout\ : std_logic;
-SIGNAL \CPU|MUX2|saida_MUX[0]~0_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~38_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~39_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~40_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~66_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~34_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~35_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~36_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~67_combout\ : std_logic;
 SIGNAL \CPU|SOMADOR|Add0~14\ : std_logic;
 SIGNAL \CPU|SOMADOR|Add0~18\ : std_logic;
 SIGNAL \CPU|SOMADOR|Add0~22\ : std_logic;
 SIGNAL \CPU|SOMADOR|Add0~25_sumout\ : std_logic;
 SIGNAL \CPU|MUX2|saida_MUX[6]~6_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~43_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~44_combout\ : std_logic;
-SIGNAL \CPU|SOMADOR|Add0~26\ : std_logic;
-SIGNAL \CPU|SOMADOR|Add0~29_sumout\ : std_logic;
-SIGNAL \CPU|MUX2|saida_MUX[7]~7_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~11_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|memROM~12_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~45_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~47_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~48_combout\ : std_logic;
-SIGNAL \CPU|SOMADOR|Add0~21_sumout\ : std_logic;
-SIGNAL \CPU|MUX2|saida_MUX[5]~5_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~69_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~70_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~18_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~58_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~13_combout\ : std_logic;
 SIGNAL \CPU|MUX2|Equal2~0_combout\ : std_logic;
 SIGNAL \CPU|SOMADOR|Add0~17_sumout\ : std_logic;
 SIGNAL \CPU|MUX2|saida_MUX[4]~4_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~68_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~14_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|memROM~57_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~41_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~42_combout\ : std_logic;
+SIGNAL \CPU|SOMADOR|Add0~26\ : std_logic;
+SIGNAL \CPU|SOMADOR|Add0~29_sumout\ : std_logic;
+SIGNAL \CPU|MUX2|saida_MUX[7]~7_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~43_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~44_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~46_combout\ : std_logic;
+SIGNAL \CPU|SOMADOR|Add0~21_sumout\ : std_logic;
+SIGNAL \CPU|MUX2|saida_MUX[5]~5_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~7_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~8_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~9_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|memROM~10_combout\ : std_logic;
 SIGNAL \CPU|ULA1|Equal0~0_combout\ : std_logic;
 SIGNAL \CPU|ULA1|Add0~1_sumout\ : std_logic;
 SIGNAL \CPU|ULA1|saida[0]~0_combout\ : std_logic;
@@ -1201,7 +1204,6 @@ SIGNAL \DECOD_HEX3|rascSaida7seg[4]~4_combout\ : std_logic;
 SIGNAL \DECOD_HEX3|rascSaida7seg[5]~5_combout\ : std_logic;
 SIGNAL \DECOD_HEX3|rascSaida7seg[6]~6_combout\ : std_logic;
 SIGNAL \comb~5_combout\ : std_logic;
-SIGNAL \comb~6_combout\ : std_logic;
 SIGNAL \DECOD_HEX4|rascSaida7seg[0]~0_combout\ : std_logic;
 SIGNAL \DECOD_HEX4|rascSaida7seg[1]~1_combout\ : std_logic;
 SIGNAL \DECOD_HEX4|rascSaida7seg[2]~2_combout\ : std_logic;
@@ -1209,7 +1211,7 @@ SIGNAL \DECOD_HEX4|rascSaida7seg[3]~3_combout\ : std_logic;
 SIGNAL \DECOD_HEX4|rascSaida7seg[4]~4_combout\ : std_logic;
 SIGNAL \DECOD_HEX4|rascSaida7seg[5]~5_combout\ : std_logic;
 SIGNAL \DECOD_HEX4|rascSaida7seg[6]~6_combout\ : std_logic;
-SIGNAL \comb~7_combout\ : std_logic;
+SIGNAL \comb~6_combout\ : std_logic;
 SIGNAL \DECOD_HEX5|rascSaida7seg[0]~0_combout\ : std_logic;
 SIGNAL \DECOD_HEX5|rascSaida7seg[1]~1_combout\ : std_logic;
 SIGNAL \DECOD_HEX5|rascSaida7seg[2]~2_combout\ : std_logic;
@@ -1220,8 +1222,8 @@ SIGNAL \DECOD_HEX5|rascSaida7seg[6]~6_combout\ : std_logic;
 SIGNAL \CPU|SOMADOR|Add0~30\ : std_logic;
 SIGNAL \CPU|SOMADOR|Add0~33_sumout\ : std_logic;
 SIGNAL \CPU|MUX2|saida_MUX[8]~8_combout\ : std_logic;
+SIGNAL \comb~7_combout\ : std_logic;
 SIGNAL \comb~8_combout\ : std_logic;
-SIGNAL \comb~9_combout\ : std_logic;
 SIGNAL \FF_LEDR8|DOUT~0_combout\ : std_logic;
 SIGNAL \FF_LEDR8|DOUT~q\ : std_logic;
 SIGNAL \FF_LEDR9|DOUT~0_combout\ : std_logic;
@@ -1243,6 +1245,106 @@ SIGNAL \CPU|REG_END_RET|DOUT\ : std_logic_vector(8 DOWNTO 0);
 SIGNAL \CPU|BANCO_REG|Entrada_reg0\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \CPU|BANCO_REG|Entrada_reg2\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \CPU|BANCO_REG|Entrada_reg3\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~644_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~140_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~108_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~124_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~92_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~643_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~204_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~172_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~188_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~156_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~642_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~76_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~44_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~60_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~28_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~641_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~640_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~516_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~484_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~388_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~356_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~639_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~500_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~468_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~372_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~340_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~638_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~452_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~420_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~324_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~292_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~637_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~436_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~404_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~308_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~276_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~636_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~635_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~260_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~228_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~244_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~212_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~634_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~132_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~100_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~116_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~84_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~633_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~196_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~164_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~180_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~148_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~632_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~68_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~36_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~52_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~20_q\ : std_logic;
+SIGNAL \CPU|ULA1|ALT_INV_saida[4]~9_combout\ : std_logic;
+SIGNAL \CPU|ULA1|ALT_INV_saida[4]~8_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~631_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~630_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~629_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~523_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~515_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~491_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~483_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~628_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~395_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~387_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~363_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~355_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~627_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~459_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~451_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~427_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~419_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~626_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~331_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~323_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~299_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~291_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~625_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~624_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~267_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~259_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~139_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~131_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~623_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~235_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~227_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~107_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~99_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~622_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~203_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~195_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~75_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~67_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~621_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~171_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~163_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~43_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~35_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~620_combout\ : std_logic;
@@ -1555,12 +1657,12 @@ SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux6~0_combout\ : std_logic;
 SIGNAL \CPU|BANCO_REG|ALT_INV_Equal1~0_combout\ : std_logic;
 SIGNAL \CPU|ULA1|ALT_INV_saida[0]~1_combout\ : std_logic;
 SIGNAL \CPU|ULA1|ALT_INV_saida[0]~0_combout\ : std_logic;
+SIGNAL \ALT_INV_Saida_Dados[0]~2_combout\ : std_logic;
 SIGNAL \ALT_INV_Saida_Dados[0]~1_combout\ : std_logic;
+SIGNAL \FLIP_FLOP_KEY1|ALT_INV_DOUT~q\ : std_logic;
 SIGNAL \ALT_INV_Saida_Dados[0]~0_combout\ : std_logic;
 SIGNAL \FLIP_FLOP_DM|ALT_INV_DOUT~q\ : std_logic;
-SIGNAL \FLIP_FLOP_KEY1|ALT_INV_DOUT~q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\ : std_logic;
-SIGNAL \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\ : std_logic;
 SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux10~0_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~547_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~546_combout\ : std_logic;
@@ -1654,7 +1756,8 @@ SIGNAL \CPU|FLAG|ALT_INV_DOUT~2_combout\ : std_logic;
 SIGNAL \CPU|FLAG|ALT_INV_DOUT~1_combout\ : std_logic;
 SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux7~0_combout\ : std_logic;
 SIGNAL \CPU|FLAG|ALT_INV_DOUT~0_combout\ : std_logic;
-SIGNAL \ALT_INV_comb~9_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\ : std_logic;
+SIGNAL \ALT_INV_comb~8_combout\ : std_logic;
 SIGNAL \CPU|REG_END_RET|ALT_INV_DOUT\ : std_logic_vector(8 DOWNTO 0);
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\ : std_logic;
@@ -1662,15 +1765,14 @@ SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~64_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~63_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~60_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~59_combout\ : std_logic;
 SIGNAL \CPU|MUX2|ALT_INV_Equal1~0_combout\ : std_logic;
 SIGNAL \CPU|MUX2|ALT_INV_Equal2~0_combout\ : std_logic;
 SIGNAL \CPU|FLAG|ALT_INV_DOUT~q\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~60_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~59_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~57_combout\ : std_logic;
-SIGNAL \ALT_INV_comb~5_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~54_combout\ : std_logic;
@@ -1683,9 +1785,9 @@ SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~47_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~45_combout\ : std_logic;
-SIGNAL \ALT_INV_comb~0_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~44_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~43_combout\ : std_logic;
+SIGNAL \ALT_INV_comb~0_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~41_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~40_combout\ : std_logic;
@@ -1701,11 +1803,11 @@ SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~30_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~29_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~28_combout\ : std_logic;
-SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~26_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~25_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~24_combout\ : std_logic;
+SIGNAL \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~22_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~21_combout\ : std_logic;
@@ -1716,6 +1818,14 @@ SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~17_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~16_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~11_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~9_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~8_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~6_combout\ : std_logic;
 SIGNAL \FF_LEDR9|ALT_INV_DOUT~q\ : std_logic;
 SIGNAL \FF_LEDR8|ALT_INV_DOUT~q\ : std_logic;
 SIGNAL \CPU|BANCO_REG|ALT_INV_Mux0~0_combout\ : std_logic;
@@ -1730,14 +1840,6 @@ SIGNAL \CPU|BANCO_REG|ALT_INV_Mux4~0_combout\ : std_logic;
 SIGNAL \CPU|BANCO_REG|ALT_INV_Mux5~0_combout\ : std_logic;
 SIGNAL \CPU|BANCO_REG|ALT_INV_Mux6~0_combout\ : std_logic;
 SIGNAL \CPU|BANCO_REG|ALT_INV_Mux7~0_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~11_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~9_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~8_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~6_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~5_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~4_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~3_combout\ : std_logic;
@@ -1750,6 +1852,9 @@ SIGNAL \REG_HEX3|ALT_INV_DOUT\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \REG_HEX2|ALT_INV_DOUT\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \REG_HEX1|ALT_INV_DOUT\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \REG_HEX0|ALT_INV_DOUT\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\ : std_logic;
+SIGNAL \ALT_INV_Saida_Dados[0]~4_combout\ : std_logic;
 SIGNAL \CPU|ULA1|ALT_INV_Add0~29_sumout\ : std_logic;
 SIGNAL \CPU|ULA1|ALT_INV_Add0~25_sumout\ : std_logic;
 SIGNAL \CPU|ULA1|ALT_INV_Add0~21_sumout\ : std_logic;
@@ -1776,20 +1881,6 @@ SIGNAL \CPU|SOMADOR|ALT_INV_Add0~9_sumout\ : std_logic;
 SIGNAL \CPU|SOMADOR|ALT_INV_Add0~5_sumout\ : std_logic;
 SIGNAL \CPU|SOMADOR|ALT_INV_Add0~1_sumout\ : std_logic;
 SIGNAL \CPU|PC|ALT_INV_DOUT\ : std_logic_vector(8 DOWNTO 0);
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~765_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~763_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~761_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~759_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~757_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~755_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~753_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~751_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~749_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~747_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~745_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~743_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~741_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~739_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~737_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~735_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~733_combout\ : std_logic;
@@ -1811,11 +1902,12 @@ SIGNAL \MEMORIA_DADOS|ALT_INV_ram~703_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~701_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~699_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~697_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_process_0~0_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~695_combout\ : std_logic;
 SIGNAL \CPU|MUX1|ALT_INV_saida_MUX[3]~6_combout\ : std_logic;
 SIGNAL \CPU|MUX1|ALT_INV_saida_MUX[2]~5_combout\ : std_logic;
 SIGNAL \CPU|MUX1|ALT_INV_saida_MUX[1]~4_combout\ : std_logic;
-SIGNAL \ALT_INV_Saida_Dados[0]~2_combout\ : std_logic;
+SIGNAL \ALT_INV_Saida_Dados[0]~3_combout\ : std_logic;
 SIGNAL \CPU|MUX1|ALT_INV_saida_MUX[5]~3_combout\ : std_logic;
 SIGNAL \CPU|MUX1|ALT_INV_saida_MUX[4]~2_combout\ : std_logic;
 SIGNAL \CPU|ULA1|ALT_INV_saida[7]~13_combout\ : std_logic;
@@ -1868,133 +1960,6 @@ SIGNAL \MEMORIA_DADOS|ALT_INV_ram~682_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~270_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~262_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~142_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~651_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~650_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~524_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~492_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~460_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~428_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~649_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~396_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~364_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~332_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~300_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~648_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~508_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~476_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~444_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~412_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~647_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~380_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~348_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~316_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~284_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~646_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~645_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~268_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~236_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~252_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~220_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~644_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~140_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~108_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~124_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~92_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~643_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~204_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~172_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~188_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~156_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~642_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~76_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~44_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~60_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~28_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~641_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~640_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~516_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~484_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~388_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~356_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~639_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~500_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~468_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~372_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~340_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~638_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~452_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~420_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~324_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~292_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~637_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~436_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~404_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~308_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~276_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~636_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~635_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~260_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~228_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~244_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~212_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~634_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~132_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~100_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~116_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~84_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~633_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~196_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~164_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~180_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~148_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~632_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~68_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~36_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~52_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~20_q\ : std_logic;
-SIGNAL \CPU|ULA1|ALT_INV_saida[4]~9_combout\ : std_logic;
-SIGNAL \CPU|ULA1|ALT_INV_saida[4]~8_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~631_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~630_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~629_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~523_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~515_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~491_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~483_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~628_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~395_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~387_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~363_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~355_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~627_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~459_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~451_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~427_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~419_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~626_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~331_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~323_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~299_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~291_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~625_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~624_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~267_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~259_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~139_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~131_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~623_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~235_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~227_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~107_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~99_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~622_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~203_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~195_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~75_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~67_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~621_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~171_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~163_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~134_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~681_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~238_q\ : std_logic;
@@ -2122,6 +2087,33 @@ SIGNAL \MEMORIA_DADOS|ALT_INV_ram~21_q\ : std_logic;
 SIGNAL \CPU|ULA1|ALT_INV_saida[5]~11_combout\ : std_logic;
 SIGNAL \CPU|ULA1|ALT_INV_saida[5]~10_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~652_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~651_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~650_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~524_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~492_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~460_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~428_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~649_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~396_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~364_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~332_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~300_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~648_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~508_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~476_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~444_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~412_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~647_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~380_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~348_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~316_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~284_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~646_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~645_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~268_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~236_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~252_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~220_q\ : std_logic;
 SIGNAL \CPU|BANCO_REG|ALT_INV_Entrada_reg3\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \CPU|BANCO_REG|ALT_INV_Entrada_reg2\ : std_logic_vector(7 DOWNTO 0);
 SIGNAL \CPU|BANCO_REG|ALT_INV_Entrada_reg1\ : std_logic_vector(7 DOWNTO 0);
@@ -2130,18 +2122,16 @@ SIGNAL \CPU|BANCO_REG|ALT_INV_Habilita_reg3~combout\ : std_logic;
 SIGNAL \CPU|BANCO_REG|ALT_INV_Habilita_reg2~combout\ : std_logic;
 SIGNAL \CPU|BANCO_REG|ALT_INV_Habilita_reg1~combout\ : std_logic;
 SIGNAL \CPU|BANCO_REG|ALT_INV_Habilita_reg0~combout\ : std_logic;
-SIGNAL \ALT_INV_Saida_Dados[0]~5_combout\ : std_logic;
-SIGNAL \ALT_INV_Saida_Dados[0]~4_combout\ : std_logic;
-SIGNAL \ALT_INV_Saida_Dados[0]~3_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~73_combout\ : std_logic;
+SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~72_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~71_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~70_combout\ : std_logic;
 SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~69_combout\ : std_logic;
-SIGNAL \MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\ : std_logic;
-SIGNAL \detectorSub0|ALT_INV_saidaQ~q\ : std_logic;
 SIGNAL \detectorSub1|ALT_INV_saidaQ~q\ : std_logic;
-SIGNAL \ALT_INV_comb~12_combout\ : std_logic;
+SIGNAL \detectorSub0|ALT_INV_saidaQ~q\ : std_logic;
 SIGNAL \ALT_INV_comb~11_combout\ : std_logic;
 SIGNAL \ALT_INV_comb~10_combout\ : std_logic;
+SIGNAL \ALT_INV_comb~9_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~821_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~819_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~817_combout\ : std_logic;
@@ -2170,8 +2160,22 @@ SIGNAL \MEMORIA_DADOS|ALT_INV_ram~773_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~771_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~769_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~767_combout\ : std_logic;
-SIGNAL \ALT_INV_KEY[0]~input_o\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~765_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~763_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~761_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~759_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~757_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~755_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~753_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~751_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~749_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~747_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~745_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~743_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~741_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~739_combout\ : std_logic;
 SIGNAL \ALT_INV_KEY[1]~input_o\ : std_logic;
+SIGNAL \ALT_INV_KEY[0]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[7]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[6]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[5]~input_o\ : std_logic;
@@ -2180,11 +2184,11 @@ SIGNAL \ALT_INV_SW[3]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[2]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[1]~input_o\ : std_logic;
 SIGNAL \ALT_INV_FPGA_RESET_N~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[8]~input_o\ : std_logic;
+SIGNAL \ALT_INV_KEY[3]~input_o\ : std_logic;
+SIGNAL \ALT_INV_KEY[2]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[9]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[0]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[8]~input_o\ : std_logic;
-SIGNAL \ALT_INV_KEY[2]~input_o\ : std_logic;
-SIGNAL \ALT_INV_KEY[3]~input_o\ : std_logic;
 
 BEGIN
 
@@ -2204,6 +2208,106 @@ LEDR <= ww_LEDR;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\MEMORIA_DADOS|ALT_INV_ram~644_combout\ <= NOT \MEMORIA_DADOS|ram~644_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~140_q\ <= NOT \MEMORIA_DADOS|ram~140_q\;
+\MEMORIA_DADOS|ALT_INV_ram~108_q\ <= NOT \MEMORIA_DADOS|ram~108_q\;
+\MEMORIA_DADOS|ALT_INV_ram~124_q\ <= NOT \MEMORIA_DADOS|ram~124_q\;
+\MEMORIA_DADOS|ALT_INV_ram~92_q\ <= NOT \MEMORIA_DADOS|ram~92_q\;
+\MEMORIA_DADOS|ALT_INV_ram~643_combout\ <= NOT \MEMORIA_DADOS|ram~643_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~204_q\ <= NOT \MEMORIA_DADOS|ram~204_q\;
+\MEMORIA_DADOS|ALT_INV_ram~172_q\ <= NOT \MEMORIA_DADOS|ram~172_q\;
+\MEMORIA_DADOS|ALT_INV_ram~188_q\ <= NOT \MEMORIA_DADOS|ram~188_q\;
+\MEMORIA_DADOS|ALT_INV_ram~156_q\ <= NOT \MEMORIA_DADOS|ram~156_q\;
+\MEMORIA_DADOS|ALT_INV_ram~642_combout\ <= NOT \MEMORIA_DADOS|ram~642_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~76_q\ <= NOT \MEMORIA_DADOS|ram~76_q\;
+\MEMORIA_DADOS|ALT_INV_ram~44_q\ <= NOT \MEMORIA_DADOS|ram~44_q\;
+\MEMORIA_DADOS|ALT_INV_ram~60_q\ <= NOT \MEMORIA_DADOS|ram~60_q\;
+\MEMORIA_DADOS|ALT_INV_ram~28_q\ <= NOT \MEMORIA_DADOS|ram~28_q\;
+\MEMORIA_DADOS|ALT_INV_ram~641_combout\ <= NOT \MEMORIA_DADOS|ram~641_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~640_combout\ <= NOT \MEMORIA_DADOS|ram~640_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~516_q\ <= NOT \MEMORIA_DADOS|ram~516_q\;
+\MEMORIA_DADOS|ALT_INV_ram~484_q\ <= NOT \MEMORIA_DADOS|ram~484_q\;
+\MEMORIA_DADOS|ALT_INV_ram~388_q\ <= NOT \MEMORIA_DADOS|ram~388_q\;
+\MEMORIA_DADOS|ALT_INV_ram~356_q\ <= NOT \MEMORIA_DADOS|ram~356_q\;
+\MEMORIA_DADOS|ALT_INV_ram~639_combout\ <= NOT \MEMORIA_DADOS|ram~639_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~500_q\ <= NOT \MEMORIA_DADOS|ram~500_q\;
+\MEMORIA_DADOS|ALT_INV_ram~468_q\ <= NOT \MEMORIA_DADOS|ram~468_q\;
+\MEMORIA_DADOS|ALT_INV_ram~372_q\ <= NOT \MEMORIA_DADOS|ram~372_q\;
+\MEMORIA_DADOS|ALT_INV_ram~340_q\ <= NOT \MEMORIA_DADOS|ram~340_q\;
+\MEMORIA_DADOS|ALT_INV_ram~638_combout\ <= NOT \MEMORIA_DADOS|ram~638_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~452_q\ <= NOT \MEMORIA_DADOS|ram~452_q\;
+\MEMORIA_DADOS|ALT_INV_ram~420_q\ <= NOT \MEMORIA_DADOS|ram~420_q\;
+\MEMORIA_DADOS|ALT_INV_ram~324_q\ <= NOT \MEMORIA_DADOS|ram~324_q\;
+\MEMORIA_DADOS|ALT_INV_ram~292_q\ <= NOT \MEMORIA_DADOS|ram~292_q\;
+\MEMORIA_DADOS|ALT_INV_ram~637_combout\ <= NOT \MEMORIA_DADOS|ram~637_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~436_q\ <= NOT \MEMORIA_DADOS|ram~436_q\;
+\MEMORIA_DADOS|ALT_INV_ram~404_q\ <= NOT \MEMORIA_DADOS|ram~404_q\;
+\MEMORIA_DADOS|ALT_INV_ram~308_q\ <= NOT \MEMORIA_DADOS|ram~308_q\;
+\MEMORIA_DADOS|ALT_INV_ram~276_q\ <= NOT \MEMORIA_DADOS|ram~276_q\;
+\MEMORIA_DADOS|ALT_INV_ram~636_combout\ <= NOT \MEMORIA_DADOS|ram~636_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~635_combout\ <= NOT \MEMORIA_DADOS|ram~635_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~260_q\ <= NOT \MEMORIA_DADOS|ram~260_q\;
+\MEMORIA_DADOS|ALT_INV_ram~228_q\ <= NOT \MEMORIA_DADOS|ram~228_q\;
+\MEMORIA_DADOS|ALT_INV_ram~244_q\ <= NOT \MEMORIA_DADOS|ram~244_q\;
+\MEMORIA_DADOS|ALT_INV_ram~212_q\ <= NOT \MEMORIA_DADOS|ram~212_q\;
+\MEMORIA_DADOS|ALT_INV_ram~634_combout\ <= NOT \MEMORIA_DADOS|ram~634_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~132_q\ <= NOT \MEMORIA_DADOS|ram~132_q\;
+\MEMORIA_DADOS|ALT_INV_ram~100_q\ <= NOT \MEMORIA_DADOS|ram~100_q\;
+\MEMORIA_DADOS|ALT_INV_ram~116_q\ <= NOT \MEMORIA_DADOS|ram~116_q\;
+\MEMORIA_DADOS|ALT_INV_ram~84_q\ <= NOT \MEMORIA_DADOS|ram~84_q\;
+\MEMORIA_DADOS|ALT_INV_ram~633_combout\ <= NOT \MEMORIA_DADOS|ram~633_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~196_q\ <= NOT \MEMORIA_DADOS|ram~196_q\;
+\MEMORIA_DADOS|ALT_INV_ram~164_q\ <= NOT \MEMORIA_DADOS|ram~164_q\;
+\MEMORIA_DADOS|ALT_INV_ram~180_q\ <= NOT \MEMORIA_DADOS|ram~180_q\;
+\MEMORIA_DADOS|ALT_INV_ram~148_q\ <= NOT \MEMORIA_DADOS|ram~148_q\;
+\MEMORIA_DADOS|ALT_INV_ram~632_combout\ <= NOT \MEMORIA_DADOS|ram~632_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~68_q\ <= NOT \MEMORIA_DADOS|ram~68_q\;
+\MEMORIA_DADOS|ALT_INV_ram~36_q\ <= NOT \MEMORIA_DADOS|ram~36_q\;
+\MEMORIA_DADOS|ALT_INV_ram~52_q\ <= NOT \MEMORIA_DADOS|ram~52_q\;
+\MEMORIA_DADOS|ALT_INV_ram~20_q\ <= NOT \MEMORIA_DADOS|ram~20_q\;
+\CPU|ULA1|ALT_INV_saida[4]~9_combout\ <= NOT \CPU|ULA1|saida[4]~9_combout\;
+\CPU|ULA1|ALT_INV_saida[4]~8_combout\ <= NOT \CPU|ULA1|saida[4]~8_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~631_combout\ <= NOT \MEMORIA_DADOS|ram~631_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~630_combout\ <= NOT \MEMORIA_DADOS|ram~630_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~629_combout\ <= NOT \MEMORIA_DADOS|ram~629_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~523_q\ <= NOT \MEMORIA_DADOS|ram~523_q\;
+\MEMORIA_DADOS|ALT_INV_ram~515_q\ <= NOT \MEMORIA_DADOS|ram~515_q\;
+\MEMORIA_DADOS|ALT_INV_ram~491_q\ <= NOT \MEMORIA_DADOS|ram~491_q\;
+\MEMORIA_DADOS|ALT_INV_ram~483_q\ <= NOT \MEMORIA_DADOS|ram~483_q\;
+\MEMORIA_DADOS|ALT_INV_ram~628_combout\ <= NOT \MEMORIA_DADOS|ram~628_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~395_q\ <= NOT \MEMORIA_DADOS|ram~395_q\;
+\MEMORIA_DADOS|ALT_INV_ram~387_q\ <= NOT \MEMORIA_DADOS|ram~387_q\;
+\MEMORIA_DADOS|ALT_INV_ram~363_q\ <= NOT \MEMORIA_DADOS|ram~363_q\;
+\MEMORIA_DADOS|ALT_INV_ram~355_q\ <= NOT \MEMORIA_DADOS|ram~355_q\;
+\MEMORIA_DADOS|ALT_INV_ram~627_combout\ <= NOT \MEMORIA_DADOS|ram~627_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~459_q\ <= NOT \MEMORIA_DADOS|ram~459_q\;
+\MEMORIA_DADOS|ALT_INV_ram~451_q\ <= NOT \MEMORIA_DADOS|ram~451_q\;
+\MEMORIA_DADOS|ALT_INV_ram~427_q\ <= NOT \MEMORIA_DADOS|ram~427_q\;
+\MEMORIA_DADOS|ALT_INV_ram~419_q\ <= NOT \MEMORIA_DADOS|ram~419_q\;
+\MEMORIA_DADOS|ALT_INV_ram~626_combout\ <= NOT \MEMORIA_DADOS|ram~626_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~331_q\ <= NOT \MEMORIA_DADOS|ram~331_q\;
+\MEMORIA_DADOS|ALT_INV_ram~323_q\ <= NOT \MEMORIA_DADOS|ram~323_q\;
+\MEMORIA_DADOS|ALT_INV_ram~299_q\ <= NOT \MEMORIA_DADOS|ram~299_q\;
+\MEMORIA_DADOS|ALT_INV_ram~291_q\ <= NOT \MEMORIA_DADOS|ram~291_q\;
+\MEMORIA_DADOS|ALT_INV_ram~625_combout\ <= NOT \MEMORIA_DADOS|ram~625_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~624_combout\ <= NOT \MEMORIA_DADOS|ram~624_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~267_q\ <= NOT \MEMORIA_DADOS|ram~267_q\;
+\MEMORIA_DADOS|ALT_INV_ram~259_q\ <= NOT \MEMORIA_DADOS|ram~259_q\;
+\MEMORIA_DADOS|ALT_INV_ram~139_q\ <= NOT \MEMORIA_DADOS|ram~139_q\;
+\MEMORIA_DADOS|ALT_INV_ram~131_q\ <= NOT \MEMORIA_DADOS|ram~131_q\;
+\MEMORIA_DADOS|ALT_INV_ram~623_combout\ <= NOT \MEMORIA_DADOS|ram~623_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~235_q\ <= NOT \MEMORIA_DADOS|ram~235_q\;
+\MEMORIA_DADOS|ALT_INV_ram~227_q\ <= NOT \MEMORIA_DADOS|ram~227_q\;
+\MEMORIA_DADOS|ALT_INV_ram~107_q\ <= NOT \MEMORIA_DADOS|ram~107_q\;
+\MEMORIA_DADOS|ALT_INV_ram~99_q\ <= NOT \MEMORIA_DADOS|ram~99_q\;
+\MEMORIA_DADOS|ALT_INV_ram~622_combout\ <= NOT \MEMORIA_DADOS|ram~622_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~203_q\ <= NOT \MEMORIA_DADOS|ram~203_q\;
+\MEMORIA_DADOS|ALT_INV_ram~195_q\ <= NOT \MEMORIA_DADOS|ram~195_q\;
+\MEMORIA_DADOS|ALT_INV_ram~75_q\ <= NOT \MEMORIA_DADOS|ram~75_q\;
+\MEMORIA_DADOS|ALT_INV_ram~67_q\ <= NOT \MEMORIA_DADOS|ram~67_q\;
+\MEMORIA_DADOS|ALT_INV_ram~621_combout\ <= NOT \MEMORIA_DADOS|ram~621_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~171_q\ <= NOT \MEMORIA_DADOS|ram~171_q\;
+\MEMORIA_DADOS|ALT_INV_ram~163_q\ <= NOT \MEMORIA_DADOS|ram~163_q\;
 \MEMORIA_DADOS|ALT_INV_ram~43_q\ <= NOT \MEMORIA_DADOS|ram~43_q\;
 \MEMORIA_DADOS|ALT_INV_ram~35_q\ <= NOT \MEMORIA_DADOS|ram~35_q\;
 \MEMORIA_DADOS|ALT_INV_ram~620_combout\ <= NOT \MEMORIA_DADOS|ram~620_combout\;
@@ -2516,12 +2620,12 @@ ww_devpor <= devpor;
 \CPU|BANCO_REG|ALT_INV_Equal1~0_combout\ <= NOT \CPU|BANCO_REG|Equal1~0_combout\;
 \CPU|ULA1|ALT_INV_saida[0]~1_combout\ <= NOT \CPU|ULA1|saida[0]~1_combout\;
 \CPU|ULA1|ALT_INV_saida[0]~0_combout\ <= NOT \CPU|ULA1|saida[0]~0_combout\;
+\ALT_INV_Saida_Dados[0]~2_combout\ <= NOT \Saida_Dados[0]~2_combout\;
 \ALT_INV_Saida_Dados[0]~1_combout\ <= NOT \Saida_Dados[0]~1_combout\;
+\FLIP_FLOP_KEY1|ALT_INV_DOUT~q\ <= NOT \FLIP_FLOP_KEY1|DOUT~q\;
 \ALT_INV_Saida_Dados[0]~0_combout\ <= NOT \Saida_Dados[0]~0_combout\;
 \FLIP_FLOP_DM|ALT_INV_DOUT~q\ <= NOT \FLIP_FLOP_DM|DOUT~q\;
-\FLIP_FLOP_KEY1|ALT_INV_DOUT~q\ <= NOT \FLIP_FLOP_KEY1|DOUT~q\;
 \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\ <= NOT \MEMORIA_DADOS|dado_out~0_combout\;
-\DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\ <= NOT \DECODIFICADOR_3X8_6a8|Equal4~0_combout\;
 \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux10~0_combout\ <= NOT \CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~547_combout\ <= NOT \MEMORIA_DADOS|ram~547_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~546_combout\ <= NOT \MEMORIA_DADOS|ram~546_combout\;
@@ -2615,31 +2719,31 @@ ww_devpor <= devpor;
 \CPU|FLAG|ALT_INV_DOUT~1_combout\ <= NOT \CPU|FLAG|DOUT~1_combout\;
 \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux7~0_combout\ <= NOT \CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\;
 \CPU|FLAG|ALT_INV_DOUT~0_combout\ <= NOT \CPU|FLAG|DOUT~0_combout\;
-\ALT_INV_comb~9_combout\ <= NOT \comb~9_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~68_combout\;
+\ALT_INV_comb~8_combout\ <= NOT \comb~8_combout\;
 \CPU|REG_END_RET|ALT_INV_DOUT\(8) <= NOT \CPU|REG_END_RET|DOUT\(8);
-\MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~67_combout\;
 \CPU|REG_END_RET|ALT_INV_DOUT\(7) <= NOT \CPU|REG_END_RET|DOUT\(7);
 \CPU|REG_END_RET|ALT_INV_DOUT\(6) <= NOT \CPU|REG_END_RET|DOUT\(6);
-\MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~66_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~67_combout\;
 \CPU|REG_END_RET|ALT_INV_DOUT\(5) <= NOT \CPU|REG_END_RET|DOUT\(5);
 \CPU|REG_END_RET|ALT_INV_DOUT\(4) <= NOT \CPU|REG_END_RET|DOUT\(4);
+\MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~66_combout\;
+\CPU|REG_END_RET|ALT_INV_DOUT\(3) <= NOT \CPU|REG_END_RET|DOUT\(3);
 \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~65_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~64_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~64_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~63_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~63_combout\;
-\CPU|REG_END_RET|ALT_INV_DOUT\(3) <= NOT \CPU|REG_END_RET|DOUT\(3);
 \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~62_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~61_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~60_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~60_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~59_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~59_combout\;
 \CPU|REG_END_RET|ALT_INV_DOUT\(2) <= NOT \CPU|REG_END_RET|DOUT\(2);
 \CPU|REG_END_RET|ALT_INV_DOUT\(1) <= NOT \CPU|REG_END_RET|DOUT\(1);
 \CPU|REG_END_RET|ALT_INV_DOUT\(0) <= NOT \CPU|REG_END_RET|DOUT\(0);
 \CPU|MUX2|ALT_INV_Equal1~0_combout\ <= NOT \CPU|MUX2|Equal1~0_combout\;
 \CPU|MUX2|ALT_INV_Equal2~0_combout\ <= NOT \CPU|MUX2|Equal2~0_combout\;
 \CPU|FLAG|ALT_INV_DOUT~q\ <= NOT \CPU|FLAG|DOUT~q\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~61_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~60_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~60_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~59_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~59_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~58_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~57_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~57_combout\;
-\ALT_INV_comb~5_combout\ <= NOT \comb~5_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~56_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~55_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~54_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~54_combout\;
@@ -2652,9 +2756,9 @@ ww_devpor <= devpor;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~47_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~47_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~46_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~45_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~45_combout\;
-\ALT_INV_comb~0_combout\ <= NOT \comb~0_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~44_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~44_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~43_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~43_combout\;
+\ALT_INV_comb~0_combout\ <= NOT \comb~0_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~42_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~41_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~41_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~40_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~40_combout\;
@@ -2670,11 +2774,11 @@ ww_devpor <= devpor;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~30_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~30_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~29_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~29_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~28_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~28_combout\;
-\CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\ <= NOT \CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~27_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~26_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~26_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~25_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~25_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~24_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~24_combout\;
+\CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\ <= NOT \CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~23_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~22_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~22_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~21_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~21_combout\;
@@ -2685,6 +2789,14 @@ ww_devpor <= devpor;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~16_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~16_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~15_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~14_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~13_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~12_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~11_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~11_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~10_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~9_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~9_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~8_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~8_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~7_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~6_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~6_combout\;
 \FF_LEDR9|ALT_INV_DOUT~q\ <= NOT \FF_LEDR9|DOUT~q\;
 \FF_LEDR8|ALT_INV_DOUT~q\ <= NOT \FF_LEDR8|DOUT~q\;
 \CPU|BANCO_REG|ALT_INV_Mux0~0_combout\ <= NOT \CPU|BANCO_REG|Mux0~0_combout\;
@@ -2723,14 +2835,6 @@ ww_devpor <= devpor;
 \CPU|BANCO_REG|REG_1|ALT_INV_DOUT\(1) <= NOT \CPU|BANCO_REG|REG_1|DOUT\(1);
 \CPU|BANCO_REG|REG_0|ALT_INV_DOUT\(1) <= NOT \CPU|BANCO_REG|REG_0|DOUT\(1);
 \CPU|BANCO_REG|ALT_INV_Mux7~0_combout\ <= NOT \CPU|BANCO_REG|Mux7~0_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~13_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~12_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~11_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~11_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~10_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~9_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~9_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~8_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~8_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~7_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~6_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~6_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~5_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~5_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~4_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~4_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~3_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~3_combout\;
@@ -2765,6 +2869,9 @@ ww_devpor <= devpor;
 \REG_HEX0|ALT_INV_DOUT\(1) <= NOT \REG_HEX0|DOUT\(1);
 \REG_HEX0|ALT_INV_DOUT\(3) <= NOT \REG_HEX0|DOUT\(3);
 \REG_HEX0|ALT_INV_DOUT\(0) <= NOT \REG_HEX0|DOUT\(0);
+\MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~78_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~74_combout\;
+\ALT_INV_Saida_Dados[0]~4_combout\ <= NOT \Saida_Dados[0]~4_combout\;
 \CPU|ULA1|ALT_INV_Add0~29_sumout\ <= NOT \CPU|ULA1|Add0~29_sumout\;
 \CPU|ULA1|ALT_INV_Add0~25_sumout\ <= NOT \CPU|ULA1|Add0~25_sumout\;
 \CPU|ULA1|ALT_INV_Add0~21_sumout\ <= NOT \CPU|ULA1|Add0~21_sumout\;
@@ -2799,20 +2906,6 @@ ww_devpor <= devpor;
 \CPU|PC|ALT_INV_DOUT\(2) <= NOT \CPU|PC|DOUT\(2);
 \CPU|PC|ALT_INV_DOUT\(1) <= NOT \CPU|PC|DOUT\(1);
 \CPU|PC|ALT_INV_DOUT\(0) <= NOT \CPU|PC|DOUT\(0);
-\MEMORIA_DADOS|ALT_INV_ram~765_combout\ <= NOT \MEMORIA_DADOS|ram~765_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~763_combout\ <= NOT \MEMORIA_DADOS|ram~763_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~761_combout\ <= NOT \MEMORIA_DADOS|ram~761_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~759_combout\ <= NOT \MEMORIA_DADOS|ram~759_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~757_combout\ <= NOT \MEMORIA_DADOS|ram~757_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~755_combout\ <= NOT \MEMORIA_DADOS|ram~755_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~753_combout\ <= NOT \MEMORIA_DADOS|ram~753_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~751_combout\ <= NOT \MEMORIA_DADOS|ram~751_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~749_combout\ <= NOT \MEMORIA_DADOS|ram~749_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~747_combout\ <= NOT \MEMORIA_DADOS|ram~747_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~745_combout\ <= NOT \MEMORIA_DADOS|ram~745_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~743_combout\ <= NOT \MEMORIA_DADOS|ram~743_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~741_combout\ <= NOT \MEMORIA_DADOS|ram~741_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~739_combout\ <= NOT \MEMORIA_DADOS|ram~739_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~737_combout\ <= NOT \MEMORIA_DADOS|ram~737_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~735_combout\ <= NOT \MEMORIA_DADOS|ram~735_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~733_combout\ <= NOT \MEMORIA_DADOS|ram~733_combout\;
@@ -2834,11 +2927,12 @@ ww_devpor <= devpor;
 \MEMORIA_DADOS|ALT_INV_ram~701_combout\ <= NOT \MEMORIA_DADOS|ram~701_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~699_combout\ <= NOT \MEMORIA_DADOS|ram~699_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~697_combout\ <= NOT \MEMORIA_DADOS|ram~697_combout\;
+\MEMORIA_DADOS|ALT_INV_process_0~0_combout\ <= NOT \MEMORIA_DADOS|process_0~0_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~695_combout\ <= NOT \MEMORIA_DADOS|ram~695_combout\;
 \CPU|MUX1|ALT_INV_saida_MUX[3]~6_combout\ <= NOT \CPU|MUX1|saida_MUX[3]~6_combout\;
 \CPU|MUX1|ALT_INV_saida_MUX[2]~5_combout\ <= NOT \CPU|MUX1|saida_MUX[2]~5_combout\;
 \CPU|MUX1|ALT_INV_saida_MUX[1]~4_combout\ <= NOT \CPU|MUX1|saida_MUX[1]~4_combout\;
-\ALT_INV_Saida_Dados[0]~2_combout\ <= NOT \Saida_Dados[0]~2_combout\;
+\ALT_INV_Saida_Dados[0]~3_combout\ <= NOT \Saida_Dados[0]~3_combout\;
 \CPU|MUX1|ALT_INV_saida_MUX[5]~3_combout\ <= NOT \CPU|MUX1|saida_MUX[5]~3_combout\;
 \CPU|MUX1|ALT_INV_saida_MUX[4]~2_combout\ <= NOT \CPU|MUX1|saida_MUX[4]~2_combout\;
 \CPU|ULA1|ALT_INV_saida[7]~13_combout\ <= NOT \CPU|ULA1|saida[7]~13_combout\;
@@ -2891,133 +2985,6 @@ ww_devpor <= devpor;
 \MEMORIA_DADOS|ALT_INV_ram~270_q\ <= NOT \MEMORIA_DADOS|ram~270_q\;
 \MEMORIA_DADOS|ALT_INV_ram~262_q\ <= NOT \MEMORIA_DADOS|ram~262_q\;
 \MEMORIA_DADOS|ALT_INV_ram~142_q\ <= NOT \MEMORIA_DADOS|ram~142_q\;
-\MEMORIA_DADOS|ALT_INV_ram~651_combout\ <= NOT \MEMORIA_DADOS|ram~651_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~650_combout\ <= NOT \MEMORIA_DADOS|ram~650_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~524_q\ <= NOT \MEMORIA_DADOS|ram~524_q\;
-\MEMORIA_DADOS|ALT_INV_ram~492_q\ <= NOT \MEMORIA_DADOS|ram~492_q\;
-\MEMORIA_DADOS|ALT_INV_ram~460_q\ <= NOT \MEMORIA_DADOS|ram~460_q\;
-\MEMORIA_DADOS|ALT_INV_ram~428_q\ <= NOT \MEMORIA_DADOS|ram~428_q\;
-\MEMORIA_DADOS|ALT_INV_ram~649_combout\ <= NOT \MEMORIA_DADOS|ram~649_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~396_q\ <= NOT \MEMORIA_DADOS|ram~396_q\;
-\MEMORIA_DADOS|ALT_INV_ram~364_q\ <= NOT \MEMORIA_DADOS|ram~364_q\;
-\MEMORIA_DADOS|ALT_INV_ram~332_q\ <= NOT \MEMORIA_DADOS|ram~332_q\;
-\MEMORIA_DADOS|ALT_INV_ram~300_q\ <= NOT \MEMORIA_DADOS|ram~300_q\;
-\MEMORIA_DADOS|ALT_INV_ram~648_combout\ <= NOT \MEMORIA_DADOS|ram~648_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~508_q\ <= NOT \MEMORIA_DADOS|ram~508_q\;
-\MEMORIA_DADOS|ALT_INV_ram~476_q\ <= NOT \MEMORIA_DADOS|ram~476_q\;
-\MEMORIA_DADOS|ALT_INV_ram~444_q\ <= NOT \MEMORIA_DADOS|ram~444_q\;
-\MEMORIA_DADOS|ALT_INV_ram~412_q\ <= NOT \MEMORIA_DADOS|ram~412_q\;
-\MEMORIA_DADOS|ALT_INV_ram~647_combout\ <= NOT \MEMORIA_DADOS|ram~647_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~380_q\ <= NOT \MEMORIA_DADOS|ram~380_q\;
-\MEMORIA_DADOS|ALT_INV_ram~348_q\ <= NOT \MEMORIA_DADOS|ram~348_q\;
-\MEMORIA_DADOS|ALT_INV_ram~316_q\ <= NOT \MEMORIA_DADOS|ram~316_q\;
-\MEMORIA_DADOS|ALT_INV_ram~284_q\ <= NOT \MEMORIA_DADOS|ram~284_q\;
-\MEMORIA_DADOS|ALT_INV_ram~646_combout\ <= NOT \MEMORIA_DADOS|ram~646_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~645_combout\ <= NOT \MEMORIA_DADOS|ram~645_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~268_q\ <= NOT \MEMORIA_DADOS|ram~268_q\;
-\MEMORIA_DADOS|ALT_INV_ram~236_q\ <= NOT \MEMORIA_DADOS|ram~236_q\;
-\MEMORIA_DADOS|ALT_INV_ram~252_q\ <= NOT \MEMORIA_DADOS|ram~252_q\;
-\MEMORIA_DADOS|ALT_INV_ram~220_q\ <= NOT \MEMORIA_DADOS|ram~220_q\;
-\MEMORIA_DADOS|ALT_INV_ram~644_combout\ <= NOT \MEMORIA_DADOS|ram~644_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~140_q\ <= NOT \MEMORIA_DADOS|ram~140_q\;
-\MEMORIA_DADOS|ALT_INV_ram~108_q\ <= NOT \MEMORIA_DADOS|ram~108_q\;
-\MEMORIA_DADOS|ALT_INV_ram~124_q\ <= NOT \MEMORIA_DADOS|ram~124_q\;
-\MEMORIA_DADOS|ALT_INV_ram~92_q\ <= NOT \MEMORIA_DADOS|ram~92_q\;
-\MEMORIA_DADOS|ALT_INV_ram~643_combout\ <= NOT \MEMORIA_DADOS|ram~643_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~204_q\ <= NOT \MEMORIA_DADOS|ram~204_q\;
-\MEMORIA_DADOS|ALT_INV_ram~172_q\ <= NOT \MEMORIA_DADOS|ram~172_q\;
-\MEMORIA_DADOS|ALT_INV_ram~188_q\ <= NOT \MEMORIA_DADOS|ram~188_q\;
-\MEMORIA_DADOS|ALT_INV_ram~156_q\ <= NOT \MEMORIA_DADOS|ram~156_q\;
-\MEMORIA_DADOS|ALT_INV_ram~642_combout\ <= NOT \MEMORIA_DADOS|ram~642_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~76_q\ <= NOT \MEMORIA_DADOS|ram~76_q\;
-\MEMORIA_DADOS|ALT_INV_ram~44_q\ <= NOT \MEMORIA_DADOS|ram~44_q\;
-\MEMORIA_DADOS|ALT_INV_ram~60_q\ <= NOT \MEMORIA_DADOS|ram~60_q\;
-\MEMORIA_DADOS|ALT_INV_ram~28_q\ <= NOT \MEMORIA_DADOS|ram~28_q\;
-\MEMORIA_DADOS|ALT_INV_ram~641_combout\ <= NOT \MEMORIA_DADOS|ram~641_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~640_combout\ <= NOT \MEMORIA_DADOS|ram~640_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~516_q\ <= NOT \MEMORIA_DADOS|ram~516_q\;
-\MEMORIA_DADOS|ALT_INV_ram~484_q\ <= NOT \MEMORIA_DADOS|ram~484_q\;
-\MEMORIA_DADOS|ALT_INV_ram~388_q\ <= NOT \MEMORIA_DADOS|ram~388_q\;
-\MEMORIA_DADOS|ALT_INV_ram~356_q\ <= NOT \MEMORIA_DADOS|ram~356_q\;
-\MEMORIA_DADOS|ALT_INV_ram~639_combout\ <= NOT \MEMORIA_DADOS|ram~639_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~500_q\ <= NOT \MEMORIA_DADOS|ram~500_q\;
-\MEMORIA_DADOS|ALT_INV_ram~468_q\ <= NOT \MEMORIA_DADOS|ram~468_q\;
-\MEMORIA_DADOS|ALT_INV_ram~372_q\ <= NOT \MEMORIA_DADOS|ram~372_q\;
-\MEMORIA_DADOS|ALT_INV_ram~340_q\ <= NOT \MEMORIA_DADOS|ram~340_q\;
-\MEMORIA_DADOS|ALT_INV_ram~638_combout\ <= NOT \MEMORIA_DADOS|ram~638_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~452_q\ <= NOT \MEMORIA_DADOS|ram~452_q\;
-\MEMORIA_DADOS|ALT_INV_ram~420_q\ <= NOT \MEMORIA_DADOS|ram~420_q\;
-\MEMORIA_DADOS|ALT_INV_ram~324_q\ <= NOT \MEMORIA_DADOS|ram~324_q\;
-\MEMORIA_DADOS|ALT_INV_ram~292_q\ <= NOT \MEMORIA_DADOS|ram~292_q\;
-\MEMORIA_DADOS|ALT_INV_ram~637_combout\ <= NOT \MEMORIA_DADOS|ram~637_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~436_q\ <= NOT \MEMORIA_DADOS|ram~436_q\;
-\MEMORIA_DADOS|ALT_INV_ram~404_q\ <= NOT \MEMORIA_DADOS|ram~404_q\;
-\MEMORIA_DADOS|ALT_INV_ram~308_q\ <= NOT \MEMORIA_DADOS|ram~308_q\;
-\MEMORIA_DADOS|ALT_INV_ram~276_q\ <= NOT \MEMORIA_DADOS|ram~276_q\;
-\MEMORIA_DADOS|ALT_INV_ram~636_combout\ <= NOT \MEMORIA_DADOS|ram~636_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~635_combout\ <= NOT \MEMORIA_DADOS|ram~635_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~260_q\ <= NOT \MEMORIA_DADOS|ram~260_q\;
-\MEMORIA_DADOS|ALT_INV_ram~228_q\ <= NOT \MEMORIA_DADOS|ram~228_q\;
-\MEMORIA_DADOS|ALT_INV_ram~244_q\ <= NOT \MEMORIA_DADOS|ram~244_q\;
-\MEMORIA_DADOS|ALT_INV_ram~212_q\ <= NOT \MEMORIA_DADOS|ram~212_q\;
-\MEMORIA_DADOS|ALT_INV_ram~634_combout\ <= NOT \MEMORIA_DADOS|ram~634_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~132_q\ <= NOT \MEMORIA_DADOS|ram~132_q\;
-\MEMORIA_DADOS|ALT_INV_ram~100_q\ <= NOT \MEMORIA_DADOS|ram~100_q\;
-\MEMORIA_DADOS|ALT_INV_ram~116_q\ <= NOT \MEMORIA_DADOS|ram~116_q\;
-\MEMORIA_DADOS|ALT_INV_ram~84_q\ <= NOT \MEMORIA_DADOS|ram~84_q\;
-\MEMORIA_DADOS|ALT_INV_ram~633_combout\ <= NOT \MEMORIA_DADOS|ram~633_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~196_q\ <= NOT \MEMORIA_DADOS|ram~196_q\;
-\MEMORIA_DADOS|ALT_INV_ram~164_q\ <= NOT \MEMORIA_DADOS|ram~164_q\;
-\MEMORIA_DADOS|ALT_INV_ram~180_q\ <= NOT \MEMORIA_DADOS|ram~180_q\;
-\MEMORIA_DADOS|ALT_INV_ram~148_q\ <= NOT \MEMORIA_DADOS|ram~148_q\;
-\MEMORIA_DADOS|ALT_INV_ram~632_combout\ <= NOT \MEMORIA_DADOS|ram~632_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~68_q\ <= NOT \MEMORIA_DADOS|ram~68_q\;
-\MEMORIA_DADOS|ALT_INV_ram~36_q\ <= NOT \MEMORIA_DADOS|ram~36_q\;
-\MEMORIA_DADOS|ALT_INV_ram~52_q\ <= NOT \MEMORIA_DADOS|ram~52_q\;
-\MEMORIA_DADOS|ALT_INV_ram~20_q\ <= NOT \MEMORIA_DADOS|ram~20_q\;
-\CPU|ULA1|ALT_INV_saida[4]~9_combout\ <= NOT \CPU|ULA1|saida[4]~9_combout\;
-\CPU|ULA1|ALT_INV_saida[4]~8_combout\ <= NOT \CPU|ULA1|saida[4]~8_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~631_combout\ <= NOT \MEMORIA_DADOS|ram~631_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~630_combout\ <= NOT \MEMORIA_DADOS|ram~630_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~629_combout\ <= NOT \MEMORIA_DADOS|ram~629_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~523_q\ <= NOT \MEMORIA_DADOS|ram~523_q\;
-\MEMORIA_DADOS|ALT_INV_ram~515_q\ <= NOT \MEMORIA_DADOS|ram~515_q\;
-\MEMORIA_DADOS|ALT_INV_ram~491_q\ <= NOT \MEMORIA_DADOS|ram~491_q\;
-\MEMORIA_DADOS|ALT_INV_ram~483_q\ <= NOT \MEMORIA_DADOS|ram~483_q\;
-\MEMORIA_DADOS|ALT_INV_ram~628_combout\ <= NOT \MEMORIA_DADOS|ram~628_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~395_q\ <= NOT \MEMORIA_DADOS|ram~395_q\;
-\MEMORIA_DADOS|ALT_INV_ram~387_q\ <= NOT \MEMORIA_DADOS|ram~387_q\;
-\MEMORIA_DADOS|ALT_INV_ram~363_q\ <= NOT \MEMORIA_DADOS|ram~363_q\;
-\MEMORIA_DADOS|ALT_INV_ram~355_q\ <= NOT \MEMORIA_DADOS|ram~355_q\;
-\MEMORIA_DADOS|ALT_INV_ram~627_combout\ <= NOT \MEMORIA_DADOS|ram~627_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~459_q\ <= NOT \MEMORIA_DADOS|ram~459_q\;
-\MEMORIA_DADOS|ALT_INV_ram~451_q\ <= NOT \MEMORIA_DADOS|ram~451_q\;
-\MEMORIA_DADOS|ALT_INV_ram~427_q\ <= NOT \MEMORIA_DADOS|ram~427_q\;
-\MEMORIA_DADOS|ALT_INV_ram~419_q\ <= NOT \MEMORIA_DADOS|ram~419_q\;
-\MEMORIA_DADOS|ALT_INV_ram~626_combout\ <= NOT \MEMORIA_DADOS|ram~626_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~331_q\ <= NOT \MEMORIA_DADOS|ram~331_q\;
-\MEMORIA_DADOS|ALT_INV_ram~323_q\ <= NOT \MEMORIA_DADOS|ram~323_q\;
-\MEMORIA_DADOS|ALT_INV_ram~299_q\ <= NOT \MEMORIA_DADOS|ram~299_q\;
-\MEMORIA_DADOS|ALT_INV_ram~291_q\ <= NOT \MEMORIA_DADOS|ram~291_q\;
-\MEMORIA_DADOS|ALT_INV_ram~625_combout\ <= NOT \MEMORIA_DADOS|ram~625_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~624_combout\ <= NOT \MEMORIA_DADOS|ram~624_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~267_q\ <= NOT \MEMORIA_DADOS|ram~267_q\;
-\MEMORIA_DADOS|ALT_INV_ram~259_q\ <= NOT \MEMORIA_DADOS|ram~259_q\;
-\MEMORIA_DADOS|ALT_INV_ram~139_q\ <= NOT \MEMORIA_DADOS|ram~139_q\;
-\MEMORIA_DADOS|ALT_INV_ram~131_q\ <= NOT \MEMORIA_DADOS|ram~131_q\;
-\MEMORIA_DADOS|ALT_INV_ram~623_combout\ <= NOT \MEMORIA_DADOS|ram~623_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~235_q\ <= NOT \MEMORIA_DADOS|ram~235_q\;
-\MEMORIA_DADOS|ALT_INV_ram~227_q\ <= NOT \MEMORIA_DADOS|ram~227_q\;
-\MEMORIA_DADOS|ALT_INV_ram~107_q\ <= NOT \MEMORIA_DADOS|ram~107_q\;
-\MEMORIA_DADOS|ALT_INV_ram~99_q\ <= NOT \MEMORIA_DADOS|ram~99_q\;
-\MEMORIA_DADOS|ALT_INV_ram~622_combout\ <= NOT \MEMORIA_DADOS|ram~622_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~203_q\ <= NOT \MEMORIA_DADOS|ram~203_q\;
-\MEMORIA_DADOS|ALT_INV_ram~195_q\ <= NOT \MEMORIA_DADOS|ram~195_q\;
-\MEMORIA_DADOS|ALT_INV_ram~75_q\ <= NOT \MEMORIA_DADOS|ram~75_q\;
-\MEMORIA_DADOS|ALT_INV_ram~67_q\ <= NOT \MEMORIA_DADOS|ram~67_q\;
-\MEMORIA_DADOS|ALT_INV_ram~621_combout\ <= NOT \MEMORIA_DADOS|ram~621_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~171_q\ <= NOT \MEMORIA_DADOS|ram~171_q\;
-\MEMORIA_DADOS|ALT_INV_ram~163_q\ <= NOT \MEMORIA_DADOS|ram~163_q\;
 \MEMORIA_DADOS|ALT_INV_ram~134_q\ <= NOT \MEMORIA_DADOS|ram~134_q\;
 \MEMORIA_DADOS|ALT_INV_ram~681_combout\ <= NOT \MEMORIA_DADOS|ram~681_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~238_q\ <= NOT \MEMORIA_DADOS|ram~238_q\;
@@ -3145,18 +3112,33 @@ ww_devpor <= devpor;
 \CPU|ULA1|ALT_INV_saida[5]~11_combout\ <= NOT \CPU|ULA1|saida[5]~11_combout\;
 \CPU|ULA1|ALT_INV_saida[5]~10_combout\ <= NOT \CPU|ULA1|saida[5]~10_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~652_combout\ <= NOT \MEMORIA_DADOS|ram~652_combout\;
-\CPU|BANCO_REG|ALT_INV_Entrada_reg3\(7) <= NOT \CPU|BANCO_REG|Entrada_reg3\(7);
-\CPU|BANCO_REG|ALT_INV_Entrada_reg2\(7) <= NOT \CPU|BANCO_REG|Entrada_reg2\(7);
-\CPU|BANCO_REG|ALT_INV_Entrada_reg1\(7) <= NOT \CPU|BANCO_REG|Entrada_reg1\(7);
-\CPU|BANCO_REG|ALT_INV_Entrada_reg0\(7) <= NOT \CPU|BANCO_REG|Entrada_reg0\(7);
-\CPU|BANCO_REG|ALT_INV_Entrada_reg3\(6) <= NOT \CPU|BANCO_REG|Entrada_reg3\(6);
-\CPU|BANCO_REG|ALT_INV_Entrada_reg2\(6) <= NOT \CPU|BANCO_REG|Entrada_reg2\(6);
-\CPU|BANCO_REG|ALT_INV_Entrada_reg1\(6) <= NOT \CPU|BANCO_REG|Entrada_reg1\(6);
-\CPU|BANCO_REG|ALT_INV_Entrada_reg0\(6) <= NOT \CPU|BANCO_REG|Entrada_reg0\(6);
-\CPU|BANCO_REG|ALT_INV_Entrada_reg3\(5) <= NOT \CPU|BANCO_REG|Entrada_reg3\(5);
-\CPU|BANCO_REG|ALT_INV_Entrada_reg2\(5) <= NOT \CPU|BANCO_REG|Entrada_reg2\(5);
-\CPU|BANCO_REG|ALT_INV_Entrada_reg1\(5) <= NOT \CPU|BANCO_REG|Entrada_reg1\(5);
-\CPU|BANCO_REG|ALT_INV_Entrada_reg0\(5) <= NOT \CPU|BANCO_REG|Entrada_reg0\(5);
+\MEMORIA_DADOS|ALT_INV_ram~651_combout\ <= NOT \MEMORIA_DADOS|ram~651_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~650_combout\ <= NOT \MEMORIA_DADOS|ram~650_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~524_q\ <= NOT \MEMORIA_DADOS|ram~524_q\;
+\MEMORIA_DADOS|ALT_INV_ram~492_q\ <= NOT \MEMORIA_DADOS|ram~492_q\;
+\MEMORIA_DADOS|ALT_INV_ram~460_q\ <= NOT \MEMORIA_DADOS|ram~460_q\;
+\MEMORIA_DADOS|ALT_INV_ram~428_q\ <= NOT \MEMORIA_DADOS|ram~428_q\;
+\MEMORIA_DADOS|ALT_INV_ram~649_combout\ <= NOT \MEMORIA_DADOS|ram~649_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~396_q\ <= NOT \MEMORIA_DADOS|ram~396_q\;
+\MEMORIA_DADOS|ALT_INV_ram~364_q\ <= NOT \MEMORIA_DADOS|ram~364_q\;
+\MEMORIA_DADOS|ALT_INV_ram~332_q\ <= NOT \MEMORIA_DADOS|ram~332_q\;
+\MEMORIA_DADOS|ALT_INV_ram~300_q\ <= NOT \MEMORIA_DADOS|ram~300_q\;
+\MEMORIA_DADOS|ALT_INV_ram~648_combout\ <= NOT \MEMORIA_DADOS|ram~648_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~508_q\ <= NOT \MEMORIA_DADOS|ram~508_q\;
+\MEMORIA_DADOS|ALT_INV_ram~476_q\ <= NOT \MEMORIA_DADOS|ram~476_q\;
+\MEMORIA_DADOS|ALT_INV_ram~444_q\ <= NOT \MEMORIA_DADOS|ram~444_q\;
+\MEMORIA_DADOS|ALT_INV_ram~412_q\ <= NOT \MEMORIA_DADOS|ram~412_q\;
+\MEMORIA_DADOS|ALT_INV_ram~647_combout\ <= NOT \MEMORIA_DADOS|ram~647_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~380_q\ <= NOT \MEMORIA_DADOS|ram~380_q\;
+\MEMORIA_DADOS|ALT_INV_ram~348_q\ <= NOT \MEMORIA_DADOS|ram~348_q\;
+\MEMORIA_DADOS|ALT_INV_ram~316_q\ <= NOT \MEMORIA_DADOS|ram~316_q\;
+\MEMORIA_DADOS|ALT_INV_ram~284_q\ <= NOT \MEMORIA_DADOS|ram~284_q\;
+\MEMORIA_DADOS|ALT_INV_ram~646_combout\ <= NOT \MEMORIA_DADOS|ram~646_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~645_combout\ <= NOT \MEMORIA_DADOS|ram~645_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~268_q\ <= NOT \MEMORIA_DADOS|ram~268_q\;
+\MEMORIA_DADOS|ALT_INV_ram~236_q\ <= NOT \MEMORIA_DADOS|ram~236_q\;
+\MEMORIA_DADOS|ALT_INV_ram~252_q\ <= NOT \MEMORIA_DADOS|ram~252_q\;
+\MEMORIA_DADOS|ALT_INV_ram~220_q\ <= NOT \MEMORIA_DADOS|ram~220_q\;
 \CPU|BANCO_REG|ALT_INV_Entrada_reg3\(4) <= NOT \CPU|BANCO_REG|Entrada_reg3\(4);
 \CPU|BANCO_REG|ALT_INV_Entrada_reg2\(4) <= NOT \CPU|BANCO_REG|Entrada_reg2\(4);
 \CPU|BANCO_REG|ALT_INV_Entrada_reg1\(4) <= NOT \CPU|BANCO_REG|Entrada_reg1\(4);
@@ -3181,18 +3163,16 @@ ww_devpor <= devpor;
 \CPU|BANCO_REG|ALT_INV_Entrada_reg1\(0) <= NOT \CPU|BANCO_REG|Entrada_reg1\(0);
 \CPU|BANCO_REG|ALT_INV_Habilita_reg0~combout\ <= NOT \CPU|BANCO_REG|Habilita_reg0~combout\;
 \CPU|BANCO_REG|ALT_INV_Entrada_reg0\(0) <= NOT \CPU|BANCO_REG|Entrada_reg0\(0);
-\ALT_INV_Saida_Dados[0]~5_combout\ <= NOT \Saida_Dados[0]~5_combout\;
-\ALT_INV_Saida_Dados[0]~4_combout\ <= NOT \Saida_Dados[0]~4_combout\;
-\ALT_INV_Saida_Dados[0]~3_combout\ <= NOT \Saida_Dados[0]~3_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~73_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~73_combout\;
+\MEMORIA_INTRUCAO|ALT_INV_memROM~72_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~72_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~71_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~71_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~70_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~70_combout\;
 \MEMORIA_INTRUCAO|ALT_INV_memROM~69_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~69_combout\;
-\MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\ <= NOT \MEMORIA_INTRUCAO|memROM~68_combout\;
-\detectorSub0|ALT_INV_saidaQ~q\ <= NOT \detectorSub0|saidaQ~q\;
 \detectorSub1|ALT_INV_saidaQ~q\ <= NOT \detectorSub1|saidaQ~q\;
-\ALT_INV_comb~12_combout\ <= NOT \comb~12_combout\;
+\detectorSub0|ALT_INV_saidaQ~q\ <= NOT \detectorSub0|saidaQ~q\;
 \ALT_INV_comb~11_combout\ <= NOT \comb~11_combout\;
 \ALT_INV_comb~10_combout\ <= NOT \comb~10_combout\;
+\ALT_INV_comb~9_combout\ <= NOT \comb~9_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~821_combout\ <= NOT \MEMORIA_DADOS|ram~821_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~819_combout\ <= NOT \MEMORIA_DADOS|ram~819_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~817_combout\ <= NOT \MEMORIA_DADOS|ram~817_combout\;
@@ -3221,8 +3201,22 @@ ww_devpor <= devpor;
 \MEMORIA_DADOS|ALT_INV_ram~771_combout\ <= NOT \MEMORIA_DADOS|ram~771_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~769_combout\ <= NOT \MEMORIA_DADOS|ram~769_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~767_combout\ <= NOT \MEMORIA_DADOS|ram~767_combout\;
-\ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
+\MEMORIA_DADOS|ALT_INV_ram~765_combout\ <= NOT \MEMORIA_DADOS|ram~765_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~763_combout\ <= NOT \MEMORIA_DADOS|ram~763_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~761_combout\ <= NOT \MEMORIA_DADOS|ram~761_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~759_combout\ <= NOT \MEMORIA_DADOS|ram~759_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~757_combout\ <= NOT \MEMORIA_DADOS|ram~757_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~755_combout\ <= NOT \MEMORIA_DADOS|ram~755_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~753_combout\ <= NOT \MEMORIA_DADOS|ram~753_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~751_combout\ <= NOT \MEMORIA_DADOS|ram~751_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~749_combout\ <= NOT \MEMORIA_DADOS|ram~749_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~747_combout\ <= NOT \MEMORIA_DADOS|ram~747_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~745_combout\ <= NOT \MEMORIA_DADOS|ram~745_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~743_combout\ <= NOT \MEMORIA_DADOS|ram~743_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~741_combout\ <= NOT \MEMORIA_DADOS|ram~741_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~739_combout\ <= NOT \MEMORIA_DADOS|ram~739_combout\;
 \ALT_INV_KEY[1]~input_o\ <= NOT \KEY[1]~input_o\;
+\ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
 \ALT_INV_SW[7]~input_o\ <= NOT \SW[7]~input_o\;
 \ALT_INV_SW[6]~input_o\ <= NOT \SW[6]~input_o\;
 \ALT_INV_SW[5]~input_o\ <= NOT \SW[5]~input_o\;
@@ -3231,11 +3225,23 @@ ww_devpor <= devpor;
 \ALT_INV_SW[2]~input_o\ <= NOT \SW[2]~input_o\;
 \ALT_INV_SW[1]~input_o\ <= NOT \SW[1]~input_o\;
 \ALT_INV_FPGA_RESET_N~input_o\ <= NOT \FPGA_RESET_N~input_o\;
+\ALT_INV_SW[8]~input_o\ <= NOT \SW[8]~input_o\;
+\ALT_INV_KEY[3]~input_o\ <= NOT \KEY[3]~input_o\;
+\ALT_INV_KEY[2]~input_o\ <= NOT \KEY[2]~input_o\;
 \ALT_INV_SW[9]~input_o\ <= NOT \SW[9]~input_o\;
 \ALT_INV_SW[0]~input_o\ <= NOT \SW[0]~input_o\;
-\ALT_INV_SW[8]~input_o\ <= NOT \SW[8]~input_o\;
-\ALT_INV_KEY[2]~input_o\ <= NOT \KEY[2]~input_o\;
-\ALT_INV_KEY[3]~input_o\ <= NOT \KEY[3]~input_o\;
+\CPU|BANCO_REG|ALT_INV_Entrada_reg3\(7) <= NOT \CPU|BANCO_REG|Entrada_reg3\(7);
+\CPU|BANCO_REG|ALT_INV_Entrada_reg2\(7) <= NOT \CPU|BANCO_REG|Entrada_reg2\(7);
+\CPU|BANCO_REG|ALT_INV_Entrada_reg1\(7) <= NOT \CPU|BANCO_REG|Entrada_reg1\(7);
+\CPU|BANCO_REG|ALT_INV_Entrada_reg0\(7) <= NOT \CPU|BANCO_REG|Entrada_reg0\(7);
+\CPU|BANCO_REG|ALT_INV_Entrada_reg3\(6) <= NOT \CPU|BANCO_REG|Entrada_reg3\(6);
+\CPU|BANCO_REG|ALT_INV_Entrada_reg2\(6) <= NOT \CPU|BANCO_REG|Entrada_reg2\(6);
+\CPU|BANCO_REG|ALT_INV_Entrada_reg1\(6) <= NOT \CPU|BANCO_REG|Entrada_reg1\(6);
+\CPU|BANCO_REG|ALT_INV_Entrada_reg0\(6) <= NOT \CPU|BANCO_REG|Entrada_reg0\(6);
+\CPU|BANCO_REG|ALT_INV_Entrada_reg3\(5) <= NOT \CPU|BANCO_REG|Entrada_reg3\(5);
+\CPU|BANCO_REG|ALT_INV_Entrada_reg2\(5) <= NOT \CPU|BANCO_REG|Entrada_reg2\(5);
+\CPU|BANCO_REG|ALT_INV_Entrada_reg1\(5) <= NOT \CPU|BANCO_REG|Entrada_reg1\(5);
+\CPU|BANCO_REG|ALT_INV_Entrada_reg0\(5) <= NOT \CPU|BANCO_REG|Entrada_reg0\(5);
 
 \HEX0[0]~output\ : cyclonev_io_obuf
 -- pragma translate_off
@@ -4075,9 +4081,26 @@ PORT MAP (
 	i => ww_CLOCK_50,
 	o => \CLOCK_50~input_o\);
 
-\MEMORIA_INTRUCAO|memROM~29\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~26\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~29_combout\ = (!\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7))
+-- \MEMORIA_INTRUCAO|memROM~26_combout\ = (\CPU|PC|DOUT\(3) & (\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000100000000000000010000000000000001000000000000000100000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(3),
+	datab => \CPU|PC|ALT_INV_DOUT\(4),
+	datac => \CPU|PC|ALT_INV_DOUT\(5),
+	datad => \CPU|PC|ALT_INV_DOUT\(7),
+	combout => \MEMORIA_INTRUCAO|memROM~26_combout\);
+
+\MEMORIA_INTRUCAO|memROM~51\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~51_combout\ = (!\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4088,11 +4111,11 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(5),
 	datab => \CPU|PC|ALT_INV_DOUT\(7),
-	combout => \MEMORIA_INTRUCAO|memROM~29_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~51_combout\);
 
-\MEMORIA_INTRUCAO|memROM~31\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~24\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~31_combout\ = (!\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(6) & \CPU|PC|DOUT\(7))))
+-- \MEMORIA_INTRUCAO|memROM~24_combout\ = (!\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(6) & \CPU|PC|DOUT\(7))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4105,26 +4128,173 @@ PORT MAP (
 	datab => \CPU|PC|ALT_INV_DOUT\(5),
 	datac => \CPU|PC|ALT_INV_DOUT\(6),
 	datad => \CPU|PC|ALT_INV_DOUT\(7),
-	combout => \MEMORIA_INTRUCAO|memROM~31_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~24_combout\);
 
-\MEMORIA_INTRUCAO|memROM~20\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~20_combout\ = (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(3))
+-- \MEMORIA_INTRUCAO|memROM~25_combout\ = ( \MEMORIA_INTRUCAO|memROM~24_combout\ & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(3)))) # (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(3) & ((\CPU|PC|DOUT\(1)) # (\CPU|PC|DOUT\(0))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
+	lut_mask => "0000000000000000000001111000000000000000000000000000011110000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(1),
-	datab => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~20_combout\);
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~24_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~25_combout\);
 
-\MEMORIA_INTRUCAO|memROM~21\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~27\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~21_combout\ = ( \CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(6))) # (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) $ (\CPU|PC|DOUT\(6)))))) ) ) # ( !\CPU|PC|DOUT\(3) & ( 
+-- \MEMORIA_INTRUCAO|memROM~27_combout\ = ( \MEMORIA_INTRUCAO|memROM~26_combout\ & ( (!\CPU|PC|DOUT\(1) & (((\CPU|PC|DOUT\(2))))) # (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(6) & (!\CPU|PC|DOUT\(0) $ (\CPU|PC|DOUT\(2))))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000001011010000110000000000000000000010110100001100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(6),
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~26_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~27_combout\);
+
+\MEMORIA_INTRUCAO|memROM~28\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~28_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) $ (((\CPU|PC|DOUT\(3)))))) # (\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( 
+-- \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(2)) # (\CPU|PC|DOUT\(1))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(3) $ (((!\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(2)))))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( 
+-- (!\CPU|PC|DOUT\(3) & (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(0) $ (((!\CPU|PC|DOUT\(2)))))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(3) & 
+-- (!\CPU|PC|DOUT\(0) $ (!\CPU|PC|DOUT\(1))))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000011000000000000000010101101000010101111000101010010001010100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	datae => \CPU|PC|ALT_INV_DOUT\(4),
+	dataf => \CPU|PC|ALT_INV_DOUT\(6),
+	combout => \MEMORIA_INTRUCAO|memROM~28_combout\);
+
+\MEMORIA_INTRUCAO|memROM~29\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~29_combout\ = ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(4))) ) ) # ( !\CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(4)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000010000100010000000000000000000000100001000100000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(4),
+	datae => \CPU|PC|ALT_INV_DOUT\(6),
+	combout => \MEMORIA_INTRUCAO|memROM~29_combout\);
+
+\MEMORIA_INTRUCAO|memROM~30\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~30_combout\ = ( \MEMORIA_INTRUCAO|memROM~29_combout\ & ( (!\CPU|PC|DOUT\(7) & ((!\CPU|PC|DOUT\(5) & ((\MEMORIA_INTRUCAO|memROM~28_combout\))) # (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(3))))) ) ) # ( 
+-- !\MEMORIA_INTRUCAO|memROM~29_combout\ & ( (!\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~28_combout\)) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000011000000001000001110000000000000110000000010000011100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(3),
+	datab => \CPU|PC|ALT_INV_DOUT\(5),
+	datac => \CPU|PC|ALT_INV_DOUT\(7),
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~28_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~29_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~30_combout\);
+
+\MEMORIA_INTRUCAO|memROM~31\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~31_combout\ = ((\MEMORIA_INTRUCAO|memROM~30_combout\) # (\MEMORIA_INTRUCAO|memROM~27_combout\)) # (\MEMORIA_INTRUCAO|memROM~25_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0111111101111111011111110111111101111111011111110111111101111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~25_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~30_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~31_combout\);
+
+\CPU|SOMADOR|Add0~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CPU|SOMADOR|Add0~1_sumout\ = SUM(( \CPU|PC|DOUT\(0) ) + ( VCC ) + ( !VCC ))
+-- \CPU|SOMADOR|Add0~2\ = CARRY(( \CPU|PC|DOUT\(0) ) + ( VCC ) + ( !VCC ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000000000000000000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \CPU|PC|ALT_INV_DOUT\(0),
+	cin => GND,
+	sumout => \CPU|SOMADOR|Add0~1_sumout\,
+	cout => \CPU|SOMADOR|Add0~2\);
+
+\CPU|SOMADOR|Add0~5\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CPU|SOMADOR|Add0~5_sumout\ = SUM(( \CPU|PC|DOUT\(1) ) + ( GND ) + ( \CPU|SOMADOR|Add0~2\ ))
+-- \CPU|SOMADOR|Add0~6\ = CARRY(( \CPU|PC|DOUT\(1) ) + ( GND ) + ( \CPU|SOMADOR|Add0~2\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \CPU|PC|ALT_INV_DOUT\(1),
+	cin => \CPU|SOMADOR|Add0~2\,
+	sumout => \CPU|SOMADOR|Add0~5_sumout\,
+	cout => \CPU|SOMADOR|Add0~6\);
+
+\CPU|SOMADOR|Add0~9\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CPU|SOMADOR|Add0~9_sumout\ = SUM(( \CPU|PC|DOUT\(2) ) + ( GND ) + ( \CPU|SOMADOR|Add0~6\ ))
+-- \CPU|SOMADOR|Add0~10\ = CARRY(( \CPU|PC|DOUT\(2) ) + ( GND ) + ( \CPU|SOMADOR|Add0~6\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \CPU|PC|ALT_INV_DOUT\(2),
+	cin => \CPU|SOMADOR|Add0~6\,
+	sumout => \CPU|SOMADOR|Add0~9_sumout\,
+	cout => \CPU|SOMADOR|Add0~10\);
+
+\MEMORIA_INTRUCAO|memROM~16\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~16_combout\ = ( \CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(6))) # (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) $ (\CPU|PC|DOUT\(6)))))) ) ) # ( !\CPU|PC|DOUT\(3) & ( 
 -- (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(2) $ (\CPU|PC|DOUT\(0))))) # (\CPU|PC|DOUT\(6) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(0)))) ) )
 
 -- pragma translate_off
@@ -4139,11 +4309,11 @@ PORT MAP (
 	datac => \CPU|PC|ALT_INV_DOUT\(0),
 	datad => \CPU|PC|ALT_INV_DOUT\(6),
 	datae => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~21_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~16_combout\);
 
-\MEMORIA_INTRUCAO|memROM~22\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~22_combout\ = ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(4) & !\CPU|PC|DOUT\(5)))) ) ) # ( !\CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(4) & \CPU|PC|DOUT\(5))) ) )
+-- \MEMORIA_INTRUCAO|memROM~17_combout\ = ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(4) & !\CPU|PC|DOUT\(5)))) ) ) # ( !\CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(4) & \CPU|PC|DOUT\(5))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4157,51 +4327,68 @@ PORT MAP (
 	datac => \CPU|PC|ALT_INV_DOUT\(4),
 	datad => \CPU|PC|ALT_INV_DOUT\(5),
 	datae => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~22_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~17_combout\);
 
-\MEMORIA_INTRUCAO|memROM~23\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~18\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~23_combout\ = ( \MEMORIA_INTRUCAO|memROM~21_combout\ & ( \MEMORIA_INTRUCAO|memROM~22_combout\ & ( (!\CPU|PC|DOUT\(7) & (((\CPU|PC|DOUT\(4) & !\CPU|PC|DOUT\(5))) # (\MEMORIA_INTRUCAO|memROM~20_combout\))) ) ) ) # ( 
--- !\MEMORIA_INTRUCAO|memROM~21_combout\ & ( \MEMORIA_INTRUCAO|memROM~22_combout\ & ( (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~20_combout\) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~21_combout\ & ( !\MEMORIA_INTRUCAO|memROM~22_combout\ & ( (\CPU|PC|DOUT\(4) & 
--- (!\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7))) ) ) )
+-- \MEMORIA_INTRUCAO|memROM~18_combout\ = (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(3))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000010000000100000000000000111100000100000011110000",
+	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(1),
+	datab => \CPU|PC|ALT_INV_DOUT\(3),
+	combout => \MEMORIA_INTRUCAO|memROM~18_combout\);
+
+\MEMORIA_INTRUCAO|memROM~19\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~19_combout\ = ( \MEMORIA_INTRUCAO|memROM~17_combout\ & ( \MEMORIA_INTRUCAO|memROM~18_combout\ & ( !\CPU|PC|DOUT\(7) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~17_combout\ & ( \MEMORIA_INTRUCAO|memROM~18_combout\ & ( (\CPU|PC|DOUT\(4) & 
+-- (!\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~16_combout\))) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~17_combout\ & ( !\MEMORIA_INTRUCAO|memROM~18_combout\ & ( (\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & 
+-- \MEMORIA_INTRUCAO|memROM~16_combout\))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~17_combout\ & ( !\MEMORIA_INTRUCAO|memROM~18_combout\ & ( (\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~16_combout\))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000001000000000000000100000000000000010000001111000011110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(4),
 	datab => \CPU|PC|ALT_INV_DOUT\(5),
 	datac => \CPU|PC|ALT_INV_DOUT\(7),
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~20_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~21_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~22_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~23_combout\);
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~16_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~17_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~18_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~19_combout\);
 
-\MEMORIA_INTRUCAO|memROM~24\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~20\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~24_combout\ = ( \CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(6) & (!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1)) # (\CPU|PC|DOUT\(2))))) # (\CPU|PC|DOUT\(6) & (((\CPU|PC|DOUT\(2))) # (\CPU|PC|DOUT\(1)))) ) ) # ( !\CPU|PC|DOUT\(3) & ( 
--- (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(6) & ((\CPU|PC|DOUT\(2)) # (\CPU|PC|DOUT\(0))))) ) )
+-- \MEMORIA_INTRUCAO|memROM~20_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(3) & ((\CPU|PC|DOUT\(2)) # (\CPU|PC|DOUT\(1)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(0) & 
+-- (!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(2))))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) & ((\CPU|PC|DOUT\(3)))) # (\CPU|PC|DOUT\(1) & 
+-- (\CPU|PC|DOUT\(2))))) # (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(3))))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000001010000100001011100111100010000010100001000010111001111",
+	lut_mask => "0000000000000000000100111000101001101000000000000000000000111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(1),
-	datab => \CPU|PC|ALT_INV_DOUT\(0),
-	datac => \CPU|PC|ALT_INV_DOUT\(6),
-	datad => \CPU|PC|ALT_INV_DOUT\(2),
-	datae => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~24_combout\);
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	datae => \CPU|PC|ALT_INV_DOUT\(4),
+	dataf => \CPU|PC|ALT_INV_DOUT\(6),
+	combout => \MEMORIA_INTRUCAO|memROM~20_combout\);
 
-\MEMORIA_INTRUCAO|memROM~25\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~25_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(2) & ((\CPU|PC|DOUT\(3)))))) # (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) & 
+-- \MEMORIA_INTRUCAO|memROM~21_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(2) & ((\CPU|PC|DOUT\(3)))))) # (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) & 
 -- ((!\CPU|PC|DOUT\(3)))) # (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2))))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(3) & (\CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(2)))))) # (\CPU|PC|DOUT\(0) & 
 -- (!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2)))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1)) # ((!\CPU|PC|DOUT\(2))))) # (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(3))) # (\CPU|PC|DOUT\(2)))) ) ) 
 -- ) # ( !\CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3))) ) ) )
@@ -4219,11 +4406,11 @@ PORT MAP (
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
 	datae => \CPU|PC|ALT_INV_DOUT\(4),
 	dataf => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~25_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~21_combout\);
 
-\MEMORIA_INTRUCAO|memROM~26\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~22\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~26_combout\ = (!\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(2)) # (!\CPU|PC|DOUT\(3)))))
+-- \MEMORIA_INTRUCAO|memROM~22_combout\ = (!\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(2)) # (!\CPU|PC|DOUT\(3)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4236,41 +4423,103 @@ PORT MAP (
 	datab => \CPU|PC|ALT_INV_DOUT\(3),
 	datac => \CPU|PC|ALT_INV_DOUT\(4),
 	datad => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~26_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~22_combout\);
 
-\MEMORIA_INTRUCAO|memROM~27\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~23\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~27_combout\ = ( \MEMORIA_INTRUCAO|memROM~25_combout\ & ( \MEMORIA_INTRUCAO|memROM~26_combout\ & ( (!\CPU|PC|DOUT\(5) & (((\CPU|PC|DOUT\(7))))) # (\CPU|PC|DOUT\(5) & (\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(7) & 
--- \MEMORIA_INTRUCAO|memROM~24_combout\))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~25_combout\ & ( \MEMORIA_INTRUCAO|memROM~26_combout\ & ( (!\CPU|PC|DOUT\(5)) # ((\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~24_combout\))) ) ) ) # ( 
--- \MEMORIA_INTRUCAO|memROM~25_combout\ & ( !\MEMORIA_INTRUCAO|memROM~26_combout\ & ( (\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~24_combout\))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~25_combout\ & ( 
--- !\MEMORIA_INTRUCAO|memROM~26_combout\ & ( (!\CPU|PC|DOUT\(7) & ((!\CPU|PC|DOUT\(5)) # ((\CPU|PC|DOUT\(4) & \MEMORIA_INTRUCAO|memROM~24_combout\)))) ) ) )
+-- \MEMORIA_INTRUCAO|memROM~23_combout\ = ( \MEMORIA_INTRUCAO|memROM~22_combout\ & ( (!\CPU|PC|DOUT\(5) & (((!\MEMORIA_INTRUCAO|memROM~21_combout\)) # (\CPU|PC|DOUT\(7)))) # (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & (\MEMORIA_INTRUCAO|memROM~20_combout\))) ) 
+-- ) # ( !\MEMORIA_INTRUCAO|memROM~22_combout\ & ( (!\CPU|PC|DOUT\(7) & ((!\CPU|PC|DOUT\(5) & ((!\MEMORIA_INTRUCAO|memROM~21_combout\))) # (\CPU|PC|DOUT\(5) & (\MEMORIA_INTRUCAO|memROM~20_combout\)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1100000011010000000000000001000011001100110111000000110000011100",
+	lut_mask => "1000110000000100101011100010011010001100000001001010111000100110",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(4),
-	datab => \CPU|PC|ALT_INV_DOUT\(5),
-	datac => \CPU|PC|ALT_INV_DOUT\(7),
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~24_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~25_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~26_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~27_combout\);
+	dataa => \CPU|PC|ALT_INV_DOUT\(5),
+	datab => \CPU|PC|ALT_INV_DOUT\(7),
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~20_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~21_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~22_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~23_combout\);
 
-\MEMORIA_INTRUCAO|memROM~15\ : cyclonev_lcell_comb
+\CPU|DECODIFICADOR_INSTRUCAO|Mux0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~15_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (((\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(2)) # (\CPU|PC|DOUT\(1))))) ) ) ) # ( 
--- !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) $ (!\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(3))))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( 
--- !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) $ ((\CPU|PC|DOUT\(2))))) # (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(3) $ (((!\CPU|PC|DOUT\(0)) # (\CPU|PC|DOUT\(2)))))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(2) & 
--- (!\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(0)) # (\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & ((\CPU|PC|DOUT\(3))))) ) ) )
+-- \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\ = ( !\MEMORIA_INTRUCAO|memROM~23_combout\ & ( (\MEMORIA_INTRUCAO|memROM~10_combout\ & (!\MEMORIA_INTRUCAO|memROM~13_combout\ & (!\MEMORIA_INTRUCAO|memROM~15_combout\ & \MEMORIA_INTRUCAO|memROM~19_combout\))) ) 
+-- )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1000000011001010100101001010011101000010100010000101000100001010",
+	lut_mask => "0000000001000000000000000000000000000000010000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
+	combout => \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\);
+
+\CPU|REG_END_RET|DOUT[2]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \CPU|SOMADOR|Add0~9_sumout\,
+	ena => \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \CPU|REG_END_RET|DOUT\(2));
+
+\CPU|MUX2|saida_MUX[2]~2\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CPU|MUX2|saida_MUX[2]~2_combout\ = ( \CPU|REG_END_RET|DOUT\(2) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~9_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~31_combout\))) ) ) # ( 
+-- !\CPU|REG_END_RET|DOUT\(2) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~9_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000111001101001100011111110100000001110011010011000111111101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datab => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
+	datac => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
+	datad => \CPU|SOMADOR|ALT_INV_Add0~9_sumout\,
+	datae => \CPU|REG_END_RET|ALT_INV_DOUT\(2),
+	combout => \CPU|MUX2|saida_MUX[2]~2_combout\);
+
+\CPU|PC|DOUT[2]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \CPU|MUX2|saida_MUX[2]~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \CPU|PC|DOUT\(2));
+
+\MEMORIA_INTRUCAO|memROM~56\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~56_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) $ (\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & (((\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(3)))) ) 
+-- ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(0) & ((\CPU|PC|DOUT\(3)))) # (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(2)) # (!\CPU|PC|DOUT\(3)))))) # (\CPU|PC|DOUT\(1) & (((\CPU|PC|DOUT\(3)) # (\CPU|PC|DOUT\(2))))) ) ) 
+-- ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(2))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) $ (\CPU|PC|DOUT\(3))))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( 
+-- !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & ((!\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(0))) # (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(1)))))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0010101010001100011010000001000001000111111110110100000100011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -4280,16 +4529,16 @@ PORT MAP (
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
 	datae => \CPU|PC|ALT_INV_DOUT\(4),
 	dataf => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~15_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~56_combout\);
 
-\MEMORIA_INTRUCAO|memROM~16\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~57\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~16_combout\ = (!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) $ (\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & (((\CPU|PC|DOUT\(3)))))
+-- \MEMORIA_INTRUCAO|memROM~57_combout\ = (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) $ (!\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) $ (((!\CPU|PC|DOUT\(0) & !\CPU|PC|DOUT\(3))))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010000000011111001000000001111100100000000111110010000000011111",
+	lut_mask => "0101001010110000010100101011000001010010101100000101001010110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -4297,37 +4546,230 @@ PORT MAP (
 	datab => \CPU|PC|ALT_INV_DOUT\(1),
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~16_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~57_combout\);
 
-\MEMORIA_INTRUCAO|memROM~17\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~69\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~17_combout\ = ( !\MEMORIA_INTRUCAO|memROM~15_combout\ & ( \MEMORIA_INTRUCAO|memROM~16_combout\ & ( (!\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7)) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~15_combout\ & ( !\MEMORIA_INTRUCAO|memROM~16_combout\ & 
--- ( (!\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(6) & \CPU|PC|DOUT\(7)))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~15_combout\ & ( !\MEMORIA_INTRUCAO|memROM~16_combout\ & ( (!\CPU|PC|DOUT\(5) & ((!\CPU|PC|DOUT\(7)) # ((!\CPU|PC|DOUT\(4) & 
--- !\CPU|PC|DOUT\(6))))) ) ) )
+-- \MEMORIA_INTRUCAO|memROM~69_combout\ = ( \CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(6) & (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(6) & (!\CPU|PC|DOUT\(0) $ (((!\CPU|PC|DOUT\(1)) # (\CPU|PC|DOUT\(2)))))) ) ) # ( 
+-- !\CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(6) & (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(2))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1100110010000000000000001000000011001100000000000000000000000000",
+	lut_mask => "0000001000100000000101100001000100000010001000000001011000010001",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(6),
+	datab => \CPU|PC|ALT_INV_DOUT\(0),
+	datac => \CPU|PC|ALT_INV_DOUT\(1),
+	datad => \CPU|PC|ALT_INV_DOUT\(2),
+	datae => \CPU|PC|ALT_INV_DOUT\(3),
+	combout => \MEMORIA_INTRUCAO|memROM~69_combout\);
+
+\MEMORIA_INTRUCAO|memROM~59\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~59_combout\ = (\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~69_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000010000000000000001000000000000000100000000000000010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(4),
 	datab => \CPU|PC|ALT_INV_DOUT\(5),
-	datac => \CPU|PC|ALT_INV_DOUT\(6),
-	datad => \CPU|PC|ALT_INV_DOUT\(7),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~16_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~17_combout\);
+	datac => \CPU|PC|ALT_INV_DOUT\(7),
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~69_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~59_combout\);
 
-\MEMORIA_INTRUCAO|memROM~71\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~70\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~71_combout\ = (!\CPU|PC|DOUT\(3) & (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(2) $ (((!\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(1))))))
+-- \MEMORIA_INTRUCAO|memROM~70_combout\ = (!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1)) # (!\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(2)))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010011010010000001001101001000000100110100100000010011010010",
+	lut_mask => "1110100011101000111010001110100011101000111010001110100011101000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	combout => \MEMORIA_INTRUCAO|memROM~70_combout\);
+
+\MEMORIA_INTRUCAO|memROM~60\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~60_combout\ = ( !\CPU|PC|DOUT\(3) & ( \MEMORIA_INTRUCAO|memROM~70_combout\ & ( (!\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(6) & (\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000000000000000000010000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(4),
+	datab => \CPU|PC|ALT_INV_DOUT\(6),
+	datac => \CPU|PC|ALT_INV_DOUT\(5),
+	datad => \CPU|PC|ALT_INV_DOUT\(7),
+	datae => \CPU|PC|ALT_INV_DOUT\(3),
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~70_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~60_combout\);
+
+\MEMORIA_INTRUCAO|memROM~61\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~61_combout\ = ( \MEMORIA_INTRUCAO|memROM~59_combout\ & ( \MEMORIA_INTRUCAO|memROM~60_combout\ ) ) # ( !\MEMORIA_INTRUCAO|memROM~59_combout\ & ( \MEMORIA_INTRUCAO|memROM~60_combout\ ) ) # ( \MEMORIA_INTRUCAO|memROM~59_combout\ & ( 
+-- !\MEMORIA_INTRUCAO|memROM~60_combout\ ) ) # ( !\MEMORIA_INTRUCAO|memROM~59_combout\ & ( !\MEMORIA_INTRUCAO|memROM~60_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~51_combout\ & (\MEMORIA_INTRUCAO|memROM~24_combout\ & ((\MEMORIA_INTRUCAO|memROM~57_combout\)))) # 
+-- (\MEMORIA_INTRUCAO|memROM~51_combout\ & (((\MEMORIA_INTRUCAO|memROM~24_combout\ & \MEMORIA_INTRUCAO|memROM~57_combout\)) # (\MEMORIA_INTRUCAO|memROM~56_combout\))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000010100110111111111111111111111111111111111111111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~51_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~24_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~57_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~59_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~60_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~61_combout\);
+
+\CPU|REG_END_RET|DOUT[0]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \CPU|SOMADOR|Add0~1_sumout\,
+	ena => \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \CPU|REG_END_RET|DOUT\(0));
+
+\CPU|MUX2|saida_MUX[0]~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CPU|MUX2|saida_MUX[0]~0_combout\ = ( \CPU|REG_END_RET|DOUT\(0) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~1_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~61_combout\))) ) ) # ( 
+-- !\CPU|REG_END_RET|DOUT\(0) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~1_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~61_combout\ & ((\CPU|MUX2|Equal1~0_combout\)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000110000011101001111110001110100001100000111010011111100011101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
+	datac => \CPU|SOMADOR|ALT_INV_Add0~1_sumout\,
+	datad => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
+	datae => \CPU|REG_END_RET|ALT_INV_DOUT\(0),
+	combout => \CPU|MUX2|saida_MUX[0]~0_combout\);
+
+\CPU|PC|DOUT[0]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \CPU|MUX2|saida_MUX[0]~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \CPU|PC|DOUT\(0));
+
+\MEMORIA_INTRUCAO|memROM~47\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~47_combout\ = (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) $ (((\CPU|PC|DOUT\(6)) # (\CPU|PC|DOUT\(0)))))) # (\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(6))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) & 
+-- \CPU|PC|DOUT\(6)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1000011000011100100001100001110010000110000111001000011000011100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(6),
+	combout => \MEMORIA_INTRUCAO|memROM~47_combout\);
+
+\MEMORIA_INTRUCAO|memROM~48\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~48_combout\ = (\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1)) # (!\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(2)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000011101000000000001110100000000000111010000000000011101000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(6),
+	combout => \MEMORIA_INTRUCAO|memROM~48_combout\);
+
+\MEMORIA_INTRUCAO|memROM~49\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~49_combout\ = (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(0) & ((\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001101100000000000110110000000000011011000000000001101100000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(6),
+	combout => \MEMORIA_INTRUCAO|memROM~49_combout\);
+
+\MEMORIA_INTRUCAO|memROM~50\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~50_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~49_combout\ & ( (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & !\CPU|PC|DOUT\(3))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( 
+-- \MEMORIA_INTRUCAO|memROM~49_combout\ & ( (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & (!\CPU|PC|DOUT\(3) & \CPU|PC|DOUT\(4)))) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~49_combout\ & ( (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) 
+-- & (!\CPU|PC|DOUT\(3) & !\CPU|PC|DOUT\(4)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000010000000000000000000000010000000100000001000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(5),
+	datab => \CPU|PC|ALT_INV_DOUT\(7),
+	datac => \CPU|PC|ALT_INV_DOUT\(3),
+	datad => \CPU|PC|ALT_INV_DOUT\(4),
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~49_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~50_combout\);
+
+\MEMORIA_INTRUCAO|memROM~52\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~52_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(0) $ (((!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2)))))) # (\CPU|PC|DOUT\(3) & (((\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(2))) # 
+-- (\CPU|PC|DOUT\(0)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3)))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & 
+-- (!\CPU|PC|DOUT\(2) $ (\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) $ 
+-- (!\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001100010010000011000000000001000000000100000001010011001110101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -4335,49 +4777,179 @@ PORT MAP (
 	datab => \CPU|PC|ALT_INV_DOUT\(1),
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~71_combout\);
+	datae => \CPU|PC|ALT_INV_DOUT\(4),
+	dataf => \CPU|PC|ALT_INV_DOUT\(6),
+	combout => \MEMORIA_INTRUCAO|memROM~52_combout\);
 
-\MEMORIA_INTRUCAO|memROM~19\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~53\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~19_combout\ = ( \MEMORIA_INTRUCAO|memROM~71_combout\ & ( (!\CPU|PC|DOUT\(6) & (\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7)))) ) )
+-- \MEMORIA_INTRUCAO|memROM~53_combout\ = (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(2)) # (!\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(1) $ (\CPU|PC|DOUT\(2)))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000100000000000000000000000000000001000000000",
+	lut_mask => "1100100110000000110010011000000011001001100000001100100110000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(6),
-	datab => \CPU|PC|ALT_INV_DOUT\(4),
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	combout => \MEMORIA_INTRUCAO|memROM~53_combout\);
+
+\MEMORIA_INTRUCAO|memROM~54\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~54_combout\ = (!\MEMORIA_INTRUCAO|memROM~51_combout\ & (\MEMORIA_INTRUCAO|memROM~24_combout\ & ((\MEMORIA_INTRUCAO|memROM~53_combout\)))) # (\MEMORIA_INTRUCAO|memROM~51_combout\ & (((\MEMORIA_INTRUCAO|memROM~24_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~53_combout\)) # (\MEMORIA_INTRUCAO|memROM~52_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000010100110111000001010011011100000101001101110000010100110111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~51_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~24_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~53_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~54_combout\);
+
+\MEMORIA_INTRUCAO|memROM~55\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~55_combout\ = (((\MEMORIA_INTRUCAO|memROM~26_combout\ & \MEMORIA_INTRUCAO|memROM~47_combout\)) # (\MEMORIA_INTRUCAO|memROM~54_combout\)) # (\MEMORIA_INTRUCAO|memROM~50_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001111111111111000111111111111100011111111111110001111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~26_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~47_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~50_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~54_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~55_combout\);
+
+\CPU|REG_END_RET|DOUT[1]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \CPU|SOMADOR|Add0~5_sumout\,
+	ena => \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \CPU|REG_END_RET|DOUT\(1));
+
+\CPU|MUX2|saida_MUX[1]~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CPU|MUX2|saida_MUX[1]~1_combout\ = ( \CPU|REG_END_RET|DOUT\(1) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~5_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~55_combout\))) ) ) # ( 
+-- !\CPU|REG_END_RET|DOUT\(1) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~5_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000111001101001100011111110100000001110011010011000111111101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datab => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
+	datac => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
+	datad => \CPU|SOMADOR|ALT_INV_Add0~5_sumout\,
+	datae => \CPU|REG_END_RET|ALT_INV_DOUT\(1),
+	combout => \CPU|MUX2|saida_MUX[1]~1_combout\);
+
+\CPU|PC|DOUT[1]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \CPU|MUX2|saida_MUX[1]~1_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \CPU|PC|DOUT\(1));
+
+\MEMORIA_INTRUCAO|memROM~14\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~14_combout\ = ( \CPU|PC|DOUT\(7) & ( (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(6)))) ) ) # ( !\CPU|PC|DOUT\(7) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(3) & (\CPU|PC|DOUT\(5) & \CPU|PC|DOUT\(6)))) 
+-- ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000001000000100000000000000000000000010000001000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(3),
 	datac => \CPU|PC|ALT_INV_DOUT\(5),
-	datad => \CPU|PC|ALT_INV_DOUT\(7),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~71_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~19_combout\);
+	datad => \CPU|PC|ALT_INV_DOUT\(6),
+	datae => \CPU|PC|ALT_INV_DOUT\(7),
+	combout => \MEMORIA_INTRUCAO|memROM~14_combout\);
+
+\MEMORIA_INTRUCAO|memROM~15\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~15_combout\ = (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(4) & \MEMORIA_INTRUCAO|memROM~14_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000001000000000000000100000000000000010000000000000001000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(1),
+	datab => \CPU|PC|ALT_INV_DOUT\(2),
+	datac => \CPU|PC|ALT_INV_DOUT\(4),
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~15_combout\);
+
+\MEMORIA_INTRUCAO|memROM~68\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~68_combout\ = (!\MEMORIA_INTRUCAO|memROM~13_combout\ & !\MEMORIA_INTRUCAO|memROM~15_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1000100010001000100010001000100010001000100010001000100010001000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~68_combout\);
 
 \CPU|DECODIFICADOR_INSTRUCAO|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ = ( !\MEMORIA_INTRUCAO|memROM~23_combout\ & ( \MEMORIA_INTRUCAO|memROM~27_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~14_combout\ & (!\MEMORIA_INTRUCAO|memROM~17_combout\ & (!\MEMORIA_INTRUCAO|memROM~18_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~19_combout\))) ) ) )
+-- \CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ = (!\MEMORIA_INTRUCAO|memROM~10_combout\ & (\MEMORIA_INTRUCAO|memROM~68_combout\ & (!\MEMORIA_INTRUCAO|memROM~19_combout\ & \MEMORIA_INTRUCAO|memROM~23_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000010000000000000000000000000000000",
+	lut_mask => "0000000000100000000000000010000000000000001000000000000000100000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~17_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~18_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
 	combout => \CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\);
 
-\MEMORIA_INTRUCAO|memROM~46\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~45\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~46_combout\ = (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) $ (((!\CPU|PC|DOUT\(1)) # (\CPU|PC|DOUT\(3)))))) # (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(2) & ((\CPU|PC|DOUT\(3))))))
+-- \MEMORIA_INTRUCAO|memROM~45_combout\ = (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) $ (((!\CPU|PC|DOUT\(1)) # (\CPU|PC|DOUT\(3)))))) # (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(2) & ((\CPU|PC|DOUT\(3))))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4390,19 +4962,171 @@ PORT MAP (
 	datab => \CPU|PC|ALT_INV_DOUT\(1),
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~46_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~45_combout\);
 
-\MEMORIA_INTRUCAO|memROM~63\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~71\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~63_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(3) $ (((\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2)))))) # (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) & ((\CPU|PC|DOUT\(3)) # (\CPU|PC|DOUT\(2)))) 
--- # (\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(2)) # (!\CPU|PC|DOUT\(3)))))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(3) & ((\CPU|PC|DOUT\(2)) # (\CPU|PC|DOUT\(1))))) # (\CPU|PC|DOUT\(0) & (((!\CPU|PC|DOUT\(3))))) ) 
--- ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) $ (\CPU|PC|DOUT\(3))))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( 
--- (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3)))) ) ) )
+-- \MEMORIA_INTRUCAO|memROM~71_combout\ = ( \CPU|PC|DOUT\(2) & ( \CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(6) $ (((\CPU|PC|DOUT\(4) & !\CPU|PC|DOUT\(1)))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(4)) # 
+-- (!\CPU|PC|DOUT\(6))))) ) ) ) # ( !\CPU|PC|DOUT\(2) & ( \CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(6) $ (((!\CPU|PC|DOUT\(1)) # (\CPU|PC|DOUT\(4)))))) # (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(4)) # ((!\CPU|PC|DOUT\(6) & !\CPU|PC|DOUT\(1))))) ) 
+-- ) ) # ( \CPU|PC|DOUT\(2) & ( !\CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(4)) # (!\CPU|PC|DOUT\(1)))) # (\CPU|PC|DOUT\(6) & ((\CPU|PC|DOUT\(1)))))) # (\CPU|PC|DOUT\(0) & (((!\CPU|PC|DOUT\(6))))) ) ) ) # ( 
+-- !\CPU|PC|DOUT\(2) & ( !\CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(4)) # (!\CPU|PC|DOUT\(1))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(4) $ (\CPU|PC|DOUT\(6))))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000010000000011000100001000001010101001010101011110101010110",
+	lut_mask => "1110000110000000111100001101101001011110110001101101011010100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(4),
+	datac => \CPU|PC|ALT_INV_DOUT\(6),
+	datad => \CPU|PC|ALT_INV_DOUT\(1),
+	datae => \CPU|PC|ALT_INV_DOUT\(2),
+	dataf => \CPU|PC|ALT_INV_DOUT\(3),
+	combout => \MEMORIA_INTRUCAO|memROM~71_combout\);
+
+\MEMORIA_INTRUCAO|memROM~72\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~72_combout\ = ( \CPU|PC|DOUT\(5) & ( !\CPU|PC|DOUT\(7) & ( !\CPU|PC|DOUT\(4) $ (\CPU|PC|DOUT\(3)) ) ) ) # ( !\CPU|PC|DOUT\(5) & ( !\CPU|PC|DOUT\(7) & ( (!\CPU|PC|DOUT\(4) & (((\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(4) & 
+-- ((!\CPU|PC|DOUT\(3)) # ((\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2))))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0101010110101011101010100101010100000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(4),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	datae => \CPU|PC|ALT_INV_DOUT\(5),
+	dataf => \CPU|PC|ALT_INV_DOUT\(7),
+	combout => \MEMORIA_INTRUCAO|memROM~72_combout\);
+
+\MEMORIA_INTRUCAO|memROM~58\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~58_combout\ = (\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001000000010000000100000001000000010000000100000001000000010000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(4),
+	datab => \CPU|PC|ALT_INV_DOUT\(5),
+	datac => \CPU|PC|ALT_INV_DOUT\(7),
+	combout => \MEMORIA_INTRUCAO|memROM~58_combout\);
+
+\MEMORIA_INTRUCAO|memROM~73\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~73_combout\ = ( \CPU|PC|DOUT\(2) & ( \CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(1) & ((\MEMORIA_INTRUCAO|memROM~51_combout\))) # (\CPU|PC|DOUT\(1) & (\MEMORIA_INTRUCAO|memROM~58_combout\)) ) ) ) # ( !\CPU|PC|DOUT\(2) & ( 
+-- \CPU|PC|DOUT\(3) & ( \MEMORIA_INTRUCAO|memROM~51_combout\ ) ) ) # ( \CPU|PC|DOUT\(2) & ( !\CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(1) & ((\MEMORIA_INTRUCAO|memROM~51_combout\))) # (\CPU|PC|DOUT\(1) & 
+-- (\MEMORIA_INTRUCAO|memROM~58_combout\)))) # (\CPU|PC|DOUT\(6) & (((\MEMORIA_INTRUCAO|memROM~51_combout\)))) ) ) ) # ( !\CPU|PC|DOUT\(2) & ( !\CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(1) & ((\MEMORIA_INTRUCAO|memROM~51_combout\))) # 
+-- (\CPU|PC|DOUT\(1) & (\MEMORIA_INTRUCAO|memROM~58_combout\)))) # (\CPU|PC|DOUT\(6) & (((\MEMORIA_INTRUCAO|memROM~51_combout\)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0011001101010011001100110101001100110011001100110011001101010101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~51_combout\,
+	datac => \CPU|PC|ALT_INV_DOUT\(6),
+	datad => \CPU|PC|ALT_INV_DOUT\(1),
+	datae => \CPU|PC|ALT_INV_DOUT\(2),
+	dataf => \CPU|PC|ALT_INV_DOUT\(3),
+	combout => \MEMORIA_INTRUCAO|memROM~73_combout\);
+
+\MEMORIA_INTRUCAO|memROM~66\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~66_combout\ = ( \MEMORIA_INTRUCAO|memROM~72_combout\ & ( \MEMORIA_INTRUCAO|memROM~73_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~71_combout\) # ((\MEMORIA_INTRUCAO|memROM~24_combout\ & !\MEMORIA_INTRUCAO|memROM~45_combout\)) ) ) ) # ( 
+-- !\MEMORIA_INTRUCAO|memROM~72_combout\ & ( \MEMORIA_INTRUCAO|memROM~73_combout\ & ( (!\CPU|PC|DOUT\(0) & (\MEMORIA_INTRUCAO|memROM~24_combout\ & (!\MEMORIA_INTRUCAO|memROM~45_combout\))) # (\CPU|PC|DOUT\(0) & ((!\MEMORIA_INTRUCAO|memROM~71_combout\) # 
+-- ((\MEMORIA_INTRUCAO|memROM~24_combout\ & !\MEMORIA_INTRUCAO|memROM~45_combout\)))) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~72_combout\ & ( !\MEMORIA_INTRUCAO|memROM~73_combout\ & ( (!\CPU|PC|DOUT\(0) & ((!\MEMORIA_INTRUCAO|memROM~71_combout\) # 
+-- ((\MEMORIA_INTRUCAO|memROM~24_combout\ & !\MEMORIA_INTRUCAO|memROM~45_combout\)))) # (\CPU|PC|DOUT\(0) & (\MEMORIA_INTRUCAO|memROM~24_combout\ & (!\MEMORIA_INTRUCAO|memROM~45_combout\))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~72_combout\ & ( 
+-- !\MEMORIA_INTRUCAO|memROM~73_combout\ & ( (\MEMORIA_INTRUCAO|memROM~24_combout\ & !\MEMORIA_INTRUCAO|memROM~45_combout\) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0011000000110000101110100011000001110101001100001111111100110000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~24_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~45_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~71_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~72_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~73_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~66_combout\);
+
+\CPU|DECODIFICADOR_INSTRUCAO|Mux7~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\ = (\MEMORIA_INTRUCAO|memROM~68_combout\ & (!\MEMORIA_INTRUCAO|memROM~19_combout\ & (!\MEMORIA_INTRUCAO|memROM~10_combout\ $ (!\MEMORIA_INTRUCAO|memROM~23_combout\))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001001000000000000100100000000000010010000000000001001000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
+	combout => \CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\);
+
+\CPU|ULA1|Equal1~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CPU|ULA1|Equal1~0_combout\ = ( !\CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~10_combout\ & (!\MEMORIA_INTRUCAO|memROM~68_combout\ & (!\MEMORIA_INTRUCAO|memROM~19_combout\ & !\MEMORIA_INTRUCAO|memROM~23_combout\))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1000000000000000000000000000000010000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
+	datae => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux7~0_combout\,
+	combout => \CPU|ULA1|Equal1~0_combout\);
+
+\MEMORIA_INTRUCAO|memROM~6\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~6_combout\ = (!\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(6) & \CPU|PC|DOUT\(7)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000100000001000000010000000100000001000000010000000100000001000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(4),
+	datab => \CPU|PC|ALT_INV_DOUT\(6),
+	datac => \CPU|PC|ALT_INV_DOUT\(7),
+	combout => \MEMORIA_INTRUCAO|memROM~6_combout\);
+
+\MEMORIA_INTRUCAO|memROM~37\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~37_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(0) & 
+-- (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(3))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000100010000000001000000000000000000000000100000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -4412,87 +5136,11 @@ PORT MAP (
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
 	datae => \CPU|PC|ALT_INV_DOUT\(4),
 	dataf => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~63_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~37_combout\);
 
-\MEMORIA_INTRUCAO|memROM~64\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~38\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~64_combout\ = ( \CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3))) ) ) # ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(1)) # (!\CPU|PC|DOUT\(2))))) # 
--- (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) $ (\CPU|PC|DOUT\(3))))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001000010101001000000000000001100010000101010010000000000000011",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	datae => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~64_combout\);
-
-\MEMORIA_INTRUCAO|memROM~65\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~65_combout\ = ( \MEMORIA_INTRUCAO|memROM~63_combout\ & ( \MEMORIA_INTRUCAO|memROM~64_combout\ & ( (((\MEMORIA_INTRUCAO|memROM~31_combout\ & !\MEMORIA_INTRUCAO|memROM~46_combout\)) # (\MEMORIA_INTRUCAO|memROM~29_combout\)) # 
--- (\MEMORIA_INTRUCAO|memROM~12_combout\) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~63_combout\ & ( \MEMORIA_INTRUCAO|memROM~64_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~31_combout\ & !\MEMORIA_INTRUCAO|memROM~46_combout\)) # (\MEMORIA_INTRUCAO|memROM~12_combout\) ) 
--- ) ) # ( \MEMORIA_INTRUCAO|memROM~63_combout\ & ( !\MEMORIA_INTRUCAO|memROM~64_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~31_combout\ & !\MEMORIA_INTRUCAO|memROM~46_combout\)) # (\MEMORIA_INTRUCAO|memROM~29_combout\) ) ) ) # ( 
--- !\MEMORIA_INTRUCAO|memROM~63_combout\ & ( !\MEMORIA_INTRUCAO|memROM~64_combout\ & ( (\MEMORIA_INTRUCAO|memROM~31_combout\ & !\MEMORIA_INTRUCAO|memROM~46_combout\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000111100000000001111110011001101011111010101010111111101110111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~29_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~63_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~64_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~65_combout\);
-
-\CPU|DECODIFICADOR_INSTRUCAO|Mux7~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\ = (\MEMORIA_INTRUCAO|memROM~58_combout\ & (!\MEMORIA_INTRUCAO|memROM~23_combout\ & (!\MEMORIA_INTRUCAO|memROM~57_combout\ $ (\MEMORIA_INTRUCAO|memROM~27_combout\))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0010000100000000001000010000000000100001000000000010000100000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~57_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
-	combout => \CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\);
-
-\CPU|ULA1|Equal1~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \CPU|ULA1|Equal1~0_combout\ = ( !\CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\ & ( (\MEMORIA_INTRUCAO|memROM~57_combout\ & (!\MEMORIA_INTRUCAO|memROM~58_combout\ & (!\MEMORIA_INTRUCAO|memROM~23_combout\ & !\MEMORIA_INTRUCAO|memROM~27_combout\))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100000000000000000000000000000001000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~57_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
-	datae => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux7~0_combout\,
-	combout => \CPU|ULA1|Equal1~0_combout\);
-
-\MEMORIA_INTRUCAO|memROM~34\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~34_combout\ = ( \CPU|PC|DOUT\(3) & ( \CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(2) & ((!\CPU|PC|DOUT\(6) & (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(0))) # (\CPU|PC|DOUT\(6) & (\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(0))))) ) ) ) # ( 
+-- \MEMORIA_INTRUCAO|memROM~38_combout\ = ( \CPU|PC|DOUT\(3) & ( \CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(2) & ((!\CPU|PC|DOUT\(6) & (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(0))) # (\CPU|PC|DOUT\(6) & (\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(0))))) ) ) ) # ( 
 -- !\CPU|PC|DOUT\(3) & ( \CPU|PC|DOUT\(4) & ( (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(6) $ (\CPU|PC|DOUT\(1))))) ) ) ) # ( \CPU|PC|DOUT\(3) & ( !\CPU|PC|DOUT\(4) & ( (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0) & ((\CPU|PC|DOUT\(2)) # 
 -- (\CPU|PC|DOUT\(6))))) ) ) ) # ( !\CPU|PC|DOUT\(3) & ( !\CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(6) & (((\CPU|PC|DOUT\(0)) # (\CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(6) & (((!\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(0))))) ) ) )
 
@@ -4509,11 +5157,11 @@ PORT MAP (
 	datad => \CPU|PC|ALT_INV_DOUT\(0),
 	datae => \CPU|PC|ALT_INV_DOUT\(3),
 	dataf => \CPU|PC|ALT_INV_DOUT\(4),
-	combout => \MEMORIA_INTRUCAO|memROM~34_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~38_combout\);
 
-\MEMORIA_INTRUCAO|memROM~35\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~39\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~35_combout\ = (!\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2))) # (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(2)))))
+-- \MEMORIA_INTRUCAO|memROM~39_combout\ = (!\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2))) # (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(2)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4526,177 +5174,67 @@ PORT MAP (
 	datab => \CPU|PC|ALT_INV_DOUT\(1),
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~35_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~39_combout\);
 
-\MEMORIA_INTRUCAO|memROM~36\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~40\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~36_combout\ = ( \MEMORIA_INTRUCAO|memROM~34_combout\ & ( \MEMORIA_INTRUCAO|memROM~35_combout\ & ( (!\CPU|PC|DOUT\(5) & ((!\CPU|PC|DOUT\(7)) # ((!\CPU|PC|DOUT\(4) & !\CPU|PC|DOUT\(6))))) ) ) ) # ( 
--- !\MEMORIA_INTRUCAO|memROM~34_combout\ & ( \MEMORIA_INTRUCAO|memROM~35_combout\ & ( (!\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(6) & \CPU|PC|DOUT\(7)))) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~34_combout\ & ( !\MEMORIA_INTRUCAO|memROM~35_combout\ 
--- & ( (!\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7)) ) ) )
+-- \MEMORIA_INTRUCAO|memROM~40_combout\ = ( \MEMORIA_INTRUCAO|memROM~38_combout\ & ( \MEMORIA_INTRUCAO|memROM~39_combout\ & ( (!\CPU|PC|DOUT\(5) & ((!\CPU|PC|DOUT\(7)) # ((\MEMORIA_INTRUCAO|memROM~6_combout\)))) # (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & 
+-- ((\MEMORIA_INTRUCAO|memROM~37_combout\)))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~38_combout\ & ( \MEMORIA_INTRUCAO|memROM~39_combout\ & ( (!\CPU|PC|DOUT\(5) & (((\MEMORIA_INTRUCAO|memROM~6_combout\)))) # (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & 
+-- ((\MEMORIA_INTRUCAO|memROM~37_combout\)))) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~38_combout\ & ( !\MEMORIA_INTRUCAO|memROM~39_combout\ & ( (!\CPU|PC|DOUT\(7) & ((!\CPU|PC|DOUT\(5)) # (\MEMORIA_INTRUCAO|memROM~37_combout\))) ) ) ) # ( 
+-- !\MEMORIA_INTRUCAO|memROM~38_combout\ & ( !\MEMORIA_INTRUCAO|memROM~39_combout\ & ( (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~37_combout\)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000110011000000000000000000100000001100110010000000",
+	lut_mask => "0000000001000100100010001100110000001010010011101000101011001110",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(4),
-	datab => \CPU|PC|ALT_INV_DOUT\(5),
-	datac => \CPU|PC|ALT_INV_DOUT\(6),
-	datad => \CPU|PC|ALT_INV_DOUT\(7),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~34_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~35_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~36_combout\);
-
-\MEMORIA_INTRUCAO|memROM~37\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~37_combout\ = ( \CPU|PC|DOUT\(1) & ( \MEMORIA_INTRUCAO|memROM~12_combout\ & ( (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(6) & (!\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3)))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(3))))) ) ) 
--- )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000000000000100010000100000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(6),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	datae => \CPU|PC|ALT_INV_DOUT\(1),
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~37_combout\);
-
-\MEMORIA_INTRUCAO|memROM~67\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~67_combout\ = (!\MEMORIA_INTRUCAO|memROM~36_combout\ & !\MEMORIA_INTRUCAO|memROM~37_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1000100010001000100010001000100010001000100010001000100010001000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~36_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~37_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~67_combout\);
-
-\MEMORIA_INTRUCAO|memROM~41\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~41_combout\ = ( \CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(4))) # (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(4))))) ) ) # ( !\CPU|PC|DOUT\(6) & ( 
--- (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) $ (\CPU|PC|DOUT\(4))))) # (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(4)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1000000101000000010000000000000110000001010000000100000000000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(4),
-	datae => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~41_combout\);
-
-\MEMORIA_INTRUCAO|memROM~42\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~42_combout\ = (\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(5) & \MEMORIA_INTRUCAO|memROM~41_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000010000000100000001000000010000000100000001000000010000000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(3),
-	datab => \CPU|PC|ALT_INV_DOUT\(5),
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~41_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~42_combout\);
-
-\DECODIFICADOR_3X8_6a8|Equal4~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \DECODIFICADOR_3X8_6a8|Equal4~0_combout\ = (!\MEMORIA_INTRUCAO|memROM~44_combout\ & (((!\MEMORIA_INTRUCAO|memROM~40_combout\ & !\MEMORIA_INTRUCAO|memROM~42_combout\)) # (\CPU|PC|DOUT\(7))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1101010100000000110101010000000011010101000000001101010100000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(7),
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~40_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~44_combout\,
-	combout => \DECODIFICADOR_3X8_6a8|Equal4~0_combout\);
+	dataa => \CPU|PC|ALT_INV_DOUT\(5),
+	datab => \CPU|PC|ALT_INV_DOUT\(7),
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~6_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~37_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~38_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~39_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~40_combout\);
 
 \CPU|DECODIFICADOR_INSTRUCAO|Mux10~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~18_combout\ & ( \MEMORIA_INTRUCAO|memROM~19_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~27_combout\ & !\MEMORIA_INTRUCAO|memROM~23_combout\) ) ) ) # ( 
--- !\MEMORIA_INTRUCAO|memROM~18_combout\ & ( \MEMORIA_INTRUCAO|memROM~19_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~27_combout\ & !\MEMORIA_INTRUCAO|memROM~23_combout\) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~18_combout\ & ( !\MEMORIA_INTRUCAO|memROM~19_combout\ & ( 
--- (!\MEMORIA_INTRUCAO|memROM~27_combout\ & !\MEMORIA_INTRUCAO|memROM~23_combout\) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~18_combout\ & ( !\MEMORIA_INTRUCAO|memROM~19_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~27_combout\ & (!\MEMORIA_INTRUCAO|memROM~23_combout\ $ 
--- (((!\MEMORIA_INTRUCAO|memROM~14_combout\ & !\MEMORIA_INTRUCAO|memROM~17_combout\))))) ) ) )
+-- \CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\ = (!\MEMORIA_INTRUCAO|memROM~23_combout\ & (!\MEMORIA_INTRUCAO|memROM~19_combout\ $ (((!\MEMORIA_INTRUCAO|memROM~10_combout\ & \MEMORIA_INTRUCAO|memROM~68_combout\)))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010100010001000100010001000100010001000100010001000100010001000",
+	lut_mask => "1101000000100000110100000010000011010000001000001101000000100000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~17_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~18_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
 	combout => \CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\);
 
 \MEMORIA_DADOS|dado_out~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|dado_out~0_combout\ = (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\))
+-- \MEMORIA_DADOS|dado_out~0_combout\ = (!\MEMORIA_INTRUCAO|memROM~67_combout\ & (!\MEMORIA_INTRUCAO|memROM~40_combout\ & (!\MEMORIA_INTRUCAO|memROM~42_combout\ & \CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
+	lut_mask => "0000000010000000000000001000000000000000100000000000000010000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datab => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datac => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux10~0_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~40_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\,
+	datad => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux10~0_combout\,
 	combout => \MEMORIA_DADOS|dado_out~0_combout\);
 
-\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~62\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ = ( !\MEMORIA_INTRUCAO|memROM~23_combout\ & ( \MEMORIA_INTRUCAO|memROM~27_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~18_combout\ & (!\MEMORIA_INTRUCAO|memROM~19_combout\ & ((\MEMORIA_INTRUCAO|memROM~17_combout\) 
--- # (\MEMORIA_INTRUCAO|memROM~14_combout\)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000001110000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~17_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~18_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
-	combout => \CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\);
-
-\MEMORIA_INTRUCAO|memROM~59\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~59_combout\ = ( \CPU|PC|DOUT\(3) & ( \CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(0))) # (\CPU|PC|DOUT\(2) & ((!\CPU|PC|DOUT\(0)))))) ) ) ) # ( !\CPU|PC|DOUT\(3) & ( 
+-- \MEMORIA_INTRUCAO|memROM~62_combout\ = ( \CPU|PC|DOUT\(3) & ( \CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(0))) # (\CPU|PC|DOUT\(2) & ((!\CPU|PC|DOUT\(0)))))) ) ) ) # ( !\CPU|PC|DOUT\(3) & ( 
 -- \CPU|PC|DOUT\(4) & ( (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) $ (((!\CPU|PC|DOUT\(6)) # (\CPU|PC|DOUT\(0)))))) ) ) ) # ( \CPU|PC|DOUT\(3) & ( !\CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(2) & ((!\CPU|PC|DOUT\(0)) # (\CPU|PC|DOUT\(6)))) # 
 -- (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(6))))) ) ) ) # ( !\CPU|PC|DOUT\(3) & ( !\CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(6)))) ) ) )
 
@@ -4713,11 +5251,11 @@ PORT MAP (
 	datad => \CPU|PC|ALT_INV_DOUT\(6),
 	datae => \CPU|PC|ALT_INV_DOUT\(3),
 	dataf => \CPU|PC|ALT_INV_DOUT\(4),
-	combout => \MEMORIA_INTRUCAO|memROM~59_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~62_combout\);
 
-\MEMORIA_INTRUCAO|memROM~60\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~63\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~60_combout\ = (!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(3) & ((\CPU|PC|DOUT\(1)) # (\CPU|PC|DOUT\(0)))))
+-- \MEMORIA_INTRUCAO|memROM~63_combout\ = (!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(3) & ((\CPU|PC|DOUT\(1)) # (\CPU|PC|DOUT\(0)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4730,11 +5268,11 @@ PORT MAP (
 	datab => \CPU|PC|ALT_INV_DOUT\(1),
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~60_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~63_combout\);
 
-\MEMORIA_INTRUCAO|memROM~61\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~64\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~61_combout\ = ( \CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(1) & ((\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0) & !\CPU|PC|DOUT\(2))))) ) ) # ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(1) & 
+-- \MEMORIA_INTRUCAO|memROM~64_combout\ = ( \CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(1) & ((\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0) & !\CPU|PC|DOUT\(2))))) ) ) # ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(1) & 
 -- (\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(0) $ (\CPU|PC|DOUT\(2))))) # (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))) ) )
 
 -- pragma translate_off
@@ -4749,14 +5287,14 @@ PORT MAP (
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
 	datae => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~61_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~64_combout\);
 
-\MEMORIA_INTRUCAO|memROM~62\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~65\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~62_combout\ = ( \MEMORIA_INTRUCAO|memROM~60_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( (((\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~59_combout\)) # (\MEMORIA_INTRUCAO|memROM~31_combout\)) # 
--- (\MEMORIA_INTRUCAO|memROM~12_combout\) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~60_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~59_combout\)) # (\MEMORIA_INTRUCAO|memROM~12_combout\) ) 
--- ) ) # ( \MEMORIA_INTRUCAO|memROM~60_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~59_combout\)) # (\MEMORIA_INTRUCAO|memROM~31_combout\) ) ) ) # ( 
--- !\MEMORIA_INTRUCAO|memROM~60_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( (\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~59_combout\) ) ) )
+-- \MEMORIA_INTRUCAO|memROM~65_combout\ = ( \MEMORIA_INTRUCAO|memROM~63_combout\ & ( \MEMORIA_INTRUCAO|memROM~64_combout\ & ( (((\MEMORIA_INTRUCAO|memROM~51_combout\ & \MEMORIA_INTRUCAO|memROM~62_combout\)) # (\MEMORIA_INTRUCAO|memROM~24_combout\)) # 
+-- (\MEMORIA_INTRUCAO|memROM~58_combout\) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~63_combout\ & ( \MEMORIA_INTRUCAO|memROM~64_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~51_combout\ & \MEMORIA_INTRUCAO|memROM~62_combout\)) # (\MEMORIA_INTRUCAO|memROM~58_combout\) ) 
+-- ) ) # ( \MEMORIA_INTRUCAO|memROM~63_combout\ & ( !\MEMORIA_INTRUCAO|memROM~64_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~51_combout\ & \MEMORIA_INTRUCAO|memROM~62_combout\)) # (\MEMORIA_INTRUCAO|memROM~24_combout\) ) ) ) # ( 
+-- !\MEMORIA_INTRUCAO|memROM~63_combout\ & ( !\MEMORIA_INTRUCAO|memROM~64_combout\ & ( (\MEMORIA_INTRUCAO|memROM~51_combout\ & \MEMORIA_INTRUCAO|memROM~62_combout\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4765,18 +5303,18 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~29_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~59_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~60_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~62_combout\);
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~51_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~24_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~63_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~64_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~65_combout\);
 
 \MEMORIA_DADOS|ram~695\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~695_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~695_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4785,29 +5323,63 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~695_combout\);
 
-\MEMORIA_DADOS|ram~696\ : cyclonev_lcell_comb
+\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~696_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~695_combout\)))
+-- \CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~23_combout\ & ( (\MEMORIA_INTRUCAO|memROM~10_combout\ & (!\MEMORIA_INTRUCAO|memROM~13_combout\ & (!\MEMORIA_INTRUCAO|memROM~15_combout\ & !\MEMORIA_INTRUCAO|memROM~19_combout\))) ) 
+-- )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0000000000000000010000000000000000000000000000000100000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
+	combout => \CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\);
+
+\MEMORIA_DADOS|process_0~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_DADOS|process_0~0_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~67_combout\ & (!\MEMORIA_INTRUCAO|memROM~40_combout\ & !\MEMORIA_INTRUCAO|memROM~42_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100000000000000010000000000000001000000000000000100000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
 	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~695_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~40_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\,
+	combout => \MEMORIA_DADOS|process_0~0_combout\);
+
+\MEMORIA_DADOS|ram~696\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_DADOS|ram~696_combout\ = (\MEMORIA_DADOS|ram~695_combout\ & \MEMORIA_DADOS|process_0~0_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_DADOS|ALT_INV_ram~695_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
 	combout => \MEMORIA_DADOS|ram~696_combout\);
 
 \MEMORIA_DADOS|ram~19\ : dffeas
@@ -4826,8 +5398,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~699\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~699_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~699_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4836,29 +5408,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~699_combout\);
 
 \MEMORIA_DADOS|ram~700\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~700_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~699_combout\)))
+-- \MEMORIA_DADOS|ram~700_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~699_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~699_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~699_combout\,
 	combout => \MEMORIA_DADOS|ram~700_combout\);
 
 \MEMORIA_DADOS|ram~27\ : dffeas
@@ -4877,8 +5447,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~727\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~727_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~727_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4887,29 +5457,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~727_combout\);
 
 \MEMORIA_DADOS|ram~728\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~728_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~727_combout\)))
+-- \MEMORIA_DADOS|ram~728_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~727_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~727_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~727_combout\,
 	combout => \MEMORIA_DADOS|ram~728_combout\);
 
 \MEMORIA_DADOS|ram~51\ : dffeas
@@ -4928,8 +5496,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~731\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~731_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~731_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4938,29 +5506,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~731_combout\);
 
 \MEMORIA_DADOS|ram~732\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~732_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~731_combout\)))
+-- \MEMORIA_DADOS|ram~732_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~731_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~731_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~731_combout\,
 	combout => \MEMORIA_DADOS|ram~732_combout\);
 
 \MEMORIA_DADOS|ram~59\ : dffeas
@@ -4979,8 +5545,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~611\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~611_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~59_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~51_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~27_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~611_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~59_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~51_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~27_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~19_q\ ) ) )
 
 -- pragma translate_off
@@ -4994,14 +5560,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~27_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~51_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~59_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~611_combout\);
 
 \MEMORIA_DADOS|ram~703\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~703_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~703_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5010,29 +5576,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~703_combout\);
 
 \MEMORIA_DADOS|ram~704\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~704_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~703_combout\)))
+-- \MEMORIA_DADOS|ram~704_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~703_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~703_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~703_combout\,
 	combout => \MEMORIA_DADOS|ram~704_combout\);
 
 \MEMORIA_DADOS|ram~147\ : dffeas
@@ -5051,8 +5615,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~707\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~707_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~707_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5061,29 +5625,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~707_combout\);
 
 \MEMORIA_DADOS|ram~708\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~708_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~707_combout\)))
+-- \MEMORIA_DADOS|ram~708_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~707_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~707_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~707_combout\,
 	combout => \MEMORIA_DADOS|ram~708_combout\);
 
 \MEMORIA_DADOS|ram~155\ : dffeas
@@ -5102,8 +5664,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~735\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~735_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~735_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5112,29 +5674,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~735_combout\);
 
 \MEMORIA_DADOS|ram~736\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~736_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~735_combout\)))
+-- \MEMORIA_DADOS|ram~736_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~735_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~735_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~735_combout\,
 	combout => \MEMORIA_DADOS|ram~736_combout\);
 
 \MEMORIA_DADOS|ram~179\ : dffeas
@@ -5153,8 +5713,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~739\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~739_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~739_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5163,29 +5723,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~739_combout\);
 
 \MEMORIA_DADOS|ram~740\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~740_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~739_combout\)))
+-- \MEMORIA_DADOS|ram~740_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~739_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~739_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~739_combout\,
 	combout => \MEMORIA_DADOS|ram~740_combout\);
 
 \MEMORIA_DADOS|ram~187\ : dffeas
@@ -5204,8 +5762,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~612\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~612_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~187_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~179_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~155_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~612_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~187_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~179_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~155_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~147_q\ ) ) )
 
 -- pragma translate_off
@@ -5219,14 +5777,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~155_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~179_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~187_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~612_combout\);
 
 \MEMORIA_DADOS|ram~711\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~711_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~711_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5235,29 +5793,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~711_combout\);
 
 \MEMORIA_DADOS|ram~712\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~712_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~711_combout\)))
+-- \MEMORIA_DADOS|ram~712_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~711_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~711_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~711_combout\,
 	combout => \MEMORIA_DADOS|ram~712_combout\);
 
 \MEMORIA_DADOS|ram~83\ : dffeas
@@ -5276,8 +5832,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~715\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~715_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~715_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5286,29 +5842,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~715_combout\);
 
 \MEMORIA_DADOS|ram~716\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~716_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~715_combout\)))
+-- \MEMORIA_DADOS|ram~716_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~715_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~715_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~715_combout\,
 	combout => \MEMORIA_DADOS|ram~716_combout\);
 
 \MEMORIA_DADOS|ram~91\ : dffeas
@@ -5327,8 +5881,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~743\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~743_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~743_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5337,29 +5891,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~743_combout\);
 
 \MEMORIA_DADOS|ram~744\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~744_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~743_combout\)))
+-- \MEMORIA_DADOS|ram~744_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~743_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~743_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~743_combout\,
 	combout => \MEMORIA_DADOS|ram~744_combout\);
 
 \MEMORIA_DADOS|ram~115\ : dffeas
@@ -5378,8 +5930,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~747\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~747_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~747_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5388,29 +5940,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~747_combout\);
 
 \MEMORIA_DADOS|ram~748\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~748_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~747_combout\)))
+-- \MEMORIA_DADOS|ram~748_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~747_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~747_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~747_combout\,
 	combout => \MEMORIA_DADOS|ram~748_combout\);
 
 \MEMORIA_DADOS|ram~123\ : dffeas
@@ -5429,8 +5979,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~613\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~613_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~123_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~115_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~91_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~613_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~123_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~115_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~91_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~83_q\ ) ) )
 
 -- pragma translate_off
@@ -5444,14 +5994,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~91_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~115_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~123_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~613_combout\);
 
 \MEMORIA_DADOS|ram~719\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~719_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~719_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5460,29 +6010,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~719_combout\);
 
 \MEMORIA_DADOS|ram~720\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~720_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~719_combout\)))
+-- \MEMORIA_DADOS|ram~720_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~719_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~719_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~719_combout\,
 	combout => \MEMORIA_DADOS|ram~720_combout\);
 
 \MEMORIA_DADOS|ram~211\ : dffeas
@@ -5501,8 +6049,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~723\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~723_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~723_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5511,29 +6059,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~723_combout\);
 
 \MEMORIA_DADOS|ram~724\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~724_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~723_combout\)))
+-- \MEMORIA_DADOS|ram~724_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~723_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~723_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~723_combout\,
 	combout => \MEMORIA_DADOS|ram~724_combout\);
 
 \MEMORIA_DADOS|ram~219\ : dffeas
@@ -5552,8 +6098,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~751\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~751_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~751_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5562,29 +6108,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~751_combout\);
 
 \MEMORIA_DADOS|ram~752\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~752_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~751_combout\)))
+-- \MEMORIA_DADOS|ram~752_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~751_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~751_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~751_combout\,
 	combout => \MEMORIA_DADOS|ram~752_combout\);
 
 \MEMORIA_DADOS|ram~243\ : dffeas
@@ -5603,8 +6147,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~755\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~755_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~755_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5613,29 +6157,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~755_combout\);
 
 \MEMORIA_DADOS|ram~756\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~756_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~755_combout\)))
+-- \MEMORIA_DADOS|ram~756_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~755_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~755_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~755_combout\,
 	combout => \MEMORIA_DADOS|ram~756_combout\);
 
 \MEMORIA_DADOS|ram~251\ : dffeas
@@ -5654,8 +6196,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~614\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~614_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~251_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~243_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~219_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~614_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~251_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~243_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~219_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~211_q\ ) ) )
 
 -- pragma translate_off
@@ -5669,14 +6211,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~219_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~243_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~251_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~614_combout\);
 
 \MEMORIA_DADOS|ram~615\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~615_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~614_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~613_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~612_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~615_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~614_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~613_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~612_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~611_combout\ ) ) )
 
 -- pragma translate_off
@@ -5690,14 +6232,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~612_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~613_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~614_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~615_combout\);
 
 \MEMORIA_DADOS|ram~697\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~697_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~697_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5706,29 +6248,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~697_combout\);
 
 \MEMORIA_DADOS|ram~698\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~698_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~697_combout\)))
+-- \MEMORIA_DADOS|ram~698_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~697_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~697_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~697_combout\,
 	combout => \MEMORIA_DADOS|ram~698_combout\);
 
 \MEMORIA_DADOS|ram~275\ : dffeas
@@ -5747,8 +6287,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~701\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~701_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~701_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5757,29 +6297,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~701_combout\);
 
 \MEMORIA_DADOS|ram~702\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~702_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~701_combout\)))
+-- \MEMORIA_DADOS|ram~702_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~701_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~701_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~701_combout\,
 	combout => \MEMORIA_DADOS|ram~702_combout\);
 
 \MEMORIA_DADOS|ram~283\ : dffeas
@@ -5798,8 +6336,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~713\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~713_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~713_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5808,29 +6346,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~713_combout\);
 
 \MEMORIA_DADOS|ram~714\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~714_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~713_combout\)))
+-- \MEMORIA_DADOS|ram~714_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~713_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~713_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~713_combout\,
 	combout => \MEMORIA_DADOS|ram~714_combout\);
 
 \MEMORIA_DADOS|ram~339\ : dffeas
@@ -5849,8 +6385,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~717\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~717_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~717_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5859,29 +6395,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~717_combout\);
 
 \MEMORIA_DADOS|ram~718\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~718_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~717_combout\)))
+-- \MEMORIA_DADOS|ram~718_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~717_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~717_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~717_combout\,
 	combout => \MEMORIA_DADOS|ram~718_combout\);
 
 \MEMORIA_DADOS|ram~347\ : dffeas
@@ -5900,8 +6434,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~616\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~616_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~347_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~339_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~283_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~616_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~347_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~339_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~283_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~275_q\ ) ) )
 
 -- pragma translate_off
@@ -5915,14 +6449,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~283_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~339_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~347_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~616_combout\);
 
 \MEMORIA_DADOS|ram~729\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~729_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~729_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5931,29 +6465,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~729_combout\);
 
 \MEMORIA_DADOS|ram~730\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~730_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~729_combout\)))
+-- \MEMORIA_DADOS|ram~730_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~729_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~729_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~729_combout\,
 	combout => \MEMORIA_DADOS|ram~730_combout\);
 
 \MEMORIA_DADOS|ram~307\ : dffeas
@@ -5972,8 +6504,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~733\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~733_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~733_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -5982,29 +6514,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~733_combout\);
 
 \MEMORIA_DADOS|ram~734\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~734_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~733_combout\)))
+-- \MEMORIA_DADOS|ram~734_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~733_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~733_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~733_combout\,
 	combout => \MEMORIA_DADOS|ram~734_combout\);
 
 \MEMORIA_DADOS|ram~315\ : dffeas
@@ -6023,8 +6553,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~745\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~745_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~745_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6033,29 +6563,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~745_combout\);
 
 \MEMORIA_DADOS|ram~746\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~746_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~745_combout\)))
+-- \MEMORIA_DADOS|ram~746_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~745_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~745_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~745_combout\,
 	combout => \MEMORIA_DADOS|ram~746_combout\);
 
 \MEMORIA_DADOS|ram~371\ : dffeas
@@ -6074,8 +6602,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~749\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~749_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~749_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6084,29 +6612,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~749_combout\);
 
 \MEMORIA_DADOS|ram~750\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~750_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~749_combout\)))
+-- \MEMORIA_DADOS|ram~750_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~749_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~749_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~749_combout\,
 	combout => \MEMORIA_DADOS|ram~750_combout\);
 
 \MEMORIA_DADOS|ram~379\ : dffeas
@@ -6125,8 +6651,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~617\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~617_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~379_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~371_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~315_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~617_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~379_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~371_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~315_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~307_q\ ) ) )
 
 -- pragma translate_off
@@ -6140,14 +6666,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~315_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~371_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~379_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~617_combout\);
 
 \MEMORIA_DADOS|ram~705\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~705_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~705_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6156,29 +6682,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~705_combout\);
 
 \MEMORIA_DADOS|ram~706\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~706_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~705_combout\)))
+-- \MEMORIA_DADOS|ram~706_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~705_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~705_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~705_combout\,
 	combout => \MEMORIA_DADOS|ram~706_combout\);
 
 \MEMORIA_DADOS|ram~403\ : dffeas
@@ -6197,8 +6721,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~709\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~709_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~709_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6207,29 +6731,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~709_combout\);
 
 \MEMORIA_DADOS|ram~710\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~710_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~709_combout\)))
+-- \MEMORIA_DADOS|ram~710_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~709_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~709_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~709_combout\,
 	combout => \MEMORIA_DADOS|ram~710_combout\);
 
 \MEMORIA_DADOS|ram~411\ : dffeas
@@ -6248,8 +6770,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~721\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~721_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~721_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6258,29 +6780,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~721_combout\);
 
 \MEMORIA_DADOS|ram~722\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~722_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~721_combout\)))
+-- \MEMORIA_DADOS|ram~722_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~721_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~721_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~721_combout\,
 	combout => \MEMORIA_DADOS|ram~722_combout\);
 
 \MEMORIA_DADOS|ram~467\ : dffeas
@@ -6299,8 +6819,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~725\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~725_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~725_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6309,29 +6829,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~725_combout\);
 
 \MEMORIA_DADOS|ram~726\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~726_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~725_combout\)))
+-- \MEMORIA_DADOS|ram~726_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~725_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~725_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~725_combout\,
 	combout => \MEMORIA_DADOS|ram~726_combout\);
 
 \MEMORIA_DADOS|ram~475\ : dffeas
@@ -6350,8 +6868,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~618\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~618_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~475_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~467_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~411_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~618_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~475_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~467_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~411_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~403_q\ ) ) )
 
 -- pragma translate_off
@@ -6365,14 +6883,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~411_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~467_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~475_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~618_combout\);
 
 \MEMORIA_DADOS|ram~737\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~737_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~737_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6381,29 +6899,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~737_combout\);
 
 \MEMORIA_DADOS|ram~738\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~738_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~737_combout\)))
+-- \MEMORIA_DADOS|ram~738_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~737_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~737_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~737_combout\,
 	combout => \MEMORIA_DADOS|ram~738_combout\);
 
 \MEMORIA_DADOS|ram~435\ : dffeas
@@ -6422,8 +6938,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~741\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~741_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~741_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6432,29 +6948,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~741_combout\);
 
 \MEMORIA_DADOS|ram~742\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~742_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~741_combout\)))
+-- \MEMORIA_DADOS|ram~742_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~741_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~741_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~741_combout\,
 	combout => \MEMORIA_DADOS|ram~742_combout\);
 
 \MEMORIA_DADOS|ram~443\ : dffeas
@@ -6473,8 +6987,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~753\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~753_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~753_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6483,29 +6997,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~753_combout\);
 
 \MEMORIA_DADOS|ram~754\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~754_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~753_combout\)))
+-- \MEMORIA_DADOS|ram~754_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~753_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~753_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~753_combout\,
 	combout => \MEMORIA_DADOS|ram~754_combout\);
 
 \MEMORIA_DADOS|ram~499\ : dffeas
@@ -6524,8 +7036,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~757\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~757_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~757_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6534,29 +7046,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~757_combout\);
 
 \MEMORIA_DADOS|ram~758\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~758_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~757_combout\)))
+-- \MEMORIA_DADOS|ram~758_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~757_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~757_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~757_combout\,
 	combout => \MEMORIA_DADOS|ram~758_combout\);
 
 \MEMORIA_DADOS|ram~507\ : dffeas
@@ -6575,8 +7085,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~619\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~619_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~507_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~499_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~443_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~619_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~507_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~499_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~443_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~435_q\ ) ) )
 
 -- pragma translate_off
@@ -6590,14 +7100,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~443_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~499_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~507_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~619_combout\);
 
 \MEMORIA_DADOS|ram~620\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~620_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~619_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~618_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~617_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~620_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~619_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~618_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~617_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~616_combout\ ) ) )
 
 -- pragma translate_off
@@ -6611,14 +7121,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~617_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~618_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~619_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~620_combout\);
 
 \MEMORIA_DADOS|ram~759\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~759_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~759_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6627,29 +7137,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~759_combout\);
 
 \MEMORIA_DADOS|ram~760\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~760_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~759_combout\)))
+-- \MEMORIA_DADOS|ram~760_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~759_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~759_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~759_combout\,
 	combout => \MEMORIA_DADOS|ram~760_combout\);
 
 \MEMORIA_DADOS|ram~35\ : dffeas
@@ -6668,8 +7176,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~763\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~763_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~763_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6678,29 +7186,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~763_combout\);
 
 \MEMORIA_DADOS|ram~764\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~764_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~763_combout\)))
+-- \MEMORIA_DADOS|ram~764_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~763_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~763_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~763_combout\,
 	combout => \MEMORIA_DADOS|ram~764_combout\);
 
 \MEMORIA_DADOS|ram~43\ : dffeas
@@ -6719,8 +7225,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~767\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~767_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~767_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6729,29 +7235,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~767_combout\);
 
 \MEMORIA_DADOS|ram~768\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~768_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~767_combout\)))
+-- \MEMORIA_DADOS|ram~768_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~767_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~767_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~767_combout\,
 	combout => \MEMORIA_DADOS|ram~768_combout\);
 
 \MEMORIA_DADOS|ram~163\ : dffeas
@@ -6770,8 +7274,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~771\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~771_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~771_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6780,29 +7284,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~771_combout\);
 
 \MEMORIA_DADOS|ram~772\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~772_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~771_combout\)))
+-- \MEMORIA_DADOS|ram~772_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~771_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~771_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~771_combout\,
 	combout => \MEMORIA_DADOS|ram~772_combout\);
 
 \MEMORIA_DADOS|ram~171\ : dffeas
@@ -6821,8 +7323,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~621\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~621_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~171_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~163_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~43_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~621_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~171_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~163_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~43_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~35_q\ ) ) )
 
 -- pragma translate_off
@@ -6836,14 +7338,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~43_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~163_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~171_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~621_combout\);
 
 \MEMORIA_DADOS|ram~791\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~791_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~791_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6852,29 +7354,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~791_combout\);
 
 \MEMORIA_DADOS|ram~792\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~792_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~791_combout\)))
+-- \MEMORIA_DADOS|ram~792_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~791_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~791_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~791_combout\,
 	combout => \MEMORIA_DADOS|ram~792_combout\);
 
 \MEMORIA_DADOS|ram~67\ : dffeas
@@ -6893,8 +7393,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~799\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~799_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~799_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6903,29 +7403,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~799_combout\);
 
 \MEMORIA_DADOS|ram~800\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~800_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~799_combout\)))
+-- \MEMORIA_DADOS|ram~800_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~799_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~799_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~799_combout\,
 	combout => \MEMORIA_DADOS|ram~800_combout\);
 
 \MEMORIA_DADOS|ram~75\ : dffeas
@@ -6944,8 +7442,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~795\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~795_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~795_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6954,29 +7452,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~795_combout\);
 
 \MEMORIA_DADOS|ram~796\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~796_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~795_combout\)))
+-- \MEMORIA_DADOS|ram~796_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~795_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~795_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~795_combout\,
 	combout => \MEMORIA_DADOS|ram~796_combout\);
 
 \MEMORIA_DADOS|ram~195\ : dffeas
@@ -6995,8 +7491,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~803\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~803_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~803_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7005,29 +7501,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~803_combout\);
 
 \MEMORIA_DADOS|ram~804\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~804_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~803_combout\)))
+-- \MEMORIA_DADOS|ram~804_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~803_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~803_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~803_combout\,
 	combout => \MEMORIA_DADOS|ram~804_combout\);
 
 \MEMORIA_DADOS|ram~203\ : dffeas
@@ -7046,8 +7540,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~622\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~622_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~203_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~195_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~75_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~622_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~203_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~195_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~75_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~67_q\ ) ) )
 
 -- pragma translate_off
@@ -7061,14 +7555,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~75_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~195_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~203_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~622_combout\);
 
 \MEMORIA_DADOS|ram~775\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~775_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~775_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7077,29 +7571,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~775_combout\);
 
 \MEMORIA_DADOS|ram~776\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~776_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~775_combout\)))
+-- \MEMORIA_DADOS|ram~776_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~775_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~775_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~775_combout\,
 	combout => \MEMORIA_DADOS|ram~776_combout\);
 
 \MEMORIA_DADOS|ram~99\ : dffeas
@@ -7118,8 +7610,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~779\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~779_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~779_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7128,29 +7620,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~779_combout\);
 
 \MEMORIA_DADOS|ram~780\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~780_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~779_combout\)))
+-- \MEMORIA_DADOS|ram~780_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~779_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~779_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~779_combout\,
 	combout => \MEMORIA_DADOS|ram~780_combout\);
 
 \MEMORIA_DADOS|ram~107\ : dffeas
@@ -7169,8 +7659,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~783\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~783_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~783_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7179,29 +7669,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~783_combout\);
 
 \MEMORIA_DADOS|ram~784\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~784_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~783_combout\)))
+-- \MEMORIA_DADOS|ram~784_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~783_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~783_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~783_combout\,
 	combout => \MEMORIA_DADOS|ram~784_combout\);
 
 \MEMORIA_DADOS|ram~227\ : dffeas
@@ -7220,8 +7708,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~787\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~787_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~787_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7230,29 +7718,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~787_combout\);
 
 \MEMORIA_DADOS|ram~788\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~788_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~787_combout\)))
+-- \MEMORIA_DADOS|ram~788_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~787_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~787_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~787_combout\,
 	combout => \MEMORIA_DADOS|ram~788_combout\);
 
 \MEMORIA_DADOS|ram~235\ : dffeas
@@ -7271,8 +7757,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~623\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~623_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~235_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~227_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~107_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~623_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~235_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~227_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~107_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~99_q\ ) ) )
 
 -- pragma translate_off
@@ -7286,14 +7772,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~107_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~227_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~235_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~623_combout\);
 
 \MEMORIA_DADOS|ram~807\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~807_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~807_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7302,29 +7788,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~807_combout\);
 
 \MEMORIA_DADOS|ram~808\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~808_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~807_combout\)))
+-- \MEMORIA_DADOS|ram~808_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~807_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~807_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~807_combout\,
 	combout => \MEMORIA_DADOS|ram~808_combout\);
 
 \MEMORIA_DADOS|ram~131\ : dffeas
@@ -7343,8 +7827,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~815\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~815_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~815_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7353,29 +7837,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~815_combout\);
 
 \MEMORIA_DADOS|ram~816\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~816_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~815_combout\)))
+-- \MEMORIA_DADOS|ram~816_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~815_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~815_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~815_combout\,
 	combout => \MEMORIA_DADOS|ram~816_combout\);
 
 \MEMORIA_DADOS|ram~139\ : dffeas
@@ -7394,8 +7876,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~811\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~811_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~811_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7404,29 +7886,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~811_combout\);
 
 \MEMORIA_DADOS|ram~812\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~812_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~811_combout\)))
+-- \MEMORIA_DADOS|ram~812_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~811_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~811_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~811_combout\,
 	combout => \MEMORIA_DADOS|ram~812_combout\);
 
 \MEMORIA_DADOS|ram~259\ : dffeas
@@ -7445,8 +7925,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~819\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~819_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~819_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7455,29 +7935,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~819_combout\);
 
 \MEMORIA_DADOS|ram~820\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~820_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~819_combout\)))
+-- \MEMORIA_DADOS|ram~820_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~819_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~819_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~819_combout\,
 	combout => \MEMORIA_DADOS|ram~820_combout\);
 
 \MEMORIA_DADOS|ram~267\ : dffeas
@@ -7496,8 +7974,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~624\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~624_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~267_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~259_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~139_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~624_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~267_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~259_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~139_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~131_q\ ) ) )
 
 -- pragma translate_off
@@ -7511,14 +7989,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~139_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~259_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~267_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~624_combout\);
 
 \MEMORIA_DADOS|ram~625\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~625_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~624_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~623_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~622_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~625_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~624_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~623_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~622_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~621_combout\ ) ) )
 
 -- pragma translate_off
@@ -7532,14 +8010,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~622_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~623_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~624_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~625_combout\);
 
 \MEMORIA_DADOS|ram~761\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~761_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~761_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7548,29 +8026,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~761_combout\);
 
 \MEMORIA_DADOS|ram~762\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~762_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~761_combout\)))
+-- \MEMORIA_DADOS|ram~762_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~761_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~761_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~761_combout\,
 	combout => \MEMORIA_DADOS|ram~762_combout\);
 
 \MEMORIA_DADOS|ram~291\ : dffeas
@@ -7589,8 +8065,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~765\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~765_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~765_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7599,29 +8075,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~765_combout\);
 
 \MEMORIA_DADOS|ram~766\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~766_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~765_combout\)))
+-- \MEMORIA_DADOS|ram~766_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~765_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~765_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~765_combout\,
 	combout => \MEMORIA_DADOS|ram~766_combout\);
 
 \MEMORIA_DADOS|ram~299\ : dffeas
@@ -7640,8 +8114,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~793\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~793_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~793_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7650,29 +8124,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~793_combout\);
 
 \MEMORIA_DADOS|ram~794\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~794_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~793_combout\)))
+-- \MEMORIA_DADOS|ram~794_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~793_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~793_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~793_combout\,
 	combout => \MEMORIA_DADOS|ram~794_combout\);
 
 \MEMORIA_DADOS|ram~323\ : dffeas
@@ -7691,8 +8163,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~801\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~801_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~801_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7701,29 +8173,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~801_combout\);
 
 \MEMORIA_DADOS|ram~802\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~802_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~801_combout\)))
+-- \MEMORIA_DADOS|ram~802_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~801_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~801_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~801_combout\,
 	combout => \MEMORIA_DADOS|ram~802_combout\);
 
 \MEMORIA_DADOS|ram~331\ : dffeas
@@ -7742,8 +8212,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~626\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~626_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~331_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~323_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~299_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~626_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~331_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~323_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~299_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~291_q\ ) ) )
 
 -- pragma translate_off
@@ -7757,14 +8227,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~299_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~323_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~331_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~626_combout\);
 
 \MEMORIA_DADOS|ram~769\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~769_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~769_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7773,29 +8243,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~769_combout\);
 
 \MEMORIA_DADOS|ram~770\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~770_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~769_combout\)))
+-- \MEMORIA_DADOS|ram~770_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~769_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~769_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~769_combout\,
 	combout => \MEMORIA_DADOS|ram~770_combout\);
 
 \MEMORIA_DADOS|ram~419\ : dffeas
@@ -7814,8 +8282,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~773\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~773_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~773_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7824,29 +8292,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~773_combout\);
 
 \MEMORIA_DADOS|ram~774\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~774_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~773_combout\)))
+-- \MEMORIA_DADOS|ram~774_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~773_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~773_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~773_combout\,
 	combout => \MEMORIA_DADOS|ram~774_combout\);
 
 \MEMORIA_DADOS|ram~427\ : dffeas
@@ -7865,8 +8331,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~797\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~797_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~797_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7875,29 +8341,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~797_combout\);
 
 \MEMORIA_DADOS|ram~798\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~798_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~797_combout\)))
+-- \MEMORIA_DADOS|ram~798_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~797_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~797_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~797_combout\,
 	combout => \MEMORIA_DADOS|ram~798_combout\);
 
 \MEMORIA_DADOS|ram~451\ : dffeas
@@ -7916,8 +8380,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~805\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~805_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- !\MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~805_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- !\MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7926,29 +8390,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~805_combout\);
 
 \MEMORIA_DADOS|ram~806\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~806_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~805_combout\)))
+-- \MEMORIA_DADOS|ram~806_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~805_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~805_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~805_combout\,
 	combout => \MEMORIA_DADOS|ram~806_combout\);
 
 \MEMORIA_DADOS|ram~459\ : dffeas
@@ -7967,8 +8429,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~627\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~627_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~459_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~451_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~427_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~627_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~459_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~451_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~427_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~419_q\ ) ) )
 
 -- pragma translate_off
@@ -7982,14 +8444,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~427_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~451_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~459_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~627_combout\);
 
 \MEMORIA_DADOS|ram~777\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~777_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~777_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7998,29 +8460,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~777_combout\);
 
 \MEMORIA_DADOS|ram~778\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~778_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~777_combout\)))
+-- \MEMORIA_DADOS|ram~778_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~777_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~777_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~777_combout\,
 	combout => \MEMORIA_DADOS|ram~778_combout\);
 
 \MEMORIA_DADOS|ram~355\ : dffeas
@@ -8039,8 +8499,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~781\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~781_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~781_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -8049,29 +8509,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~781_combout\);
 
 \MEMORIA_DADOS|ram~782\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~782_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~781_combout\)))
+-- \MEMORIA_DADOS|ram~782_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~781_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~781_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~781_combout\,
 	combout => \MEMORIA_DADOS|ram~782_combout\);
 
 \MEMORIA_DADOS|ram~363\ : dffeas
@@ -8090,8 +8548,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~809\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~809_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~809_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -8100,29 +8558,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~809_combout\);
 
 \MEMORIA_DADOS|ram~810\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~810_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~809_combout\)))
+-- \MEMORIA_DADOS|ram~810_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~809_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~809_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~809_combout\,
 	combout => \MEMORIA_DADOS|ram~810_combout\);
 
 \MEMORIA_DADOS|ram~387\ : dffeas
@@ -8141,8 +8597,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~817\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~817_combout\ = ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~817_combout\ = ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -8151,29 +8607,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~817_combout\);
 
 \MEMORIA_DADOS|ram~818\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~818_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~817_combout\)))
+-- \MEMORIA_DADOS|ram~818_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~817_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~817_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~817_combout\,
 	combout => \MEMORIA_DADOS|ram~818_combout\);
 
 \MEMORIA_DADOS|ram~395\ : dffeas
@@ -8192,8 +8646,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~628\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~628_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~395_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~387_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~363_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~628_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~395_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~387_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~363_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~355_q\ ) ) )
 
 -- pragma translate_off
@@ -8207,14 +8661,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~363_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~387_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~395_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~628_combout\);
 
 \MEMORIA_DADOS|ram~785\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~785_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~785_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -8223,29 +8677,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~785_combout\);
 
 \MEMORIA_DADOS|ram~786\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~786_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~785_combout\)))
+-- \MEMORIA_DADOS|ram~786_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~785_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~785_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~785_combout\,
 	combout => \MEMORIA_DADOS|ram~786_combout\);
 
 \MEMORIA_DADOS|ram~483\ : dffeas
@@ -8264,8 +8716,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~789\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~789_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~789_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -8274,29 +8726,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~789_combout\);
 
 \MEMORIA_DADOS|ram~790\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~790_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~789_combout\)))
+-- \MEMORIA_DADOS|ram~790_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~789_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~789_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~789_combout\,
 	combout => \MEMORIA_DADOS|ram~790_combout\);
 
 \MEMORIA_DADOS|ram~491\ : dffeas
@@ -8315,8 +8765,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~813\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~813_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~813_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -8325,29 +8775,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~813_combout\);
 
 \MEMORIA_DADOS|ram~814\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~814_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~813_combout\)))
+-- \MEMORIA_DADOS|ram~814_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~813_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~813_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~813_combout\,
 	combout => \MEMORIA_DADOS|ram~814_combout\);
 
 \MEMORIA_DADOS|ram~515\ : dffeas
@@ -8366,8 +8814,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~821\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~821_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & 
--- \MEMORIA_INTRUCAO|memROM~62_combout\))) ) ) )
+-- \MEMORIA_DADOS|ram~821_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -8376,29 +8824,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~821_combout\);
 
 \MEMORIA_DADOS|ram~822\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~822_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\DECODIFICADOR_3X8_6a8|Equal4~0_combout\ & \MEMORIA_DADOS|ram~821_combout\)))
+-- \MEMORIA_DADOS|ram~822_combout\ = (\MEMORIA_DADOS|process_0~0_combout\ & \MEMORIA_DADOS|ram~821_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datac => \DECODIFICADOR_3X8_6a8|ALT_INV_Equal4~0_combout\,
-	datad => \MEMORIA_DADOS|ALT_INV_ram~821_combout\,
+	dataa => \MEMORIA_DADOS|ALT_INV_process_0~0_combout\,
+	datab => \MEMORIA_DADOS|ALT_INV_ram~821_combout\,
 	combout => \MEMORIA_DADOS|ram~822_combout\);
 
 \MEMORIA_DADOS|ram~523\ : dffeas
@@ -8417,8 +8863,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~629\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~629_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~523_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~515_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~491_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~629_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~523_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~515_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~491_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~483_q\ ) ) )
 
 -- pragma translate_off
@@ -8432,14 +8878,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~491_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~515_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~523_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~629_combout\);
 
 \MEMORIA_DADOS|ram~630\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~630_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~629_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~628_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~627_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~630_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~629_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~628_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~627_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~626_combout\ ) ) )
 
 -- pragma translate_off
@@ -8453,14 +8899,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~627_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~628_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~629_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~630_combout\);
 
 \MEMORIA_DADOS|ram~631\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~631_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~630_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~625_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~620_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~631_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~630_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~625_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~620_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~615_combout\ ) ) )
 
 -- pragma translate_off
@@ -8474,8 +8920,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~620_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~625_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~630_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~631_combout\);
 
 \SW[4]~input\ : cyclonev_io_ibuf
@@ -8562,8 +9008,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~590\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~590_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~42_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~34_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~26_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~590_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~42_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~34_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~26_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~18_q\ ) ) )
 
 -- pragma translate_off
@@ -8577,8 +9023,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~26_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~34_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~42_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~590_combout\);
 
 \MEMORIA_DADOS|ram~146\ : dffeas
@@ -8639,8 +9085,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~591\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~591_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~170_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~162_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~154_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~591_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~170_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~162_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~154_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~146_q\ ) ) )
 
 -- pragma translate_off
@@ -8654,8 +9100,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~154_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~162_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~170_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~591_combout\);
 
 \MEMORIA_DADOS|ram~82\ : dffeas
@@ -8716,8 +9162,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~592\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~592_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~106_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~98_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~90_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~592_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~106_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~98_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~90_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~82_q\ ) ) )
 
 -- pragma translate_off
@@ -8731,8 +9177,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~90_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~98_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~106_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~592_combout\);
 
 \MEMORIA_DADOS|ram~210\ : dffeas
@@ -8793,8 +9239,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~593\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~593_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~234_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~226_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~218_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~593_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~234_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~226_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~218_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~210_q\ ) ) )
 
 -- pragma translate_off
@@ -8808,14 +9254,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~218_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~226_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~234_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~593_combout\);
 
 \MEMORIA_DADOS|ram~594\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~594_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~593_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~592_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~591_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~594_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~593_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~592_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~591_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~590_combout\ ) ) )
 
 -- pragma translate_off
@@ -8829,8 +9275,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~591_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~592_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~593_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~594_combout\);
 
 \MEMORIA_DADOS|ram~274\ : dffeas
@@ -8891,8 +9337,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~595\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~595_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~418_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~290_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~402_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~595_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~418_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~290_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~402_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~274_q\ ) ) )
 
 -- pragma translate_off
@@ -8906,8 +9352,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~402_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~290_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~418_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~595_combout\);
 
 \MEMORIA_DADOS|ram~282\ : dffeas
@@ -8968,8 +9414,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~596\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~596_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~426_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~298_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~410_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~596_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~426_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~298_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~410_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~282_q\ ) ) )
 
 -- pragma translate_off
@@ -8983,8 +9429,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~410_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~298_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~426_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~596_combout\);
 
 \MEMORIA_DADOS|ram~338\ : dffeas
@@ -9045,8 +9491,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~597\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~597_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~482_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~354_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~466_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~597_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~482_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~354_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~466_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~338_q\ ) ) )
 
 -- pragma translate_off
@@ -9060,8 +9506,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~466_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~354_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~482_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~597_combout\);
 
 \MEMORIA_DADOS|ram~346\ : dffeas
@@ -9122,8 +9568,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~598\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~598_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~490_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~362_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~474_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~598_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~490_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~362_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~474_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~346_q\ ) ) )
 
 -- pragma translate_off
@@ -9137,14 +9583,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~474_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~362_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~490_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~598_combout\);
 
 \MEMORIA_DADOS|ram~599\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~599_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~598_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~597_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~596_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~599_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~598_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~597_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~596_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~595_combout\ ) ) )
 
 -- pragma translate_off
@@ -9158,8 +9604,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~596_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~597_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~598_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~599_combout\);
 
 \MEMORIA_DADOS|ram~50\ : dffeas
@@ -9220,8 +9666,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~600\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~600_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~130_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~114_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~66_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~600_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~130_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~114_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~66_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~50_q\ ) ) )
 
 -- pragma translate_off
@@ -9235,8 +9681,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~66_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~114_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~130_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~600_combout\);
 
 \MEMORIA_DADOS|ram~58\ : dffeas
@@ -9297,8 +9743,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~601\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~601_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~138_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~122_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~74_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~601_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~138_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~122_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~74_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~58_q\ ) ) )
 
 -- pragma translate_off
@@ -9312,8 +9758,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~74_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~122_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~138_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~601_combout\);
 
 \MEMORIA_DADOS|ram~178\ : dffeas
@@ -9374,8 +9820,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~602\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~602_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~258_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~242_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~194_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~602_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~258_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~242_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~194_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~178_q\ ) ) )
 
 -- pragma translate_off
@@ -9389,8 +9835,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~194_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~242_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~258_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~602_combout\);
 
 \MEMORIA_DADOS|ram~186\ : dffeas
@@ -9451,8 +9897,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~603\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~603_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~266_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~250_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~202_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~603_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~266_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~250_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~202_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~186_q\ ) ) )
 
 -- pragma translate_off
@@ -9466,14 +9912,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~202_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~250_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~266_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~603_combout\);
 
 \MEMORIA_DADOS|ram~604\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~604_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~603_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~602_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~601_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~604_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~603_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~602_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~601_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~600_combout\ ) ) )
 
 -- pragma translate_off
@@ -9487,8 +9933,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~601_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~602_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~603_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~604_combout\);
 
 \MEMORIA_DADOS|ram~306\ : dffeas
@@ -9549,8 +9995,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~605\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~605_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~330_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~322_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~314_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~605_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~330_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~322_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~314_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~306_q\ ) ) )
 
 -- pragma translate_off
@@ -9564,8 +10010,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~314_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~322_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~330_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~605_combout\);
 
 \MEMORIA_DADOS|ram~434\ : dffeas
@@ -9626,8 +10072,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~606\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~606_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~458_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~450_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~442_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~606_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~458_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~450_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~442_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~434_q\ ) ) )
 
 -- pragma translate_off
@@ -9641,8 +10087,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~442_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~450_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~458_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~606_combout\);
 
 \MEMORIA_DADOS|ram~370\ : dffeas
@@ -9703,8 +10149,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~607\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~607_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~394_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~386_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~378_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~607_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~394_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~386_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~378_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~370_q\ ) ) )
 
 -- pragma translate_off
@@ -9718,8 +10164,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~378_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~386_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~394_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~607_combout\);
 
 \MEMORIA_DADOS|ram~498\ : dffeas
@@ -9780,8 +10226,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~608\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~608_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~522_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~514_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~506_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~608_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~522_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~514_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~506_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~498_q\ ) ) )
 
 -- pragma translate_off
@@ -9795,14 +10241,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~506_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~514_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~522_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~608_combout\);
 
 \MEMORIA_DADOS|ram~609\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~609_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~608_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~607_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~606_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~609_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~608_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~607_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~606_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~605_combout\ ) ) )
 
 -- pragma translate_off
@@ -9816,14 +10262,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~606_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~607_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~608_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~609_combout\);
 
 \MEMORIA_DADOS|ram~610\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~610_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~609_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~604_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~599_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~610_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~609_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~604_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~599_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~594_combout\ ) ) )
 
 -- pragma translate_off
@@ -9837,8 +10283,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~599_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~604_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~609_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~610_combout\);
 
 \SW[3]~input\ : cyclonev_io_ibuf
@@ -9925,8 +10371,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~569\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~569_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~113_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~81_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~49_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~569_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~113_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~81_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~49_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~17_q\ ) ) )
 
 -- pragma translate_off
@@ -9940,8 +10386,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~49_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~81_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~113_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~569_combout\);
 
 \MEMORIA_DADOS|ram~145\ : dffeas
@@ -10002,8 +10448,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~570\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~570_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~241_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~209_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~177_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~570_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~241_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~209_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~177_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~145_q\ ) ) )
 
 -- pragma translate_off
@@ -10017,8 +10463,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~177_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~209_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~241_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~570_combout\);
 
 \MEMORIA_DADOS|ram~33\ : dffeas
@@ -10079,8 +10525,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~571\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~571_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~129_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~97_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~65_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~571_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~129_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~97_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~65_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~33_q\ ) ) )
 
 -- pragma translate_off
@@ -10094,8 +10540,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~65_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~97_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~129_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~571_combout\);
 
 \MEMORIA_DADOS|ram~161\ : dffeas
@@ -10156,8 +10602,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~572\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~572_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~257_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~225_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~193_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~572_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~257_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~225_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~193_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~161_q\ ) ) )
 
 -- pragma translate_off
@@ -10171,14 +10617,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~193_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~225_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~257_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~572_combout\);
 
 \MEMORIA_DADOS|ram~573\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~573_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~572_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~571_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~570_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~573_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~572_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~571_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~570_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~569_combout\ ) ) )
 
 -- pragma translate_off
@@ -10192,8 +10638,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~570_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~571_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~572_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~573_combout\);
 
 \MEMORIA_DADOS|ram~273\ : dffeas
@@ -10254,8 +10700,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~574\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~574_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~433_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~401_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~305_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~574_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~433_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~401_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~305_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~273_q\ ) ) )
 
 -- pragma translate_off
@@ -10269,8 +10715,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~305_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~401_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~433_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~574_combout\);
 
 \MEMORIA_DADOS|ram~289\ : dffeas
@@ -10331,8 +10777,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~575\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~575_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~449_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~417_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~321_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~575_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~449_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~417_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~321_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~289_q\ ) ) )
 
 -- pragma translate_off
@@ -10346,8 +10792,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~321_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~417_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~449_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~575_combout\);
 
 \MEMORIA_DADOS|ram~337\ : dffeas
@@ -10408,8 +10854,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~576\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~576_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~497_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~465_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~369_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~576_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~497_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~465_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~369_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~337_q\ ) ) )
 
 -- pragma translate_off
@@ -10423,8 +10869,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~369_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~465_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~497_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~576_combout\);
 
 \MEMORIA_DADOS|ram~353\ : dffeas
@@ -10485,8 +10931,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~577\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~577_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~513_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~481_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~385_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~577_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~513_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~481_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~385_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~353_q\ ) ) )
 
 -- pragma translate_off
@@ -10500,14 +10946,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~385_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~481_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~513_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~577_combout\);
 
 \MEMORIA_DADOS|ram~578\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~578_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~577_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~576_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~575_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~578_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~577_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~576_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~575_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~574_combout\ ) ) )
 
 -- pragma translate_off
@@ -10521,8 +10967,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~575_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~576_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~577_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~578_combout\);
 
 \MEMORIA_DADOS|ram~25\ : dffeas
@@ -10583,8 +11029,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~579\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~579_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~73_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~41_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~57_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~579_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~73_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~41_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~57_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~25_q\ ) ) )
 
 -- pragma translate_off
@@ -10598,8 +11044,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~57_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~41_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~73_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~579_combout\);
 
 \MEMORIA_DADOS|ram~153\ : dffeas
@@ -10660,8 +11106,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~580\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~580_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~201_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~169_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~185_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~580_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~201_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~169_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~185_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~153_q\ ) ) )
 
 -- pragma translate_off
@@ -10675,8 +11121,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~185_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~169_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~201_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~580_combout\);
 
 \MEMORIA_DADOS|ram~89\ : dffeas
@@ -10737,8 +11183,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~581\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~581_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~137_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~105_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~121_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~581_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~137_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~105_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~121_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~89_q\ ) ) )
 
 -- pragma translate_off
@@ -10752,8 +11198,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~121_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~105_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~137_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~581_combout\);
 
 \MEMORIA_DADOS|ram~217\ : dffeas
@@ -10814,8 +11260,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~582\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~582_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~265_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~233_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~249_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~582_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~265_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~233_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~249_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~217_q\ ) ) )
 
 -- pragma translate_off
@@ -10829,14 +11275,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~249_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~233_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~265_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~582_combout\);
 
 \MEMORIA_DADOS|ram~583\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~583_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~582_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~581_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~580_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~583_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~582_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~581_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~580_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~579_combout\ ) ) )
 
 -- pragma translate_off
@@ -10850,8 +11296,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~580_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~581_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~582_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~583_combout\);
 
 \MEMORIA_DADOS|ram~281\ : dffeas
@@ -10912,8 +11358,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~584\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~584_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~473_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~345_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~409_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~584_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~473_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~345_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~409_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~281_q\ ) ) )
 
 -- pragma translate_off
@@ -10927,8 +11373,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~409_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~345_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~473_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~584_combout\);
 
 \MEMORIA_DADOS|ram~313\ : dffeas
@@ -10989,8 +11435,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~585\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~585_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~505_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~377_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~441_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~585_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~505_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~377_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~441_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~313_q\ ) ) )
 
 -- pragma translate_off
@@ -11004,8 +11450,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~441_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~377_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~505_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~585_combout\);
 
 \MEMORIA_DADOS|ram~297\ : dffeas
@@ -11066,8 +11512,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~586\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~586_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~489_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~361_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~425_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~586_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~489_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~361_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~425_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~297_q\ ) ) )
 
 -- pragma translate_off
@@ -11081,8 +11527,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~425_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~361_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~489_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~586_combout\);
 
 \MEMORIA_DADOS|ram~329\ : dffeas
@@ -11143,8 +11589,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~587\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~587_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~521_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~393_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~457_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~587_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~521_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~393_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~457_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~329_q\ ) ) )
 
 -- pragma translate_off
@@ -11158,14 +11604,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~457_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~393_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~521_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~587_combout\);
 
 \MEMORIA_DADOS|ram~588\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~588_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~587_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~586_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~585_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~588_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~587_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~586_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~585_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~584_combout\ ) ) )
 
 -- pragma translate_off
@@ -11179,14 +11625,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~585_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~586_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~587_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~588_combout\);
 
 \MEMORIA_DADOS|ram~589\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~589_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~588_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~583_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~578_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~589_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~588_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~583_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~578_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~573_combout\ ) ) )
 
 -- pragma translate_off
@@ -11200,8 +11646,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~578_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~583_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~588_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~589_combout\);
 
 \SW[2]~input\ : cyclonev_io_ibuf
@@ -11288,8 +11734,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~548\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~548_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~288_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~32_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~272_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~548_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~288_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~32_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~272_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~16_q\ ) ) )
 
 -- pragma translate_off
@@ -11303,8 +11749,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~272_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~32_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~288_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~548_combout\);
 
 \MEMORIA_DADOS|ram~48\ : dffeas
@@ -11365,8 +11811,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~549\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~549_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~320_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~64_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~304_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~549_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~320_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~64_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~304_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~48_q\ ) ) )
 
 -- pragma translate_off
@@ -11380,8 +11826,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~304_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~64_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~320_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~549_combout\);
 
 \MEMORIA_DADOS|ram~80\ : dffeas
@@ -11442,8 +11888,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~550\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~550_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~352_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~96_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~336_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~550_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~352_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~96_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~336_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~80_q\ ) ) )
 
 -- pragma translate_off
@@ -11457,8 +11903,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~336_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~96_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~352_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~550_combout\);
 
 \MEMORIA_DADOS|ram~112\ : dffeas
@@ -11519,8 +11965,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~551\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~551_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~384_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~128_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~368_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~551_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~384_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~128_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~368_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~112_q\ ) ) )
 
 -- pragma translate_off
@@ -11534,14 +11980,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~368_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~128_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~384_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~551_combout\);
 
 \MEMORIA_DADOS|ram~552\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~552_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~551_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~550_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~549_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~552_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~551_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~550_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~549_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~548_combout\ ) ) )
 
 -- pragma translate_off
@@ -11555,8 +12001,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~549_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~550_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~551_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~552_combout\);
 
 \MEMORIA_DADOS|ram~24\ : dffeas
@@ -11617,8 +12063,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~553\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~553_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~344_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~88_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~280_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~553_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~344_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~88_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~280_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~24_q\ ) ) )
 
 -- pragma translate_off
@@ -11632,8 +12078,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~280_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~88_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~344_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~553_combout\);
 
 \MEMORIA_DADOS|ram~56\ : dffeas
@@ -11694,8 +12140,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~554\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~554_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~376_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~120_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~312_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~554_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~376_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~120_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~312_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~56_q\ ) ) )
 
 -- pragma translate_off
@@ -11709,8 +12155,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~312_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~120_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~376_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~554_combout\);
 
 \MEMORIA_DADOS|ram~40\ : dffeas
@@ -11771,8 +12217,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~555\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~555_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~360_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~104_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~296_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~555_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~360_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~104_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~296_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~40_q\ ) ) )
 
 -- pragma translate_off
@@ -11786,8 +12232,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~296_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~104_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~360_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~555_combout\);
 
 \MEMORIA_DADOS|ram~72\ : dffeas
@@ -11848,8 +12294,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~556\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~556_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~392_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~136_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~328_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~556_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~392_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~136_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~328_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~72_q\ ) ) )
 
 -- pragma translate_off
@@ -11863,14 +12309,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~328_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~136_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~392_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~556_combout\);
 
 \MEMORIA_DADOS|ram~557\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~557_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~556_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~555_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~554_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~557_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~556_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~555_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~554_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~553_combout\ ) ) )
 
 -- pragma translate_off
@@ -11884,8 +12330,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~554_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~555_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~556_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~557_combout\);
 
 \MEMORIA_DADOS|ram~144\ : dffeas
@@ -11946,8 +12392,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~558\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~558_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~432_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~176_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~400_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~558_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~432_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~176_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~400_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~144_q\ ) ) )
 
 -- pragma translate_off
@@ -11961,8 +12407,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~400_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~176_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~432_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~558_combout\);
 
 \MEMORIA_DADOS|ram~160\ : dffeas
@@ -12023,8 +12469,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~559\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~559_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~448_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~192_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~416_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~559_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~448_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~192_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~416_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~160_q\ ) ) )
 
 -- pragma translate_off
@@ -12038,8 +12484,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~416_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~192_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~448_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~559_combout\);
 
 \MEMORIA_DADOS|ram~208\ : dffeas
@@ -12100,8 +12546,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~560\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~560_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~496_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~240_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~464_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~560_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~496_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~240_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~464_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~208_q\ ) ) )
 
 -- pragma translate_off
@@ -12115,8 +12561,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~464_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~240_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~496_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~560_combout\);
 
 \MEMORIA_DADOS|ram~224\ : dffeas
@@ -12177,8 +12623,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~561\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~561_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~512_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~256_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~480_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~561_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~512_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~256_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~480_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~224_q\ ) ) )
 
 -- pragma translate_off
@@ -12192,14 +12638,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~480_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~256_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~512_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~561_combout\);
 
 \MEMORIA_DADOS|ram~562\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~562_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~561_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~560_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~559_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~562_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~561_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~560_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~559_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~558_combout\ ) ) )
 
 -- pragma translate_off
@@ -12213,8 +12659,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~559_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~560_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~561_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~562_combout\);
 
 \MEMORIA_DADOS|ram~152\ : dffeas
@@ -12275,8 +12721,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~563\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~563_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~424_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~168_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~408_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~563_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~424_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~168_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~408_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~152_q\ ) ) )
 
 -- pragma translate_off
@@ -12290,8 +12736,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~408_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~168_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~424_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~563_combout\);
 
 \MEMORIA_DADOS|ram~184\ : dffeas
@@ -12352,8 +12798,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~564\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~564_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~456_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~200_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~440_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~564_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~456_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~200_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~440_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~184_q\ ) ) )
 
 -- pragma translate_off
@@ -12367,8 +12813,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~440_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~200_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~456_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~564_combout\);
 
 \MEMORIA_DADOS|ram~216\ : dffeas
@@ -12429,8 +12875,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~565\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~565_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~488_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~232_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~472_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~565_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~488_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~232_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~472_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~216_q\ ) ) )
 
 -- pragma translate_off
@@ -12444,8 +12890,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~472_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~232_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~488_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~565_combout\);
 
 \MEMORIA_DADOS|ram~248\ : dffeas
@@ -12506,8 +12952,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~566\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~566_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~520_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~264_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~504_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~566_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~520_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~264_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~504_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~248_q\ ) ) )
 
 -- pragma translate_off
@@ -12521,14 +12967,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~504_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~264_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~520_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~566_combout\);
 
 \MEMORIA_DADOS|ram~567\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~567_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~566_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~565_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~564_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~567_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~566_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~565_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~564_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~563_combout\ ) ) )
 
 -- pragma translate_off
@@ -12542,14 +12988,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~564_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~565_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~566_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~567_combout\);
 
 \MEMORIA_DADOS|ram~568\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~568_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~567_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~562_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~557_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~568_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~567_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~562_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~557_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~552_combout\ ) ) )
 
 -- pragma translate_off
@@ -12563,8 +13009,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~557_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~562_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~567_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~568_combout\);
 
 \SW[1]~input\ : cyclonev_io_ibuf
@@ -12651,8 +13097,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~527\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~527_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~279_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~23_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~271_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~527_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~279_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~23_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~271_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~15_q\ ) ) )
 
 -- pragma translate_off
@@ -12666,8 +13112,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~271_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~23_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~279_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~527_combout\);
 
 \MEMORIA_DADOS|ram~143\ : dffeas
@@ -12728,8 +13174,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~528\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~528_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~407_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~151_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~399_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~528_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~407_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~151_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~399_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~143_q\ ) ) )
 
 -- pragma translate_off
@@ -12743,8 +13189,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~399_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~151_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~407_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~528_combout\);
 
 \MEMORIA_DADOS|ram~79\ : dffeas
@@ -12805,8 +13251,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~529\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~529_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~343_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~87_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~335_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~529_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~343_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~87_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~335_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~79_q\ ) ) )
 
 -- pragma translate_off
@@ -12820,8 +13266,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~335_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~87_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~343_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~529_combout\);
 
 \MEMORIA_DADOS|ram~207\ : dffeas
@@ -12882,8 +13328,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~530\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~530_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~471_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~215_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~463_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~530_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~471_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~215_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~463_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~207_q\ ) ) )
 
 -- pragma translate_off
@@ -12897,14 +13343,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~463_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~215_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~471_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~530_combout\);
 
 \MEMORIA_DADOS|ram~531\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~531_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~530_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~529_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~528_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~531_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~530_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~529_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~528_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~527_combout\ ) ) )
 
 -- pragma translate_off
@@ -12918,8 +13364,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~528_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~529_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~530_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~531_combout\);
 
 \MEMORIA_DADOS|ram~47\ : dffeas
@@ -12980,8 +13426,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~532\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~532_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~311_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~55_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~303_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~532_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~311_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~55_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~303_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~47_q\ ) ) )
 
 -- pragma translate_off
@@ -12995,8 +13441,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~303_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~55_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~311_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~532_combout\);
 
 \MEMORIA_DADOS|ram~175\ : dffeas
@@ -13057,8 +13503,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~533\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~533_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~439_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~183_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~431_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~533_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~439_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~183_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~431_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~175_q\ ) ) )
 
 -- pragma translate_off
@@ -13072,8 +13518,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~431_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~183_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~439_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~533_combout\);
 
 \MEMORIA_DADOS|ram~111\ : dffeas
@@ -13134,8 +13580,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~534\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~534_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~375_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~119_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~367_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~534_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~375_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~119_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~367_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~111_q\ ) ) )
 
 -- pragma translate_off
@@ -13149,8 +13595,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~367_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~119_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~375_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~534_combout\);
 
 \MEMORIA_DADOS|ram~239\ : dffeas
@@ -13211,8 +13657,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~535\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~535_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~503_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~247_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~495_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~535_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~503_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~247_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~495_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~239_q\ ) ) )
 
 -- pragma translate_off
@@ -13226,14 +13672,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~495_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~247_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~503_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~535_combout\);
 
 \MEMORIA_DADOS|ram~536\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~536_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~535_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~534_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~533_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~536_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~535_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~534_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~533_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~532_combout\ ) ) )
 
 -- pragma translate_off
@@ -13247,8 +13693,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~533_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~534_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~535_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~536_combout\);
 
 \MEMORIA_DADOS|ram~31\ : dffeas
@@ -13309,8 +13755,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~537\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~537_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~295_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~39_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~287_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~537_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~295_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~39_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~287_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~31_q\ ) ) )
 
 -- pragma translate_off
@@ -13324,8 +13770,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~287_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~39_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~295_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~537_combout\);
 
 \MEMORIA_DADOS|ram~159\ : dffeas
@@ -13386,8 +13832,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~538\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~538_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~423_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~167_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~415_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~538_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~423_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~167_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~415_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~159_q\ ) ) )
 
 -- pragma translate_off
@@ -13401,8 +13847,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~415_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~167_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~423_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~538_combout\);
 
 \MEMORIA_DADOS|ram~95\ : dffeas
@@ -13463,8 +13909,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~539\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~539_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~359_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~103_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~351_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~539_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~359_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~103_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~351_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~95_q\ ) ) )
 
 -- pragma translate_off
@@ -13478,8 +13924,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~351_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~103_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~359_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~539_combout\);
 
 \MEMORIA_DADOS|ram~223\ : dffeas
@@ -13540,8 +13986,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~540\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~540_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~487_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~231_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~479_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~540_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~487_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~231_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~479_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~223_q\ ) ) )
 
 -- pragma translate_off
@@ -13555,14 +14001,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~479_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~231_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~487_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~540_combout\);
 
 \MEMORIA_DADOS|ram~541\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~541_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~540_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~539_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~538_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~541_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~540_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~539_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~538_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~537_combout\ ) ) )
 
 -- pragma translate_off
@@ -13576,8 +14022,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~538_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~539_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~540_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~541_combout\);
 
 \MEMORIA_DADOS|ram~63\ : dffeas
@@ -13638,8 +14084,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~542\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~542_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~447_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~191_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~319_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~542_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~447_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~191_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~319_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~63_q\ ) ) )
 
 -- pragma translate_off
@@ -13653,8 +14099,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~319_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~191_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~447_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~542_combout\);
 
 \MEMORIA_DADOS|ram~71\ : dffeas
@@ -13715,8 +14161,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~543\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~543_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~455_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~199_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~327_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~543_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~455_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~199_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~327_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~71_q\ ) ) )
 
 -- pragma translate_off
@@ -13730,8 +14176,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~327_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~199_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~455_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~543_combout\);
 
 \MEMORIA_DADOS|ram~127\ : dffeas
@@ -13792,8 +14238,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~544\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~544_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~511_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~255_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~383_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~544_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~511_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~255_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~383_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~127_q\ ) ) )
 
 -- pragma translate_off
@@ -13807,8 +14253,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~383_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~255_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~511_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~544_combout\);
 
 \MEMORIA_DADOS|ram~135\ : dffeas
@@ -13869,8 +14315,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~545\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~545_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~519_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~263_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~391_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~545_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~519_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~263_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~391_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~135_q\ ) ) )
 
 -- pragma translate_off
@@ -13884,14 +14330,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~391_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~263_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~519_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~545_combout\);
 
 \MEMORIA_DADOS|ram~546\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~546_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~545_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~544_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~543_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~546_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~545_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~544_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~543_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~542_combout\ ) ) )
 
 -- pragma translate_off
@@ -13905,14 +14351,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~543_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~544_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~545_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~546_combout\);
 
 \MEMORIA_DADOS|ram~547\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~547_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~546_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~541_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~536_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~547_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~546_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~541_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~536_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~531_combout\ ) ) )
 
 -- pragma translate_off
@@ -13926,141 +14372,29 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~536_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~541_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~546_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~547_combout\);
 
-\Saida_Dados[0]~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \Saida_Dados[0]~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~42_combout\ & ( !\MEMORIA_INTRUCAO|memROM~44_combout\ & ( (!\CPU|PC|DOUT\(7) & ((\MEMORIA_INTRUCAO|memROM~37_combout\) # (\MEMORIA_INTRUCAO|memROM~36_combout\))) ) ) ) # ( 
--- !\MEMORIA_INTRUCAO|memROM~42_combout\ & ( !\MEMORIA_INTRUCAO|memROM~44_combout\ & ( (!\CPU|PC|DOUT\(7) & (\MEMORIA_INTRUCAO|memROM~40_combout\ & ((\MEMORIA_INTRUCAO|memROM~37_combout\) # (\MEMORIA_INTRUCAO|memROM~36_combout\)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000101010001010100010101000000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(7),
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~36_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~37_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~40_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~44_combout\,
-	combout => \Saida_Dados[0]~0_combout\);
-
-\KEY[3]~input\ : cyclonev_io_ibuf
+\FPGA_RESET_N~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_KEY(3),
-	o => \KEY[3]~input_o\);
+	i => ww_FPGA_RESET_N,
+	o => \FPGA_RESET_N~input_o\);
 
-\KEY[1]~input\ : cyclonev_io_ibuf
+\SW[0]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_KEY(1),
-	o => \KEY[1]~input_o\);
-
-\detectorSub1|saidaQ~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \detectorSub1|saidaQ~0_combout\ = !\KEY[1]~input_o\
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ALT_INV_KEY[1]~input_o\,
-	combout => \detectorSub1|saidaQ~0_combout\);
-
-\detectorSub1|saidaQ\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \detectorSub1|saidaQ~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \detectorSub1|saidaQ~q\);
-
-\detectorSub1|saida\ : cyclonev_lcell_comb
--- Equation(s):
--- \detectorSub1|saida~combout\ = LCELL((!\KEY[1]~input_o\ & !\detectorSub1|saidaQ~q\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1000100010001000100010001000100010001000100010001000100010001000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ALT_INV_KEY[1]~input_o\,
-	datab => \detectorSub1|ALT_INV_saidaQ~q\,
-	combout => \detectorSub1|saida~combout\);
-
-\comb~10\ : cyclonev_lcell_comb
--- Equation(s):
--- \comb~10_combout\ = (\MEMORIA_INTRUCAO|memROM~44_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & (\MEMORIA_INTRUCAO|memROM~62_combout\ & \MEMORIA_INTRUCAO|memROM~65_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~44_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	combout => \comb~10_combout\);
-
-\comb~11\ : cyclonev_lcell_comb
--- Equation(s):
--- \comb~11_combout\ = ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \comb~10_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~67_combout\ & (\MEMORIA_INTRUCAO|memROM~66_combout\ & (\MEMORIA_INTRUCAO|memROM~48_combout\ & \MEMORIA_INTRUCAO|memROM~52_combout\))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000000000100000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \ALT_INV_comb~10_combout\,
-	combout => \comb~11_combout\);
-
-\FLIP_FLOP_KEY1|DOUT\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \detectorSub1|saida~combout\,
-	d => VCC,
-	clrn => \ALT_INV_comb~11_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \FLIP_FLOP_KEY1|DOUT~q\);
+	i => ww_SW(0),
+	o => \SW[0]~input_o\);
 
 \KEY[0]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
@@ -14114,24 +14448,44 @@ PORT MAP (
 	datab => \detectorSub0|ALT_INV_saidaQ~q\,
 	combout => \detectorSub0|saida~combout\);
 
-\comb~12\ : cyclonev_lcell_comb
+\comb~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \comb~12_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \comb~10_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~67_combout\ & (\MEMORIA_INTRUCAO|memROM~66_combout\ & (\MEMORIA_INTRUCAO|memROM~48_combout\ & \MEMORIA_INTRUCAO|memROM~52_combout\))) ) ) )
+-- \comb~9_combout\ = ( \MEMORIA_INTRUCAO|memROM~30_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( (\MEMORIA_INTRUCAO|memROM~40_combout\ & \MEMORIA_INTRUCAO|memROM~42_combout\) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~30_combout\ & ( 
+-- \MEMORIA_INTRUCAO|memROM~65_combout\ & ( (\MEMORIA_INTRUCAO|memROM~40_combout\ & (\MEMORIA_INTRUCAO|memROM~42_combout\ & ((\MEMORIA_INTRUCAO|memROM~27_combout\) # (\MEMORIA_INTRUCAO|memROM~25_combout\)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000000000000000000000000010",
+	lut_mask => "0000000000000000000000000000000000000000000001110000000000001111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~25_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~40_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~30_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	combout => \comb~9_combout\);
+
+\comb~10\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \comb~10_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \comb~9_combout\ & ( (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\MEMORIA_INTRUCAO|memROM~46_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & \MEMORIA_INTRUCAO|memROM~61_combout\))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000000000000000000000000000000000000000000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \ALT_INV_comb~10_combout\,
-	combout => \comb~12_combout\);
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \ALT_INV_comb~9_combout\,
+	combout => \comb~10_combout\);
 
 \FLIP_FLOP_DM|DOUT\ : dffeas
 -- pragma translate_off
@@ -14142,63 +14496,10 @@ GENERIC MAP (
 PORT MAP (
 	clk => \detectorSub0|saida~combout\,
 	d => VCC,
-	clrn => \ALT_INV_comb~12_combout\,
+	clrn => \ALT_INV_comb~10_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \FLIP_FLOP_DM|DOUT~q\);
-
-\KEY[2]~input\ : cyclonev_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_KEY(2),
-	o => \KEY[2]~input_o\);
-
-\Saida_Dados[0]~3\ : cyclonev_lcell_comb
--- Equation(s):
--- \Saida_Dados[0]~3_combout\ = ( \FLIP_FLOP_DM|DOUT~q\ & ( \KEY[2]~input_o\ & ( (!\MEMORIA_INTRUCAO|memROM~56_combout\) # ((!\MEMORIA_INTRUCAO|memROM~52_combout\ & ((\FLIP_FLOP_KEY1|DOUT~q\))) # (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\KEY[3]~input_o\))) ) 
--- ) ) # ( !\FLIP_FLOP_DM|DOUT~q\ & ( \KEY[2]~input_o\ & ( (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (\MEMORIA_INTRUCAO|memROM~56_combout\ & ((\FLIP_FLOP_KEY1|DOUT~q\)))) # (\MEMORIA_INTRUCAO|memROM~52_combout\ & ((!\MEMORIA_INTRUCAO|memROM~56_combout\) # 
--- ((\KEY[3]~input_o\)))) ) ) ) # ( \FLIP_FLOP_DM|DOUT~q\ & ( !\KEY[2]~input_o\ & ( (!\MEMORIA_INTRUCAO|memROM~52_combout\ & ((!\MEMORIA_INTRUCAO|memROM~56_combout\) # ((\FLIP_FLOP_KEY1|DOUT~q\)))) # (\MEMORIA_INTRUCAO|memROM~52_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\KEY[3]~input_o\))) ) ) ) # ( !\FLIP_FLOP_DM|DOUT~q\ & ( !\KEY[2]~input_o\ & ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & ((!\MEMORIA_INTRUCAO|memROM~52_combout\ & ((\FLIP_FLOP_KEY1|DOUT~q\))) # 
--- (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\KEY[3]~input_o\)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100100011100010011010101101000101011001111100110111101111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datac => \ALT_INV_KEY[3]~input_o\,
-	datad => \FLIP_FLOP_KEY1|ALT_INV_DOUT~q\,
-	datae => \FLIP_FLOP_DM|ALT_INV_DOUT~q\,
-	dataf => \ALT_INV_KEY[2]~input_o\,
-	combout => \Saida_Dados[0]~3_combout\);
-
-\SW[8]~input\ : cyclonev_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_SW(8),
-	o => \SW[8]~input_o\);
-
-\SW[0]~input\ : cyclonev_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_SW(0),
-	o => \SW[0]~input_o\);
 
 \SW[9]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
@@ -14210,91 +14511,221 @@ PORT MAP (
 	i => ww_SW(9),
 	o => \SW[9]~input_o\);
 
-\Saida_Dados[0]~4\ : cyclonev_lcell_comb
--- Equation(s):
--- \Saida_Dados[0]~4_combout\ = ( \SW[9]~input_o\ & ( (!\MEMORIA_INTRUCAO|memROM~52_combout\ & ((!\MEMORIA_INTRUCAO|memROM~56_combout\ & ((\SW[0]~input_o\))) # (\MEMORIA_INTRUCAO|memROM~56_combout\ & (\SW[8]~input_o\)))) # 
--- (\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~56_combout\)) ) ) # ( !\SW[9]~input_o\ & ( (!\MEMORIA_INTRUCAO|memROM~52_combout\ & ((!\MEMORIA_INTRUCAO|memROM~56_combout\ & ((\SW[0]~input_o\))) # (\MEMORIA_INTRUCAO|memROM~56_combout\ & 
--- (\SW[8]~input_o\)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000001010001010010001101100111000000010100010100100011011001110",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datac => \ALT_INV_SW[8]~input_o\,
-	datad => \ALT_INV_SW[0]~input_o\,
-	datae => \ALT_INV_SW[9]~input_o\,
-	combout => \Saida_Dados[0]~4_combout\);
-
-\FPGA_RESET_N~input\ : cyclonev_io_ibuf
+\KEY[2]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_FPGA_RESET_N,
-	o => \FPGA_RESET_N~input_o\);
+	i => ww_KEY(2),
+	o => \KEY[2]~input_o\);
 
-\Saida_Dados[0]~5\ : cyclonev_lcell_comb
+\Saida_Dados[0]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Saida_Dados[0]~5_combout\ = (!\MEMORIA_INTRUCAO|memROM~52_combout\ & (!\MEMORIA_INTRUCAO|memROM~56_combout\ & \FPGA_RESET_N~input_o\))
+-- \Saida_Dados[0]~0_combout\ = ( \SW[9]~input_o\ & ( \KEY[2]~input_o\ & ( ((!\MEMORIA_INTRUCAO|memROM~46_combout\ & (\SW[0]~input_o\)) # (\MEMORIA_INTRUCAO|memROM~46_combout\ & ((\FLIP_FLOP_DM|DOUT~q\)))) # (\MEMORIA_INTRUCAO|memROM~55_combout\) ) ) ) # ( 
+-- !\SW[9]~input_o\ & ( \KEY[2]~input_o\ & ( (!\MEMORIA_INTRUCAO|memROM~46_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\SW[0]~input_o\))) # (\MEMORIA_INTRUCAO|memROM~46_combout\ & (((\FLIP_FLOP_DM|DOUT~q\)) # (\MEMORIA_INTRUCAO|memROM~55_combout\))) 
+-- ) ) ) # ( \SW[9]~input_o\ & ( !\KEY[2]~input_o\ & ( (!\MEMORIA_INTRUCAO|memROM~46_combout\ & (((\SW[0]~input_o\)) # (\MEMORIA_INTRUCAO|memROM~55_combout\))) # (\MEMORIA_INTRUCAO|memROM~46_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\ & 
+-- ((\FLIP_FLOP_DM|DOUT~q\)))) ) ) ) # ( !\SW[9]~input_o\ & ( !\KEY[2]~input_o\ & ( (!\MEMORIA_INTRUCAO|memROM~55_combout\ & ((!\MEMORIA_INTRUCAO|memROM~46_combout\ & (\SW[0]~input_o\)) # (\MEMORIA_INTRUCAO|memROM~46_combout\ & ((\FLIP_FLOP_DM|DOUT~q\))))) ) 
+-- ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000100000001000000010000000100000001000000010000000100000001000",
+	lut_mask => "0000100001001100001010100110111000011001010111010011101101111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datac => \ALT_INV_FPGA_RESET_N~input_o\,
-	combout => \Saida_Dados[0]~5_combout\);
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \ALT_INV_SW[0]~input_o\,
+	datad => \FLIP_FLOP_DM|ALT_INV_DOUT~q\,
+	datae => \ALT_INV_SW[9]~input_o\,
+	dataf => \ALT_INV_KEY[2]~input_o\,
+	combout => \Saida_Dados[0]~0_combout\);
+
+\KEY[3]~input\ : cyclonev_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_KEY(3),
+	o => \KEY[3]~input_o\);
+
+\SW[8]~input\ : cyclonev_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_SW(8),
+	o => \SW[8]~input_o\);
+
+\KEY[1]~input\ : cyclonev_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_KEY(1),
+	o => \KEY[1]~input_o\);
+
+\detectorSub1|saidaQ~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \detectorSub1|saidaQ~0_combout\ = !\KEY[1]~input_o\
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ALT_INV_KEY[1]~input_o\,
+	combout => \detectorSub1|saidaQ~0_combout\);
+
+\detectorSub1|saidaQ\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \detectorSub1|saidaQ~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \detectorSub1|saidaQ~q\);
+
+\detectorSub1|saida\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \detectorSub1|saida~combout\ = LCELL((!\KEY[1]~input_o\ & !\detectorSub1|saidaQ~q\))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1000100010001000100010001000100010001000100010001000100010001000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ALT_INV_KEY[1]~input_o\,
+	datab => \detectorSub1|ALT_INV_saidaQ~q\,
+	combout => \detectorSub1|saida~combout\);
+
+\comb~11\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \comb~11_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \comb~9_combout\ & ( (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\MEMORIA_INTRUCAO|memROM~46_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & !\MEMORIA_INTRUCAO|memROM~61_combout\))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000000000000000000000000000000000000100000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \ALT_INV_comb~9_combout\,
+	combout => \comb~11_combout\);
+
+\FLIP_FLOP_KEY1|DOUT\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub1|saida~combout\,
+	d => VCC,
+	clrn => \ALT_INV_comb~11_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \FLIP_FLOP_KEY1|DOUT~q\);
 
 \Saida_Dados[0]~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Saida_Dados[0]~1_combout\ = ( \Saida_Dados[0]~4_combout\ & ( \Saida_Dados[0]~5_combout\ & ( (\Saida_Dados[0]~0_combout\ & ((!\MEMORIA_INTRUCAO|memROM~33_combout\ & ((!\MEMORIA_INTRUCAO|memROM~48_combout\) # (\Saida_Dados[0]~3_combout\))) # 
--- (\MEMORIA_INTRUCAO|memROM~33_combout\ & (\MEMORIA_INTRUCAO|memROM~48_combout\)))) ) ) ) # ( !\Saida_Dados[0]~4_combout\ & ( \Saida_Dados[0]~5_combout\ & ( (\MEMORIA_INTRUCAO|memROM~48_combout\ & (\Saida_Dados[0]~0_combout\ & ((\Saida_Dados[0]~3_combout\) 
--- # (\MEMORIA_INTRUCAO|memROM~33_combout\)))) ) ) ) # ( \Saida_Dados[0]~4_combout\ & ( !\Saida_Dados[0]~5_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~33_combout\ & (\Saida_Dados[0]~0_combout\ & ((!\MEMORIA_INTRUCAO|memROM~48_combout\) # 
--- (\Saida_Dados[0]~3_combout\)))) ) ) ) # ( !\Saida_Dados[0]~4_combout\ & ( !\Saida_Dados[0]~5_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~33_combout\ & (\MEMORIA_INTRUCAO|memROM~48_combout\ & (\Saida_Dados[0]~0_combout\ & \Saida_Dados[0]~3_combout\))) ) ) )
+-- \Saida_Dados[0]~1_combout\ = ( \SW[8]~input_o\ & ( \FLIP_FLOP_KEY1|DOUT~q\ & ( (\MEMORIA_INTRUCAO|memROM~61_combout\ & ((!\MEMORIA_INTRUCAO|memROM~55_combout\) # ((\MEMORIA_INTRUCAO|memROM~46_combout\ & \KEY[3]~input_o\)))) ) ) ) # ( !\SW[8]~input_o\ & ( 
+-- \FLIP_FLOP_KEY1|DOUT~q\ & ( (\MEMORIA_INTRUCAO|memROM~46_combout\ & (\MEMORIA_INTRUCAO|memROM~61_combout\ & ((!\MEMORIA_INTRUCAO|memROM~55_combout\) # (\KEY[3]~input_o\)))) ) ) ) # ( \SW[8]~input_o\ & ( !\FLIP_FLOP_KEY1|DOUT~q\ & ( 
+-- (\MEMORIA_INTRUCAO|memROM~61_combout\ & ((!\MEMORIA_INTRUCAO|memROM~46_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\)) # (\MEMORIA_INTRUCAO|memROM~46_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & \KEY[3]~input_o\)))) ) ) ) # ( !\SW[8]~input_o\ & 
+-- ( !\FLIP_FLOP_KEY1|DOUT~q\ & ( (\MEMORIA_INTRUCAO|memROM~46_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~61_combout\ & \KEY[3]~input_o\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000010000010000000101000000001000000110000100100001011",
+	lut_mask => "0000000000000001000010000000100100000100000001010000110000001101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	datac => \ALT_INV_Saida_Dados[0]~0_combout\,
-	datad => \ALT_INV_Saida_Dados[0]~3_combout\,
-	datae => \ALT_INV_Saida_Dados[0]~4_combout\,
-	dataf => \ALT_INV_Saida_Dados[0]~5_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datad => \ALT_INV_KEY[3]~input_o\,
+	datae => \ALT_INV_SW[8]~input_o\,
+	dataf => \FLIP_FLOP_KEY1|ALT_INV_DOUT~q\,
 	combout => \Saida_Dados[0]~1_combout\);
+
+\Saida_Dados[0]~4\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Saida_Dados[0]~4_combout\ = ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( ((((\Saida_Dados[0]~0_combout\ & !\MEMORIA_INTRUCAO|memROM~61_combout\)) # (\Saida_Dados[0]~1_combout\))) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- (!\MEMORIA_INTRUCAO|memROM~55_combout\ & (\MEMORIA_INTRUCAO|memROM~46_combout\ & (\FPGA_RESET_N~input_o\ & ((!\MEMORIA_INTRUCAO|memROM~61_combout\))))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "on",
+	lut_mask => "0000111111111111000000100000001000001111000011110000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datac => \ALT_INV_FPGA_RESET_N~input_o\,
+	datad => \ALT_INV_Saida_Dados[0]~0_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	datag => \ALT_INV_Saida_Dados[0]~1_combout\,
+	combout => \Saida_Dados[0]~4_combout\);
 
 \Saida_Dados[0]~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Saida_Dados[0]~2_combout\ = (!\MEMORIA_DADOS|ram~547_combout\ & (\CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\ & ((\Saida_Dados[0]~1_combout\)))) # (\MEMORIA_DADOS|ram~547_combout\ & (((\CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\ & 
--- \Saida_Dados[0]~1_combout\)) # (\MEMORIA_DADOS|dado_out~0_combout\)))
+-- \Saida_Dados[0]~2_combout\ = (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\MEMORIA_INTRUCAO|memROM~40_combout\ & (!\MEMORIA_INTRUCAO|memROM~42_combout\ & \CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010100110111000001010011011100000101001101110000010100110111",
+	lut_mask => "0000000000010000000000000001000000000000000100000000000000010000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~40_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\,
+	datad => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux10~0_combout\,
+	combout => \Saida_Dados[0]~2_combout\);
+
+\Saida_Dados[0]~3\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Saida_Dados[0]~3_combout\ = (!\MEMORIA_DADOS|ram~547_combout\ & (((\Saida_Dados[0]~4_combout\ & \Saida_Dados[0]~2_combout\)))) # (\MEMORIA_DADOS|ram~547_combout\ & (((\Saida_Dados[0]~4_combout\ & \Saida_Dados[0]~2_combout\)) # 
+-- (\MEMORIA_DADOS|dado_out~0_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001000100011111000100010001111100010001000111110001000100011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \MEMORIA_DADOS|ALT_INV_ram~547_combout\,
-	datab => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux10~0_combout\,
-	datac => \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\,
-	datad => \ALT_INV_Saida_Dados[0]~1_combout\,
-	combout => \Saida_Dados[0]~2_combout\);
+	datab => \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\,
+	datac => \ALT_INV_Saida_Dados[0]~4_combout\,
+	datad => \ALT_INV_Saida_Dados[0]~2_combout\,
+	combout => \Saida_Dados[0]~3_combout\);
 
 \CPU|ULA1|Add1~34\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -14312,9 +14743,9 @@ PORT MAP (
 
 \CPU|ULA1|Add1~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add1~17_sumout\ = SUM(( \CPU|BANCO_REG|Mux7~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\Saida_Dados[0]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~56_combout\)) ) + ( 
+-- \CPU|ULA1|Add1~17_sumout\ = SUM(( \CPU|BANCO_REG|Mux7~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\Saida_Dados[0]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~61_combout\)) ) + ( 
 -- \CPU|ULA1|Add1~34_cout\ ))
--- \CPU|ULA1|Add1~18\ = CARRY(( \CPU|BANCO_REG|Mux7~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\Saida_Dados[0]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~56_combout\)) ) + ( 
+-- \CPU|ULA1|Add1~18\ = CARRY(( \CPU|BANCO_REG|Mux7~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\Saida_Dados[0]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~61_combout\)) ) + ( 
 -- \CPU|ULA1|Add1~34_cout\ ))
 
 -- pragma translate_off
@@ -14325,18 +14756,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux7~0_combout\,
-	dataf => \ALT_INV_Saida_Dados[0]~2_combout\,
+	dataf => \ALT_INV_Saida_Dados[0]~3_combout\,
 	cin => \CPU|ULA1|Add1~34_cout\,
 	sumout => \CPU|ULA1|Add1~17_sumout\,
 	cout => \CPU|ULA1|Add1~18\);
 
 \CPU|ULA1|Add1~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add1~21_sumout\ = SUM(( \CPU|BANCO_REG|Mux6~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[1]~4_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\)) ) + 
+-- \CPU|ULA1|Add1~21_sumout\ = SUM(( \CPU|BANCO_REG|Mux6~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[1]~4_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\)) ) + 
 -- ( \CPU|ULA1|Add1~18\ ))
--- \CPU|ULA1|Add1~22\ = CARRY(( \CPU|BANCO_REG|Mux6~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[1]~4_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~52_combout\)) ) + ( 
+-- \CPU|ULA1|Add1~22\ = CARRY(( \CPU|BANCO_REG|Mux6~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[1]~4_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~55_combout\)) ) + ( 
 -- \CPU|ULA1|Add1~18\ ))
 
 -- pragma translate_off
@@ -14347,7 +14778,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux6~0_combout\,
 	dataf => \CPU|MUX1|ALT_INV_saida_MUX[1]~4_combout\,
 	cin => \CPU|ULA1|Add1~18\,
@@ -14356,8 +14787,8 @@ PORT MAP (
 
 \CPU|ULA1|Add0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add0~1_sumout\ = SUM(( \CPU|BANCO_REG|Mux7~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\Saida_Dados[0]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~56_combout\)) ) + ( !VCC ))
--- \CPU|ULA1|Add0~2\ = CARRY(( \CPU|BANCO_REG|Mux7~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\Saida_Dados[0]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~56_combout\)) ) + ( !VCC ))
+-- \CPU|ULA1|Add0~1_sumout\ = SUM(( \CPU|BANCO_REG|Mux7~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\Saida_Dados[0]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~61_combout\)) ) + ( !VCC ))
+-- \CPU|ULA1|Add0~2\ = CARRY(( \CPU|BANCO_REG|Mux7~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\Saida_Dados[0]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~61_combout\)) ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -14367,18 +14798,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux7~0_combout\,
-	dataf => \ALT_INV_Saida_Dados[0]~2_combout\,
+	dataf => \ALT_INV_Saida_Dados[0]~3_combout\,
 	cin => GND,
 	sumout => \CPU|ULA1|Add0~1_sumout\,
 	cout => \CPU|ULA1|Add0~2\);
 
 \CPU|ULA1|Add0~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add0~5_sumout\ = SUM(( \CPU|BANCO_REG|Mux6~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[1]~4_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\)) ) + ( 
+-- \CPU|ULA1|Add0~5_sumout\ = SUM(( \CPU|BANCO_REG|Mux6~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[1]~4_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\)) ) + ( 
 -- \CPU|ULA1|Add0~2\ ))
--- \CPU|ULA1|Add0~6\ = CARRY(( \CPU|BANCO_REG|Mux6~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[1]~4_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\)) ) + ( 
+-- \CPU|ULA1|Add0~6\ = CARRY(( \CPU|BANCO_REG|Mux6~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[1]~4_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~55_combout\)) ) + ( 
 -- \CPU|ULA1|Add0~2\ ))
 
 -- pragma translate_off
@@ -14389,7 +14820,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux6~0_combout\,
 	dataf => \CPU|MUX1|ALT_INV_saida_MUX[1]~4_combout\,
 	cin => \CPU|ULA1|Add0~2\,
@@ -14399,8 +14830,8 @@ PORT MAP (
 \CPU|ULA1|saida[1]~2\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \CPU|ULA1|saida[1]~2_combout\ = ( \SW[1]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((!\MEMORIA_DADOS|dado_out~0_combout\) # (\MEMORIA_DADOS|ram~568_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~52_combout\)) ) ) # ( !\SW[1]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~568_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~52_combout\)) ) )
+-- (\MEMORIA_INTRUCAO|memROM~55_combout\)) ) ) # ( !\SW[1]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~568_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
+-- (\MEMORIA_INTRUCAO|memROM~55_combout\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -14409,7 +14840,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	datab => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~568_combout\,
@@ -14435,39 +14866,43 @@ PORT MAP (
 	datae => \CPU|ULA1|ALT_INV_saida[1]~2_combout\,
 	combout => \CPU|ULA1|saida[1]~3_combout\);
 
-\MEMORIA_INTRUCAO|memROM~0\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~0_combout\ = (\CPU|PC|DOUT\(5) & (((\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(2))))
+-- \MEMORIA_INTRUCAO|memROM~1_combout\ = (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2))) # (\CPU|PC|DOUT\(0) & ((\CPU|PC|DOUT\(2)) # (\CPU|PC|DOUT\(1))))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000011111000000000001111100000000000111110000000000011111",
+	lut_mask => "0000000000010111000000000001011100000000000101110000000000010111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(0),
 	datab => \CPU|PC|ALT_INV_DOUT\(1),
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(5),
-	combout => \MEMORIA_INTRUCAO|memROM~0_combout\);
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	combout => \MEMORIA_INTRUCAO|memROM~1_combout\);
 
-\MEMORIA_INTRUCAO|memROM~1\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~1_combout\ = (\CPU|PC|DOUT\(3) & (\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(6) & \MEMORIA_INTRUCAO|memROM~0_combout\)))
+-- \MEMORIA_INTRUCAO|memROM~0_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(5) & ( (\CPU|PC|DOUT\(3) & (((\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(0))) # (\CPU|PC|DOUT\(2)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(5) & ( (!\CPU|PC|DOUT\(2) & 
+-- (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) & !\CPU|PC|DOUT\(3)))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(5) & ( (\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0) & !\CPU|PC|DOUT\(3)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(5) & ( 
+-- (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(3)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0000000001000000000000010000000000100000000000000000000001010111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(3),
-	datab => \CPU|PC|ALT_INV_DOUT\(4),
-	datac => \CPU|PC|ALT_INV_DOUT\(6),
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~0_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~1_combout\);
+	dataa => \CPU|PC|ALT_INV_DOUT\(2),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(0),
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	datae => \CPU|PC|ALT_INV_DOUT\(4),
+	dataf => \CPU|PC|ALT_INV_DOUT\(5),
+	combout => \MEMORIA_INTRUCAO|memROM~0_combout\);
 
 \MEMORIA_INTRUCAO|memROM~2\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -14486,50 +14921,56 @@ PORT MAP (
 	datad => \CPU|PC|ALT_INV_DOUT\(4),
 	combout => \MEMORIA_INTRUCAO|memROM~2_combout\);
 
-\MEMORIA_INTRUCAO|memROM~3\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~78\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~3_combout\ = (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(3) & !\CPU|PC|DOUT\(4)))) # (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(3) & \CPU|PC|DOUT\(4))))
+-- \MEMORIA_INTRUCAO|memROM~78_combout\ = ( !\CPU|PC|DOUT\(5) & ( (!\CPU|PC|DOUT\(7) & ((((!\CPU|PC|DOUT\(6))) # (\MEMORIA_INTRUCAO|memROM~0_combout\)))) # (\CPU|PC|DOUT\(7) & (!\MEMORIA_INTRUCAO|memROM~1_combout\ & (((!\CPU|PC|DOUT\(4) & 
+-- !\CPU|PC|DOUT\(6)))))) ) ) # ( \CPU|PC|DOUT\(5) & ( ((!\CPU|PC|DOUT\(7) & ((!\CPU|PC|DOUT\(6) & ((!\MEMORIA_INTRUCAO|memROM~2_combout\))) # (\CPU|PC|DOUT\(6) & (\MEMORIA_INTRUCAO|memROM~0_combout\))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000100000010000000010000001000000001000000100000000100000010000",
+	extended_lut => "on",
+	lut_mask => "1111111110100000111100000000000000110011000000000011001100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(3),
-	datad => \CPU|PC|ALT_INV_DOUT\(4),
-	combout => \MEMORIA_INTRUCAO|memROM~3_combout\);
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~1_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~0_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~2_combout\,
+	datad => \CPU|PC|ALT_INV_DOUT\(7),
+	datae => \CPU|PC|ALT_INV_DOUT\(5),
+	dataf => \CPU|PC|ALT_INV_DOUT\(6),
+	datag => \CPU|PC|ALT_INV_DOUT\(4),
+	combout => \MEMORIA_INTRUCAO|memROM~78_combout\);
 
-\MEMORIA_INTRUCAO|memROM~4\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~4_combout\ = ( \MEMORIA_INTRUCAO|memROM~3_combout\ & ( (!\CPU|PC|DOUT\(5) & (((!\CPU|PC|DOUT\(6))) # (\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(5) & (((!\CPU|PC|DOUT\(6) & !\MEMORIA_INTRUCAO|memROM~2_combout\)))) ) ) # ( 
--- !\MEMORIA_INTRUCAO|memROM~3_combout\ & ( (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(5)) # (!\MEMORIA_INTRUCAO|memROM~2_combout\))) ) )
+-- \MEMORIA_INTRUCAO|memROM~3_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(5) & ( (\CPU|PC|DOUT\(3) & (((\CPU|PC|DOUT\(0)) # (\CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(2)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(5) & ( (!\CPU|PC|DOUT\(3) & 
+-- ((!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1)))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2))))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(5) & ( (!\CPU|PC|DOUT\(2)) # ((!\CPU|PC|DOUT\(1)) # ((!\CPU|PC|DOUT\(0)) # (\CPU|PC|DOUT\(3)))) ) ) ) # ( 
+-- !\CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(5) & ( (!\CPU|PC|DOUT\(2)) # (((!\CPU|PC|DOUT\(3)) # (\CPU|PC|DOUT\(0))) # (\CPU|PC|DOUT\(1))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1111000011000000111101001100010011110000110000001111010011000100",
+	lut_mask => "1111111110111111111111101111111111001010000000000000000001111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(2),
-	datab => \CPU|PC|ALT_INV_DOUT\(5),
-	datac => \CPU|PC|ALT_INV_DOUT\(6),
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~2_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~3_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~4_combout\);
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(0),
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	datae => \CPU|PC|ALT_INV_DOUT\(4),
+	dataf => \CPU|PC|ALT_INV_DOUT\(5),
+	combout => \MEMORIA_INTRUCAO|memROM~3_combout\);
 
-\MEMORIA_INTRUCAO|memROM~5\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~5_combout\ = (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2))) # (\CPU|PC|DOUT\(0) & ((\CPU|PC|DOUT\(2)) # (\CPU|PC|DOUT\(1))))))
+-- \MEMORIA_INTRUCAO|memROM~4_combout\ = (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(1) & ((\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(2)) # (\CPU|PC|DOUT\(0))))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000010111000000000001011100000000000101110000000000010111",
+	lut_mask => "0000000000111101000000000011110100000000001111010000000000111101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -14537,62 +14978,11 @@ PORT MAP (
 	datab => \CPU|PC|ALT_INV_DOUT\(1),
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~5_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~4_combout\);
 
-\MEMORIA_INTRUCAO|memROM~6\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~6_combout\ = (!\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(6) & !\MEMORIA_INTRUCAO|memROM~5_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1000000000000000100000000000000010000000000000001000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(4),
-	datab => \CPU|PC|ALT_INV_DOUT\(5),
-	datac => \CPU|PC|ALT_INV_DOUT\(6),
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~5_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~6_combout\);
-
-\MEMORIA_INTRUCAO|memROM~7\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~7_combout\ = (!\MEMORIA_INTRUCAO|memROM~6_combout\ & (((!\MEMORIA_INTRUCAO|memROM~1_combout\ & !\MEMORIA_INTRUCAO|memROM~4_combout\)) # (\CPU|PC|DOUT\(7))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1101010100000000110101010000000011010101000000001101010100000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(7),
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~1_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~4_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~6_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~7_combout\);
-
-\MEMORIA_INTRUCAO|memROM~8\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~8_combout\ = (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & ((!\CPU|PC|DOUT\(0)) # (!\CPU|PC|DOUT\(6))))) # (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(6))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1100001010000000110000101000000011000010100000001100001010000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~8_combout\);
-
-\MEMORIA_INTRUCAO|memROM~9\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~9_combout\ = (\CPU|PC|DOUT\(3) & (((\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(2))))
+-- \MEMORIA_INTRUCAO|memROM~5_combout\ = (\CPU|PC|DOUT\(3) & (((\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(2))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -14605,79 +14995,42 @@ PORT MAP (
 	datab => \CPU|PC|ALT_INV_DOUT\(1),
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~9_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~5_combout\);
 
-\MEMORIA_INTRUCAO|memROM~10\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~74\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~10_combout\ = (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(4) & \CPU|PC|DOUT\(3)))) # (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(4) & !\CPU|PC|DOUT\(3))))
+-- \MEMORIA_INTRUCAO|memROM~74_combout\ = ( !\CPU|PC|DOUT\(5) & ( (!\CPU|PC|DOUT\(7) & (((\MEMORIA_INTRUCAO|memROM~3_combout\ & ((\CPU|PC|DOUT\(6))))))) # (\CPU|PC|DOUT\(7) & (!\CPU|PC|DOUT\(4) & (((!\MEMORIA_INTRUCAO|memROM~5_combout\ & 
+-- !\CPU|PC|DOUT\(6)))))) ) ) # ( \CPU|PC|DOUT\(5) & ( (!\CPU|PC|DOUT\(7) & ((!\CPU|PC|DOUT\(6) & (\CPU|PC|DOUT\(4) & ((\MEMORIA_INTRUCAO|memROM~4_combout\)))) # (\CPU|PC|DOUT\(6) & (((\MEMORIA_INTRUCAO|memROM~3_combout\)))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000110000000000000011000000000000001100000000000000110000000",
+	extended_lut => "on",
+	lut_mask => "0000000010100000000001010000000000110011000000000011001100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(4),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~10_combout\);
-
-\MEMORIA_INTRUCAO|memROM~11\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~11_combout\ = ( \MEMORIA_INTRUCAO|memROM~9_combout\ & ( \MEMORIA_INTRUCAO|memROM~10_combout\ & ( (!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(6) & !\CPU|PC|DOUT\(7))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~9_combout\ & ( 
--- \MEMORIA_INTRUCAO|memROM~10_combout\ & ( (!\CPU|PC|DOUT\(6) & (((!\CPU|PC|DOUT\(4) & \CPU|PC|DOUT\(7))))) # (\CPU|PC|DOUT\(6) & (!\CPU|PC|DOUT\(2) & ((!\CPU|PC|DOUT\(7))))) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~9_combout\ & ( 
--- !\MEMORIA_INTRUCAO|memROM~10_combout\ & ( (\CPU|PC|DOUT\(6) & !\CPU|PC|DOUT\(7)) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~9_combout\ & ( !\MEMORIA_INTRUCAO|memROM~10_combout\ & ( (!\CPU|PC|DOUT\(6) & (!\CPU|PC|DOUT\(4) & \CPU|PC|DOUT\(7))) # (\CPU|PC|DOUT\(6) 
--- & ((!\CPU|PC|DOUT\(7)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000111111000000000011110000000000001010110000000000101000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(2),
-	datab => \CPU|PC|ALT_INV_DOUT\(4),
-	datac => \CPU|PC|ALT_INV_DOUT\(6),
+	dataa => \CPU|PC|ALT_INV_DOUT\(4),
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~3_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~4_combout\,
 	datad => \CPU|PC|ALT_INV_DOUT\(7),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~9_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~11_combout\);
-
-\MEMORIA_INTRUCAO|memROM~13\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~13_combout\ = ( \MEMORIA_INTRUCAO|memROM~12_combout\ & ( (!\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(5) & ((\MEMORIA_INTRUCAO|memROM~11_combout\)))) # (\CPU|PC|DOUT\(3) & ((!\MEMORIA_INTRUCAO|memROM~8_combout\) # ((!\CPU|PC|DOUT\(5) & 
--- \MEMORIA_INTRUCAO|memROM~11_combout\)))) ) ) # ( !\MEMORIA_INTRUCAO|memROM~12_combout\ & ( (!\CPU|PC|DOUT\(5) & \MEMORIA_INTRUCAO|memROM~11_combout\) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000011001100010100001101110000000000110011000101000011011100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(3),
-	datab => \CPU|PC|ALT_INV_DOUT\(5),
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~8_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~11_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~13_combout\);
+	datae => \CPU|PC|ALT_INV_DOUT\(5),
+	dataf => \CPU|PC|ALT_INV_DOUT\(6),
+	datag => \MEMORIA_INTRUCAO|ALT_INV_memROM~5_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~74_combout\);
 
 \CPU|BANCO_REG|Equal1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Equal1~0_combout\ = (!\MEMORIA_INTRUCAO|memROM~7_combout\) # (\MEMORIA_INTRUCAO|memROM~13_combout\)
+-- \CPU|BANCO_REG|Equal1~0_combout\ = (\MEMORIA_INTRUCAO|memROM~74_combout\) # (\MEMORIA_INTRUCAO|memROM~78_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1011101110111011101110111011101110111011101110111011101110111011",
+	lut_mask => "0111011101110111011101110111011101110111011101110111011101110111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Equal1~0_combout\);
 
 \CPU|BANCO_REG|Entrada_reg0[1]\ : cyclonev_lcell_comb
@@ -14699,20 +15052,20 @@ PORT MAP (
 
 \CPU|DECODIFICADOR_INSTRUCAO|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|DECODIFICADOR_INSTRUCAO|Mux6~0_combout\ = (!\MEMORIA_INTRUCAO|memROM~27_combout\ & (!\MEMORIA_INTRUCAO|memROM~23_combout\ $ (((\MEMORIA_INTRUCAO|memROM~57_combout\ & \MEMORIA_INTRUCAO|memROM~58_combout\))))) # (\MEMORIA_INTRUCAO|memROM~27_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~57_combout\ & (\MEMORIA_INTRUCAO|memROM~58_combout\ & !\MEMORIA_INTRUCAO|memROM~23_combout\)))
+-- \CPU|DECODIFICADOR_INSTRUCAO|Mux6~0_combout\ = (!\MEMORIA_INTRUCAO|memROM~23_combout\ & (!\MEMORIA_INTRUCAO|memROM~19_combout\ $ (((!\MEMORIA_INTRUCAO|memROM~10_combout\ & \MEMORIA_INTRUCAO|memROM~68_combout\))))) # (\MEMORIA_INTRUCAO|memROM~23_combout\ & 
+-- (!\MEMORIA_INTRUCAO|memROM~10_combout\ & (\MEMORIA_INTRUCAO|memROM~68_combout\ & !\MEMORIA_INTRUCAO|memROM~19_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1110000100010000111000010001000011100001000100001110000100010000",
+	lut_mask => "1101001000100000110100100010000011010010001000001101001000100000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~57_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
 	combout => \CPU|DECODIFICADOR_INSTRUCAO|Mux6~0_combout\);
 
 \CPU|BANCO_REG|Habilita_reg0\ : cyclonev_lcell_comb
@@ -14748,17 +15101,17 @@ PORT MAP (
 
 \CPU|BANCO_REG|Equal0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Equal0~0_combout\ = (!\MEMORIA_INTRUCAO|memROM~7_combout\ & !\MEMORIA_INTRUCAO|memROM~13_combout\)
+-- \CPU|BANCO_REG|Equal0~0_combout\ = (\MEMORIA_INTRUCAO|memROM~78_combout\ & !\MEMORIA_INTRUCAO|memROM~74_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1000100010001000100010001000100010001000100010001000100010001000",
+	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Equal0~0_combout\);
 
 \CPU|BANCO_REG|Entrada_reg1[1]\ : cyclonev_lcell_comb
@@ -14811,17 +15164,17 @@ PORT MAP (
 
 \CPU|BANCO_REG|Equal0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Equal0~1_combout\ = (\MEMORIA_INTRUCAO|memROM~7_combout\ & \MEMORIA_INTRUCAO|memROM~13_combout\)
+-- \CPU|BANCO_REG|Equal0~1_combout\ = (!\MEMORIA_INTRUCAO|memROM~78_combout\ & \MEMORIA_INTRUCAO|memROM~74_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
+	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Equal0~1_combout\);
 
 \CPU|BANCO_REG|Entrada_reg2[1]\ : cyclonev_lcell_comb
@@ -14874,17 +15227,17 @@ PORT MAP (
 
 \CPU|BANCO_REG|Equal0~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Equal0~2_combout\ = (!\MEMORIA_INTRUCAO|memROM~7_combout\ & \MEMORIA_INTRUCAO|memROM~13_combout\)
+-- \CPU|BANCO_REG|Equal0~2_combout\ = (\MEMORIA_INTRUCAO|memROM~78_combout\ & \MEMORIA_INTRUCAO|memROM~74_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010001000100010001000100010001000100010001000100010001000100010",
+	lut_mask => "0001000100010001000100010001000100010001000100010001000100010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Equal0~2_combout\);
 
 \CPU|BANCO_REG|Entrada_reg3[1]\ : cyclonev_lcell_comb
@@ -14937,14 +15290,14 @@ PORT MAP (
 
 \CPU|BANCO_REG|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Mux6~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_2|DOUT\(1) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_3|DOUT\(1) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_0|DOUT\(1) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_1|DOUT\(1) ) ) )
+-- \CPU|BANCO_REG|Mux6~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_3|DOUT\(1) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_2|DOUT\(1) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_1|DOUT\(1) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_0|DOUT\(1) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011001100110011010101010101010100000000111111110000111100001111",
+	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -14952,15 +15305,15 @@ PORT MAP (
 	datab => \CPU|BANCO_REG|REG_1|ALT_INV_DOUT\(1),
 	datac => \CPU|BANCO_REG|REG_2|ALT_INV_DOUT\(1),
 	datad => \CPU|BANCO_REG|REG_3|ALT_INV_DOUT\(1),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Mux6~0_combout\);
 
 \CPU|ULA1|Add1~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add1~25_sumout\ = SUM(( \CPU|BANCO_REG|Mux5~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[2]~5_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\)) ) + 
+-- \CPU|ULA1|Add1~25_sumout\ = SUM(( \CPU|BANCO_REG|Mux5~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[2]~5_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\)) ) + 
 -- ( \CPU|ULA1|Add1~22\ ))
--- \CPU|ULA1|Add1~26\ = CARRY(( \CPU|BANCO_REG|Mux5~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[2]~5_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\)) ) + ( 
+-- \CPU|ULA1|Add1~26\ = CARRY(( \CPU|BANCO_REG|Mux5~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[2]~5_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\)) ) + ( 
 -- \CPU|ULA1|Add1~22\ ))
 
 -- pragma translate_off
@@ -14971,7 +15324,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux5~0_combout\,
 	dataf => \CPU|MUX1|ALT_INV_saida_MUX[2]~5_combout\,
 	cin => \CPU|ULA1|Add1~22\,
@@ -14980,9 +15333,9 @@ PORT MAP (
 
 \CPU|ULA1|Add0~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add0~9_sumout\ = SUM(( \CPU|BANCO_REG|Mux5~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[2]~5_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\)) ) + ( 
+-- \CPU|ULA1|Add0~9_sumout\ = SUM(( \CPU|BANCO_REG|Mux5~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[2]~5_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\)) ) + ( 
 -- \CPU|ULA1|Add0~6\ ))
--- \CPU|ULA1|Add0~10\ = CARRY(( \CPU|BANCO_REG|Mux5~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[2]~5_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\)) ) + ( 
+-- \CPU|ULA1|Add0~10\ = CARRY(( \CPU|BANCO_REG|Mux5~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[2]~5_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\)) ) + ( 
 -- \CPU|ULA1|Add0~6\ ))
 
 -- pragma translate_off
@@ -14993,7 +15346,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux5~0_combout\,
 	dataf => \CPU|MUX1|ALT_INV_saida_MUX[2]~5_combout\,
 	cin => \CPU|ULA1|Add0~6\,
@@ -15003,8 +15356,8 @@ PORT MAP (
 \CPU|ULA1|saida[2]~4\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \CPU|ULA1|saida[2]~4_combout\ = ( \SW[2]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((!\MEMORIA_DADOS|dado_out~0_combout\) # (\MEMORIA_DADOS|ram~589_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~33_combout\)) ) ) # ( !\SW[2]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~589_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~33_combout\)) ) )
+-- (\MEMORIA_INTRUCAO|memROM~31_combout\)) ) ) # ( !\SW[2]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~589_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
+-- (\MEMORIA_INTRUCAO|memROM~31_combout\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -15013,7 +15366,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	datab => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~589_combout\,
@@ -15165,14 +15518,14 @@ PORT MAP (
 
 \CPU|BANCO_REG|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Mux5~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_2|DOUT\(2) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_3|DOUT\(2) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_0|DOUT\(2) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_1|DOUT\(2) ) ) )
+-- \CPU|BANCO_REG|Mux5~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_3|DOUT\(2) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_2|DOUT\(2) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_1|DOUT\(2) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_0|DOUT\(2) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011001100110011010101010101010100000000111111110000111100001111",
+	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -15180,15 +15533,15 @@ PORT MAP (
 	datab => \CPU|BANCO_REG|REG_1|ALT_INV_DOUT\(2),
 	datac => \CPU|BANCO_REG|REG_2|ALT_INV_DOUT\(2),
 	datad => \CPU|BANCO_REG|REG_3|ALT_INV_DOUT\(2),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Mux5~0_combout\);
 
 \CPU|ULA1|Add1~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add1~29_sumout\ = SUM(( \CPU|BANCO_REG|Mux4~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[3]~6_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~62_combout\)) ) + 
+-- \CPU|ULA1|Add1~29_sumout\ = SUM(( \CPU|BANCO_REG|Mux4~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[3]~6_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~65_combout\)) ) + 
 -- ( \CPU|ULA1|Add1~26\ ))
--- \CPU|ULA1|Add1~30\ = CARRY(( \CPU|BANCO_REG|Mux4~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[3]~6_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~62_combout\)) ) + ( 
+-- \CPU|ULA1|Add1~30\ = CARRY(( \CPU|BANCO_REG|Mux4~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[3]~6_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~65_combout\)) ) + ( 
 -- \CPU|ULA1|Add1~26\ ))
 
 -- pragma translate_off
@@ -15199,7 +15552,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux4~0_combout\,
 	dataf => \CPU|MUX1|ALT_INV_saida_MUX[3]~6_combout\,
 	cin => \CPU|ULA1|Add1~26\,
@@ -15208,9 +15561,9 @@ PORT MAP (
 
 \CPU|ULA1|Add0~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add0~13_sumout\ = SUM(( \CPU|BANCO_REG|Mux4~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[3]~6_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~62_combout\)) ) + ( 
+-- \CPU|ULA1|Add0~13_sumout\ = SUM(( \CPU|BANCO_REG|Mux4~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[3]~6_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~65_combout\)) ) + ( 
 -- \CPU|ULA1|Add0~10\ ))
--- \CPU|ULA1|Add0~14\ = CARRY(( \CPU|BANCO_REG|Mux4~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[3]~6_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~62_combout\)) ) + ( 
+-- \CPU|ULA1|Add0~14\ = CARRY(( \CPU|BANCO_REG|Mux4~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[3]~6_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~65_combout\)) ) + ( 
 -- \CPU|ULA1|Add0~10\ ))
 
 -- pragma translate_off
@@ -15221,7 +15574,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux4~0_combout\,
 	dataf => \CPU|MUX1|ALT_INV_saida_MUX[3]~6_combout\,
 	cin => \CPU|ULA1|Add0~10\,
@@ -15231,8 +15584,8 @@ PORT MAP (
 \CPU|ULA1|saida[3]~6\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \CPU|ULA1|saida[3]~6_combout\ = ( \SW[3]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((!\MEMORIA_DADOS|dado_out~0_combout\) # (\MEMORIA_DADOS|ram~610_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~62_combout\)) ) ) # ( !\SW[3]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~610_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~62_combout\)) ) )
+-- (\MEMORIA_INTRUCAO|memROM~65_combout\)) ) ) # ( !\SW[3]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~610_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
+-- (\MEMORIA_INTRUCAO|memROM~65_combout\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -15241,7 +15594,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	datab => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~610_combout\,
@@ -15393,14 +15746,14 @@ PORT MAP (
 
 \CPU|BANCO_REG|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Mux4~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_2|DOUT\(3) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_3|DOUT\(3) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_0|DOUT\(3) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_1|DOUT\(3) ) ) )
+-- \CPU|BANCO_REG|Mux4~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_3|DOUT\(3) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_2|DOUT\(3) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_1|DOUT\(3) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_0|DOUT\(3) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011001100110011010101010101010100000000111111110000111100001111",
+	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -15408,15 +15761,15 @@ PORT MAP (
 	datab => \CPU|BANCO_REG|REG_1|ALT_INV_DOUT\(3),
 	datac => \CPU|BANCO_REG|REG_2|ALT_INV_DOUT\(3),
 	datad => \CPU|BANCO_REG|REG_3|ALT_INV_DOUT\(3),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Mux4~0_combout\);
 
 \CPU|ULA1|Add0~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add0~17_sumout\ = SUM(( \CPU|BANCO_REG|Mux3~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[4]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~65_combout\)) ) + ( 
+-- \CPU|ULA1|Add0~17_sumout\ = SUM(( \CPU|BANCO_REG|Mux3~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[4]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~66_combout\)) ) + ( 
 -- \CPU|ULA1|Add0~14\ ))
--- \CPU|ULA1|Add0~18\ = CARRY(( \CPU|BANCO_REG|Mux3~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[4]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~65_combout\)) ) + ( 
+-- \CPU|ULA1|Add0~18\ = CARRY(( \CPU|BANCO_REG|Mux3~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[4]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~66_combout\)) ) + ( 
 -- \CPU|ULA1|Add0~14\ ))
 
 -- pragma translate_off
@@ -15427,7 +15780,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux3~0_combout\,
 	dataf => \CPU|MUX1|ALT_INV_saida_MUX[4]~2_combout\,
 	cin => \CPU|ULA1|Add0~14\,
@@ -15437,8 +15790,8 @@ PORT MAP (
 \CPU|ULA1|saida[4]~8\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \CPU|ULA1|saida[4]~8_combout\ = ( \SW[4]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((!\MEMORIA_DADOS|dado_out~0_combout\) # (\MEMORIA_DADOS|ram~631_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~65_combout\)) ) ) # ( !\SW[4]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~631_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~65_combout\)) ) )
+-- (\MEMORIA_INTRUCAO|memROM~66_combout\)) ) ) # ( !\SW[4]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~631_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
+-- (\MEMORIA_INTRUCAO|memROM~66_combout\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -15447,7 +15800,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	datab => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~631_combout\,
@@ -15599,14 +15952,14 @@ PORT MAP (
 
 \CPU|BANCO_REG|Mux3~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Mux3~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_2|DOUT\(4) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_3|DOUT\(4) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_0|DOUT\(4) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_1|DOUT\(4) ) ) )
+-- \CPU|BANCO_REG|Mux3~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_3|DOUT\(4) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_2|DOUT\(4) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_1|DOUT\(4) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_0|DOUT\(4) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011001100110011010101010101010100000000111111110000111100001111",
+	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -15614,15 +15967,15 @@ PORT MAP (
 	datab => \CPU|BANCO_REG|REG_1|ALT_INV_DOUT\(4),
 	datac => \CPU|BANCO_REG|REG_2|ALT_INV_DOUT\(4),
 	datad => \CPU|BANCO_REG|REG_3|ALT_INV_DOUT\(4),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Mux3~0_combout\);
 
 \CPU|ULA1|Add1~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add1~1_sumout\ = SUM(( \CPU|BANCO_REG|Mux3~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[4]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~65_combout\)) ) + ( 
+-- \CPU|ULA1|Add1~1_sumout\ = SUM(( \CPU|BANCO_REG|Mux3~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[4]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~66_combout\)) ) + ( 
 -- \CPU|ULA1|Add1~30\ ))
--- \CPU|ULA1|Add1~2\ = CARRY(( \CPU|BANCO_REG|Mux3~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[4]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~65_combout\)) ) + ( 
+-- \CPU|ULA1|Add1~2\ = CARRY(( \CPU|BANCO_REG|Mux3~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[4]~2_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~66_combout\)) ) + ( 
 -- \CPU|ULA1|Add1~30\ ))
 
 -- pragma translate_off
@@ -15633,7 +15986,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux3~0_combout\,
 	dataf => \CPU|MUX1|ALT_INV_saida_MUX[4]~2_combout\,
 	cin => \CPU|ULA1|Add1~30\,
@@ -15698,8 +16051,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~632\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~632_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~68_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~36_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~52_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~632_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~68_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~36_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~52_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~20_q\ ) ) )
 
 -- pragma translate_off
@@ -15713,8 +16066,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~52_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~36_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~68_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~632_combout\);
 
 \MEMORIA_DADOS|ram~148\ : dffeas
@@ -15775,8 +16128,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~633\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~633_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~196_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~164_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~180_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~633_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~196_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~164_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~180_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~148_q\ ) ) )
 
 -- pragma translate_off
@@ -15790,8 +16143,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~180_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~164_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~196_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~633_combout\);
 
 \MEMORIA_DADOS|ram~84\ : dffeas
@@ -15852,8 +16205,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~634\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~634_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~132_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~100_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~116_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~634_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~132_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~100_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~116_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~84_q\ ) ) )
 
 -- pragma translate_off
@@ -15867,8 +16220,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~116_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~100_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~132_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~634_combout\);
 
 \MEMORIA_DADOS|ram~212\ : dffeas
@@ -15929,8 +16282,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~635\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~635_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~260_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~228_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~244_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~635_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~260_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~228_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~244_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~212_q\ ) ) )
 
 -- pragma translate_off
@@ -15944,14 +16297,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~244_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~228_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~260_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~635_combout\);
 
 \MEMORIA_DADOS|ram~636\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~636_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~635_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~634_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~633_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~636_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~635_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~634_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~633_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~632_combout\ ) ) )
 
 -- pragma translate_off
@@ -15965,8 +16318,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~633_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~634_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~635_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~636_combout\);
 
 \MEMORIA_DADOS|ram~276\ : dffeas
@@ -16027,8 +16380,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~637\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~637_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~436_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~404_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~308_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~637_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~436_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~404_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~308_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~276_q\ ) ) )
 
 -- pragma translate_off
@@ -16042,8 +16395,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~308_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~404_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~436_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~637_combout\);
 
 \MEMORIA_DADOS|ram~292\ : dffeas
@@ -16104,8 +16457,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~638\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~638_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~452_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~420_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~324_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~638_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~452_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~420_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~324_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~292_q\ ) ) )
 
 -- pragma translate_off
@@ -16119,8 +16472,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~324_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~420_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~452_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~638_combout\);
 
 \MEMORIA_DADOS|ram~340\ : dffeas
@@ -16181,8 +16534,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~639\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~639_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~500_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~468_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~372_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~639_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~500_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~468_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~372_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~340_q\ ) ) )
 
 -- pragma translate_off
@@ -16196,8 +16549,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~372_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~468_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~500_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~639_combout\);
 
 \MEMORIA_DADOS|ram~356\ : dffeas
@@ -16258,8 +16611,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~640\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~640_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~516_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~484_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~388_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~640_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~516_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~484_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~388_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~356_q\ ) ) )
 
 -- pragma translate_off
@@ -16273,14 +16626,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~388_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~484_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~516_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~640_combout\);
 
 \MEMORIA_DADOS|ram~641\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~641_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~640_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~639_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~638_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~641_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~640_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~639_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~638_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~637_combout\ ) ) )
 
 -- pragma translate_off
@@ -16294,8 +16647,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~638_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~639_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~640_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~641_combout\);
 
 \MEMORIA_DADOS|ram~28\ : dffeas
@@ -16356,8 +16709,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~642\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~642_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~76_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~44_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~60_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~642_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~76_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~44_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~60_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~28_q\ ) ) )
 
 -- pragma translate_off
@@ -16371,8 +16724,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~60_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~44_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~76_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~642_combout\);
 
 \MEMORIA_DADOS|ram~156\ : dffeas
@@ -16433,8 +16786,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~643\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~643_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~204_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~172_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~188_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~643_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~204_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~172_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~188_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~156_q\ ) ) )
 
 -- pragma translate_off
@@ -16448,8 +16801,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~188_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~172_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~204_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~643_combout\);
 
 \MEMORIA_DADOS|ram~92\ : dffeas
@@ -16510,8 +16863,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~644\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~644_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~140_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~108_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~124_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~644_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~140_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~108_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~124_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~92_q\ ) ) )
 
 -- pragma translate_off
@@ -16525,8 +16878,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~124_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~108_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~140_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~644_combout\);
 
 \MEMORIA_DADOS|ram~220\ : dffeas
@@ -16587,8 +16940,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~645\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~645_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~268_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~236_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~252_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~645_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~268_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~236_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~252_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~220_q\ ) ) )
 
 -- pragma translate_off
@@ -16602,14 +16955,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~252_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~236_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~268_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~645_combout\);
 
 \MEMORIA_DADOS|ram~646\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~646_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~645_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~644_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~643_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~646_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~645_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~644_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~643_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~642_combout\ ) ) )
 
 -- pragma translate_off
@@ -16623,8 +16976,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~643_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~644_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~645_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~646_combout\);
 
 \MEMORIA_DADOS|ram~284\ : dffeas
@@ -16685,8 +17038,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~647\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~647_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~380_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~348_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~316_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~647_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~380_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~348_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~316_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~284_q\ ) ) )
 
 -- pragma translate_off
@@ -16700,8 +17053,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~316_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~348_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~380_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~647_combout\);
 
 \MEMORIA_DADOS|ram~412\ : dffeas
@@ -16762,8 +17115,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~648\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~648_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~508_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~476_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~444_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~648_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~508_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~476_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~444_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~412_q\ ) ) )
 
 -- pragma translate_off
@@ -16777,8 +17130,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~444_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~476_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~508_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~648_combout\);
 
 \MEMORIA_DADOS|ram~300\ : dffeas
@@ -16839,8 +17192,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~649\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~649_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~396_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~364_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~332_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~649_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~396_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~364_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~332_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~300_q\ ) ) )
 
 -- pragma translate_off
@@ -16854,8 +17207,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~332_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~364_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~396_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~649_combout\);
 
 \MEMORIA_DADOS|ram~428\ : dffeas
@@ -16916,8 +17269,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~650\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~650_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~524_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~492_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~460_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~650_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~524_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~492_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~460_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~428_q\ ) ) )
 
 -- pragma translate_off
@@ -16931,14 +17284,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~460_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~492_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~524_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~650_combout\);
 
 \MEMORIA_DADOS|ram~651\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~651_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~650_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~649_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~648_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~651_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~650_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~649_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~648_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~647_combout\ ) ) )
 
 -- pragma translate_off
@@ -16952,14 +17305,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~648_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~649_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~650_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~651_combout\);
 
 \MEMORIA_DADOS|ram~652\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~652_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~651_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
--- \MEMORIA_DADOS|ram~646_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_DADOS|ram~641_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( 
+-- \MEMORIA_DADOS|ram~652_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~651_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
+-- \MEMORIA_DADOS|ram~646_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_DADOS|ram~641_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( 
 -- \MEMORIA_DADOS|ram~636_combout\ ) ) )
 
 -- pragma translate_off
@@ -16973,8 +17326,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~641_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~646_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~651_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \MEMORIA_DADOS|ram~652_combout\);
 
 \SW[5]~input\ : cyclonev_io_ibuf
@@ -17005,9 +17358,9 @@ PORT MAP (
 
 \CPU|ULA1|Add0~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add0~21_sumout\ = SUM(( \CPU|BANCO_REG|Mux2~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[5]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~48_combout\)) ) + ( 
+-- \CPU|ULA1|Add0~21_sumout\ = SUM(( \CPU|BANCO_REG|Mux2~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[5]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~46_combout\)) ) + ( 
 -- \CPU|ULA1|Add0~18\ ))
--- \CPU|ULA1|Add0~22\ = CARRY(( \CPU|BANCO_REG|Mux2~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[5]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~48_combout\)) ) + ( 
+-- \CPU|ULA1|Add0~22\ = CARRY(( \CPU|BANCO_REG|Mux2~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\CPU|MUX1|saida_MUX[5]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~46_combout\)) ) + ( 
 -- \CPU|ULA1|Add0~18\ ))
 
 -- pragma translate_off
@@ -17018,7 +17371,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux2~0_combout\,
 	dataf => \CPU|MUX1|ALT_INV_saida_MUX[5]~3_combout\,
 	cin => \CPU|ULA1|Add0~18\,
@@ -17028,8 +17381,8 @@ PORT MAP (
 \CPU|ULA1|saida[5]~10\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \CPU|ULA1|saida[5]~10_combout\ = ( \SW[5]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((!\MEMORIA_DADOS|dado_out~0_combout\) # (\MEMORIA_DADOS|ram~652_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~48_combout\)) ) ) # ( !\SW[5]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~652_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~48_combout\)) ) )
+-- (\MEMORIA_INTRUCAO|memROM~46_combout\)) ) ) # ( !\SW[5]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~652_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
+-- (\MEMORIA_INTRUCAO|memROM~46_combout\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -17038,7 +17391,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	datab => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~652_combout\,
@@ -17190,14 +17543,14 @@ PORT MAP (
 
 \CPU|BANCO_REG|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Mux2~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_2|DOUT\(5) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_3|DOUT\(5) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_0|DOUT\(5) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_1|DOUT\(5) ) ) )
+-- \CPU|BANCO_REG|Mux2~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_3|DOUT\(5) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_2|DOUT\(5) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_1|DOUT\(5) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_0|DOUT\(5) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011001100110011010101010101010100000000111111110000111100001111",
+	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -17205,15 +17558,15 @@ PORT MAP (
 	datab => \CPU|BANCO_REG|REG_1|ALT_INV_DOUT\(5),
 	datac => \CPU|BANCO_REG|REG_2|ALT_INV_DOUT\(5),
 	datad => \CPU|BANCO_REG|REG_3|ALT_INV_DOUT\(5),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Mux2~0_combout\);
 
 \CPU|ULA1|Add1~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Add1~5_sumout\ = SUM(( \CPU|BANCO_REG|Mux2~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[5]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~48_combout\)) ) + ( 
+-- \CPU|ULA1|Add1~5_sumout\ = SUM(( \CPU|BANCO_REG|Mux2~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[5]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~46_combout\)) ) + ( 
 -- \CPU|ULA1|Add1~2\ ))
--- \CPU|ULA1|Add1~6\ = CARRY(( \CPU|BANCO_REG|Mux2~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[5]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~48_combout\)) ) + ( 
+-- \CPU|ULA1|Add1~6\ = CARRY(( \CPU|BANCO_REG|Mux2~0_combout\ ) + ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((!\CPU|MUX1|saida_MUX[5]~3_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~46_combout\)) ) + ( 
 -- \CPU|ULA1|Add1~2\ ))
 
 -- pragma translate_off
@@ -17224,7 +17577,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	datad => \CPU|BANCO_REG|ALT_INV_Mux2~0_combout\,
 	dataf => \CPU|MUX1|ALT_INV_saida_MUX[5]~3_combout\,
 	cin => \CPU|ULA1|Add1~2\,
@@ -17394,14 +17747,14 @@ PORT MAP (
 
 \CPU|BANCO_REG|Mux1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Mux1~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_2|DOUT\(6) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_3|DOUT\(6) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_0|DOUT\(6) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_1|DOUT\(6) ) ) )
+-- \CPU|BANCO_REG|Mux1~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_3|DOUT\(6) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_2|DOUT\(6) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_1|DOUT\(6) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_0|DOUT\(6) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011001100110011010101010101010100000000111111110000111100001111",
+	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -17409,8 +17762,8 @@ PORT MAP (
 	datab => \CPU|BANCO_REG|REG_1|ALT_INV_DOUT\(6),
 	datac => \CPU|BANCO_REG|REG_2|ALT_INV_DOUT\(6),
 	datad => \CPU|BANCO_REG|REG_3|ALT_INV_DOUT\(6),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Mux1~0_combout\);
 
 \MEMORIA_DADOS|ram~21\ : dffeas
@@ -17471,8 +17824,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~653\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~653_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~101_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~85_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~37_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~653_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~101_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~85_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~37_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~21_q\ ) ) )
 
 -- pragma translate_off
@@ -17486,8 +17839,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~37_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~85_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~101_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~653_combout\);
 
 \MEMORIA_DADOS|ram~29\ : dffeas
@@ -17548,8 +17901,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~654\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~654_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~109_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~93_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~45_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~654_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~109_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~93_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~45_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~29_q\ ) ) )
 
 -- pragma translate_off
@@ -17563,8 +17916,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~45_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~93_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~109_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~654_combout\);
 
 \MEMORIA_DADOS|ram~149\ : dffeas
@@ -17625,8 +17978,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~655\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~655_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~229_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~213_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~165_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~655_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~229_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~213_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~165_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~149_q\ ) ) )
 
 -- pragma translate_off
@@ -17640,8 +17993,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~165_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~213_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~229_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~655_combout\);
 
 \MEMORIA_DADOS|ram~157\ : dffeas
@@ -17702,8 +18055,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~656\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~656_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~237_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~221_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~173_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~656_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~237_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~221_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~173_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~157_q\ ) ) )
 
 -- pragma translate_off
@@ -17717,14 +18070,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~173_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~221_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~237_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~656_combout\);
 
 \MEMORIA_DADOS|ram~657\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~657_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~656_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~655_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~654_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~657_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~656_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~655_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~654_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~653_combout\ ) ) )
 
 -- pragma translate_off
@@ -17738,8 +18091,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~654_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~655_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~656_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~657_combout\);
 
 \MEMORIA_DADOS|ram~277\ : dffeas
@@ -17800,8 +18153,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~658\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~658_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~421_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~293_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~405_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~658_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~421_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~293_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~405_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~277_q\ ) ) )
 
 -- pragma translate_off
@@ -17815,8 +18168,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~405_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~293_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~421_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~658_combout\);
 
 \MEMORIA_DADOS|ram~285\ : dffeas
@@ -17877,8 +18230,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~659\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~659_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~429_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~301_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~413_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~659_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~429_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~301_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~413_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~285_q\ ) ) )
 
 -- pragma translate_off
@@ -17892,8 +18245,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~413_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~301_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~429_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~659_combout\);
 
 \MEMORIA_DADOS|ram~341\ : dffeas
@@ -17954,8 +18307,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~660\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~660_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~485_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~357_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~469_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~660_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~485_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~357_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~469_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~341_q\ ) ) )
 
 -- pragma translate_off
@@ -17969,8 +18322,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~469_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~357_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~485_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~660_combout\);
 
 \MEMORIA_DADOS|ram~349\ : dffeas
@@ -18031,8 +18384,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~661\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~661_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~493_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~365_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~477_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~661_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~493_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~365_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~477_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~349_q\ ) ) )
 
 -- pragma translate_off
@@ -18046,14 +18399,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~477_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~365_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~493_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~661_combout\);
 
 \MEMORIA_DADOS|ram~662\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~662_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~661_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~660_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~659_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~662_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~661_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~660_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~659_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~658_combout\ ) ) )
 
 -- pragma translate_off
@@ -18067,8 +18420,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~659_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~660_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~661_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~662_combout\);
 
 \MEMORIA_DADOS|ram~53\ : dffeas
@@ -18129,8 +18482,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~663\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~663_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~77_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~69_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~61_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~663_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~77_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~69_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~61_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~53_q\ ) ) )
 
 -- pragma translate_off
@@ -18144,8 +18497,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~61_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~69_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~77_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~663_combout\);
 
 \MEMORIA_DADOS|ram~181\ : dffeas
@@ -18206,8 +18559,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~664\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~664_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~205_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~197_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~189_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~664_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~205_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~197_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~189_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~181_q\ ) ) )
 
 -- pragma translate_off
@@ -18221,8 +18574,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~189_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~197_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~205_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~664_combout\);
 
 \MEMORIA_DADOS|ram~117\ : dffeas
@@ -18283,8 +18636,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~665\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~665_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~141_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~133_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~125_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~665_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~141_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~133_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~125_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~117_q\ ) ) )
 
 -- pragma translate_off
@@ -18298,8 +18651,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~125_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~133_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~141_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~665_combout\);
 
 \MEMORIA_DADOS|ram~245\ : dffeas
@@ -18360,8 +18713,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~666\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~666_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~269_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- \MEMORIA_DADOS|ram~261_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_DADOS|ram~253_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
+-- \MEMORIA_DADOS|ram~666_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~269_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- \MEMORIA_DADOS|ram~261_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_DADOS|ram~253_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
 -- \MEMORIA_DADOS|ram~245_q\ ) ) )
 
 -- pragma translate_off
@@ -18375,14 +18728,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~253_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~261_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~269_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
 	combout => \MEMORIA_DADOS|ram~666_combout\);
 
 \MEMORIA_DADOS|ram~667\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~667_combout\ = ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~666_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~665_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~664_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~667_combout\ = ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~666_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~665_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~664_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~663_combout\ ) ) )
 
 -- pragma translate_off
@@ -18396,8 +18749,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~664_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~665_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~666_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~667_combout\);
 
 \MEMORIA_DADOS|ram~309\ : dffeas
@@ -18458,8 +18811,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~668\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~668_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~389_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~373_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~325_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~668_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~389_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~373_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~325_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~309_q\ ) ) )
 
 -- pragma translate_off
@@ -18473,8 +18826,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~325_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~373_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~389_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~668_combout\);
 
 \MEMORIA_DADOS|ram~317\ : dffeas
@@ -18535,8 +18888,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~669\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~669_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~397_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~381_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~333_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~669_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~397_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~381_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~333_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~317_q\ ) ) )
 
 -- pragma translate_off
@@ -18550,8 +18903,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~333_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~381_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~397_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~669_combout\);
 
 \MEMORIA_DADOS|ram~437\ : dffeas
@@ -18612,8 +18965,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~670\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~670_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~517_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~501_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~453_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~670_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~517_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~501_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~453_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~437_q\ ) ) )
 
 -- pragma translate_off
@@ -18627,8 +18980,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~453_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~501_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~517_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~670_combout\);
 
 \MEMORIA_DADOS|ram~445\ : dffeas
@@ -18689,8 +19042,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~671\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~671_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~525_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~509_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~461_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~671_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~525_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~509_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~461_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~445_q\ ) ) )
 
 -- pragma translate_off
@@ -18704,14 +19057,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~461_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~509_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~525_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~671_combout\);
 
 \MEMORIA_DADOS|ram~672\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~672_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~671_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~670_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~669_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~672_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~671_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~670_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~669_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~668_combout\ ) ) )
 
 -- pragma translate_off
@@ -18725,14 +19078,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~669_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~670_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~671_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~672_combout\);
 
 \MEMORIA_DADOS|ram~673\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~673_combout\ = ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~672_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
--- \MEMORIA_DADOS|ram~667_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_DADOS|ram~662_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( 
+-- \MEMORIA_DADOS|ram~673_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~672_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
+-- \MEMORIA_DADOS|ram~667_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_DADOS|ram~662_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( 
 -- \MEMORIA_DADOS|ram~657_combout\ ) ) )
 
 -- pragma translate_off
@@ -18746,8 +19099,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~662_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~667_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~672_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	combout => \MEMORIA_DADOS|ram~673_combout\);
 
 \SW[6]~input\ : cyclonev_io_ibuf
@@ -18763,8 +19116,8 @@ PORT MAP (
 \CPU|MUX1|saida_MUX[6]~0\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \CPU|MUX1|saida_MUX[6]~0_combout\ = ( \SW[6]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((!\MEMORIA_DADOS|dado_out~0_combout\) # (\MEMORIA_DADOS|ram~673_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~66_combout\)) ) ) # ( !\SW[6]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~673_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~66_combout\)) ) )
+-- (\MEMORIA_INTRUCAO|memROM~67_combout\)) ) ) # ( !\SW[6]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~673_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
+-- (\MEMORIA_INTRUCAO|memROM~67_combout\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -18773,7 +19126,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
 	datab => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~673_combout\,
@@ -18959,14 +19312,14 @@ PORT MAP (
 
 \CPU|BANCO_REG|Mux0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Mux0~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_2|DOUT\(7) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_3|DOUT\(7) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_0|DOUT\(7) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_1|DOUT\(7) ) ) )
+-- \CPU|BANCO_REG|Mux0~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_3|DOUT\(7) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_2|DOUT\(7) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_1|DOUT\(7) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_0|DOUT\(7) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011001100110011010101010101010100000000111111110000111100001111",
+	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -18974,8 +19327,8 @@ PORT MAP (
 	datab => \CPU|BANCO_REG|REG_1|ALT_INV_DOUT\(7),
 	datac => \CPU|BANCO_REG|REG_2|ALT_INV_DOUT\(7),
 	datad => \CPU|BANCO_REG|REG_3|ALT_INV_DOUT\(7),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Mux0~0_combout\);
 
 \MEMORIA_DADOS|ram~22\ : dffeas
@@ -19036,8 +19389,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~674\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~674_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~182_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~150_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~54_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~674_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~182_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~150_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~54_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~22_q\ ) ) )
 
 -- pragma translate_off
@@ -19051,8 +19404,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~54_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~150_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~182_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~674_combout\);
 
 \MEMORIA_DADOS|ram~30\ : dffeas
@@ -19113,8 +19466,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~675\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~675_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~190_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~158_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~62_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~675_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~190_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~158_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~62_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~30_q\ ) ) )
 
 -- pragma translate_off
@@ -19128,8 +19481,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~62_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~158_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~190_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~675_combout\);
 
 \MEMORIA_DADOS|ram~86\ : dffeas
@@ -19190,8 +19543,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~676\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~676_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~246_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~214_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~118_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~676_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~246_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~214_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~118_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~86_q\ ) ) )
 
 -- pragma translate_off
@@ -19205,8 +19558,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~118_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~214_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~246_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~676_combout\);
 
 \MEMORIA_DADOS|ram~94\ : dffeas
@@ -19267,8 +19620,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~677\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~677_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~254_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~222_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~126_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~677_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~254_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~222_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~126_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~94_q\ ) ) )
 
 -- pragma translate_off
@@ -19282,14 +19635,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~126_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~222_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~254_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~677_combout\);
 
 \MEMORIA_DADOS|ram~678\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~678_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~677_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~676_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~675_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~678_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~677_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~676_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~675_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~674_combout\ ) ) )
 
 -- pragma translate_off
@@ -19303,8 +19656,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~675_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~676_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~677_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~678_combout\);
 
 \MEMORIA_DADOS|ram~38\ : dffeas
@@ -19365,8 +19718,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~679\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~679_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~174_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~166_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~46_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~679_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~174_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~166_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~46_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~38_q\ ) ) )
 
 -- pragma translate_off
@@ -19380,8 +19733,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~46_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~166_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~174_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~679_combout\);
 
 \MEMORIA_DADOS|ram~70\ : dffeas
@@ -19442,8 +19795,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~680\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~680_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~206_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~198_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~78_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~680_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~206_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~198_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~78_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~70_q\ ) ) )
 
 -- pragma translate_off
@@ -19457,8 +19810,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~78_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~198_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~206_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~680_combout\);
 
 \MEMORIA_DADOS|ram~102\ : dffeas
@@ -19519,8 +19872,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~681\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~681_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~238_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~230_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~110_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~681_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~238_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~230_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~110_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~102_q\ ) ) )
 
 -- pragma translate_off
@@ -19534,8 +19887,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~110_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~230_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~238_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~681_combout\);
 
 \MEMORIA_DADOS|ram~134\ : dffeas
@@ -19596,8 +19949,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~682\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~682_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~270_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~262_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~142_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~682_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~270_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~262_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~142_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~134_q\ ) ) )
 
 -- pragma translate_off
@@ -19611,14 +19964,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~142_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~262_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~270_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~682_combout\);
 
 \MEMORIA_DADOS|ram~683\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~683_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~682_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~681_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~680_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~683_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~682_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~681_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~680_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~679_combout\ ) ) )
 
 -- pragma translate_off
@@ -19632,8 +19985,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~680_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~681_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~682_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~683_combout\);
 
 \MEMORIA_DADOS|ram~278\ : dffeas
@@ -19694,8 +20047,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~684\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~684_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~374_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~342_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~310_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~684_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~374_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~342_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~310_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~278_q\ ) ) )
 
 -- pragma translate_off
@@ -19709,8 +20062,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~310_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~342_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~374_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~684_combout\);
 
 \MEMORIA_DADOS|ram~286\ : dffeas
@@ -19771,8 +20124,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~685\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~685_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~382_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~350_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~318_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~685_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~382_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~350_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~318_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~286_q\ ) ) )
 
 -- pragma translate_off
@@ -19786,8 +20139,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~318_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~350_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~382_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~685_combout\);
 
 \MEMORIA_DADOS|ram~406\ : dffeas
@@ -19848,8 +20201,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~686\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~686_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~502_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~470_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~438_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~686_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~502_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~470_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~438_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~406_q\ ) ) )
 
 -- pragma translate_off
@@ -19863,8 +20216,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~438_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~470_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~502_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~686_combout\);
 
 \MEMORIA_DADOS|ram~414\ : dffeas
@@ -19925,8 +20278,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~687\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~687_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~510_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~478_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~446_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~687_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~510_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~478_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~446_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~414_q\ ) ) )
 
 -- pragma translate_off
@@ -19940,14 +20293,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~446_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~478_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~510_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~687_combout\);
 
 \MEMORIA_DADOS|ram~688\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~688_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~687_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~686_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~685_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~688_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~687_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~686_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~685_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~684_combout\ ) ) )
 
 -- pragma translate_off
@@ -19961,8 +20314,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~685_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~686_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~687_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~688_combout\);
 
 \MEMORIA_DADOS|ram~294\ : dffeas
@@ -20023,8 +20376,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~689\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~689_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~430_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~422_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~302_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~689_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~430_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~422_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~302_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~294_q\ ) ) )
 
 -- pragma translate_off
@@ -20038,8 +20391,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~302_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~422_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~430_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~689_combout\);
 
 \MEMORIA_DADOS|ram~326\ : dffeas
@@ -20100,8 +20453,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~690\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~690_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~462_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~454_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~334_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~690_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~462_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~454_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~334_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~326_q\ ) ) )
 
 -- pragma translate_off
@@ -20115,8 +20468,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~334_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~454_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~462_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~690_combout\);
 
 \MEMORIA_DADOS|ram~358\ : dffeas
@@ -20177,8 +20530,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~691\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~691_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~494_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~486_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~366_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~691_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~494_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~486_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~366_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~358_q\ ) ) )
 
 -- pragma translate_off
@@ -20192,8 +20545,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~366_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~486_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~494_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~691_combout\);
 
 \MEMORIA_DADOS|ram~390\ : dffeas
@@ -20254,8 +20607,8 @@ PORT MAP (
 
 \MEMORIA_DADOS|ram~692\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~692_combout\ = ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~526_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
--- \MEMORIA_DADOS|ram~518_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~398_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~692_combout\ = ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~526_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
+-- \MEMORIA_DADOS|ram~518_q\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( \MEMORIA_DADOS|ram~398_q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( !\MEMORIA_INTRUCAO|memROM~66_combout\ & ( 
 -- \MEMORIA_DADOS|ram~390_q\ ) ) )
 
 -- pragma translate_off
@@ -20269,14 +20622,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~398_q\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~518_q\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~526_q\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
 	combout => \MEMORIA_DADOS|ram~692_combout\);
 
 \MEMORIA_DADOS|ram~693\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~693_combout\ = ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~692_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( \MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
--- \MEMORIA_DADOS|ram~691_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( \MEMORIA_DADOS|ram~690_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~33_combout\ & ( !\MEMORIA_INTRUCAO|memROM~62_combout\ & ( 
+-- \MEMORIA_DADOS|ram~693_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~692_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
+-- \MEMORIA_DADOS|ram~691_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( \MEMORIA_DADOS|ram~690_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~65_combout\ & ( 
 -- \MEMORIA_DADOS|ram~689_combout\ ) ) )
 
 -- pragma translate_off
@@ -20290,14 +20643,14 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~690_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~691_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~692_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	combout => \MEMORIA_DADOS|ram~693_combout\);
 
 \MEMORIA_DADOS|ram~694\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_DADOS|ram~694_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_DADOS|ram~693_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~48_combout\ & ( 
--- \MEMORIA_DADOS|ram~688_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( \MEMORIA_DADOS|ram~683_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~48_combout\ & ( 
+-- \MEMORIA_DADOS|ram~694_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_DADOS|ram~693_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( 
+-- \MEMORIA_DADOS|ram~688_combout\ ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_DADOS|ram~683_combout\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( 
 -- \MEMORIA_DADOS|ram~678_combout\ ) ) )
 
 -- pragma translate_off
@@ -20311,8 +20664,8 @@ PORT MAP (
 	datab => \MEMORIA_DADOS|ALT_INV_ram~683_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~688_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~693_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	combout => \MEMORIA_DADOS|ram~694_combout\);
 
 \SW[7]~input\ : cyclonev_io_ibuf
@@ -20328,8 +20681,8 @@ PORT MAP (
 \CPU|MUX1|saida_MUX[7]~1\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \CPU|MUX1|saida_MUX[7]~1_combout\ = ( \SW[7]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((!\MEMORIA_DADOS|dado_out~0_combout\) # (\MEMORIA_DADOS|ram~694_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~44_combout\)) ) ) # ( !\SW[7]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~694_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~44_combout\)) ) )
+-- (\MEMORIA_INTRUCAO|memROM~42_combout\)) ) ) # ( !\SW[7]~input_o\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|dado_out~0_combout\ & \MEMORIA_DADOS|ram~694_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
+-- (\MEMORIA_INTRUCAO|memROM~42_combout\)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -20338,7 +20691,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~44_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\,
 	datab => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\,
 	datad => \MEMORIA_DADOS|ALT_INV_ram~694_combout\,
@@ -20363,37 +20716,37 @@ PORT MAP (
 
 \CPU|FLAG|DOUT~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|FLAG|DOUT~0_combout\ = ( \CPU|FLAG|DOUT~q\ & ( (!\MEMORIA_INTRUCAO|memROM~57_combout\) # ((!\MEMORIA_INTRUCAO|memROM~58_combout\) # ((!\MEMORIA_INTRUCAO|memROM~23_combout\) # (\MEMORIA_INTRUCAO|memROM~27_combout\))) ) )
+-- \CPU|FLAG|DOUT~0_combout\ = ( \CPU|FLAG|DOUT~q\ & ( ((!\MEMORIA_INTRUCAO|memROM~68_combout\) # ((!\MEMORIA_INTRUCAO|memROM~19_combout\) # (\MEMORIA_INTRUCAO|memROM~23_combout\))) # (\MEMORIA_INTRUCAO|memROM~10_combout\) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111101111111100000000000000001111111011111111",
+	lut_mask => "0000000000000000111111011111111100000000000000001111110111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~57_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
 	datae => \CPU|FLAG|ALT_INV_DOUT~q\,
 	combout => \CPU|FLAG|DOUT~0_combout\);
 
 \CPU|FLAG|DOUT~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|FLAG|DOUT~1_combout\ = ( !\CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\ & ( (\MEMORIA_INTRUCAO|memROM~57_combout\ & (\MEMORIA_INTRUCAO|memROM~58_combout\ & (\MEMORIA_INTRUCAO|memROM~23_combout\ & !\MEMORIA_INTRUCAO|memROM~27_combout\))) ) )
+-- \CPU|FLAG|DOUT~1_combout\ = ( !\CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~10_combout\ & (\MEMORIA_INTRUCAO|memROM~68_combout\ & (\MEMORIA_INTRUCAO|memROM~19_combout\ & !\MEMORIA_INTRUCAO|memROM~23_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000100000000000000000000000000000001000000000000000000000000",
+	lut_mask => "0000001000000000000000000000000000000010000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~57_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
 	datae => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux7~0_combout\,
 	combout => \CPU|FLAG|DOUT~1_combout\);
 
@@ -20450,74 +20803,25 @@ PORT MAP (
 
 \CPU|MUX2|Equal1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|MUX2|Equal1~0_combout\ = ( \CPU|FLAG|DOUT~q\ & ( (!\MEMORIA_INTRUCAO|memROM~58_combout\ & (((!\MEMORIA_INTRUCAO|memROM~23_combout\ & \MEMORIA_INTRUCAO|memROM~27_combout\)))) # (\MEMORIA_INTRUCAO|memROM~58_combout\ & 
--- (!\MEMORIA_INTRUCAO|memROM~57_combout\ & (\MEMORIA_INTRUCAO|memROM~23_combout\ & !\MEMORIA_INTRUCAO|memROM~27_combout\))) ) ) # ( !\CPU|FLAG|DOUT~q\ & ( (!\MEMORIA_INTRUCAO|memROM~57_combout\ & (\MEMORIA_INTRUCAO|memROM~58_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~23_combout\ & !\MEMORIA_INTRUCAO|memROM~27_combout\))) # (\MEMORIA_INTRUCAO|memROM~57_combout\ & (!\MEMORIA_INTRUCAO|memROM~58_combout\ & (!\MEMORIA_INTRUCAO|memROM~23_combout\ & \MEMORIA_INTRUCAO|memROM~27_combout\))) ) )
+-- \CPU|MUX2|Equal1~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~23_combout\ & ( \CPU|FLAG|DOUT~q\ & ( (!\MEMORIA_INTRUCAO|memROM~19_combout\ & ((\MEMORIA_INTRUCAO|memROM~15_combout\) # (\MEMORIA_INTRUCAO|memROM~13_combout\))) ) ) ) # ( 
+-- !\MEMORIA_INTRUCAO|memROM~23_combout\ & ( \CPU|FLAG|DOUT~q\ & ( (\MEMORIA_INTRUCAO|memROM~10_combout\ & (!\MEMORIA_INTRUCAO|memROM~13_combout\ & (!\MEMORIA_INTRUCAO|memROM~15_combout\ & \MEMORIA_INTRUCAO|memROM~19_combout\))) ) ) ) # ( 
+-- \MEMORIA_INTRUCAO|memROM~23_combout\ & ( !\CPU|FLAG|DOUT~q\ & ( (!\MEMORIA_INTRUCAO|memROM~10_combout\ & (!\MEMORIA_INTRUCAO|memROM~19_combout\ & ((\MEMORIA_INTRUCAO|memROM~15_combout\) # (\MEMORIA_INTRUCAO|memROM~13_combout\)))) ) ) ) # ( 
+-- !\MEMORIA_INTRUCAO|memROM~23_combout\ & ( !\CPU|FLAG|DOUT~q\ & ( (\MEMORIA_INTRUCAO|memROM~10_combout\ & (!\MEMORIA_INTRUCAO|memROM~13_combout\ & (!\MEMORIA_INTRUCAO|memROM~15_combout\ & \MEMORIA_INTRUCAO|memROM~19_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000001001000000000000101100000000000010010000000000001011000000",
+	lut_mask => "0000000001000000001010100000000000000000010000000011111100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~57_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
-	datae => \CPU|FLAG|ALT_INV_DOUT~q\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
+	dataf => \CPU|FLAG|ALT_INV_DOUT~q\,
 	combout => \CPU|MUX2|Equal1~0_combout\);
-
-\CPU|SOMADOR|Add0~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \CPU|SOMADOR|Add0~1_sumout\ = SUM(( \CPU|PC|DOUT\(0) ) + ( VCC ) + ( !VCC ))
--- \CPU|SOMADOR|Add0~2\ = CARRY(( \CPU|PC|DOUT\(0) ) + ( VCC ) + ( !VCC ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \CPU|PC|ALT_INV_DOUT\(0),
-	cin => GND,
-	sumout => \CPU|SOMADOR|Add0~1_sumout\,
-	cout => \CPU|SOMADOR|Add0~2\);
-
-\CPU|SOMADOR|Add0~5\ : cyclonev_lcell_comb
--- Equation(s):
--- \CPU|SOMADOR|Add0~5_sumout\ = SUM(( \CPU|PC|DOUT\(1) ) + ( GND ) + ( \CPU|SOMADOR|Add0~2\ ))
--- \CPU|SOMADOR|Add0~6\ = CARRY(( \CPU|PC|DOUT\(1) ) + ( GND ) + ( \CPU|SOMADOR|Add0~2\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \CPU|PC|ALT_INV_DOUT\(1),
-	cin => \CPU|SOMADOR|Add0~2\,
-	sumout => \CPU|SOMADOR|Add0~5_sumout\,
-	cout => \CPU|SOMADOR|Add0~6\);
-
-\CPU|SOMADOR|Add0~9\ : cyclonev_lcell_comb
--- Equation(s):
--- \CPU|SOMADOR|Add0~9_sumout\ = SUM(( \CPU|PC|DOUT\(2) ) + ( GND ) + ( \CPU|SOMADOR|Add0~6\ ))
--- \CPU|SOMADOR|Add0~10\ = CARRY(( \CPU|PC|DOUT\(2) ) + ( GND ) + ( \CPU|SOMADOR|Add0~6\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \CPU|PC|ALT_INV_DOUT\(2),
-	cin => \CPU|SOMADOR|Add0~6\,
-	sumout => \CPU|SOMADOR|Add0~9_sumout\,
-	cout => \CPU|SOMADOR|Add0~10\);
 
 \CPU|SOMADOR|Add0~13\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -20536,26 +20840,6 @@ PORT MAP (
 	sumout => \CPU|SOMADOR|Add0~13_sumout\,
 	cout => \CPU|SOMADOR|Add0~14\);
 
-\CPU|DECODIFICADOR_INSTRUCAO|Mux0~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~23_combout\ & ( !\MEMORIA_INTRUCAO|memROM~27_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~18_combout\ & (!\MEMORIA_INTRUCAO|memROM~19_combout\ & ((\MEMORIA_INTRUCAO|memROM~17_combout\) # 
--- (\MEMORIA_INTRUCAO|memROM~14_combout\)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000011100000000000000000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~17_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~18_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
-	combout => \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\);
-
 \CPU|REG_END_RET|DOUT[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -20572,8 +20856,8 @@ PORT MAP (
 
 \CPU|MUX2|saida_MUX[3]~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|MUX2|saida_MUX[3]~3_combout\ = ( \CPU|REG_END_RET|DOUT\(3) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~13_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & ((!\CPU|MUX2|Equal1~0_combout\) # ((\MEMORIA_INTRUCAO|memROM~62_combout\)))) ) ) # ( 
--- !\CPU|REG_END_RET|DOUT\(3) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~13_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\CPU|MUX2|Equal1~0_combout\ & ((\MEMORIA_INTRUCAO|memROM~62_combout\)))) ) )
+-- \CPU|MUX2|saida_MUX[3]~3_combout\ = ( \CPU|REG_END_RET|DOUT\(3) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~13_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & ((!\CPU|MUX2|Equal1~0_combout\) # ((\MEMORIA_INTRUCAO|memROM~65_combout\)))) ) ) # ( 
+-- !\CPU|REG_END_RET|DOUT\(3) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~13_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\CPU|MUX2|Equal1~0_combout\ & ((\MEMORIA_INTRUCAO|memROM~65_combout\)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -20585,7 +20869,7 @@ PORT MAP (
 	dataa => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
 	datab => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
 	datac => \CPU|SOMADOR|ALT_INV_Add0~13_sumout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~62_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
 	datae => \CPU|REG_END_RET|ALT_INV_DOUT\(3),
 	combout => \CPU|MUX2|saida_MUX[3]~3_combout\);
 
@@ -20602,387 +20886,44 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CPU|PC|DOUT\(3));
 
-\MEMORIA_INTRUCAO|memROM~28\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~28_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) $ (((\CPU|PC|DOUT\(3)))))) # (\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( 
--- \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(2)) # (\CPU|PC|DOUT\(1))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(3) $ (((!\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(2)))))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( 
--- (!\CPU|PC|DOUT\(3) & (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(0) $ (((!\CPU|PC|DOUT\(2)))))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(3) & 
--- (!\CPU|PC|DOUT\(0) $ (!\CPU|PC|DOUT\(1))))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000011000000000000000010101101000010101111000101010010001010100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	datae => \CPU|PC|ALT_INV_DOUT\(4),
-	dataf => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~28_combout\);
-
-\MEMORIA_INTRUCAO|memROM~30\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~30_combout\ = (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(3)))) # (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(3) & ((\CPU|PC|DOUT\(1)) # (\CPU|PC|DOUT\(0)))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000011110000000000001111000000000000111100000000000011110000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~30_combout\);
-
 \MEMORIA_INTRUCAO|memROM~32\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~32_combout\ = ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3))) ) ) # ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) $ (!\CPU|PC|DOUT\(3))))) # 
--- (\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(1)) # (\CPU|PC|DOUT\(0))))) ) )
+-- \MEMORIA_INTRUCAO|memROM~32_combout\ = ( \CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(4))) # (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(4))))) ) ) # ( !\CPU|PC|DOUT\(6) & ( 
+-- (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) $ (\CPU|PC|DOUT\(4))))) # (\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(4)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000000101101000000000000110000010000001011010000000000001100",
+	lut_mask => "1000000101000000010000000000000110000001010000000100000000000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(0),
 	datab => \CPU|PC|ALT_INV_DOUT\(1),
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	datad => \CPU|PC|ALT_INV_DOUT\(4),
 	datae => \CPU|PC|ALT_INV_DOUT\(6),
 	combout => \MEMORIA_INTRUCAO|memROM~32_combout\);
 
 \MEMORIA_INTRUCAO|memROM~33\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~33_combout\ = ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~32_combout\ & ( (((\MEMORIA_INTRUCAO|memROM~28_combout\ & \MEMORIA_INTRUCAO|memROM~29_combout\)) # (\MEMORIA_INTRUCAO|memROM~30_combout\)) # 
--- (\MEMORIA_INTRUCAO|memROM~12_combout\) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( \MEMORIA_INTRUCAO|memROM~32_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~28_combout\ & \MEMORIA_INTRUCAO|memROM~29_combout\)) # (\MEMORIA_INTRUCAO|memROM~12_combout\) ) 
--- ) ) # ( \MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~32_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~28_combout\ & \MEMORIA_INTRUCAO|memROM~29_combout\)) # (\MEMORIA_INTRUCAO|memROM~30_combout\) ) ) ) # ( 
--- !\MEMORIA_INTRUCAO|memROM~31_combout\ & ( !\MEMORIA_INTRUCAO|memROM~32_combout\ & ( (\MEMORIA_INTRUCAO|memROM~28_combout\ & \MEMORIA_INTRUCAO|memROM~29_combout\) ) ) )
+-- \MEMORIA_INTRUCAO|memROM~33_combout\ = (\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(5) & \MEMORIA_INTRUCAO|memROM~32_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000001100000011000000111111111101010111010101110101011111111111",
+	lut_mask => "0000010000000100000001000000010000000100000001000000010000000100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~28_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~29_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~30_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~32_combout\,
+	dataa => \CPU|PC|ALT_INV_DOUT\(3),
+	datab => \CPU|PC|ALT_INV_DOUT\(5),
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~32_combout\,
 	combout => \MEMORIA_INTRUCAO|memROM~33_combout\);
 
-\CPU|REG_END_RET|DOUT[2]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \CPU|SOMADOR|Add0~9_sumout\,
-	ena => \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CPU|REG_END_RET|DOUT\(2));
-
-\CPU|MUX2|saida_MUX[2]~2\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~34\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|MUX2|saida_MUX[2]~2_combout\ = ( \CPU|REG_END_RET|DOUT\(2) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~9_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~33_combout\))) ) ) # ( 
--- !\CPU|REG_END_RET|DOUT\(2) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~9_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~33_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000111001101001100011111110100000001110011010011000111111101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datab => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
-	datac => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
-	datad => \CPU|SOMADOR|ALT_INV_Add0~9_sumout\,
-	datae => \CPU|REG_END_RET|ALT_INV_DOUT\(2),
-	combout => \CPU|MUX2|saida_MUX[2]~2_combout\);
-
-\CPU|PC|DOUT[2]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \CPU|MUX2|saida_MUX[2]~2_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CPU|PC|DOUT\(2));
-
-\MEMORIA_INTRUCAO|memROM~49\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~49_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(0) $ (((!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2)))))) # (\CPU|PC|DOUT\(3) & (((\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(2))) # 
--- (\CPU|PC|DOUT\(0)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3)))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & 
--- (!\CPU|PC|DOUT\(2) $ (\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) $ 
--- (!\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001100010010000011000000000001000000000100000001010011001110101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	datae => \CPU|PC|ALT_INV_DOUT\(4),
-	dataf => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~49_combout\);
-
-\MEMORIA_INTRUCAO|memROM~50\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~50_combout\ = (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(2)) # (!\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(1) $ (\CPU|PC|DOUT\(2)))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1100100110000000110010011000000011001001100000001100100110000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~50_combout\);
-
-\MEMORIA_INTRUCAO|memROM~51\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~51_combout\ = ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3))) ) ) # ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) $ (((!\CPU|PC|DOUT\(3)) # (\CPU|PC|DOUT\(1)))))) # 
--- (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3))) # (\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(3)))))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001101110000110000000000000110000011011100001100000000000001100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	datae => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~51_combout\);
-
-\MEMORIA_INTRUCAO|memROM~52\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~52_combout\ = ( \MEMORIA_INTRUCAO|memROM~50_combout\ & ( \MEMORIA_INTRUCAO|memROM~51_combout\ & ( (((\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~49_combout\)) # (\MEMORIA_INTRUCAO|memROM~31_combout\)) # 
--- (\MEMORIA_INTRUCAO|memROM~12_combout\) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~50_combout\ & ( \MEMORIA_INTRUCAO|memROM~51_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~49_combout\)) # (\MEMORIA_INTRUCAO|memROM~12_combout\) ) 
--- ) ) # ( \MEMORIA_INTRUCAO|memROM~50_combout\ & ( !\MEMORIA_INTRUCAO|memROM~51_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~49_combout\)) # (\MEMORIA_INTRUCAO|memROM~31_combout\) ) ) ) # ( 
--- !\MEMORIA_INTRUCAO|memROM~50_combout\ & ( !\MEMORIA_INTRUCAO|memROM~51_combout\ & ( (\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~49_combout\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000110011000011110011111101010101011101110101111101111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~29_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~49_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~50_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~51_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~52_combout\);
-
-\CPU|REG_END_RET|DOUT[1]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \CPU|SOMADOR|Add0~5_sumout\,
-	ena => \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CPU|REG_END_RET|DOUT\(1));
-
-\CPU|MUX2|saida_MUX[1]~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \CPU|MUX2|saida_MUX[1]~1_combout\ = ( \CPU|REG_END_RET|DOUT\(1) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~5_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~52_combout\))) ) ) # ( 
--- !\CPU|REG_END_RET|DOUT\(1) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~5_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~52_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000111001101001100011111110100000001110011010011000111111101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	datab => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
-	datac => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
-	datad => \CPU|SOMADOR|ALT_INV_Add0~5_sumout\,
-	datae => \CPU|REG_END_RET|ALT_INV_DOUT\(1),
-	combout => \CPU|MUX2|saida_MUX[1]~1_combout\);
-
-\CPU|PC|DOUT[1]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \CPU|MUX2|saida_MUX[1]~1_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CPU|PC|DOUT\(1));
-
-\MEMORIA_INTRUCAO|memROM~53\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~53_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) $ (\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & (((\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(1))) # (\CPU|PC|DOUT\(3)))) ) 
--- ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(0) & ((\CPU|PC|DOUT\(3)))) # (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(2)) # (!\CPU|PC|DOUT\(3)))))) # (\CPU|PC|DOUT\(1) & (((\CPU|PC|DOUT\(3)) # (\CPU|PC|DOUT\(2))))) ) ) 
--- ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(2))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) $ (\CPU|PC|DOUT\(3))))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( 
--- !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & ((!\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(0))) # (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(1)))))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0010101010001100011010000001000001000111111110110100000100011111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	datae => \CPU|PC|ALT_INV_DOUT\(4),
-	dataf => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~53_combout\);
-
-\MEMORIA_INTRUCAO|memROM~54\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~54_combout\ = (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) $ (!\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) $ (((!\CPU|PC|DOUT\(0) & !\CPU|PC|DOUT\(3))))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0101001010110000010100101011000001010010101100000101001010110000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~54_combout\);
-
-\MEMORIA_INTRUCAO|memROM~55\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~55_combout\ = ( \CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(3) & (((\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(2))) # (\CPU|PC|DOUT\(0)))) ) ) # ( !\CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & 
--- !\CPU|PC|DOUT\(3))) # (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2))))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001010000010000000000000111010100010100000100000000000001110101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	datae => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~55_combout\);
-
-\MEMORIA_INTRUCAO|memROM~56\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~56_combout\ = ( \MEMORIA_INTRUCAO|memROM~54_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( (((\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~53_combout\)) # (\MEMORIA_INTRUCAO|memROM~31_combout\)) # 
--- (\MEMORIA_INTRUCAO|memROM~12_combout\) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~54_combout\ & ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~53_combout\)) # (\MEMORIA_INTRUCAO|memROM~12_combout\) ) 
--- ) ) # ( \MEMORIA_INTRUCAO|memROM~54_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~53_combout\)) # (\MEMORIA_INTRUCAO|memROM~31_combout\) ) ) ) # ( 
--- !\MEMORIA_INTRUCAO|memROM~54_combout\ & ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( (\MEMORIA_INTRUCAO|memROM~29_combout\ & \MEMORIA_INTRUCAO|memROM~53_combout\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000110011000011110011111101010101011101110101111101111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~29_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~53_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~54_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~56_combout\);
-
-\CPU|REG_END_RET|DOUT[0]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \CPU|SOMADOR|Add0~1_sumout\,
-	ena => \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CPU|REG_END_RET|DOUT\(0));
-
-\CPU|MUX2|saida_MUX[0]~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \CPU|MUX2|saida_MUX[0]~0_combout\ = ( \CPU|REG_END_RET|DOUT\(0) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~1_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~56_combout\))) ) ) # ( 
--- !\CPU|REG_END_RET|DOUT\(0) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~1_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~56_combout\ & ((\CPU|MUX2|Equal1~0_combout\)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000110000011101001111110001110100001100000111010011111100011101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datab => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
-	datac => \CPU|SOMADOR|ALT_INV_Add0~1_sumout\,
-	datad => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
-	datae => \CPU|REG_END_RET|ALT_INV_DOUT\(0),
-	combout => \CPU|MUX2|saida_MUX[0]~0_combout\);
-
-\CPU|PC|DOUT[0]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \CPU|MUX2|saida_MUX[0]~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CPU|PC|DOUT\(0));
-
-\MEMORIA_INTRUCAO|memROM~38\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~38_combout\ = (\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))))
+-- \MEMORIA_INTRUCAO|memROM~34_combout\ = (\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -20995,11 +20936,11 @@ PORT MAP (
 	datab => \CPU|PC|ALT_INV_DOUT\(1),
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~38_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~34_combout\);
 
-\MEMORIA_INTRUCAO|memROM~39\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~35\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~39_combout\ = ( !\CPU|PC|DOUT\(5) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))) ) )
+-- \MEMORIA_INTRUCAO|memROM~35_combout\ = ( !\CPU|PC|DOUT\(5) & ( (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -21013,11 +20954,11 @@ PORT MAP (
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
 	datae => \CPU|PC|ALT_INV_DOUT\(5),
-	combout => \MEMORIA_INTRUCAO|memROM~39_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~35_combout\);
 
-\MEMORIA_INTRUCAO|memROM~40\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~36\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~40_combout\ = ( \MEMORIA_INTRUCAO|memROM~39_combout\ & ( \CPU|PC|DOUT\(4) ) ) # ( !\MEMORIA_INTRUCAO|memROM~39_combout\ & ( (\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(6) & \MEMORIA_INTRUCAO|memROM~38_combout\))) ) )
+-- \MEMORIA_INTRUCAO|memROM~36_combout\ = ( \MEMORIA_INTRUCAO|memROM~35_combout\ & ( \CPU|PC|DOUT\(4) ) ) # ( !\MEMORIA_INTRUCAO|memROM~35_combout\ & ( (\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(6) & \MEMORIA_INTRUCAO|memROM~34_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -21029,13 +20970,13 @@ PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(4),
 	datab => \CPU|PC|ALT_INV_DOUT\(5),
 	datac => \CPU|PC|ALT_INV_DOUT\(6),
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~38_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~39_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~40_combout\);
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~34_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~35_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~36_combout\);
 
-\MEMORIA_INTRUCAO|memROM~66\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~67\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~66_combout\ = (!\CPU|PC|DOUT\(7) & ((\MEMORIA_INTRUCAO|memROM~42_combout\) # (\MEMORIA_INTRUCAO|memROM~40_combout\)))
+-- \MEMORIA_INTRUCAO|memROM~67_combout\ = (!\CPU|PC|DOUT\(7) & ((\MEMORIA_INTRUCAO|memROM~36_combout\) # (\MEMORIA_INTRUCAO|memROM~33_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -21045,9 +20986,9 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(7),
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~40_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~66_combout\);
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~36_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~67_combout\);
 
 \CPU|SOMADOR|Add0~17\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -21116,8 +21057,8 @@ PORT MAP (
 
 \CPU|MUX2|saida_MUX[6]~6\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|MUX2|saida_MUX[6]~6_combout\ = ( \CPU|REG_END_RET|DOUT\(6) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~25_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~66_combout\))) ) ) # ( 
--- !\CPU|REG_END_RET|DOUT\(6) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~25_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~66_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
+-- \CPU|MUX2|saida_MUX[6]~6_combout\ = ( \CPU|REG_END_RET|DOUT\(6) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~25_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~67_combout\))) ) ) # ( 
+-- !\CPU|REG_END_RET|DOUT\(6) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~25_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~67_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -21126,7 +21067,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
 	datab => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
 	datac => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
 	datad => \CPU|SOMADOR|ALT_INV_Add0~25_sumout\,
@@ -21146,9 +21087,137 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CPU|PC|DOUT\(6));
 
-\MEMORIA_INTRUCAO|memROM~43\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~11\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~43_combout\ = ( \CPU|PC|DOUT\(5) & ( (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))) ) ) # ( !\CPU|PC|DOUT\(5) & ( (\CPU|PC|DOUT\(2) & ((!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(3))) 
+-- \MEMORIA_INTRUCAO|memROM~11_combout\ = ( \CPU|PC|DOUT\(6) & ( \CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0) & !\CPU|PC|DOUT\(3)))) # (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) $ ((\CPU|PC|DOUT\(0))))) ) ) ) # ( 
+-- !\CPU|PC|DOUT\(6) & ( \CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) $ (\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0)))) ) ) ) # ( \CPU|PC|DOUT\(6) & ( !\CPU|PC|DOUT\(4) & ( 
+-- (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0)))) # (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(3))))) ) ) ) # ( !\CPU|PC|DOUT\(6) & ( !\CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) & 
+-- (!\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(3)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000010000000000110000100100000011000000100100100100101000001",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(2),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(0),
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	datae => \CPU|PC|ALT_INV_DOUT\(6),
+	dataf => \CPU|PC|ALT_INV_DOUT\(4),
+	combout => \MEMORIA_INTRUCAO|memROM~11_combout\);
+
+\MEMORIA_INTRUCAO|memROM~12\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~12_combout\ = (!\CPU|PC|DOUT\(3) & (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(2) $ (((!\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(1))))))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000010011010010000001001101001000000100110100100000010011010010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	combout => \MEMORIA_INTRUCAO|memROM~12_combout\);
+
+\MEMORIA_INTRUCAO|memROM~13\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~13_combout\ = ( \MEMORIA_INTRUCAO|memROM~11_combout\ & ( \MEMORIA_INTRUCAO|memROM~12_combout\ & ( (!\CPU|PC|DOUT\(7) & ((!\CPU|PC|DOUT\(5)) # ((\CPU|PC|DOUT\(4) & !\CPU|PC|DOUT\(6))))) ) ) ) # ( 
+-- !\MEMORIA_INTRUCAO|memROM~11_combout\ & ( \MEMORIA_INTRUCAO|memROM~12_combout\ & ( (\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(6) & !\CPU|PC|DOUT\(7)))) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~11_combout\ & ( !\MEMORIA_INTRUCAO|memROM~12_combout\ & 
+-- ( (!\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7)) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000110011000000000000010000000000001101110000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(4),
+	datab => \CPU|PC|ALT_INV_DOUT\(5),
+	datac => \CPU|PC|ALT_INV_DOUT\(6),
+	datad => \CPU|PC|ALT_INV_DOUT\(7),
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~11_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~13_combout\);
+
+\CPU|MUX2|Equal2~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CPU|MUX2|Equal2~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~23_combout\ & ( \CPU|FLAG|DOUT~q\ & ( (!\MEMORIA_INTRUCAO|memROM~19_combout\ & ((\MEMORIA_INTRUCAO|memROM~15_combout\) # (\MEMORIA_INTRUCAO|memROM~13_combout\))) ) ) ) # ( 
+-- !\MEMORIA_INTRUCAO|memROM~23_combout\ & ( \CPU|FLAG|DOUT~q\ & ( (\MEMORIA_INTRUCAO|memROM~19_combout\ & (!\MEMORIA_INTRUCAO|memROM~10_combout\ $ (((!\MEMORIA_INTRUCAO|memROM~13_combout\ & !\MEMORIA_INTRUCAO|memROM~15_combout\))))) ) ) ) # ( 
+-- \MEMORIA_INTRUCAO|memROM~23_combout\ & ( !\CPU|FLAG|DOUT~q\ & ( (!\MEMORIA_INTRUCAO|memROM~10_combout\ & (!\MEMORIA_INTRUCAO|memROM~19_combout\ & ((\MEMORIA_INTRUCAO|memROM~15_combout\) # (\MEMORIA_INTRUCAO|memROM~13_combout\)))) ) ) ) # ( 
+-- !\MEMORIA_INTRUCAO|memROM~23_combout\ & ( !\CPU|FLAG|DOUT~q\ & ( (\MEMORIA_INTRUCAO|memROM~19_combout\ & (!\MEMORIA_INTRUCAO|memROM~10_combout\ $ (((!\MEMORIA_INTRUCAO|memROM~13_combout\ & !\MEMORIA_INTRUCAO|memROM~15_combout\))))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000001101010001010100000000000000000011010100011111100000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~15_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
+	dataf => \CPU|FLAG|ALT_INV_DOUT~q\,
+	combout => \CPU|MUX2|Equal2~0_combout\);
+
+\CPU|REG_END_RET|DOUT[4]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \CPU|SOMADOR|Add0~17_sumout\,
+	ena => \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \CPU|REG_END_RET|DOUT\(4));
+
+\CPU|MUX2|saida_MUX[4]~4\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CPU|MUX2|saida_MUX[4]~4_combout\ = ( \CPU|REG_END_RET|DOUT\(4) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~17_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & ((!\CPU|MUX2|Equal1~0_combout\) # ((\MEMORIA_INTRUCAO|memROM~66_combout\)))) ) ) # ( 
+-- !\CPU|REG_END_RET|DOUT\(4) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~17_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\CPU|MUX2|Equal1~0_combout\ & ((\MEMORIA_INTRUCAO|memROM~66_combout\)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000101000011011010011100101111100001010000110110100111001011111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
+	datab => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
+	datac => \CPU|SOMADOR|ALT_INV_Add0~17_sumout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~66_combout\,
+	datae => \CPU|REG_END_RET|ALT_INV_DOUT\(4),
+	combout => \CPU|MUX2|saida_MUX[4]~4_combout\);
+
+\CPU|PC|DOUT[4]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~input_o\,
+	d => \CPU|MUX2|saida_MUX[4]~4_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \CPU|PC|DOUT\(4));
+
+\MEMORIA_INTRUCAO|memROM~41\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~41_combout\ = ( \CPU|PC|DOUT\(5) & ( (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))) ) ) # ( !\CPU|PC|DOUT\(5) & ( (\CPU|PC|DOUT\(2) & ((!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(3))) 
 -- # (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(3))))) ) )
 
 -- pragma translate_off
@@ -21163,11 +21232,11 @@ PORT MAP (
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
 	datae => \CPU|PC|ALT_INV_DOUT\(5),
-	combout => \MEMORIA_INTRUCAO|memROM~43_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~41_combout\);
 
-\MEMORIA_INTRUCAO|memROM~44\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~42\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~44_combout\ = (\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(6) & (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~43_combout\)))
+-- \MEMORIA_INTRUCAO|memROM~42_combout\ = (\CPU|PC|DOUT\(4) & (!\CPU|PC|DOUT\(6) & (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~41_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -21179,8 +21248,8 @@ PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(4),
 	datab => \CPU|PC|ALT_INV_DOUT\(6),
 	datac => \CPU|PC|ALT_INV_DOUT\(7),
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~43_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~44_combout\);
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~41_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~42_combout\);
 
 \CPU|SOMADOR|Add0~29\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -21215,8 +21284,8 @@ PORT MAP (
 
 \CPU|MUX2|saida_MUX[7]~7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|MUX2|saida_MUX[7]~7_combout\ = ( \CPU|REG_END_RET|DOUT\(7) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~29_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~44_combout\))) ) ) # ( 
--- !\CPU|REG_END_RET|DOUT\(7) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~29_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~44_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
+-- \CPU|MUX2|saida_MUX[7]~7_combout\ = ( \CPU|REG_END_RET|DOUT\(7) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~29_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~42_combout\))) ) ) # ( 
+-- !\CPU|REG_END_RET|DOUT\(7) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~29_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~42_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -21225,7 +21294,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~44_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\,
 	datab => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
 	datac => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
 	datad => \CPU|SOMADOR|ALT_INV_Add0~29_sumout\,
@@ -21245,25 +21314,9 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CPU|PC|DOUT\(7));
 
-\MEMORIA_INTRUCAO|memROM~12\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~43\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~12_combout\ = (\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7)))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001000000010000000100000001000000010000000100000001000000010000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(4),
-	datab => \CPU|PC|ALT_INV_DOUT\(5),
-	datac => \CPU|PC|ALT_INV_DOUT\(7),
-	combout => \MEMORIA_INTRUCAO|memROM~12_combout\);
-
-\MEMORIA_INTRUCAO|memROM~45\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~45_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) $ (((!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & 
+-- \MEMORIA_INTRUCAO|memROM~43_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) $ (((!\CPU|PC|DOUT\(2) & !\CPU|PC|DOUT\(3)))))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & 
 -- (\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(3))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) & \CPU|PC|DOUT\(3))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(1) $ (\CPU|PC|DOUT\(2))) # (\CPU|PC|DOUT\(3)))) # 
 -- (\CPU|PC|DOUT\(0) & (((!\CPU|PC|DOUT\(3)) # (\CPU|PC|DOUT\(2))) # (\CPU|PC|DOUT\(1)))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( !\CPU|PC|DOUT\(3) $ (((!\CPU|PC|DOUT\(0) & ((\CPU|PC|DOUT\(2)) # (\CPU|PC|DOUT\(1)))) # (\CPU|PC|DOUT\(0) & 
 -- ((!\CPU|PC|DOUT\(1)) # (!\CPU|PC|DOUT\(2)))))) ) ) )
@@ -21281,17 +21334,18 @@ PORT MAP (
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
 	datae => \CPU|PC|ALT_INV_DOUT\(4),
 	dataf => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~45_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~43_combout\);
 
-\MEMORIA_INTRUCAO|memROM~47\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~44\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~47_combout\ = ( \CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3)) ) ) # ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(1)) # (!\CPU|PC|DOUT\(2))))) # (\CPU|PC|DOUT\(0) & 
--- ((!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(3))) # (\CPU|PC|DOUT\(2) & ((\CPU|PC|DOUT\(3)))))) ) )
+-- \MEMORIA_INTRUCAO|memROM~44_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3)) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(0)) # 
+-- (!\CPU|PC|DOUT\(2))))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(1)) # (!\CPU|PC|DOUT\(2))))) # (\CPU|PC|DOUT\(0) & ((!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(3))) # 
+-- (\CPU|PC|DOUT\(2) & ((\CPU|PC|DOUT\(3)))))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000010101101000000000000111100010000101011010000000000001111",
+	lut_mask => "0000000000000000000100001010110111001000000000000000000000001111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -21299,30 +21353,31 @@ PORT MAP (
 	datab => \CPU|PC|ALT_INV_DOUT\(1),
 	datac => \CPU|PC|ALT_INV_DOUT\(2),
 	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	datae => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~47_combout\);
+	datae => \CPU|PC|ALT_INV_DOUT\(4),
+	dataf => \CPU|PC|ALT_INV_DOUT\(6),
+	combout => \MEMORIA_INTRUCAO|memROM~44_combout\);
 
-\MEMORIA_INTRUCAO|memROM~48\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~46\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~48_combout\ = ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~47_combout\ & ( ((\MEMORIA_INTRUCAO|memROM~29_combout\ & !\MEMORIA_INTRUCAO|memROM~45_combout\)) # (\MEMORIA_INTRUCAO|memROM~12_combout\) ) ) ) # ( 
--- !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( \MEMORIA_INTRUCAO|memROM~47_combout\ & ( (((\MEMORIA_INTRUCAO|memROM~29_combout\ & !\MEMORIA_INTRUCAO|memROM~45_combout\)) # (\MEMORIA_INTRUCAO|memROM~31_combout\)) # (\MEMORIA_INTRUCAO|memROM~12_combout\) ) ) ) # 
--- ( \MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~47_combout\ & ( (\MEMORIA_INTRUCAO|memROM~29_combout\ & !\MEMORIA_INTRUCAO|memROM~45_combout\) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~46_combout\ & ( !\MEMORIA_INTRUCAO|memROM~47_combout\ & 
--- ( ((\MEMORIA_INTRUCAO|memROM~29_combout\ & !\MEMORIA_INTRUCAO|memROM~45_combout\)) # (\MEMORIA_INTRUCAO|memROM~31_combout\) ) ) )
+-- \MEMORIA_INTRUCAO|memROM~46_combout\ = ( \MEMORIA_INTRUCAO|memROM~44_combout\ & ( \MEMORIA_INTRUCAO|memROM~45_combout\ & ( (!\CPU|PC|DOUT\(7) & ((!\MEMORIA_INTRUCAO|memROM~43_combout\) # (\CPU|PC|DOUT\(5)))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~44_combout\ 
+-- & ( \MEMORIA_INTRUCAO|memROM~45_combout\ & ( (!\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & !\MEMORIA_INTRUCAO|memROM~43_combout\)) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~44_combout\ & ( !\MEMORIA_INTRUCAO|memROM~45_combout\ & ( ((!\CPU|PC|DOUT\(7) & 
+-- ((!\MEMORIA_INTRUCAO|memROM~43_combout\) # (\CPU|PC|DOUT\(5))))) # (\MEMORIA_INTRUCAO|memROM~24_combout\) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~44_combout\ & ( !\MEMORIA_INTRUCAO|memROM~45_combout\ & ( ((!\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & 
+-- !\MEMORIA_INTRUCAO|memROM~43_combout\))) # (\MEMORIA_INTRUCAO|memROM~24_combout\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011111100001111001100110000000001111111010111110111011101010101",
+	lut_mask => "1000111100001111110011110100111110001000000000001100110001000100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~12_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~29_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~45_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~47_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~48_combout\);
+	dataa => \CPU|PC|ALT_INV_DOUT\(5),
+	datab => \CPU|PC|ALT_INV_DOUT\(7),
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~24_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~43_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~44_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~45_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~46_combout\);
 
 \CPU|REG_END_RET|DOUT[5]\ : dffeas
 -- pragma translate_off
@@ -21340,8 +21395,8 @@ PORT MAP (
 
 \CPU|MUX2|saida_MUX[5]~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|MUX2|saida_MUX[5]~5_combout\ = ( \CPU|REG_END_RET|DOUT\(5) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~21_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~48_combout\))) ) ) # ( 
--- !\CPU|REG_END_RET|DOUT\(5) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~21_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~48_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
+-- \CPU|MUX2|saida_MUX[5]~5_combout\ = ( \CPU|REG_END_RET|DOUT\(5) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~21_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~46_combout\))) ) ) # ( 
+-- !\CPU|REG_END_RET|DOUT\(5) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~21_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~46_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -21350,7 +21405,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
 	datab => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
 	datac => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
 	datad => \CPU|SOMADOR|ALT_INV_Add0~21_sumout\,
@@ -21370,235 +21425,127 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CPU|PC|DOUT\(5));
 
-\MEMORIA_INTRUCAO|memROM~69\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~69_combout\ = ( \CPU|PC|DOUT\(6) & ( \CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0) & !\CPU|PC|DOUT\(3)))) # (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) $ ((\CPU|PC|DOUT\(0))))) ) ) ) # ( 
--- !\CPU|PC|DOUT\(6) & ( \CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) $ (\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0)))) ) ) ) # ( \CPU|PC|DOUT\(6) & ( !\CPU|PC|DOUT\(4) & ( 
--- (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) & (\CPU|PC|DOUT\(0)))) # (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(3))))) ) ) ) # ( !\CPU|PC|DOUT\(6) & ( !\CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) & 
--- (!\CPU|PC|DOUT\(0) & \CPU|PC|DOUT\(3)))) ) ) )
+-- \MEMORIA_INTRUCAO|memROM~7_combout\ = ( \CPU|PC|DOUT\(2) & ( \CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(6) & (((!\CPU|PC|DOUT\(0)) # (\CPU|PC|DOUT\(1))))) # (\CPU|PC|DOUT\(6) & (\CPU|PC|DOUT\(3))) ) ) ) # ( !\CPU|PC|DOUT\(2) & ( \CPU|PC|DOUT\(4) & ( 
+-- (!\CPU|PC|DOUT\(6) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(3) $ (!\CPU|PC|DOUT\(0))))) # (\CPU|PC|DOUT\(6) & (\CPU|PC|DOUT\(3) & (!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(0))))) ) ) ) # ( \CPU|PC|DOUT\(2) & ( !\CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(3) & 
+-- (\CPU|PC|DOUT\(6) & (!\CPU|PC|DOUT\(1) & !\CPU|PC|DOUT\(0)))) ) ) ) # ( !\CPU|PC|DOUT\(2) & ( !\CPU|PC|DOUT\(4) & ( (!\CPU|PC|DOUT\(3) & (\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(1)) # (\CPU|PC|DOUT\(0))))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000010000000000110000100100000011000000100100100100101000001",
+	lut_mask => "0010000000100010001000000000000000000101000110001101110100011101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(2),
-	datab => \CPU|PC|ALT_INV_DOUT\(1),
-	datac => \CPU|PC|ALT_INV_DOUT\(0),
-	datad => \CPU|PC|ALT_INV_DOUT\(3),
-	datae => \CPU|PC|ALT_INV_DOUT\(6),
+	dataa => \CPU|PC|ALT_INV_DOUT\(3),
+	datab => \CPU|PC|ALT_INV_DOUT\(6),
+	datac => \CPU|PC|ALT_INV_DOUT\(1),
+	datad => \CPU|PC|ALT_INV_DOUT\(0),
+	datae => \CPU|PC|ALT_INV_DOUT\(2),
 	dataf => \CPU|PC|ALT_INV_DOUT\(4),
-	combout => \MEMORIA_INTRUCAO|memROM~69_combout\);
+	combout => \MEMORIA_INTRUCAO|memROM~7_combout\);
 
-\MEMORIA_INTRUCAO|memROM~70\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~8\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~70_combout\ = (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(3) & !\CPU|PC|DOUT\(6)))
+-- \MEMORIA_INTRUCAO|memROM~8_combout\ = ( \CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(0) & (((\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(3) & ((!\CPU|PC|DOUT\(2)) # (\CPU|PC|DOUT\(1))))) ) ) ) # ( 
+-- !\CPU|PC|DOUT\(4) & ( \CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) $ (!\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & (!\CPU|PC|DOUT\(1) $ (!\CPU|PC|DOUT\(3))))) ) ) ) # ( \CPU|PC|DOUT\(4) & ( 
+-- !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) $ ((\CPU|PC|DOUT\(2))))) # (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(3) $ (((!\CPU|PC|DOUT\(0)) # (\CPU|PC|DOUT\(2)))))) ) ) ) # ( !\CPU|PC|DOUT\(4) & ( !\CPU|PC|DOUT\(6) & ( (!\CPU|PC|DOUT\(2) & 
+-- (!\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(0)) # (\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & (!\CPU|PC|DOUT\(0) & ((\CPU|PC|DOUT\(3))))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000000010000000100000001000000010000000100000001000000010000",
+	lut_mask => "1000000011001010100101001010011101000010100010000101000100001010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(0),
-	datab => \CPU|PC|ALT_INV_DOUT\(3),
-	datac => \CPU|PC|ALT_INV_DOUT\(6),
-	combout => \MEMORIA_INTRUCAO|memROM~70_combout\);
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	datae => \CPU|PC|ALT_INV_DOUT\(4),
+	dataf => \CPU|PC|ALT_INV_DOUT\(6),
+	combout => \MEMORIA_INTRUCAO|memROM~8_combout\);
 
-\MEMORIA_INTRUCAO|memROM~18\ : cyclonev_lcell_comb
+\MEMORIA_INTRUCAO|memROM~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~18_combout\ = ( \MEMORIA_INTRUCAO|memROM~69_combout\ & ( \MEMORIA_INTRUCAO|memROM~70_combout\ & ( (!\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7)) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~69_combout\ & ( \MEMORIA_INTRUCAO|memROM~70_combout\ & ( 
--- (!\CPU|PC|DOUT\(5) & (\CPU|PC|DOUT\(7) & (!\CPU|PC|DOUT\(2) & \CPU|PC|DOUT\(1)))) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~69_combout\ & ( !\MEMORIA_INTRUCAO|memROM~70_combout\ & ( (!\CPU|PC|DOUT\(5) & !\CPU|PC|DOUT\(7)) ) ) )
+-- \MEMORIA_INTRUCAO|memROM~9_combout\ = (!\CPU|PC|DOUT\(2) & (\CPU|PC|DOUT\(1) & (!\CPU|PC|DOUT\(0) $ (\CPU|PC|DOUT\(3))))) # (\CPU|PC|DOUT\(2) & (((\CPU|PC|DOUT\(3)))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000100010001000100000000000001000001000100010001000",
+	lut_mask => "0010000000011111001000000001111100100000000111110010000000011111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CPU|PC|ALT_INV_DOUT\(0),
+	datab => \CPU|PC|ALT_INV_DOUT\(1),
+	datac => \CPU|PC|ALT_INV_DOUT\(2),
+	datad => \CPU|PC|ALT_INV_DOUT\(3),
+	combout => \MEMORIA_INTRUCAO|memROM~9_combout\);
+
+\MEMORIA_INTRUCAO|memROM~10\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \MEMORIA_INTRUCAO|memROM~10_combout\ = ( \MEMORIA_INTRUCAO|memROM~8_combout\ & ( \MEMORIA_INTRUCAO|memROM~9_combout\ & ( (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~7_combout\)) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~8_combout\ & ( 
+-- \MEMORIA_INTRUCAO|memROM~9_combout\ & ( (!\CPU|PC|DOUT\(7) & ((!\CPU|PC|DOUT\(5)) # (\MEMORIA_INTRUCAO|memROM~7_combout\))) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~8_combout\ & ( !\MEMORIA_INTRUCAO|memROM~9_combout\ & ( (!\CPU|PC|DOUT\(5) & 
+-- (((\MEMORIA_INTRUCAO|memROM~6_combout\)))) # (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & ((\MEMORIA_INTRUCAO|memROM~7_combout\)))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~8_combout\ & ( !\MEMORIA_INTRUCAO|memROM~9_combout\ & ( (!\CPU|PC|DOUT\(5) & 
+-- ((!\CPU|PC|DOUT\(7)) # ((\MEMORIA_INTRUCAO|memROM~6_combout\)))) # (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & ((\MEMORIA_INTRUCAO|memROM~7_combout\)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1000101011001110000010100100111010001000110011000000000001000100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(5),
 	datab => \CPU|PC|ALT_INV_DOUT\(7),
-	datac => \CPU|PC|ALT_INV_DOUT\(2),
-	datad => \CPU|PC|ALT_INV_DOUT\(1),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~69_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~70_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~18_combout\);
-
-\MEMORIA_INTRUCAO|memROM~58\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~58_combout\ = (!\MEMORIA_INTRUCAO|memROM~18_combout\ & !\MEMORIA_INTRUCAO|memROM~19_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1000100010001000100010001000100010001000100010001000100010001000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~18_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~58_combout\);
-
-\CPU|MUX2|Equal2~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \CPU|MUX2|Equal2~0_combout\ = ( \CPU|FLAG|DOUT~q\ & ( (!\MEMORIA_INTRUCAO|memROM~23_combout\ & (((!\MEMORIA_INTRUCAO|memROM~58_combout\ & \MEMORIA_INTRUCAO|memROM~27_combout\)))) # (\MEMORIA_INTRUCAO|memROM~23_combout\ & 
--- (!\MEMORIA_INTRUCAO|memROM~27_combout\ & (!\MEMORIA_INTRUCAO|memROM~57_combout\ $ (!\MEMORIA_INTRUCAO|memROM~58_combout\)))) ) ) # ( !\CPU|FLAG|DOUT~q\ & ( (!\MEMORIA_INTRUCAO|memROM~57_combout\ & (\MEMORIA_INTRUCAO|memROM~58_combout\ & 
--- (\MEMORIA_INTRUCAO|memROM~23_combout\ & !\MEMORIA_INTRUCAO|memROM~27_combout\))) # (\MEMORIA_INTRUCAO|memROM~57_combout\ & (!\MEMORIA_INTRUCAO|memROM~58_combout\ & (!\MEMORIA_INTRUCAO|memROM~23_combout\ $ (!\MEMORIA_INTRUCAO|memROM~27_combout\)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000011001000000000001101100000000000110010000000000011011000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~57_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
-	datae => \CPU|FLAG|ALT_INV_DOUT~q\,
-	combout => \CPU|MUX2|Equal2~0_combout\);
-
-\CPU|REG_END_RET|DOUT[4]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \CPU|SOMADOR|Add0~17_sumout\,
-	ena => \CPU|DECODIFICADOR_INSTRUCAO|Mux0~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CPU|REG_END_RET|DOUT\(4));
-
-\CPU|MUX2|saida_MUX[4]~4\ : cyclonev_lcell_comb
--- Equation(s):
--- \CPU|MUX2|saida_MUX[4]~4_combout\ = ( \CPU|REG_END_RET|DOUT\(4) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~17_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & ((!\CPU|MUX2|Equal1~0_combout\) # ((\MEMORIA_INTRUCAO|memROM~65_combout\)))) ) ) # ( 
--- !\CPU|REG_END_RET|DOUT\(4) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~17_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\CPU|MUX2|Equal1~0_combout\ & ((\MEMORIA_INTRUCAO|memROM~65_combout\)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000101000011011010011100101111100001010000110110100111001011111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
-	datab => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
-	datac => \CPU|SOMADOR|ALT_INV_Add0~17_sumout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~65_combout\,
-	datae => \CPU|REG_END_RET|ALT_INV_DOUT\(4),
-	combout => \CPU|MUX2|saida_MUX[4]~4_combout\);
-
-\CPU|PC|DOUT[4]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~input_o\,
-	d => \CPU|MUX2|saida_MUX[4]~4_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CPU|PC|DOUT\(4));
-
-\MEMORIA_INTRUCAO|memROM~68\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~68_combout\ = ( \CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(0) & ((\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(6))))) # (\CPU|PC|DOUT\(1) & ((!\CPU|PC|DOUT\(0)) # ((\CPU|PC|DOUT\(2))))) ) ) # ( 
--- !\CPU|PC|DOUT\(3) & ( (!\CPU|PC|DOUT\(6) & ((!\CPU|PC|DOUT\(0) & ((\CPU|PC|DOUT\(2)))) # (\CPU|PC|DOUT\(0) & (\CPU|PC|DOUT\(1))))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0001000011010000010001101101111100010000110100000100011011011111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(1),
-	datab => \CPU|PC|ALT_INV_DOUT\(0),
-	datac => \CPU|PC|ALT_INV_DOUT\(6),
-	datad => \CPU|PC|ALT_INV_DOUT\(2),
-	datae => \CPU|PC|ALT_INV_DOUT\(3),
-	combout => \MEMORIA_INTRUCAO|memROM~68_combout\);
-
-\MEMORIA_INTRUCAO|memROM~14\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~14_combout\ = (\CPU|PC|DOUT\(4) & (\CPU|PC|DOUT\(5) & (!\CPU|PC|DOUT\(7) & \MEMORIA_INTRUCAO|memROM~68_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000010000000000000001000000000000000100000000000000010000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CPU|PC|ALT_INV_DOUT\(4),
-	datab => \CPU|PC|ALT_INV_DOUT\(5),
-	datac => \CPU|PC|ALT_INV_DOUT\(7),
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~14_combout\);
-
-\MEMORIA_INTRUCAO|memROM~57\ : cyclonev_lcell_comb
--- Equation(s):
--- \MEMORIA_INTRUCAO|memROM~57_combout\ = (!\MEMORIA_INTRUCAO|memROM~14_combout\ & !\MEMORIA_INTRUCAO|memROM~17_combout\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1000100010001000100010001000100010001000100010001000100010001000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~14_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~17_combout\,
-	combout => \MEMORIA_INTRUCAO|memROM~57_combout\);
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~6_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~8_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~9_combout\,
+	combout => \MEMORIA_INTRUCAO|memROM~10_combout\);
 
 \CPU|ULA1|Equal0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|Equal0~0_combout\ = ( !\CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\ & ( (!\MEMORIA_INTRUCAO|memROM~57_combout\) # (((\MEMORIA_INTRUCAO|memROM~27_combout\) # (\MEMORIA_INTRUCAO|memROM~23_combout\)) # (\MEMORIA_INTRUCAO|memROM~58_combout\)) ) )
+-- \CPU|ULA1|Equal0~0_combout\ = ( !\CPU|DECODIFICADOR_INSTRUCAO|Mux7~0_combout\ & ( (((\MEMORIA_INTRUCAO|memROM~23_combout\) # (\MEMORIA_INTRUCAO|memROM~19_combout\)) # (\MEMORIA_INTRUCAO|memROM~68_combout\)) # (\MEMORIA_INTRUCAO|memROM~10_combout\) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1011111111111111000000000000000010111111111111110000000000000000",
+	lut_mask => "0111111111111111000000000000000001111111111111110000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~57_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~58_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~27_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~10_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~68_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~19_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~23_combout\,
 	datae => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux7~0_combout\,
 	combout => \CPU|ULA1|Equal0~0_combout\);
 
 \CPU|ULA1|saida[0]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|ULA1|saida[0]~0_combout\ = ( \MEMORIA_DADOS|dado_out~0_combout\ & ( \Saida_Dados[0]~1_combout\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\) # (\MEMORIA_DADOS|ram~547_combout\)))) # 
--- (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~56_combout\)) ) ) ) # ( !\MEMORIA_DADOS|dado_out~0_combout\ & ( \Saida_Dados[0]~1_combout\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
--- ((\CPU|DECODIFICADOR_INSTRUCAO|Mux10~0_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~56_combout\)) ) ) ) # ( \MEMORIA_DADOS|dado_out~0_combout\ & ( !\Saida_Dados[0]~1_combout\ & ( 
--- (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & ((\MEMORIA_DADOS|ram~547_combout\))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~56_combout\)) ) ) ) # ( !\MEMORIA_DADOS|dado_out~0_combout\ & ( !\Saida_Dados[0]~1_combout\ & 
--- ( (\MEMORIA_INTRUCAO|memROM~56_combout\ & \CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\) ) ) )
+-- \CPU|ULA1|saida[0]~0_combout\ = ( \Saida_Dados[0]~4_combout\ & ( \Saida_Dados[0]~2_combout\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\) # (\MEMORIA_INTRUCAO|memROM~61_combout\) ) ) ) # ( !\Saida_Dados[0]~4_combout\ & ( \Saida_Dados[0]~2_combout\ & 
+-- ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|ram~547_combout\ & \MEMORIA_DADOS|dado_out~0_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~61_combout\)) ) ) ) # ( \Saida_Dados[0]~4_combout\ & 
+-- ( !\Saida_Dados[0]~2_combout\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|ram~547_combout\ & \MEMORIA_DADOS|dado_out~0_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (\MEMORIA_INTRUCAO|memROM~61_combout\)) ) ) ) 
+-- # ( !\Saida_Dados[0]~4_combout\ & ( !\Saida_Dados[0]~2_combout\ & ( (!\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & (((\MEMORIA_DADOS|ram~547_combout\ & \MEMORIA_DADOS|dado_out~0_combout\)))) # (\CPU|DECODIFICADOR_INSTRUCAO|Mux5~0_combout\ & 
+-- (\MEMORIA_INTRUCAO|memROM~61_combout\)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000100010001000111010001110100010001110111010001110111011101",
+	lut_mask => "0001000100011101000100010001110100010001000111011101110111011101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	datab => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux5~0_combout\,
 	datac => \MEMORIA_DADOS|ALT_INV_ram~547_combout\,
-	datad => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux10~0_combout\,
-	datae => \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\,
-	dataf => \ALT_INV_Saida_Dados[0]~1_combout\,
+	datad => \MEMORIA_DADOS|ALT_INV_dado_out~0_combout\,
+	datae => \ALT_INV_Saida_Dados[0]~4_combout\,
+	dataf => \ALT_INV_Saida_Dados[0]~2_combout\,
 	combout => \CPU|ULA1|saida[0]~0_combout\);
 
 \CPU|ULA1|saida[0]~1\ : cyclonev_lcell_comb
@@ -21746,14 +21693,14 @@ PORT MAP (
 
 \CPU|BANCO_REG|Mux7~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|BANCO_REG|Mux7~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_2|DOUT\(0) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( \MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_3|DOUT\(0) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( \CPU|BANCO_REG|REG_0|DOUT\(0) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~7_combout\ & ( !\MEMORIA_INTRUCAO|memROM~13_combout\ & ( 
--- \CPU|BANCO_REG|REG_1|DOUT\(0) ) ) )
+-- \CPU|BANCO_REG|Mux7~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_3|DOUT\(0) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( \MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_2|DOUT\(0) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( \CPU|BANCO_REG|REG_1|DOUT\(0) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~78_combout\ & ( !\MEMORIA_INTRUCAO|memROM~74_combout\ & ( 
+-- \CPU|BANCO_REG|REG_0|DOUT\(0) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011001100110011010101010101010100000000111111110000111100001111",
+	lut_mask => "0101010101010101001100110011001100001111000011110000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -21761,34 +21708,31 @@ PORT MAP (
 	datab => \CPU|BANCO_REG|REG_1|ALT_INV_DOUT\(0),
 	datac => \CPU|BANCO_REG|REG_2|ALT_INV_DOUT\(0),
 	datad => \CPU|BANCO_REG|REG_3|ALT_INV_DOUT\(0),
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~7_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~13_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~78_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~74_combout\,
 	combout => \CPU|BANCO_REG|Mux7~0_combout\);
 
 \comb~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \comb~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~42_combout\ & ( !\MEMORIA_INTRUCAO|memROM~44_combout\ & ( (\CPU|PC|DOUT\(7) & ((\MEMORIA_INTRUCAO|memROM~37_combout\) # (\MEMORIA_INTRUCAO|memROM~36_combout\))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~42_combout\ 
--- & ( !\MEMORIA_INTRUCAO|memROM~44_combout\ & ( (!\CPU|PC|DOUT\(7) & (!\MEMORIA_INTRUCAO|memROM~40_combout\ & ((\MEMORIA_INTRUCAO|memROM~37_combout\) # (\MEMORIA_INTRUCAO|memROM~36_combout\)))) # (\CPU|PC|DOUT\(7) & (((\MEMORIA_INTRUCAO|memROM~37_combout\)) 
--- # (\MEMORIA_INTRUCAO|memROM~36_combout\))) ) ) )
+-- \comb~0_combout\ = ( !\MEMORIA_INTRUCAO|memROM~42_combout\ & ( (\MEMORIA_INTRUCAO|memROM~40_combout\ & (((!\MEMORIA_INTRUCAO|memROM~33_combout\ & !\MEMORIA_INTRUCAO|memROM~36_combout\)) # (\CPU|PC|DOUT\(7)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011111100010101000101010001010100000000000000000000000000000000",
+	lut_mask => "0000000011010101000000000000000000000000110101010000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|PC|ALT_INV_DOUT\(7),
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~36_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~37_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~36_combout\,
 	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~40_combout\,
 	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~42_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~44_combout\,
 	combout => \comb~0_combout\);
 
 \comb~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \comb~1_combout\ = ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & (\comb~0_combout\ & \MEMORIA_INTRUCAO|memROM~48_combout\))) 
+-- \comb~1_combout\ = ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & (\comb~0_combout\ & \MEMORIA_INTRUCAO|memROM~46_combout\))) 
 -- ) ) )
 
 -- pragma translate_off
@@ -21799,11 +21743,11 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	datac => \ALT_INV_comb~0_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \comb~1_combout\);
 
 \REG_HEX0|DOUT[0]\ : dffeas
@@ -21984,7 +21928,7 @@ PORT MAP (
 
 \comb~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \comb~2_combout\ = ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & (\comb~0_combout\ & \MEMORIA_INTRUCAO|memROM~48_combout\))) ) 
+-- \comb~2_combout\ = ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & (\comb~0_combout\ & \MEMORIA_INTRUCAO|memROM~46_combout\))) ) 
 -- ) )
 
 -- pragma translate_off
@@ -21995,11 +21939,11 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	datac => \ALT_INV_comb~0_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \comb~2_combout\);
 
 \REG_HEX1|DOUT[0]\ : dffeas
@@ -22180,7 +22124,7 @@ PORT MAP (
 
 \comb~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \comb~3_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & (\comb~0_combout\ & \MEMORIA_INTRUCAO|memROM~48_combout\))) ) 
+-- \comb~3_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & (\comb~0_combout\ & \MEMORIA_INTRUCAO|memROM~46_combout\))) ) 
 -- ) )
 
 -- pragma translate_off
@@ -22191,11 +22135,11 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	datac => \ALT_INV_comb~0_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \comb~3_combout\);
 
 \REG_HEX2|DOUT[0]\ : dffeas
@@ -22376,7 +22320,7 @@ PORT MAP (
 
 \comb~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \comb~4_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & (\comb~0_combout\ & \MEMORIA_INTRUCAO|memROM~48_combout\))) ) 
+-- \comb~4_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & (\comb~0_combout\ & \MEMORIA_INTRUCAO|memROM~46_combout\))) ) 
 -- ) )
 
 -- pragma translate_off
@@ -22387,11 +22331,11 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	datac => \ALT_INV_comb~0_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \comb~4_combout\);
 
 \REG_HEX3|DOUT[0]\ : dffeas
@@ -22572,36 +22516,23 @@ PORT MAP (
 
 \comb~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \comb~5_combout\ = (\MEMORIA_INTRUCAO|memROM~33_combout\ & (\MEMORIA_INTRUCAO|memROM~48_combout\ & !\MEMORIA_INTRUCAO|memROM~52_combout\))
+-- \comb~5_combout\ = ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & (\comb~0_combout\ & \MEMORIA_INTRUCAO|memROM~46_combout\))) ) 
+-- ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000000010000000100000001000000010000000100000001000000010000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	combout => \comb~5_combout\);
-
-\comb~6\ : cyclonev_lcell_comb
--- Equation(s):
--- \comb~6_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\comb~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~56_combout\ & \comb~5_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000010000000000000001000000000000000100000000000000010000",
+	lut_mask => "0000000000000001000000000000000000000000000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \ALT_INV_comb~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datad => \ALT_INV_comb~5_combout\,
-	combout => \comb~6_combout\);
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datac => \ALT_INV_comb~0_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	combout => \comb~5_combout\);
 
 \REG_HEX4|DOUT[0]\ : dffeas
 -- pragma translate_off
@@ -22612,7 +22543,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux7~0_combout\,
-	ena => \comb~6_combout\,
+	ena => \comb~5_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_HEX4|DOUT\(0));
@@ -22626,7 +22557,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux4~0_combout\,
-	ena => \comb~6_combout\,
+	ena => \comb~5_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_HEX4|DOUT\(3));
@@ -22640,7 +22571,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux6~0_combout\,
-	ena => \comb~6_combout\,
+	ena => \comb~5_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_HEX4|DOUT\(1));
@@ -22654,7 +22585,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux5~0_combout\,
-	ena => \comb~6_combout\,
+	ena => \comb~5_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_HEX4|DOUT\(2));
@@ -22779,22 +22710,25 @@ PORT MAP (
 	datad => \REG_HEX4|ALT_INV_DOUT\(2),
 	combout => \DECOD_HEX4|rascSaida7seg[6]~6_combout\);
 
-\comb~7\ : cyclonev_lcell_comb
+\comb~6\ : cyclonev_lcell_comb
 -- Equation(s):
--- \comb~7_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\comb~0_combout\ & (\MEMORIA_INTRUCAO|memROM~56_combout\ & \comb~5_combout\)))
+-- \comb~6_combout\ = ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (\MEMORIA_INTRUCAO|memROM~31_combout\ & (\comb~0_combout\ & \MEMORIA_INTRUCAO|memROM~46_combout\))) ) 
+-- ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000001000000000000000100000000000000010000000000000001",
+	lut_mask => "0000000000000000000000000000000000000000000000010000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \ALT_INV_comb~0_combout\,
-	datac => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	datad => \ALT_INV_comb~5_combout\,
-	combout => \comb~7_combout\);
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
+	datac => \ALT_INV_comb~0_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	combout => \comb~6_combout\);
 
 \REG_HEX5|DOUT[0]\ : dffeas
 -- pragma translate_off
@@ -22805,7 +22739,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux7~0_combout\,
-	ena => \comb~7_combout\,
+	ena => \comb~6_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_HEX5|DOUT\(0));
@@ -22819,7 +22753,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux4~0_combout\,
-	ena => \comb~7_combout\,
+	ena => \comb~6_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_HEX5|DOUT\(3));
@@ -22833,7 +22767,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux6~0_combout\,
-	ena => \comb~7_combout\,
+	ena => \comb~6_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_HEX5|DOUT\(1));
@@ -22847,7 +22781,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux5~0_combout\,
-	ena => \comb~7_combout\,
+	ena => \comb~6_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_HEX5|DOUT\(2));
@@ -23003,17 +22937,17 @@ PORT MAP (
 
 \CPU|MUX2|saida_MUX[8]~8\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CPU|MUX2|saida_MUX[8]~8_combout\ = ( \CPU|REG_END_RET|DOUT\(8) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~33_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & ((!\MEMORIA_INTRUCAO|memROM~67_combout\) # ((!\CPU|MUX2|Equal1~0_combout\)))) ) ) # ( 
--- !\CPU|REG_END_RET|DOUT\(8) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~33_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~67_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
+-- \CPU|MUX2|saida_MUX[8]~8_combout\ = ( \CPU|REG_END_RET|DOUT\(8) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~33_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (((!\CPU|MUX2|Equal1~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~40_combout\))) ) ) # ( 
+-- !\CPU|REG_END_RET|DOUT\(8) & ( (!\CPU|MUX2|Equal2~0_combout\ & (((\CPU|SOMADOR|Add0~33_sumout\)))) # (\CPU|MUX2|Equal2~0_combout\ & (\MEMORIA_INTRUCAO|memROM~40_combout\ & (\CPU|MUX2|Equal1~0_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000001011001110001100101111111000000010110011100011001011111110",
+	lut_mask => "0000000111001101001100011111110100000001110011010011000111111101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~67_combout\,
+	dataa => \MEMORIA_INTRUCAO|ALT_INV_memROM~40_combout\,
 	datab => \CPU|MUX2|ALT_INV_Equal2~0_combout\,
 	datac => \CPU|MUX2|ALT_INV_Equal1~0_combout\,
 	datad => \CPU|SOMADOR|ALT_INV_Add0~33_sumout\,
@@ -23033,9 +22967,9 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CPU|PC|DOUT\(8));
 
-\comb~8\ : cyclonev_lcell_comb
+\comb~7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \comb~8_combout\ = ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & (\comb~0_combout\ & !\MEMORIA_INTRUCAO|memROM~48_combout\))) 
+-- \comb~7_combout\ = ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & (\comb~0_combout\ & !\MEMORIA_INTRUCAO|memROM~46_combout\))) 
 -- ) ) )
 
 -- pragma translate_off
@@ -23046,12 +22980,12 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	datac => \ALT_INV_comb~0_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
-	combout => \comb~8_combout\);
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
+	combout => \comb~7_combout\);
 
 \REG_LEDR0a7|DOUT[0]\ : dffeas
 -- pragma translate_off
@@ -23062,7 +22996,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux7~0_combout\,
-	ena => \comb~8_combout\,
+	ena => \comb~7_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_LEDR0a7|DOUT\(0));
@@ -23076,7 +23010,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux6~0_combout\,
-	ena => \comb~8_combout\,
+	ena => \comb~7_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_LEDR0a7|DOUT\(1));
@@ -23090,7 +23024,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux5~0_combout\,
-	ena => \comb~8_combout\,
+	ena => \comb~7_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_LEDR0a7|DOUT\(2));
@@ -23104,7 +23038,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux4~0_combout\,
-	ena => \comb~8_combout\,
+	ena => \comb~7_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_LEDR0a7|DOUT\(3));
@@ -23118,7 +23052,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux3~0_combout\,
-	ena => \comb~8_combout\,
+	ena => \comb~7_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_LEDR0a7|DOUT\(4));
@@ -23132,7 +23066,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux2~0_combout\,
-	ena => \comb~8_combout\,
+	ena => \comb~7_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_LEDR0a7|DOUT\(5));
@@ -23146,7 +23080,7 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux1~0_combout\,
-	ena => \comb~8_combout\,
+	ena => \comb~7_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_LEDR0a7|DOUT\(6));
@@ -23160,14 +23094,14 @@ GENERIC MAP (
 PORT MAP (
 	clk => \CLOCK_50~input_o\,
 	d => \CPU|BANCO_REG|Mux0~0_combout\,
-	ena => \comb~8_combout\,
+	ena => \comb~7_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REG_LEDR0a7|DOUT\(7));
 
-\comb~9\ : cyclonev_lcell_comb
+\comb~8\ : cyclonev_lcell_comb
 -- Equation(s):
--- \comb~9_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~33_combout\ & \comb~0_combout\))
+-- \comb~8_combout\ = (\CPU|DECODIFICADOR_INSTRUCAO|Mux11~0_combout\ & (!\MEMORIA_INTRUCAO|memROM~31_combout\ & \comb~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -23177,15 +23111,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \CPU|DECODIFICADOR_INSTRUCAO|ALT_INV_Mux11~0_combout\,
-	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~33_combout\,
+	datab => \MEMORIA_INTRUCAO|ALT_INV_memROM~31_combout\,
 	datac => \ALT_INV_comb~0_combout\,
-	combout => \comb~9_combout\);
+	combout => \comb~8_combout\);
 
 \FF_LEDR8|DOUT~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \FF_LEDR8|DOUT~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \FF_LEDR8|DOUT~q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( (!\comb~9_combout\ & 
--- (((\FF_LEDR8|DOUT~q\)))) # (\comb~9_combout\ & ((!\MEMORIA_INTRUCAO|memROM~48_combout\ & (\CPU|BANCO_REG|Mux7~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~48_combout\ & ((\FF_LEDR8|DOUT~q\))))) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( 
--- !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \FF_LEDR8|DOUT~q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \FF_LEDR8|DOUT~q\ ) ) )
+-- \FF_LEDR8|DOUT~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \FF_LEDR8|DOUT~q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( (!\comb~8_combout\ & 
+-- (((\FF_LEDR8|DOUT~q\)))) # (\comb~8_combout\ & ((!\MEMORIA_INTRUCAO|memROM~46_combout\ & (\CPU|BANCO_REG|Mux7~0_combout\)) # (\MEMORIA_INTRUCAO|memROM~46_combout\ & ((\FF_LEDR8|DOUT~q\))))) ) ) ) # ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( 
+-- !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \FF_LEDR8|DOUT~q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \FF_LEDR8|DOUT~q\ ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -23196,10 +23130,10 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \CPU|BANCO_REG|ALT_INV_Mux7~0_combout\,
 	datab => \FF_LEDR8|ALT_INV_DOUT~q\,
-	datac => \ALT_INV_comb~9_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datac => \ALT_INV_comb~8_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \FF_LEDR8|DOUT~0_combout\);
 
 \FF_LEDR8|DOUT\ : dffeas
@@ -23217,9 +23151,9 @@ PORT MAP (
 
 \FF_LEDR9|DOUT~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \FF_LEDR9|DOUT~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \FF_LEDR9|DOUT~q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( \MEMORIA_INTRUCAO|memROM~56_combout\ & ( \FF_LEDR9|DOUT~q\ ) ) ) # ( 
--- \MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( (!\comb~9_combout\ & (((\FF_LEDR9|DOUT~q\)))) # (\comb~9_combout\ & ((!\MEMORIA_INTRUCAO|memROM~48_combout\ & (\CPU|BANCO_REG|Mux7~0_combout\)) # 
--- (\MEMORIA_INTRUCAO|memROM~48_combout\ & ((\FF_LEDR9|DOUT~q\))))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~52_combout\ & ( !\MEMORIA_INTRUCAO|memROM~56_combout\ & ( \FF_LEDR9|DOUT~q\ ) ) )
+-- \FF_LEDR9|DOUT~0_combout\ = ( \MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \FF_LEDR9|DOUT~q\ ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( \MEMORIA_INTRUCAO|memROM~61_combout\ & ( \FF_LEDR9|DOUT~q\ ) ) ) # ( 
+-- \MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( (!\comb~8_combout\ & (((\FF_LEDR9|DOUT~q\)))) # (\comb~8_combout\ & ((!\MEMORIA_INTRUCAO|memROM~46_combout\ & (\CPU|BANCO_REG|Mux7~0_combout\)) # 
+-- (\MEMORIA_INTRUCAO|memROM~46_combout\ & ((\FF_LEDR9|DOUT~q\))))) ) ) ) # ( !\MEMORIA_INTRUCAO|memROM~55_combout\ & ( !\MEMORIA_INTRUCAO|memROM~61_combout\ & ( \FF_LEDR9|DOUT~q\ ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -23230,10 +23164,10 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \CPU|BANCO_REG|ALT_INV_Mux7~0_combout\,
 	datab => \FF_LEDR9|ALT_INV_DOUT~q\,
-	datac => \ALT_INV_comb~9_combout\,
-	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~48_combout\,
-	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~52_combout\,
-	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~56_combout\,
+	datac => \ALT_INV_comb~8_combout\,
+	datad => \MEMORIA_INTRUCAO|ALT_INV_memROM~46_combout\,
+	datae => \MEMORIA_INTRUCAO|ALT_INV_memROM~55_combout\,
+	dataf => \MEMORIA_INTRUCAO|ALT_INV_memROM~61_combout\,
 	combout => \FF_LEDR9|DOUT~0_combout\);
 
 \FF_LEDR9|DOUT\ : dffeas

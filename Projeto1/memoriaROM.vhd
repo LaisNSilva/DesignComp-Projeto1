@@ -273,21 +273,22 @@ architecture assincrona of memoriaROM is
 	  -- se não pular é pq não chegou no limite!
 	  tmp(96) := LDA  & "10" & '0' & x"37";
 	  tmp(97) := STA  & "10" & '1' & x"23";
-	  tmp(98) := JMP  & "01" & '0' & x"39";
+	  tmp(98) := JMP  & "01" & '0' & x"13"; 
+	 
 	  
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX3 PASSOU DO LIMITE
 	  tmp(99) := LDA  & "10" & '0' & x"00";
---		tmp(100) := STA  & "10" & '0' & x"37";
---	  tmp(101) := STA  & "10" & '1' & x"23";
---	  tmp(102) := LDA  & "10" & '0' & x"38";
---	  tmp(103) := SOMA & "10" & '0' & x"01";
---		tmp(104) := STA  & "10" & '0' & X"38";
+	  tmp(100) := STA  & "10" & '0' & x"37";
+	  --tmp(101) := STA  & "10" & '1' & x"23";
+	  --tmp(102) := LDA  & "10" & '0' & x"38";
+	  --tmp(103) := SOMA & "10" & '0' & x"01";
+		--tmp(104) := STA  & "10" & '0' & X"38";
 --	  tmp(105) := CEQ  & "10" & '0' & x"32";
 --	  tmp(106) := JEQ  & "10" & '0' & x"6e"; -- 110
---	  -- se não pular é pq não chegou no limite!
+	  -- se não pular é pq não chegou no limite!
 --    tmp(107) := LDA  & "10" & '0' & x"38";
 --	  tmp(108) := STA  & "10" & '1' & x"24";
---	  tmp(109) := JMP  & "01" & '0' & x"39";
+--	  tmp(109) := JMP  & "01" & '0' & x"39"; 
 --	  
 --	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX4 PASSOU DO LIMITE
 --	  tmp(110) := LDA  & "10" & '0' & x"00";
@@ -301,9 +302,9 @@ architecture assincrona of memoriaROM is
 --	  -- se Não pular é pq não chegou no limite!
 --    tmp(118) := LDA  & "10" & '0' & x"39";
 --	  tmp(119) := STA  & "10" & '1' & x"25";
---	  tmp(120) := JMP  & "01" & '0' & x"39";
-
-	 
+--	  tmp(120) := JMP  & "01" & '0' & x"13"; 
+--
+--	 
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX5 PASSOU DO LIMITE
 	  ---- OU SEJA, LIMITE MÁXIMO
 	  --- VAMOS ACENDER O LED 8
