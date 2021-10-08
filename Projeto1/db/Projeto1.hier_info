@@ -17,14 +17,14 @@ KEY[1] => edgedetector:detectorSub1.entrada
 KEY[2] => buffertri:KEY_2.DIN
 KEY[3] => buffertri:KEY_3.DIN
 FPGA_RESET_N => buffertri:FPGA_R.DIN
-SW[0] => buffertri:SW_0.DIN
-SW[1] => buffertri:SW_1.DIN
-SW[2] => buffertri:SW_2.DIN
-SW[3] => buffertri:SW_3.DIN
-SW[4] => buffertri:SW_4.DIN
-SW[5] => buffertri:SW_5.DIN
-SW[6] => buffertri:SW_6.DIN
-SW[7] => buffertri:SW_7.DIN
+SW[0] => buffertri_8seg:SW_0_7.DIN[0]
+SW[1] => buffertri_8seg:SW_0_7.DIN[1]
+SW[2] => buffertri_8seg:SW_0_7.DIN[2]
+SW[3] => buffertri_8seg:SW_0_7.DIN[3]
+SW[4] => buffertri_8seg:SW_0_7.DIN[4]
+SW[5] => buffertri_8seg:SW_0_7.DIN[5]
+SW[6] => buffertri_8seg:SW_0_7.DIN[6]
+SW[7] => buffertri_8seg:SW_0_7.DIN[7]
 SW[8] => buffertri:SW_8.DIN
 SW[9] => buffertri:SW_9.DIN
 HEX0[0] <= decodbinario_7seg:DECOD_HEX0.saida7seg[0]
@@ -1507,51 +1507,30 @@ DOUT <= DOUT.DB_MAX_OUTPUT_PORT_TYPE
 ENABLE => DOUT.OE
 
 
-|Projeto1|buffertri:SW_7
-DIN => DOUT.DATAIN
-DOUT <= DOUT.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT.OE
-
-
-|Projeto1|buffertri:SW_6
-DIN => DOUT.DATAIN
-DOUT <= DOUT.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT.OE
-
-
-|Projeto1|buffertri:SW_5
-DIN => DOUT.DATAIN
-DOUT <= DOUT.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT.OE
-
-
-|Projeto1|buffertri:SW_4
-DIN => DOUT.DATAIN
-DOUT <= DOUT.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT.OE
-
-
-|Projeto1|buffertri:SW_3
-DIN => DOUT.DATAIN
-DOUT <= DOUT.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT.OE
-
-
-|Projeto1|buffertri:SW_2
-DIN => DOUT.DATAIN
-DOUT <= DOUT.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT.OE
-
-
-|Projeto1|buffertri:SW_1
-DIN => DOUT.DATAIN
-DOUT <= DOUT.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT.OE
-
-
-|Projeto1|buffertri:SW_0
-DIN => DOUT.DATAIN
-DOUT <= DOUT.DB_MAX_OUTPUT_PORT_TYPE
-ENABLE => DOUT.OE
+|Projeto1|buffertri_8seg:SW_0_7
+DIN[0] => DOUT[0].DATAIN
+DIN[1] => DOUT[1].DATAIN
+DIN[2] => DOUT[2].DATAIN
+DIN[3] => DOUT[3].DATAIN
+DIN[4] => DOUT[4].DATAIN
+DIN[5] => DOUT[5].DATAIN
+DIN[6] => DOUT[6].DATAIN
+DIN[7] => DOUT[7].DATAIN
+DOUT[0] <= DOUT[0].DB_MAX_OUTPUT_PORT_TYPE
+DOUT[1] <= DOUT[1].DB_MAX_OUTPUT_PORT_TYPE
+DOUT[2] <= DOUT[2].DB_MAX_OUTPUT_PORT_TYPE
+DOUT[3] <= DOUT[3].DB_MAX_OUTPUT_PORT_TYPE
+DOUT[4] <= DOUT[4].DB_MAX_OUTPUT_PORT_TYPE
+DOUT[5] <= DOUT[5].DB_MAX_OUTPUT_PORT_TYPE
+DOUT[6] <= DOUT[6].DB_MAX_OUTPUT_PORT_TYPE
+DOUT[7] <= DOUT[7].DB_MAX_OUTPUT_PORT_TYPE
+ENABLE => DOUT[0].OE
+ENABLE => DOUT[1].OE
+ENABLE => DOUT[2].OE
+ENABLE => DOUT[3].OE
+ENABLE => DOUT[4].OE
+ENABLE => DOUT[5].OE
+ENABLE => DOUT[6].OE
+ENABLE => DOUT[7].OE
 
 

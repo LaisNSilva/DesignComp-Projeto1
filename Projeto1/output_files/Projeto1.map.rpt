@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto1
-Fri Oct 08 16:29:39 2021
+Fri Oct 08 19:24:42 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -45,41 +45,34 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  37. Parameter Settings for User Entity Instance: buffertri:KEY_0
  38. Parameter Settings for User Entity Instance: buffertri:SW_9
  39. Parameter Settings for User Entity Instance: buffertri:SW_8
- 40. Parameter Settings for User Entity Instance: buffertri:SW_7
- 41. Parameter Settings for User Entity Instance: buffertri:SW_6
- 42. Parameter Settings for User Entity Instance: buffertri:SW_5
- 43. Parameter Settings for User Entity Instance: buffertri:SW_4
- 44. Parameter Settings for User Entity Instance: buffertri:SW_3
- 45. Parameter Settings for User Entity Instance: buffertri:SW_2
- 46. Parameter Settings for User Entity Instance: buffertri:SW_1
- 47. Parameter Settings for User Entity Instance: buffertri:SW_0
- 48. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_DM"
- 49. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_KEY1"
- 50. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
- 51. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5"
- 52. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
- 53. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4"
- 54. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
- 55. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3"
- 56. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
- 57. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2"
- 58. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
- 59. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1"
- 60. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
- 61. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
- 62. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
- 63. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
- 64. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
- 65. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
- 66. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
- 67. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
- 68. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
- 69. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
- 70. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
- 71. Port Connectivity Checks: "CPU:CPU"
- 72. Post-Synthesis Netlist Statistics for Top Partition
- 73. Elapsed Time Per Partition
- 74. Analysis & Synthesis Messages
+ 40. Parameter Settings for User Entity Instance: buffertri_8seg:SW_0_7
+ 41. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_DM"
+ 42. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_KEY1"
+ 43. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
+ 44. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5"
+ 45. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
+ 46. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4"
+ 47. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
+ 48. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3"
+ 49. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
+ 50. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2"
+ 51. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
+ 52. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1"
+ 53. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
+ 54. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
+ 55. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
+ 56. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
+ 57. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
+ 58. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
+ 59. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
+ 60. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
+ 61. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
+ 62. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
+ 63. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
+ 64. Port Connectivity Checks: "CPU:CPU"
+ 65. Post-Synthesis Netlist Statistics for Top Partition
+ 66. Elapsed Time Per Partition
+ 67. Analysis & Synthesis Messages
 
 
 
@@ -106,7 +99,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 08 16:29:39 2021       ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct 08 19:24:42 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto1                                    ;
 ; Top-level Entity Name           ; Projeto1                                    ;
@@ -263,6 +256,7 @@ https://fpgasoftware.intel.com/eula.
 ; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/somaConstante.vhd               ;         ;
 ; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/ULASomaSub.vhd                  ;         ;
 ; bancoRegistradoresArqRegMem.vhd  ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/bancoRegistradoresArqRegMem.vhd ;         ;
+; buffertri_8seg.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/buffertri_8seg.vhd              ;         ;
 +----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
 
 
@@ -271,14 +265,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 484            ;
+; Estimate of Logic utilization (ALMs needed) ; 487            ;
 ;                                             ;                ;
 ; Combinational ALUT usage for logic          ; 511            ;
-;     -- 7 input functions                    ; 5              ;
-;     -- 6 input functions                    ; 285            ;
-;     -- 5 input functions                    ; 37             ;
-;     -- 4 input functions                    ; 77             ;
-;     -- <=3 input functions                  ; 107            ;
+;     -- 7 input functions                    ; 2              ;
+;     -- 6 input functions                    ; 305            ;
+;     -- 5 input functions                    ; 33             ;
+;     -- 4 input functions                    ; 67             ;
+;     -- <=3 input functions                  ; 104            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 601            ;
 ;                                             ;                ;
@@ -288,8 +282,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 599            ;
-; Total fan-out                               ; 4552           ;
-; Average fan-out                             ; 3.55           ;
+; Total fan-out                               ; 4514           ;
+; Average fan-out                             ; 3.52           ;
 +---------------------------------------------+----------------+
 
 
@@ -298,9 +292,9 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Entity Name                 ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------------+--------------+
-; |Projeto1                                      ; 511 (18)            ; 601 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Projeto1                                                ; Projeto1                    ; work         ;
-;    |CPU:CPU|                                   ; 76 (0)              ; 51 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU                                        ; CPU                         ; work         ;
-;       |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao              ; work         ;
+; |Projeto1                                      ; 511 (23)            ; 601 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Projeto1                                                ; Projeto1                    ; work         ;
+;    |CPU:CPU|                                   ; 74 (0)              ; 51 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU                                        ; CPU                         ; work         ;
+;       |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao              ; work         ;
 ;       |FlipFlop:FLAG|                          ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|FlipFlop:FLAG                          ; FlipFlop                    ; work         ;
 ;       |ULASomaSub:ULA1|                        ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|ULASomaSub:ULA1                        ; ULASomaSub                  ; work         ;
 ;       |bancoRegistradoresArqRegMem:BANCO_REG|  ; 12 (12)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|bancoRegistradoresArqRegMem:BANCO_REG  ; bancoRegistradoresArqRegMem ; work         ;
@@ -323,7 +317,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |edgeDetector:detectorSub0|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|edgeDetector:detectorSub0                      ; edgeDetector                ; work         ;
 ;    |edgeDetector:detectorSub1|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|edgeDetector:detectorSub1                      ; edgeDetector                ; work         ;
 ;    |memoriaRAM:MEMORIA_DADOS|                  ; 298 (298)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaRAM:MEMORIA_DADOS                       ; memoriaRAM                  ; work         ;
-;    |memoriaROM:MEMORIA_INTRUCAO|               ; 70 (70)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaROM:MEMORIA_INTRUCAO                    ; memoriaROM                  ; work         ;
+;    |memoriaROM:MEMORIA_INTRUCAO|               ; 67 (67)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaROM:MEMORIA_INTRUCAO                    ; memoriaROM                  ; work         ;
 ;    |registradorGenerico:REG_LEDR0a7|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico:REG_LEDR0a7                ; registradorGenerico         ; work         ;
 ;    |registradorGenerico_4b:REG_HEX0|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX0                ; registradorGenerico_4b      ; work         ;
 ;    |registradorGenerico_4b:REG_HEX1|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX1                ; registradorGenerico_4b      ; work         ;
@@ -675,83 +669,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: buffertri:SW_7 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; larguradados   ; 8     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: buffertri:SW_6 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; larguradados   ; 8     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: buffertri:SW_5 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; larguradados   ; 8     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: buffertri:SW_4 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; larguradados   ; 8     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: buffertri:SW_3 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; larguradados   ; 8     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: buffertri:SW_2 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; larguradados   ; 8     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: buffertri:SW_1 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; larguradados   ; 8     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: buffertri:SW_0 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; larguradados   ; 8     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffertri_8seg:SW_0_7 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1005,21 +929,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     arith             ; 26                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 9                           ;
-;         2 data inputs ; 4                           ;
-;         4 data inputs ; 12                          ;
-;     extend            ; 5                           ;
-;         7 data inputs ; 5                           ;
-;     normal            ; 480                         ;
+;         2 data inputs ; 10                          ;
+;         4 data inputs ; 6                           ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 483                         ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 85                          ;
-;         4 data inputs ; 65                          ;
-;         5 data inputs ; 37                          ;
-;         6 data inputs ; 285                         ;
+;         2 data inputs ; 68                          ;
+;         3 data inputs ; 14                          ;
+;         4 data inputs ; 61                          ;
+;         5 data inputs ; 33                          ;
+;         6 data inputs ; 305                         ;
 ; boundary_port         ; 85                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.30                       ;
-; Average LUT depth     ; 6.45                        ;
+; Max LUT depth         ; 9.30                        ;
+; Average LUT depth     ; 6.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1028,7 +952,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -1038,7 +962,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Oct 08 16:29:31 2021
+    Info: Processing started: Fri Oct 08 19:24:33 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto1 -c Projeto1
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file projeto1.vhd
@@ -1102,6 +1026,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file ulasoma
 Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradoresarqregmem.vhd
     Info (12022): Found design unit 1: bancoRegistradoresArqRegMem-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/bancoRegistradoresArqRegMem.vhd Line: 23
     Info (12023): Found entity 1: bancoRegistradoresArqRegMem File: C:/Descomp/DesignComp-Projeto1/Projeto1/bancoRegistradoresArqRegMem.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file buffertri_8seg.vhd
+    Info (12022): Found design unit 1: buffertri_8seg-comportament File: C:/Descomp/DesignComp-Projeto1/Projeto1/buffertri_8seg.vhd Line: 16
+    Info (12023): Found entity 1: buffertri_8seg File: C:/Descomp/DesignComp-Projeto1/Projeto1/buffertri_8seg.vhd Line: 4
 Info (12127): Elaborating entity "Projeto1" for the top level hierarchy
 Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 117
 Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 125
@@ -1121,6 +1048,7 @@ Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registrado
 Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 204
 Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 213
 Info (12128): Elaborating entity "buffertri" for hierarchy "buffertri:FPGA_R" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 311
+Info (12128): Elaborating entity "buffertri_8seg" for hierarchy "buffertri_8seg:SW_0_7" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 392
 Info (276014): Found 2 instances of uninferred RAM logic
     Info (276007): RAM logic "memoriaRAM:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto1/Projeto1/memoriaRAM.vhd Line: 27
     Info (276004): RAM logic "CPU:CPU|bancoRegistradoresArqRegMem:BANCO_REG|registrador" is uninferred due to inappropriate RAM size File: C:/Descomp/DesignComp-Projeto1/Projeto1/bancoRegistradoresArqRegMem.vhd Line: 29
@@ -1141,9 +1069,9 @@ Info (21057): Implemented 1183 device resources after synthesis - the final reso
     Info (21059): Implemented 69 output pins
     Info (21061): Implemented 1098 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4902 megabytes
-    Info: Processing ended: Fri Oct 08 16:29:39 2021
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 4903 megabytes
+    Info: Processing ended: Fri Oct 08 19:24:42 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:16
 
 

@@ -387,63 +387,70 @@ SW_8: entity work.buffertri
 			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_1 AND Bloco_5
 			 );
+			 
 
---- SW0 AO SW7 ---
-SW_7: entity work.buffertri
-          port map (
-			 DIN => SW(7),
-			 DOUT => Saida_Dados(7), 
+SW_0_7: entity work.buffertri_8seg generic map (larguraDados => larguraDados)
+		port map (
+			 DIN => SW(7 downto 0),
+			 DOUT => Saida_Dados(7 downto 0), 
 			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
 			 );
-
-SW_6: entity work.buffertri
-          port map (
-			 DIN => SW(6),
-			 DOUT => Saida_Dados(6), 
-			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
-			 );
-
-SW_5: entity work.buffertri
-          port map (
-			 DIN => SW(5),
-			 DOUT => Saida_Dados(5), 
-			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
-			 );
-
-SW_4: entity work.buffertri
-          port map (
-			 DIN => SW(4),
-			 DOUT => Saida_Dados(4), 
-			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
-			 );
-
-SW_3: entity work.buffertri
-          port map (
-			 DIN => SW(3),
-			 DOUT => Saida_Dados(3), 
-			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
-			 );
-
-SW_2: entity work.buffertri
-          port map (
-			 DIN => SW(2),
-			 DOUT => Saida_Dados(2), 
-			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
-			 );
-
-SW_1: entity work.buffertri
-          port map (
-			 DIN => SW(1),
-			 DOUT => Saida_Dados(1), 
-			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
-			 );
-
-SW_0: entity work.buffertri
-          port map (
-			 DIN => SW(0),
-			 DOUT => Saida_Dados(0), 
-			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
-			 );
+----- SW0 AO SW7 ---
+--SW_7: entity work.buffertri
+--          port map (
+--			 DIN => SW(7),
+--			 DOUT => Saida_Dados(7), 
+--			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+--			 );
+--
+--SW_6: entity work.buffertri
+--          port map (
+--			 DIN => SW(6),
+--			 DOUT => Saida_Dados(6), 
+--			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+--			 );
+--
+--SW_5: entity work.buffertri
+--          port map (
+--			 DIN => SW(5),
+--			 DOUT => Saida_Dados(5), 
+--			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+--			 );
+--
+--SW_4: entity work.buffertri
+--          port map (
+--			 DIN => SW(4),
+--			 DOUT => Saida_Dados(4), 
+--			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+--			 );
+--
+--SW_3: entity work.buffertri
+--          port map (
+--			 DIN => SW(3),
+--			 DOUT => Saida_Dados(3), 
+--			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+--			 );
+--
+--SW_2: entity work.buffertri
+--          port map (
+--			 DIN => SW(2),
+--			 DOUT => Saida_Dados(2), 
+--			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+--			 );
+--
+--SW_1: entity work.buffertri
+--          port map (
+--			 DIN => SW(1),
+--			 DOUT => Saida_Dados(1), 
+--			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+--			 );
+--
+--SW_0: entity work.buffertri
+--          port map (
+--			 DIN => SW(0),
+--			 DOUT => Saida_Dados(0), 
+--			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
+--			 );
 
 			
 
