@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto1
-Fri Oct 08 14:31:40 2021
+Fri Oct 08 16:29:39 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,83 +13,73 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |Projeto1
- 12. Parameter Settings for User Entity Instance: CPU:CPU
- 13. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1
- 14. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:PC
- 15. Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:SOMADOR
- 16. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:REG_END_RET
- 17. Parameter Settings for User Entity Instance: CPU:CPU|Banco_Registradores:BANCO_REG
- 18. Parameter Settings for User Entity Instance: CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_0
- 19. Parameter Settings for User Entity Instance: CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_1
- 20. Parameter Settings for User Entity Instance: CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_2
- 21. Parameter Settings for User Entity Instance: CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_3
- 22. Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSub:ULA1
- 23. Parameter Settings for User Entity Instance: CPU:CPU|FlipFlop:FLAG
- 24. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1_PC:MUX2
- 25. Parameter Settings for User Entity Instance: memoriaROM:MEMORIA_INTRUCAO
- 26. Parameter Settings for User Entity Instance: memoriaRAM:MEMORIA_DADOS
- 27. Parameter Settings for User Entity Instance: registradorGenerico:REG_LEDR0a7
- 28. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR8
- 29. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR9
- 30. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX0
- 31. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX1
- 32. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX2
- 33. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX3
- 34. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX4
- 35. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX5
- 36. Parameter Settings for User Entity Instance: buffertri:FPGA_R
- 37. Parameter Settings for User Entity Instance: buffertri:KEY_3
- 38. Parameter Settings for User Entity Instance: buffertri:KEY_2
- 39. Parameter Settings for User Entity Instance: FlipFlop:FLIP_FLOP_KEY1
- 40. Parameter Settings for User Entity Instance: buffertri:KEY_1
- 41. Parameter Settings for User Entity Instance: FlipFlop:FLIP_FLOP_DM
- 42. Parameter Settings for User Entity Instance: buffertri:KEY_0
- 43. Parameter Settings for User Entity Instance: buffertri:SW_9
- 44. Parameter Settings for User Entity Instance: buffertri:SW_8
- 45. Parameter Settings for User Entity Instance: buffertri:SW_7
- 46. Parameter Settings for User Entity Instance: buffertri:SW_6
- 47. Parameter Settings for User Entity Instance: buffertri:SW_5
- 48. Parameter Settings for User Entity Instance: buffertri:SW_4
- 49. Parameter Settings for User Entity Instance: buffertri:SW_3
- 50. Parameter Settings for User Entity Instance: buffertri:SW_2
- 51. Parameter Settings for User Entity Instance: buffertri:SW_1
- 52. Parameter Settings for User Entity Instance: buffertri:SW_0
- 53. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_DM"
- 54. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_KEY1"
- 55. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
- 56. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5"
- 57. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
- 58. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4"
- 59. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
- 60. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3"
- 61. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
- 62. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2"
- 63. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
- 64. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1"
- 65. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
- 66. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
- 67. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
- 68. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
- 69. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
- 70. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
- 71. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
- 72. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
- 73. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
- 74. Port Connectivity Checks: "CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_3"
- 75. Port Connectivity Checks: "CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_2"
- 76. Port Connectivity Checks: "CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_1"
- 77. Port Connectivity Checks: "CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_0"
- 78. Port Connectivity Checks: "CPU:CPU|Banco_Registradores:BANCO_REG"
- 79. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
- 80. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
- 81. Port Connectivity Checks: "CPU:CPU"
- 82. Post-Synthesis Netlist Statistics for Top Partition
- 83. Elapsed Time Per Partition
- 84. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |Projeto1
+ 11. Parameter Settings for User Entity Instance: CPU:CPU
+ 12. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1
+ 13. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:PC
+ 14. Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:SOMADOR
+ 15. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico_PC:REG_END_RET
+ 16. Parameter Settings for User Entity Instance: CPU:CPU|bancoRegistradoresArqRegMem:BANCO_REG
+ 17. Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSub:ULA1
+ 18. Parameter Settings for User Entity Instance: CPU:CPU|FlipFlop:FLAG
+ 19. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1_PC:MUX2
+ 20. Parameter Settings for User Entity Instance: memoriaROM:MEMORIA_INTRUCAO
+ 21. Parameter Settings for User Entity Instance: memoriaRAM:MEMORIA_DADOS
+ 22. Parameter Settings for User Entity Instance: registradorGenerico:REG_LEDR0a7
+ 23. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR8
+ 24. Parameter Settings for User Entity Instance: FlipFlop:FF_LEDR9
+ 25. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX0
+ 26. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX1
+ 27. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX2
+ 28. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX3
+ 29. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX4
+ 30. Parameter Settings for User Entity Instance: registradorGenerico_4b:REG_HEX5
+ 31. Parameter Settings for User Entity Instance: buffertri:FPGA_R
+ 32. Parameter Settings for User Entity Instance: buffertri:KEY_3
+ 33. Parameter Settings for User Entity Instance: buffertri:KEY_2
+ 34. Parameter Settings for User Entity Instance: FlipFlop:FLIP_FLOP_KEY1
+ 35. Parameter Settings for User Entity Instance: buffertri:KEY_1
+ 36. Parameter Settings for User Entity Instance: FlipFlop:FLIP_FLOP_DM
+ 37. Parameter Settings for User Entity Instance: buffertri:KEY_0
+ 38. Parameter Settings for User Entity Instance: buffertri:SW_9
+ 39. Parameter Settings for User Entity Instance: buffertri:SW_8
+ 40. Parameter Settings for User Entity Instance: buffertri:SW_7
+ 41. Parameter Settings for User Entity Instance: buffertri:SW_6
+ 42. Parameter Settings for User Entity Instance: buffertri:SW_5
+ 43. Parameter Settings for User Entity Instance: buffertri:SW_4
+ 44. Parameter Settings for User Entity Instance: buffertri:SW_3
+ 45. Parameter Settings for User Entity Instance: buffertri:SW_2
+ 46. Parameter Settings for User Entity Instance: buffertri:SW_1
+ 47. Parameter Settings for User Entity Instance: buffertri:SW_0
+ 48. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_DM"
+ 49. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_KEY1"
+ 50. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
+ 51. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5"
+ 52. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
+ 53. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4"
+ 54. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
+ 55. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3"
+ 56. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
+ 57. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2"
+ 58. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
+ 59. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1"
+ 60. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
+ 61. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
+ 62. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
+ 63. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
+ 64. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
+ 65. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
+ 66. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
+ 67. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
+ 68. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
+ 69. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
+ 70. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
+ 71. Port Connectivity Checks: "CPU:CPU"
+ 72. Post-Synthesis Netlist Statistics for Top Partition
+ 73. Elapsed Time Per Partition
+ 74. Analysis & Synthesis Messages
 
 
 
@@ -116,7 +106,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 08 14:31:40 2021       ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct 08 16:29:39 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto1                                    ;
 ; Top-level Entity Name           ; Projeto1                                    ;
@@ -230,45 +220,50 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                              ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
-; Projeto1.vhd                     ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/Projeto1.vhd               ;         ;
-; buffertri.vhd                    ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/buffertri.vhd              ;         ;
-; CPU.vhd                          ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd                    ;         ;
-; Decod3x8.vhd                     ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/Decod3x8.vhd               ;         ;
-; DecodBinario_7Seg.vhd            ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/DecodBinario_7Seg.vhd      ;         ;
-; DecodInstrucao.vhd               ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/DecodInstrucao.vhd         ;         ;
-; edgeDetector.vhd                 ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/edgeDetector.vhd           ;         ;
-; FlipFlop.vhd                     ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/FlipFlop.vhd               ;         ;
-; LogicaDesvio.vhd                 ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/LogicaDesvio.vhd           ;         ;
-; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/memoriaRAM.vhd             ;         ;
-; memoriaROM.vhd                   ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/memoriaROM.vhd             ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd         ;         ;
-; muxGenerico2x1_PC.vhd            ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1_PC.vhd      ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico.vhd    ;         ;
-; registradorGenerico_4b.vhd       ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_4b.vhd ;         ;
-; Banco_Registradores.vhd          ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd    ;         ;
-; registradorGenerico_PC.vhd       ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/somaConstante.vhd          ;         ;
-; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; C:/DesComp/DesignComp-Projeto1/Projeto1/ULASomaSub.vhd             ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; Projeto1.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd                    ;         ;
+; buffertri.vhd                    ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/buffertri.vhd                   ;         ;
+; CPU.vhd                          ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd                         ;         ;
+; Decod3x8.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/Decod3x8.vhd                    ;         ;
+; DecodBinario_7Seg.vhd            ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/DecodBinario_7Seg.vhd           ;         ;
+; DecodInstrucao.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/DecodInstrucao.vhd              ;         ;
+; edgeDetector.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/edgeDetector.vhd                ;         ;
+; FlipFlop.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/FlipFlop.vhd                    ;         ;
+; LogicaDesvio.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/LogicaDesvio.vhd                ;         ;
+; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/memoriaRAM.vhd                  ;         ;
+; memoriaROM.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/memoriaROM.vhd                  ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd              ;         ;
+; muxGenerico2x1_PC.vhd            ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1_PC.vhd           ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/registradorGenerico.vhd         ;         ;
+; registradorGenerico_4b.vhd       ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/registradorGenerico_4b.vhd      ;         ;
+; registradorGenerico_PC.vhd       ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd      ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/somaConstante.vhd               ;         ;
+; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/ULASomaSub.vhd                  ;         ;
+; bancoRegistradoresArqRegMem.vhd  ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/bancoRegistradoresArqRegMem.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -276,14 +271,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 490            ;
+; Estimate of Logic utilization (ALMs needed) ; 484            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 557            ;
-;     -- 7 input functions                    ; 3              ;
-;     -- 6 input functions                    ; 286            ;
-;     -- 5 input functions                    ; 46             ;
-;     -- 4 input functions                    ; 85             ;
-;     -- <=3 input functions                  ; 137            ;
+; Combinational ALUT usage for logic          ; 511            ;
+;     -- 7 input functions                    ; 5              ;
+;     -- 6 input functions                    ; 285            ;
+;     -- 5 input functions                    ; 37             ;
+;     -- 4 input functions                    ; 77             ;
+;     -- <=3 input functions                  ; 107            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 601            ;
 ;                                             ;                ;
@@ -293,100 +288,51 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 599            ;
-; Total fan-out                               ; 4580           ;
-; Average fan-out                             ; 3.45           ;
+; Total fan-out                               ; 4552           ;
+; Average fan-out                             ; 3.55           ;
 +---------------------------------------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
-+------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+------------------------+--------------+
-; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Entity Name            ; Library Name ;
-+------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+------------------------+--------------+
-; |Projeto1                                      ; 557 (17)            ; 601 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Projeto1                                                                 ; Projeto1               ; work         ;
-;    |CPU:CPU|                                   ; 118 (0)             ; 51 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU                                                         ; CPU                    ; work         ;
-;       |Banco_Registradores:BANCO_REG|          ; 48 (48)             ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|Banco_Registradores:BANCO_REG                           ; Banco_Registradores    ; work         ;
-;          |registradorGenerico:REG_0|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_0 ; registradorGenerico    ; work         ;
-;          |registradorGenerico:REG_1|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_1 ; registradorGenerico    ; work         ;
-;          |registradorGenerico:REG_2|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_2 ; registradorGenerico    ; work         ;
-;          |registradorGenerico:REG_3|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_3 ; registradorGenerico    ; work         ;
-;       |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO                  ; DecodInstrucao         ; work         ;
-;       |FlipFlop:FLAG|                          ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|FlipFlop:FLAG                                           ; FlipFlop               ; work         ;
-;       |ULASomaSub:ULA1|                        ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|ULASomaSub:ULA1                                         ; ULASomaSub             ; work         ;
-;       |muxGenerico2x1:MUX1|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|muxGenerico2x1:MUX1                                     ; muxGenerico2x1         ; work         ;
-;       |muxGenerico2x1_PC:MUX2|                 ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|muxGenerico2x1_PC:MUX2                                  ; muxGenerico2x1_PC      ; work         ;
-;       |registradorGenerico_PC:PC|              ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|registradorGenerico_PC:PC                               ; registradorGenerico_PC ; work         ;
-;       |registradorGenerico_PC:REG_END_RET|     ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|registradorGenerico_PC:REG_END_RET                      ; registradorGenerico_PC ; work         ;
-;       |somaConstante:SOMADOR|                  ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|somaConstante:SOMADOR                                   ; somaConstante          ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX0|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX0                                    ; DecodBinario_7Seg      ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX1|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX1                                    ; DecodBinario_7Seg      ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX2|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX2                                    ; DecodBinario_7Seg      ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX3|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX3                                    ; DecodBinario_7Seg      ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX4|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX4                                    ; DecodBinario_7Seg      ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX5|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX5                                    ; DecodBinario_7Seg      ; work         ;
-;    |FlipFlop:FF_LEDR8|                         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FF_LEDR8                                               ; FlipFlop               ; work         ;
-;    |FlipFlop:FF_LEDR9|                         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FF_LEDR9                                               ; FlipFlop               ; work         ;
-;    |FlipFlop:FLIP_FLOP_DM|                     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FLIP_FLOP_DM                                           ; FlipFlop               ; work         ;
-;    |FlipFlop:FLIP_FLOP_KEY1|                   ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FLIP_FLOP_KEY1                                         ; FlipFlop               ; work         ;
-;    |edgeDetector:detectorSub0|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|edgeDetector:detectorSub0                                       ; edgeDetector           ; work         ;
-;    |edgeDetector:detectorSub1|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|edgeDetector:detectorSub1                                       ; edgeDetector           ; work         ;
-;    |memoriaRAM:MEMORIA_DADOS|                  ; 298 (298)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaRAM:MEMORIA_DADOS                                        ; memoriaRAM             ; work         ;
-;    |memoriaROM:MEMORIA_INTRUCAO|               ; 76 (76)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaROM:MEMORIA_INTRUCAO                                     ; memoriaROM             ; work         ;
-;    |registradorGenerico:REG_LEDR0a7|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico:REG_LEDR0a7                                 ; registradorGenerico    ; work         ;
-;    |registradorGenerico_4b:REG_HEX0|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX0                                 ; registradorGenerico_4b ; work         ;
-;    |registradorGenerico_4b:REG_HEX1|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX1                                 ; registradorGenerico_4b ; work         ;
-;    |registradorGenerico_4b:REG_HEX2|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX2                                 ; registradorGenerico_4b ; work         ;
-;    |registradorGenerico_4b:REG_HEX3|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX3                                 ; registradorGenerico_4b ; work         ;
-;    |registradorGenerico_4b:REG_HEX4|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX4                                 ; registradorGenerico_4b ; work         ;
-;    |registradorGenerico_4b:REG_HEX5|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX5                                 ; registradorGenerico_4b ; work         ;
-+------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
++------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------------+--------------+
+; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Entity Name                 ; Library Name ;
++------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------------+--------------+
+; |Projeto1                                      ; 511 (18)            ; 601 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Projeto1                                                ; Projeto1                    ; work         ;
+;    |CPU:CPU|                                   ; 76 (0)              ; 51 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU                                        ; CPU                         ; work         ;
+;       |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao              ; work         ;
+;       |FlipFlop:FLAG|                          ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|FlipFlop:FLAG                          ; FlipFlop                    ; work         ;
+;       |ULASomaSub:ULA1|                        ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|ULASomaSub:ULA1                        ; ULASomaSub                  ; work         ;
+;       |bancoRegistradoresArqRegMem:BANCO_REG|  ; 12 (12)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|bancoRegistradoresArqRegMem:BANCO_REG  ; bancoRegistradoresArqRegMem ; work         ;
+;       |muxGenerico2x1:MUX1|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|muxGenerico2x1:MUX1                    ; muxGenerico2x1              ; work         ;
+;       |muxGenerico2x1_PC:MUX2|                 ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|muxGenerico2x1_PC:MUX2                 ; muxGenerico2x1_PC           ; work         ;
+;       |registradorGenerico_PC:PC|              ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|registradorGenerico_PC:PC              ; registradorGenerico_PC      ; work         ;
+;       |registradorGenerico_PC:REG_END_RET|     ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|registradorGenerico_PC:REG_END_RET     ; registradorGenerico_PC      ; work         ;
+;       |somaConstante:SOMADOR|                  ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|somaConstante:SOMADOR                  ; somaConstante               ; work         ;
+;    |Decod3x8:DECODIFICADOR_3X8_6a8|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|Decod3x8:DECODIFICADOR_3X8_6a8                 ; Decod3x8                    ; work         ;
+;    |DecodBinario_7Seg:DECOD_HEX0|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX0                   ; DecodBinario_7Seg           ; work         ;
+;    |DecodBinario_7Seg:DECOD_HEX1|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX1                   ; DecodBinario_7Seg           ; work         ;
+;    |DecodBinario_7Seg:DECOD_HEX2|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX2                   ; DecodBinario_7Seg           ; work         ;
+;    |DecodBinario_7Seg:DECOD_HEX3|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX3                   ; DecodBinario_7Seg           ; work         ;
+;    |DecodBinario_7Seg:DECOD_HEX4|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX4                   ; DecodBinario_7Seg           ; work         ;
+;    |DecodBinario_7Seg:DECOD_HEX5|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX5                   ; DecodBinario_7Seg           ; work         ;
+;    |FlipFlop:FF_LEDR8|                         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FF_LEDR8                              ; FlipFlop                    ; work         ;
+;    |FlipFlop:FF_LEDR9|                         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FF_LEDR9                              ; FlipFlop                    ; work         ;
+;    |FlipFlop:FLIP_FLOP_DM|                     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FLIP_FLOP_DM                          ; FlipFlop                    ; work         ;
+;    |FlipFlop:FLIP_FLOP_KEY1|                   ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FLIP_FLOP_KEY1                        ; FlipFlop                    ; work         ;
+;    |edgeDetector:detectorSub0|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|edgeDetector:detectorSub0                      ; edgeDetector                ; work         ;
+;    |edgeDetector:detectorSub1|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|edgeDetector:detectorSub1                      ; edgeDetector                ; work         ;
+;    |memoriaRAM:MEMORIA_DADOS|                  ; 298 (298)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaRAM:MEMORIA_DADOS                       ; memoriaRAM                  ; work         ;
+;    |memoriaROM:MEMORIA_INTRUCAO|               ; 70 (70)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaROM:MEMORIA_INTRUCAO                    ; memoriaROM                  ; work         ;
+;    |registradorGenerico:REG_LEDR0a7|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico:REG_LEDR0a7                ; registradorGenerico         ; work         ;
+;    |registradorGenerico_4b:REG_HEX0|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX0                ; registradorGenerico_4b      ; work         ;
+;    |registradorGenerico_4b:REG_HEX1|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX1                ; registradorGenerico_4b      ; work         ;
+;    |registradorGenerico_4b:REG_HEX2|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX2                ; registradorGenerico_4b      ; work         ;
+;    |registradorGenerico_4b:REG_HEX3|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX3                ; registradorGenerico_4b      ; work         ;
+;    |registradorGenerico_4b:REG_HEX4|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX4                ; registradorGenerico_4b      ; work         ;
+;    |registradorGenerico_4b:REG_HEX5|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX5                ; registradorGenerico_4b      ; work         ;
++------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                           ;
-+-------------------------------------------------------+----------------------------------------------+------------------------+
-; Latch Name                                            ; Latch Enable Signal                          ; Free of Timing Hazards ;
-+-------------------------------------------------------+----------------------------------------------+------------------------+
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[0] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal1 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Habilita_reg0   ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal1 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[0] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Habilita_reg1   ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[0] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Habilita_reg2   ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[0] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Habilita_reg3   ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[1] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal1 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[1] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[1] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[1] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[2] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal1 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[2] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[2] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[2] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[3] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal1 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[3] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[3] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[3] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[4] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal1 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[4] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[4] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[4] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[5] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal1 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[5] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[5] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[5] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[6] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal1 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[6] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[6] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[6] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[7] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal1 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[7] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[7] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[7] ; CPU:CPU|Banco_Registradores:BANCO_REG|Equal0 ; yes                    ;
-; Number of user-specified and inferred latches = 36    ;                                              ;                        ;
-+-------------------------------------------------------+----------------------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -396,7 +342,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Total registers                              ; 601   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 32    ;
 ; Number of registers using Asynchronous Clear ; 2     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 585   ;
@@ -404,16 +350,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Projeto1|CPU:CPU|registradorGenerico_PC:PC|DOUT[4]  ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|Banco_Registradores:BANCO_REG|Mux5 ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[4]   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|ULASomaSub:ULA1|saida[4]           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Projeto1|CPU:CPU|registradorGenerico_PC:PC|DOUT[0] ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[2]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|ULASomaSub:ULA1|saida[6]          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -487,53 +432,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:CPU|Banco_Registradores:BANCO_REG ;
-+----------------+-------+-----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                      ;
-+----------------+-------+-----------------------------------------------------------+
-; larguradados   ; 8     ; Signed Integer                                            ;
-+----------------+-------+-----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_0 ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; larguradados   ; 8     ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_1 ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; larguradados   ; 8     ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_2 ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; larguradados   ; 8     ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_3 ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; larguradados   ; 8     ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:CPU|bancoRegistradoresArqRegMem:BANCO_REG ;
++---------------------+-------+--------------------------------------------------------------+
+; Parameter Name      ; Value ; Type                                                         ;
++---------------------+-------+--------------------------------------------------------------+
+; larguradados        ; 8     ; Signed Integer                                               ;
+; larguraendbancoregs ; 2     ; Signed Integer                                               ;
++---------------------+-------+--------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1057,51 +963,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_3" ;
-+------+-------+----------+-------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                           ;
-+------+-------+----------+-------------------------------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                                                      ;
-+------+-------+----------+-------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_2" ;
-+------+-------+----------+-------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                           ;
-+------+-------+----------+-------------------------------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                                                      ;
-+------+-------+----------+-------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_1" ;
-+------+-------+----------+-------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                           ;
-+------+-------+----------+-------------------------------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                                                      ;
-+------+-------+----------+-------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_0" ;
-+------+-------+----------+-------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                           ;
-+------+-------+----------+-------------------------------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                                                      ;
-+------+-------+----------+-------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:CPU|Banco_Registradores:BANCO_REG" ;
-+------+-------+----------+-----------------------------------------+
-; Port ; Type  ; Severity ; Details                                 ;
-+------+-------+----------+-----------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                            ;
-+------+-------+----------+-----------------------------------------+
-
-
 +------------------------------------------------------------------------+
 ; Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET" ;
 +------+-------+----------+----------------------------------------------+
@@ -1137,27 +998,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 601                         ;
 ;     CLR               ; 2                           ;
-;     ENA               ; 585                         ;
+;     ENA               ; 553                         ;
+;     ENA SLD           ; 32                          ;
 ;     plain             ; 14                          ;
-; arriav_lcell_comb     ; 557                         ;
+; arriav_lcell_comb     ; 511                         ;
 ;     arith             ; 26                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 9                           ;
 ;         2 data inputs ; 4                           ;
 ;         4 data inputs ; 12                          ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 528                         ;
+;     extend            ; 5                           ;
+;         7 data inputs ; 5                           ;
+;     normal            ; 480                         ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 73                          ;
-;         3 data inputs ; 48                          ;
-;         4 data inputs ; 73                          ;
-;         5 data inputs ; 46                          ;
-;         6 data inputs ; 286                         ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 85                          ;
+;         4 data inputs ; 65                          ;
+;         5 data inputs ; 37                          ;
+;         6 data inputs ; 285                         ;
 ; boundary_port         ; 85                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.70                       ;
-; Average LUT depth     ; 6.91                        ;
+; Max LUT depth         ; 10.30                       ;
+; Average LUT depth     ; 6.45                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1166,7 +1028,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1176,216 +1038,112 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Oct 08 14:31:27 2021
+    Info: Processing started: Fri Oct 08 16:29:31 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto1 -c Projeto1
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file projeto1.vhd
-    Info (12022): Found design unit 1: Projeto1-arquitetura File: C:/DesComp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 36
-    Info (12023): Found entity 1: Projeto1 File: C:/DesComp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 4
+    Info (12022): Found design unit 1: Projeto1-arquitetura File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 36
+    Info (12023): Found entity 1: Projeto1 File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buffertri.vhd
-    Info (12022): Found design unit 1: buffertri-comportament File: C:/DesComp/DesignComp-Projeto1/Projeto1/buffertri.vhd Line: 16
-    Info (12023): Found entity 1: buffertri File: C:/DesComp/DesignComp-Projeto1/Projeto1/buffertri.vhd Line: 4
+    Info (12022): Found design unit 1: buffertri-comportament File: C:/Descomp/DesignComp-Projeto1/Projeto1/buffertri.vhd Line: 16
+    Info (12023): Found entity 1: buffertri File: C:/Descomp/DesignComp-Projeto1/Projeto1/buffertri.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
-    Info (12022): Found design unit 1: CPU-arquitetura File: C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 27
-    Info (12023): Found entity 1: CPU File: C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 4
+    Info (12022): Found design unit 1: CPU-arquitetura File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 27
+    Info (12023): Found entity 1: CPU File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decod3x8.vhd
-    Info (12022): Found design unit 1: Decod3x8-arch File: C:/DesComp/DesignComp-Projeto1/Projeto1/Decod3x8.vhd Line: 18
-    Info (12023): Found entity 1: Decod3x8 File: C:/DesComp/DesignComp-Projeto1/Projeto1/Decod3x8.vhd Line: 4
+    Info (12022): Found design unit 1: Decod3x8-arch File: C:/Descomp/DesignComp-Projeto1/Projeto1/Decod3x8.vhd Line: 18
+    Info (12023): Found entity 1: Decod3x8 File: C:/Descomp/DesignComp-Projeto1/Projeto1/Decod3x8.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decodbinario_7seg.vhd
-    Info (12022): Found design unit 1: DecodBinario_7Seg-comportamento File: C:/DesComp/DesignComp-Projeto1/Projeto1/DecodBinario_7Seg.vhd Line: 17
-    Info (12023): Found entity 1: DecodBinario_7Seg File: C:/DesComp/DesignComp-Projeto1/Projeto1/DecodBinario_7Seg.vhd Line: 4
+    Info (12022): Found design unit 1: DecodBinario_7Seg-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/DecodBinario_7Seg.vhd Line: 17
+    Info (12023): Found entity 1: DecodBinario_7Seg File: C:/Descomp/DesignComp-Projeto1/Projeto1/DecodBinario_7Seg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decodinstrucao.vhd
-    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/DesComp/DesignComp-Projeto1/Projeto1/DecodInstrucao.vhd Line: 10
-    Info (12023): Found entity 1: DecodInstrucao File: C:/DesComp/DesignComp-Projeto1/Projeto1/DecodInstrucao.vhd Line: 4
+    Info (12022): Found design unit 1: DecodInstrucao-arch File: C:/Descomp/DesignComp-Projeto1/Projeto1/DecodInstrucao.vhd Line: 10
+    Info (12023): Found entity 1: DecodInstrucao File: C:/Descomp/DesignComp-Projeto1/Projeto1/DecodInstrucao.vhd Line: 4
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/DesComp/DesignComp-Projeto1/Projeto1/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/DesComp/DesignComp-Projeto1/Projeto1/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/DesComp/DesignComp-Projeto1/Projeto1/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Descomp/DesignComp-Projeto1/Projeto1/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Descomp/DesignComp-Projeto1/Projeto1/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/Descomp/DesignComp-Projeto1/Projeto1/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file flipflop.vhd
-    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/DesComp/DesignComp-Projeto1/Projeto1/FlipFlop.vhd Line: 16
-    Info (12023): Found entity 1: FlipFlop File: C:/DesComp/DesignComp-Projeto1/Projeto1/FlipFlop.vhd Line: 4
+    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/FlipFlop.vhd Line: 16
+    Info (12023): Found entity 1: FlipFlop File: C:/Descomp/DesignComp-Projeto1/Projeto1/FlipFlop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file logicadesvio.vhd
-    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/DesComp/DesignComp-Projeto1/Projeto1/LogicaDesvio.vhd Line: 15
-    Info (12023): Found entity 1: LogicaDesvio File: C:/DesComp/DesignComp-Projeto1/Projeto1/LogicaDesvio.vhd Line: 4
+    Info (12022): Found design unit 1: LogicaDesvio-arch File: C:/Descomp/DesignComp-Projeto1/Projeto1/LogicaDesvio.vhd Line: 15
+    Info (12023): Found entity 1: LogicaDesvio File: C:/Descomp/DesignComp-Projeto1/Projeto1/LogicaDesvio.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/DesComp/DesignComp-Projeto1/Projeto1/memoriaRAM.vhd Line: 21
-    Info (12023): Found entity 1: memoriaRAM File: C:/DesComp/DesignComp-Projeto1/Projeto1/memoriaRAM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Descomp/DesignComp-Projeto1/Projeto1/memoriaRAM.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM File: C:/Descomp/DesignComp-Projeto1/Projeto1/memoriaRAM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoriarom.vhd
-    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/DesComp/DesignComp-Projeto1/Projeto1/memoriaROM.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROM File: C:/DesComp/DesignComp-Projeto1/Projeto1/memoriaROM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Descomp/DesignComp-Projeto1/Projeto1/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: C:/Descomp/DesignComp-Projeto1/Projeto1/memoriaROM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_pc.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1_PC.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1_PC.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1_PC.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1_PC File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/registradorGenerico.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico File: C:/Descomp/DesignComp-Projeto1/Projeto1/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_4b.vhd
-    Info (12022): Found design unit 1: registradorGenerico_4b-comportamento File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_4b.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico_4b File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_4b.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico_4b-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/registradorGenerico_4b.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico_4b File: C:/Descomp/DesignComp-Projeto1/Projeto1/registradorGenerico_4b.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file banco_registradores.vhd
-    Info (12022): Found design unit 1: Banco_Registradores-comportamento File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 18
-    Info (12023): Found entity 1: Banco_Registradores File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 4
+    Info (12022): Found design unit 1: Banco_Registradores-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 18
+    Info (12023): Found entity 1: Banco_Registradores File: C:/Descomp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_pc.vhd
-    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico_PC File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico_PC File: C:/Descomp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/DesComp/DesignComp-Projeto1/Projeto1/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/DesComp/DesignComp-Projeto1/Projeto1/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Descomp/DesignComp-Projeto1/Projeto1/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/DesComp/DesignComp-Projeto1/Projeto1/ULASomaSub.vhd Line: 17
-    Info (12023): Found entity 1: ULASomaSub File: C:/DesComp/DesignComp-Projeto1/Projeto1/ULASomaSub.vhd Line: 7
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/ULASomaSub.vhd Line: 17
+    Info (12023): Found entity 1: ULASomaSub File: C:/Descomp/DesignComp-Projeto1/Projeto1/ULASomaSub.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradoresarqregmem.vhd
+    Info (12022): Found design unit 1: bancoRegistradoresArqRegMem-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/bancoRegistradoresArqRegMem.vhd Line: 23
+    Info (12023): Found entity 1: bancoRegistradoresArqRegMem File: C:/Descomp/DesignComp-Projeto1/Projeto1/bancoRegistradoresArqRegMem.vhd Line: 5
 Info (12127): Elaborating entity "Projeto1" for the top level hierarchy
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/DesComp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 117
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/DesComp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 125
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 74
-Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 80
-Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 85
-Info (12128): Elaborating entity "somaConstante" for hierarchy "CPU:CPU|somaConstante:SOMADOR" File: C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 88
-Info (12128): Elaborating entity "Banco_Registradores" for hierarchy "CPU:CPU|Banco_Registradores:BANCO_REG" File: C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 99
-Info (10041): Inferred latch for "Habilita_reg3" at Banco_Registradores.vhd(43) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 43
-Info (10041): Inferred latch for "Habilita_reg2" at Banco_Registradores.vhd(42) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 42
-Info (10041): Inferred latch for "Habilita_reg1" at Banco_Registradores.vhd(41) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 41
-Info (10041): Inferred latch for "Habilita_reg0" at Banco_Registradores.vhd(40) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 40
-Info (10041): Inferred latch for "Entrada_reg3[0]" at Banco_Registradores.vhd(38) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-Info (10041): Inferred latch for "Entrada_reg3[1]" at Banco_Registradores.vhd(38) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-Info (10041): Inferred latch for "Entrada_reg3[2]" at Banco_Registradores.vhd(38) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-Info (10041): Inferred latch for "Entrada_reg3[3]" at Banco_Registradores.vhd(38) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-Info (10041): Inferred latch for "Entrada_reg3[4]" at Banco_Registradores.vhd(38) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-Info (10041): Inferred latch for "Entrada_reg3[5]" at Banco_Registradores.vhd(38) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-Info (10041): Inferred latch for "Entrada_reg3[6]" at Banco_Registradores.vhd(38) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-Info (10041): Inferred latch for "Entrada_reg3[7]" at Banco_Registradores.vhd(38) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-Info (10041): Inferred latch for "Entrada_reg2[0]" at Banco_Registradores.vhd(37) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-Info (10041): Inferred latch for "Entrada_reg2[1]" at Banco_Registradores.vhd(37) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-Info (10041): Inferred latch for "Entrada_reg2[2]" at Banco_Registradores.vhd(37) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-Info (10041): Inferred latch for "Entrada_reg2[3]" at Banco_Registradores.vhd(37) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-Info (10041): Inferred latch for "Entrada_reg2[4]" at Banco_Registradores.vhd(37) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-Info (10041): Inferred latch for "Entrada_reg2[5]" at Banco_Registradores.vhd(37) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-Info (10041): Inferred latch for "Entrada_reg2[6]" at Banco_Registradores.vhd(37) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-Info (10041): Inferred latch for "Entrada_reg2[7]" at Banco_Registradores.vhd(37) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-Info (10041): Inferred latch for "Entrada_reg1[0]" at Banco_Registradores.vhd(36) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-Info (10041): Inferred latch for "Entrada_reg1[1]" at Banco_Registradores.vhd(36) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-Info (10041): Inferred latch for "Entrada_reg1[2]" at Banco_Registradores.vhd(36) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-Info (10041): Inferred latch for "Entrada_reg1[3]" at Banco_Registradores.vhd(36) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-Info (10041): Inferred latch for "Entrada_reg1[4]" at Banco_Registradores.vhd(36) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-Info (10041): Inferred latch for "Entrada_reg1[5]" at Banco_Registradores.vhd(36) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-Info (10041): Inferred latch for "Entrada_reg1[6]" at Banco_Registradores.vhd(36) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-Info (10041): Inferred latch for "Entrada_reg1[7]" at Banco_Registradores.vhd(36) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-Info (10041): Inferred latch for "Entrada_reg0[0]" at Banco_Registradores.vhd(35) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-Info (10041): Inferred latch for "Entrada_reg0[1]" at Banco_Registradores.vhd(35) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-Info (10041): Inferred latch for "Entrada_reg0[2]" at Banco_Registradores.vhd(35) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-Info (10041): Inferred latch for "Entrada_reg0[3]" at Banco_Registradores.vhd(35) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-Info (10041): Inferred latch for "Entrada_reg0[4]" at Banco_Registradores.vhd(35) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-Info (10041): Inferred latch for "Entrada_reg0[5]" at Banco_Registradores.vhd(35) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-Info (10041): Inferred latch for "Entrada_reg0[6]" at Banco_Registradores.vhd(35) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-Info (10041): Inferred latch for "Entrada_reg0[7]" at Banco_Registradores.vhd(35) File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "CPU:CPU|Banco_Registradores:BANCO_REG|registradorGenerico:REG_0" File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 47
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "CPU:CPU|ULASomaSub:ULA1" File: C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 111
-Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG" File: C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 115
-Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 119
-Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/DesComp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 124
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:MEMORIA_INTRUCAO" File: C:/DesComp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 138
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/DesComp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 141
-Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/DesComp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 144
-Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/DesComp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 204
-Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/DesComp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 213
-Info (12128): Elaborating entity "buffertri" for hierarchy "buffertri:FPGA_R" File: C:/DesComp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 311
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "memoriaRAM:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/DesComp/DesignComp-Projeto1/Projeto1/memoriaRAM.vhd Line: 27
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 117
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 125
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 74
+Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 80
+Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 85
+Info (12128): Elaborating entity "somaConstante" for hierarchy "CPU:CPU|somaConstante:SOMADOR" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 88
+Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "CPU:CPU|bancoRegistradoresArqRegMem:BANCO_REG" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 109
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "CPU:CPU|ULASomaSub:ULA1" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 118
+Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 122
+Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 126
+Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 131
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:MEMORIA_INTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 138
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 141
+Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 144
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG_LEDR0a7" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 171
+Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 204
+Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 213
+Info (12128): Elaborating entity "buffertri" for hierarchy "buffertri:FPGA_R" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 311
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276007): RAM logic "memoriaRAM:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto1/Projeto1/memoriaRAM.vhd Line: 27
+    Info (276004): RAM logic "CPU:CPU|bancoRegistradoresArqRegMem:BANCO_REG|registrador" is uninferred due to inappropriate RAM size File: C:/Descomp/DesignComp-Projeto1/Projeto1/bancoRegistradoresArqRegMem.vhd Line: 29
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "Saida_Dados[7]" into a selector File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "Saida_Dados[6]" into a selector File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "Saida_Dados[5]" into a selector File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "Saida_Dados[4]" into a selector File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "Saida_Dados[3]" into a selector File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "Saida_Dados[2]" into a selector File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "Saida_Dados[1]" into a selector File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "Saida_Dados[0]" into a selector File: C:/DesComp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[0] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Habilita_reg0 has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[0] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Habilita_reg1 has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 24
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[0] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Habilita_reg2 has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 27
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[0] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Habilita_reg3 has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 30
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[1] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[1] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[1] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[1] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[2] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[2] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[2] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[2] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[3] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[3] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[3] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[3] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[4] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[4] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[4] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[4] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[5] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[5] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[5] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[5] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[6] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[6] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[6] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[6] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg0[7] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 35
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg1[7] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 36
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg2[7] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 37
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
-Warning (13012): Latch CPU:CPU|Banco_Registradores:BANCO_REG|Entrada_reg3[7] has unsafe behavior File: C:/DesComp/DesignComp-Projeto1/Projeto1/Banco_Registradores.vhd Line: 38
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:CPU|registradorGenerico_PC:PC|DOUT[7] File: C:/DesComp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd Line: 31
+    Warning (13048): Converted tri-state node "Saida_Dados[7]" into a selector File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[6]" into a selector File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[5]" into a selector File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[4]" into a selector File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[3]" into a selector File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[2]" into a selector File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[1]" into a selector File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "Saida_Dados[0]" into a selector File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1229 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1183 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 69 output pins
-    Info (21061): Implemented 1144 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 81 warnings
-    Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Fri Oct 08 14:31:40 2021
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:27
+    Info (21061): Implemented 1098 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4902 megabytes
+    Info: Processing ended: Fri Oct 08 16:29:39 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 

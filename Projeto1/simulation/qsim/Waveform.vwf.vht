@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/08/2021 14:32:09"
+-- Generated on "10/08/2021 15:56:09"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Projeto1
 -- 
@@ -88,10 +88,10 @@ t_prcs_CLOCK_50: PROCESS
 BEGIN
 LOOP
 	CLOCK_50 <= '0';
-	WAIT FOR 10000 ps;
+	WAIT FOR 100000 ps;
 	CLOCK_50 <= '1';
-	WAIT FOR 10000 ps;
-	IF (NOW >= 10000000 ps) THEN WAIT; END IF;
+	WAIT FOR 100000 ps;
+	IF (NOW >= 5000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_CLOCK_50;
 
@@ -129,43 +129,7 @@ BEGIN
 	KEY(0) <= '1';
 	WAIT FOR 400000 ps;
 	KEY(0) <= '0';
-	WAIT FOR 240000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 640000 ps;
-	KEY(0) <= '0';
 	WAIT FOR 200000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 600000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 240000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 560000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 240000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 720000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 320000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 800000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 240000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 800000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 880000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 320000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 880000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 320000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 720000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 320000 ps;
 	KEY(0) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_0;

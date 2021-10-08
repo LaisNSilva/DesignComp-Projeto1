@@ -1,7 +1,7 @@
 # do Projeto1.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:32:12 on Oct 08,2021
+# Start time: 15:56:10 on Oct 08,2021
 # vcom -work work Projeto1.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -15,20 +15,20 @@
 # -- Loading package cyclonev_components
 # -- Compiling entity Projeto1
 # -- Compiling architecture structure of Projeto1
-# End time: 14:32:13 on Oct 08,2021, Elapsed time: 0:00:01
+# End time: 15:56:11 on Oct 08,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:32:13 on Oct 08,2021
+# Start time: 15:56:11 on Oct 08,2021
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Projeto1_vhd_vec_tst
 # -- Compiling architecture Projeto1_arch of Projeto1_vhd_vec_tst
-# End time: 14:32:13 on Oct 08,2021, Elapsed time: 0:00:00
+# End time: 15:56:11 on Oct 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Projeto1_vhd_vec_tst 
-# Start time: 14:32:13 on Oct 08,2021
+# Start time: 15:56:11 on Oct 08,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -46,30 +46,30 @@
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 219198 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 218468 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#34
 #############  Autofindloop Analysis  ###############
-#############  Loop found at time 270 ns ###############
+#############  Loop found at time 2700 ns ###############
 #   ByteEvent process: /projeto1_vhd_vec_tst/i1/\CPU|BANCO_REG|Entrada_reg1[3]\/VITALtiming @ sub-iteration 0 to value HiX
-#     Source: Projeto1.vho:15669
+#     Source: Projeto1.vho:15807
 #   ByteEvent process: /projeto1_vhd_vec_tst/i1/\CPU|BANCO_REG|Entrada_reg1[1]\/VITALtiming @ sub-iteration 0 to value HiX
-#     Source: Projeto1.vho:15132
-#   1164Event process: /projeto1_vhd_vec_tst/i1/line__3156 @ sub-iteration 1 to value HiX
+#     Source: Projeto1.vho:15270
+#   1164Event process: /projeto1_vhd_vec_tst/i1/line__3149 @ sub-iteration 1 to value HiX
 #     Source: Waveform.vwf.vht:84
-#   1164Event process: /projeto1_vhd_vec_tst/i1/line__3148 @ sub-iteration 1 to value HiX
+#   1164Event process: /projeto1_vhd_vec_tst/i1/line__3141 @ sub-iteration 1 to value HiX
 #     Source: Waveform.vwf.vht:84
 #   ByteEvent process: /projeto1_vhd_vec_tst/i1/\CPU|BANCO_REG|Entrada_reg1[3]\/VITALtiming @ sub-iteration 1 to value HiZ
-#     Source: Projeto1.vho:15669
+#     Source: Projeto1.vho:15807
 #   ByteEvent process: /projeto1_vhd_vec_tst/i1/\CPU|BANCO_REG|Entrada_reg1[1]\/VITALtiming @ sub-iteration 1 to value HiZ
-#     Source: Projeto1.vho:15132
-#   1164Event process: /projeto1_vhd_vec_tst/i1/line__3156 @ sub-iteration 2 to value HiZ
+#     Source: Projeto1.vho:15270
+#   1164Event process: /projeto1_vhd_vec_tst/i1/line__3149 @ sub-iteration 2 to value HiZ
 #     Source: Waveform.vwf.vht:84
-#   1164Event process: /projeto1_vhd_vec_tst/i1/line__3148 @ sub-iteration 2 to value HiZ
+#   1164Event process: /projeto1_vhd_vec_tst/i1/line__3141 @ sub-iteration 2 to value HiZ
 #     Source: Waveform.vwf.vht:84
 #   ByteEvent process: /projeto1_vhd_vec_tst/i1/\CPU|BANCO_REG|Entrada_reg1[3]\/VITALtiming @ sub-iteration 3 to value HiX
-#     Source: Projeto1.vho:15669
+#     Source: Projeto1.vho:15807
 ################# END OF LOOP #################
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 270 ns.
-# End time: 14:32:15 on Oct 08,2021, Elapsed time: 0:00:02
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 2700 ns.
+# End time: 15:56:12 on Oct 08,2021, Elapsed time: 0:00:01
 # Errors: 1, Warnings: 1

@@ -96,15 +96,22 @@ REG_END_RET : entity work.registradorGenerico_PC   generic map (larguraDados => 
 --          port map (DIN => Saida_ULA, DOUT => REG1_ULA_A, ENABLE => Saida_Decod(5), RST => '0',CLK => CLK);
 
 
-BANCO_REG: entity work.Banco_Registradores  generic map (larguraDados => larguraDados)
-				port map (
-					 ENDERECO_REG => endereco_REG, -- AQUI TEM QUE MEXER
-					 ENTRADA => Saida_ULA,
-					 HABILITA => Saida_Decod(5),
-					 RST => '0',
-					 CLK => CLK,
-					 SAIDA => REG1_ULA_A
-				 );
+--BANCO_REG: entity work.Banco_Registradores  generic map (larguraDados => larguraDados)
+--				port map (
+--					 ENDERECO_REG => endereco_REG, -- AQUI TEM QUE MEXER
+--					 ENTRADA => Saida_ULA,
+--					 HABILITA => Saida_Decod(5),
+--					 RST => '0',
+--					 CLK => CLK,
+--					 SAIDA => REG1_ULA_A
+--				 );
+
+BANCO_REG : entity work.bancoRegistradoresArqRegMem   generic map (larguraDados => larguraDados, larguraEndBancoRegs => 2)
+          port map ( clk => CLK,
+              endereco => endereco_REG,
+              dadoEscrita => Saida_ULA,
+              habilitaEscrita => Saida_Decod(5),
+              saida  => REG1_ULA_A);
 
 
 -- O port map completo da ULA:

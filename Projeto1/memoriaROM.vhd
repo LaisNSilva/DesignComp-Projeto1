@@ -279,32 +279,32 @@ architecture assincrona of memoriaROM is
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX3 PASSOU DO LIMITE
 	  tmp(99) := LDA  & "10" & '0' & x"00";
 	  tmp(100) := STA  & "10" & '0' & x"37";
-	  --tmp(101) := STA  & "10" & '1' & x"23";
-	  --tmp(102) := LDA  & "10" & '0' & x"38";
-	  --tmp(103) := SOMA & "10" & '0' & x"01";
-		--tmp(104) := STA  & "10" & '0' & X"38";
---	  tmp(105) := CEQ  & "10" & '0' & x"32";
---	  tmp(106) := JEQ  & "10" & '0' & x"6e"; -- 110
+	  tmp(101) := STA  & "10" & '1' & x"23";
+	  tmp(102) := LDA  & "10" & '0' & x"38";
+	  tmp(103) := SOMA & "10" & '0' & x"01";
+	  tmp(104) := STA  & "10" & '0' & X"38";
+	  tmp(105) := CEQ  & "10" & '0' & x"32";
+	  tmp(106) := JEQ  & "10" & '0' & x"6e"; -- 110
 	  -- se não pular é pq não chegou no limite!
---    tmp(107) := LDA  & "10" & '0' & x"38";
---	  tmp(108) := STA  & "10" & '1' & x"24";
---	  tmp(109) := JMP  & "01" & '0' & x"39"; 
---	  
---	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX4 PASSOU DO LIMITE
---	  tmp(110) := LDA  & "10" & '0' & x"00";
---		tmp(111) := STA  & "10" & '0' & x"38";
---	  tmp(112) := STA  & "10" & '1' & x"24";
---	  tmp(113) := LDA  & "10" & '0' & x"39";
---	  tmp(114) := SOMA & "10" & '0' & x"01";
---		tmp(115) := STA  & "10" & '0' & X"39";
---	  tmp(116) := CEQ  & "10" & '0' & x"33";
---	  tmp(117) := JEQ  & "10" & '0' & x"79"; --121
---	  -- se Não pular é pq não chegou no limite!
---    tmp(118) := LDA  & "10" & '0' & x"39";
---	  tmp(119) := STA  & "10" & '1' & x"25";
---	  tmp(120) := JMP  & "01" & '0' & x"13"; 
---
---	 
+    tmp(107) := LDA  & "10" & '0' & x"38";
+	  tmp(108) := STA  & "10" & '1' & x"24";
+	  tmp(109) := JMP  & "01" & '0' & x"39"; 
+	  
+	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX4 PASSOU DO LIMITE
+	  tmp(110) := LDA  & "10" & '0' & x"00";
+		tmp(111) := STA  & "10" & '0' & x"38";
+	  tmp(112) := STA  & "10" & '1' & x"24";
+	  tmp(113) := LDA  & "10" & '0' & x"39";
+	  tmp(114) := SOMA & "10" & '0' & x"01";
+		tmp(115) := STA  & "10" & '0' & X"39";
+	  tmp(116) := CEQ  & "10" & '0' & x"33";
+	  tmp(117) := JEQ  & "10" & '0' & x"79"; --121
+	  -- se Não pular é pq não chegou no limite!
+    tmp(118) := LDA  & "10" & '0' & x"39";
+	  tmp(119) := STA  & "10" & '1' & x"25";
+	  tmp(120) := JMP  & "01" & '0' & x"13"; 
+
+	 
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX5 PASSOU DO LIMITE
 	  ---- OU SEJA, LIMITE MÁXIMO
 	  --- VAMOS ACENDER O LED 8

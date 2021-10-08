@@ -310,7 +310,7 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
 					  
 FPGA_R: entity work.buffertri
           port map (
-			 DIN => FPGA_RESET_N,
+			 DIN => not(FPGA_RESET_N),
 			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_4 AND Bloco_5
 			 );
