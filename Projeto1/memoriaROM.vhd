@@ -150,7 +150,7 @@ architecture assincrona of memoriaROM is
 	  
 	  
 	  
-	  tmp(0)  := LDI  & "01" & '0' & x"00"; -- manda 0 para acumulador
+ 	  tmp(0)  := LDI  & "01" & '0' & x"00"; -- manda 0 para acumulador
 	  
 	  -- Manda zero para os displays
 	  tmp(1)  := STA  & "01" & '1' & x"20";
@@ -158,15 +158,15 @@ architecture assincrona of memoriaROM is
 	  tmp(3)  := STA  & "01" & '1' & x"22";
 	  tmp(4)  := STA  & "01" & '1' & x"23";
 	  tmp(5)  := STA  & "01" & '1' & x"24";
-	  --tmp(6)  := STA  & "01" & '1' & x"25";
-	  tmp(6) := STA  & "01" & '0' & x"34";
+	  tmp(6)  := STA  & "01" & '1' & x"25";
+	  
 	  
 	  -- Manda zero para os LEDS
 	  tmp(7)  := STA  & "01" & '1' & x"00";
      --tmp(8)  := STA  & "01" & '1' & x"01";
      --tmp(9)  := STA  & "01" & '1' & x"02";
 	  
-	  tmp(8)  := JMP  & "01" & '0' & x"6C";
+	  tmp(8)  := JMP  & "01" & '0' & x"7b";
 	  
 	  
 	  tmp(9)  := LDI  & "01" & '0' & x"00";
@@ -183,12 +183,12 @@ architecture assincrona of memoriaROM is
 	  tmp(20) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
 	  tmp(21) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
 	  tmp(22) := JEQ  & "01" & '0' & x"18"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
-	  tmp(23) := JSR  & "01" & '0' & x"77";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
+	  tmp(23) := JSR  & "01" & '0' & x"8c";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
 	  tmp(24) := NOP  & "01" & '0' & x"00"; --
 	  tmp(25) := LDA  & "01" & '1' & x"64"; -- 356=x164 (FPGA_RESET) VERIFICA SE APERTOU OU NÃO
 	  tmp(26) := CEQ  & "01" & '0' & x"00"; -- compara FPGA_RESET com mem[0](que esta guardando 0)
 	  tmp(27) := JEQ  & "01" & '0' & x"1d"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 29
-	  tmp(28) := JSR  & "01" & '0' & x"77";-- AINDA PENSAR EM QUAL SUBROTINA  (VOLTAR AQUIIIIIIIIIIII)
+	  tmp(28) := JSR  & "01" & '0' & x"8c";-- AINDA PENSAR EM QUAL SUBROTINA  (VOLTAR AQUIIIIIIIIIIII)
 	  tmp(29) := NOP  & "01" & '0' & x"00"; --
 	  tmp(30) := JMP  & "01" & '0' & x"0e"; -- Pula para 14 para ficar no laço de verificar se o key0 foi apertado ou não
 	  tmp(31) := NOP  & "01" & '0' & x"00"; 
@@ -235,77 +235,100 @@ architecture assincrona of memoriaROM is
 	 
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX0 PASSOU DO LIMITE
 	  tmp(66) := LDA  & "10" & '0' & x"00"; -- Salva 0 na R2
-	  tmp(67) := STA  & "10" & '1' & x"20"; -- Passa 2 para HEX0
-	  tmp(68) := LDA  & "10" & '1' & x"21"; -- valor que ta em HEX1 para R2
-	  tmp(69) := SOMA & "10" & '0' & x"01";
-	  tmp(70) := CEQ  & "10" & '0' & x"2f";
-	  tmp(71) := JEQ  & "10" & '0' & x"4a"; -- Vai para a linha 73
+	  tmp(67) := STA  & "10" & '0' & x"34"; -- Passa r2 para memoria do HEX0 (d52 = 0x34)
+     tmp(68) := STA  & "10" & '1' & x"20"; -- manda 0 para HEX0
+	  tmp(69) := LDA  & "10" & '0' & x"35"; -- valor que ta em HEX1 para R2
+	  tmp(70) := SOMA & "10" & '0' & x"01"; 
+	  tmp(71) := STA  & "10" & '0' & X"35";
+	  tmp(72) := CEQ  & "10" & '0' & x"2f";
+	  tmp(73) := JEQ  & "10" & '0' & x"4d"; -- Vai para a linha 77
 	  -- se não pular é pq não chegou no limite!
-	  tmp(72) := STA  & "10" & '1' & x"21";
-	  tmp(73) := JMP  & "01" & '0' & x"39";
+     tmp(74) := LDA  & "10" & '0' & x"35";
+	  tmp(75) := STA  & "10" & '1' & x"21";
+	  tmp(76) := JMP  & "01" & '0' & x"39";
 	  
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX1 PASSOU DO LIMITE
-	  tmp(74) := LDA  & "10" & '0' & x"00";
-	  tmp(75) := STA  & "10" & '1' & x"21"; -- bota 0 no HEX0
-	  tmp(76) := LDA  & "10" & '1' & x"22";
-	  tmp(77) := SOMA & "10" & '0' & x"01";
-	  tmp(78) := CEQ  & "10" & '0' & x"30";
-	  tmp(79) := JEQ  & "10" & '0' & x"52"; --81
+	  tmp(77) := LDA  & "10" & '0' & x"00";
+     tmp(78) := STA  & "10" & '0' & x"35";
+	  tmp(79) := STA  & "10" & '1' & x"21"; -- bota 0 no HEX1
+	  tmp(80) := LDA  & "10" & '0' & x"36"; 
+	  tmp(81) := SOMA & "10" & '0' & x"01";
+     tmp(82) := STA  & "10" & '0' & X"36";
+	  tmp(83) := CEQ  & "10" & '0' & x"30";
+	  tmp(84) := JEQ  & "10" & '0' & x"58"; -- 88
 	   -- se não pular é pq não chegou no limite!
-	  tmp(80) := STA  & "10" & '1' & x"22";
-	  tmp(81) := JMP  & "01" & '0' & x"39";
+     tmp(85) := LDA  & "10" & '0' & x"36";
+	  tmp(86) := STA  & "10" & '1' & x"22";
+	  tmp(87) := JMP  & "01" & '0' & x"39";
 	  
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX2 PASSOU DO LIMITE
-	  tmp(82) := LDA  & "10" & '0' & x"00";
-	  tmp(83) := STA  & "10" & '1' & x"22"; -- bota 0 HEX2
-	  tmp(84) := LDA  & "10" & '1' & x"23";
-	  tmp(85) := SOMA & "10" & '0' & x"01";
-	  tmp(86) := CEQ  & "10" & '0' & x"31";
-	  tmp(87) := JEQ  & "10" & '0' & x"5a"; --89
+	  tmp(88) := LDA  & "10" & '0' & x"00";
+     tmp(89) := STA  & "10" & '0' & x"36";
+	  tmp(90) := STA  & "10" & '1' & x"22"; -- bota 0 HEX2
+	  tmp(91) := LDA  & "10" & '0' & x"37";
+	  tmp(92) := SOMA & "10" & '0' & x"01";
+     tmp(93) := STA  & "10" & '0' & X"37";
+	  tmp(94) := CEQ  & "10" & '0' & x"31";
+	  tmp(95) := JEQ  & "10" & '0' & x"63"; -- 99
 	  -- se não pular é pq não chegou no limite!
-	  tmp(88) := STA  & "10" & '1' & x"23";
-	  tmp(89) := JMP  & "01" & '0' & x"39";
+	  tmp(96) := LDA  & "10" & '0' & x"37";
+	  tmp(97) := STA  & "10" & '1' & x"23";
+	  tmp(98) := JMP  & "01" & '0' & x"39";
 	  
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX3 PASSOU DO LIMITE
-	  tmp(90) := LDA  & "10" & '0' & x"00";
-	  tmp(91) := STA  & "10" & '1' & x"23";
-	  tmp(92) := LDA  & "10" & '1' & x"24";
-	  tmp(93) := SOMA & "10" & '0' & x"01";
-	  tmp(94) := CEQ  & "10" & '0' & x"32";
-	  tmp(95) := JEQ  & "10" & '0' & x"62"; -- 97
-	  -- se não pular é pq não chegou no limite!
-	  tmp(96) := STA  & "10" & '1' & x"24";
-	  tmp(97) := JMP  & "01" & '0' & x"39";
-	  
-	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX4 PASSOU DO LIMITE
-	  tmp(98) := LDA  & "10" & '0' & x"00";
-	  tmp(99) := STA  & "10" & '1' & x"24";
-	  tmp(100) := LDA  & "10" & '1' & x"25";
-	  tmp(101) := SOMA & "10" & '0' & x"01";
-	  tmp(102) := CEQ  & "10" & '0' & x"33";
-	  tmp(103) := JEQ  & "10" & '0' & x"6a"; --105
-	  -- se Não pular é pq não chegou no limite!
-	  tmp(104) := STA  & "10" & '1' & x"25";
-	  tmp(105) := JMP  & "01" & '0' & x"39";
+	  tmp(99) := LDA  & "10" & '0' & x"00";
+--		tmp(100) := STA  & "10" & '0' & x"37";
+--	  tmp(101) := STA  & "10" & '1' & x"23";
+--	  tmp(102) := LDA  & "10" & '0' & x"38";
+--	  tmp(103) := SOMA & "10" & '0' & x"01";
+--		tmp(104) := STA  & "10" & '0' & X"38";
+--	  tmp(105) := CEQ  & "10" & '0' & x"32";
+--	  tmp(106) := JEQ  & "10" & '0' & x"6e"; -- 110
+--	  -- se não pular é pq não chegou no limite!
+--    tmp(107) := LDA  & "10" & '0' & x"38";
+--	  tmp(108) := STA  & "10" & '1' & x"24";
+--	  tmp(109) := JMP  & "01" & '0' & x"39";
+--	  
+--	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX4 PASSOU DO LIMITE
+--	  tmp(110) := LDA  & "10" & '0' & x"00";
+--		tmp(111) := STA  & "10" & '0' & x"38";
+--	  tmp(112) := STA  & "10" & '1' & x"24";
+--	  tmp(113) := LDA  & "10" & '0' & x"39";
+--	  tmp(114) := SOMA & "10" & '0' & x"01";
+--		tmp(115) := STA  & "10" & '0' & X"39";
+--	  tmp(116) := CEQ  & "10" & '0' & x"33";
+--	  tmp(117) := JEQ  & "10" & '0' & x"79"; --121
+--	  -- se Não pular é pq não chegou no limite!
+--    tmp(118) := LDA  & "10" & '0' & x"39";
+--	  tmp(119) := STA  & "10" & '1' & x"25";
+--	  tmp(120) := JMP  & "01" & '0' & x"39";
+
 	 
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX5 PASSOU DO LIMITE
 	  ---- OU SEJA, LIMITE MÁXIMO
 	  --- VAMOS ACENDER O LED 8
-	  tmp(106) := LDA  & "10" & '0' & x"01"; -- para 1 o R2
-	  tmp(107) := STA  & "10" & '1' & x"01"; -- ACENDE O LED 8
+	  tmp(121) := LDA  & "10" & '0' & x"01"; -- para 1 o R2
+	  tmp(122) := STA  & "10" & '1' & x"01"; -- ACENDE O LED 8
 	  
-	  tmp(108) := LDI  & "11" & '0' & x"09"; -- 9 PARA O REG 3
-	  tmp(109) := STA  & "11" & '0' & x"2e"; --46
-	  tmp(110) := STA  & "11" & '0' & x"2f"; -- 47
-	  tmp(111) := STA  & "11" & '0' & x"30"; --48
-	  tmp(112) := STA  & "11" & '0' & x"31"; --49
-	  tmp(113) := STA  & "11" & '0' & x"32"; -- 50
-	  tmp(114) := STA  & "11" & '0' & x"33"; -- 51
-	  tmp(115) := LDI  & "11" & '0' & x"00";
-	  tmp(116) := STA  & "01" & '1' & x"01";
-     tmp(117) := STA  & "01" & '1' & x"02";
-	  tmp(118) := JMP  & "00" & '0' & x"0a";
-	  tmp(119) := NOP  & "01" & '0' & x"00";
+	  tmp(123) := LDI  & "11" & '0' & x"0a"; -- 9 PARA O REG 3
+	  tmp(124) := STA  & "11" & '0' & x"2e"; -- 46
+	  tmp(125) := STA  & "11" & '0' & x"2f"; -- 47
+	  tmp(126) := STA  & "11" & '0' & x"30"; -- 48
+	  tmp(127) := STA  & "11" & '0' & x"31"; -- 49
+	  tmp(128) := STA  & "11" & '0' & x"32"; -- 50
+	  tmp(129) := STA  & "11" & '0' & x"33"; -- 51
+	  tmp(130) := LDI  & "11" & '0' & x"00";
+	  tmp(131) := STA  & "11" & '1' & x"01";
+     tmp(132) := STA  & "11" & '1' & x"02";
+	  tmp(133) := STA  & "11" & '0' & x"34"; -- 52
+	  tmp(134) := STA  & "11" & '0' & x"35"; -- 53
+	  tmp(135) := STA  & "11" & '0' & x"36"; -- 54
+	  tmp(136) := STA  & "11" & '0' & x"37"; -- 55
+	  tmp(137) := STA  & "11" & '0' & x"38"; -- 56
+	  tmp(138) := STA  & "11" & '0' & x"39"; -- 57
+	  tmp(139) := JMP  & "00" & '0' & x"09";
+	  tmp(140) := NOP  & "01" & '0' & x"00";
+	  
 	  
 	  
 	  
