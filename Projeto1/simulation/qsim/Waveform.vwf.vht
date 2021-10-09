@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/08/2021 19:17:21"
+-- Generated on "10/08/2021 21:40:13"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Projeto1
 -- 
@@ -127,6 +127,74 @@ END PROCESS t_prcs_KEY_1;
 t_prcs_KEY_0: PROCESS
 BEGIN
 	KEY(0) <= '1';
+	WAIT FOR 1600000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 240000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 240000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 160000 ps;
+	KEY(0) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_0;
 
@@ -182,7 +250,7 @@ END PROCESS t_prcs_SW_3;
 -- SW[2]
 t_prcs_SW_2: PROCESS
 BEGIN
-	SW(2) <= '1';
+	SW(2) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_2;
 
@@ -196,7 +264,7 @@ END PROCESS t_prcs_SW_1;
 -- SW[0]
 t_prcs_SW_0: PROCESS
 BEGIN
-	SW(0) <= '1';
+	SW(0) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_0;
 END Projeto1_arch;

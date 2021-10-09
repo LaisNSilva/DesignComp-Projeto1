@@ -1,7 +1,7 @@
 Quartus Prime Archive log --	C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.qarlog
 
 Archive:	C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.qar
-Date:		Fri Oct 08 15:01:46 2021
+Date:		Fri Oct 08 21:57:02 2021
 Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 	=========== Files Selected: ===========
@@ -17,7 +17,9 @@ C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.qsf
 C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd
 C:/Descomp/DesignComp-Projeto1/Projeto1/ULASomaSub.vhd
 C:/Descomp/DesignComp-Projeto1/Projeto1/Waveform.vwf
+C:/Descomp/DesignComp-Projeto1/Projeto1/bancoRegistradoresArqRegMem.vhd
 C:/Descomp/DesignComp-Projeto1/Projeto1/buffertri.vhd
+C:/Descomp/DesignComp-Projeto1/Projeto1/buffertri_8seg.vhd
 C:/Descomp/DesignComp-Projeto1/Projeto1/edgeDetector.vhd
 C:/Descomp/DesignComp-Projeto1/Projeto1/memoriaRAM.vhd
 C:/Descomp/DesignComp-Projeto1/Projeto1/memoriaROM.vhd
@@ -28,7 +30,13 @@ C:/Descomp/DesignComp-Projeto1/Projeto1/registradorGenerico_4b.vhd
 C:/Descomp/DesignComp-Projeto1/Projeto1/registradorGenerico_PC.vhd
 C:/Descomp/DesignComp-Projeto1/Projeto1/somaConstante.vhd
 c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
-	======= Total: 23 files to archive =======
+	======= Total: 25 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.
+
+
+******* Archived project restoration attempt on Fri Oct 08 21:57:27 2021
+Source archive file:	C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.qar
+Archive was extracted into	C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1_restored/
+		 - successfully.

@@ -150,46 +150,47 @@ architecture assincrona of memoriaROM is
 	  
 	  
 --	  
-      -- TESTE DO TRATAMENTO ESPECIAL DA KEY0
-		  tmp(0)  := LDI  & "01" & '0' & x"00"; -- manda 0 para acumulador
-        tmp(1)  := STA  & "01" & '0' & x"00"; -- guarda 0 no mem[0]
-        tmp(2)  := STA  & "01" & '0' & x"02"; -- 0 no mem[2] (contador)
-        tmp(3)  := LDI  & "00" & '0' & x"01"; -- manda 1 para o acumulador
-        tmp(4)  := STA  & "00" & '0' & x"01"; -- armazena 1 no mem[1] (constante 1)
-        tmp(5)  := NOP  & "00" & '0' & x"00";	-- 
-        tmp(6)  := LDA  & "00" & '1' & x"60"; -- 352=x160 (KEY0) VERIFICA SE APERTOU OU NÃO
-        tmp(7)  := CEQ  & "00" & '0' & x"00"; -- compara key0 com mem[0](que esta guardando 0)
-        tmp(8)  := JEQ  & "00" & '0' & x"0a"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 10
-        tmp(9)  := JSR  & "00" & '0' & x"20"; -- se apertou o key0, vai para subrotina, pula para linha 32 
-        tmp(10) := NOP  & "00" & '0' & x"00"; -- 
-        tmp(11) := JMP  & "00" & '0' & x"05"; -- Pula para 5 para ficar no laço de verificar se o key0 foi apertado ou não
-        tmp(12) := NOP  & "00" & '0' & x"00"; 
-		  tmp(13) := NOP  & "00" & '0' & x"00"; 
-		  tmp(14) := NOP  & "00" & '0' & x"00"; 
-		  tmp(15) := NOP  & "00" & '0' & x"00"; 
-		  tmp(16) := NOP  & "00" & '0' & x"00"; 
-		  tmp(17) := NOP  & "00" & '0' & x"00"; 
-		  tmp(18) := NOP  & "00" & '0' & x"00"; 
-		  tmp(19) := NOP  & "00" & '0' & x"00"; 
-		  tmp(20) := NOP  & "00" & '0' & x"00"; 
-		  tmp(21) := NOP  & "00" & '0' & x"00"; 
-		  tmp(22) := NOP  & "00" & '0' & x"00"; 
-		  tmp(23) := NOP  & "00" & '0' & x"00"; 
-		  tmp(24) := NOP  & "00" & '0' & x"00"; 
-		  tmp(25) := NOP  & "00" & '0' & x"00"; 
-		  tmp(26) := NOP  & "00" & '0' & x"00"; 
-		  tmp(27) := NOP  & "00" & '0' & x"00";  
-		  tmp(28) := NOP  & "00" & '0' & x"00"; 
-		  tmp(29) := NOP  & "00" & '0' & x"00"; 
-		  tmp(30) := NOP  & "00" & '0' & x"00"; 
-		  tmp(31) := NOP  & "00" & '0' & x"00"; 
-		  tmp(32) := STA  & "00" & '1' & x"ff"; -- 511=x1ff, limpa a leitura no botão
-		  tmp(33) := LDA  & "00" & '0' & x"02"; -- bota o valor do mem[2] no acumulador
-		  tmp(34) := SOMA & "00" & '0' & x"01"; -- Soma a constate 1 que esta no MEM[1] com o valor que foi para o acumulador
-		  tmp(35) := STA  & "00" & '0' & x"02"; -- guarda o valor da soma em mem[2] (contador)
-		  tmp(36) := STA  & "00" & '1' & x"02"; -- 258=x102 armazena o valor do bit0 do acumulador no LDR9
-		  tmp(37) := RET  & "00" & '0' & x"00"; -- Retorna da subrotina (ou seja, vai para linha 10)
-			  -- TESTE DO TRATAMENTO ESPECIAL DA KEY0	  	  	  
+--      -- TESTE DO TRATAMENTO ESPECIAL DA KEY0
+--		  tmp(0)  := LDI  & "01" & '0' & x"00"; -- manda 0 para acumulador
+--        tmp(1)  := STA  & "01" & '0' & x"00"; -- guarda 0 no mem[0]
+--        tmp(2)  := STA  & "01" & '0' & x"02"; -- 0 no mem[2] (contador)
+--        tmp(3)  := LDI  & "00" & '0' & x"01"; -- manda 1 para o acumulador
+--        tmp(4)  := STA  & "00" & '0' & x"01"; -- armazena 1 no mem[1] (constante 1)
+--        tmp(5)  := NOP  & "00" & '0' & x"00";	-- 
+--        tmp(6)  := LDA  & "00" & '1' & x"60"; -- 352=x160 (KEY0) VERIFICA SE APERTOU OU NÃO
+--        tmp(7)  := CEQ  & "00" & '0' & x"00"; -- compara key0 com mem[0](que esta guardando 0)
+--        tmp(8)  := JEQ  & "00" & '0' & x"0a"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 10
+--        tmp(9)  := JSR  & "00" & '0' & x"20"; -- se apertou o key0, vai para subrotina, pula para linha 32 
+--        tmp(10) := NOP  & "00" & '0' & x"00"; -- 
+--        tmp(11) := JMP  & "00" & '0' & x"05"; -- Pula para 5 para ficar no laço de verificar se o key0 foi apertado ou não
+--        tmp(12) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(13) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(14) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(15) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(16) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(17) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(18) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(19) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(20) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(21) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(22) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(23) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(24) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(25) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(26) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(27) := NOP  & "00" & '0' & x"00";  
+--		  tmp(28) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(29) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(30) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(31) := NOP  & "00" & '0' & x"00"; 
+--		  tmp(32) := STA  & "00" & '1' & x"ff"; -- 511=x1ff, limpa a leitura no botão
+--		  tmp(33) := LDA  & "00" & '0' & x"02"; -- bota o valor do mem[2] no acumulador
+--		  tmp(34) := SOMA & "00" & '0' & x"01"; -- Soma a constate 1 que esta no MEM[1] com o valor que foi para o acumulador
+--		  tmp(35) := STA  & "00" & '0' & x"02"; -- guarda o valor da soma em mem[2] (contador)
+--		  tmp(36) := STA  & "00" & '1' & x"02"; -- 258=x102 armazena o valor do bit0 do acumulador no LDR9
+--		  tmp(37) := RET  & "00" & '0' & x"00"; -- Retorna da subrotina (ou seja, vai para linha 10)
+--			  -- TESTE DO TRATAMENTO ESPECIAL DA KEY0	  	  	  
+	  
 	  
  	  tmp(0)  := LDI  & "01" & '0' & x"00"; -- manda 0 para acumulador
 	  
@@ -202,12 +203,12 @@ architecture assincrona of memoriaROM is
 	  tmp(6)  := STA  & "01" & '1' & x"25";
 	  
 	  
-	  -- Manda zero para os LEDS
+	  -- Manda zero para os LEDS 0 a 7
 	  tmp(7)  := STA  & "01" & '1' & x"00";
-     --tmp(8)  := STA  & "01" & '1' & x"01";
-     --tmp(9)  := STA  & "01" & '1' & x"02";
+	  -- Os LED 8 e 9 estão em baixo
+    
 	  
-	  tmp(8)  := JMP  & "01" & '0' & x"7b";
+	  tmp(8)  := JMP  & "01" & '0' & x"80";
 	  
 	  
 	  tmp(9)  := LDI  & "01" & '0' & x"00";
@@ -224,12 +225,12 @@ architecture assincrona of memoriaROM is
 	  tmp(20) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
 	  tmp(21) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
 	  tmp(22) := JEQ  & "01" & '0' & x"18"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
-	  tmp(23) := JSR  & "01" & '0' & x"8d";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
+	  tmp(23) := JSR  & "01" & '0' & x"93";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII) ------------------------------------------------------------------------------
 	  tmp(24) := NOP  & "01" & '0' & x"00"; --
 	  tmp(25) := LDA  & "01" & '1' & x"64"; -- 356=x164 (FPGA_RESET) VERIFICA SE APERTOU OU NÃO
 	  tmp(26) := CEQ  & "01" & '0' & x"00"; -- compara FPGA_RESET com mem[0](que esta guardando 0)
 	  tmp(27) := JEQ  & "01" & '0' & x"1d"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 29
-	  tmp(28) := JSR  & "01" & '0' & x"B9";-- AINDA PENSAR EM QUAL SUBROTINA  (VOLTAR AQUIIIIIIIIIIII)
+	  tmp(28) := JSR  & "01" & '0' & x"00";-- AINDA PENSAR EM QUAL SUBROTINA  (VOLTAR AQUIIIIIIIIIIII)
 	  tmp(29) := NOP  & "01" & '0' & x"00"; --
 	  tmp(30) := JMP  & "01" & '0' & x"0e"; -- Pula para 14 para ficar no laço de verificar se o key0 foi apertado ou não
 	  tmp(31) := NOP  & "01" & '0' & x"00"; 
@@ -255,194 +256,203 @@ architecture assincrona of memoriaROM is
 	  
 --	  -- Apertou o key0 soma 1 no acumulador e muda os displays
 	  tmp(51) := STA  & "01" & '1' & x"ff"; -- 511=x1ff, limpa a leitura no botão
-	  tmp(52) := LDA  & "01" & '0' & x"02"; -- bota o valor do mem[2] no acumulador
-	  tmp(53) := SOMA & "01" & '0' & x"01"; -- Soma a constate 1 que esta no MEM[1] com o valor que foi para o acumulador
-	  tmp(54) := STA  & "01" & '0' & x"02"; -- guarda o valor da soma em mem[2] (contador)
-	  tmp(55) := STA  & "01" & '1' & x"02"; -- 258=x102 armazena o valor do bit0 do acumulador no LDR9
-	  tmp(56) := JMP  & "01" & '0' & x"3a"; -- Vai para subrotina de colocar os valores no display(na linha40)
-	  tmp(57) := RET  & "01" & '0' & x"00"; -- Retorna da subrotina (ou seja, vai para linha 19)
+    tmp(52) := LDI & "11" & '0' & x"01"; -- passa 1
+    tmp(53) := CEQ & "11" & '0' & x"03"; -- ve se tem 1 na mem[3] flag
+    tmp(54) := JEQ & "01" & '0' & x"0e"; -- se flag=1 não pode contar mais volta para linha 14
+	  tmp(55) := LDA  & "01" & '0' & x"02"; -- bota o valor do mem[2] no acumulador
+	  tmp(56) := SOMA & "01" & '0' & x"01"; -- Soma a constate 1 que esta no MEM[1] com o valor que foi para o acumulador
+	  tmp(57) := STA  & "01" & '0' & x"02"; -- guarda o valor da soma em mem[2] (contador)
+	  tmp(58) := STA  & "01" & '1' & x"02"; -- 258=x102 armazena o valor do bit0 do acumulador no LDR9
+	  tmp(59) := JMP  & "01" & '0' & x"3d"; -- Vai para subrotina de colocar os valores no display(na linha40)
+	  tmp(60) := RET  & "01" & '0' & x"00"; -- Retorna da subrotina (ou seja, vai para linha 19)
 	  --tmp(58) := NOP  & "01" & '0' & x"00"; 
 	  -- SUBROTINA DE COLOCAR VALORES NO DISPLAY
 	  
-	  tmp(58) := LDA  & "10" & '0' & x"34"; -- Passa o valor atual de HEX0 para R2
-	  tmp(59) := SOMA & "10" & '0' & x"01"; -- soma 1
-	  tmp(60) := STA  & "10" & '0' & X"34"; -- Salva esse valor no mem[52]
-	  tmp(61) := CEQ  & "10" & '0' & x"2e"; -- Compara com o limite de HEX0 (que ta guardado em mem[46]) com R2
-	  tmp(62) := JEQ  & "00" & '0' & x"42"; -- Se for igual vai pular para a linha que mexe na dezena 
+	  tmp(61) := LDA  & "10" & '0' & x"34"; -- Passa o valor atual de HEX0 para R2
+	  tmp(62) := SOMA & "10" & '0' & x"01"; -- soma 1
+	  tmp(63) := STA  & "10" & '0' & X"34"; -- Salva esse valor no mem[52]
+	  tmp(64) := CEQ  & "10" & '0' & x"2e"; -- Compara com o limite de HEX0 (que ta guardado em mem[46]) com R2
+	  tmp(65) := JEQ  & "00" & '0' & x"45"; -- Se for igual vai pular para a linha que mexe na dezena 
 	  -- se não pular é pq não chegou no limite!
-	  tmp(63) := LDA  & "10" & '0' & x"34"; -- Pega o valor que salvou no mem[52]
-	  tmp(64) := STA  & "10" & '1' & x"20";
-	  tmp(65) := JMP  & "10" & '0' & x"39"; -- Somou volta para o ret e fica verificando verificando de novo o KEY0
+	  tmp(66) := LDA  & "10" & '0' & x"34"; -- Pega o valor que salvou no mem[52]
+	  tmp(67) := STA  & "10" & '1' & x"20";
+	  tmp(68) := JMP  & "10" & '0' & x"3c"; -- Somou volta para o ret e fica verificando verificando de novo o KEY0
 	 
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX0 PASSOU DO LIMITE
-	  tmp(66) := LDA  & "10" & '0' & x"00"; -- Salva 0 na R2
-	  tmp(67) := STA  & "10" & '0' & x"34"; -- Passa r2 para memoria do HEX0 (d52 = 0x34)
-     tmp(68) := STA  & "10" & '1' & x"20"; -- manda 0 para HEX0
-	  tmp(69) := LDA  & "10" & '0' & x"35"; -- valor que ta em HEX1 para R2
-	  tmp(70) := SOMA & "10" & '0' & x"01"; 
-	  tmp(71) := STA  & "10" & '0' & X"35";
-	  tmp(72) := CEQ  & "10" & '0' & x"2f";
-	  tmp(73) := JEQ  & "10" & '0' & x"4d"; -- Vai para a linha 77
+	  tmp(69) := LDA  & "10" & '0' & x"00"; -- Salva 0 na R2
+	  tmp(70) := STA  & "10" & '0' & x"34"; -- Passa r2 para memoria do HEX0 (d52 = 0x34)
+     tmp(71) := STA  & "10" & '1' & x"20"; -- manda 0 para HEX0
+	  tmp(72) := LDA  & "10" & '0' & x"35"; -- valor que ta em HEX1 para R2
+	  tmp(73) := SOMA & "10" & '0' & x"01"; 
+	  tmp(74) := STA  & "10" & '0' & X"35";
+	  tmp(75) := CEQ  & "10" & '0' & x"2f";
+	  tmp(76) := JEQ  & "10" & '0' & x"50"; -- Vai para a linha 80
 	  -- se não pular é pq não chegou no limite!
-     tmp(74) := LDA  & "10" & '0' & x"35";
-	  tmp(75) := STA  & "10" & '1' & x"21";
-	  tmp(76) := JMP  & "01" & '0' & x"39";
+     tmp(77) := LDA  & "10" & '0' & x"35";
+	  tmp(78) := STA  & "10" & '1' & x"21";
+	  tmp(79) := JMP  & "01" & '0' & x"3c";
 	  
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX1 PASSOU DO LIMITE
-	  tmp(77) := LDA  & "10" & '0' & x"00";
-     tmp(78) := STA  & "10" & '0' & x"35";
-	  tmp(79) := STA  & "10" & '1' & x"21"; -- bota 0 no HEX1
-	  tmp(80) := LDA  & "10" & '0' & x"36"; 
-	  tmp(81) := SOMA & "10" & '0' & x"01";
-     tmp(82) := STA  & "10" & '0' & X"36";
-	  tmp(83) := CEQ  & "10" & '0' & x"30";
-	  tmp(84) := JEQ  & "10" & '0' & x"58"; -- 88
+	  tmp(80) := LDA  & "10" & '0' & x"00";
+     tmp(81) := STA  & "10" & '0' & x"35";
+	  tmp(82) := STA  & "10" & '1' & x"21"; -- bota 0 no HEX1
+	  tmp(83) := LDA  & "10" & '0' & x"36"; 
+	  tmp(84) := SOMA & "10" & '0' & x"01";
+    tmp(85) := STA  & "10" & '0' & X"36";
+	  tmp(86) := CEQ  & "10" & '0' & x"30";
+	  tmp(87) := JEQ  & "10" & '0' & x"5b"; -- 91
 	   -- se não pular é pq não chegou no limite!
-     tmp(85) := LDA  & "10" & '0' & x"36";
-	  tmp(86) := STA  & "10" & '1' & x"22";
-	  tmp(87) := JMP  & "01" & '0' & x"39";
+     tmp(88) := LDA  & "10" & '0' & x"36";
+	  tmp(89) := STA  & "10" & '1' & x"22";
+	  tmp(90) := JMP  & "01" & '0' & x"3c";
 	  
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX2 PASSOU DO LIMITE
-	  tmp(88) := LDA  & "10" & '0' & x"00";
-     tmp(89) := STA  & "10" & '0' & x"36";
-	  tmp(90) := STA  & "10" & '1' & x"22"; -- bota 0 HEX2
-	  tmp(91) := LDA  & "10" & '0' & x"37";
-	  tmp(92) := SOMA & "10" & '0' & x"01";
-     tmp(93) := STA  & "10" & '0' & X"37";
-	  tmp(94) := CEQ  & "10" & '0' & x"31";
-	  tmp(95) := JEQ  & "10" & '0' & x"63"; -- 99
+	  tmp(91) := LDA  & "10" & '0' & x"00";
+     tmp(92) := STA  & "10" & '0' & x"36";
+	  tmp(93) := STA  & "10" & '1' & x"22"; -- bota 0 HEX2
+	  tmp(94) := LDA  & "10" & '0' & x"37";
+	  tmp(95) := SOMA & "10" & '0' & x"01";
+    tmp(96) := STA  & "10" & '0' & X"37";
+	  tmp(97) := CEQ  & "10" & '0' & x"31";
+	  tmp(98) := JEQ  & "10" & '0' & x"66"; -- 102
 	  -- se não pular é pq não chegou no limite!
-	  tmp(96) := LDA  & "10" & '0' & x"37";
-	  tmp(97) := STA  & "10" & '1' & x"23";
-	  tmp(98) := JMP  & "01" & '0' & x"13"; 
+	  tmp(99) := LDA  & "10" & '0' & x"37";
+	  tmp(100) := STA  & "10" & '1' & x"23";
+	  tmp(101) := JMP  & "01" & '0' & x"3c"; 
 	 
 	  
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX3 PASSOU DO LIMITE
-	  tmp(99) := LDA  & "10" & '0' & x"00";
-	  tmp(100) := STA  & "10" & '0' & x"37";
-	  tmp(101) := STA  & "10" & '1' & x"23";
-	  tmp(102) := LDA  & "10" & '0' & x"38";
-	  tmp(103) := SOMA & "10" & '0' & x"01";
-	  tmp(104) := STA  & "10" & '0' & X"38";
-	  tmp(105) := CEQ  & "10" & '0' & x"32";
-	  tmp(106) := JEQ  & "10" & '0' & x"6e"; -- 110
+	  tmp(102) := LDA  & "10" & '0' & x"00";
+	  tmp(103) := STA  & "10" & '0' & x"37";
+	  tmp(104) := STA  & "10" & '1' & x"23";
+	  tmp(105) := LDA  & "10" & '0' & x"38";
+	  tmp(106) := SOMA & "10" & '0' & x"01";
+	  tmp(107) := STA  & "10" & '0' & X"38";
+	  tmp(108) := CEQ  & "10" & '0' & x"32";
+	  tmp(109) := JEQ  & "10" & '0' & x"71"; -- 113
 	  -- se não pular é pq não chegou no limite!
-     tmp(107) := LDA  & "10" & '0' & x"38";
-	  tmp(108) := STA  & "10" & '1' & x"24";
-	  tmp(109) := JMP  & "01" & '0' & x"39"; 
+     tmp(110) := LDA  & "10" & '0' & x"38";
+	  tmp(111) := STA  & "10" & '1' & x"24";
+	  tmp(112) := JMP  & "01" & '0' & x"3c"; 
 	  
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX4 PASSOU DO LIMITE
-	  tmp(110) := LDA  & "10" & '0' & x"00";
-	  tmp(111) := STA  & "10" & '0' & x"38";
-	  tmp(112) := STA  & "10" & '1' & x"24";
-	  tmp(113) := LDA  & "10" & '0' & x"39";
-	  tmp(114) := SOMA & "10" & '0' & x"01";
-	  tmp(115) := STA  & "10" & '0' & X"39";
-	  tmp(116) := CEQ  & "10" & '0' & x"33";
-	  tmp(117) := JEQ  & "10" & '0' & x"79"; --121
+	  tmp(113) := LDA  & "10" & '0' & x"00";
+	  tmp(114) := STA  & "10" & '0' & x"38";
+	  tmp(115) := STA  & "10" & '1' & x"24";
+	  tmp(116) := LDA  & "10" & '0' & x"39";
+	  tmp(117) := SOMA & "10" & '0' & x"01";
+	  tmp(118) := STA  & "10" & '0' & X"39";
+	  tmp(119) := CEQ  & "10" & '0' & x"33";
+	  tmp(120) := JEQ  & "10" & '0' & x"7c"; --124
 	  -- se Não pular é pq não chegou no limite!
-     tmp(118) := LDA  & "10" & '0' & x"39";
-	  tmp(119) := STA  & "10" & '1' & x"25";
-	  tmp(120) := JMP  & "01" & '0' & x"13"; 
+     tmp(121) := LDA  & "10" & '0' & x"39";
+	  tmp(122) := STA  & "10" & '1' & x"25";
+	  tmp(123) := JMP  & "01" & '0' & x"3c"; 
 
 	 
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX5 PASSOU DO LIMITE
 	  ---- OU SEJA, LIMITE MÁXIMO
 	  --- VAMOS ACENDER O LED 8
-	  tmp(121) := LDA  & "10" & '0' & x"01"; -- para 1 o R2
-	  tmp(122) := STA  & "10" & '1' & x"01"; -- ACENDE O LED 8
+	  tmp(124) := LDI  & "10" & '0' & x"01"; -- para 1 o R2
+	  tmp(125) := STA  & "10" & '1' & x"01"; -- ACENDE O LED 8
+    tmp(126) := LDI & "11" & '0' & x"01";
+    tmp(127) := STA & "11" & '0' & x"03"; -- bota 1 na flag (mem3) então para a contagem
 	  
-	  tmp(123) := LDI  & "11" & '0' & x"0a"; -- 9 PARA O REG 3
-	  tmp(124) := STA  & "11" & '0' & x"2e"; -- 46
-	  tmp(125) := STA  & "11" & '0' & x"2f"; -- 47
-	  tmp(126) := STA  & "11" & '0' & x"30"; -- 48
-	  tmp(127) := STA  & "11" & '0' & x"31"; -- 49
-	  tmp(128) := STA  & "11" & '0' & x"32"; -- 50
-	  tmp(129) := STA  & "11" & '0' & x"33"; -- 51
-	  tmp(130) := LDI  & "11" & '0' & x"00";
-	  tmp(131) := STA  & "11" & '1' & x"01";
-     tmp(132) := STA  & "11" & '1' & x"02";
-	  tmp(133) := STA  & "11" & '0' & x"34"; -- 52
-	  tmp(134) := STA  & "11" & '0' & x"35"; -- 53
-	  tmp(135) := STA  & "11" & '0' & x"36"; -- 54
-	  tmp(136) := STA  & "11" & '0' & x"37"; -- 55
-	  tmp(137) := STA  & "11" & '0' & x"38"; -- 56
-	  tmp(138) := STA  & "11" & '0' & x"39"; -- 57
-	  tmp(139) := JMP  & "00" & '0' & x"09";
-	  tmp(140) := NOP  & "01" & '0' & x"00";
+	  tmp(128) := LDI  & "11" & '0' & x"0a"; -- 9 PARA O REG 3
+	  tmp(129) := STA  & "11" & '0' & x"2e"; -- 46
+	  tmp(130) := STA  & "11" & '0' & x"2f"; -- 47
+	  tmp(131) := STA  & "11" & '0' & x"30"; -- 48
+	  tmp(132) := STA  & "11" & '0' & x"31"; -- 49
+	  tmp(133) := STA  & "11" & '0' & x"32"; -- 50
+	  tmp(134) := STA  & "11" & '0' & x"33"; -- 51
+	  tmp(135) := LDI  & "11" & '0' & x"00";
+	  tmp(136) := STA  & "11" & '1' & x"01";
+     tmp(137) := STA  & "11" & '1' & x"02";
+	  tmp(138) := STA  & "11" & '0' & x"34"; -- 52
+	  tmp(139) := STA  & "11" & '0' & x"35"; -- 53
+	  tmp(140) := STA  & "11" & '0' & x"36"; -- 54
+	  tmp(141) := STA  & "11" & '0' & x"37"; -- 55
+	  tmp(142) := STA  & "11" & '0' & x"38"; -- 56
+	  tmp(143) := STA  & "11" & '0' & x"39"; -- 57
+     tmp(144) := STA & "11" & '0' & x"03"; --flag na MEM[3]
+	  tmp(145) := JMP  & "00" & '0' & x"09";
+	  tmp(146) := NOP  & "01" & '0' & x"00";
 	  
 	  
 	  		-- SUBROTINA DE CONFIGURAR LIMITES!!
 		--configunrando as unidade
-	  tmp(141) := STA  & "01" & '1' & x"fe";
-	  tmp(142) := LDA  & "00" & '1' & x"40"; -- le as chaves
-	  tmp(143) := STA  & "00" & '0' & x"2e"; -- 46
+	  tmp(147) := STA  & "01" & '1' & x"fe";
+	  tmp(148) := LDA  & "00" & '1' & x"40"; -- le as chaves
+	  tmp(149) := STA  & "00" & '0' & x"2e"; -- 46
 		-- loop KEY1
-	  tmp(144) := NOP  & "01" & '0' & x"00"; --
-	  tmp(145) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
-	  tmp(146) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
-	  tmp(147) := JEQ  & "01" & '0' & x"90"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
-	  tmp(148) := JMP  & "01" & '0' & x"96";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
-	  tmp(149) := NOP  & "01" & '0' & x"00"; --
+	  tmp(150) := NOP  & "01" & '0' & x"00"; --
+	  tmp(151) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
+	  tmp(152) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
+	  tmp(153) := JEQ  & "01" & '0' & x"96"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
+	  tmp(154) := JMP  & "01" & '0' & x"9c";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
+	  tmp(155) := NOP  & "01" & '0' & x"00"; --
 		-- configunrando as dezenas
-	  tmp(150) := STA  & "01" & '1' & x"fe";
-     tmp(151) := LDA  & "00" & '1' & x"40"; -- le as chaves
-	  tmp(152) := STA  & "00" & '0' & x"2f"; -- 47
+	  tmp(156) := STA  & "01" & '1' & x"fe";
+     tmp(157) := LDA  & "00" & '1' & x"40"; -- le as chaves
+	  tmp(158) := STA  & "00" & '0' & x"2f"; -- 47
 	  -- loop KEY1
-	  tmp(153) := NOP  & "01" & '0' & x"00"; --
-	  tmp(154) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
-	  tmp(155) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
-	  tmp(156) := JEQ  & "01" & '0' & x"99"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
-	  tmp(157) := JMP  & "01" & '0' & x"9f";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
-	  tmp(158) := NOP  & "01" & '0' & x"00"; --
+	  tmp(159) := NOP  & "01" & '0' & x"00"; --
+	  tmp(160) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
+	  tmp(161) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
+	  tmp(162) := JEQ  & "01" & '0' & x"9f"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
+	  tmp(163) := JMP  & "01" & '0' & x"a5";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
+	  tmp(164) := NOP  & "01" & '0' & x"00"; --
 		-- configunrando as centenas
-	  tmp(159) := STA  & "01" & '1' & x"fe";
-     tmp(160) := LDA  & "00" & '1' & x"40"; -- le as chaves
-	  tmp(161) := STA  & "00" & '0' & x"30"; -- 48
+	  tmp(165) := STA  & "01" & '1' & x"fe";
+     tmp(166) := LDA  & "00" & '1' & x"40"; -- le as chaves
+	  tmp(167) := STA  & "00" & '0' & x"30"; -- 48
 		-- loop KEY1
-	  tmp(162) := NOP  & "01" & '0' & x"00"; --
-	  tmp(163) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
-	  tmp(164) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
-	  tmp(165) := JEQ  & "01" & '0' & x"a2"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
-	  tmp(166) := JMP  & "01" & '0' & x"a8";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
-	  tmp(167) := NOP  & "01" & '0' & x"00"; --
+	  tmp(168) := NOP  & "01" & '0' & x"00"; --
+	  tmp(169) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
+	  tmp(170) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
+	  tmp(171) := JEQ  & "01" & '0' & x"a8"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
+	  tmp(172) := JMP  & "01" & '0' & x"ae";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
+	  tmp(173) := NOP  & "01" & '0' & x"00"; --
 		-- configunrando as unidade de milhares
-	  tmp(168) := STA  & "01" & '1' & x"fe";
-     tmp(169) := LDA  & "00" & '1' & x"40"; -- le as chaves
-	  tmp(170) := STA  & "00" & '0' & x"31"; -- 49
+	  tmp(174) := STA  & "01" & '1' & x"fe";
+     tmp(175) := LDA  & "00" & '1' & x"40"; -- le as chaves
+	  tmp(176) := STA  & "00" & '0' & x"31"; -- 49
      -- loop KEY1
-	  tmp(171) := NOP  & "01" & '0' & x"00"; --
-	  tmp(172) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
-	  tmp(173) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
-	  tmp(174) := JEQ  & "01" & '0' & x"ab"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
-	  tmp(175) := JMP  & "01" & '0' & x"b1";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
-	  tmp(176) := NOP  & "01" & '0' & x"00"; --
+	  tmp(177) := NOP  & "01" & '0' & x"00"; --
+	  tmp(178) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
+	  tmp(179) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
+	  tmp(180) := JEQ  & "01" & '0' & x"b1"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
+	  tmp(181) := JMP  & "01" & '0' & x"b7";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
+	  tmp(182) := NOP  & "01" & '0' & x"00"; --
 		-- configunrando as dezenas de milhares
-	  tmp(177) := STA  & "01" & '1' & x"fe";
-     tmp(178) := LDA  & "00" & '1' & x"40"; -- le as chaves
-	  tmp(179) := STA  & "00" & '0' & x"32"; -- 50
+	  tmp(183) := STA  & "01" & '1' & x"fe";
+     tmp(184) := LDA  & "00" & '1' & x"40"; -- le as chaves
+	  tmp(185) := STA  & "00" & '0' & x"32"; -- 50
 		-- loop KEY1
-	  tmp(180) := NOP  & "01" & '0' & x"00"; --
-	  tmp(181) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
-	  tmp(182) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
-	  tmp(183) := JEQ  & "01" & '0' & x"b4"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
-	  tmp(184) := JMP  & "01" & '0' & x"ba";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
-	  tmp(185) := NOP  & "01" & '0' & x"00"; --
+	  tmp(186) := NOP  & "01" & '0' & x"00"; --
+	  tmp(187) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
+	  tmp(188) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
+	  tmp(189) := JEQ  & "01" & '0' & x"ba"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 24
+	  tmp(190) := JMP  & "01" & '0' & x"c0";-- AINDA PENSAR EM QUAL SUBROTINA (VOLTAR AQUIIIIIIIIIIII)
+	  tmp(191) := NOP  & "01" & '0' & x"00"; --
     -- configunrando as centenas de milhares
-	  tmp(186) := STA  & "01" & '1' & x"fe";
-     tmp(187) := LDA  & "00" & '1' & x"40"; -- le as chaves
-	  tmp(188) := STA  & "00" & '0' & x"33"; -- 51
-	  tmp(189) := RET  & "01" & '0' & x"00";
-	  tmp(190) := NOP  & "01" & '0' & x"00";
+	  tmp(192) := STA  & "01" & '1' & x"fe";
+     tmp(193) := LDA  & "00" & '1' & x"40"; -- le as chaves
+	  tmp(194) := STA  & "00" & '0' & x"33"; -- 51
+	  tmp(195) := RET  & "01" & '0' & x"00";
+	  tmp(196) := NOP  & "01" & '0' & x"00";
 	  
-	  
-	  
-	  
-		
-	
 
-	 
-		  
+
+
+
+
+
+
+
+	  
+	  
+	  
         return tmp;
     end initMemory;
 
