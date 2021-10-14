@@ -452,7 +452,11 @@ SW_0_7: entity work.buffertri_8seg generic map (larguraDados => larguraDados)
 --			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
 --			 );
 
-			
+interfaceBaseTempo : entity work.divisorGenerico_e_Interface
+              port map (clk => clk,
+              habilitaLeitura => sinalLocal,
+              limpaLeitura => sinalLocal,
+              leituraUmSegundo => sinalLocal);			
 
 
 LEDR (7 downto 0) <= Entrada_LEDR0a7;
