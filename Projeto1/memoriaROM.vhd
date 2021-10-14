@@ -339,8 +339,8 @@ architecture assincrona of memoriaROM is
 	  tmp(113) := LDA  & "10" & '0' & x"00";
 	  tmp(114) := STA  & "10" & '0' & x"38";
 	  tmp(115) := STA  & "10" & '1' & x"24";
-    tmp(116) := LDI & "00" & '0' & x"03"; -- carrega 3 no R0
-    tmp(117) := STA  & "00" & '0' & x"32"; -- 50 - Limite do HEX 4 -  manda 2 para esse limite
+     tmp(116) := LDI  & "00" & '0' & x"03"; -- carrega 3 no R0
+     tmp(117) := STA  & "00" & '0' & x"32"; -- 50 - Limite do HEX 4 -  manda 3 para esse limite
 	  tmp(118) := LDA  & "10" & '0' & x"39";
 	  tmp(119) := SOMA & "10" & '0' & x"01";
 	  tmp(120) := STA  & "10" & '0' & X"39";
@@ -372,18 +372,18 @@ architecture assincrona of memoriaROM is
 	  tmp(135) := LDI  & "11" & '0' & x"06"; -- 6 PARA O REG 3
 	  tmp(136) := STA  & "11" & '0' & x"2f"; -- 47
 	  tmp(137) := STA  & "11" & '0' & x"31"; -- 49
-    tmp(138) := LDI  & "11" & '0' & x"02"; -- 2 PARA O REG 3 (HEX 5)
-    tmp(139) := STA  & "11" & '0' & x"33"; -- 51
+     tmp(138) := LDI  & "11" & '0' & x"03"; -- 2 PARA O REG 3 (HEX 5)
+     tmp(139) := STA  & "11" & '0' & x"33"; -- 51
 	  tmp(140) := LDI  & "11" & '0' & x"00";
 	  tmp(141) := STA  & "11" & '1' & x"01";
-    tmp(142) := STA  & "11" & '1' & x"02";
+     tmp(142) := STA  & "11" & '1' & x"02";
 	  tmp(143) := STA  & "11" & '0' & x"34"; -- 52
 	  tmp(144) := STA  & "11" & '0' & x"35"; -- 53
 	  tmp(145) := STA  & "11" & '0' & x"36"; -- 54
 	  tmp(146) := STA  & "11" & '0' & x"37"; -- 55
 	  tmp(147) := STA  & "11" & '0' & x"38"; -- 56
 	  tmp(148) := STA  & "11" & '0' & x"39"; -- 57
-    tmp(149) := STA & "11" & '0' & x"03"; --flag na MEM[3]
+     tmp(149) := STA & "11" & '0' & x"03"; --flag na MEM[3]
 	  tmp(150) := JMP  & "00" & '0' & x"09";
 	  tmp(151) := NOP  & "01" & '0' & x"00";
 	  

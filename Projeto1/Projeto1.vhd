@@ -100,6 +100,7 @@ architecture arquitetura of Projeto1 is
 	 signal Saida_FF_KEY1 : std_logic;
 	 signal Saida_DecBorda_KEY0 : std_logic;
 	 signal Saida_DecBorda_KEY1 : std_logic;
+	 signal saidaclk_reg1seg : std_logic;
 	 
 	 
 	 alias opCode : std_logic_vector (3 downto 0) is ROM_DADOS(14 downto 11);
@@ -361,16 +362,20 @@ FLIP_FLOP_DM : entity work.FlipFlop   generic map (larguraDados => larguraDados)
 			 DOUT => Saida_FF_DM, 
 			 ENABLE => '1', 
 			 RST => Endereco_barramento(0) AND Endereco_barramento(1) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8),
-			 CLK => Saida_DecBorda_KEY0
+			 CLK => saidaclk_reg1seg
 			 );
 
-KEY_0: entity work.buffertri
+Tristate_contador : entity work.buffertri
           port map (
 			 DIN => Saida_FF_DM,
 			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_0 AND Bloco_5
 			 );
 
+			 
+baseTempo: entity work.divisorGenerico
+           generic map (divisor => 25000000)   -- divide por 50M.
+           port map (clk => clk, saida_clk => saidaclk_reg1seg);			 
 			 
 --- CHAVES SW ---
 			 
@@ -451,12 +456,7 @@ SW_0_7: entity work.buffertri_8seg generic map (larguraDados => larguraDados)
 --			 DOUT => Saida_Dados(0), 
 --			 ENABLE => habLeituraMEM AND (NOT(Endereco_barramento(5))) AND Endereco_0 AND Bloco_5
 --			 );
-
-interfaceBaseTempo : entity work.divisorGenerico_e_Interface
-              port map (clk => clk,
-              habilitaLeitura => sinalLocal,
-              limpaLeitura => sinalLocal,
-              leituraUmSegundo => sinalLocal);			
+		
 
 
 LEDR (7 downto 0) <= Entrada_LEDR0a7;

@@ -12,6 +12,7 @@ CLOCK_50 => registradorgenerico_4b:REG_HEX2.CLK
 CLOCK_50 => registradorgenerico_4b:REG_HEX3.CLK
 CLOCK_50 => registradorgenerico_4b:REG_HEX4.CLK
 CLOCK_50 => registradorgenerico_4b:REG_HEX5.CLK
+CLOCK_50 => divisorgenerico:baseTempo.clk
 KEY[0] => edgedetector:detectorSub0.entrada
 KEY[1] => edgedetector:detectorSub1.entrada
 KEY[2] => buffertri:KEY_2.DIN
@@ -1489,10 +1490,40 @@ RST => DOUT~reg0.ACLR
 CLK => DOUT~reg0.CLK
 
 
-|Projeto1|buffertri:KEY_0
+|Projeto1|buffertri:Tristate_contador
 DIN => DOUT.DATAIN
 DOUT <= DOUT.DB_MAX_OUTPUT_PORT_TYPE
 ENABLE => DOUT.OE
+
+
+|Projeto1|divisorGenerico:baseTempo
+clk => tick.CLK
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+clk => contador[6].CLK
+clk => contador[7].CLK
+clk => contador[8].CLK
+clk => contador[9].CLK
+clk => contador[10].CLK
+clk => contador[11].CLK
+clk => contador[12].CLK
+clk => contador[13].CLK
+clk => contador[14].CLK
+clk => contador[15].CLK
+clk => contador[16].CLK
+clk => contador[17].CLK
+clk => contador[18].CLK
+clk => contador[19].CLK
+clk => contador[20].CLK
+clk => contador[21].CLK
+clk => contador[22].CLK
+clk => contador[23].CLK
+clk => contador[24].CLK
+saida_clk <= tick.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Projeto1|buffertri:SW_9
