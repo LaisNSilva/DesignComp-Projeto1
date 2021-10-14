@@ -98,9 +98,11 @@ architecture arquitetura of Projeto1 is
 	 signal saida7seg_HEX5 : std_logic_vector (6 downto 0);
 	 signal Saida_FF_DM : std_logic;
 	 signal Saida_FF_KEY1 : std_logic;
+	 signal Saida_FF_KEY2 : std_logic;
 	 signal Saida_DecBorda_KEY0 : std_logic;
 	 signal Saida_DecBorda_KEY1 : std_logic;
 	 signal saidaclk_reg1seg : std_logic;
+	 signal Saida_DecBorda_KEY2 : std_logic;
 	 
 	 
 	 alias opCode : std_logic_vector (3 downto 0) is ROM_DADOS(14 downto 11);
@@ -121,6 +123,9 @@ detectorSub0: work.edgeDetector(bordaSubida)
 
 detectorSub1: work.edgeDetector(bordaSubida)
         port map (clk => CLOCK_50, entrada => (not KEY(1)), saida => Saida_DecBorda_KEY1);
+
+detectorSub2: work.edgeDetector(bordaSubida)
+        port map (clk => CLOCK_50, entrada => (not KEY(2)), saida => Saida_DecBorda_KEY2);
 
 -- O port map completo do MUX.
 CPU : entity work.CPU
@@ -325,9 +330,22 @@ KEY_3: entity work.buffertri
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_3 AND Bloco_5
 			 );
 
+			 
+------ TRATAMENTO ESPECIAL PARA KEY2 ----------------------			 
+			 
+FLIP_FLOP_KEY2 : entity work.FlipFlop   generic map (larguraDados => larguraDados)
+          port map (
+			 DIN => '1', 
+			 DOUT => Saida_FF_KEY2, 
+			 ENABLE => '1', 
+			 RST => Endereco_barramento(0) AND (not(Endereco_barramento(1))) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8),
+			 CLK => Saida_DecBorda_KEY2
+			 );
+			 
+			 
 KEY_2: entity work.buffertri
           port map (
-			 DIN => KEY(2),
+			 DIN => Saida_FF_KEY2,
 			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_2 AND Bloco_5
 			 );
@@ -374,7 +392,7 @@ Tristate_contador : entity work.buffertri
 
 			 
 baseTempo: entity work.divisorGenerico
-           generic map (divisor => 25000)   -- divide por 50M.25000000
+           generic map (divisor => 25000000)   -- divide por 50M.25000000
            port map (clk => clk, saida_clk => saidaclk_reg1seg);			 
 			 
 --- CHAVES SW ---
