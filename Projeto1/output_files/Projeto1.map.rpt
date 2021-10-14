@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto1
-Fri Oct 08 21:51:11 2021
+Thu Oct 14 09:24:21 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -99,7 +99,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 08 21:51:11 2021       ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 14 09:24:21 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto1                                    ;
 ; Top-level Entity Name           ; Projeto1                                    ;
@@ -265,14 +265,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 490            ;
+; Estimate of Logic utilization (ALMs needed) ; 491            ;
 ;                                             ;                ;
 ; Combinational ALUT usage for logic          ; 519            ;
-;     -- 7 input functions                    ; 0              ;
+;     -- 7 input functions                    ; 2              ;
 ;     -- 6 input functions                    ; 318            ;
-;     -- 5 input functions                    ; 30             ;
-;     -- 4 input functions                    ; 130            ;
-;     -- <=3 input functions                  ; 41             ;
+;     -- 5 input functions                    ; 27             ;
+;     -- 4 input functions                    ; 132            ;
+;     -- <=3 input functions                  ; 40             ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 601            ;
 ;                                             ;                ;
@@ -282,7 +282,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 599            ;
-; Total fan-out                               ; 4690           ;
+; Total fan-out                               ; 4694           ;
 ; Average fan-out                             ; 3.64           ;
 +---------------------------------------------+----------------+
 
@@ -931,17 +931,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         1 data inputs ; 9                           ;
 ;         2 data inputs ; 10                          ;
 ;         4 data inputs ; 6                           ;
-;     normal            ; 493                         ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 491                         ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 4                           ;
-;         3 data inputs ; 15                          ;
-;         4 data inputs ; 124                         ;
-;         5 data inputs ; 30                          ;
+;         3 data inputs ; 14                          ;
+;         4 data inputs ; 126                         ;
+;         5 data inputs ; 27                          ;
 ;         6 data inputs ; 318                         ;
 ; boundary_port         ; 85                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.30                        ;
-; Average LUT depth     ; 6.23                        ;
+; Average LUT depth     ; 6.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -960,7 +962,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Oct 08 21:51:03 2021
+    Info: Processing started: Thu Oct 14 09:24:13 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto1 -c Projeto1
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file projeto1.vhd
@@ -1067,9 +1069,9 @@ Info (21057): Implemented 1191 device resources after synthesis - the final reso
     Info (21059): Implemented 69 output pins
     Info (21061): Implemented 1106 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4901 megabytes
-    Info: Processing ended: Fri Oct 08 21:51:11 2021
+    Info: Peak virtual memory: 4899 megabytes
+    Info: Processing ended: Thu Oct 14 09:24:21 2021
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Total CPU time (on all processors): 00:00:17
 
 
