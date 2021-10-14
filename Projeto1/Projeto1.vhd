@@ -374,7 +374,7 @@ Tristate_contador : entity work.buffertri
 
 			 
 baseTempo: entity work.divisorGenerico
-           generic map (divisor => 25000000)   -- divide por 50M.
+           generic map (divisor => 25000)   -- divide por 50M.25000000
            port map (clk => clk, saida_clk => saidaclk_reg1seg);			 
 			 
 --- CHAVES SW ---

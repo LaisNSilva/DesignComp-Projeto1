@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto1
-Thu Oct 14 15:16:21 2021
+Thu Oct 14 18:47:20 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -101,13 +101,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 14 15:16:21 2021       ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 14 18:47:20 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto1                                    ;
 ; Top-level Entity Name           ; Projeto1                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 626                                         ;
+; Total registers                 ; 616                                         ;
 ; Total pins                      ; 85                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -268,25 +268,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 505            ;
+; Estimate of Logic utilization (ALMs needed) ; 499            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 550            ;
-;     -- 7 input functions                    ; 2              ;
-;     -- 6 input functions                    ; 318            ;
-;     -- 5 input functions                    ; 30             ;
-;     -- 4 input functions                    ; 136            ;
-;     -- <=3 input functions                  ; 64             ;
+; Combinational ALUT usage for logic          ; 537            ;
+;     -- 7 input functions                    ; 1              ;
+;     -- 6 input functions                    ; 316            ;
+;     -- 5 input functions                    ; 31             ;
+;     -- 4 input functions                    ; 133            ;
+;     -- <=3 input functions                  ; 56             ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 626            ;
+; Dedicated logic registers                   ; 616            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 85             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 624            ;
-; Total fan-out                               ; 4848           ;
-; Average fan-out                             ; 3.60           ;
+; Maximum fan-out                             ; 614            ;
+; Total fan-out                               ; 4777           ;
+; Average fan-out                             ; 3.61           ;
 +---------------------------------------------+----------------+
 
 
@@ -295,7 +295,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Entity Name                 ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------------+--------------+
-; |Projeto1                                      ; 550 (22)            ; 626 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Projeto1                                                ; Projeto1                    ; work         ;
+; |Projeto1                                      ; 537 (24)            ; 616 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Projeto1                                                ; Projeto1                    ; work         ;
 ;    |CPU:CPU|                                   ; 75 (0)              ; 51 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU                                        ; CPU                         ; work         ;
 ;       |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao              ; work         ;
 ;       |FlipFlop:FLAG|                          ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|FlipFlop:FLAG                          ; FlipFlop                    ; work         ;
@@ -317,10 +317,10 @@ https://fpgasoftware.intel.com/eula.
 ;    |FlipFlop:FF_LEDR9|                         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FF_LEDR9                              ; FlipFlop                    ; work         ;
 ;    |FlipFlop:FLIP_FLOP_DM|                     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FLIP_FLOP_DM                          ; FlipFlop                    ; work         ;
 ;    |FlipFlop:FLIP_FLOP_KEY1|                   ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FLIP_FLOP_KEY1                        ; FlipFlop                    ; work         ;
-;    |divisorGenerico:baseTempo|                 ; 33 (33)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|divisorGenerico:baseTempo                      ; divisorGenerico             ; work         ;
+;    |divisorGenerico:baseTempo|                 ; 20 (20)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|divisorGenerico:baseTempo                      ; divisorGenerico             ; work         ;
 ;    |edgeDetector:detectorSub1|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|edgeDetector:detectorSub1                      ; edgeDetector                ; work         ;
 ;    |memoriaRAM:MEMORIA_DADOS|                  ; 297 (297)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaRAM:MEMORIA_DADOS                       ; memoriaRAM                  ; work         ;
-;    |memoriaROM:MEMORIA_INTRUCAO|               ; 76 (76)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaROM:MEMORIA_INTRUCAO                    ; memoriaROM                  ; work         ;
+;    |memoriaROM:MEMORIA_INTRUCAO|               ; 74 (74)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaROM:MEMORIA_INTRUCAO                    ; memoriaROM                  ; work         ;
 ;    |registradorGenerico:REG_LEDR0a7|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico:REG_LEDR0a7                ; registradorGenerico         ; work         ;
 ;    |registradorGenerico_4b:REG_HEX0|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX0                ; registradorGenerico_4b      ; work         ;
 ;    |registradorGenerico_4b:REG_HEX1|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX1                ; registradorGenerico_4b      ; work         ;
@@ -337,8 +337,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 626   ;
-; Number of registers using Synchronous Clear  ; 25    ;
+; Total registers                              ; 616   ;
+; Number of registers using Synchronous Clear  ; 15    ;
 ; Number of registers using Synchronous Load   ; 32    ;
 ; Number of registers using Asynchronous Clear ; 2     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -352,9 +352,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Projeto1|CPU:CPU|registradorGenerico_PC:PC|DOUT[6] ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[1]  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|ULASomaSub:ULA1|saida[3]          ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Projeto1|CPU:CPU|registradorGenerico_PC:PC|DOUT[3] ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[6]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|ULASomaSub:ULA1|saida[4]          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
 
@@ -654,11 +654,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: divisorGenerico:baseTempo ;
-+----------------+----------+--------------------------------------------+
-; Parameter Name ; Value    ; Type                                       ;
-+----------------+----------+--------------------------------------------+
-; divisor        ; 25000000 ; Signed Integer                             ;
-+----------------+----------+--------------------------------------------+
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; divisor        ; 25000 ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -942,31 +942,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 626                         ;
+; arriav_ff             ; 616                         ;
 ;     CLR               ; 2                           ;
 ;     ENA               ; 553                         ;
 ;     ENA SLD           ; 32                          ;
-;     SCLR              ; 25                          ;
+;     SCLR              ; 15                          ;
 ;     plain             ; 14                          ;
-; arriav_lcell_comb     ; 550                         ;
-;     arith             ; 51                          ;
+; arriav_lcell_comb     ; 537                         ;
+;     arith             ; 41                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 34                          ;
+;         1 data inputs ; 24                          ;
 ;         2 data inputs ; 10                          ;
 ;         4 data inputs ; 6                           ;
-;     extend            ; 2                           ;
-;         7 data inputs ; 2                           ;
-;     normal            ; 497                         ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 495                         ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 14                          ;
-;         4 data inputs ; 130                         ;
-;         5 data inputs ; 30                          ;
-;         6 data inputs ; 318                         ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 15                          ;
+;         4 data inputs ; 127                         ;
+;         5 data inputs ; 31                          ;
+;         6 data inputs ; 316                         ;
 ; boundary_port         ; 85                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.30                        ;
-; Average LUT depth     ; 6.04                        ;
+; Average LUT depth     ; 6.01                        ;
 +-----------------------+-----------------------------+
 
 
@@ -975,7 +975,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -985,7 +985,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 14 15:16:11 2021
+    Info: Processing started: Thu Oct 14 18:47:11 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto1 -c Projeto1
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file projeto1.vhd
@@ -1094,14 +1094,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 15
-Info (21057): Implemented 1222 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1209 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 69 output pins
-    Info (21061): Implemented 1137 logic cells
+    Info (21061): Implemented 1124 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4902 megabytes
-    Info: Processing ended: Thu Oct 14 15:16:21 2021
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 4901 megabytes
+    Info: Processing ended: Thu Oct 14 18:47:20 2021
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:17
 
 
