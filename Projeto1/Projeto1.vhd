@@ -6,7 +6,7 @@ entity Projeto1 is
   generic ( larguraDados : natural := 8; -- AGORA É 8 
 		  larguraEnderecoRAM : natural := 8; 
 		  larguraInstrucao : natural := 15; 
-		  larguraEnderecoROM : natural := 8;
+		  larguraEnderecoROM : natural := 9;
 		  larguraDados_PC : natural := 9;
         simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
   );

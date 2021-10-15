@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/08/2021 21:40:13"
+-- Generated on "10/15/2021 14:22:40"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Projeto1
 -- 
@@ -105,14 +105,22 @@ END PROCESS t_prcs_FPGA_RESET_N;
 -- KEY[3]
 t_prcs_KEY_3: PROCESS
 BEGIN
-	KEY(3) <= '0';
+	KEY(3) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_3;
 
 -- KEY[2]
 t_prcs_KEY_2: PROCESS
 BEGIN
+	KEY(2) <= '1';
+	WAIT FOR 2240000 ps;
 	KEY(2) <= '0';
+	WAIT FOR 160000 ps;
+	KEY(2) <= '1';
+	WAIT FOR 240000 ps;
+	KEY(2) <= '0';
+	WAIT FOR 160000 ps;
+	KEY(2) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_2;
 
@@ -120,80 +128,16 @@ END PROCESS t_prcs_KEY_2;
 t_prcs_KEY_1: PROCESS
 BEGIN
 	KEY(1) <= '1';
+	WAIT FOR 1680000 ps;
+	KEY(1) <= '0';
+	WAIT FOR 160000 ps;
+	KEY(1) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_1;
 
 -- KEY[0]
 t_prcs_KEY_0: PROCESS
 BEGIN
-	KEY(0) <= '1';
-	WAIT FOR 1600000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 240000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 80000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 240000 ps;
-	KEY(0) <= '1';
-	WAIT FOR 160000 ps;
-	KEY(0) <= '0';
-	WAIT FOR 160000 ps;
 	KEY(0) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_0;

@@ -192,7 +192,7 @@ architecture assincrona of memoriaROM is
 --			  -- TESTE DO TRATAMENTO ESPECIAL DA KEY0	  	  	  
 	  
 	  
- 	  tmp(0)  := LDI  & "01" & '0' & x"00"; -- manda 0 para acumulador
+tmp(0)  := LDI  & "01" & '0' & x"00"; -- manda 0 para acumulador
 	  
 	  -- Manda zero para os displays
 	  tmp(1)  := STA  & "01" & '1' & x"20";
@@ -401,15 +401,15 @@ architecture assincrona of memoriaROM is
 	  tmp(157) := JMP  & "00" & '0' & x"09";
 	  
 
-    -- SUBROTINA DE AJUSTAR O RELOGIO!!
+    -- SUBROTINA DE AJUSTAR O RELOGIO!! oi lais
 		--configunrando os segundos
     -- verifica se key1 foi apertado e se foi apertado vai para a configuração dos minutos
-    tmp(158) := STA & "01" & '1' & x"fe"; -- limpa a leitura do KEY1(endereço=510)
+    tmp(158) := STA  & "01" & '1' & x"fe"; -- limpa a leitura do KEY1(endereço=510)
 	 	tmp(159) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
 	 	tmp(160) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
-		tmp(161) := JEQ  & "01" & '0' & x"a3"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha aaaaa para verificar se KEY0 foi apertado(linha163)
-	  tmp(162) := JMP  & "01" & '0' & x"1f";-- se apertou vai pra configuração dos minutos linha --
-    tmp(163) := LDA  & "01" & '1' & x"62"; -- 352=x160 (KEY2) VERIFICA SE APERTOU OU NÃO
+		tmp(161) := JEQ  & "01" & '0' & x"a3"; -- se for igual, ou seja, key1 não foi apertado, pulo para linha xa3=163 para verificar se KEY0 foi apertado(linha163)
+	  tmp(162) := JMP  & "01" & '0' & x"c1";-- se apertou vai pra configuração dos minutos linha 193
+    tmp(163) := LDA  & "01" & '1' & x"62"; -- 354=x162 (KEY2) VERIFICA SE APERTOU OU NÃO
 	  tmp(164) := CEQ  & "01" & '0' & x"00"; -- compara key0 com mem[0](que esta guardando 0)
 	  tmp(165) := JEQ  & "01" & '0' & x"9f"; -- se for igual, ou seja, key0 não foi apertado, pulo para linha 159
 	  tmp(166) := JMP  & "01" & '0' & x"a7"; -- se apertou o key0, aqui soma 1 nos segundos(subrotina dos segundo)(linha198)
@@ -434,14 +434,14 @@ architecture assincrona of memoriaROM is
 	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX0 PASSOU DO LIMITE
 	  tmp(176) := LDA  & "10" & '0' & x"00"; -- Salva 0 na R2
 	  tmp(177) := STA  & "10" & '0' & x"34"; -- Passa r2 para memoria do HEX0 (d52 = 0x34)
-     tmp(178) := STA  & "10" & '1' & x"20"; -- manda 0 para HEX0
+    tmp(178) := STA  & "10" & '1' & x"20"; -- manda 0 para HEX0
 	  tmp(179) := LDA  & "10" & '0' & x"35"; -- valor que ta em HEX1 para R2
 	  tmp(180) := SOMA & "10" & '0' & x"01"; 
 	  tmp(181) := STA  & "10" & '0' & X"35";
 	  tmp(182) := CEQ  & "10" & '0' & x"2f";
 	  tmp(183) := JEQ  & "10" & '0' & x"bb"; -- se a dezena passou do limite zera os HEX0 E HEX1 e volta pra ficar verificando KEY1 E KEY0
 	  -- se não pular é pq não chegou no limite!
-     tmp(184) := LDA  & "10" & '0' & x"35";
+    tmp(184) := LDA  & "10" & '0' & x"35";
 	  tmp(185) := STA  & "10" & '1' & x"21";
 	  tmp(186) := JMP  & "01" & '0' & x"9f"; -- Somou volta para 159 e fica verificando de novo os botões
 	  
@@ -456,18 +456,116 @@ architecture assincrona of memoriaROM is
 
 
     -- configuração dos minutos
-		tmp(193) := NOP  & "01" & '0' & x"00";
+-- verifica se key1 foi apertado e se foi apertado vai para a configuração dos minutos
+    tmp(193) := STA  & "01" & '1' & x"fe"; -- limpa a leitura do KEY1(endereço=510)
+	 	tmp(194) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
+	 	tmp(195) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
+		tmp(196) := JEQ  & "01" & '0' & x"c6"; -- se for igual, ou seja, key1 não foi apertado, pulo para linha aaaaa para verificar se KEY2 foi apertado(linha163)
+	  tmp(197) := JMP  & "01" & '0' & x"e4";-- se apertou vai pra configuração dos horas linha --
+    tmp(198) := LDA  & "01" & '1' & x"62"; -- 352=x160 (KEY2) VERIFICA SE APERTOU OU NÃO
+	  tmp(199) := CEQ  & "01" & '0' & x"00"; -- compara key2 com mem[0](que esta guardando 0)
+	  tmp(200) := JEQ  & "01" & '0' & x"c2"; -- se for igual, ou seja, key2 não foi apertado, pulo para linha 194
+	  tmp(201) := JMP  & "01" & '0' & x"ca"; -- se apertou o key2, aqui soma 1 nos segundos(subrotina dos segundo)(linha202)
+
+ -- SUBTORINA QUE SOMA OS MINUTOS
 
 
-
-
-
-
-
-
+ 	-- SUBROTINA DE COLOCAR VALORES NO DISPLAY
+	  tmp(202) := STA  & "01" & '1' & x"fd"; -- Limpa aperto de KEY2
+    tmp(203) := LDA  & "10" & '0' & x"36"; --Passa o valor atual de HEX2 para R2
+	  tmp(204) := SOMA & "10" & '0' & x"01"; -- soma 1
+    tmp(205) := STA  & "10" & '0' & X"36"; -- salva
+	  tmp(206) := CEQ  & "10" & '0' & x"30";  
+	  tmp(207) := JEQ  & "10" & '0' & x"d3"; -- passou do limite vai para 211
+	   -- se não pular é pq não chegou no limite!
+    tmp(208) := LDA  & "10" & '0' & x"36";
+	  tmp(209) := STA  & "10" & '1' & x"22";
+	  tmp(210) := JMP  & "01" & '0' & x"c2";-- somou 1 volta para loop dos botoes
 	  
+	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX2 PASSOU DO LIMITE
+	  tmp(211) := LDA  & "10" & '0' & x"00";
+    tmp(212) := STA  & "10" & '0' & x"36";
+	  tmp(213) := STA  & "10" & '1' & x"22"; -- bota 0 HEX2
+	  tmp(214) := LDA  & "10" & '0' & x"37";
+	  tmp(215) := SOMA & "10" & '0' & x"01";
+    tmp(216) := STA  & "10" & '0' & X"37";
+	  tmp(217) := CEQ  & "10" & '0' & x"31";
+	  tmp(218) := JEQ  & "10" & '0' & x"de"; -- passou do limite zera tudo - linha 222
+	  -- se não pular é pq não chegou no limite!
+	  tmp(219) := LDA  & "10" & '0' & x"37";
+	  tmp(220) := STA  & "10" & '1' & x"23";
+	  tmp(221) := JMP  & "01" & '0' & x"c2"; -- soma e volta para loop dos botoes
+
+    tmp(222) := LDA  & "10" & '0' & x"00"; 
+    tmp(223) := STA  & "10" & '0' & x"36";
+    tmp(224) := STA  & "10" & '1' & x"22"; -- manda 0 p HEX2
+		tmp(225) := STA  & "10" & '0' & X"37";
+		tmp(226) := STA  & "10" & '1' & x"23"; -- manda 0 para HEX3
+    tmp(227) := JMP  & "01" & '0' & x"c2"; -- volta para o loop
+
+   -- configuração dos horas
+-- verifica se key1 foi apertado e se foi apertado vai para a configuração dos minutos
+    tmp(228) := STA & "01" & '1' & x"fe"; -- limpa a leitura do KEY1(endereço=510)
+	 	tmp(229) := LDA  & "01" & '1' & x"61"; -- 353=x161 (KEY1) VERIFICA SE APERTOU OU NÃO
+	 	tmp(230) := CEQ  & "01" & '0' & x"00"; -- compara key1 com mem[0](que esta guardando 0)
+		tmp(231) := JEQ  & "01" & '0' & x"e9"; -- se for igual, ou seja, key1 não foi apertado, pulo para linha aaaaa para verificar se KEY2 foi apertado(linha233)
+	  tmp(232) := JMP  & "01" & '0' & x"1f";-- se apertou volta la para cima!!! --
+    tmp(233) := LDA  & "01" & '1' & x"62"; -- 352=x160 (KEY2) VERIFICA SE APERTOU OU NÃO
+	  tmp(234) := CEQ  & "01" & '0' & x"00"; -- compara key2 com mem[0](que esta guardando 0)
+	  tmp(235) := JEQ  & "01" & '0' & x"e5"; -- se for igual, ou seja, key2 não foi apertado, pulo para linha 229
+	  tmp(236) := JMP  & "01" & '0' & x"ed"; -- se apertou o key2, aqui soma 1 nos segundos(subrotina dos segundo)(linha202)
+
+    
+-- SUBTORINA QUE SOMA AS HORAS
+
+
+ 	-- SUBROTINA DE COLOCAR VALORES NO DISPLAY
+	  tmp(237) := STA  & "01" & '1' & x"fd"; -- Limpa aperto de KEY2
+    tmp(238) := LDA  & "10" & '0' & x"38"; -- pega HEX4 
+	  tmp(239) := SOMA & "10" & '0' & x"01";
+	  tmp(240) := STA  & "10" & '0' & X"38";
+	  tmp(241) := CEQ  & "10" & '0' & x"32";
+	  tmp(242) := JEQ  & "10" & '0' & x"f6"; -- passou do limite vai para linha 246
+	  -- se não pular é pq não chegou no limite!
+    tmp(243) := LDA  & "10" & '0' & x"38";
+	  tmp(244) := STA  & "10" & '1' & x"24";
+	  tmp(245) := JMP  & "01" & '0' & x"e5"; -- SOMA 1 E VOLTA PARA LOOP 229
 	  
-	  
+	  ---- SÓ FAZ ESSA PARTE DE BAIXO DE HEX4 PASSOU DO LIMITE
+	  tmp(246) := LDA  & "10" & '0' & x"00";
+	  tmp(247) := STA  & "10" & '0' & x"38";
+	  tmp(248) := STA  & "10" & '1' & x"24";
+    tmp(249) := LDA  & "10" & '0' & X"39"; -- pega valor de HEX 5 
+		tmp(250) := CEQ & "10" & '0' & x"01"; -- COMPARA VALOR DO hex5 com 1 se for 1 tem que mudar o limiter de do HEX4 (x01)
+    tmp(251) := JEQ & "00" & '0' & x"fd"; --- 253 e configura o novo limite de hex4
+    tmp(252) := JMP & "00" & '1' & x"01"; --- 257 não precisa configurar
+
+    tmp(253) := LDI & "00" & '0' & x"04"; -- se no x40 tiver 1 só pode incrementar até o 3 então o limite tem que mudar para 4
+    tmp(254) := STA  & "00" & '0' & x"32";
+    tmp(255) := NOP  & "01" & '0' & x"00"; 
+    tmp(256) := NOP  & "01" & '0' & x"00"; 
+
+    ---- verifica quantas vezes já passou do limite
+    ---- so pode passar quando for 0 e 1, quando for 2 o limite é 4 e não mais 10
+	  tmp(257) := LDA  & "10" & '0' & x"39";
+	  tmp(258) := SOMA & "10" & '0' & x"01";
+	  tmp(259) := STA  & "10" & '0' & X"39";
+	  tmp(260) := CEQ  & "10" & '0' & x"33";
+	  tmp(261) := JEQ  & "10" & '1' & x"09"; --passou do limite o HEX5 vai para 265
+	 
+	  -- se Não pular é pq não chegou no limite!
+    tmp(262) := LDA  & "10" & '0' & x"39";
+	  tmp(263) := STA  & "10" & '1' & x"25";
+	  tmp(264) := JMP  & "01" & '0' & x"e5"; 
+
+    tmp(265) := LDA  & "10" & '0' & x"00"; 
+    tmp(266) := STA  & "10" & '0' & x"38";
+    tmp(267) := STA  & "10" & '1' & x"24"; -- manda 0 p HEX4
+		tmp(268) := STA  & "10" & '0' & X"39";
+		tmp(269) := STA  & "10" & '1' & x"25"; -- manda 0 para HEX5
+    tmp(270) := LDI & "00" & '0' & x"0a"; -- se no x40 tiver 1 só pode incrementar até o 3 então o limite tem que mudar para 4
+    tmp(271) := STA  & "00" & '0' & x"32";
+    tmp(272) := JMP  & "01" & '0' & x"e5"; -- volta para o loop			  
         return tmp;
     end initMemory;
 
