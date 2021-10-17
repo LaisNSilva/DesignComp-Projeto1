@@ -14,6 +14,7 @@ CLOCK_50 => registradorgenerico_4b:REG_HEX3.CLK
 CLOCK_50 => registradorgenerico_4b:REG_HEX4.CLK
 CLOCK_50 => registradorgenerico_4b:REG_HEX5.CLK
 CLOCK_50 => divisorgenerico:baseTempo.clk
+CLOCK_50 => divisorgenerico:baseTempo1.clk
 KEY[0] => edgedetector:detectorSub0.entrada
 KEY[1] => edgedetector:detectorSub1.entrada
 KEY[2] => edgedetector:detectorSub2.entrada
@@ -28,6 +29,7 @@ SW[5] => buffertri_8seg:SW_0_7.DIN[5]
 SW[6] => buffertri_8seg:SW_0_7.DIN[6]
 SW[7] => buffertri_8seg:SW_0_7.DIN[7]
 SW[8] => buffertri:SW_8.DIN
+SW[9] => muxgenerico2x1_tempo:MUX2.seletor_MUX
 SW[9] => buffertri:SW_9.DIN
 HEX0[0] <= decodbinario_7seg:DECOD_HEX0.saida7seg[0]
 HEX0[1] <= decodbinario_7seg:DECOD_HEX0.saida7seg[1]
@@ -1540,6 +1542,38 @@ clk => contador[22].CLK
 clk => contador[23].CLK
 clk => contador[24].CLK
 saida_clk <= tick.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Projeto1|divisorGenerico:baseTempo1
+clk => tick.CLK
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+clk => contador[6].CLK
+clk => contador[7].CLK
+clk => contador[8].CLK
+clk => contador[9].CLK
+clk => contador[10].CLK
+clk => contador[11].CLK
+clk => contador[12].CLK
+clk => contador[13].CLK
+clk => contador[14].CLK
+clk => contador[15].CLK
+clk => contador[16].CLK
+clk => contador[17].CLK
+clk => contador[18].CLK
+clk => contador[19].CLK
+saida_clk <= tick.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Projeto1|muxGenerico2x1_tempo:MUX2
+entradaA_MUX => saida_MUX.DATAA
+entradaB_MUX => saida_MUX.DATAB
+seletor_MUX => saida_MUX.OUTPUTSELECT
+saida_MUX <= saida_MUX.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Projeto1|buffertri:SW_9

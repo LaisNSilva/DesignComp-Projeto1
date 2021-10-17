@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto1
-Fri Oct 15 14:42:04 2021
+Sun Oct 17 13:39:58 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -45,38 +45,40 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  37. Parameter Settings for User Entity Instance: FlipFlop:FLIP_FLOP_DM
  38. Parameter Settings for User Entity Instance: buffertri:Tristate_contador
  39. Parameter Settings for User Entity Instance: divisorGenerico:baseTempo
- 40. Parameter Settings for User Entity Instance: buffertri:SW_9
- 41. Parameter Settings for User Entity Instance: buffertri:SW_8
- 42. Parameter Settings for User Entity Instance: buffertri_8seg:SW_0_7
- 43. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_DM"
- 44. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_KEY1"
- 45. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_KEY2"
- 46. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
- 47. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5"
- 48. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
- 49. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4"
- 50. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
- 51. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3"
- 52. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
- 53. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2"
- 54. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
- 55. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1"
- 56. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
- 57. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
- 58. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
- 59. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
- 60. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
- 61. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
- 62. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
- 63. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
- 64. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
- 65. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
- 66. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
- 67. Port Connectivity Checks: "CPU:CPU"
- 68. Port Connectivity Checks: "edgeDetector:detectorSub0"
- 69. Post-Synthesis Netlist Statistics for Top Partition
- 70. Elapsed Time Per Partition
- 71. Analysis & Synthesis Messages
+ 40. Parameter Settings for User Entity Instance: divisorGenerico:baseTempo1
+ 41. Parameter Settings for User Entity Instance: muxGenerico2x1_tempo:MUX2
+ 42. Parameter Settings for User Entity Instance: buffertri:SW_9
+ 43. Parameter Settings for User Entity Instance: buffertri:SW_8
+ 44. Parameter Settings for User Entity Instance: buffertri_8seg:SW_0_7
+ 45. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_DM"
+ 46. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_KEY1"
+ 47. Port Connectivity Checks: "FlipFlop:FLIP_FLOP_KEY2"
+ 48. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
+ 49. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX5"
+ 50. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
+ 51. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX4"
+ 52. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
+ 53. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX3"
+ 54. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
+ 55. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX2"
+ 56. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
+ 57. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX1"
+ 58. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
+ 59. Port Connectivity Checks: "registradorGenerico_4b:REG_HEX0"
+ 60. Port Connectivity Checks: "FlipFlop:FF_LEDR9"
+ 61. Port Connectivity Checks: "FlipFlop:FF_LEDR8"
+ 62. Port Connectivity Checks: "registradorGenerico:REG_LEDR0a7"
+ 63. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_0a2"
+ 64. Port Connectivity Checks: "Decod3x8:DECODIFICADOR_3X8_6a8"
+ 65. Port Connectivity Checks: "CPU:CPU|muxGenerico2x1_PC:MUX2"
+ 66. Port Connectivity Checks: "CPU:CPU|FlipFlop:FLAG"
+ 67. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:REG_END_RET"
+ 68. Port Connectivity Checks: "CPU:CPU|registradorGenerico_PC:PC"
+ 69. Port Connectivity Checks: "CPU:CPU"
+ 70. Port Connectivity Checks: "edgeDetector:detectorSub0"
+ 71. Post-Synthesis Netlist Statistics for Top Partition
+ 72. Elapsed Time Per Partition
+ 73. Analysis & Synthesis Messages
 
 
 
@@ -103,13 +105,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 15 14:42:04 2021       ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct 17 13:39:58 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto1                                    ;
 ; Top-level Entity Name           ; Projeto1                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 628                                         ;
+; Total registers                 ; 649                                         ;
 ; Total pins                      ; 85                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -262,6 +264,7 @@ https://fpgasoftware.intel.com/eula.
 ; bancoRegistradoresArqRegMem.vhd  ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/bancoRegistradoresArqRegMem.vhd ;         ;
 ; buffertri_8seg.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/buffertri_8seg.vhd              ;         ;
 ; divisorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/divisorGenerico.vhd             ;         ;
+; muxGenerico2x1_tempo.vhd         ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1_tempo.vhd        ;         ;
 +----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
 
 
@@ -270,25 +273,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 521            ;
+; Estimate of Logic utilization (ALMs needed) ; 535            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 587            ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 339            ;
-;     -- 5 input functions                    ; 41             ;
-;     -- 4 input functions                    ; 72             ;
-;     -- <=3 input functions                  ; 135            ;
+; Combinational ALUT usage for logic          ; 616            ;
+;     -- 7 input functions                    ; 1              ;
+;     -- 6 input functions                    ; 335            ;
+;     -- 5 input functions                    ; 48             ;
+;     -- 4 input functions                    ; 79             ;
+;     -- <=3 input functions                  ; 153            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 628            ;
+; Dedicated logic registers                   ; 649            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 85             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 625            ;
-; Total fan-out                               ; 4911           ;
-; Average fan-out                             ; 3.55           ;
+; Maximum fan-out                             ; 646            ;
+; Total fan-out                               ; 5051           ;
+; Average fan-out                             ; 3.52           ;
 +---------------------------------------------+----------------+
 
 
@@ -297,7 +300,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Entity Name                 ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------------+--------------+
-; |Projeto1                                      ; 587 (25)            ; 628 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Projeto1                                                ; Projeto1                    ; work         ;
+; |Projeto1                                      ; 616 (25)            ; 649 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Projeto1                                                ; Projeto1                    ; work         ;
 ;    |CPU:CPU|                                   ; 76 (0)              ; 51 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU                                        ; CPU                         ; work         ;
 ;       |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao              ; work         ;
 ;       |FlipFlop:FLAG|                          ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|FlipFlop:FLAG                          ; FlipFlop                    ; work         ;
@@ -320,11 +323,13 @@ https://fpgasoftware.intel.com/eula.
 ;    |FlipFlop:FLIP_FLOP_DM|                     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FLIP_FLOP_DM                          ; FlipFlop                    ; work         ;
 ;    |FlipFlop:FLIP_FLOP_KEY1|                   ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FLIP_FLOP_KEY1                        ; FlipFlop                    ; work         ;
 ;    |FlipFlop:FLIP_FLOP_KEY2|                   ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|FlipFlop:FLIP_FLOP_KEY2                        ; FlipFlop                    ; work         ;
+;    |divisorGenerico:baseTempo1|                ; 26 (26)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|divisorGenerico:baseTempo1                     ; divisorGenerico             ; work         ;
 ;    |divisorGenerico:baseTempo|                 ; 33 (33)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|divisorGenerico:baseTempo                      ; divisorGenerico             ; work         ;
 ;    |edgeDetector:detectorSub1|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|edgeDetector:detectorSub1                      ; edgeDetector                ; work         ;
 ;    |edgeDetector:detectorSub2|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|edgeDetector:detectorSub2                      ; edgeDetector                ; work         ;
 ;    |memoriaRAM:MEMORIA_DADOS|                  ; 297 (297)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaRAM:MEMORIA_DADOS                       ; memoriaRAM                  ; work         ;
-;    |memoriaROM:MEMORIA_INTRUCAO|               ; 107 (107)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaROM:MEMORIA_INTRUCAO                    ; memoriaROM                  ; work         ;
+;    |memoriaROM:MEMORIA_INTRUCAO|               ; 109 (109)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaROM:MEMORIA_INTRUCAO                    ; memoriaROM                  ; work         ;
+;    |muxGenerico2x1_tempo:MUX2|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|muxGenerico2x1_tempo:MUX2                      ; muxGenerico2x1_tempo        ; work         ;
 ;    |registradorGenerico:REG_LEDR0a7|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico:REG_LEDR0a7                ; registradorGenerico         ; work         ;
 ;    |registradorGenerico_4b:REG_HEX0|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX0                ; registradorGenerico_4b      ; work         ;
 ;    |registradorGenerico_4b:REG_HEX1|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX1                ; registradorGenerico_4b      ; work         ;
@@ -341,8 +346,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 628   ;
-; Number of registers using Synchronous Clear  ; 25    ;
+; Total registers                              ; 649   ;
+; Number of registers using Synchronous Clear  ; 45    ;
 ; Number of registers using Synchronous Load   ; 32    ;
 ; Number of registers using Asynchronous Clear ; 3     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -357,8 +362,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 ; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Projeto1|CPU:CPU|registradorGenerico_PC:PC|DOUT[6] ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[1]  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|ULASomaSub:ULA1|saida[3]          ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[7]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Projeto1|CPU:CPU|ULASomaSub:ULA1|saida[7]          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
 
@@ -676,6 +681,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisorGenerico:baseTempo1 ;
++----------------+---------+----------------------------------------------+
+; Parameter Name ; Value   ; Type                                         ;
++----------------+---------+----------------------------------------------+
+; divisor        ; 1000000 ; Signed Integer                               ;
++----------------+---------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1_tempo:MUX2 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; larguradados   ; 1     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: buffertri:SW_9 ;
 +----------------+-------+------------------------------------+
@@ -966,29 +991,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 628                         ;
+; arriav_ff             ; 649                         ;
 ;     CLR               ; 3                           ;
 ;     ENA               ; 553                         ;
 ;     ENA SLD           ; 32                          ;
-;     SCLR              ; 25                          ;
-;     plain             ; 15                          ;
-; arriav_lcell_comb     ; 587                         ;
-;     arith             ; 51                          ;
+;     SCLR              ; 45                          ;
+;     plain             ; 16                          ;
+; arriav_lcell_comb     ; 616                         ;
+;     arith             ; 71                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 34                          ;
+;         1 data inputs ; 54                          ;
 ;         2 data inputs ; 10                          ;
 ;         4 data inputs ; 6                           ;
-;     normal            ; 536                         ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 544                         ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 67                          ;
-;         3 data inputs ; 21                          ;
-;         4 data inputs ; 66                          ;
-;         5 data inputs ; 41                          ;
-;         6 data inputs ; 339                         ;
+;         2 data inputs ; 68                          ;
+;         3 data inputs ; 18                          ;
+;         4 data inputs ; 73                          ;
+;         5 data inputs ; 48                          ;
+;         6 data inputs ; 335                         ;
 ; boundary_port         ; 85                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.30                       ;
-; Average LUT depth     ; 6.45                        ;
+; Average LUT depth     ; 6.27                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1007,7 +1034,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Oct 15 14:41:55 2021
+    Info: Processing started: Sun Oct 17 13:39:48 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto1 -c Projeto1
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file projeto1.vhd
@@ -1077,10 +1104,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file buffert
 Info (12021): Found 2 design units, including 1 entities, in source file divisorgenerico.vhd
     Info (12022): Found design unit 1: divisorGenerico-divInteiro File: C:/Descomp/DesignComp-Projeto1/Projeto1/divisorGenerico.vhd Line: 16
     Info (12023): Found entity 1: divisorGenerico File: C:/Descomp/DesignComp-Projeto1/Projeto1/divisorGenerico.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_tempo.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1_tempo-comportamento File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1_tempo.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1_tempo File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1_tempo.vhd Line: 4
 Info (12127): Elaborating entity "Projeto1" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at Projeto1.vhd(102): object "Saida_DecBorda_KEY0" assigned a value but never read File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 102
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 120
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 131
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 122
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 133
 Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 74
 Info (12128): Elaborating entity "DecodInstrucao" for hierarchy "CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 80
 Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "CPU:CPU|registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 85
@@ -1090,15 +1120,19 @@ Info (12128): Elaborating entity "ULASomaSub" for hierarchy "CPU:CPU|ULASomaSub:
 Info (12128): Elaborating entity "FlipFlop" for hierarchy "CPU:CPU|FlipFlop:FLAG" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 122
 Info (12128): Elaborating entity "LogicaDesvio" for hierarchy "CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 126
 Info (12128): Elaborating entity "muxGenerico2x1_PC" for hierarchy "CPU:CPU|muxGenerico2x1_PC:MUX2" File: C:/Descomp/DesignComp-Projeto1/Projeto1/CPU.vhd Line: 131
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:MEMORIA_INTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 144
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 147
-Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 150
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG_LEDR0a7" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 177
-Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 210
-Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 219
-Info (12128): Elaborating entity "buffertri" for hierarchy "buffertri:FPGA_R" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 317
-Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico:baseTempo" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 394
-Info (12128): Elaborating entity "buffertri_8seg" for hierarchy "buffertri_8seg:SW_0_7" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 415
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:MEMORIA_INTRUCAO" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 146
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 149
+Info (12128): Elaborating entity "Decod3x8" for hierarchy "Decod3x8:DECODIFICADOR_3X8_6a8" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 152
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG_LEDR0a7" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 179
+Info (12128): Elaborating entity "registradorGenerico_4b" for hierarchy "registradorGenerico_4b:REG_HEX0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 212
+Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 221
+Info (12128): Elaborating entity "buffertri" for hierarchy "buffertri:FPGA_R" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 319
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico:baseTempo" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 396
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico:baseTempo1" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 400
+Info (12128): Elaborating entity "muxGenerico2x1_tempo" for hierarchy "muxGenerico2x1_tempo:MUX2" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 404
+Info (12128): Elaborating entity "buffertri_8seg" for hierarchy "buffertri_8seg:SW_0_7" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 427
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer muxGenerico2x1_tempo:MUX2|saida_MUX File: C:/Descomp/DesignComp-Projeto1/Projeto1/muxGenerico2x1_tempo.vhd Line: 10
 Info (276014): Found 2 instances of uninferred RAM logic
     Info (276007): RAM logic "memoriaRAM:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto1/Projeto1/memoriaRAM.vhd Line: 27
     Info (276004): RAM logic "CPU:CPU|bancoRegistradoresArqRegMem:BANCO_REG|registrador" is uninferred due to inappropriate RAM size File: C:/Descomp/DesignComp-Projeto1/Projeto1/bancoRegistradoresArqRegMem.vhd Line: 29
@@ -1116,14 +1150,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 15
-Info (21057): Implemented 1260 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1289 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 69 output pins
-    Info (21061): Implemented 1175 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4903 megabytes
-    Info: Processing ended: Fri Oct 15 14:42:04 2021
-    Info: Elapsed time: 00:00:09
+    Info (21061): Implemented 1204 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4900 megabytes
+    Info: Processing ended: Sun Oct 17 13:39:58 2021
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:18
 
 

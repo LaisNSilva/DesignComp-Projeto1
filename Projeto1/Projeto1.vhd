@@ -102,7 +102,9 @@ architecture arquitetura of Projeto1 is
 	 signal Saida_DecBorda_KEY0 : std_logic;
 	 signal Saida_DecBorda_KEY1 : std_logic;
 	 signal saidaclk_reg1seg : std_logic;
+	 signal saidaclk_reg1seg2 : std_logic;
 	 signal Saida_DecBorda_KEY2 : std_logic;
+	 signal MUX_ULA_B : std_logic;
 	 
 	 
 	 alias opCode : std_logic_vector (3 downto 0) is ROM_DADOS(14 downto 11);
@@ -380,7 +382,7 @@ FLIP_FLOP_DM : entity work.FlipFlop   generic map (larguraDados => larguraDados)
 			 DOUT => Saida_FF_DM, 
 			 ENABLE => '1', 
 			 RST => Endereco_barramento(0) AND Endereco_barramento(1) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8),
-			 CLK => saidaclk_reg1seg
+			 CLK => MUX_ULA_B
 			 );
 
 Tristate_contador : entity work.buffertri
@@ -393,7 +395,17 @@ Tristate_contador : entity work.buffertri
 			 
 baseTempo: entity work.divisorGenerico
            generic map (divisor => 25000000)   -- divide por 50M.25000000
-           port map (clk => clk, saida_clk => saidaclk_reg1seg);			 
+           port map (clk => clk, saida_clk => saidaclk_reg1seg);
+
+baseTempo1: entity work.divisorGenerico
+           generic map (divisor => 1000000)   -- divide por 50M.25000000
+           port map (clk => clk, saida_clk => saidaclk_reg1seg2);
+
+MUX2 :  entity work.muxGenerico2x1_tempo  generic map (larguraDados => 1)
+        port map( entradaA_MUX => saidaclk_reg1seg,
+                 entradaB_MUX =>  saidaclk_reg1seg2,
+                 seletor_MUX => SW(9),
+                 saida_MUX => MUX_ULA_B);			  
 			 
 --- CHAVES SW ---
 			 
