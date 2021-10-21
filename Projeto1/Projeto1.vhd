@@ -412,7 +412,7 @@ baseTempo: entity work.divisorGenerico
            port map (clk => clk, saida_clk => saidaclk_reg1seg);
 
 baseTempo1: entity work.divisorGenerico
-           generic map (divisor => 2500)   -- divide por 50M.25000000
+           generic map (divisor => 100000)   -- divide por 50M.25000000
            port map (clk => clk, saida_clk => saidaclk_reg1seg2);
 
 MUX2 :  entity work.muxGenerico2x1_tempo  generic map (larguraDados => 1)

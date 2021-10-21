@@ -37,6 +37,7 @@ Dic_Enderecos = {"DSP0": "100100000",
                  "KEY2": "101100010",
                  "KEY3": "101100011",
                  "FPGA_RESET": "101100100",
+                 "SW0_7" : "101000000"
                  }
 
 
@@ -200,10 +201,10 @@ def completa(assembly, dic_OpCode, dic_Regs, Dic_Enderecos):
     # pega os endereços
     inst = get_inst("assembly_novo.txt", Dic_Enderecos, Dic_jumps)
     
-    mif = cria_mif(opc, reg, inst, "arquivo2.mif", 9, 15)
+    mif = cria_mif(opc, reg, inst, "arquivo.mif", 9, 15)
     
     
-completa("assembly_mudado.txt", Dic_OpCode, Dic_Regs, Dic_Enderecos)
+completa("assembly.txt", Dic_OpCode, Dic_Regs, Dic_Enderecos)
     
     
       

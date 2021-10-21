@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/20/2021 20:51:41"
+-- Generated on "10/21/2021 12:00:28"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Projeto1
 -- 
@@ -106,16 +106,36 @@ END PROCESS t_prcs_FPGA_RESET_N;
 t_prcs_KEY_3: PROCESS
 BEGIN
 	KEY(3) <= '1';
-	WAIT FOR 1040000 ps;
-	KEY(3) <= '0';
-	WAIT FOR 80000 ps;
-	KEY(3) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_3;
 
 -- KEY[2]
 t_prcs_KEY_2: PROCESS
 BEGIN
+	KEY(2) <= '1';
+	WAIT FOR 640000 ps;
+	KEY(2) <= '0';
+	WAIT FOR 160000 ps;
+	KEY(2) <= '1';
+	WAIT FOR 160000 ps;
+	KEY(2) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(2) <= '1';
+	WAIT FOR 80000 ps;
+	KEY(2) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(2) <= '1';
+	WAIT FOR 160000 ps;
+	KEY(2) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(2) <= '1';
+	WAIT FOR 160000 ps;
+	KEY(2) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(2) <= '1';
+	WAIT FOR 80000 ps;
+	KEY(2) <= '0';
+	WAIT FOR 80000 ps;
 	KEY(2) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_2;
@@ -130,6 +150,21 @@ END PROCESS t_prcs_KEY_1;
 -- KEY[0]
 t_prcs_KEY_0: PROCESS
 BEGIN
+	KEY(0) <= '1';
+	WAIT FOR 2030000 ps;
+	KEY(0) <= '0';
+	WAIT FOR 30000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 30000 ps;
+	FOR i IN 1 TO 73
+	LOOP
+		KEY(0) <= '0';
+		WAIT FOR 30000 ps;
+		KEY(0) <= '1';
+		WAIT FOR 30000 ps;
+	END LOOP;
+	KEY(0) <= '0';
+	WAIT FOR 10000 ps;
 	KEY(0) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_0;
@@ -200,6 +235,8 @@ END PROCESS t_prcs_SW_1;
 -- SW[0]
 t_prcs_SW_0: PROCESS
 BEGIN
+	SW(0) <= '1';
+	WAIT FOR 880000 ps;
 	SW(0) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_0;
