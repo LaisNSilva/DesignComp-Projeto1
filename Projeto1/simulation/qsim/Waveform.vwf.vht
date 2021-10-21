@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/15/2021 14:22:40"
+-- Generated on "10/20/2021 20:51:41"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Projeto1
 -- 
@@ -51,16 +51,16 @@ COMPONENT Projeto1
 	PORT (
 	CLOCK_50 : IN STD_LOGIC;
 	FPGA_RESET_N : IN STD_LOGIC;
-	HEX0 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX1 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX2 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX3 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX4 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX5 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX0 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX1 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX2 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX3 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX4 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
+	HEX5 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
 	KEY : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-	LEDR : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
-	PC_OUT : OUT STD_LOGIC_VECTOR(8 DOWNTO 0);
-	REG_A : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	LEDR : BUFFER STD_LOGIC_VECTOR(9 DOWNTO 0);
+	PC_OUT : BUFFER STD_LOGIC_VECTOR(8 DOWNTO 0);
+	REG_A : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
 	SW : IN STD_LOGIC_VECTOR(9 DOWNTO 0)
 	);
 END COMPONENT;
@@ -106,6 +106,10 @@ END PROCESS t_prcs_FPGA_RESET_N;
 t_prcs_KEY_3: PROCESS
 BEGIN
 	KEY(3) <= '1';
+	WAIT FOR 1040000 ps;
+	KEY(3) <= '0';
+	WAIT FOR 80000 ps;
+	KEY(3) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_3;
 
@@ -113,24 +117,12 @@ END PROCESS t_prcs_KEY_3;
 t_prcs_KEY_2: PROCESS
 BEGIN
 	KEY(2) <= '1';
-	WAIT FOR 2240000 ps;
-	KEY(2) <= '0';
-	WAIT FOR 160000 ps;
-	KEY(2) <= '1';
-	WAIT FOR 240000 ps;
-	KEY(2) <= '0';
-	WAIT FOR 160000 ps;
-	KEY(2) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_2;
 
 -- KEY[1]
 t_prcs_KEY_1: PROCESS
 BEGIN
-	KEY(1) <= '1';
-	WAIT FOR 1680000 ps;
-	KEY(1) <= '0';
-	WAIT FOR 160000 ps;
 	KEY(1) <= '1';
 WAIT;
 END PROCESS t_prcs_KEY_1;

@@ -99,11 +99,13 @@ architecture arquitetura of Projeto1 is
 	 signal Saida_FF_DM : std_logic;
 	 signal Saida_FF_KEY1 : std_logic;
 	 signal Saida_FF_KEY2 : std_logic;
+	 signal Saida_FF_KEY3 : std_logic;
 	 signal Saida_DecBorda_KEY0 : std_logic;
 	 signal Saida_DecBorda_KEY1 : std_logic;
+	 signal Saida_DecBorda_KEY2 : std_logic;
+	 signal Saida_DecBorda_KEY3 : std_logic;
 	 signal saidaclk_reg1seg : std_logic;
 	 signal saidaclk_reg1seg2 : std_logic;
-	 signal Saida_DecBorda_KEY2 : std_logic;
 	 signal MUX_ULA_B : std_logic;
 	 
 	 
@@ -128,6 +130,9 @@ detectorSub1: work.edgeDetector(bordaSubida)
 
 detectorSub2: work.edgeDetector(bordaSubida)
         port map (clk => CLOCK_50, entrada => (not KEY(2)), saida => Saida_DecBorda_KEY2);
+		  
+detectorSub3: work.edgeDetector(bordaSubida)
+		  port map (clk => CLOCK_50, entrada => (not KEY(3)), saida => Saida_DecBorda_KEY3);
 
 -- O port map completo do MUX.
 CPU : entity work.CPU
@@ -325,9 +330,18 @@ FPGA_R: entity work.buffertri
 		
 --- BOTÕES KEY ---
 
+FLIP_FLOP_KEY3 : entity work.FlipFlop   generic map (larguraDados => larguraDados)
+          port map (
+			 DIN => '1', 
+			 DOUT => Saida_FF_KEY3, 
+			 ENABLE => '1', 
+			 RST => (NOT(Endereco_barramento(0))) AND (not(Endereco_barramento(1))) AND Endereco_barramento(2) AND Endereco_barramento(3) AND Endereco_barramento(4) AND Endereco_barramento(5) AND Endereco_barramento(6) AND Endereco_barramento(7) AND Endereco_barramento(8),
+			 CLK => Saida_DecBorda_KEY3
+			 );
+
 KEY_3: entity work.buffertri
           port map (
-			 DIN => KEY(3),
+			 DIN => Saida_FF_KEY3,
 			 DOUT => Saida_Dados(0), 
 			 ENABLE => habLeituraMEM AND Endereco_barramento(5) AND Endereco_3 AND Bloco_5
 			 );
@@ -398,7 +412,7 @@ baseTempo: entity work.divisorGenerico
            port map (clk => clk, saida_clk => saidaclk_reg1seg);
 
 baseTempo1: entity work.divisorGenerico
-           generic map (divisor => 1000000)   -- divide por 50M.25000000
+           generic map (divisor => 2500)   -- divide por 50M.25000000
            port map (clk => clk, saida_clk => saidaclk_reg1seg2);
 
 MUX2 :  entity work.muxGenerico2x1_tempo  generic map (larguraDados => 1)
