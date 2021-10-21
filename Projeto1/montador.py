@@ -206,7 +206,3 @@ def completa(assembly, dic_OpCode, dic_Regs, Dic_Enderecos):
     
 completa("assembly.txt", Dic_OpCode, Dic_Regs, Dic_Enderecos)
     
-    
-      
-    
-
