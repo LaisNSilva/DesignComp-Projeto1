@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto1
-Thu Oct 21 16:02:30 2021
+Thu Oct 21 23:20:03 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -107,7 +107,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 21 16:02:30 2021       ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 21 23:20:03 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto1                                    ;
 ; Top-level Entity Name           ; Projeto1                                    ;
@@ -275,14 +275,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 569            ;
+; Estimate of Logic utilization (ALMs needed) ; 573            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 653            ;
-;     -- 7 input functions                    ; 20             ;
-;     -- 6 input functions                    ; 367            ;
-;     -- 5 input functions                    ; 43             ;
-;     -- 4 input functions                    ; 128            ;
-;     -- <=3 input functions                  ; 95             ;
+; Combinational ALUT usage for logic          ; 655            ;
+;     -- 7 input functions                    ; 23             ;
+;     -- 6 input functions                    ; 370            ;
+;     -- 5 input functions                    ; 40             ;
+;     -- 4 input functions                    ; 65             ;
+;     -- <=3 input functions                  ; 157            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 646            ;
 ;                                             ;                ;
@@ -292,8 +292,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 642            ;
-; Total fan-out                               ; 5421           ;
-; Average fan-out                             ; 3.69           ;
+; Total fan-out                               ; 5318           ;
+; Average fan-out                             ; 3.62           ;
 +---------------------------------------------+----------------+
 
 
@@ -302,10 +302,11 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Entity Name                 ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------------+--------------+
-; |Projeto1                                      ; 653 (27)            ; 646 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Projeto1                                                ; Projeto1                    ; work         ;
+; |Projeto1                                      ; 655 (26)            ; 646 (0)                   ; 0                 ; 0          ; 85   ; 0            ; |Projeto1                                                ; Projeto1                    ; work         ;
 ;    |CPU:CPU|                                   ; 76 (0)              ; 51 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU                                        ; CPU                         ; work         ;
-;       |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao              ; work         ;
+;       |DecodInstrucao:DECODIFICADOR_INSTRUCAO| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|DecodInstrucao:DECODIFICADOR_INSTRUCAO ; DecodInstrucao              ; work         ;
 ;       |FlipFlop:FLAG|                          ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|FlipFlop:FLAG                          ; FlipFlop                    ; work         ;
+;       |LogicaDesvio:LOGICA_DE_DESVIO|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|LogicaDesvio:LOGICA_DE_DESVIO          ; LogicaDesvio                ; work         ;
 ;       |ULASomaSub:ULA1|                        ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|ULASomaSub:ULA1                        ; ULASomaSub                  ; work         ;
 ;       |bancoRegistradoresArqRegMem:BANCO_REG|  ; 12 (12)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|bancoRegistradoresArqRegMem:BANCO_REG  ; bancoRegistradoresArqRegMem ; work         ;
 ;       |muxGenerico2x1:MUX1|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|muxGenerico2x1:MUX1                    ; muxGenerico2x1              ; work         ;
@@ -313,7 +314,6 @@ https://fpgasoftware.intel.com/eula.
 ;       |registradorGenerico_PC:PC|              ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|registradorGenerico_PC:PC              ; registradorGenerico_PC      ; work         ;
 ;       |registradorGenerico_PC:REG_END_RET|     ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|registradorGenerico_PC:REG_END_RET     ; registradorGenerico_PC      ; work         ;
 ;       |somaConstante:SOMADOR|                  ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|CPU:CPU|somaConstante:SOMADOR                  ; somaConstante               ; work         ;
-;    |Decod3x8:DECODIFICADOR_3X8_6a8|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|Decod3x8:DECODIFICADOR_3X8_6a8                 ; Decod3x8                    ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX0|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX0                   ; DecodBinario_7Seg           ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX1|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX1                   ; DecodBinario_7Seg           ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX2|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|DecodBinario_7Seg:DECOD_HEX2                   ; DecodBinario_7Seg           ; work         ;
@@ -332,7 +332,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |edgeDetector:detectorSub2|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|edgeDetector:detectorSub2                      ; edgeDetector                ; work         ;
 ;    |edgeDetector:detectorSub3|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|edgeDetector:detectorSub3                      ; edgeDetector                ; work         ;
 ;    |memoriaRAM:MEMORIA_DADOS|                  ; 297 (297)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaRAM:MEMORIA_DADOS                       ; memoriaRAM                  ; work         ;
-;    |memoriaROM:MEMORIA_INTRUCAO|               ; 147 (147)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaROM:MEMORIA_INTRUCAO                    ; memoriaROM                  ; work         ;
+;    |memoriaROM:MEMORIA_INTRUCAO|               ; 152 (152)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|memoriaROM:MEMORIA_INTRUCAO                    ; memoriaROM                  ; work         ;
 ;    |muxGenerico2x1_tempo:MUX2|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|muxGenerico2x1_tempo:MUX2                      ; muxGenerico2x1_tempo        ; work         ;
 ;    |registradorGenerico:REG_LEDR0a7|           ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico:REG_LEDR0a7                ; registradorGenerico         ; work         ;
 ;    |registradorGenerico_4b:REG_HEX0|           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto1|registradorGenerico_4b:REG_HEX0                ; registradorGenerico_4b      ; work         ;
@@ -1021,25 +1021,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 32                          ;
 ;     SCLR              ; 40                          ;
 ;     plain             ; 17                          ;
-; arriav_lcell_comb     ; 653                         ;
+; arriav_lcell_comb     ; 655                         ;
 ;     arith             ; 66                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 49                          ;
 ;         2 data inputs ; 10                          ;
 ;         4 data inputs ; 6                           ;
-;     extend            ; 20                          ;
-;         7 data inputs ; 20                          ;
-;     normal            ; 567                         ;
+;     extend            ; 23                          ;
+;         7 data inputs ; 23                          ;
+;     normal            ; 566                         ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 12                          ;
-;         3 data inputs ; 20                          ;
-;         4 data inputs ; 122                         ;
-;         5 data inputs ; 43                          ;
-;         6 data inputs ; 367                         ;
+;         2 data inputs ; 73                          ;
+;         3 data inputs ; 21                          ;
+;         4 data inputs ; 59                          ;
+;         5 data inputs ; 40                          ;
+;         6 data inputs ; 370                         ;
 ; boundary_port         ; 85                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.30                       ;
-; Average LUT depth     ; 6.31                        ;
+; Average LUT depth     ; 6.30                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1058,7 +1058,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 21 16:02:22 2021
+    Info: Processing started: Thu Oct 21 23:19:55 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto1 -c Projeto1
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file projeto1.vhd
@@ -1175,14 +1175,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Descomp/DesignComp-Projeto1/Projeto1/Projeto1.vhd Line: 15
-Info (21057): Implemented 1327 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1329 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 69 output pins
-    Info (21061): Implemented 1242 logic cells
+    Info (21061): Implemented 1244 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4909 megabytes
-    Info: Processing ended: Thu Oct 21 16:02:30 2021
+    Info: Peak virtual memory: 4900 megabytes
+    Info: Processing ended: Thu Oct 21 23:20:03 2021
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:16
 
 
